@@ -1,0 +1,549 @@
+﻿year,brand,model,field,value,status,sourceUrl,evidenceText,note
+2025,Apple,iPhone 17,屏幕,6.3英寸超视网膜XDR OLED；ProMotion自适应刷新率最高120Hz,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/,6.3 英寸超视网膜 XDR 显示屏支持 ProMotion 自适应刷新率。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone 17,处理器,A19,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/,官方发布稿明确搭载 A19 芯片。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone 17,影像,后置4800万像素融合式主摄（支持2倍光学品质长焦）+4800万像素融合式超广角；前置Center Stage摄像头,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/,官方发布稿明确列出 4800 万主摄、4800 万超广角与 Center Stage 前置摄像头。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone 17,电池,Apple官方不公布mAh容量；官方规格以视频播放/流媒体播放续航时长表述,verified_official_page_reviewed,https://www.apple.com.cn/iphone-17/specs/,Apple 技术规格以续航时长作为电池指标，未公布 mAh 数值。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone 17,充电,USB-C快速充电；支持MagSafe无线充电（功率以官方技术规格页为准）,verified_official_page_reviewed,https://www.apple.com.cn/iphone-17/specs/,官方技术规格页列出快速充电与 MagSafe 充电方式。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone 17,重量,177g,verified_official_page_reviewed,https://www.apple.com.cn/iphone-17/specs/,官方技术规格页尺寸与重量栏列出重量 177 克。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone 17,容量组合,256GB / 512GB,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/,官方发布稿列出 256GB 和 512GB 两种容量。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone 17,正式发布/开售日期,2025年9月10日发布；9月19日正式发售,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/,新闻稿日期为 2025 年 9 月 10 日；中国大陆 9 月 19 日正式发售。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone 17,官方首发起售价,5999,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/,官方发布稿列出起售价 RMB 5999，起步容量 256GB。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone 17 Pro Max,屏幕,6.9 英寸 OLED · 1–120Hz,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/125091,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Apple,iPhone 17 Pro Max,处理器,A19 Pro,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/125091,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Apple,iPhone 17 Pro Max,影像,4800 万主摄 + 4800 万超广角 + 4800 万长焦,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/125091,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Apple,iPhone 17 Pro Max,电池,官方未按 mAh 公布,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/125091,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Apple,iPhone 17 Pro Max,充电,MagSafe 无线充电,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/125091,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Apple,iPhone 17 Pro Max,重量,约 233 g,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/125091,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Apple,iPhone 17 Pro Max,容量组合,"['256GB', '512GB', '1TB']",official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/125091,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Apple,iPhone 17 Pro Max,正式发布/开售日期,2025年09月,official_source_linked_needs_field_confirmation,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17-pro-and-iphone-17-pro-max/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Apple,iPhone 17 Pro Max,官方首发起售价,9999,official_source_linked_needs_field_confirmation,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17-pro-and-iphone-17-pro-max/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Apple,iPhone Air,屏幕,6.5英寸OLED超视网膜XDR；2736×1260；ProMotion最高120Hz,verified_official_page_reviewed,https://www.apple.com.cn/iphone-air/specs/,技术规格列出 6.5 英寸 OLED、2736×1260 及最高 120Hz ProMotion。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone Air,处理器,A19 Pro；另含N1与C1X芯片,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/10/iphone-air-will-be-available-in-china-beginning-october-22/,官方发布稿称搭载 A19 Pro、N1 和 C1X。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone Air,影像,后置4800万像素融合式主摄（支持2倍光学品质长焦）；前置1800万像素Center Stage摄像头,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/10/iphone-air-will-be-available-in-china-beginning-october-22/,官方发布稿列出 4800 万融合式主摄与 1800 万像素 Center Stage 前置摄像头。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone Air,电池,Apple官方不公布mAh容量；官方给出视频播放最长27小时、流媒体视频播放最长22小时,verified_official_page_reviewed,https://www.apple.com.cn/iphone-air/specs/,技术规格列出视频播放最长 27 小时、流媒体视频播放最长 22 小时，未公布 mAh 数值。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone Air,充电,USB-C快速充电；使用20W或更高功率适配器，约30分钟充至50%；支持MagSafe配件,verified_official_page_reviewed,https://www.apple.com.cn/iphone-air/specs/,技术规格列出 20W 或更高功率适配器下约 30 分钟充至 50%。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone Air,重量,165g,verified_official_page_reviewed,https://www.apple.com.cn/iphone-air/specs/,技术规格尺寸与重量栏列出 165 克。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone Air,容量组合,256GB / 512GB / 1TB,verified_official_page_reviewed,https://www.apple.com.cn/iphone-air/specs/,官方技术规格列出 256GB、512GB、1TB。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone Air,正式发布/开售日期,2025年9月发布；中国大陆2025年10月22日正式发售,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/10/iphone-air-will-be-available-in-china-beginning-october-22/,官方新闻稿明确中国大陆 2025 年 10 月 22 日正式发售。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Apple,iPhone Air,官方首发起售价,7999,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/10/iphone-air-will-be-available-in-china-beginning-october-22/,"官方新闻稿列出起售价 RMB 7,999，起步容量 256GB。",本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Honor,荣耀 Magic V5,屏幕,折叠内外双屏；峰值亮度等详细参数待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic-v5-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Honor,荣耀 Magic V5,处理器,骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic-v5-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic V5,影像,全焦段三摄；最高 6400 万像素,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic-v5-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic V5,电池,6100 mAh,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic-v5-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic V5,充电,66W 有线 / 50W 无线,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic-v5-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic V5,重量,约 217 g,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic-v5-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic V5,容量组合,官方容量组合待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic-v5-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Honor,荣耀 Magic V5,正式发布/开售日期,2025年07月02日发布；2025年07月04日开售,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic-v5-launch/,,字段值已在本轮读取的官方页面中核对。
+2025,Honor,荣耀 Magic V5,官方首发起售价,8999,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic-v5-launch/,,字段值已在本轮读取的官方页面中核对。
+2025,Honor,荣耀 Magic8,屏幕,直屏旗舰；具体尺寸与刷新率以官方规格页为准,unverified_value_incomplete,https://www.honor.com/cn/phones/honor-magic8/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Honor,荣耀 Magic8,处理器,第五代骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/phones/honor-magic8/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8,影像,旗舰多摄系统；详细镜头参数以官方规格页为准,unverified_value_incomplete,https://www.honor.com/cn/phones/honor-magic8/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Honor,荣耀 Magic8,电池,7000mAh 以上（系列官方描述）,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/phones/honor-magic8/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8,充电,最高 120W 有线 / 80W 无线（系列官方描述）,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/phones/honor-magic8/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8,重量,官方规格页待复核,unverified_value_incomplete,https://www.honor.com/cn/phones/honor-magic8/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Honor,荣耀 Magic8,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+512GB']",official_source_linked_needs_field_confirmation,https://www.honor.com/cn/phones/honor-magic8/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8,正式发布/开售日期,2025年10月,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic8-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8,官方首发起售价,4499,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic8-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8 Pro,屏幕,6.7 英寸级 OLED · 高刷（以规格页为准）,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/phones/honor-magic8-pro/spec/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8 Pro,处理器,新一代骁龙旗舰平台（按中国版规格核验）,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/phones/honor-magic8-pro/spec/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8 Pro,影像,高像素主摄 + 超广角 + 潜望长焦（以官网为准）,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/phones/honor-magic8-pro/spec/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8 Pro,电池,7200mAh（典型值）/ 7020mAh（额定值）,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic8-launch/,荣耀中国大陆官方发布稿脚注明确典型7200mAh、额定7020mAh。,典型/额定分开记录；中国大陆版。
+2025,Honor,荣耀 Magic8 Pro,充电,最高120W有线 / 最高80W无线（需荣耀原装充电器）,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic8-launch/,荣耀中国大陆官方发布稿列明Magic8 Pro支持120W有线和80W无线超级快充，并提示最高功率需对应荣耀充电器。,保留充电器条件。
+2025,Honor,荣耀 Magic8 Pro,重量,官方规格页待进一步核对,unverified_value_incomplete,https://www.honor.com/cn/phones/honor-magic8-pro/spec/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Honor,荣耀 Magic8 Pro,容量组合,"['12GB+512GB', '16GB+512GB', '16GB+1TB']",official_source_linked_needs_field_confirmation,https://www.honor.com/cn/phones/honor-magic8-pro/spec/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Honor,荣耀 Magic8 Pro,正式发布/开售日期,2025年10月23日正式启售（10月15日发布）,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic8-launch/,荣耀官方发布稿确认2025年10月15日发布、10月23日于官方渠道及合作平台启售。,发布日与正式启售日分开记录。
+2025,Honor,荣耀 Magic8 Pro,官方首发起售价,5699元起；具体RAM/ROM SKU映射未确认,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic8-launch/,荣耀官方发布稿列出Magic8 Pro 5699元起，但未逐档列出存储容量对应价格。,priceCN保持null，不将起售价绑定至某个容量SKU。
+2025,Huawei,HUAWEI Mate 80,屏幕,6.75英寸 OLED；FHD+ 2832×1280；LTPO 1–120Hz,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80/specs/,6.75 英寸；FHD+ 2832×1280；OLED，支持 1–120 Hz LTPO。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80,处理器,麒麟9020,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80/specs/,处理器：麒麟9020。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80,影像,后置：5000万超光变主摄（OIS/RYYB）+4000万超广角+1200万潜望长焦（OIS/RYYB）+第二代红枫原色；前置1300万超广角+3D深感,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80/specs/,官方规格页列出后置三摄、第二代红枫原色摄像头及前置摄像头。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80,电池,5750mAh（典型值）；额定5620mAh,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80/specs/,5750 mAh（典型值）；电池额定容量 5620 mAh。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80,充电,66W有线超级快充+50W无线超级快充；支持5W有线反向充电,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80/specs/,最大 66 W 有线超级快充；支持 50 W 无线超级快充及 5 W 有线反向充电。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80,重量,约217g（含电池）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80/specs/,重量约 217 g（含电池）。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80,容量组合,官方规格页列出12GB/16GB RAM与256GB/512GB ROM；具体组合需按购买指引逐 SKU 核对,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/mate80/specs/,RAM 为 12 GB / 16 GB，ROM 为 256 GB / 512 GB；规格页没有在该处列出所有交叉组合。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80,正式发布/开售日期,2025年11月25日发布；正式开售时间需按购买指引逐 SKU 核对,verified_official_page_reviewed,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,官方新品发布会页面日期为 2025.11.25；未用当前商城页面替代正式开售时间。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80,官方首发起售价,5499,verified_official_page_reviewed,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,华为官方发布会页面标注日期 2025.11.25，并明确列出 HUAWEI Mate 80 ￥5499 起；仅支持机型起售价，不推断各存储 SKU 价格。,官方发布会原文已逐项核对；存储 SKU 组合仍需逐项核实，整机未通过准入。
+2025,Huawei,HUAWEI Mate 80 Pro,屏幕,6.75英寸 OLED；FHD+ 2832×1280；LTPO 1–120Hz,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro/specs/,6.75 英寸；FHD+ 2832×1280；OLED，支持 1–120 Hz LTPO。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro,处理器,麒麟9030（12GB RAM版本）/ 麒麟9030 Pro（16GB RAM版本）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro/specs/,官方规格页按 RAM 版本列出麒麟9030与麒麟9030 Pro。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro,影像,后置：5000万超聚光主摄（OIS/RYYB）+4000万超广角+4800万超聚光微距长焦（OIS）+第二代红枫原色；前置1300万超广角+3D深感,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro/specs/,官方规格页列出后置主摄、超广角、微距长焦及第二代红枫原色摄像头。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro,电池,5750mAh（典型值）；5620mAh（额定值）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro/specs/,华为中国官网规格页明确列出典型容量5750mAh、额定容量5620mAh。,2026-10-17官方中国大陆页面复核。字段状态仅代表该字段证据，不代表整机准入；其他必需字段仍须单独审核。
+2025,Huawei,HUAWEI Mate 80 Pro,充电,最高100W有线超级快充；最高80W无线超级快充,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro/specs/,华为中国官网规格页列出最高100W有线和最高80W无线超级快充，并说明需搭配指定充电套装。,2026-10-17官方中国大陆页面复核。字段状态仅代表该字段证据，不代表整机准入；其他必需字段仍须单独审核。
+2025,Huawei,HUAWEI Mate 80 Pro,重量,约219g（含电池）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro/specs/,重量约 219 g（含电池）。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+1TB']",verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro/specs/,华为中国官网规格页列出12GB/16GB RAM及256GB/512GB/1TB ROM；按大陆销售组合记录。,2026-10-17官方中国大陆页面复核。字段状态仅代表该字段证据，不代表整机准入；其他必需字段仍须单独审核。
+2025,Huawei,HUAWEI Mate 80 Pro,正式发布/开售日期,2025年11月25日发布；精确正式开售日期未由已审官方页确认,official_source_linked_needs_field_confirmation,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,华为官方活动页标注2025-11-25发布，但当前证据未独立确认正式开售日。,不得用发布日代替正式开售日；保留待核状态。
+2025,Huawei,HUAWEI Mate 80 Pro,官方首发起售价,官方活动页起售价6999元；未确认历史首发价及存储SKU映射,official_source_linked_needs_field_confirmation,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,华为发布活动页列出Mate 80 Pro 6999元起，但页面未逐档列出存储容量对应价格；当前产品页价格不等于历史首发价。,priceCN置空并设置unmapped_starting_price_hidden，避免起售价被误读为已核实首发价或指定SKU价格。
+2025,Huawei,HUAWEI Mate 80 Pro Max,屏幕,6.9英寸双层OLED；FHD+ 2848×1320；LTPO 1–120Hz,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro-max/specs/,6.9 英寸双层 OLED；FHD+ 2848×1320；支持 1–120 Hz LTPO。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro Max,处理器,麒麟9030 Pro,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro-max/specs/,处理器：麒麟9030 Pro。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro Max,影像,后置：5000万超高动态主摄+4000万超广角+5000万超聚光微距长焦+5000万超长焦+第二代红枫原色；前置1300万超广角+3D深感,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro-max/specs/,官方规格页列出四颗后置摄像头与第二代红枫原色摄像头。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro Max,电池,6000mAh（典型值）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro-max/specs/,电池容量 6000 mAh（典型值）。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro Max,充电,100W有线超级快充+80W无线超级快充,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro-max/specs/,规格页充电栏列出最大 100 W 有线、80 W 无线超级快充。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro Max,重量,约239g（含电池）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro-max/specs/,重量约 239 g（含电池）。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro Max,容量组合,16GB+512GB / 16GB+1TB,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro-max/specs/,RAM 16 GB；ROM 512 GB / 1 TB。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro Max,正式发布/开售日期,2025年11月25日发布；正式开售时间需按购买指引核验,verified_official_page_reviewed,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,官方发布会页面日期为 2025.11.25。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 Pro Max,官方首发起售价,官网当前起售价 ¥8999（2026-10-17核验；非首发价）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate80-pro-max/,华为中国官网产品页当前显示“¥8999 起”。此为官网页面当前标示的机型起售价，不等于2025年首发价，也不代表所有存储版本售价。,仅核实官网当前页面标示的机型起售价；未核实所有SKU价格。不得替代历史首发价；整机其他字段未全部通过，不得进入排名或推荐。
+2025,Huawei,HUAWEI Mate 80 RS 非凡大师,屏幕,高端 OLED 屏幕；详细参数待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Mate 80 RS 非凡大师,处理器,麒麟 9030 系列（以官方型号页为准）,unverified_value_incomplete,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Mate 80 RS 非凡大师,影像,第二代红枫影像；详细参数待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Mate 80 RS 非凡大师,电池,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Mate 80 RS 非凡大师,充电,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Mate 80 RS 非凡大师,重量,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Mate 80 RS 非凡大师,容量组合,官方容量组合待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Mate 80 RS 非凡大师,正式发布/开售日期,2025年11月,official_source_linked_needs_field_confirmation,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Huawei,HUAWEI Mate 80 RS 非凡大师,官方首发起售价,11999,verified_official_page_reviewed,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,,字段值已在本轮读取的官方页面中核对。
+2025,Huawei,HUAWEI Mate X7,屏幕,内屏8.0英寸 2416×2210；外屏6.49英寸 2444×1080；双屏均支持LTPO 1–120Hz,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate-x7/specs/,官方规格页列出内屏 8 英寸、外屏 6.49 英寸及对应分辨率与 1–120 Hz LTPO。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate X7,处理器,麒麟9030 Pro,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate-x7/specs/,处理器：麒麟9030 Pro。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate X7,影像,后置：5000万超光变主摄+4000万超广角+5000万超聚光微距长焦+第二代红枫原色；前置摄像头参数按规格页,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate-x7/specs/,官方规格页列出后置摄像头系统与第二代红枫原色摄像头。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate X7,电池,标准版5525mAh（典型值，额定5395mAh）；典藏版5600mAh（典型值，额定5470mAh）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate-x7/specs/,官方规格页分别列出标准版与典藏版电池容量。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate X7,充电,支持50W华为无线超级快充；有线充电功率需以规格页相应段落逐版核对,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/mate-x7/specs/,规格页电池充电章节明确支持 50 W 无线超级快充。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate X7,重量,标准版约235g；典藏版约236g（均含电池）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate-x7/specs/,规格页分别列出标准版约 235 g、典藏版约 236 g。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate X7,容量组合,标准版/典藏版存在不同RAM与ROM组合；需按具体版本逐项核对，不把典藏版组合并入标准版,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/mate-x7/specs/,规格页区分标准版和典藏版容量组合；当前数据库应进一步按 SKU 分开。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate X7,正式发布/开售日期,2025年11月25日发布；正式开售时间需按购买指引核验,verified_official_page_reviewed,https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/,官方发布会页面日期为 2025.11.25。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Mate X7,官方首发起售价,官网当前起售价 ¥12999（2026-10-17核验；非首发价）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate-x7/,华为中国官网产品页当前显示“¥12999 起”。此为官网页面当前标示的机型起售价，不代表所有存储版本售价。,仅核实官网当前页面标示的机型起售价；未核实所有SKU价格。不得替代历史首发价；整机其他字段未全部通过，不得进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80,屏幕,6.6英寸 OLED；FHD+ 2760×1256；LTPO 1–120Hz,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80/specs/,6.6 英寸；FHD+ 2760×1256；OLED，支持 1–120 Hz LTPO 自适应刷新率。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80,处理器,官方规格页未列出具体芯片型号，不能据此填入猜测型号,unverified_missing_or_insufficient_official_evidence,https://consumer.huawei.com/cn/phones/pura80/specs/,规格页未列出处理器型号；不根据第三方传闻补写。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80,影像,后置：5000万超聚光主摄（OIS）+1200万潜望长焦（OIS）+1300万超广角+150万多光谱红枫原色；前置1300万超广角,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80/specs/,官方规格页列出后置四摄及前置 1300 万像素超广角摄像头。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80,电池,5600mAh（典型值）；额定5480mAh,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80/specs/,5600 mAh（典型值）；电池额定容量 5480 mAh。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80,充电,66W有线超级快充；50W无线超级快充；支持反向充电,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80/specs/,最大 66 W 华为有线超级快充；支持 50 W 华为无线超级快充。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80,重量,约211g（含电池）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80/specs/,重量约 211 克（含电池）。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80,容量组合,12GB+256GB / 12GB+512GB / 12GB+1TB,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80/specs/,运行内存 12 GB；机身内存 256 GB / 512 GB / 1 TB。官方页分列 RAM/ROM，组合以官方销售 SKU 为准。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80,正式发布/开售日期,2025年6月11日系列发布；标准版7月23日开启预售、7月30日正式开售,unverified_missing_or_insufficient_official_evidence,https://consumer.huawei.com/cn/press/events/2025/huawei-pura-80-series-and-new-product-launch-event/,官方发布会页面日期为 2025.06.11；标准版具体预售/开售日需要独立官方销售公告，暂不将媒体稿升级为官方证据。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80,官方首发起售价,,unverified_missing_or_insufficient_official_evidence,https://consumer.huawei.com/cn/phones/pura80/,官网产品页展示的是当前页面价格，不能替代首发价；本轮未找到明确标注首发价的官方购买指引。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,Huawei,HUAWEI Pura 80 Pro,屏幕,OLED 屏幕；具体参数待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro,处理器,麒麟平台；型号规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro,影像,一英寸主摄 + 超聚光微距长焦,official_source_linked_needs_field_confirmation,https://consumer.huawei.com/cn/phones/pura80-pro/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Huawei,HUAWEI Pura 80 Pro,电池,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro,充电,有线 / 无线充电，详细参数待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro,重量,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro,容量组合,官方容量组合待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro,正式发布/开售日期,2025年06月,official_source_linked_needs_field_confirmation,https://consumer.huawei.com/cn/phones/pura80-pro/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Huawei,HUAWEI Pura 80 Pro,官方首发起售价,6499,official_source_linked_needs_field_confirmation,https://consumer.huawei.com/cn/phones/pura80-pro/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Huawei,HUAWEI Pura 80 Pro+,屏幕,官方规格页待逐项录入,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro+,处理器,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro+,影像,XMAGE 影像；具体参数待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro+,电池,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro+,充电,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro+,重量,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro+,容量组合,官方容量组合待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Pro+,正式发布/开售日期,2025年06月,official_source_linked_needs_field_confirmation,https://consumer.huawei.com/cn/phones/pura80-pro/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Huawei,HUAWEI Pura 80 Pro+,官方首发起售价,,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-pro/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Ultra,屏幕,6.8 英寸 OLED；2848×1276；1–120Hz LTPO,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2025,Huawei,HUAWEI Pura 80 Ultra,处理器,官方规格页未在本批次录入芯片名称,unverified_value_incomplete,https://consumer.huawei.com/cn/phones/pura80-ultra/specs/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Ultra,影像,5000 万一英寸超高动态主摄 + 5000 万超大底长焦 + 1250 万超长焦 + 4000 万超广角 + 红枫原色摄像头,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2025,Huawei,HUAWEI Pura 80 Ultra,电池,5700 mAh 典型值（额定 5580 mAh）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2025,Huawei,HUAWEI Pura 80 Ultra,充电,100W 有线超级快充 / 80W 无线超级快充,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2025,Huawei,HUAWEI Pura 80 Ultra,重量,约 233.5 g,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2025,Huawei,HUAWEI Pura 80 Ultra,容量组合,"['16GB+512GB', '16GB+1TB']",verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2025,Huawei,HUAWEI Pura 80 Ultra,正式发布/开售日期,2025年06月,unverified_missing_or_insufficient_official_evidence,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Huawei,HUAWEI Pura 80 Ultra,官方首发起售价,9999,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/pura80-ultra/,,字段值已在本轮读取的官方页面中核对。
+2025,OPPO,OPPO Find N5,屏幕,内屏8.12英寸 QXGA+ 2480×2248；外屏6.62英寸 FHD+ 2616×1140；均为AMOLED、最高120Hz,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-n/find-n5/specs/,官方规格页列出内外屏尺寸、分辨率及最高 120Hz 刷新率。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find N5,处理器,高通骁龙8至尊版移动平台（7核，最高主频4.32GHz）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-n/find-n5/specs/,官方规格页列出骁龙8至尊版移动平台、7核心、最高主频4.32GHz。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find N5,影像,后置多摄系统；完整镜头参数以OPPO规格页摄像头段为准,unverified_value_incomplete,https://www.oppo.com/cn/smartphones/series-find-n/find-n5/specs/,官方规格页设有后置摄像头与前置摄像头完整参数段。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find N5,电池,典型等效5600mAh；额定等效5475mAh,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-n/find-n5/specs/,官方规格页电池栏列出典型等效 5600 mAh、额定等效 5475 mAh。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find N5,充电,80W有线超级闪充+50W无线闪充,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-n/find-n5/specs/,官方规格页列出 80W 超级闪充及 50W 无线闪充。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find N5,重量,约229g（玉白、缎黑）；约234g（暮紫）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-n/find-n5/specs/,官方规格页按颜色列出约 229 g 与 234 g。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find N5,容量组合,12GB+256GB / 16GB+512GB,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-n/find-n5/specs/,官方规格页列出 16GB+512GB、12GB+256GB。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find N5,正式发布/开售日期,2025年2月20日全球发布/宣布全球上市；中国大陆正式首销日需中国区公告确认,unverified_value_incomplete,https://www.oppo.com/en/newsroom/press/find-n5-global-launch/,OPPO全球发布稿日期为 2025 年 2 月 20 日；该来源不单独证明中国大陆首销日期。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find N5,官方首发起售价,,unverified_missing_or_insufficient_official_evidence,https://www.oppo.com/cn/smartphones/series-find-n/find-n5/specs/,该规格页未提供历史首发价；不以渠道当前售价代替。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8 Ultra,屏幕,6.82英寸AMOLED柔性屏；QHD+ 3168×1440；最高120Hz,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/,官方规格页列出 6.82 英寸、QHD+ 3168×1440、最高 120Hz。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8 Ultra,处理器,高通骁龙8至尊版移动平台（8核，最高主频4.32GHz）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/,官方规格页列出骁龙8至尊版移动平台、8核心、最高主频4.32GHz。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8 Ultra,影像,后置：5000万广角+5000万超广角+5000万长焦+5000万超长焦+200万丹霞原彩；前置3200万,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/,官方规格页列出四颗 5000 万像素摄像头、200 万丹霞原彩镜头及 3200 万前置。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8 Ultra,电池,典型等效6100mAh；额定等效5970mAh,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/,官方规格页列出典型等效 6100 mAh、额定等效 5970 mAh。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8 Ultra,充电,100W有线超级闪充+50W无线闪充；支持10W无线反向充电,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/,官方规格页列出 100W 超级闪充、50W 无线闪充及 10W 无线反向充电。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8 Ultra,重量,约226g,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/,官方规格页重量约 226 克。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8 Ultra,容量组合,12GB+256GB / 16GB+512GB,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/,官方规格页列出 12GB+256GB、16GB+512GB。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8 Ultra,正式发布/开售日期,2025年4月发布；准确发布日期与中国大陆开售日需另以官方发布稿确认,unverified_value_incomplete,https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/,该规格页不承担发布日/首销日证明。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8 Ultra,官方首发起售价,,unverified_missing_or_insufficient_official_evidence,https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/,规格页不提供历史首发价；保留待官方发布稿核验。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2025,OPPO,OPPO Find X8s,屏幕,官方规格页待逐项录入,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s,处理器,官方规格待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s,影像,旗舰影像系统；详细参数待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s,电池,官方规格待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s,充电,官方规格待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s,重量,官方规格待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s,容量组合,官方容量组合待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s,正式发布/开售日期,2025年04月,official_source_linked_needs_field_confirmation,https://support.oppo.com/cn/app0/price-query/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OPPO,OPPO Find X8s,官方首发起售价,,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s+,屏幕,官方规格页待逐项录入,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s+,处理器,官方规格待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s+,影像,旗舰影像系统；详细参数待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s+,电池,官方规格待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s+,充电,官方规格待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s+,重量,官方规格待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s+,容量组合,官方容量组合待复核,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X8s+,正式发布/开售日期,2025年04月,official_source_linked_needs_field_confirmation,https://support.oppo.com/cn/app0/price-query/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OPPO,OPPO Find X8s+,官方首发起售价,,unverified_value_incomplete,https://support.oppo.com/cn/app0/price-query/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OPPO,OPPO Find X9,屏幕,6.59英寸 AMOLED 柔性直屏；FHD+ 2760×1256；最高120Hz,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9/specs/,屏幕尺寸、分辨率和刷新率均列于 OPPO 中国官网产品参数页。,已直接对照 OPPO 中国官网规格页；整机仍需正式发布/开售日期与首发价格等必需字段及整机审核全部通过。
+2025,OPPO,OPPO Find X9,处理器,联发科天玑9500,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9/specs/,官网 Find X9 产品页明确写明搭载天玑9500；对应中国官方规格页型号 PLJ110。,已直接对照 OPPO 中国官网规格页；整机仍需正式发布/开售日期与首发价格等必需字段及整机审核全部通过。
+2025,OPPO,OPPO Find X9,影像,后置5000万广角（OIS）+5000万超广角+5000万长焦（OIS）+丹霞色彩还原镜头；前置3200万像素,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9/specs/,官网参数页列出三颗摄像头的像素、镜头类型和防抖信息；官方产品页列出3200万前置摄像头及丹霞色彩还原镜头。,已直接对照 OPPO 中国官网规格页；整机仍需正式发布/开售日期与首发价格等必需字段及整机审核全部通过。
+2025,OPPO,OPPO Find X9,电池,7025mAh（典型值）；6840mAh（额定值）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9/specs/,官网规格页明确列出7025mAh典型值和6840mAh额定值。,2026-10-17复核：直接对照厂商中国大陆官方规格页/发布稿。该字段核实不等于整机审核通过；首发价、其他关键字段和前端准入仍需独立审核。
+2025,OPPO,OPPO Find X9,充电,最高80W有线超级闪充/80W UFCS；最高50W无线闪充,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9/specs/,官网规格页列出最大支持80W超级闪充、80W UFCS和50W无线闪充。,2026-10-17复核：直接对照厂商中国大陆官方规格页/发布稿。该字段核实不等于整机审核通过；首发价、其他关键字段和前端准入仍需独立审核。
+2025,OPPO,OPPO Find X9,重量,约203g,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9/specs/,官网产品参数页“尺寸与重量”栏目列出约203克。,已直接对照 OPPO 中国官网规格页；整机仍需正式发布/开售日期与首发价格等必需字段及整机审核全部通过。
+2025,OPPO,OPPO Find X9,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+256GB', '16GB+512GB', '16GB+1TB']",verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9/specs/,官网参数页逐项列出五种RAM+ROM组合；补回此前遗漏的16GB+256GB。,2026-10-17复核：直接对照厂商中国大陆官方规格页/发布稿。该字段核实不等于整机审核通过；首发价、其他关键字段和前端准入仍需独立审核。
+2025,OPPO,OPPO Find X9,正式发布/开售日期,2025年10月（官方产品页仅列上市月份；具体大陆开售日未确认）,official_source_linked_needs_field_confirmation,https://store.oppo.com/cn/app/product/index?skuId=36848,OPPO官方商城商品页仅列上市时间为2025年10月；不把全球发布会日期当作中国大陆开售日。,仅核实到上市月份，精确开售日期待官方证据；不做日期推断。
+2025,OPPO,OPPO Find X9,官方首发起售价,,official_source_linked_needs_field_confirmation,https://www.oppo.com/cn/events/find-x9-series-launch/,OPPO 中国官方发布会页面确认 Find X9 系列活动，但页面未提供可直接核对的各存储版本首发价格。,不把媒体报道中的价格当作官方逐项核验结果；首发价继续待核验。
+2025,OPPO,OPPO Find X9 Pro,屏幕,6.78英寸 AMOLED 柔性屏；FHD+ 2772×1272；最高120Hz,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-pro/specs/,尺寸6.78英寸；FHD+ 2772×1272；AMOLED柔性屏；最高支持120Hz刷新率。,本轮直接对照OPPO中国官网规格页；发布日及中国大陆首发价未据此推定，整机仍不通过准入。
+2025,OPPO,OPPO Find X9 Pro,处理器,MediaTek 天玑9500,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-pro/specs/,移动平台：MediaTek 天玑9500，8核心，最高主频4.21GHz。,本轮直接对照OPPO中国官网规格页；发布日及中国大陆首发价未据此推定，整机仍不通过准入。
+2025,OPPO,OPPO Find X9 Pro,影像,后置：5000万广角 + 5000万超广角 + 2亿长焦 + 丹霞色彩还原镜头；前置5000万,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-pro/specs/,官方规格页列出5000万广角、5000万超广角、2亿长焦及丹霞色彩还原镜头；前置5000万像素。,本轮直接对照OPPO中国官网规格页；发布日及中国大陆首发价未据此推定，整机仍不通过准入。
+2025,OPPO,OPPO Find X9 Pro,电池,7500mAh（典型值）；7290mAh（额定值）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-pro/specs/,官网规格页明确列出7500mAh典型值和7290mAh额定值。,2026-10-17复核：直接对照厂商中国大陆官方规格页/发布稿。该字段核实不等于整机审核通过；首发价、其他关键字段和前端准入仍需独立审核。
+2025,OPPO,OPPO Find X9 Pro,充电,最高80W有线超级闪充/80W UFCS；最高50W无线闪充,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-pro/specs/,官网规格页列出最大支持80W超级闪充、80W UFCS和50W无线闪充。,2026-10-17复核：直接对照厂商中国大陆官方规格页/发布稿。该字段核实不等于整机审核通过；首发价、其他关键字段和前端准入仍需独立审核。
+2025,OPPO,OPPO Find X9 Pro,重量,约224g,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-pro/specs/,重量：约224克。,本轮直接对照OPPO中国官网规格页；发布日及中国大陆首发价未据此推定，整机仍不通过准入。
+2025,OPPO,OPPO Find X9 Pro,容量组合,12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-pro/specs/,运行内存与机身存储组合：12GB+256GB、12GB+512GB、16GB+512GB、16GB+1TB。,本轮直接对照OPPO中国官网规格页；发布日及中国大陆首发价未据此推定，整机仍不通过准入。
+2025,OPPO,OPPO Find X9 Pro,正式发布/开售日期,2025年10月（官方产品页仅列上市月份；具体大陆开售日未确认）,official_source_linked_needs_field_confirmation,https://store.oppo.com/cn/app/product/index?skuId=36848,OPPO官方商城商品页仅列上市时间为2025年10月；不把全球发布会日期当作中国大陆开售日。,仅核实到上市月份，精确开售日期待官方证据；不做日期推断。
+2025,OPPO,OPPO Find X9 Pro,官方首发起售价,,official_source_linked_needs_field_confirmation,https://www.oppo.com/cn/events/find-x9-series-launch/,OPPO 中国官方发布会页面确认 Find X9 系列活动，但页面未提供可直接核对的各存储版本首发价格。,不把媒体报道中的价格当作官方逐项核验结果；首发价继续待核验。
+2025,OnePlus,一加 13T,屏幕,小屏 OLED；详细参数待复核,unverified_value_incomplete,https://www.oneplus.com/cn/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OnePlus,一加 13T,处理器,骁龙 8 至尊版（规格需官方页复核）,unverified_value_incomplete,https://www.oneplus.com/cn/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OnePlus,一加 13T,影像,后置双摄；详细参数待复核,unverified_value_incomplete,https://www.oneplus.com/cn/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OnePlus,一加 13T,电池,官方规格待复核,unverified_value_incomplete,https://www.oneplus.com/cn/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OnePlus,一加 13T,充电,有线快充，具体参数待复核,unverified_value_incomplete,https://www.oneplus.com/cn/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OnePlus,一加 13T,重量,官方规格待复核,unverified_value_incomplete,https://www.oneplus.com/cn/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OnePlus,一加 13T,容量组合,官方容量组合待复核,unverified_value_incomplete,https://www.oneplus.com/cn/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OnePlus,一加 13T,正式发布/开售日期,2025年04月,official_source_linked_needs_field_confirmation,https://www.oneplus.com/cn/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OnePlus,一加 13T,官方首发起售价,,unverified_value_incomplete,https://www.oneplus.com/cn/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OnePlus,一加 15,屏幕,6.78 英寸 AMOLED · 165Hz · 2772×1272,official_source_linked_needs_field_confirmation,https://www.oneplus.com/cn/15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OnePlus,一加 15,处理器,第五代骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.oneplus.com/cn/15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OnePlus,一加 15,影像,5000 万主摄 + 5000 万超广角 + 5000 万长焦,official_source_linked_needs_field_confirmation,https://www.oneplus.com/cn/15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OnePlus,一加 15,电池,7300mAh（典型值）,official_source_linked_needs_field_confirmation,https://www.oneplus.com/cn/15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OnePlus,一加 15,充电,120W 有线 / 50W 无线,official_source_linked_needs_field_confirmation,https://www.oneplus.com/cn/15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OnePlus,一加 15,重量,约 211–215 g（配色/版本以官方参数为准）,unverified_value_incomplete,https://www.oneplus.com/cn/15,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,OnePlus,一加 15,容量组合,"['12GB+256GB', '16GB+256GB', '12GB+512GB', '16GB+512GB', '16GB+1TB']",official_source_linked_needs_field_confirmation,https://www.oneplus.com/cn/15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OnePlus,一加 15,正式发布/开售日期,2025年10月,official_source_linked_needs_field_confirmation,https://www.oneplus.com/cn/15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,OnePlus,一加 15,官方首发起售价,3999,unverified_missing_or_insufficient_official_evidence,https://www.ithome.com/0/892/832.htm,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy S25,屏幕,6.2 英寸（直角）/6.0 英寸（圆角）；FHD+ 2340×1080；第二代动态 AMOLED，最高 120Hz,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-sm-s9310dbgchc/,规格页列出屏幕尺寸 6.2/6.0 英寸、FHD+ 2340×1080、第二代动态 AMOLED、最高 120Hz。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25,处理器,骁龙 8 至尊版移动平台（for Galaxy）,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿明确列出骁龙 8 至尊版移动平台（for Galaxy）。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25,影像,后置 5000 万广角（F1.8）+1000 万长焦（F2.4，3 倍光学变焦）+1200 万超广角（F2.2）；前置 1200 万（F2.2）,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-sm-s9310dbgchc/,三星商务中国官方规格页列出后置 5000 万+1000 万+1200 万像素、光圈与 3 倍光学变焦；前置 1200 万像素。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25,电池,4000mAh（典型值）；额定容量 3885mAh,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-sm-s9310dbgchc/,三星官方规格页列出典型容量 4000mAh；官方注释列出额定容量（最小）3885mAh。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25,充电,有线快充 / 无线充电,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Samsung,Galaxy S25,重量,162g,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-sm-s9310dbgchc/,三星商务中国官方规格页物理规格栏列出重量 162g。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25,容量组合,12GB+256GB / 12GB+512GB,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿列出 12GB+256GB 和 12GB+512GB 两种存储规格。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25,正式发布/开售日期,2025年2月11日中国发布；2025年2月14日全渠道正式开售,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿标注 2025 年 2 月 11 日中国发布，并明确 2 月 14 日全渠道正式开售。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25,官方首发起售价,5999,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿列明 Galaxy S25 建议零售价 5999 元起。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25 Ultra,屏幕,6.9 英寸（直角）/6.8 英寸（圆角）；QHD+ 3120×1440；第二代动态 AMOLED，最高 120Hz,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-ultra-sm-s9380zsdchc/,三星商务中国规格页列出 6.9/6.8 英寸、3120×1440（Quad HD+）、第二代动态 AMOLED、最高 120Hz。,本轮已逐项对照中国大陆厂商官方规格页/发布稿；整机资格仍关闭，直到前端准入过滤通过端到端测试。
+2025,Samsung,Galaxy S25 Ultra,处理器,骁龙 8 至尊版移动平台（for Galaxy）,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿明确说明 Galaxy S25 系列搭载骁龙 8 至尊版移动平台（for Galaxy）。,本轮已逐项对照中国大陆厂商官方规格页/发布稿；整机资格仍关闭，直到前端准入过滤通过端到端测试。
+2025,Samsung,Galaxy S25 Ultra,影像,后置 2 亿主摄（F1.7）+5000 万超广角（F1.9）+5000 万长焦（F3.4，5 倍光学变焦）+1000 万长焦（F2.4，3 倍光学变焦）；前置 1200 万（F2.2）,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-ultra-sm-s9380zsdchc/,三星商务中国规格页列出后置 2 亿+5000 万+5000 万+1000 万像素、对应光圈与 3 倍/5 倍光学变焦，前置 1200 万像素。,本轮已逐项对照中国大陆厂商官方规格页/发布稿；整机资格仍关闭，直到前端准入过滤通过端到端测试。
+2025,Samsung,Galaxy S25 Ultra,电池,5000mAh（典型值）；额定容量 4855mAh,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-ultra-sm-s9380zsdchc/,三星商务中国规格页列出电池典型容量 5000mAh；页面脚注说明 Galaxy S25 Ultra 额定容量（最小）为 4855mAh。,本轮已逐项对照中国大陆厂商官方规格页/发布稿；整机资格仍关闭，直到前端准入过滤通过端到端测试。
+2025,Samsung,Galaxy S25 Ultra,充电,有线超级快充 2.0（45W）；支持无线充电（本轮未找到足以确认无线充电额定功率的官方证据）,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s25-ultra/accessories/,三星中国官方配件页明确说明 SFC 2.0（45W）支持 Galaxy S25 Ultra；该证据未确认无线充电功率，因此数据中不再保留未经同等证据确认的“15W无线”数值。,本轮已逐项对照中国大陆厂商官方规格页/发布稿；整机资格仍关闭，直到前端准入过滤通过端到端测试。
+2025,Samsung,Galaxy S25 Ultra,重量,218g,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-ultra-sm-s9380zsdchc/,三星商务中国规格页“物理规格”列出重量 218g。,本轮已逐项对照中国大陆厂商官方规格页/发布稿；整机资格仍关闭，直到前端准入过滤通过端到端测试。
+2025,Samsung,Galaxy S25 Ultra,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+1TB']",verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿列出 S25 Ultra 至高 16GB+1TB；官方规格页列出 12GB+256GB、12GB+512GB、16GB+1TB 三种配置。,本轮已逐项对照中国大陆厂商官方规格页/发布稿；整机资格仍关闭，直到前端准入过滤通过端到端测试。
+2025,Samsung,Galaxy S25 Ultra,正式发布/开售日期,2025年2月11日中国发布；2025年2月14日全渠道正式开售,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿写明 2025年2月11日面向中国市场正式推出，并写明 2月14日全渠道正式开售。,本轮已逐项对照中国大陆厂商官方规格页/发布稿；整机资格仍关闭，直到前端准入过滤通过端到端测试。
+2025,Samsung,Galaxy S25 Ultra,官方首发起售价,9699,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿列出 Galaxy S25 Ultra 建议零售价 9699 元起；此处记录中国大陆首发建议零售价，不代表当前成交价。,本轮已逐项对照中国大陆厂商官方规格页/发布稿；整机资格仍关闭，直到前端准入过滤通过端到端测试。
+2025,Samsung,Galaxy S25+,屏幕,6.7 英寸（直角）/6.5 英寸（圆角）；QHD+ 3120×1440；第二代动态 AMOLED，最高 120Hz,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-plus-sm-s9360lgdchc/,三星商务中国官方规格页列出屏幕尺寸 6.7/6.5 英寸、QHD+ 3120×1440、第二代动态 AMOLED、最高 120Hz。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25+,处理器,骁龙 8 至尊版移动平台（for Galaxy）,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿明确列出骁龙 8 至尊版移动平台（for Galaxy）。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25+,影像,后置 5000 万广角（F1.8）+1000 万长焦（F2.4，3 倍光学变焦）+1200 万超广角（F2.2）；前置 1200 万（F2.2）,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-plus-sm-s9360lgdchc/,三星商务中国官方规格页列出后置 5000 万+1000 万+1200 万像素、光圈与 3 倍光学变焦；前置 1200 万像素。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25+,电池,4900mAh（典型值）；额定容量 4755mAh,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-plus-sm-s9360lgdchc/,三星官方规格页列出典型容量 4900mAh；官方注释列出额定容量（最小）4755mAh。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25+,充电,有线快充 / 无线充电,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Samsung,Galaxy S25+,重量,190g,verified_official_page_reviewed,https://www.samsung.com.cn/business/smartphones/galaxy-s/galaxy-s25-plus-sm-s9360lgdchc/,三星商务中国官方规格页物理规格栏列出重量 190g。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25+,容量组合,12GB+256GB / 12GB+512GB,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿列出 12GB+256GB 和 12GB+512GB 两种存储规格。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25+,正式发布/开售日期,2025年2月11日中国发布；2025年2月14日全渠道正式开售,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿标注 2025 年 2 月 11 日中国发布，并明确 2 月 14 日全渠道正式开售。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy S25+,官方首发起售价,6999,verified_official_page_reviewed,https://www.samsung.com.cn/news/product/galaxy-s25-ai/,三星中国官方发布稿列明 Galaxy S25+ 建议零售价 6999 元起。,本轮已逐项对照三星中国官方发布稿或中国大陆官方规格页；整机仍有充电字段未通过，不能进入排名/推荐。
+2025,Samsung,Galaxy Z Flip7,屏幕,折叠内屏/外屏；以官方规格页为准,unverified_value_incomplete,https://www.samsung.com.cn/offer/galaxy-foldable2025/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Flip7,处理器,Exynos 系列平台（中国版待核验）,unverified_value_incomplete,https://www.samsung.com.cn/offer/galaxy-foldable2025/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Flip7,影像,双摄系统；具体参数待复核,unverified_value_incomplete,https://www.samsung.com.cn/offer/galaxy-foldable2025/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Flip7,电池,4300mAh（典型值）；4174mAh（额定/最小值）,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-z-flip7/specs/,三星中国官网注明4300mAh典型值，额定容量（最小）为4174mAh。,2026-10-17官方中国大陆页面复核。字段状态仅代表该字段证据，不代表整机准入；其他必需字段仍须单独审核。
+2025,Samsung,Galaxy Z Flip7,充电,有线 / 无线充电，参数待复核,unverified_value_incomplete,https://www.samsung.com.cn/offer/galaxy-foldable2025/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Flip7,重量,官方规格待复核,unverified_value_incomplete,https://www.samsung.com.cn/offer/galaxy-foldable2025/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Flip7,容量组合,"['12GB+256GB', '12GB+512GB']",verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-z-flip7/specs/,三星中国官网规格页列出12GB+256GB与12GB+512GB两种版本。,2026-10-17官方中国大陆页面复核。字段状态仅代表该字段证据，不代表整机准入；其他必需字段仍须单独审核。
+2025,Samsung,Galaxy Z Flip7,正式发布/开售日期,2025年07月,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/offer/galaxy-foldable2025/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Samsung,Galaxy Z Flip7,官方首发起售价,,unverified_value_incomplete,https://www.samsung.com.cn/offer/galaxy-foldable2025/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Fold7,屏幕,折叠内屏/外屏；以官方规格页为准,unverified_value_incomplete,https://www.samsung.com.cn/news/product/z-fold7/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Fold7,处理器,骁龙 8 Elite for Galaxy,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/news/product/z-fold7/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Samsung,Galaxy Z Fold7,影像,旗舰多摄；具体参数待复核,unverified_value_incomplete,https://www.samsung.com.cn/news/product/z-fold7/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Fold7,电池,4400mAh（典型值；额定容量本轮未确认）,unverified_value_incomplete,https://www.samsung.com.cn/smartphones/galaxy-z-fold7/specs/,三星中国官网确认4400mAh典型值；额定容量未在本轮读取的官方中国页面中确认，故字段整体仍待核。,2026-10-17官方中国大陆页面复核。字段状态仅代表该字段证据，不代表整机准入；其他必需字段仍须单独审核。
+2025,Samsung,Galaxy Z Fold7,充电,有线 / 无线充电，参数待复核,unverified_value_incomplete,https://www.samsung.com.cn/news/product/z-fold7/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Fold7,重量,官方规格待复核,unverified_value_incomplete,https://www.samsung.com.cn/news/product/z-fold7/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Samsung,Galaxy Z Fold7,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+1TB']",verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-z-fold7/specs/,三星中国官网规格页列出12GB+256GB、12GB+512GB、16GB+1TB三种版本。,2026-10-17官方中国大陆页面复核。字段状态仅代表该字段证据，不代表整机准入；其他必需字段仍须单独审核。
+2025,Samsung,Galaxy Z Fold7,正式发布/开售日期,2025年07月,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/news/product/z-fold7/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Samsung,Galaxy Z Fold7,官方首发起售价,13999,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/news/product/z-fold7/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,MIX Flip 2,屏幕,折叠内屏/外屏；详细规格待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,MIX Flip 2,处理器,骁龙 8 至尊版（规格需官方页复核）,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,MIX Flip 2,影像,徕卡双摄；详细规格待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,MIX Flip 2,电池,官方规格待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,MIX Flip 2,充电,有线 / 无线充电，详细规格待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,MIX Flip 2,重量,官方规格待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,MIX Flip 2,容量组合,官方容量组合待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,MIX Flip 2,正式发布/开售日期,2025年06月,official_source_linked_needs_field_confirmation,https://www.mi.com/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,MIX Flip 2,官方首发起售价,,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,REDMI K90 Pro Max,屏幕,旗舰 OLED 屏；详细参数以官方规格页为准,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,REDMI K90 Pro Max,处理器,旗舰级移动平台；型号以官方规格页为准,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,REDMI K90 Pro Max,影像,旗舰多摄系统；详细镜头参数以官方规格页为准,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,REDMI K90 Pro Max,电池,官方规格页待录入,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,REDMI K90 Pro Max,充电,官方规格页待录入,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,REDMI K90 Pro Max,重量,官方规格页待录入,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,REDMI K90 Pro Max,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+512GB']",official_source_linked_needs_field_confirmation,https://www.mi.com/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,REDMI K90 Pro Max,正式发布/开售日期,2025年10月,official_source_linked_needs_field_confirmation,https://ir.mi.com/static-files/e4830480-8ce9-45f8-a09d-64e40b2bdfac,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,REDMI K90 Pro Max,官方首发起售价,3999,official_source_linked_needs_field_confirmation,https://ir.mi.com/static-files/e4830480-8ce9-45f8-a09d-64e40b2bdfac,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro,屏幕,6.3 英寸 OLED · 后置动态副屏,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro,处理器,第五代骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro,影像,徕卡三摄；具体组合以官方规格页为准,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,Xiaomi 17 Pro,电池,官方页面待复核,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,Xiaomi 17 Pro,充电,官方页面待复核,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,Xiaomi 17 Pro,重量,官方页面待复核,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,Xiaomi 17 Pro,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+512GB', '16GB+1TB']",official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro,正式发布/开售日期,2025年09月,official_source_linked_needs_field_confirmation,https://ir.mi.com/static-files/e4830480-8ce9-45f8-a09d-64e40b2bdfac,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro,官方首发起售价,4999,official_source_linked_needs_field_confirmation,https://ir.mi.com/static-files/e4830480-8ce9-45f8-a09d-64e40b2bdfac,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro Max,屏幕,大屏 OLED · 后置动态副屏,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro Max,处理器,第五代骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro Max,影像,徕卡三摄；具体组合以官方规格页为准,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,Xiaomi 17 Pro Max,电池,官方页面待复核,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,Xiaomi 17 Pro Max,充电,官方页面待复核,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,Xiaomi 17 Pro Max,重量,官方页面待复核,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,Xiaomi 17 Pro Max,容量组合,"['12GB+512GB', '16GB+512GB', '16GB+1TB']",official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro Max,正式发布/开售日期,2025年09月,official_source_linked_needs_field_confirmation,https://ir.mi.com/static-files/e4830480-8ce9-45f8-a09d-64e40b2bdfac,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,Xiaomi 17 Pro Max,官方首发起售价,5999,official_source_linked_needs_field_confirmation,https://ir.mi.com/static-files/e4830480-8ce9-45f8-a09d-64e40b2bdfac,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15 Ultra,屏幕,6.73 英寸 WQHD+ AMOLED · 3200×1440 · 1–120Hz,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-15-ultra/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15 Ultra,处理器,骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-15-ultra/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15 Ultra,影像,徕卡四摄 · 1 英寸级主摄 + 2 亿像素潜望长焦,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-15-ultra/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15 Ultra,电池,6000mAh（中国版）,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-15-ultra/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15 Ultra,充电,90W 有线 / 80W 无线,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-15-ultra/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15 Ultra,重量,约 226–229 g（配色不同）,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-15-ultra/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15 Ultra,容量组合,"['12GB+256GB', '16GB+512GB', '16GB+1TB']",official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-15-ultra/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15 Ultra,正式发布/开售日期,2025年02月,unverified_missing_or_insufficient_official_evidence,https://m.ithome.com/html/834153.htm,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 15 Ultra,官方首发起售价,6499,unverified_missing_or_insufficient_official_evidence,https://m.ithome.com/html/834153.htm,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 15S Pro,屏幕,6.73 英寸 OLED（详细规格待复核）,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 15S Pro,处理器,玄戒 O1,official_source_linked_needs_field_confirmation,https://www.mi.com/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15S Pro,影像,徕卡影像系统；具体参数待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 15S Pro,电池,官方规格页待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 15S Pro,充电,有线 / 无线充电，具体参数待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 15S Pro,重量,官方规格页待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 15S Pro,容量组合,官方容量组合待复核,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 15S Pro,正式发布/开售日期,2025年05月,official_source_linked_needs_field_confirmation,https://www.mi.com/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 15S Pro,官方首发起售价,,unverified_value_incomplete,https://www.mi.com/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 17,屏幕,6.3 英寸 OLED · 1–120Hz,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-17/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17,处理器,第五代骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-17/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17,影像,徕卡三摄 · 主摄 + 超广角 + 长焦,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-17/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17,电池,官方容量依版本/地区核对,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-17/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17,充电,有线快充 / 无线充电,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-17/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17,重量,约 191 g（部分市场版本）,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-17/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+512GB']",official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-17/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17,正式发布/开售日期,2025年09月,unverified_missing_or_insufficient_official_evidence,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,Xiaomi,小米 17,官方首发起售价,4499,official_source_linked_needs_field_confirmation,https://www.mi.com/xiaomi-17/specs,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17 Ultra,屏幕,6.9 英寸 Xiaomi HyperRGB OLED · 2608×1200 · 1–120Hz,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?product_id=1230801368,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17 Ultra,处理器,第五代骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?product_id=1230801368,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17 Ultra,影像,徕卡 1 英寸主摄 + 2 亿像素连续光学变焦长焦 + 5000 万超广角,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?product_id=1230801368,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17 Ultra,电池,6800mAh（典型值）,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?product_id=1230801368,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17 Ultra,充电,90W 有线 / 50W 无线,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?product_id=1230801368,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17 Ultra,重量,约 218–219 g（配色不同）,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?product_id=1230801368,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17 Ultra,容量组合,"['12GB+512GB', '16GB+512GB', '16GB+1TB']",official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?product_id=1230801368,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17 Ultra,正式发布/开售日期,2025年12月,official_source_linked_needs_field_confirmation,https://www.mi.com/global/discover/article?id=5825,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,Xiaomi,小米 17 Ultra,官方首发起售价,6999,official_source_linked_needs_field_confirmation,https://www.mi.com/global/discover/article?id=5825,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,iQOO,iQOO 15,屏幕,2K OLED · 高刷新率,official_source_linked_needs_field_confirmation,https://www.iqoo.com/en/products/iqoo-15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,iQOO,iQOO 15,处理器,第五代骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.iqoo.com/en/products/iqoo-15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,iQOO,iQOO 15,影像,5000 万主摄 + 5000 万 3× 潜望长焦；完整组合以官方规格页为准,unverified_value_incomplete,https://www.iqoo.com/en/products/iqoo-15,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,iQOO,iQOO 15,电池,7000mAh,official_source_linked_needs_field_confirmation,https://www.iqoo.com/en/products/iqoo-15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,iQOO,iQOO 15,充电,官方规格页待复核,unverified_value_incomplete,https://www.iqoo.com/en/products/iqoo-15,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,iQOO,iQOO 15,重量,官方规格页待复核,unverified_value_incomplete,https://www.iqoo.com/en/products/iqoo-15,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,iQOO,iQOO 15,容量组合,"['12GB+256GB', '16GB+512GB', '16GB+1TB']",official_source_linked_needs_field_confirmation,https://www.iqoo.com/en/products/iqoo-15,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,iQOO,iQOO 15,正式发布/开售日期,2025年10月,unverified_missing_or_insufficient_official_evidence,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,iQOO,iQOO 15,官方首发起售价,,unverified_value_incomplete,https://www.iqoo.com/en/products/iqoo-15,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,realme,真我 GT8 Pro,屏幕,6.79英寸 QHD+ 3136×1440 AMOLED · 最高144Hz,verified_official_page_reviewed,https://www.realme.com/cn/realme-gt-8-pro/specs,6.79英寸QHD+ 3136×1440 AMOLED；最高144Hz,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2025,realme,真我 GT8 Pro,处理器,第五代骁龙8至尊版,verified_official_page_reviewed,https://www.realme.com/cn/realme-gt-8-pro/specs,第五代骁龙8至尊版移动平台，最高主频4.60GHz,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2025,realme,真我 GT8 Pro,影像,5000万理光GR主摄 + 5000万超广角 + 2亿长焦,verified_official_page_reviewed,https://www.realme.com/cn/realme-gt-8-pro/specs,5000万理光GR主摄 + 5000万超广角 + 2亿长焦；前置3200万,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2025,realme,真我 GT8 Pro,电池,7000mAh等效容量（典型值；额定等效6850mAh）,verified_official_page_reviewed,https://www.realme.com/cn/realme-gt-8-pro/specs,双3500mAh典型值，等效7000mAh；额定等效6850mAh,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2025,realme,真我 GT8 Pro,充电,120W有线闪充 + 50W无线闪充,verified_official_page_reviewed,https://www.realme.com/cn/realme-gt-8-pro/specs,120W有线超级闪充；50W无线闪充,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2025,realme,真我 GT8 Pro,重量,约214–218g（随配色版本不同）,verified_official_page_reviewed,https://www.realme.com/cn/realme-gt-8-pro/specs,颜色版本不同，约214g或218g,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2025,realme,真我 GT8 Pro,容量组合,12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB / 16GB+1TB,verified_official_page_reviewed,https://www.realme.com/cn/realme-gt-8-pro/specs,12GB+256GB、12GB+512GB、16GB+256GB、16GB+512GB、16GB+1TB,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2025,realme,真我 GT8 Pro,正式发布/开售日期,2025年10月,unverified_missing_or_insufficient_official_evidence,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,realme,真我 GT8 Pro,官方首发起售价,,unverified_value_incomplete,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2025,vivo,vivo X200 Ultra,屏幕,6.82 英寸 OLED；分辨率/刷新率需按规格页完整录入,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x200ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,vivo,vivo X200 Ultra,处理器,骁龙 8 至尊版移动平台,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x200ultra,,字段值已在本轮读取的官方页面中核对。
+2025,vivo,vivo X200 Ultra,影像,专业影像系统，包含主摄/超广角/多焦段长焦,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x200ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,vivo,vivo X200 Ultra,电池,官方详情页待进一步录入,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x200ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,vivo,vivo X200 Ultra,充电,官方详情页待进一步录入,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x200ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,vivo,vivo X200 Ultra,重量,约 232 g（黑Ka、红圈）；约 229 g（银调）,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x200ultra,,字段值已在本轮读取的官方页面中核对。
+2025,vivo,vivo X200 Ultra,容量组合,"['12GB+256GB', '16GB+512GB', '16GB+1TB 卫星通信版']",verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x200ultra,,字段值已在本轮读取的官方页面中核对。
+2025,vivo,vivo X200 Ultra,正式发布/开售日期,2025年04月,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x200ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,vivo,vivo X200 Ultra,官方首发起售价,6499,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x200ultra,,字段值已在本轮读取的官方页面中核对。
+2025,vivo,vivo X300,屏幕,6.31 英寸 AMOLED，2640×1216，1–120Hz,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300,官方规格页：6.31 英寸 AMOLED，2640×1216，刷新率 1–120Hz。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300,处理器,联发科天玑 9500,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300,官方规格页列明 CPU 型号为天玑 9500。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300,影像,后置 2 亿像素蔡司超级主摄 + 5000 万像素蔡司 APO 超级长焦 + 5000 万像素蔡司超视野超广角；前置 5000 万像素,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300,官方规格页列明 2 亿像素蔡司超级主摄、5000 万蔡司 APO 超级长焦及 5000 万蔡司超视野超广角。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300,电池,6040mAh（典型值）/ 5925mAh（额定值）,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300,官方规格页：典型容量 6040mAh（3.77V），额定容量 5925mAh（3.77V）。,典型容量和额定容量分别保存；不将电芯能量换算成另一容量。
+2025,vivo,vivo X300,充电,90W 有线闪充 / 40W 无线闪充,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300,官方规格页列明 90W 有线闪充及 40W 无线闪充。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300,重量,约 190 g（以官方规格页为准）,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300,官方规格页物理规格栏列明机身重量。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300,容量组合,"['12GB+256GB', '16GB+256GB', '12GB+512GB', '16GB+512GB', '16GB+1TB']",verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300,官网建议零售价区列出五种RAM+ROM组合；修正此前遗漏的16GB+256GB。,2026-10-17复核：直接对照厂商中国大陆官方规格页/发布稿。该字段核实不等于整机审核通过；首发价、其他关键字段和前端准入仍需独立审核。
+2025,vivo,vivo X300,正式发布/开售日期,2025-10-13发布；2025-10-17开售,verified_official_page_reviewed,https://www.vivo.com.cn/brand/news/detail?id=1336,vivo官方发布稿确认10月13日发布，X300系列于10月17日正式开售。,2026-10-17复核：直接对照厂商中国大陆官方规格页/发布稿。该字段核实不等于整机审核通过；首发价、其他关键字段和前端准入仍需独立审核。
+2025,vivo,vivo X300,官方首发起售价,4399,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/brand/news/detail?id=1336,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,vivo,vivo X300 Pro,屏幕,6.78 英寸 AMOLED，2800×1260，1–120Hz,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300pro,官方规格页：6.78 英寸 AMOLED，2800×1260，刷新率 1–120Hz。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300 Pro,处理器,联发科天玑 9500,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300pro,官方规格页列明 CPU 型号为天玑 9500。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300 Pro,影像,后置 5000 万像素主摄 + 5000 万像素超广角 + 2 亿像素蔡司 APO 超级长焦；前置 5000 万像素,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300pro,官方规格页列明蔡司 APO 2 亿像素超级长焦及完整后摄组合。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300 Pro,电池,6510mAh（典型值）/ 6375mAh（额定值）,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300pro,官方规格页：典型容量 6510mAh（3.77V），额定容量 6375mAh（3.77V）。,典型容量和额定容量分别保存。
+2025,vivo,vivo X300 Pro,充电,90W 有线闪充 / 40W 无线闪充,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300pro,官方规格页列明 90W 有线闪充及 40W 无线闪充。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300 Pro,重量,约 226 g,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300pro,官方规格页物理规格栏列明机身重量 226g。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300 Pro,容量组合,标准版：12GB+256GB、16GB+512GB、16GB+1TB；卫星通信版配置另列,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300pro,官网将标准版和卫星通信版分列；标准版三种组合、卫星通信版另有组合，摄影师套装需单独识别。,2026-10-17复核：直接对照厂商中国大陆官方规格页/发布稿。该字段核实不等于整机审核通过；首发价、其他关键字段和前端准入仍需独立审核。
+2025,vivo,vivo X300 Pro,正式发布/开售日期,2025-10-13发布；2025-10-17开售,verified_official_page_reviewed,https://www.vivo.com.cn/brand/news/detail?id=1336,vivo官方发布稿确认10月13日发布，X300 Pro于10月17日开售。,2026-10-17复核：直接对照厂商中国大陆官方规格页/发布稿。该字段核实不等于整机审核通过；首发价、其他关键字段和前端准入仍需独立审核。
+2025,vivo,vivo X300 Pro,官方首发起售价,12GB+256GB：5299元（标准版起售价；非当前价）,verified_official_page_reviewed,https://www.vivo.com.cn/brand/news/detail?id=1336,官方发布稿列明vivo X300 Pro 12GB+256GB售价5299元，并列出其他配置价格。,本轮直接对照vivo中国官网对应规格页或官方发布稿；整机准入仍需全部字段及前端执行链路通过。
+2026,Apple,iPhone 18 Pro,屏幕,6.3 英寸 OLED · ProMotion 自适应刷新率,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148590,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro,处理器,A20 Pro,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148590,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro,影像,4800 万像素融合式可变光圈主摄 + 超广角 + 长焦,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148590,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro,电池,官方未按 mAh 公布；视频播放最长约 34 小时,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148590,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro,充电,USB-C 快充 / MagSafe,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148590,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro,重量,官方页面待核验,unverified_value_incomplete,https://support.apple.com/zh-cn/148590,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Apple,iPhone 18 Pro,容量组合,"['256GB', '512GB', '1TB', '2TB']",official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148590,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro,正式发布/开售日期,2026年09月,official_source_linked_needs_field_confirmation,https://www.apple.com.cn/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro,官方首发起售价,9999,official_source_linked_needs_field_confirmation,https://www.apple.com.cn/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro Max,屏幕,6.9 英寸 OLED · ProMotion 自适应刷新率,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148591,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro Max,处理器,A20 Pro,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148591,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro Max,影像,4800 万像素融合式可变光圈主摄 + 超广角 + 长焦,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148591,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro Max,电池,官方未按 mAh 公布；视频播放最长约 43 小时,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148591,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro Max,充电,USB-C 快充 / MagSafe,official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148591,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro Max,重量,官方页面待核验,unverified_value_incomplete,https://support.apple.com/zh-cn/148591,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Apple,iPhone 18 Pro Max,容量组合,"['256GB', '512GB', '1TB', '2TB']",official_source_linked_needs_field_confirmation,https://support.apple.com/zh-cn/148591,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro Max,正式发布/开售日期,2026年09月,official_source_linked_needs_field_confirmation,https://www.apple.com.cn/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Apple,iPhone 18 Pro Max,官方首发起售价,10999,official_source_linked_needs_field_confirmation,https://www.apple.com.cn/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Honor,荣耀 Magic V6,屏幕,折叠内外双屏；详细参数待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic-v6-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic V6,处理器,旗舰平台；型号规格待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic-v6-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic V6,影像,旗舰影像系统；详细参数待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic-v6-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic V6,电池,7000mAh 以上（官方发布稿）,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic-v6-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Honor,荣耀 Magic V6,充电,官方规格待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic-v6-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic V6,重量,官方规格待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic-v6-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic V6,容量组合,官方容量组合待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic-v6-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic V6,正式发布/开售日期,2026年03月,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic-v6-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Honor,荣耀 Magic V6,官方首发起售价,8999,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic-v6-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Honor,荣耀 Magic9,屏幕,官方规格页待逐项录入,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic9-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic9,处理器,第五代骁龙8至尊版,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic9-launch/,发布稿列明第五代骁龙8至尊版移动平台,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,Honor,荣耀 Magic9,影像,阿莱电影Live + 2亿变焦闪光人像（完整镜头参数待规格页）,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic9-launch/,发布稿列明2亿变焦闪光人像、阿莱电影Live；具体传感器组合待规格页,官方来源仅支持部分描述；精确参数仍待核验。
+2026,Honor,荣耀 Magic9,电池,8000mAh,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic9-launch/,发布稿列明8000mAh新一代青海湖电池,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,Honor,荣耀 Magic9,充电,80W有线 + 50W无线快充,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic9-launch/,发布稿列明80W有线超级快充和50W无线超级快充,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,Honor,荣耀 Magic9,重量,官方规格待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic9-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic9,容量组合,官方容量组合待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic9-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic9,正式发布/开售日期,2026年9月28日发布并开售,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic9-launch/,2026年9月28日发布并正式开售,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,Honor,荣耀 Magic9,官方首发起售价,4999元起,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic9-launch/,荣耀Magic9售价4999元起；注意系列最低4499元对应超能版，不是标准版,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,Honor,荣耀 Magic9 Pro Max,屏幕,官方规格页待逐项录入,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic9-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic9 Pro Max,处理器,官方规格待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic9-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic9 Pro Max,影像,双 2 亿像素方向；具体配置待逐项核验,official_source_linked_needs_field_confirmation,https://www.honor.com/cn/news/honor-magic9-launch/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Honor,荣耀 Magic9 Pro Max,电池,官方规格待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic9-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic9 Pro Max,充电,官方规格待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic9-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic9 Pro Max,重量,官方规格待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic9-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic9 Pro Max,容量组合,官方容量组合待复核,unverified_value_incomplete,https://www.honor.com/cn/news/honor-magic9-launch/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Honor,荣耀 Magic9 Pro Max,正式发布/开售日期,2026年09月28日发布并开售,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic9-launch/,,字段值已在本轮读取的官方页面中核对。
+2026,Honor,荣耀 Magic9 Pro Max,官方首发起售价,6499,verified_official_page_reviewed,https://www.honor.com/cn/news/honor-magic9-launch/,,字段值已在本轮读取的官方页面中核对。
+2026,Huawei,HUAWEI Mate 90,屏幕,6.75英寸 OLED；FHD+ 2832×1280；LTPO 1–120Hz,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90/specs/,6.75 英寸 OLED；2832×1280；支持 1–120 Hz LTPO。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2026,Huawei,HUAWEI Mate 90,处理器,麒麟9030,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90/specs/,处理器：麒麟9030。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2026,Huawei,HUAWEI Mate 90,影像,后置：5000万超光变主摄+4000万超广角+5000万超聚光长焦+第三代红枫原色摄像头,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90/specs/,官方规格页列出三摄与第三代红枫原色摄像头。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2026,Huawei,HUAWEI Mate 90,电池,6600mAh（典型值）；额定6415mAh,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90/specs/,6600 mAh（典型值）；额定容量 6415 mAh。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2026,Huawei,HUAWEI Mate 90,充电,66W有线超级快充+50W无线超级快充；支持5W有线反向充电,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90/specs/,官方规格页列出最大 66 W 有线、50 W 无线及 5 W 有线反向充电。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2026,Huawei,HUAWEI Mate 90,重量,约217g（含电池）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90/specs/,重量约 217 g（含电池）。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2026,Huawei,HUAWEI Mate 90,容量组合,12GB+256GB / 12GB+512GB / 12GB+1TB,verified_official_page_reviewed,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,官方购买指引列出 Mate 90 的 12GB+256GB、12GB+512GB、12GB+1TB 版本。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2026,Huawei,HUAWEI Mate 90,正式发布/开售日期,2026年10月1日12:08正式开售；发布会日期另行保留待核,verified_official_page_reviewed,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,官方购买指引“正式开售时间”列为 2026年10月1日12:08。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2026,Huawei,HUAWEI Mate 90,官方首发起售价,5999,verified_official_page_reviewed,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,官方购买指引明确列出 12GB+256GB 首发价 5999 元。,本轮直接对照对应官方规格页/发布稿。整机仍须所有关键字段全部通过，才可进入排名或推荐。
+2026,Huawei,HUAWEI Mate 90 Pro,屏幕,6.75英寸双层OLED · FHD+ 2832×1280 · LTPO 1–120Hz,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90-pro/specs/,官方规格页列明6.75英寸双层OLED、2832×1280和1–120Hz LTPO。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Huawei,HUAWEI Mate 90 Pro,处理器,麒麟9035,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90-pro/specs/,官方规格页处理器栏列明麒麟9035。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Huawei,HUAWEI Mate 90 Pro,影像,5000万超聚光主摄 + 4000万超广角 + 5000万超聚光微距长焦 + 第三代红枫原色摄像头,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90-pro/specs/,官方规格页列明三颗后摄与第三代红枫原色摄像头。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Huawei,HUAWEI Mate 90 Pro,电池,6600mAh（典型值；额定6415mAh）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90-pro/specs/,官方规格页列明典型容量6600mAh、额定容量6415mAh。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Huawei,HUAWEI Mate 90 Pro,充电,100W有线超级快充 + 50W无线超级快充,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90-pro/specs/,官方规格页列明最高100W有线和最高50W无线超级快充。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Huawei,HUAWEI Mate 90 Pro,重量,约222g（含电池）,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90-pro/specs/,官方规格页列明约222克（含电池）。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Huawei,HUAWEI Mate 90 Pro,容量组合,12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB / 16GB+1TB,verified_official_page_reviewed,https://consumer.huawei.com/cn/phones/mate90-pro/specs/,官方规格页列出12GB/16GB RAM及256GB/512GB/1TB ROM；具体大陆销售SKU以官方购买指引为准。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Huawei,HUAWEI Mate 90 Pro,正式发布/开售日期,2026年10月01日开售（发布日另待核验）,unverified_value_incomplete,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Huawei,HUAWEI Mate 90 Pro,官方首发起售价,6999,verified_official_page_reviewed,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,华为官方Mate 90系列购买指引列明Mate 90 Pro首发价6999元起；需按具体容量SKU继续保留价格对应关系。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Huawei,HUAWEI Mate 90 Pro Max,屏幕,OLED 屏幕；详细参数待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Huawei,HUAWEI Mate 90 Pro Max,处理器,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Huawei,HUAWEI Mate 90 Pro Max,影像,华为睿影 XMAGE / 红枫影像功能,official_source_linked_needs_field_confirmation,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Huawei,HUAWEI Mate 90 Pro Max,电池,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Huawei,HUAWEI Mate 90 Pro Max,充电,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Huawei,HUAWEI Mate 90 Pro Max,重量,官方规格待复核,unverified_value_incomplete,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Huawei,HUAWEI Mate 90 Pro Max,容量组合,"['12GB+512GB', '16GB+512GB']",official_source_linked_needs_field_confirmation,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Huawei,HUAWEI Mate 90 Pro Max,正式发布/开售日期,2026年10月01日开售（发布日另待核验）,unverified_value_incomplete,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Huawei,HUAWEI Mate 90 Pro Max,官方首发起售价,9499,verified_official_page_reviewed,https://consumer.huawei.com/cn/support/content/zh-cn16119533/,,字段值已在本轮读取的官方页面中核对。
+2026,OPPO,OPPO Find X10,屏幕,6.59英寸 FHD+ 2768×1272 直面屏 · 最高144Hz（部分游戏）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x10/specs/,6.59英寸直面屏；2768×1272；1–120Hz智能切换，部分游戏最高144Hz,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,OPPO,OPPO Find X10,处理器,天玑9600M（最高4.21GHz）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x10/specs/,MediaTek 天玑9600M，最高主频4.21GHz,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,OPPO,OPPO Find X10,影像,2亿广角 + 5000万超广角 + 2亿长焦 + 第二代丹霞色彩还原镜头,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x10/specs/,2亿广角 + 5000万超广角 + 2亿长焦 + 第二代丹霞色彩还原镜头；前置5000万,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,OPPO,OPPO Find X10,电池,8000mAh（典型值；额定7770mAh）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x10/specs/,8000mAh典型值；7770mAh额定值,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,OPPO,OPPO Find X10,充电,80W有线闪充 + 50W无线闪充,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x10/specs/,最高80W有线超级闪充/UFCS；最高50W无线闪充,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,OPPO,OPPO Find X10,重量,约216g,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x10/specs/,约216g,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,OPPO,OPPO Find X10,容量组合,12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x10/specs/,12GB+256GB、12GB+512GB、16GB+512GB、16GB+1TB,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,OPPO,OPPO Find X10,正式发布/开售日期,2026年09月,official_source_linked_needs_field_confirmation,https://www.oppo.com/cn/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,OPPO,OPPO Find X10,官方首发起售价,,unverified_value_incomplete,https://www.oppo.com/cn/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,OPPO,OPPO Find X9 Ultra,屏幕,6.82 英寸直面屏；3168×1440；最高 144Hz（部分游戏场景）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2026,OPPO,OPPO Find X9 Ultra,处理器,第五代骁龙 8 至尊版移动平台,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2026,OPPO,OPPO Find X9 Ultra,影像,2 亿广角 + 5000 万超广角 + 2 亿长焦 + 5000 万超长焦 + 第二代丹霞色彩还原镜头,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2026,OPPO,OPPO Find X9 Ultra,电池,7050 mAh 典型值（额定 6890 mAh）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2026,OPPO,OPPO Find X9 Ultra,充电,100W 有线超级闪充 / 50W 无线闪充,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2026,OPPO,OPPO Find X9 Ultra,重量,约 235–236 g（依配色）,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2026,OPPO,OPPO Find X9 Ultra,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+512GB', '16GB+1TB']",verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-ultra/specs/,,字段值已在本轮读取的官方页面中核对。
+2026,OPPO,OPPO Find X9 Ultra,正式发布/开售日期,2026年04月,unverified_missing_or_insufficient_official_evidence,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,OPPO,OPPO Find X9 Ultra,官方首发起售价,,unverified_value_incomplete,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Samsung,Galaxy S26,屏幕,6.3英寸显示屏（Dynamic AMOLED 2X；官方该页未在本段列出完整分辨率）,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网列明6.3英寸显示屏。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26,处理器,第五代骁龙8至尊版 for Galaxy,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网明确列出第五代骁龙8至尊版（for Galaxy）。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26,影像,5000万广角 + 1200万超广角 + 1000万3倍光学长焦；1200万前置,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网列明后置三摄及前置摄像头像素、焦段能力。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26,电池,4300mAh（典型值）,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网列明4300mAh典型值。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26,充电,有线 / 无线充电，参数待复核,unverified_value_incomplete,https://www.samsung.com.cn/news/product/galaxy-s26/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Samsung,Galaxy S26,重量,167g,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网列明重量167g。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26,容量组合,"['12GB+256GB', '12GB+512GB']",official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/news/product/galaxy-s26/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26,正式发布/开售日期,2026年02月,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/news/product/galaxy-s26/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26,官方首发起售价,6999,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/news/product/galaxy-s26/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26 Ultra,屏幕,6.9 英寸 Dynamic AMOLED 2X · 1–120Hz,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/smartphones/galaxy-s26-ultra/specs/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26 Ultra,处理器,骁龙 8 Elite Gen 5 for Galaxy（中国版以官网为准）,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/smartphones/galaxy-s26-ultra/specs/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26 Ultra,影像,2 亿主摄 + 超广角 + 双长焦（含潜望长焦）,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/smartphones/galaxy-s26-ultra/specs/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26 Ultra,电池,5000 mAh（以地区规格页为准）,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/smartphones/galaxy-s26-ultra/specs/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26 Ultra,充电,有线快充 / 无线充电,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/smartphones/galaxy-s26-ultra/specs/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26 Ultra,重量,约 214 g,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/smartphones/galaxy-s26-ultra/specs/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26 Ultra,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+1TB']",official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/smartphones/galaxy-s26-ultra/specs/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26 Ultra,正式发布/开售日期,2026年02月,unverified_missing_or_insufficient_official_evidence,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Samsung,Galaxy S26 Ultra,官方首发起售价,,unverified_value_incomplete,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Samsung,Galaxy S26+,屏幕,6.7英寸显示屏（Dynamic AMOLED 2X；官方该页未在本段列出完整分辨率）,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网列明6.7英寸显示屏。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26+,处理器,第五代骁龙8至尊版 for Galaxy,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网明确列出第五代骁龙8至尊版（for Galaxy）。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26+,影像,5000万广角 + 1200万超广角 + 1000万3倍光学长焦；1200万前置,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网列明后置三摄及前置摄像头像素、焦段能力。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26+,电池,4900mAh（典型值）,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网列明4900mAh典型值。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26+,充电,有线 / 无线充电，参数待复核,unverified_value_incomplete,https://www.samsung.com.cn/news/product/galaxy-s26/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Samsung,Galaxy S26+,重量,190g,verified_official_page_reviewed,https://www.samsung.com.cn/smartphones/galaxy-s26/,三星中国官网列明重量190g。,本轮直接对照官方规格页/购买指引；已核字段不代表整机通过准入。
+2026,Samsung,Galaxy S26+,容量组合,官方容量组合待复核,unverified_value_incomplete,https://www.samsung.com.cn/news/product/galaxy-s26/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Samsung,Galaxy S26+,正式发布/开售日期,2026年02月,official_source_linked_needs_field_confirmation,https://www.samsung.com.cn/news/product/galaxy-s26/,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Samsung,Galaxy S26+,官方首发起售价,,unverified_value_incomplete,https://www.samsung.com.cn/news/product/galaxy-s26/,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Xiaomi,Xiaomi 18 Pro,屏幕,超级像素 2.0 防窥屏；详细参数以官方规格页为准,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Xiaomi,Xiaomi 18 Pro,处理器,第六代骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Xiaomi,Xiaomi 18 Pro,影像,双 2 亿像素主摄/长焦；以官方页面为准,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Xiaomi,Xiaomi 18 Pro,电池,7000mAh,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Xiaomi,Xiaomi 18 Pro,充电,官方规格页待复核,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Xiaomi,Xiaomi 18 Pro,重量,官方规格页待复核,unverified_value_incomplete,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,Xiaomi,Xiaomi 18 Pro,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+512GB', '16GB+1TB']",official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Xiaomi,Xiaomi 18 Pro,正式发布/开售日期,2026年09月,official_source_linked_needs_field_confirmation,https://www.mi.com/shop/buy/detail?cfrom=search&product_id=1230809262,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,Xiaomi,Xiaomi 18 Pro,官方首发起售价,5999,unverified_missing_or_insufficient_official_evidence,https://m.ithome.com/html/1006426.htm,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,iQOO,iQOO 15 Ultra,屏幕,官方规格页待逐项录入,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/iqoo15ultra,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,iQOO,iQOO 15 Ultra,处理器,第五代骁龙 8 至尊版,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/iqoo15ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,iQOO,iQOO 15 Ultra,影像,旗舰影像系统；详细参数待复核,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/iqoo15ultra,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,iQOO,iQOO 15 Ultra,电池,官方规格待复核,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/iqoo15ultra,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,iQOO,iQOO 15 Ultra,充电,官方规格待复核,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/iqoo15ultra,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,iQOO,iQOO 15 Ultra,重量,227 g,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/iqoo15ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,iQOO,iQOO 15 Ultra,容量组合,"['16GB+256GB', '16GB+512GB', '16GB+1TB', '24GB+1TB']",official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/iqoo15ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,iQOO,iQOO 15 Ultra,正式发布/开售日期,2026年02月,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/iqoo15ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,iQOO,iQOO 15 Ultra,官方首发起售价,6199,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/iqoo15ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,vivo,vivo X300 Ultra,屏幕,6.82 英寸 OLED · 分辨率与刷新率以官方页为准,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/x300ultra,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,vivo,vivo X300 Ultra,处理器,第五代骁龙 8 至尊版移动平台,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x300ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,vivo,vivo X300 Ultra,影像,专业影像系统；主摄/超广角/长焦配置以官网规格页为准,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x300ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,vivo,vivo X300 Ultra,电池,官方规格页需进一步录入,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/x300ultra,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,vivo,vivo X300 Ultra,充电,官方规格页需进一步录入,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/x300ultra,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,vivo,vivo X300 Ultra,重量,约 232–237 g,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x300ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,vivo,vivo X300 Ultra,容量组合,"['12GB+256GB', '12GB+512GB', '16GB+512GB', '16GB+1TB 卫星通信版']",official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x300ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,vivo,vivo X300 Ultra,正式发布/开售日期,2026年03月,unverified_missing_or_insufficient_official_evidence,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,vivo,vivo X300 Ultra,官方首发起售价,6999,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x300ultra,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,vivo,vivo X500,屏幕,6.59 英寸 AMOLED；2750×1260；最高 144Hz,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x500,,字段值已在本轮读取的官方页面中核对。
+2026,vivo,vivo X500,处理器,联发科天玑 9600M,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x500,,字段值已在本轮读取的官方页面中核对。
+2026,vivo,vivo X500,影像,5000 万蔡司高动态主摄 + 6400 万蔡司 APO 超级长焦 + 5000 万蔡司超视野超广角,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x500,,字段值已在本轮读取的官方页面中核对。
+2026,vivo,vivo X500,电池,7500 mAh 典型值（额定 7270 mAh）,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x500,,字段值已在本轮读取的官方页面中核对。
+2026,vivo,vivo X500,充电,90W 有线 / 40W 无线闪充,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x500,,字段值已在本轮读取的官方页面中核对。
+2026,vivo,vivo X500,重量,约 211–213 g（依配色）,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x500,,字段值已在本轮读取的官方页面中核对。
+2026,vivo,vivo X500,容量组合,"['12GB+256GB', '12GB+512GB', '12GB+1TB']",verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x500,,字段值已在本轮读取的官方页面中核对。
+2026,vivo,vivo X500,正式发布/开售日期,2026年9月21日发布；9月24日开售,verified_official_page_reviewed,https://www.vivo.com.cn/brand/news/detail?id=1392,2026年9月21日发布；X500于9月24日正式开售,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,vivo,vivo X500,官方首发起售价,5499元起,verified_official_page_reviewed,https://www.vivo.com.cn/brand/news/detail?id=1392,发布稿列明vivo X500售价5499元起,逐字段对照官方页面摘录；仅在本字段值完整且来源直接支持时标为已核实。
+2026,vivo,vivo X500 Pro,屏幕,旗舰 OLED；详细参数以官方规格页为准,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/x500pro,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,vivo,vivo X500 Pro,处理器,天玑 9600 Pro,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x500pro,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,vivo,vivo X500 Pro,影像,专业蔡司影像系统；详细镜头参数以官方规格页为准,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/x500pro,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,vivo,vivo X500 Pro,电池,官方规格页待复核,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/x500pro,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,vivo,vivo X500 Pro,充电,官方规格页待复核,unverified_value_incomplete,https://www.vivo.com.cn/vivo/param/x500pro,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,vivo,vivo X500 Pro,重量,约 192–197 g,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x500pro,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,vivo,vivo X500 Pro,容量组合,"['12GB+256GB', '12GB+512GB', '12GB+1TB']",official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x500pro,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2026,vivo,vivo X500 Pro,正式发布/开售日期,2026年09月,unverified_missing_or_insufficient_official_evidence,,,当前字段缺少足够的官方页面证据或值不完整；保留待核验。
+2026,vivo,vivo X500 Pro,官方首发起售价,6499,official_source_linked_needs_field_confirmation,https://www.vivo.com.cn/vivo/param/x500pro,,有官方链接，但尚未逐字段对照页面原文；不得当作已核验。
+2025,vivo,vivo X300,存储,12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300,官方规格页列明 RAM 12GB/16GB、ROM 256GB/512GB/1TB；发布稿逐档价格清单用于确认实际组合。,存储组合与价格清单结合发布稿核对，不单纯对 RAM/ROM 笛卡尔积推断。
+2025,vivo,vivo X300,上市日期,2025年10月17日正式发售（10月13日发布）,verified_official_page_reviewed,https://www.vivo.com.cn/brand/news/detail?id=1336,vivo官方发布稿明确：X300 于2025年10月17日正式发售，10月13日发布。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300,价格,"{'12GB+256GB': 4399, '16GB+256GB': 4699, '12GB+512GB': 4999, '16GB+512GB': 5299, '16GB+1TB': 5799}",verified_official_page_reviewed,https://www.vivo.com.cn/brand/news/detail?id=1336,vivo官方发布稿逐档列明 12GB+256GB 4399元、16GB+256GB 4699元、12GB+512GB 4999元、16GB+512GB 5299元、16GB+1TB 5799元。,逐档首发价格映射到官方发布稿列明的 RAM/ROM SKU。
+2025,vivo,vivo X300 Pro,存储,12GB+256GB / 16GB+512GB / 16GB+1TB / 16GB+1TB（卫星通信版摄影师套装）,verified_official_page_reviewed,https://www.vivo.com.cn/vivo/param/x300pro,官方规格页列明 RAM 12GB/16GB、ROM 256GB/512GB/1TB；官方发布稿列出普通版与卫星通信版价格 SKU。,将卫星通信版/摄影师套装作为独立 SKU，避免合并报价。
+2025,vivo,vivo X300 Pro,上市日期,2025年10月17日正式发售（10月13日发布）,verified_official_page_reviewed,https://www.vivo.com.cn/brand/news/detail?id=1336,vivo官方发布稿明确：X300 Pro 于2025年10月17日正式发售，10月13日发布。,直接引用中国大陆厂商官方页面；不使用第三方规格推断。
+2025,vivo,vivo X300 Pro,价格,"{'12GB+256GB': 5299, '16GB+512GB': 5999, '16GB+1TB': 6699, '16GB+1TB（卫星通信版）': 8299}",verified_official_page_reviewed,https://www.vivo.com.cn/brand/news/detail?id=1336,vivo官方发布稿逐档列明 X300 Pro 12GB+256GB 5299元、16GB+512GB 5999元、16GB+1TB 6699元、16GB+1TB卫星通信版 8299元。,逐档价格与普通版/卫星通信版 SKU 分开映射。
+2025,Apple,iPhone 17,上市日期,2025年9月19日正式发售（9月12日开始预购）,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/,Apple中国大陆官方发布稿明确2025年9月12日开启预购、9月19日起正式发售。,明确区分预购日和正式发售日。
+2025,Apple,iPhone 17,存储,256GB / 512GB,verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/,Apple中国大陆官方发布稿列明iPhone 17提供256GB与512GB容量。,存储容量清单不代表每档价格都已核实。
+2025,Apple,iPhone 17,价格,"{""256GB"": 5999}",verified_official_page_reviewed,https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/,Apple中国大陆官方发布稿列明iPhone 17起售价人民币5999元，起始存储容量为256GB。,只把起售价绑定到基础容量256GB；512GB价格不推算。
+2025,OPPO,OPPO Find X9,芯片,联发科天玑 9500,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9/specs/,官方规格页列明联发科天玑 9500。,已直接核对中国大陆厂商规格页；该字段的参数核验不代表整机准入通过。
+2025,OPPO,OPPO Find X9,存储,12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB / 16GB+1TB,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9/specs/,官方规格页明确列出五种存储 SKU：12+256、12+512、16+256、16+512、16+1TB。,已直接核对中国大陆厂商规格页；该字段的参数核验不代表整机准入通过。
+2025,OPPO,OPPO Find X9,开售日,2025年10月22日（媒体报道的中国大陆开售日；尚待厂商官方发布稿直接复核）,secondary_source_date_needs_official_confirmation,https://cincodias.elpais.com/smartlife/smartphones/2025-10-17/oppo-find-x9-oppo-x9-pro-oficiales.html,媒体报道中国大陆将于 2025 年 10 月 22 日开售；尚未找到厂商大陆官方发布稿直接证明准确开售日。,暂存为待复核候选值，不作为官方已核实字段。
+2025,OPPO,OPPO Find X9,价格,"{""starting_price_CNY"": 4399, ""sku_prices"": null}",starting_price_only_sku_mapping_unverified,https://cincodias.elpais.com/smartlife/smartphones/2025-10-17/oppo-find-x9-oppo-x9-pro-oficiales.html,媒体报道起售价为 4399 元；未取得厂商官方发布稿逐档价格清单，故不填充 SKU 价表。,严禁将当前商城价或其他 SKU 价格推算成首发价；整机继续阻断。
+2025,OPPO,OPPO Find X9 Pro,芯片,联发科天玑 9500,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-pro/specs/,官方规格页列明联发科天玑 9500。,已直接核对中国大陆厂商规格页；该字段的参数核验不代表整机准入通过。
+2025,OPPO,OPPO Find X9 Pro,存储,12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB,verified_official_page_reviewed,https://www.oppo.com/cn/smartphones/series-find-x/find-x9-pro/specs/,官方规格页明确列出四种存储 SKU：12+256、12+512、16+512、16+1TB。,已直接核对中国大陆厂商规格页；该字段的参数核验不代表整机准入通过。
+2025,OPPO,OPPO Find X9 Pro,开售日,2025年10月22日（媒体报道的中国大陆开售日；尚待厂商官方发布稿直接复核）,secondary_source_date_needs_official_confirmation,https://cincodias.elpais.com/smartlife/smartphones/2025-10-17/oppo-find-x9-oppo-x9-pro-oficiales.html,媒体报道中国大陆将于 2025 年 10 月 22 日开售；尚未找到厂商大陆官方发布稿直接证明准确开售日。,暂存为待复核候选值，不作为官方已核实字段。
+2025,OPPO,OPPO Find X9 Pro,价格,"{""starting_price_CNY"": 5299, ""sku_prices"": null}",starting_price_only_sku_mapping_unverified,https://cincodias.elpais.com/smartlife/smartphones/2025-10-17/oppo-find-x9-oppo-x9-pro-oficiales.html,媒体报道起售价为 5299 元；未取得厂商官方发布稿逐档价格清单，故不填充 SKU 价表。,严禁将当前商城价或其他 SKU 价格推算成首发价；整机继续阻断。

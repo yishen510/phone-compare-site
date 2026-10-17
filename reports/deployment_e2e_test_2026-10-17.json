@@ -1,0 +1,15 @@
+{
+  "testDate": "2026-10-17",
+  "target": "Chromium UI E2E; local HTTP and file navigation attempted",
+  "testCount": 1,
+  "passed": 0,
+  "failed": 1,
+  "results": [
+    {
+      "name": "Browser navigation / test harness",
+      "status": "BLOCKED",
+      "detail": "HTTP attempt: Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at http://127.0.0.1:41705/index.html\nCall log:\n  - navigating to \"http://127.0.0.1:41705/index.html\", waiting until \"networkidle\"\n; file attempt: Page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///mnt/data/phone-compare-site/index.html\nCall log:\n  - navigating to \"file:///mnt/data/phone-compare-site/index.html\", waiting until \"networkidle\"\n"
+    }
+  ],
+  "scope": "No interaction assertions were run because Chromium navigation was blocked by execution environment policy (ERR_BLOCKED_BY_ADMINISTRATOR). This is not a passing E2E result; rerun on a host where local file/HTTP navigation is allowed."
+}

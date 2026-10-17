@@ -1,0 +1,9 @@
+﻿brand,model,storage,channel,displayedPriceRmb,offerPriceRmb,pageUrl,observed,newMainlandSkuLooksConsistent,purchaseActionVisible,countedInPurchasabilitySample
+Apple,iPhone 17 Pro Max,256GB,京东商品页（需当面激活条款）,9999.0,,https://item.jd.com/product/6QDM9CaD9ZAa0SxjEPbKrg.html,标题写明国行新机、需当面激活；页面显示 ¥9999，页面文本包含加入购物车与立即购买。购买前必须确认现场激活条件与退款条款。,True,True,True
+Xiaomi,小米 17 Ultra,16GB+512GB,京东商品页,7499.0,,https://item.jd.com/product/pnFnpyp0QuTDHftZxUjuZA.html,标题精确包含 16GB+512GB 与官方标配；页面显示 ¥7499，包含加入购物车与立即购买。,True,True,True
+Huawei,HUAWEI Mate 80 Pro Max,16GB+512GB,京东商品页,7549.0,,https://item.jd.com/product/fWDqD6RGcZPxGM5qSmCZuw.html,标题精确包含 16GB+512GB；页面显示 ¥7549，包含加入购物车与立即购买。页面写有 6 期分期免息，结算价可能受条件影响。,True,True,True
+OnePlus,一加 15,12GB+512GB,京东商品页,5699.0,,https://item.jd.com/product/WnkfBip3h0g3oZ9aaTryUg.html,标题精确包含 12GB+512GB；页面显示 ¥5699，包含加入购物车与立即购买。页面价与登录后到手价可能不同。,True,True,True
+OPPO,OPPO Find X9 Pro,16GB+512GB,京东商品页（国家补贴标题）,6299.0,,https://item.jd.com/product/K898bs8o8-e-gICONBwCOQ.html,标题精确包含 16GB+512GB 与官方标配；页面显示 ¥6299，包含加入购物车与立即购买；标题含国家补贴，补贴资格及最终到手价需核对。,True,True,True
+vivo,vivo X300 Pro,16GB+512GB,京东商品页,6399.0,,https://item.jd.com/product/4CK0DF-5C-Wn6tDZ5XrH8w.html,标题精确包含 16GB+512GB；页面显示 ¥6399，包含加入购物车与立即购买。,True,True,True
+Samsung,Samsung Galaxy S26 Ultra,12GB+512GB,三星中国官方商城,11599.0,10599.0,https://www.samsung.com.cn/smartphones/galaxy-s26-ultra/buy/,官方购买页列出 12GB+512GB 建议/页面价 ¥11599、券后到手价 ¥10599；同期搜索索引显示页面有售罄提示。因此不计入可购买成功样本。,True,False,True
+Honor,荣耀 Magic8 Pro,16GB+512GB,京东商品页（排除项）,5331.14,,https://item.jd.com/product/Ay7xwjtnL-yUSJAz9M9OEg.html,公开搜索结果标题写明准新机，未作为新机报价接受；页面抓取未成功完成独立详情验证。,False,,False

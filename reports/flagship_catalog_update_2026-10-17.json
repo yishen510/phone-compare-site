@@ -1,0 +1,26 @@
+{
+  "updatedAt": "2026-10-17",
+  "previousCount": 53,
+  "currentCount": 65,
+  "addedCount": 12,
+  "addedIds": [
+    "xia-17p",
+    "xia-17pm",
+    "vivo-x300",
+    "vivo-x300p",
+    "oppo-x9",
+    "oppo-x9p",
+    "honor-magic8",
+    "redmi-k90pm",
+    "iqoo-15",
+    "xia-18p",
+    "vivo-x500",
+    "vivo-x500p"
+  ],
+  "scope": "补充已发布的 2025/2026 年大陆市场旗舰代表机型；不代表完整市场清单。",
+  "caveats": [
+    "对缺少足够官方价格依据的机型，priceCN 设为 null，不以猜测补价。",
+    "部分新增条目的详细参数字段明确标为待复核，避免把未核验参数伪装成官方事实。",
+    "个别官方页面可能展示后续版本或地区版本，购买前应再次核对大陆 SKU。"
+  ]
+}

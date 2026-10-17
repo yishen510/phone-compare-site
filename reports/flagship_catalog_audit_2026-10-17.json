@@ -1,0 +1,510 @@
+{
+  "updatedAt": "2026-10-17",
+  "scope": "中国大陆市场 2025-2026 年主要品牌直板旗舰、影像旗舰、性能旗舰及折叠旗舰；不是全球全品牌所有 SKU 的绝对完整清单。",
+  "previousDatabaseCount": 65,
+  "currentDatabaseCount": 100,
+  "addedCount": 35,
+  "addedIds": [
+    "sam-25",
+    "sam-25p",
+    "sam-zf7",
+    "sam-zflip7",
+    "sam-26",
+    "sam-26p",
+    "apple-17",
+    "apple-air",
+    "xia-15",
+    "xia-15p",
+    "xia-15sp",
+    "xia-mixflip2",
+    "hua-pura80",
+    "hua-pura80p",
+    "hua-pura80pp",
+    "hua-mate80",
+    "hua-mate80rs",
+    "hua-matex7",
+    "hua-mate90",
+    "hua-mate90p",
+    "hua-mate90pm",
+    "honor-v5",
+    "honor-v6",
+    "honor-magic9",
+    "honor-magic9pm",
+    "oppo-n5",
+    "oppo-x8s",
+    "oppo-x8sp",
+    "oppo-x10",
+    "op-13t",
+    "iqoo-13",
+    "iqoo-15u",
+    "realme-gt8p",
+    "nubia-z70u",
+    "redmagic-10p"
+  ],
+  "yearCounts": {
+    "2025": 44,
+    "2026": 18
+  },
+  "includedBrands": [
+    "Apple",
+    "Samsung",
+    "Xiaomi",
+    "Huawei",
+    "Honor",
+    "OPPO",
+    "vivo",
+    "OnePlus",
+    "iQOO",
+    "realme",
+    "nubia"
+  ],
+  "auditMethod": [
+    "先按品牌与旗舰产品线建立候选清单",
+    "优先使用厂商官方新闻稿、官方产品规格页与官方购买指引",
+    "仅在来源支持时录入首发价；不把当前促销价当首发价",
+    "未知参数留空或标注待复核，不以猜测补齐",
+    "把发布/价格/参数核验状态拆开标记"
+  ],
+  "importantCaveats": [
+    "本轮系统性补录与审计标记不等于每个参数均已完成双来源逐项核验。",
+    "价格来源缺失的机型保持 null；首发价字段与实时渠道报价字段分离。",
+    "官方页面若未能直接提供单机发布价，需后续继续补查官方发布稿/官方商城历史信息。",
+    "部分机型是上一年末发布、次年仍在售，已明确保留原始发布年份，避免错记为当年新机。"
+  ],
+  "priceMissing": [
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "year": 2025
+    },
+    {
+      "id": "sam-26p",
+      "name": "Galaxy S26+",
+      "year": 2026
+    },
+    {
+      "id": "xia-15",
+      "name": "小米 15",
+      "year": 2025
+    },
+    {
+      "id": "xia-15p",
+      "name": "小米 15 Pro",
+      "year": 2025
+    },
+    {
+      "id": "xia-15sp",
+      "name": "小米 15S Pro",
+      "year": 2025
+    },
+    {
+      "id": "xia-mixflip2",
+      "name": "MIX Flip 2",
+      "year": 2025
+    },
+    {
+      "id": "hua-pura80",
+      "name": "HUAWEI Pura 80",
+      "year": 2025
+    },
+    {
+      "id": "hua-pura80pp",
+      "name": "HUAWEI Pura 80 Pro+",
+      "year": 2025
+    },
+    {
+      "id": "honor-magic9pm",
+      "name": "荣耀 Magic9 Pro Max",
+      "year": 2026
+    },
+    {
+      "id": "oppo-n5",
+      "name": "OPPO Find N5",
+      "year": 2025
+    },
+    {
+      "id": "oppo-x8s",
+      "name": "OPPO Find X8s",
+      "year": 2025
+    },
+    {
+      "id": "oppo-x8sp",
+      "name": "OPPO Find X8s+",
+      "year": 2025
+    },
+    {
+      "id": "oppo-x10",
+      "name": "OPPO Find X10",
+      "year": 2026
+    },
+    {
+      "id": "op-13t",
+      "name": "一加 13T",
+      "year": 2025
+    },
+    {
+      "id": "realme-gt8p",
+      "name": "真我 GT8 Pro",
+      "year": 2025
+    },
+    {
+      "id": "sam-26u",
+      "name": "Galaxy S26 Ultra",
+      "year": 2026
+    },
+    {
+      "id": "oppo-x9u",
+      "name": "OPPO Find X9 Ultra",
+      "year": 2026
+    },
+    {
+      "id": "vivo-x500",
+      "name": "vivo X500",
+      "year": 2026
+    },
+    {
+      "id": "iqoo-15",
+      "name": "iQOO 15",
+      "year": 2025
+    },
+    {
+      "id": "realme-gt8-pro",
+      "name": "真我 GT8 Pro",
+      "year": 2025
+    },
+    {
+      "id": "hua-mate80p",
+      "name": "HUAWEI Mate 80 Pro",
+      "year": 2025
+    }
+  ],
+  "parameterFollowup": [
+    {
+      "id": "sam-25",
+      "name": "Galaxy S25",
+      "status": "partial"
+    },
+    {
+      "id": "sam-25p",
+      "name": "Galaxy S25+",
+      "status": "partial"
+    },
+    {
+      "id": "sam-zf7",
+      "name": "Galaxy Z Fold7",
+      "status": "partial"
+    },
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "status": "partial"
+    },
+    {
+      "id": "sam-26",
+      "name": "Galaxy S26",
+      "status": "partial"
+    },
+    {
+      "id": "sam-26p",
+      "name": "Galaxy S26+",
+      "status": "partial"
+    },
+    {
+      "id": "apple-17",
+      "name": "iPhone 17",
+      "status": "partial"
+    },
+    {
+      "id": "apple-air",
+      "name": "iPhone Air",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-15",
+      "name": "小米 15",
+      "status": "partial"
+    },
+    {
+      "id": "xia-15p",
+      "name": "小米 15 Pro",
+      "status": "partial"
+    },
+    {
+      "id": "xia-15sp",
+      "name": "小米 15S Pro",
+      "status": "partial"
+    },
+    {
+      "id": "xia-mixflip2",
+      "name": "MIX Flip 2",
+      "status": "partial"
+    },
+    {
+      "id": "hua-pura80",
+      "name": "HUAWEI Pura 80",
+      "status": "partial"
+    },
+    {
+      "id": "hua-pura80p",
+      "name": "HUAWEI Pura 80 Pro",
+      "status": "partial"
+    },
+    {
+      "id": "hua-pura80pp",
+      "name": "HUAWEI Pura 80 Pro+",
+      "status": "partial"
+    },
+    {
+      "id": "hua-mate80",
+      "name": "HUAWEI Mate 80",
+      "status": "partial"
+    },
+    {
+      "id": "hua-mate80rs",
+      "name": "HUAWEI Mate 80 RS 非凡大师",
+      "status": "partial"
+    },
+    {
+      "id": "hua-matex7",
+      "name": "HUAWEI Mate X7",
+      "status": "partial"
+    },
+    {
+      "id": "hua-mate90",
+      "name": "HUAWEI Mate 90",
+      "status": "partial"
+    },
+    {
+      "id": "hua-mate90p",
+      "name": "HUAWEI Mate 90 Pro",
+      "status": "partial"
+    },
+    {
+      "id": "hua-mate90pm",
+      "name": "HUAWEI Mate 90 Pro Max",
+      "status": "partial"
+    },
+    {
+      "id": "honor-v5",
+      "name": "荣耀 Magic V5",
+      "status": "partial"
+    },
+    {
+      "id": "honor-v6",
+      "name": "荣耀 Magic V6",
+      "status": "partial"
+    },
+    {
+      "id": "honor-magic9",
+      "name": "荣耀 Magic9",
+      "status": "partial"
+    },
+    {
+      "id": "honor-magic9pm",
+      "name": "荣耀 Magic9 Pro Max",
+      "status": "partial"
+    },
+    {
+      "id": "oppo-n5",
+      "name": "OPPO Find N5",
+      "status": "partial"
+    },
+    {
+      "id": "oppo-x8s",
+      "name": "OPPO Find X8s",
+      "status": "partial"
+    },
+    {
+      "id": "oppo-x8sp",
+      "name": "OPPO Find X8s+",
+      "status": "partial"
+    },
+    {
+      "id": "oppo-x10",
+      "name": "OPPO Find X10",
+      "status": "partial"
+    },
+    {
+      "id": "op-13t",
+      "name": "一加 13T",
+      "status": "partial"
+    },
+    {
+      "id": "iqoo-15u",
+      "name": "iQOO 15 Ultra",
+      "status": "partial"
+    },
+    {
+      "id": "realme-gt8p",
+      "name": "真我 GT8 Pro",
+      "status": "partial"
+    },
+    {
+      "id": "sam-26u",
+      "name": "Galaxy S26 Ultra",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-x300u",
+      "name": "vivo X300 Ultra",
+      "status": "partial"
+    },
+    {
+      "id": "oppo-x9u",
+      "name": "OPPO Find X9 Ultra",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "apple-18p",
+      "name": "iPhone 18 Pro",
+      "status": "partial"
+    },
+    {
+      "id": "apple-18pm",
+      "name": "iPhone 18 Pro Max",
+      "status": "partial"
+    },
+    {
+      "id": "xia-18p",
+      "name": "Xiaomi 18 Pro",
+      "status": "partial"
+    },
+    {
+      "id": "vivo-x500",
+      "name": "vivo X500",
+      "status": "partial"
+    },
+    {
+      "id": "vivo-x500p",
+      "name": "vivo X500 Pro",
+      "status": "partial"
+    },
+    {
+      "id": "sam-25u",
+      "name": "Galaxy S25 Ultra",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-15u",
+      "name": "小米 15 Ultra",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "oppo-x8u",
+      "name": "OPPO Find X8 Ultra",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-x200u",
+      "name": "vivo X200 Ultra",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "hua-pura80u",
+      "name": "HUAWEI Pura 80 Ultra",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "apple-17pm",
+      "name": "iPhone 17 Pro Max",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-17p",
+      "name": "Xiaomi 17 Pro",
+      "status": "partial"
+    },
+    {
+      "id": "xia-17pm",
+      "name": "Xiaomi 17 Pro Max",
+      "status": "partial"
+    },
+    {
+      "id": "xia-17",
+      "name": "小米 17",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "honor-magic8",
+      "name": "荣耀 Magic8",
+      "status": "partial"
+    },
+    {
+      "id": "honor-magic8-pro",
+      "name": "荣耀 Magic8 Pro",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "oppo-x9",
+      "name": "OPPO Find X9",
+      "status": "partial"
+    },
+    {
+      "id": "oppo-x9p",
+      "name": "OPPO Find X9 Pro",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "op-15",
+      "name": "一加 15",
+      "status": "partial"
+    },
+    {
+      "id": "redmi-k90pm",
+      "name": "REDMI K90 Pro Max",
+      "status": "partial"
+    },
+    {
+      "id": "iqoo-15",
+      "name": "iQOO 15",
+      "status": "partial"
+    },
+    {
+      "id": "realme-gt8-pro",
+      "name": "真我 GT8 Pro",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-x300",
+      "name": "vivo X300",
+      "status": "partial"
+    },
+    {
+      "id": "vivo-x300p",
+      "name": "vivo X300 Pro",
+      "status": "partial"
+    },
+    {
+      "id": "hua-mate80p",
+      "name": "HUAWEI Mate 80 Pro",
+      "status": "needs_source_crosscheck"
+    },
+    {
+      "id": "hua-m80pm",
+      "name": "HUAWEI Mate 80 Pro Max",
+      "status": "partial"
+    },
+    {
+      "id": "xia-17u",
+      "name": "小米 17 Ultra",
+      "status": "needs_source_crosscheck"
+    }
+  ],
+  "sourceUrls": [
+    "https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/",
+    "https://www.apple.com.cn/newsroom/2025/09/apple-unveils-iphone-17-pro-and-iphone-17-pro-max-cn/",
+    "https://www.apple.com.cn/newsroom/2025/10/iphone-air-will-be-available-in-china-beginning-october-22/",
+    "https://www.samsung.com.cn/news/product/galaxy-s25-ai/",
+    "https://www.samsung.com.cn/news/product/z-fold7/",
+    "https://www.samsung.com.cn/news/product/galaxy-s26/",
+    "https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/",
+    "https://consumer.huawei.com/cn/phones/pura80-pro/",
+    "https://consumer.huawei.com/cn/support/content/zh-cn16119533/",
+    "https://www.honor.com/cn/news/honor-magic-v5-launch/",
+    "https://www.honor.com/cn/news/honor-magic-v6-launch/",
+    "https://www.honor.com/cn/news/honor-magic9-launch/",
+    "https://www.vivo.com.cn/vivo/param/iqoo15ultra",
+    "https://www.oppo.com/cn/",
+    "https://www.mi.com/"
+  ]
+}

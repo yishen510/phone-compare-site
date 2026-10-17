@@ -1,0 +1,50 @@
+{
+  "testDate": "2026-10-18",
+  "target": "Chromium UI E2E using exact shipped index.html via page.set_content",
+  "testCount": 8,
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Local browser entrypoint and initial render",
+      "status": "PASS",
+      "detail": "Chromium page.set_content from shipped index.html (localhost/file navigation blocked); cards=100"
+    },
+    {
+      "name": "Search and empty-state behavior",
+      "status": "PASS",
+      "detail": "keyword match and empty state work"
+    },
+    {
+      "name": "Brand filtering",
+      "status": "PASS",
+      "detail": "brand filter narrowed to 9 Apple card(s)"
+    },
+    {
+      "name": "Year filtering",
+      "status": "PASS",
+      "detail": "2026 filter returned 18 cards"
+    },
+    {
+      "name": "Compare workflow and gate display",
+      "status": "PASS",
+      "detail": "add two phones, open comparison, gate label, clear all passed"
+    },
+    {
+      "name": "Recommendation fail-closed behavior",
+      "status": "PASS",
+      "detail": "recommendation candidate list is empty while all eligibility flags are false"
+    },
+    {
+      "name": "Independent eligibility evidence gate",
+      "status": "PASS",
+      "detail": "{\"before\": false, \"noEvidence\": false, \"required\": 9}"
+    },
+    {
+      "name": "No unhandled browser JS exceptions",
+      "status": "PASS",
+      "detail": "none"
+    }
+  ],
+  "scope": "real Chromium interaction tests against exact shipped HTML loaded with page.set_content; local navigation is blocked by environment. Does not cover production hosting, TLS/CDN, live price API, mobile devices, or factual source verification"
+}

@@ -1,0 +1,10 @@
+﻿phoneId,model,targetStorage,offerTitle,apiPrice,channel,checkedAt,url,autoQualityPass,autoFailures,productPageOpened,pageDisplayedPrice,pagePriceCheckTime,productPagePriceMatches,mainlandNewUnitConfirmed,exactStorageConfirmedOnPage,stockConfirmed,promotionConditionsClear,reviewerVerdict,reviewerNotes
+apple-17pm,iPhone 17 Pro Max,256GB,,,,,,False,no_quote_returned,,,,,,,,,,
+sam-25u,Galaxy S25 Ultra,12GB+256GB,,,,,,False,no_quote_returned,,,,,,,,,,
+xia-15u,小米 15 Ultra,12GB+256GB,,,,,,False,no_quote_returned,,,,,,,,,,
+hua-mate70p,HUAWEI Mate 70 Pro,12GB+256GB,,,,,,False,no_quote_returned,,,,,,,,,,
+honor-magic7-pro,荣耀 Magic7 Pro,12GB+256GB,,,,,,False,no_quote_returned,,,,,,,,,,
+oppo-x8u,OPPO Find X8 Ultra,12GB+256GB,,,,,,False,no_quote_returned,,,,,,,,,,
+op-13,一加 13,12GB+256GB,,,,,,False,no_quote_returned,,,,,,,,,,
+vivo-x200u,vivo X200 Ultra,12GB+256GB,,,,,,False,no_quote_returned,,,,,,,,,,
+realme-gt7-pro,真我 GT7 Pro,12GB+256GB,,,,,,False,no_quote_returned,,,,,,,,,,

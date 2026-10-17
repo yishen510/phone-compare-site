@@ -1,0 +1,1751 @@
+{
+  "reviewDate": "2026-10-18",
+  "scope": "all 2025-2026 catalog models; independent evidence + SKU-price mapping review; no release authorization",
+  "requiredFields": [
+    "display",
+    "chip",
+    "camera",
+    "battery",
+    "charging",
+    "weight",
+    "storage",
+    "launchDate",
+    "price"
+  ],
+  "modelCount": 62,
+  "rankingEligibleCount": 0,
+  "recommendationEligibleCount": 0,
+  "blockedModelCount": 62,
+  "checks": {
+    "all_2025_2026_models_reviewed": true,
+    "no_model_admitted": true,
+    "all_rank_flags_closed": true,
+    "all_recommendation_flags_closed": true,
+    "ui_gate_requires_9_fields": true,
+    "recommendation_filters_through_pass": true,
+    "rank_and_recommendation_both_use_model_gate": true
+  },
+  "checkCount": 7,
+  "checksPassed": 7,
+  "checksFailed": 0,
+  "models": [
+    {
+      "id": "sam-25",
+      "name": "Galaxy S25",
+      "brand": "Samsung",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "sam-25p",
+      "name": "Galaxy S25+",
+      "brand": "Samsung",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "sam-zf7",
+      "name": "Galaxy Z Fold7",
+      "brand": "Samsung",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "brand": "Samsung",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "sam-26",
+      "name": "Galaxy S26",
+      "brand": "Samsung",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "sam-26p",
+      "name": "Galaxy S26+",
+      "brand": "Samsung",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "apple-17",
+      "name": "iPhone 17",
+      "brand": "Apple",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight"
+      ],
+      "priceMappingStatus": "base_starting_price_only_other_skus_unverified",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "apple-air",
+      "name": "iPhone Air",
+      "brand": "Apple",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-15",
+      "name": "小米 15",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-15p",
+      "name": "小米 15 Pro",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-15sp",
+      "name": "小米 15S Pro",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-mixflip2",
+      "name": "MIX Flip 2",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-pura80",
+      "name": "HUAWEI Pura 80",
+      "brand": "Huawei",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-pura80p",
+      "name": "HUAWEI Pura 80 Pro",
+      "brand": "Huawei",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-pura80pp",
+      "name": "HUAWEI Pura 80 Pro+",
+      "brand": "Huawei",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-mate80",
+      "name": "HUAWEI Mate 80",
+      "brand": "Huawei",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-mate80rs",
+      "name": "HUAWEI Mate 80 RS 非凡大师",
+      "brand": "Huawei",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "battery",
+        "charging",
+        "storage"
+      ],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "weight",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "unmapped_starting_price_hidden",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,weight,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-matex7",
+      "name": "HUAWEI Mate X7",
+      "brand": "Huawei",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-mate90",
+      "name": "HUAWEI Mate 90",
+      "brand": "Huawei",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-mate90p",
+      "name": "HUAWEI Mate 90 Pro",
+      "brand": "Huawei",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-mate90pm",
+      "name": "HUAWEI Mate 90 Pro Max",
+      "brand": "Huawei",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "honor-v5",
+      "name": "荣耀 Magic V5",
+      "brand": "Honor",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "honor-v6",
+      "name": "荣耀 Magic V6",
+      "brand": "Honor",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "honor-magic9",
+      "name": "荣耀 Magic9",
+      "brand": "Honor",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "honor-magic9pm",
+      "name": "荣耀 Magic9 Pro Max",
+      "brand": "Honor",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "oppo-n5",
+      "name": "OPPO Find N5",
+      "brand": "OPPO",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "oppo-x8s",
+      "name": "OPPO Find X8s",
+      "brand": "OPPO",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "oppo-x8sp",
+      "name": "OPPO Find X8s+",
+      "brand": "OPPO",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "oppo-x10",
+      "name": "OPPO Find X10",
+      "brand": "OPPO",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "op-13t",
+      "name": "一加 13T",
+      "brand": "OnePlus",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "iqoo-15u",
+      "name": "iQOO 15 Ultra",
+      "brand": "iQOO",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "realme-gt8p",
+      "name": "真我 GT8 Pro",
+      "brand": "realme",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "sam-26u",
+      "name": "Galaxy S26 Ultra",
+      "brand": "Samsung",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "vivo-x300u",
+      "name": "vivo X300 Ultra",
+      "brand": "vivo",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "oppo-x9u",
+      "name": "OPPO Find X9 Ultra",
+      "brand": "OPPO",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "apple-18p",
+      "name": "iPhone 18 Pro",
+      "brand": "Apple",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "apple-18pm",
+      "name": "iPhone 18 Pro Max",
+      "brand": "Apple",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-18p",
+      "name": "Xiaomi 18 Pro",
+      "brand": "Xiaomi",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "vivo-x500",
+      "name": "vivo X500",
+      "brand": "vivo",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "vivo-x500p",
+      "name": "vivo X500 Pro",
+      "brand": "vivo",
+      "year": 2026,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "sam-25u",
+      "name": "Galaxy S25 Ultra",
+      "brand": "Samsung",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-15u",
+      "name": "小米 15 Ultra",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "oppo-x8u",
+      "name": "OPPO Find X8 Ultra",
+      "brand": "OPPO",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "vivo-x200u",
+      "name": "vivo X200 Ultra",
+      "brand": "vivo",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-pura80u",
+      "name": "HUAWEI Pura 80 Ultra",
+      "brand": "Huawei",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "apple-17pm",
+      "name": "iPhone 17 Pro Max",
+      "brand": "Apple",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight"
+      ],
+      "priceMappingStatus": "base_starting_price_only_other_skus_unverified",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-17p",
+      "name": "Xiaomi 17 Pro",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-17pm",
+      "name": "Xiaomi 17 Pro Max",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-17",
+      "name": "小米 17",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "honor-magic8",
+      "name": "荣耀 Magic8",
+      "brand": "Honor",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "launchDate"
+      ],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "honor-magic8-pro",
+      "name": "荣耀 Magic8 Pro",
+      "brand": "Honor",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "launchDate"
+      ],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "price"
+      ],
+      "priceMappingStatus": "unmapped_starting_price_hidden",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "oppo-x9",
+      "name": "OPPO Find X9",
+      "brand": "OPPO",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage"
+      ],
+      "requiredFieldsMissing": [
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "incomplete_official_sku_price_evidence_required",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "oppo-x9p",
+      "name": "OPPO Find X9 Pro",
+      "brand": "OPPO",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage"
+      ],
+      "requiredFieldsMissing": [
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "incomplete_official_sku_price_evidence_required",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "op-15",
+      "name": "一加 15",
+      "brand": "OnePlus",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "battery",
+        "charging"
+      ],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "unmapped_starting_price_hidden",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "redmi-k90pm",
+      "name": "REDMI K90 Pro Max",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "iqoo-15",
+      "name": "iQOO 15",
+      "brand": "iQOO",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "realme-gt8-pro",
+      "name": "真我 GT8 Pro",
+      "brand": "realme",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "vivo-x300",
+      "name": "vivo X300",
+      "brand": "vivo",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "requiredFieldsMissing": [],
+      "priceMappingStatus": "all_listed_skus_mapped_official_launch_price",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "vivo-x300p",
+      "name": "vivo X300 Pro",
+      "brand": "vivo",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "requiredFieldsMissing": [],
+      "priceMappingStatus": "all_listed_skus_mapped_official_launch_price",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-mate80p",
+      "name": "HUAWEI Mate 80 Pro",
+      "brand": "Huawei",
+      "year": 2025,
+      "requiredFieldsPassed": [
+        "battery",
+        "charging",
+        "storage"
+      ],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "weight",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "unmapped_starting_price_hidden",
+      "priceMappingPassed": false,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,weight,launchDate,price",
+        "launch_price_to_storage_mapping_unverified_or_missing",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "hua-m80pm",
+      "name": "HUAWEI Mate 80 Pro Max",
+      "brand": "Huawei",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    },
+    {
+      "id": "xia-17u",
+      "name": "小米 17 Ultra",
+      "brand": "Xiaomi",
+      "year": 2025,
+      "requiredFieldsPassed": [],
+      "requiredFieldsMissing": [
+        "display",
+        "chip",
+        "camera",
+        "battery",
+        "charging",
+        "weight",
+        "storage",
+        "launchDate",
+        "price"
+      ],
+      "priceMappingStatus": "not_recorded",
+      "priceMappingPassed": true,
+      "rankingEligible": false,
+      "recommendationEligible": false,
+      "admission": "BLOCKED",
+      "blockReasons": [
+        "missing_or_insufficient_evidence:display,chip,camera,battery,charging,weight,storage,launchDate,price",
+        "whole_device_audit_not_verified"
+      ]
+    }
+  ],
+  "limitations": [
+    "This review is based on locally stored evidence records and static UI source inspection.",
+    "It does not independently validate every source webpage or test production hosting.",
+    "No ranking or purchase recommendation is authorized."
+  ]
+}

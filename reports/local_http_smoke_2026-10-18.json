@@ -1,0 +1,41 @@
+{
+  "testDate": "2026-10-18",
+  "testType": "local HTTP delivery smoke test",
+  "checks": [
+    {
+      "path": "/index.html",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 284950,
+      "sha256": "3b2ee9f1b8aadecdd995b2a5fe21c659ddc1e06eb7318ce7ac1a6d8775dbd124"
+    },
+    {
+      "path": "/phone-compare-demo.html",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 284950,
+      "sha256": "3b2ee9f1b8aadecdd995b2a5fe21c659ddc1e06eb7318ce7ac1a6d8775dbd124"
+    },
+    {
+      "path": "/data/phones.json",
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 280183,
+      "sha256": "2c511d2cdb15949f2184090f15f78d436dc483dcf6fb14cde32babe6d19a7d67"
+    },
+    {
+      "path": "/reports/independent_whole_device_admission_review_2026-10-18.json",
+      "status": 200,
+      "contentType": "application/json",
+      "bytes": 47933,
+      "sha256": "c25ffbcdfbfa921e57f604a4541a42ce0995a1cf2b97117d6fbc4fb4f11f1241"
+    }
+  ],
+  "passed": true,
+  "productionDeploymentAccepted": false,
+  "limitations": [
+    "No production deployment URL was supplied/configured.",
+    "This test only confirms local HTTP delivery of files and is not a production host/CDN/TLS/API acceptance test.",
+    "Browser interactions are covered separately by deployment_e2e_test_2026-10-18.json using Chromium page.set_content because localhost navigation is blocked in the managed browser environment."
+  ]
+}

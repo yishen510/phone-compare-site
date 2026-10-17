@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-10-17",
+  "runner": "Playwright + system Chromium",
+  "mode": "browser DOM interaction smoke tests using the exact index.html contents; not deployed-server E2E",
+  "passed": 20,
+  "total": 20,
+  "result": "PASS",
+  "checks": [
+    {
+      "name": "catalog renders",
+      "passed": true,
+      "detail": "resultCount=100"
+    },
+    {
+      "name": "unapproved card labels are fail-closed",
+      "passed": true,
+      "detail": "approved badges=0"
+    },
+    {
+      "name": "search narrows results",
+      "passed": true,
+      "detail": "count=2; names=['iPhone 17', 'iPhone 17 Pro Max']"
+    },
+    {
+      "name": "empty search state",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "year filter restricts results",
+      "passed": true,
+      "detail": "years={'2025-01', '2025-05', '2025-12', '2025-06', '2025-11', '2025-09', '2025-02', '2025-10', '2025-04', '2025-07'}"
+    },
+    {
+      "name": "table view renders rows",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "brand filter restricts cards",
+      "passed": true,
+      "detail": "brands={'Apple'}"
+    },
+    {
+      "name": "two or more cards available for compare",
+      "passed": true,
+      "detail": "cards=100"
+    },
+    {
+      "name": "compare dock reflects selection",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "comparison modal opens with both models",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "comparison clear works",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "recommendation excludes all currently unapproved records",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "recommendation explains closed admission gate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "no unapproved cards appear in recommendation results",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "complete audited synthetic record passes gate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "missing battery evidence fails gate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "ranking false flag fails gate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "recommendation false flag fails gate",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "actual dataset has zero eligible records",
+      "passed": true,
+      "detail": "{'good': True, 'missingEvidence': False, 'rankingOff': False, 'recommendationOff': False, 'actualEligible': 0}"
+    },
+    {
+      "name": "no uncaught browser JavaScript errors",
+      "passed": true,
+      "detail": ""
+    }
+  ],
+  "caveat": "Covers the tested interaction paths only; does not validate hardware-spec truth or qualify any model for ranking/recommendation."
+}

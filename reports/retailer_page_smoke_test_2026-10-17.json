@@ -1,0 +1,112 @@
+{
+  "checkedDate": "2026-10-17",
+  "market": "中国大陆",
+  "method": "通过公开网页检索并打开商品详情页读取页面显示的商品标题、规格、价格/促销信息和购买控件。该样本不是来自什么值得买授权 API，不得用于计算该 API 的报价覆盖率、自动规则通过率或 API 页面价格一致率。页面价格会随登录、地区、会员、优惠券和库存变化。 部分商品页文本由搜索索引快照提供，抓取时间从数天到数周不等；因此这里报告的是本次检索中可见的页面信息与购买控件，不宣称为实时成交价或当前可下单库存。实际购买前需刷新页面并核实当地配送/结算信息。",
+  "sampleSize": 8,
+  "directPageReadCount": 7,
+  "pagesWithAddToCartOrBuyActionObserved": 6,
+  "notValidAsNewPurchasableOffer": 1,
+  "metricCaveat": "本报告的 6/7=85.71% 仅表示手工检查的 7 个零售/官方商品页面中，有 6 个页面快照显示加入购物车/立即购买一类控件。它不等于有效可购买链接率，不等于已授权 API 返回结果的链接有效率；不保证最终库存、地区可售或结算成功。三星官方 SKU 页面有售罄提示，已计为未显示可购买控件；荣耀准新机候选不纳入这 7 个页面样本。",
+  "items": [
+    {
+      "brand": "Apple",
+      "model": "iPhone 17 Pro Max",
+      "storage": "256GB",
+      "channel": "京东商品页（需当面激活条款）",
+      "displayedPriceRmb": 9999.0,
+      "pageUrl": "https://item.jd.com/product/6QDM9CaD9ZAa0SxjEPbKrg.html",
+      "observed": "标题写明国行新机、需当面激活；页面显示 ¥9999，页面文本包含加入购物车与立即购买。购买前必须确认现场激活条件与退款条款。",
+      "newMainlandSkuLooksConsistent": true,
+      "purchaseActionVisible": true,
+      "countedInPurchasabilitySample": true
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "小米 17 Ultra",
+      "storage": "16GB+512GB",
+      "channel": "京东商品页",
+      "displayedPriceRmb": 7499.0,
+      "pageUrl": "https://item.jd.com/product/pnFnpyp0QuTDHftZxUjuZA.html",
+      "observed": "标题精确包含 16GB+512GB 与官方标配；页面显示 ¥7499，包含加入购物车与立即购买。",
+      "newMainlandSkuLooksConsistent": true,
+      "purchaseActionVisible": true,
+      "countedInPurchasabilitySample": true
+    },
+    {
+      "brand": "Huawei",
+      "model": "HUAWEI Mate 80 Pro Max",
+      "storage": "16GB+512GB",
+      "channel": "京东商品页",
+      "displayedPriceRmb": 7549.0,
+      "pageUrl": "https://item.jd.com/product/fWDqD6RGcZPxGM5qSmCZuw.html",
+      "observed": "标题精确包含 16GB+512GB；页面显示 ¥7549，包含加入购物车与立即购买。页面写有 6 期分期免息，结算价可能受条件影响。",
+      "newMainlandSkuLooksConsistent": true,
+      "purchaseActionVisible": true,
+      "countedInPurchasabilitySample": true
+    },
+    {
+      "brand": "OnePlus",
+      "model": "一加 15",
+      "storage": "12GB+512GB",
+      "channel": "京东商品页",
+      "displayedPriceRmb": 5699.0,
+      "pageUrl": "https://item.jd.com/product/WnkfBip3h0g3oZ9aaTryUg.html",
+      "observed": "标题精确包含 12GB+512GB；页面显示 ¥5699，包含加入购物车与立即购买。页面价与登录后到手价可能不同。",
+      "newMainlandSkuLooksConsistent": true,
+      "purchaseActionVisible": true,
+      "countedInPurchasabilitySample": true
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO Find X9 Pro",
+      "storage": "16GB+512GB",
+      "channel": "京东商品页（国家补贴标题）",
+      "displayedPriceRmb": 6299.0,
+      "pageUrl": "https://item.jd.com/product/K898bs8o8-e-gICONBwCOQ.html",
+      "observed": "标题精确包含 16GB+512GB 与官方标配；页面显示 ¥6299，包含加入购物车与立即购买；标题含国家补贴，补贴资格及最终到手价需核对。",
+      "newMainlandSkuLooksConsistent": true,
+      "purchaseActionVisible": true,
+      "countedInPurchasabilitySample": true
+    },
+    {
+      "brand": "vivo",
+      "model": "vivo X300 Pro",
+      "storage": "16GB+512GB",
+      "channel": "京东商品页",
+      "displayedPriceRmb": 6399.0,
+      "pageUrl": "https://item.jd.com/product/4CK0DF-5C-Wn6tDZ5XrH8w.html",
+      "observed": "标题精确包含 16GB+512GB；页面显示 ¥6399，包含加入购物车与立即购买。",
+      "newMainlandSkuLooksConsistent": true,
+      "purchaseActionVisible": true,
+      "countedInPurchasabilitySample": true
+    },
+    {
+      "brand": "Samsung",
+      "model": "Samsung Galaxy S26 Ultra",
+      "storage": "12GB+512GB",
+      "channel": "三星中国官方商城",
+      "displayedPriceRmb": 11599.0,
+      "offerPriceRmb": 10599.0,
+      "pageUrl": "https://www.samsung.com.cn/smartphones/galaxy-s26-ultra/buy/",
+      "observed": "官方购买页列出 12GB+512GB 建议/页面价 ¥11599、券后到手价 ¥10599；同期搜索索引显示页面有售罄提示。因此不计入可购买成功样本。",
+      "newMainlandSkuLooksConsistent": true,
+      "purchaseActionVisible": false,
+      "countedInPurchasabilitySample": true
+    },
+    {
+      "brand": "Honor",
+      "model": "荣耀 Magic8 Pro",
+      "storage": "16GB+512GB",
+      "channel": "京东商品页（排除项）",
+      "displayedPriceRmb": 5331.14,
+      "pageUrl": "https://item.jd.com/product/Ay7xwjtnL-yUSJAz9M9OEg.html",
+      "observed": "公开搜索结果标题写明准新机，未作为新机报价接受；页面抓取未成功完成独立详情验证。",
+      "newMainlandSkuLooksConsistent": false,
+      "purchaseActionVisible": null,
+      "countedInPurchasabilitySample": false
+    }
+  ],
+  "purchaseControlsVisibleNumerator": 6,
+  "purchaseControlsVisibleDenominator": 7,
+  "purchaseControlsVisibleRate": 0.8571
+}

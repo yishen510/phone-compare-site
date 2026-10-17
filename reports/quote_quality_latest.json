@@ -1,0 +1,127 @@
+{
+  "createdAt": "2026-10-17T01:36:04+08:00",
+  "provider": "hainan_discount_v2",
+  "apiStatus": "needs_credentials",
+  "apiMessage": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。",
+  "credentialsPresent": false,
+  "apiWasActuallyTested": false,
+  "requestedModels": 9,
+  "returnedQuotes": 0,
+  "qualityPassingQuotes": 0,
+  "metrics": {
+    "quoteCoverageRate": null,
+    "quoteCoverageNumerator": null,
+    "quoteCoverageDenominator": null,
+    "automaticRulePassRate": null,
+    "automaticRulePassNumerator": null,
+    "automaticRulePassDenominator": null,
+    "pagePriceConsistencyRate": null,
+    "pagePriceConsistencyNumerator": 0,
+    "pagePriceConsistencyDenominator": 0,
+    "pagePriceToleranceRmb": 1.0,
+    "pagePriceFreshnessHours": 24,
+    "validPurchasableLinkRate": null,
+    "validPurchasableLinkNumerator": 0,
+    "validPurchasableLinkDenominator": 0,
+    "manualReviewRowsStaleOrIncomplete": 0,
+    "manualReviewPolicy": "页面价格一致率需有 24 小时内的页面实价与 API 价格，差值≤¥1；有效可购买链接率需近期确认商品页已打开、国行新机、精确存储版本、存在库存/购买路径。未审核或过期记录不计入分母。"
+  },
+  "metricDefinitions": {
+    "quoteCoverageRate": "精确型号+容量的 API 报价机型数 / 本轮请求机型数；没有真实 API 调用时为 null，不将未授权算作 0%。",
+    "automaticRulePassRate": "通过型号、存储、数值价格、HTTPS、商城、时间与排除规则的报价数 / API 返回报价数。",
+    "pagePriceConsistencyRate": "24小时内人工录入商品页实价且与 API 报价差值≤¥1 的条数 / 有可比较实价的条数。",
+    "validPurchasableLinkRate": "24小时内确认页面打开、国行新机、容量准确且有库存/购买路径的链接数 / 已完成页面审核的 API 商品链接数。"
+  },
+  "items": [
+    {
+      "phoneId": "apple-17pm",
+      "model": "iPhone 17 Pro Max",
+      "targetStorage": "256GB",
+      "qualityPass": false,
+      "failures": [
+        "no_quote_returned"
+      ],
+      "reason": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。"
+    },
+    {
+      "phoneId": "sam-25u",
+      "model": "Galaxy S25 Ultra",
+      "targetStorage": "12GB+256GB",
+      "qualityPass": false,
+      "failures": [
+        "no_quote_returned"
+      ],
+      "reason": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。"
+    },
+    {
+      "phoneId": "xia-15u",
+      "model": "小米 15 Ultra",
+      "targetStorage": "12GB+256GB",
+      "qualityPass": false,
+      "failures": [
+        "no_quote_returned"
+      ],
+      "reason": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。"
+    },
+    {
+      "phoneId": "hua-mate70p",
+      "model": "HUAWEI Mate 70 Pro",
+      "targetStorage": "12GB+256GB",
+      "qualityPass": false,
+      "failures": [
+        "no_quote_returned"
+      ],
+      "reason": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。"
+    },
+    {
+      "phoneId": "honor-magic7-pro",
+      "model": "荣耀 Magic7 Pro",
+      "targetStorage": "12GB+256GB",
+      "qualityPass": false,
+      "failures": [
+        "no_quote_returned"
+      ],
+      "reason": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。"
+    },
+    {
+      "phoneId": "oppo-x8u",
+      "model": "OPPO Find X8 Ultra",
+      "targetStorage": "12GB+256GB",
+      "qualityPass": false,
+      "failures": [
+        "no_quote_returned"
+      ],
+      "reason": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。"
+    },
+    {
+      "phoneId": "op-13",
+      "model": "一加 13",
+      "targetStorage": "12GB+256GB",
+      "qualityPass": false,
+      "failures": [
+        "no_quote_returned"
+      ],
+      "reason": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。"
+    },
+    {
+      "phoneId": "vivo-x200u",
+      "model": "vivo X200 Ultra",
+      "targetStorage": "12GB+256GB",
+      "qualityPass": false,
+      "failures": [
+        "no_quote_returned"
+      ],
+      "reason": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。"
+    },
+    {
+      "phoneId": "realme-gt7-pro",
+      "model": "真我 GT7 Pro",
+      "targetStorage": "12GB+256GB",
+      "qualityPass": false,
+      "failures": [
+        "no_quote_returned"
+      ],
+      "reason": "未检测到 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的 Key。"
+    }
+  ]
+}
