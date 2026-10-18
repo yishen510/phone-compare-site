@@ -215,7 +215,7 @@ function compare(){
  if(items.length<2){toast('至少加入 2 款手机再开始对比');return;}
  const rows=[['屏幕','display'],['处理器','chip'],['影像','camera'],['电池','battery'],['充电','charging'],['重量','weight'],['存储','storage'],['首发参考价','priceCN']];
  const value=(p,key)=>key==='priceCN'?(Number.isFinite(Number(p[key]))?money(p[key]):'待核验'):(p[key]||'待核验');
- const normalize=v=>String(v??'').trim().replace(/\\s+/g,' ').toLowerCase();
+ const normalize=v=>String(v??'').trim().replace(/\s+/g,' ').toLowerCase();
  const differs=key=>new Set(items.map(p=>normalize(value(p,key)))).size>1;
  const shown=rows.filter(([label,key])=>!state.compareDiffOnly||differs(key));
  const bestFor=p=>Array.isArray(p.bestFor)&&p.bestFor.length?p.bestFor.join('、'):'暂无经过审核的用途标签';
