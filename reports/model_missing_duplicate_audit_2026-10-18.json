@@ -100,18 +100,20 @@
       "brand": "Huawei",
       "model": "HUAWEI Pura 90 Pro Max",
       "missingType": "系列缺失",
-      "verificationStatus": "官方规格与起售价已核实；公开 SKU 价目目前仅找到媒体逐档报道，官方 SKU 首发价映射仍未完成，暂不补录",
+      "verificationStatus": "官方发布稿确认发布/开售日期与6499元起售价；四档 SKU 价目仅有媒体逐档记录，官方 SKU 首发价映射仍待证",
       "officialSources": [
         "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/",
         "https://consumer.huawei.com/cn/phones/pura90-pro-max/",
         "https://consumer.huawei.com/cn/press/events/2026/huawei-pura-90-series-and-new-product-launch-event/",
         "https://www.vmall.com/portal/activity/index.html?cid=380536&isShowLayout=false&pn=purapc",
-        "https://www.ithome.com/0/941/208.htm"
+        "https://www.ithome.com/0/941/208.htm",
+        "https://feeds-drcn.cloud.huawei.com.cn/landingpage/latest?channel=-1&cpid=666&ctype=news&docid=105148003e498604d4068e0fb764082c7701eb5&dy_scenario=relate&emuiVer=Follow&ifl=zh_CN&r=CN&tn=9b65cebec05a3680a84635b4829d9e389221675b4b24294b248381266cfb7b6a&to_app=hwbrowser",
+        "https://www.vmall.com/portal/activity/index.html?cid=381073&isShowLayout=false&pn=purapc"
       ],
-      "notes": "本轮补充检索华为官网规格页、产品页、官方发布会页与华为商城。官方产品页及华为商城均显示6499元起；IT之家等媒体逐档报道12GB+256GB为6499元、12GB+512GB为6999元、16GB+512GB为7499元、16GB+1TB为8499元，但尚未找到华为官方发布稿/商城页面可直接证明每档为首发价的逐项价格表。按严格准入规则，媒体价格仅作交叉参考，不视为官方首发 SKU 证据；不新增目录记录，不推断 priceCN 与 quoteTargetStorage 的正式映射。",
+      "notes": "再次核对华为官方发布稿、官方产品页和华为商城：官方发布稿确认 Pura 90 Pro Max 于2026-04-20发布、2026-04-29开售，起售价6499元；官方产品页及华为商城当前同样显示6499元起。IT之家逐档列出12GB+256GB 6499元、12GB+512GB 6999元、16GB+512GB 7499元、16GB+1TB 8499元，但尚未找到华为官方材料逐项对应这四个 SKU 的首发价。继续按严格门槛将媒体价目作为交叉线索而非官方价格证据，不新增正式目录记录，不设置 priceCN/quoteTargetStorage。",
       "officialEvidence": {
-        "source": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/",
-        "evidence": "华为官方规格页确认屏幕、麒麟9030S、影像、电池、充电、重量与存储容量范围；官方发布会页确认系列机型存在，官方产品页及华为商城显示Pura 90 Pro Max 6499元起。公开媒体报道提供四档 SKU 价格，但尚未找到官方逐 SKU 首发价表，因此官方 SKU 价格映射继续待核验。",
+        "source": "https://feeds-drcn.cloud.huawei.com.cn/landingpage/latest?channel=-1&cpid=666&ctype=news&docid=105148003e498604d4068e0fb764082c7701eb5&dy_scenario=relate&emuiVer=Follow&ifl=zh_CN&r=CN&tn=9b65cebec05a3680a84635b4829d9e389221675b4b24294b248381266cfb7b6a&to_app=hwbrowser",
+        "evidence": "华为官方发布稿确认 Pura 90 Pro Max 2026-04-20发布、2026-04-29开售、起售价6499元；官方产品页与华为商城显示6499元起。官方来源尚未找到四个存储 SKU 的逐项首发价格表。媒体逐项价格只作交叉核验线索，不替代官方证据。",
         "checkedAt": "2026-10-18"
       },
       "preAudit": {
@@ -172,7 +174,7 @@
             "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/"
           }
         ],
-        "note": "媒体逐 SKU 价格可作交叉线索，不可代替官方首发价证据。当前不新增到 data/phones.json；priceCN/quoteTargetStorage 不作推断。"
+        "note": "本次复核已找到华为官方发布稿，解决了官方发布时间/开售日期与起售价证据；逐 SKU 首发价映射仍未满足准入要求，暂不新增目录。媒体价格仅作交叉线索。"
       }
     },
     {
