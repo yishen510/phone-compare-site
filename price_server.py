@@ -13,6 +13,7 @@ import re
 import time
 import unicodedata
 import uuid
+from threading import Lock
 from datetime import datetime, timezone, timedelta
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
@@ -37,6 +38,7 @@ FIELDS = os.getenv("HAINAN_FIELDS", "")
 HTTP_TIMEOUT_SECONDS = 15
 PHONE_CORS_ORIGIN = os.getenv("PHONE_CORS_ORIGIN", "").strip()
 _LAST_PROVIDER_REQUEST_AT = 0.0
+_PROVIDER_REQUEST_LOCK = Lock()
 
 # phoneId -> (cache_epoch, result_or_none); None entries avoid repeated unproductive searches.
 QUOTE_CACHE: dict[str, tuple[float, dict[str, Any] | None]] = {}
@@ -231,9 +233,13 @@ def reject_offer(title: str, exclude_terms: list[str]) -> bool:
 def _call_provider(query: str, api_key: str) -> list[dict[str, Any]]:
     """Call Hainan discount-search Pro v2; credentials stay server-side."""
     global _LAST_PROVIDER_REQUEST_AT
-    wait = MIN_REQUEST_INTERVAL_SECONDS - (time.monotonic() - _LAST_PROVIDER_REQUEST_AT)
-    if wait > 0:
-        time.sleep(wait)
+    # Reserve request start times under a lock so concurrent web requests cannot
+    # accidentally exceed the upstream API's configured minimum interval.
+    with _PROVIDER_REQUEST_LOCK:
+        wait = MIN_REQUEST_INTERVAL_SECONDS - (time.monotonic() - _LAST_PROVIDER_REQUEST_AT)
+        if wait > 0:
+            time.sleep(wait)
+        _LAST_PROVIDER_REQUEST_AT = time.monotonic()
     body = {"request_from": REQUEST_FROM, "question_id": "phonecompare-" + str(uuid.uuid4()), "product_query": query, "query_process": QUERY_PROCESS, "size": RESULT_SIZE, "fields": FIELDS}
     request = Request(API_URL, data=json.dumps(body, ensure_ascii=False).encode("utf-8"), headers={"Accept":"application/json","Content-Type":"application/json","x-api-key":api_key,"User-Agent":"PhoneCompareMainland/1.0"}, method="POST")
     try:
@@ -248,8 +254,6 @@ def _call_provider(query: str, api_key: str) -> list[dict[str, Any]]:
         raise RuntimeError("无法连接海纳好价检索 API") from exc
     except TimeoutError as exc:
         raise RuntimeError("海纳好价检索 API 请求超时") from exc
-    finally:
-        _LAST_PROVIDER_REQUEST_AT = time.monotonic()
     if status_code < 200 or status_code >= 300:
         raise RuntimeError("海纳 API 返回 HTTP " + str(status_code))
     try:
