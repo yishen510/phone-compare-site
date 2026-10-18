@@ -1,6 +1,6 @@
 {
   "checkedAt": "2026-10-18",
-  "checkType": "repository static consistency validation",
+  "type": "remote static consistency validation",
   "passed": 10,
   "failed": 0,
   "checks": [
@@ -11,8 +11,8 @@
     {
       "name": "catalog record count",
       "status": "PASS",
-      "actual": 101,
-      "expected": 101
+      "actual": 102,
+      "expected": 102
     },
     {
       "name": "IDs unique",
@@ -26,10 +26,10 @@
       "name": "all four HTML catalog counts match canonical JSON",
       "status": "PASS",
       "actual": {
-        "index.html": 101,
-        "phone-compare-demo.html": 101,
-        "_site/index.html": 101,
-        "_site/phone-compare-demo.html": 101
+        "index.html": 102,
+        "phone-compare-demo.html": 102,
+        "_site/index.html": 102,
+        "_site/phone-compare-demo.html": 102
       }
     },
     {
@@ -37,12 +37,11 @@
       "status": "PASS"
     },
     {
-      "name": "HONOR Magic9 Ultra fieldAudit has 9 rows",
-      "status": "PASS",
-      "actual": 9
+      "name": "HONOR Magic9 Ultra has nine embedded evidence rows and gate closed",
+      "status": "PASS"
     },
     {
-      "name": "HONOR Magic9 Ultra ranking/recommendation gate closed and priceCN null",
+      "name": "vivo X500 Pro Max has nine embedded evidence rows and gate closed",
       "status": "PASS"
     },
     {
@@ -58,5 +57,5 @@
       "status": "PASS"
     }
   ],
-  "scope": "This is a remote static consistency check over the current GitHub file contents. It does not execute Chromium/browser interactions, run the local build script, test the production host, or independently validate manufacturer facts."
+  "scope": "Static checks over repository file contents only; no browser E2E or production-host verification."
 }
