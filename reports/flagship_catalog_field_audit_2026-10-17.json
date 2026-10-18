@@ -6371,11 +6371,11 @@
       "brand": "vivo",
       "model": "vivo X500 Pro Max",
       "field": "官方首发起售价",
-      "value": "官方规格页仅列建议零售价；首发价与容量 SKU 映射未核实",
-      "status": "starting_price_only_sku_mapping_unverified",
-      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-      "evidenceText": "建议零售价不等同于官方首发价，需官方发布稿或购买指引核实具体容量版本的首发价格。",
-      "note": "priceCN保持null；不以官网建议零售价代替首发价。"
+      "value": "12GB+256GB：6999元；12GB+512GB：7999元；16GB+512GB：8499元；12GB+1TB卫星通信版：8999元；16GB+1TB卫星通信版：9499元；16GB+1TB创作者套装：12999元",
+      "status": "verified_official_page_reviewed",
+      "sourceUrl": "https://www.vivo.com.cn/brand/news/detail?id=1392",
+      "evidenceText": "vivo中国官方2026年9月21日发布稿逐项列出X500 Pro Max各容量版本首发价；其中12GB+256GB为6999元。",
+      "note": "官方首发价按具体SKU核验；priceCN采用12GB+256GB版本6999元，非实时成交价。"
     }
   ],
   "pass3ModelUpdates": [
@@ -6385,7 +6385,7 @@
     "Galaxy S26+"
   ],
   "auditCaveat": "官方来源链接本身不等于字段已核验。仅在官方原文直接支持对应值时标记 verified_official_page_reviewed；本轮不开放任何候选机型排名或推荐。 荣耀 Magic9 超能版的八项字段有官方页面证据，但首发价与容量SKU映射仍待复核，整机资格保持关闭。 vivo X500 Pro Max 的官网建议零售价不能代替首发价；整机准入保持关闭。",
-  "latestBatch": "2026-10-18：新增 vivo X500 Pro Max 九项字段审计；八项规格/上市月份有官方证据，首发价与 SKU 映射待核验。",
+  "latestBatch": "2026-10-18：vivo X500 Pro Max 官方发布稿已核实具体容量 SKU 首发价；priceCN更新为12GB+256GB版本6999元。整机仍待参数终审。",
   "frontendGate": {
     "file": "eligibility.js",
     "staticCheck": "passed",
