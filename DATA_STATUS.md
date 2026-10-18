@@ -11,7 +11,7 @@
 
 ## 当前目录快照说明（2026-10-17）
 
-本文件前两条中的“53 款”及“本轮25款”属于较早审计批次口径。当前 canonical `data/phones.json` 已扩充为 100 款；当前字段级报告含 531 条字段记录，覆盖 59 款机型。请以 `reports/flagship_catalog_field_audit_2026-10-17.json`、`data/phones.json` 和 `verify_eligibility.py` 的输出为当前状态依据。
+本文件前两条中的“53 款”及“本轮25款”属于较早审计批次口径。当前 canonical `data/phones.json` 已扩充为 101 款；当前字段级报告含 557 条字段记录，覆盖 60 款 2025—2026 年机型。新增荣耀 Magic9 超能版（`honor-magic9-ultra`）已同步到两个源 HTML；首发价与容量 SKU 映射待核验，暂不具备排名/推荐资格。请以 `reports/flagship_catalog_field_audit_2026-10-17.json`、`data/phones.json` 和 `verify_eligibility.py` 的输出为当前状态依据。
 
 ## 本轮 25 款逐条清单
 
