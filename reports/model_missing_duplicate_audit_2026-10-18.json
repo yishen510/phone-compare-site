@@ -226,6 +226,41 @@
     "validation": "Latest workflow for commit 9c9752f4c30633aee9b9b0f1225fcf3e847074f5 succeeded; a follow-up report-only commit is queued. Existing reports show static gate 8/8 and Chromium E2E 8/8. No new model records added because field-level audit rows and embedded data copies must be synchronized before admission.",
     "referenceAuditUpdated": true,
     "officialCandidateChecks": "2026-10-18 official-page checks confirm existence of HONOR Magic9 Ultra Edition, HUAWEI Pura 90, HUAWEI Pura 90 Pro, HUAWEI Pura 90 Pro Max, vivo X500 Pro Max, and Xiaomi 18 Pro Max on mainland China manufacturer pages. Detailed field-level admission remains pending.",
-    "repositoryWideIdSearch": "Still incomplete: GitHub code search was incomplete and a full repository-wide local grep has not been run. The nine-file targeted scan is not sufficient to authorize ID deletion."
+    "repositoryWideIdSearch": "Completed across all 35 text files in the 36-path Git tree; both IDs appear in canonical data, HTML copies, generated _site files, and historical audit/status docs.",
+    "duplicateIdRemoved": false,
+    "nextAction": "Prepare a controlled realme GT8 Pro ID migration plan; separately add only models whose official fields pass the existing audit threshold."
+  },
+  "repositoryWideIdSearch": {
+    "completedAt": "2026-10-18",
+    "method": "Enumerated the complete Git tree (36 blob paths) and fetched/scanned all 35 text files; excluded the single compiled Python bytecode file scripts/__pycache__/build_pages.cpython-313.pyc from text search.",
+    "scannedTextFileCount": 35,
+    "totalBlobPathCount": 36,
+    "targetDuplicate": {
+      "model": "realme GT8 Pro",
+      "ids": [
+        "realme-gt8p",
+        "realme-gt8-pro"
+      ]
+    },
+    "filesWithBothIds": [
+      "data/phones.json",
+      "index.html",
+      "phone-compare-demo.html",
+      "_site/index.html",
+      "_site/phone-compare-demo.html",
+      "reports/2025-2026_remaining_field_queue_2026-10-17.csv",
+      "reports/flagship_catalog_audit_2026-10-17.json",
+      "reports/independent_whole_device_admission_review_2026-10-17.json",
+      "reports/independent_whole_device_admission_review_2026-10-18.json",
+      "reports/model_missing_duplicate_audit_2026-10-18.json",
+      "DATA_STATUS.md"
+    ],
+    "findings": [
+      "Both IDs occur in the canonical data file and the source HTML data copies, plus generated _site copies.",
+      "Both IDs also occur in audit/status/queue documents; these are historical evidence and should not be mechanically rewritten without preserving audit history.",
+      "The previous targeted scan is superseded by this complete text-file scan."
+    ],
+    "decision": "Do not delete either ID yet. First establish canonical ID, migrate application-facing data references and regenerate HTML/_site outputs, then preserve historical audit mentions as migration evidence or explicitly mark them superseded.",
+    "mergeAuthorized": false
   }
 }
