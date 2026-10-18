@@ -5719,8 +5719,8 @@
     "weight": "摄夜配色约 225g；大地回声、晴天、览霞约 229g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 12GB+1TB 卫星通信版 / 16GB+1TB 卫星通信版 / 16GB+1TB 创作者套装版",
     "os": "以官方大陆版页面为准",
-    "priceCN": null,
-    "priceText": "官方规格页展示建议零售价；官方首发价与 SKU 映射待核验，故不写入 priceCN",
+    "priceCN": 6999,
+    "priceText": "官方首发价：12GB+256GB 版本 6999 元（2026-09-21 官方发布稿）",
     "selling": "2亿像素蔡司 APO 长焦、2K级高刷屏与8000mAh电池，定位影像与长续航旗舰",
     "bestFor": [
       "长焦摄影",
@@ -5732,7 +5732,7 @@
     "verified": false,
     "launchMonth": "2026-09",
     "launchDateDisplay": "2026年09月（官方规格页仅确认上市月份）",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -5745,21 +5745,22 @@
       "16GB+1TB创作者套装版"
     ],
     "chinaOfficial": true,
-    "dataNote": "依据 vivo 中国大陆官方规格页录入硬件参数、上市月份、存储 SKU 与建议零售价；建议零售价不等同于官方首发价。首发价未核实，priceCN 保持 null，整机资格关闭。",
-    "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "首发价及对应容量 SKU 尚待官方发布资料交叉核验",
+    "dataNote": "硬件、上市月份与容量组合依据 vivo 中国大陆官方规格页；官方发布稿逐一列明首发价与容量 SKU。priceCN记录12GB+256GB官方首发价6999元，非当前实时成交价。整机仍待完成全部参数复核，排名与推荐资格关闭。",
+    "announcementSource": "https://www.vivo.com.cn/brand/news/detail?id=1392",
+    "priceSource": "https://www.vivo.com.cn/brand/news/detail?id=1392",
+    "priceSourceName": "vivo 官方新品发布稿（2026-09-21）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
-    "quoteTargetStorage": null,
-    "quoteTargetStorageReason": "首发价与 SKU 对应关系确认前不触发报价检索。",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "官方发布稿明确给出12GB+256GB首发价6999元；其他容量版本价格也按发布稿单独列出。",
     "auditStatus": "pending_review",
     "auditNotes": [
-      "vivo 中国大陆官方规格页确认机型、主要硬件规格、上市月份、容量组合及建议零售价。",
-      "官网建议零售价不作为首发价证据；首发价与 SKU 映射待核验。",
-      "verified=false，排名与推荐资格均关闭。"
+      "vivo 中国大陆官方规格页确认主要硬件规格、上市月份、容量组合及建议零售价。",
+      "vivo 2026-09-21 官方发布稿逐项列出 X500 Pro Max 容量版本首发价：12GB+256GB 6999元、12GB+512GB 7999元、16GB+512GB 8499元、12GB+1TB卫星通信版8999元、16GB+1TB卫星通信版9499元、16GB+1TB创作者套装12999元。",
+      "priceCN采用12GB+256GB官方首发价6999元；不代表当前实时售价。",
+      "硬件字段及整机审核仍待最终复核，verified与排名/推荐资格保持关闭。"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "verified_official_launch_price",
     "parameterAuditStatus": "partial",
     "eligibleForRanking": false,
     "eligibleForRecommendation": false,
@@ -5830,11 +5831,11 @@
       },
       {
         "field": "官方首发起售价",
-        "value": "官方规格页仅列建议零售价；首发价与容量 SKU 映射未核实",
-        "status": "starting_price_only_sku_mapping_unverified",
-        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-        "evidenceText": "建议零售价不等同于官方首发价，需官方发布稿或购买指引核实具体容量版本的首发价格。",
-        "note": "priceCN保持null；不以官网建议零售价代替首发价。"
+        "value": "12GB+256GB：6999元；12GB+512GB：7999元；16GB+512GB：8499元；12GB+1TB卫星通信版：8999元；16GB+1TB卫星通信版：9499元；16GB+1TB创作者套装：12999元",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/brand/news/detail?id=1392",
+        "evidenceText": "vivo中国官方2026年9月21日发布稿逐项列出X500 Pro Max各容量版本首发价；其中12GB+256GB为6999元。",
+        "note": "官方首发价按具体SKU核验；priceCN采用12GB+256GB版本6999元，非实时成交价。"
       }
     ]
   }
