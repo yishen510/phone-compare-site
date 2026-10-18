@@ -41,7 +41,7 @@
       "status": "PASS"
     },
     {
-      "name": "vivo X500 Pro Max has nine embedded evidence rows and gate closed",
+      "name": "vivo X500 Pro Max has nine embedded evidence rows; SKU launch price verified; gate remains closed",
       "status": "PASS"
     },
     {
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "name": "last nine CSV rows have nine columns",
+      "name": "CSV price row updated with official source and nine-column format",
       "status": "PASS"
     }
   ],
