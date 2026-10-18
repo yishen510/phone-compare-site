@@ -232,8 +232,8 @@
         "realme-gt8p",
         "realme-gt8-pro"
       ],
-      "status": "已确认重复；暂不删除",
-      "notes": "realme-gt8p 的字段多为待复核；realme-gt8-pro 含较完整规格与官方规格页。删除前必须搜索两个 ID 在所有页面、脚本、审计报告、测试中的引用，优先将有效字段合并到保留记录，并同步三个数据副本。",
+      "status": "已确认重复；本轮补充官方规格页交叉核验；暂不合并或删除",
+      "notes": "全仓库扫描确认两个 ID 均出现在11个文件中。官方真我 GT8 Pro 产品页现可核验核心宣传参数：第五代骁龙8至尊版+电竞独显芯片R1、2K 144Hz屏幕、7000mAh电池、120W有线+50W无线充电、214g机身、理光GR主摄与2亿潜望长焦。该官方产品页不等于历史首发 SKU 价目表；发布价格当前仍只有媒体逐 SKU 报道可作交叉线索。canonical 候选 realme-gt8-pro 已有较完整字段，但显示/芯片/相机等仍有泛化或需逐项确认的值；另一条 realme-gt8p 的字段大多是待复核占位。暂不合并，先建立字段差异表，再逐字段核实后统一更新 data/phones.json 和四份 HTML。",
       "referenceAudit": {
         "checkedFiles": [
           "data/phones.json",
@@ -312,8 +312,80 @@
           "quoteTargetStorageReason",
           "auditNotes"
         ],
-        "action": "No merge committed; fields need field-by-field source verification before merge."
-      }
+        "action": "先按 fieldDifferenceAudit 逐项核实官方规格与 SKU 价格来源；通过后才将可信字段合并到 realme-gt8-pro。之后扫描所有11个引用文件，更新 data/phones.json、index.html、phone-compare-demo.html、_site 两份副本及历史审计说明，运行静态一致性和浏览器回归测试；测试未完成前保留两个 ID。"
+      },
+      "officialEvidence": {
+        "source": "https://www.realme.com/cn/realme-gt-8-pro",
+        "evidence": "真我中国大陆官方产品页确认第五代骁龙8至尊版与电竞独显芯片R1、2K 144Hz苍穹屏、7000mAh电池、120W有线+50W无线充电、约214g、理光GR影像和2亿像素潜望长焦。官方发布价格逐 SKU 映射尚未找到；IT之家列出5档价格，3999/4299/4499/4699/5199元，但该信息只作交叉核验。",
+        "checkedAt": "2026-10-18",
+        "officialProductPage": "https://www.realme.com/cn/realme-gt-8-pro",
+        "mediaLaunchPriceCrossCheck": "https://www.ithome.com/0/891/148.htm"
+      },
+      "fieldDifferenceAudit": [
+        {
+          "field": "display",
+          "placeholderId": "realme-gt8p: 官方规格页待逐项录入",
+          "canonicalId": "realme-gt8-pro: 6.79英寸 QHD+ AMOLED · 最高144Hz",
+          "officialEvidence": "2K 144Hz 苍穹屏；官网页面确认",
+          "status": "canonical candidate needs precise wording/official spec cross-check"
+        },
+        {
+          "field": "chip",
+          "placeholderId": "realme-gt8p: 旗舰平台；具体型号待复核",
+          "canonicalId": "realme-gt8-pro: 新一代骁龙旗舰平台（以官网页为准）",
+          "officialEvidence": "第五代骁龙8至尊版 + 电竞独显芯片R1",
+          "status": "officially identified; candidate data not yet synchronized"
+        },
+        {
+          "field": "camera",
+          "placeholderId": "realme-gt8p: 旗舰影像系统；详细参数待复核",
+          "canonicalId": "realme-gt8-pro: 5000万理光GR主摄+5000万超广角+2亿长焦",
+          "officialEvidence": "理光GR防眩光主摄、5000万超广角、2亿超光影潜望长焦",
+          "status": "officially identified; exact lens wording and OIS to cross-check"
+        },
+        {
+          "field": "battery",
+          "placeholderId": "realme-gt8p: 官方规格待复核",
+          "canonicalId": "realme-gt8-pro: 官方规格页待录入",
+          "officialEvidence": "7000mAh",
+          "status": "officially identified; candidate data not yet synchronized"
+        },
+        {
+          "field": "charging",
+          "placeholderId": "realme-gt8p: 官方规格待复核",
+          "canonicalId": "realme-gt8-pro: 官方规格页待录入",
+          "officialEvidence": "120W有线、50W无线",
+          "status": "officially identified; candidate data not yet synchronized"
+        },
+        {
+          "field": "weight",
+          "placeholderId": "realme-gt8p: 官方规格待复核",
+          "canonicalId": "realme-gt8-pro: 约214–218g",
+          "officialEvidence": "官方产品页展示214g",
+          "status": "officially identified; confirm model/color/material footnotes"
+        },
+        {
+          "field": "storageOptions",
+          "placeholderId": "realme-gt8p: []",
+          "canonicalId": "realme-gt8-pro: 12+256/12+512/16+256/16+512/16+1TB",
+          "officialEvidence": "媒体发布报道列出五个 SKU；官方 SKU 页面映射待单独复核",
+          "status": "media cross-check only; official SKU confirmation pending"
+        },
+        {
+          "field": "priceCN / quoteTargetStorage",
+          "placeholderId": "realme-gt8p: null / null",
+          "canonicalId": "realme-gt8-pro: null / 12GB+256GB",
+          "officialEvidence": "媒体发布报道起价3999元并列五档价格；未找到官方逐档首发价页",
+          "status": "price gate pending; do not infer official price from media"
+        },
+        {
+          "field": "auditStatus / verified / eligibility",
+          "placeholderId": "partial_verified / false / false",
+          "canonicalId": "needs_parameter_price_audit / true / not fully eligible",
+          "officialEvidence": "项目规则要求九字段完整证据与回归测试",
+          "status": "keep both gated; do not merge eligibility flags"
+        }
+      ]
     }
   ],
   "excludedOrHold": [
