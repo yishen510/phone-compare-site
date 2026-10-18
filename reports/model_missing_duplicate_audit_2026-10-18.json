@@ -1,0 +1,131 @@
+{
+  "reportTitle": "机型缺失与重复审计清单",
+  "reportDate": "2026-10-18",
+  "repository": "yishen510/phone-compare-site",
+  "branch": "main",
+  "scope": "中国大陆正式销售旗舰手机目录；此清单用于补录排期，不代表机型已通过参数、价格或排名准入审核。",
+  "catalogSnapshot": {
+    "path": "data/phones.json",
+    "recordCount": 100,
+    "brandCount": 11,
+    "duplicateModelCount": 1
+  },
+  "rules": [
+    "仅将有厂商中国大陆官方页面或正式发布资料支持的机型列为已确认候选。",
+    "型号存在确认不等于字段完整；未核实参数继续标注待复核，价格未知时 priceCN 必须为 null、priceType 为 unknown、priceSource 为 null。",
+    "新增机型必须同步核对 data/phones.json、index.html、phone-compare-demo.html 的嵌入式 PHONE_DATA，避免线上页面与源数据不一致。",
+    "新增机型不得自动进入排名或推荐；沿用既有全机型审计准入门槛。",
+    "重复记录删除前，必须全仓库查找 ID 引用并迁移引用；不能只按名称相同直接删除。"
+  ],
+  "missingCandidates": [
+    {
+      "brand": "OPPO",
+      "model": "OPPO Find X10 E",
+      "missingType": "系列变体缺失",
+      "verificationStatus": "官方系列信息待交叉核验；不直接补录",
+      "officialSources": [
+        "https://www.oppo.com/cn/"
+      ],
+      "notes": "上一轮公开来源曾指向 Find X10 系列存在该变体；本次需重新确认具体中国大陆官方商品页和上市信息。"
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO Find X10 Pro Max",
+      "missingType": "系列变体缺失",
+      "verificationStatus": "候选已发现；需复核官方商品页及 SKU",
+      "officialSources": [
+        "https://www.oppo.com/cn/smartphones/series-find-x/find-x10-pro-max/"
+      ],
+      "notes": "目录有 Find X10 与 Find X9 Ultra 等，但未发现该准确名称。"
+    },
+    {
+      "brand": "Honor",
+      "model": "荣耀 Magic9 超能版",
+      "missingType": "系列变体缺失",
+      "verificationStatus": "厂商发布信息支持机型存在；参数/价格待核验",
+      "officialSources": [
+        "https://www.honor.com/cn/news/honor-magic9-launch/"
+      ],
+      "notes": "目录已有 Magic9 与 Magic9 Pro Max。"
+    },
+    {
+      "brand": "Huawei",
+      "model": "HUAWEI Pura 90",
+      "missingType": "系列缺失",
+      "verificationStatus": "官方产品/支持目录候选；正式销售与规格待核验",
+      "officialSources": [
+        "https://consumer.huawei.com/cn/phones/"
+      ],
+      "notes": "正式补录前确认中国大陆型号、上市日期与版本。"
+    },
+    {
+      "brand": "Huawei",
+      "model": "HUAWEI Pura 90 Pro",
+      "missingType": "系列缺失",
+      "verificationStatus": "官方产品/支持目录候选；正式销售与规格待核验",
+      "officialSources": [
+        "https://consumer.huawei.com/cn/phones/"
+      ],
+      "notes": "正式补录前确认中国大陆型号、上市日期与版本。"
+    },
+    {
+      "brand": "Huawei",
+      "model": "HUAWEI Pura 90 Pro Max",
+      "missingType": "系列缺失",
+      "verificationStatus": "官方产品/支持目录候选；正式销售与规格待核验",
+      "officialSources": [
+        "https://consumer.huawei.com/cn/phones/"
+      ],
+      "notes": "正式补录前确认中国大陆型号、上市日期与版本。"
+    },
+    {
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "missingType": "系列变体缺失",
+      "verificationStatus": "候选已发现；需复核 vivo 中国大陆官方发布/产品页",
+      "officialSources": [
+        "https://www.vivo.com.cn/"
+      ],
+      "notes": "当前目录有 X500 与 X500 Pro。"
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Xiaomi 18 Pro Max",
+      "missingType": "系列变体缺失",
+      "verificationStatus": "候选已发现；需复核小米中国大陆官方产品页",
+      "officialSources": [
+        "https://www.mi.com/"
+      ],
+      "notes": "当前目录有 Xiaomi 18 Pro。"
+    }
+  ],
+  "duplicateCandidates": [
+    {
+      "brand": "realme",
+      "model": "真我 GT8 Pro",
+      "type": "同品牌同名称重复记录",
+      "ids": [
+        "realme-gt8p",
+        "realme-gt8-pro"
+      ],
+      "status": "已确认重复；暂不删除",
+      "notes": "realme-gt8p 的字段多为待复核；realme-gt8-pro 含较完整规格与官方规格页。删除前必须搜索两个 ID 在所有页面、脚本、审计报告、测试中的引用，优先将有效字段合并到保留记录，并同步三个数据副本。"
+    }
+  ],
+  "excludedOrHold": [
+    {
+      "brand": "Apple",
+      "model": "iPhone 18 标准版",
+      "type": "不列入已确认缺失",
+      "status": "暂缓",
+      "notes": "不能因为目录只有 iPhone 18 Pro/Pro Max 就推断标准版已正式发布并在中国大陆销售；需以苹果正式发布资料确认。"
+    }
+  ],
+  "implementationStatus": {
+    "reportCreated": true,
+    "repositoryIdReferenceSearch": "尚未完成：GitHub 代码搜索连接未返回匹配结果，不能据此声称全仓库无引用。",
+    "modelRecordsAdded": 0,
+    "duplicateRemoved": false,
+    "validation": "尚未运行：远端连接可读写 GitHub 文件，但未提供本地 shell/CI 运行结果。"
+  }
+}
