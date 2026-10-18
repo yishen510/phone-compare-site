@@ -35,6 +35,7 @@ QUERY_PROCESS = int(os.getenv("HAINAN_QUERY_PROCESS", "1"))
 RESULT_SIZE = max(1, min(20, int(os.getenv("HAINAN_RESULT_SIZE", "20"))))
 FIELDS = os.getenv("HAINAN_FIELDS", "")
 HTTP_TIMEOUT_SECONDS = 15
+PHONE_CORS_ORIGIN = os.getenv("PHONE_CORS_ORIGIN", "").strip()
 _LAST_PROVIDER_REQUEST_AT = 0.0
 
 # phoneId -> (cache_epoch, result_or_none); None entries avoid repeated unproductive searches.
@@ -305,7 +306,7 @@ def match_offer(phone: dict[str, Any], offers: list[dict[str, Any]], exclude_ter
             promo_text = "；".join(str(x).strip() for x in promo if str(x).strip())
         else:
             promo_text = ""
-        base_note = f"值得买开放平台商品检索结果；匹配大陆机型与 {target}。此为检索报价，不是订单结算承诺；请点开商品页核对新旧、颜色、库存、地区和优惠资格。"
+        base_note = f"海纳好价检索 Pro 搜索结果；匹配大陆机型与 {target}。此为检索报价，不是订单结算承诺；请点开商品页核对新旧、颜色、库存、地区和优惠资格。"
         if promo_text:
             base_note += f" API 促销提示：{promo_text}。"
         matched.append({
@@ -400,9 +401,24 @@ class PhoneCompareHandler(SimpleHTTPRequestHandler):
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Cache-Control", "no-store")
+        origin = self.headers.get("Origin", "")
+        if PHONE_CORS_ORIGIN and origin == PHONE_CORS_ORIGIN:
+            self.send_header("Access-Control-Allow-Origin", PHONE_CORS_ORIGIN)
+            self.send_header("Vary", "Origin")
         self.send_header("Content-Length", str(len(body)))
         self.end_headers()
         self.wfile.write(body)
+
+    def do_OPTIONS(self) -> None:
+        origin = self.headers.get("Origin", "")
+        self.send_response(204)
+        if PHONE_CORS_ORIGIN and origin == PHONE_CORS_ORIGIN:
+            self.send_header("Access-Control-Allow-Origin", PHONE_CORS_ORIGIN)
+            self.send_header("Access-Control-Allow-Methods", "GET, OPTIONS")
+            self.send_header("Access-Control-Allow-Headers", "Content-Type")
+            self.send_header("Vary", "Origin")
+        self.send_header("Cache-Control", "no-store")
+        self.end_headers()
 
     def do_GET(self) -> None:
         parsed = urlparse(self.path)
