@@ -100,14 +100,16 @@
       "brand": "Huawei",
       "model": "HUAWEI Pura 90 Pro Max",
       "missingType": "系列缺失",
-      "verificationStatus": "已由中国大陆官方规格页确认机型存在；首发价与其他 Pura 90 变体仍待核验",
+      "verificationStatus": "已由华为官方规格页确认主要硬件字段；官方发布资料确认 2026-04-29 开售、起售价 6499 元；具体 SKU 首发价映射仍待核验",
       "officialSources": [
-        "https://consumer.huawei.com/cn/phones/"
+        "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/",
+        "https://consumer.huawei.com/cn/phones/pura90-pro-max/",
+        "https://feeds-drcn.cloud.huawei.com.cn/landingpage/latest?channel=-1&cpid=666&ctype=news&docid=105148003e498604d4068e0fb764082c7701eb5&dy_scenario=relate&emuiVer=Follow&ifl=zh_CN&r=CN&tn=9b65cebec05a3680a84635b4829d9e389221675b4b24294b248381266cfb7b6a&to_app=hwbrowser"
       ],
-      "notes": "正式补录前确认中国大陆型号、上市日期与版本。 本轮只确认 Pro Max；不能据此自动确认 Pura 90 标准版与 Pro 版，后两者继续待核验。",
+      "notes": "华为中国大陆官方规格页已核实屏幕、麒麟9030S、影像、电池典型/额定容量、100W有线/80W无线充电、约230.5g及容量档位；官方发布资料确认 2026-04-29 开售及 6499 元起。按项目规则，发布稿尚未将 6499 元明确对应到具体 RAM/ROM SKU，因此补录目录前继续保留价格映射待核验，不得直接填为已核实首发 SKU 价格。",
       "officialEvidence": {
         "source": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/",
-        "evidence": "官方规格页列出 Pura 90 Pro Max，包含屏幕、处理器、存储、摄像头、电池与充电规格。",
+        "evidence": "官方规格页列出 6.9 英寸 LTPO OLED、麒麟9030S、12/16GB RAM 与 256/512GB/1TB ROM、5000万主摄+4000万超广角+2亿长焦、6000mAh典型/5850mAh额定、100W有线/80W无线充电、约230.5g；官方发布资料称 2026-04-29 开售、6499元起，但具体起售价 SKU 映射尚未在本轮来源中确认。",
         "checkedAt": "2026-10-18"
       }
     },
