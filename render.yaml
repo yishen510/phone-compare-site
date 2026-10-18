@@ -9,8 +9,6 @@ services:
     envVars:
       - key: HOST
         value: 0.0.0.0
-      - key: PORT
-        value: 10000
       - key: HAINAN_API_KEY
         sync: false
       - key: PHONE_CORS_ORIGIN
