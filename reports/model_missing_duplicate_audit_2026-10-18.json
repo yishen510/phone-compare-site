@@ -43,7 +43,7 @@
       "brand": "Honor",
       "model": "荣耀 Magic9 超能版",
       "missingType": "系列变体缺失",
-      "verificationStatus": "已补录目录草稿；官方发布稿确认型号与开售日期，官方商城规格页支持主要硬件字段；首发价与容量SKU映射待核验",
+      "verificationStatus": "已补录目录草稿；官方发布稿确认型号、开售日期与起售价；整机字段终审仍待完成",
       "officialSources": [
         "https://www.honor.com/cn/news/honor-magic9-launch/"
       ],
@@ -119,7 +119,7 @@
       "officialSources": [
         "https://www.vivo.com.cn/"
       ],
-      "notes": "当前目录有 X500 与 X500 Pro。 可进入补录候选队列；正式首发价口径仍应与发布资料交叉核对。 已同步补录；官网建议零售价不写入首发价字段。 已追加官方发布稿，具体 SKU 首发价已确认；整机仍待参数终审。",
+      "notes": "当前目录有 X500 与 X500 Pro。 可进入补录候选队列；官方发布稿已列明各 SKU 首发价；整机仍待参数终审。 已同步补录；官网建议零售价不写入首发价字段。 已追加官方发布稿，具体 SKU 首发价已确认；整机仍待参数终审。",
       "officialEvidence": {
         "source": "https://www.vivo.com.cn/brand/news/detail?id=1392",
         "evidence": "2026-09-21官方发布稿逐项列出X500 Pro Max首发价，12GB+256GB为6999元；其他容量版本亦逐一列价。",
