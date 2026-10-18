@@ -29,8 +29,11 @@ def main() -> None:
     if OUT.exists():
         shutil.rmtree(OUT)
     OUT.mkdir(parents=True)
-    for name in ("index.html", "phone-compare-demo.html"):
-        shutil.copy2(ROOT / name, OUT / name)
+    for name in ("index.html", "phone-compare-demo.html", "api-config.js"):
+        path = ROOT / name
+        if not path.is_file():
+            raise SystemExit(f"FAIL: {name} missing")
+        shutil.copy2(path, OUT / name)
     # Pages serves index.html at the project root; no API keys or raw audit files are copied.
     print(f"PASS: catalog={len(catalog)}; artifact files={sorted(p.name for p in OUT.iterdir())}")
 
