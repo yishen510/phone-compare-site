@@ -6,9 +6,10 @@
   "scope": "中国大陆正式销售旗舰手机目录；此清单用于补录排期，不代表机型已通过参数、价格或排名准入审核。",
   "catalogSnapshot": {
     "path": "data/phones.json",
-    "recordCount": 100,
+    "recordCount": 101,
     "brandCount": 11,
-    "duplicateModelCount": 1
+    "duplicateModelCount": 1,
+    "updatedAt": "2026-10-18"
   },
   "rules": [
     "仅将有厂商中国大陆官方页面或正式发布资料支持的机型列为已确认候选。",
@@ -42,15 +43,27 @@
       "brand": "Honor",
       "model": "荣耀 Magic9 超能版",
       "missingType": "系列变体缺失",
-      "verificationStatus": "已由中国大陆官方发布稿确认机型存在及开售；完整参数仍待逐项核验",
+      "verificationStatus": "已补录目录草稿；官方发布稿确认型号与开售日期，官方商城规格页支持主要硬件字段；首发价与容量SKU映射待核验",
       "officialSources": [
         "https://www.honor.com/cn/news/honor-magic9-launch/"
       ],
-      "notes": "目录已有 Magic9 与 Magic9 Pro Max。 可进入补录候选队列；价格口径有官方发布稿支持，但需按数据字段审核规则补齐参数证据后才可进入正式排名/推荐。",
+      "notes": "目录已有 Magic9 与 Magic9 Pro Max。已新增候选记录 honor-magic9-ultra 并同步 data/phones.json、index.html、phone-compare-demo.html。priceCN 保持 null；verified=false，正式排名/推荐资格未开放。",
       "officialEvidence": {
         "source": "https://www.honor.com/cn/news/honor-magic9-launch/",
-        "evidence": "官方发布稿明确列出荣耀 Magic9 超能版，并说明 2026-09-28 正式开售、售价 4499 元起。",
+        "evidence": "官方发布稿明确列出荣耀 Magic9 超能版，2026-09-28 开售，售价 4499 元起。官方商城规格页确认主要硬件参数与三个存储 SKU；按项目规则，首发起售价与容量 SKU 的映射仍需复核。",
         "checkedAt": "2026-10-18"
+      },
+      "implementation": {
+        "recordId": "honor-magic9-ultra",
+        "sourceFiles": [
+          "data/phones.json",
+          "index.html",
+          "phone-compare-demo.html"
+        ],
+        "priceCN": null,
+        "verified": false,
+        "auditStatus": "needs_parameter_price_audit",
+        "admission": "not eligible for ranking or recommendation"
       }
     },
     {
@@ -176,9 +189,22 @@
             "reports/independent_whole_device_admission_review_2026-10-17.json"
           ]
         },
-        "result": "Targeted scan confirms both IDs in the source catalog, both HTML data copies (including generated _site artifact), and several audit/status reports. This is a partial reference scan, not a complete repository-wide proof.",
-        "wholeRepositorySearch": "Not complete. GitHub code search returned zero results with incomplete_results=true; this cannot establish absence of other references. Remaining scripts, tests, all reports, and other files need a full local grep.",
-        "deletionDecision": "Do not delete either record until full local reference scan, field-by-field merge, all three source data copies update, and regression tests."
+        "result": "Complete repository-wide text-file scan: both IDs found in 11 files, including canonical data, source HTML, generated _site copies, and historical audit/status reports.",
+        "wholeRepositorySearch": "Completed. Enumerated the complete Git tree (36 blob paths) and scanned all 35 text files. The single compiled Python bytecode file was excluded from text search.",
+        "deletionDecision": "Do not delete either record until full local reference scan, field-by-field merge, all three source data copies update, and regression tests.",
+        "filesWithBothIds": [
+          "data/phones.json",
+          "index.html",
+          "phone-compare-demo.html",
+          "_site/index.html",
+          "_site/phone-compare-demo.html",
+          "reports/2025-2026_remaining_field_queue_2026-10-17.csv",
+          "reports/flagship_catalog_audit_2026-10-17.json",
+          "reports/independent_whole_device_admission_review_2026-10-17.json",
+          "reports/independent_whole_device_admission_review_2026-10-18.json",
+          "reports/model_missing_duplicate_audit_2026-10-18.json",
+          "DATA_STATUS.md"
+        ]
       },
       "mergeAssessment": {
         "preferredCanonicalId": "realme-gt8-pro",
@@ -221,14 +247,18 @@
   "implementationStatus": {
     "reportCreated": true,
     "repositoryIdReferenceSearch": "Partial targeted scan completed across 9 key source/generated/audit files; complete repository-wide scan still pending.",
-    "modelRecordsAdded": 0,
+    "modelRecordsAdded": 1,
     "duplicateRemoved": false,
     "validation": "Latest workflow for commit 9c9752f4c30633aee9b9b0f1225fcf3e847074f5 succeeded; a follow-up report-only commit is queued. Existing reports show static gate 8/8 and Chromium E2E 8/8. No new model records added because field-level audit rows and embedded data copies must be synchronized before admission.",
     "referenceAuditUpdated": true,
     "officialCandidateChecks": "2026-10-18 official-page checks confirm existence of HONOR Magic9 Ultra Edition, HUAWEI Pura 90, HUAWEI Pura 90 Pro, HUAWEI Pura 90 Pro Max, vivo X500 Pro Max, and Xiaomi 18 Pro Max on mainland China manufacturer pages. Detailed field-level admission remains pending.",
     "repositoryWideIdSearch": "Completed across all 35 text files in the 36-path Git tree; both IDs appear in canonical data, HTML copies, generated _site files, and historical audit/status docs.",
     "duplicateIdRemoved": false,
-    "nextAction": "Prepare a controlled realme GT8 Pro ID migration plan; separately add only models whose official fields pass the existing audit threshold."
+    "nextAction": "Prepare a controlled realme GT8 Pro ID migration plan; separately add only models whose official fields pass the existing audit threshold.",
+    "addedModelIds": [
+      "honor-magic9-ultra"
+    ],
+    "lastCatalogUpdate": "Added HONOR Magic9 Ultra Edition. Official hardware fields recorded; priceCN remains null pending exact first-launch SKU mapping; ranking/recommendation eligibility remains closed."
   },
   "repositoryWideIdSearch": {
     "completedAt": "2026-10-18",
