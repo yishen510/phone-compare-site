@@ -27,6 +27,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Validate Python backend syntax
+        run: python -m py_compile price_server.py quote_quality_check.py
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
