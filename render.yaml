@@ -11,6 +11,8 @@ services:
         value: 0.0.0.0
       - key: HAINAN_API_KEY
         sync: false
+      - key: PHONE_SERVE_STATIC
+        value: false
       - key: PHONE_CORS_ORIGIN
         value: https://yishen510.github.io
       - key: HAINAN_MAX_QUERIES_PER_RESPONSE
