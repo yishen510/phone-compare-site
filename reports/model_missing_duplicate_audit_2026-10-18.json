@@ -109,7 +109,56 @@
         "realme-gt8-pro"
       ],
       "status": "已确认重复；暂不删除",
-      "notes": "realme-gt8p 的字段多为待复核；realme-gt8-pro 含较完整规格与官方规格页。删除前必须搜索两个 ID 在所有页面、脚本、审计报告、测试中的引用，优先将有效字段合并到保留记录，并同步三个数据副本。"
+      "notes": "realme-gt8p 的字段多为待复核；realme-gt8-pro 含较完整规格与官方规格页。删除前必须搜索两个 ID 在所有页面、脚本、审计报告、测试中的引用，优先将有效字段合并到保留记录，并同步三个数据副本。",
+      "referenceAudit": {
+        "checkedFiles": [
+          "data/phones.json",
+          "index.html",
+          "phone-compare-demo.html"
+        ],
+        "idsFound": {
+          "realme-gt8p": [
+            "data/phones.json",
+            "index.html",
+            "phone-compare-demo.html"
+          ],
+          "realme-gt8-pro": [
+            "data/phones.json",
+            "index.html",
+            "phone-compare-demo.html"
+          ]
+        },
+        "result": "Both IDs are present in the source JSON and in both HTML embedded data copies.",
+        "wholeRepositorySearch": "GitHub code search returned zero results with incomplete_results=true; this is not proof of no references elsewhere. Other reports/scripts/tests still require a full local grep.",
+        "deletionDecision": "Do not delete either record until a complete local reference scan and merge are performed."
+      },
+      "mergeAssessment": {
+        "preferredCanonicalId": "realme-gt8-pro",
+        "reason": "Has the direct mainland China official specs URL and populated storageOptions; however its parameter and launch price audits are still incomplete.",
+        "uniqueCandidateFieldsFromOtherRecord": [
+          "type",
+          "display",
+          "chip",
+          "camera",
+          "battery",
+          "charging",
+          "weight",
+          "storage",
+          "storageOptions",
+          "priceText",
+          "selling",
+          "bestFor",
+          "source",
+          "sourceName",
+          "dataNote",
+          "announcementSource",
+          "priceSourceName",
+          "quoteTargetStorage",
+          "quoteTargetStorageReason",
+          "auditNotes"
+        ],
+        "action": "No merge committed; fields need field-by-field source verification before merge."
+      }
     }
   ],
   "excludedOrHold": [
@@ -126,6 +175,7 @@
     "repositoryIdReferenceSearch": "尚未完成：GitHub 代码搜索连接未返回匹配结果，不能据此声称全仓库无引用。",
     "modelRecordsAdded": 0,
     "duplicateRemoved": false,
-    "validation": "尚未运行：远端连接可读写 GitHub 文件，但未提供本地 shell/CI 运行结果。"
+    "validation": "Build/test commands cannot be run through the current GitHub file connector alone; no local shell runner was available. Do not claim regression tests passed.",
+    "referenceAuditUpdated": true
   }
 }
