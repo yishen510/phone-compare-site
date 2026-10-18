@@ -11,7 +11,7 @@
 
 ## 当前目录快照说明（2026-10-17）
 
-本文件前两条中的“53 款”及“本轮25款”属于较早审计批次口径。当前 canonical `data/phones.json` 已扩充为 101 款；当前字段级报告含 557 条字段记录，覆盖 60 款 2025—2026 年机型。新增荣耀 Magic9 超能版（`honor-magic9-ultra`）已同步到两个源 HTML；首发价与容量 SKU 映射待核验，暂不具备排名/推荐资格。请以 `reports/flagship_catalog_field_audit_2026-10-17.json`、`data/phones.json` 和 `verify_eligibility.py` 的输出为当前状态依据。
+本文件前两条中的“53 款”及“本轮25款”属于较早审计批次口径。当前 canonical `data/phones.json` 已扩充为 102 款；当前字段级报告含 566 条字段记录，覆盖 61 款 2025—2026 年机型。新增荣耀 Magic9 超能版（`honor-magic9-ultra`）已同步到两个源 HTML；首发价与容量 SKU 映射待核验，暂不具备排名/推荐资格。请以 `reports/flagship_catalog_field_audit_2026-10-17.json`、`data/phones.json` 和 `verify_eligibility.py` 的输出为当前状态依据。
 
 ## 本轮 25 款逐条清单
 
@@ -141,3 +141,6 @@
 本轮补核 10 款：iPhone 17、iPhone Air、HUAWEI Pura 80、Mate 80、Mate 80 Pro、Mate 80 Pro Max、Mate X7、Mate 90、OPPO Find N5、OPPO Find X8 Ultra，共 90 个字段。对华为 Mate 90，官方购买指引明确写明 12GB+256GB 首发价 5999 元、2026年10月1日12:08正式开售；对 iPhone 17 与 iPhone Air，Apple 官方发布稿分别明确了 5999 元与 7999 元起售价及容量/上市信息。Pura 80 的芯片型号未在所用官方规格页中列出，未据此推测；Mate 80 系列、Mate X7、Find N5、Find X8 Ultra 的历史首发价或大陆首销日期若没有直接的官方首发证据，继续留空或标记待核，不把商城当前售价冒充首发价。
 
 **重要限制：**`app.js` 当前不在项目目录内，而 `index.html` 仍引用它。因此本轮虽在数据层将 2025—2026 候选机型设置为 `eligibleForRanking=false` / `eligibleForRecommendation=false`，但不能声称前端已执行过滤。修复并验证前端脚本前，不应把演示页当成可用的正式排名/推荐工具。
+
+
+2026-10-18 补录 vivo X500 Pro Max（`vivo-x500pm`）：主要硬件、容量 SKU 和上市月份已按中国大陆官方规格页记录；官网建议零售价不视作首发价，`priceCN` 保持 null，排名与推荐资格关闭。
