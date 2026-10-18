@@ -5626,6 +5626,8 @@
       "verified保持false，正式排名与推荐资格保持关闭。"
     ],
     "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "parameterAuditStatus": "partial",
+    "eligibleForRanking": false,
+    "eligibleForRecommendation": false
   }
 ]
