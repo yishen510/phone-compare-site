@@ -5571,5 +5571,61 @@
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "8GB+256GB",
     "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。"
+  },
+  {
+    "id": "honor-magic9-ultra",
+    "brand": "Honor",
+    "name": "荣耀 Magic9 超能版",
+    "year": 2026,
+    "type": "性能续航旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.81 英寸 OLED 直屏 · FHD+ 2788×1280 · 最高 120Hz",
+    "chip": "第五代骁龙 8 至尊版移动平台",
+    "camera": "后置 2 亿像素主摄（OIS）+ 5000 万长焦（3×光变、OIS）+ 1200 万超广角微距；前置 5000 万像素",
+    "battery": "11000 mAh（典型值）/ 10690 mAh（额定值）",
+    "charging": "80W 有线快充；50W 无线快充",
+    "weight": "约 227 g（含电池）",
+    "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+    "os": "MagicOS 11（基于 Android 17）",
+    "priceCN": null,
+    "priceText": "官方首发价虽有 4499 元起公开信息，但首发价与具体容量 SKU 映射仍待复核",
+    "selling": "11000mAh 大电池、主动散热与旗舰平台，面向长时间游戏和重载使用",
+    "bestFor": [
+      "游戏性能",
+      "长续航",
+      "大屏影音"
+    ],
+    "source": "https://www.honor.com/cn/shop/product/10086019084925.html",
+    "sourceName": "荣耀官方商城产品规格页",
+    "verified": false,
+    "launchMonth": "2026-09",
+    "launchDateDisplay": "2026年09月",
+    "priceType": "unknown",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "已按荣耀官方商城规格页录入主要硬件参数；首发价具体容量映射尚未完成复核。整机仍处于待审核状态，不得进入正式排名或推荐。",
+    "announcementSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
+    "priceSource": null,
+    "priceSourceName": "首发价容量 SKU 映射待核验；不将当前商城价当作首发价",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": null,
+    "quoteTargetStorageReason": "首发价 SKU 映射完成前不触发报价检索。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "官方发布稿确认机型于2026年9月28日正式开售，系列发布稿标注4499元起。",
+      "屏幕、处理器、相机、电池、充电、重量和容量组合依据荣耀官方商城规格页录入。",
+      "官方商城当前展示价格不等同于官方首发价；具体首发价与容量 SKU 映射待复核。",
+      "verified保持false，正式排名与推荐资格保持关闭。"
+    ],
+    "priceAuditStatus": "missing",
+    "parameterAuditStatus": "partial"
   }
 ]
