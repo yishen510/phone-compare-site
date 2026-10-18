@@ -1,19 +1,21 @@
 {
-  "checkCount": 8,
-  "passed": 8,
+  "checkCount": 10,
+  "passed": 10,
   "failed": 0,
   "checks": {
     "unique_ids": true,
-    "2025_2026_rank_gate_closed": true,
-    "2025_2026_recommend_gate_closed": true,
+    "canonical_json_parses": true,
+    "source_and_generated_html_catalogs_match": true,
+    "honor_magic9_ultra_nine_field_evidence_present": true,
+    "honor_magic9_ultra_price_and_eligibility_gate_closed": true,
+    "realme_gt8_pro_duplicate_ids_preserved_for_controlled_migration": true,
+    "csv_field_rows_have_expected_columns": true,
     "report_field_count_matches": true,
     "report_status_counts_sum": true,
-    "queue_ids_exist": true,
-    "unmapped_prices_hidden": true,
     "no_2025_2026_truthy_gate": true
   },
-  "catalogCount": 100,
-  "auditFieldCount": 540,
+  "catalogCount": 101,
+  "auditFieldCount": 557,
   "queueCount": 62,
-  "scope": "static consistency only; does not verify source truth or browser behavior"
+  "scope": "Remote static consistency only; does not execute Chromium interaction tests, run the local build script, test production hosting/CDN, or independently verify manufacturer facts. Detailed current check results: reports/catalog_sync_validation_2026-10-18.json."
 }
