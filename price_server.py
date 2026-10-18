@@ -37,6 +37,7 @@ RESULT_SIZE = max(1, min(20, int(os.getenv("HAINAN_RESULT_SIZE", "20"))))
 FIELDS = os.getenv("HAINAN_FIELDS", "")
 HTTP_TIMEOUT_SECONDS = 15
 PHONE_CORS_ORIGIN = os.getenv("PHONE_CORS_ORIGIN", "").strip()
+PHONE_SERVE_STATIC = os.getenv("PHONE_SERVE_STATIC", "true").strip().lower() in {"1", "true", "yes", "on"}
 _LAST_PROVIDER_REQUEST_AT = 0.0
 _PROVIDER_REQUEST_LOCK = Lock()
 
@@ -450,7 +451,10 @@ class PhoneCompareHandler(SimpleHTTPRequestHandler):
         if parsed.path.startswith("/api/"):
             self.send_json(404, {"status": "not_found", "message": "没有此 API 路由。"})
             return
-        # Serve static website assets from the project folder.
+        # The hosted Render service is API-only; local development can still serve the site.
+        if not PHONE_SERVE_STATIC:
+            self.send_json(404, {"status": "not_found", "message": "此后端仅提供 API；请访问 GitHub Pages 前端。"})
+            return
         super().do_GET()
 
 
