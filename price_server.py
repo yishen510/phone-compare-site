@@ -13,6 +13,7 @@ import os
 import re
 import time
 import unicodedata
+import uuid
 from datetime import datetime, timezone, timedelta
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
@@ -24,12 +25,18 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parent
 PHONES_FILE = ROOT / "data" / "phones.json"
 CONFIG_FILE = ROOT / "data" / "price-config.json"
-API_URL = "https://openapi.smzdm.com/v1/agent/search/list"
+API_URL = "https://gw-openapi.zhidemai.com/hj-search/discount/v2"
 TZ_CN = timezone(timedelta(hours=8))
 CACHE_TTL_SECONDS = int(os.getenv("PHONE_QUOTE_CACHE_TTL_SECONDS", "1800"))
 EMPTY_CACHE_TTL_SECONDS = int(os.getenv("PHONE_EMPTY_QUOTE_CACHE_TTL_SECONDS", "600"))
-BATCH_SIZE = 8
-HTTP_TIMEOUT_SECONDS = 12
+MAX_QUERIES_PER_RESPONSE = max(1, min(5, int(os.getenv("HAINAN_MAX_QUERIES_PER_RESPONSE", "5"))))
+MIN_REQUEST_INTERVAL_SECONDS = max(0.0, float(os.getenv("HAINAN_MIN_REQUEST_INTERVAL_SECONDS", "0.6")))
+REQUEST_FROM = os.getenv("HAINAN_REQUEST_FROM", "phone_compare_site")
+QUERY_PROCESS = int(os.getenv("HAINAN_QUERY_PROCESS", "1"))
+RESULT_SIZE = max(1, min(20, int(os.getenv("HAINAN_RESULT_SIZE", "20"))))
+FIELDS = os.getenv("HAINAN_FIELDS", "")
+HTTP_TIMEOUT_SECONDS = 15
+_LAST_PROVIDER_REQUEST_AT = 0.0
 
 # phoneId -> (cache_epoch, result_or_none); None entries avoid repeated unproductive searches.
 QUOTE_CACHE: dict[str, tuple[float, dict[str, Any] | None]] = {}
@@ -235,57 +242,52 @@ def reject_offer(title: str, exclude_terms: list[str]) -> bool:
     return any(normalize(term) in t for term in exclude_terms if term)
 
 
-def _call_provider(queries: list[str], app_key: str, app_secret: str) -> list[list[dict[str, Any]]]:
-    params = {
-        "app_key": app_key,
-        "timestamp": str(int(time.time())),
-        "keyword": ",".join(queries),
-    }
-    params["sign"] = sign_params(params, app_secret)
-    url = API_URL + "?" + urlencode(params)
-    request = Request(url, headers={"Accept": "application/json", "User-Agent": "PhoneCompareMainland/1.0"})
+def _call_provider(query: str, api_key: str) -> list[dict[str, Any]]:
+    """Call Hainan discount-search Pro v2; credentials stay server-side."""
+    global _LAST_PROVIDER_REQUEST_AT
+    wait = MIN_REQUEST_INTERVAL_SECONDS - (time.monotonic() - _LAST_PROVIDER_REQUEST_AT)
+    if wait > 0:
+        time.sleep(wait)
+    body = {"request_from": REQUEST_FROM, "question_id": "phonecompare-" + str(uuid.uuid4()), "product_query": query, "query_process": QUERY_PROCESS, "size": RESULT_SIZE, "fields": FIELDS}
+    request = Request(API_URL, data=json.dumps(body, ensure_ascii=False).encode("utf-8"), headers={"Accept":"application/json","Content-Type":"application/json","x-api-key":api_key,"User-Agent":"PhoneCompareMainland/1.0"}, method="POST")
     try:
         with urlopen(request, timeout=HTTP_TIMEOUT_SECONDS) as response:
-            body = response.read(4_000_000)
+            status_code, raw = response.status, response.read(4_000_000)
     except HTTPError as exc:
-        raise RuntimeError(f"报价上游 HTTP {exc.code}") from exc
+        hints = {401:"API Key 无效或已轮换",403:"Key 可能没有好价检索 Pro 权限",422:"请求字段不符合上游接口要求",429:"已达到调用频率或配额限制",502:"上游服务暂时不可用",504:"上游处理超时"}
+        if exc.code in hints:
+            raise RuntimeError("海纳 API HTTP " + str(exc.code) + "：" + hints[exc.code]) from exc
+        raise RuntimeError("海纳 API HTTP " + str(exc.code)) from exc
     except URLError as exc:
-        raise RuntimeError("无法连接报价上游服务") from exc
+        raise RuntimeError("无法连接海纳好价检索 API") from exc
     except TimeoutError as exc:
-        raise RuntimeError("报价上游请求超时") from exc
+        raise RuntimeError("海纳好价检索 API 请求超时") from exc
+    finally:
+        _LAST_PROVIDER_REQUEST_AT = time.monotonic()
+    if status_code < 200 or status_code >= 300:
+        raise RuntimeError("海纳 API 返回 HTTP " + str(status_code))
     try:
-        payload = json.loads(body.decode("utf-8"))
+        payload = json.loads(raw.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
-        raise RuntimeError("报价上游返回的不是有效 JSON") from exc
+        raise RuntimeError("海纳 API 返回的不是有效 JSON") from exc
     if not isinstance(payload, dict):
-        raise RuntimeError("报价上游返回格式异常")
-    error_code = payload.get("error_code", 0)
-    if error_code not in (0, "0", None, ""):
-        msg = str(payload.get("error_msg") or "上游返回错误")[:160]
-        raise RuntimeError(f"报价 API 错误 {error_code}: {msg}")
-    data = payload.get("data") or []
-    # Official docs describe data as Search[] for each input keyword; with multi-keyword search,
-    # the response is normally a list of result lists. Accommodate a flat list too.
-    if not isinstance(data, list):
-        raise RuntimeError("报价上游 data 字段格式异常")
-    if not data:
-        return [[] for _ in queries]
-    if all(isinstance(x, list) for x in data):
-        groups = [[y for y in x if isinstance(y, dict)] for x in data]
-        if len(groups) < len(queries):
-            groups.extend([[] for _ in range(len(queries) - len(groups))])
-        return groups[:len(queries)]
-    flat = [x for x in data if isinstance(x, dict)]
-    if len(queries) == 1:
-        return [flat]
-    groups: list[list[dict[str, Any]]] = [[] for _ in queries]
-    query_to_idx = {q.casefold(): i for i, q in enumerate(queries)}
-    for item in flat:
-        key = str(item.get("keyword") or "").casefold()
-        idx = query_to_idx.get(key)
-        if idx is not None:
-            groups[idx].append(item)
-    return groups
+        raise RuntimeError("海纳 API 返回格式异常")
+    error_code = payload.get("error_code")
+    if error_code not in (None, 0, "0", ""):
+        msg = str(payload.get("error_msg") or payload.get("message") or "上游返回错误")[:160]
+        raise RuntimeError("海纳 API 错误 " + str(error_code) + ": " + msg)
+    data = payload.get("data") or {}
+    rows = data.get("rows", []) if isinstance(data, dict) else data if isinstance(data, list) else []
+    if not isinstance(rows, list):
+        raise RuntimeError("海纳 API 的 data.rows 字段格式异常")
+    mapped = []
+    for row in rows:
+        if not isinstance(row, dict):
+            continue
+        price_field = next((key for key in ("digital_price", "price", "page_price") if row.get(key) not in (None, "")), None)
+        direct_url = row.get("direct_link") or row.get("haojia_dplink") or row.get("url")
+        mapped.append({**row, "title":row.get("title") or row.get("goods_name") or "", "price":row.get(price_field) if price_field else None, "priceFieldUsed":price_field, "url":direct_url, "mall_name":row.get("mall_name") or row.get("mall") or "", "prom_info":[str(x) for x in (row.get("coupon"),row.get("activity")) if x not in (None,"")]})
+    return mapped
 
 
 def match_offer(phone: dict[str, Any], offers: list[dict[str, Any]], exclude_terms: list[str], checked_at: str) -> dict[str, Any] | None:
@@ -347,85 +349,57 @@ def match_offer(phone: dict[str, Any], offers: list[dict[str, Any]], exclude_ter
 
 
 def query_prices(ids: list[str]) -> dict[str, Any]:
-    config = provider_config()
-    app_key = os.getenv("SMZDM_APP_KEY", "").strip()
-    app_secret = os.getenv("SMZDM_APP_SECRET", "").strip()
+    api_key = os.getenv("HAINAN_API_KEY", "").strip()
     as_of = now_iso()
-    key_is_placeholder = app_key.casefold().startswith(("replace_", "your_", "填入"))
-    secret_is_placeholder = app_secret.casefold().startswith(("replace_", "your_", "填入"))
-    if not app_key or not app_secret or key_is_placeholder or secret_is_placeholder:
-        return {
-            "asOf": as_of,
-            "provider": "smzdm_openapi",
-            "status": "needs_credentials",
-            "message": "报价源已接入，但尚未授权：请从什么值得买开放平台申请 AppKey/AppSecret，并放入服务器 .env。当前不展示伪造实时价。",
-            "items": [],
-        }
+    if not api_key or api_key.casefold().startswith(("replace_", "your_", "填入")):
+        return {"asOf":as_of,"provider":"hainan_discount_v2","status":"needs_credentials","message":"未检测到有效的 HAINAN_API_KEY。请将轮换后的 Key 仅配置在服务端 .env；未授权时不会伪造实时价格。","items":[]}
     phone_map = phones_by_id()
     ids = list(dict.fromkeys(id_ for id_ in ids if id_ in phone_map))
     if not ids:
-        return {"asOf": as_of, "provider": "smzdm_openapi", "status": "no_exact_offers", "message": "没有可查询的有效机型 ID。", "items": []}
+        return {"asOf":as_of,"provider":"hainan_discount_v2","status":"no_exact_offers","message":"没有可查询的有效机型 ID。","items":[]}
+    requested_ids = ids[:MAX_QUERIES_PER_RESPONSE]
     output: list[dict[str, Any]] = []
-    todo: list[str] = []
-    now = time.time()
-    for id_ in ids:
+    errors: list[str] = []
+    config = provider_config()
+    exclude_terms = list(dict.fromkeys((config.get("excludeKeywords") or []) + EXCLUDE_TERMS_DEFAULT))
+    for id_ in requested_ids:
+        phone = phone_map[id_]
+        query = create_query(phone)
+        target = first_storage_target(phone)
+        if not query or not target:
+            QUOTE_CACHE[id_] = (time.time(), None)
+            continue
         cached = QUOTE_CACHE.get(id_)
         if cached:
             cached_at, item = cached
             ttl = CACHE_TTL_SECONDS if item else EMPTY_CACHE_TTL_SECONDS
-            if now - cached_at < ttl:
+            if time.time() - cached_at < ttl:
                 if item:
                     output.append(item)
                 continue
-        todo.append(id_)
-    for start in range(0, len(todo), BATCH_SIZE):
-        batch_ids = todo[start:start + BATCH_SIZE]
-        phones = [phone_map[id_] for id_ in batch_ids]
-        valid_pairs = [(p, create_query(p)) for p in phones]
-        valid_pairs = [(p, q) for p, q in valid_pairs if q]
-        if not valid_pairs:
-            for p in phones:
-                QUOTE_CACHE[p["id"]] = (time.time(), None)
-            continue
-        queries = [q for _, q in valid_pairs]
-        checked_at = now_iso()
         try:
-            result_groups = _call_provider(queries, app_key, app_secret)
-        except RuntimeError as exc:
-            # Do not memoize provider failures as "no exact offer"; a temporary upstream issue
-            # should be retried on the next request rather than hidden by the negative cache.
-            for phone, _ in valid_pairs:
-                QUOTE_CACHE.pop(phone["id"], None)
-            return {
-                "asOf": now_iso(),
-                "provider": "smzdm_openapi",
-                "status": "upstream_error",
-                "message": f"报价源请求失败：{str(exc)}。请检查授权状态、API 配额和网络后重试。",
-                "items": output,
-            }
-        exclude_terms = list(dict.fromkeys((config.get("excludeKeywords") or []) + EXCLUDE_TERMS_DEFAULT))
-        for index, (phone, _query) in enumerate(valid_pairs):
-            offers = result_groups[index] if index < len(result_groups) else []
-            item = match_offer(phone, offers, exclude_terms, checked_at)
-            QUOTE_CACHE[phone["id"]] = (time.time(), item)
+            offers = _call_provider(query, api_key)
+            item = match_offer(phone, offers, exclude_terms, now_iso())
+            if item:
+                item["provider"] = "hainan_discount_v2"
+                item["priceFieldUsed"] = next((row.get("priceFieldUsed") for row in offers if str(row.get("title") or "") == item.get("offerTitle")), None)
+            QUOTE_CACHE[id_] = (time.time(), item)
             if item:
                 output.append(item)
-        # Light pacing between multi-batch cold starts to avoid hammering an API.
-        if start + BATCH_SIZE < len(todo):
-            time.sleep(0.15)
-    # Preserve the IDs' order and keep one exact SKU price per model.
-    order = {id_: i for i, id_ in enumerate(ids)}
-    output.sort(key=lambda x: order.get(x.get("phoneId", ""), 10_000))
-    fresh_items = [x for x in output if x.get("phoneId") in ids]
-    missing_count = max(0, len(ids) - len(fresh_items))
-    status = "ok" if fresh_items else "no_exact_offers"
-    if fresh_items and missing_count:
-        message = f"已匹配 {len(fresh_items)} 款机型的精确容量报价；{missing_count} 款暂无同时匹配型号与容量的新机商品结果。"
-    elif fresh_items:
-        message = f"已匹配全部 {len(fresh_items)} 款机型的精确容量报价。"
+        except RuntimeError as exc:
+            QUOTE_CACHE.pop(id_, None)
+            errors.append(str(phone.get("name")) + ": " + str(exc))
+            break
+    omitted_count = max(0, len(ids) - len(requested_ids))
+    if errors:
+        status, message = "upstream_error", errors[0]
+    elif output:
+        status, message = "ok", "已获得 " + str(len(output)) + "/" + str(len(requested_ids)) + " 款机型的精确型号与容量候选报价。"
     else:
-        message = "接口已查询，但暂时没有商品标题同时匹配型号与指定存储版本的有效报价；可稍后重试或手动打开电商平台核对。"
-    return {"asOf": now_iso(), "provider": "smzdm_openapi", "status": status, "message": message, "items": fresh_items}
+        status, message = "no_exact_offers", "接口已成功查询，但没有返回同时匹配型号、指定容量、合理价格与 HTTPS 链接的商品。"
+    if omitted_count:
+        message += " 本次最多处理 " + str(len(requested_ids)) + " 款；另有 " + str(omitted_count) + " 款需要下一批请求。"
+    return {"asOf":now_iso(),"provider":"hainan_discount_v2","status":status,"message":message,"requestedIds":requested_ids,"remainingIds":ids[len(requested_ids):],"items":output}
 
 
 class PhoneCompareHandler(SimpleHTTPRequestHandler):
@@ -456,13 +430,8 @@ class PhoneCompareHandler(SimpleHTTPRequestHandler):
         if parsed.path == "/api/health":
             self.send_json(200, {
                 "status": "ok",
-                "provider": "smzdm_openapi",
-                "credentialsConfigured": bool(
-                    os.getenv("SMZDM_APP_KEY", "").strip()
-                    and os.getenv("SMZDM_APP_SECRET", "").strip()
-                    and not os.getenv("SMZDM_APP_KEY", "").strip().casefold().startswith(("replace_", "your_", "填入"))
-                    and not os.getenv("SMZDM_APP_SECRET", "").strip().casefold().startswith(("replace_", "your_", "填入"))
-                ),
+                "provider": "hainan_discount_v2",
+                "credentialsConfigured": bool(os.getenv("HAINAN_API_KEY", "").strip() and not os.getenv("HAINAN_API_KEY", "").strip().casefold().startswith(("replace_", "your_", "填入"))),
                 "message": "服务器已运行；该状态不代表报价 API 授权已通过。"
             })
             return
@@ -486,10 +455,10 @@ def main() -> None:
     host = os.getenv("HOST", "127.0.0.1")
     server = ThreadingHTTPServer((host, port), PhoneCompareHandler)
     print(f"机选网站已启动: http://{host}:{port}")
-    if os.getenv("SMZDM_APP_KEY", "").strip() and os.getenv("SMZDM_APP_SECRET", "").strip():
-        print("报价源配置：已检测到服务端凭据（实际 API 授权还需有效且未过期）。")
+    if os.getenv("HAINAN_API_KEY", "").strip():
+        print("报价源配置：已检测到服务端 HAINAN_API_KEY（仍需真实请求确认授权）。")
     else:
-        print("报价源状态：待授权。复制 .env.example 为 .env 并填入开放平台提供的凭据。")
+        print("报价源状态：待授权。复制 .env.example 为 .env 并填入轮换后的海纳 API Key。")
     print("按 Ctrl+C 结束服务。")
     try:
         server.serve_forever()
