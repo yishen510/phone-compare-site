@@ -7,15 +7,15 @@
     "canonical_json_parses": true,
     "source_and_generated_html_catalogs_match": true,
     "honor_magic9_ultra_nine_field_evidence_present": true,
-    "honor_magic9_ultra_price_and_eligibility_gate_closed": true,
-    "realme_gt8_pro_duplicate_ids_preserved_for_controlled_migration": true,
-    "csv_field_rows_have_expected_columns": true,
+    "vivo_x500_pro_max_nine_field_evidence_present": true,
+    "model_prices_without_first_launch_evidence_hidden": true,
+    "ranking_gate_closed": true,
+    "recommendation_gate_closed": true,
     "report_field_count_matches": true,
-    "report_status_counts_sum": true,
-    "no_2025_2026_truthy_gate": true
+    "queue_ids_exist": true
   },
-  "catalogCount": 101,
-  "auditFieldCount": 557,
+  "catalogCount": 102,
+  "auditFieldCount": 566,
   "queueCount": 62,
-  "scope": "Remote static consistency only; does not execute Chromium interaction tests, run the local build script, test production hosting/CDN, or independently verify manufacturer facts. Detailed current check results: reports/catalog_sync_validation_2026-10-18.json."
+  "scope": "Remote static consistency only; does not execute Chromium interactions, local build, production host, or independent source truth validation. See reports/catalog_sync_validation_2026-10-18.json."
 }
