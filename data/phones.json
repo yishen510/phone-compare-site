@@ -5618,7 +5618,7 @@
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
     "quoteTargetStorageReason": "首发价 SKU 映射完成前不触发报价检索。",
-    "auditStatus": "needs_parameter_price_audit",
+    "auditStatus": "pending_review",
     "auditNotes": [
       "官方发布稿确认机型于2026年9月28日正式开售，系列发布稿标注4499元起。",
       "屏幕、处理器、相机、电池、充电、重量和容量组合依据荣耀官方商城规格页录入。",
@@ -5628,6 +5628,80 @@
     "priceAuditStatus": "missing",
     "parameterAuditStatus": "partial",
     "eligibleForRanking": false,
-    "eligibleForRecommendation": false
+    "eligibleForRecommendation": false,
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.81英寸 OLED，FHD+ 1280×2788",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
+        "evidenceText": "官方商城规格参数列出6.81英寸屏幕及FHD+ 1280×2788分辨率。",
+        "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "第五代骁龙8至尊版移动平台",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
+        "evidenceText": "官方商城规格参数列出CPU型号为第五代骁龙8至尊版移动平台。",
+        "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
+      },
+      {
+        "field": "影像",
+        "value": "后置2亿主摄（OIS）+5000万长焦（3×光变、OIS）+1200万超广角微距；前置5000万",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
+        "evidenceText": "官方商城规格参数列出后置主摄、长焦、超广角微距及前置摄像头像素和防抖信息。",
+        "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
+      },
+      {
+        "field": "电池",
+        "value": "11000mAh典型值；10690mAh额定值",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
+        "evidenceText": "官方商城电池规格同时列出典型容量与额定容量。",
+        "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
+      },
+      {
+        "field": "充电",
+        "value": "最高80W有线超级快充；最高50W无线超级快充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
+        "evidenceText": "官方商城电池规格列出最大80W有线及50W无线超级快充。",
+        "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约227克（含电池）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
+        "evidenceText": "官方商城主体参数列出机身重量约227克（含电池）。",
+        "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
+        "evidenceText": "官方商城选择版本列出三个存储组合。",
+        "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026-09-28正式发布并开售",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
+        "evidenceText": "官方发布稿明确写明系列于2026年9月28日正式开售。",
+        "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "4499元起；具体容量SKU映射仍待复核",
+        "status": "starting_price_only_sku_mapping_unverified",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
+        "evidenceText": "官方发布稿仅列系列售价4499元起，需再核对具体版本对应的官方首发价格。",
+        "note": "官方系列起售价可确认，但按审计规则需完成具体容量SKU映射；整机不通过准入。"
+      }
+    ]
   }
 ]
