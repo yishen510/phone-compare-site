@@ -341,8 +341,8 @@ async function checkQuoteApi(){
   if(!healthRes.ok)throw new Error('后端服务不可用');
   const health=await healthRes.json();
   if(!health.credentialsConfigured){setStatus('报价 API 状态：等待授权','后端已响应，但尚未配置 HAINAN_API_KEY；当前不显示未经核实的实时价。');return;}
-  setStatus('报价 API 状态：正在查询','每批最多查询 5 款；商品标题与容量匹配后才展示渠道参考价。');
-  const ids=phones.map(p=>p.id);let successes=0;
+  setStatus('报价 API 状态：正在查询','先抽查 9 款代表机型；商品标题与容量匹配后才展示渠道参考价，避免首次接入消耗过多配额。');
+  const sampleIds=['apple-17pm','sam-25u','xia-15u','hua-mate70p','honor-magic7-pro','oppo-x8u','op-13','vivo-x200u','realme-gt7-pro'];const ids=sampleIds.filter(id=>phones.some(p=>p.id===id));let successes=0;
   for(let i=0;i<ids.length;i+=5){
    const batch=ids.slice(i,i+5);
    const res=await fetch('/api/prices?ids='+encodeURIComponent(batch.join(',')),{cache:'no-store'});
@@ -355,7 +355,7 @@ async function checkQuoteApi(){
    }
    await new Promise(resolve=>setTimeout(resolve,650));
   }
-  setStatus('报价 API 状态：查询完成','已匹配 '+successes+' 款精确型号/容量报价；其余机型仍显示待核验。');
+  setStatus('报价 API 状态：查询完成','首轮抽查 9 款代表机型，匹配 '+successes+' 款精确型号/容量报价；其他机型保持待核验，确认质量后再扩展。');
  }catch(err){setStatus('报价 API 状态：后端未连接',String(err&&err.message||'请启动 price_server.py 并在服务器配置授权 Key。')+'；纯静态托管需要另行部署 Python 后端。');}
 }
 function reset(){state.brands.clear();state.types.clear();state.priorities.clear();state.recommendOnly=false;if($('searchInput'))$('searchInput').value='';if($('yearFrom'))$('yearFrom').value='2021';if($('yearTo'))$('yearTo').value='2026';if($('domesticOnly'))$('domesticOnly').checked=false;document.querySelectorAll('input[name="type"]').forEach(i=>i.checked=false);document.querySelectorAll('[data-years]').forEach(i=>i.classList.toggle('active',i.dataset.years==='all'));document.querySelectorAll('[data-priority]').forEach(i=>i.classList.remove('selected'));render();}
