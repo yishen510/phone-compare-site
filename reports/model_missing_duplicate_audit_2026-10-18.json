@@ -246,15 +246,15 @@
   ],
   "implementationStatus": {
     "reportCreated": true,
-    "repositoryIdReferenceSearch": "Partial targeted scan completed across 9 key source/generated/audit files; complete repository-wide scan still pending.",
+    "repositoryIdReferenceSearch": "Completed repository-wide scan: all 35 text files across the 36-blob Git tree were scanned; both IDs occur in 11 files.",
     "modelRecordsAdded": 1,
     "duplicateRemoved": false,
-    "validation": "Latest workflow for commit 9c9752f4c30633aee9b9b0f1225fcf3e847074f5 succeeded; a follow-up report-only commit is queued. Existing reports show static gate 8/8 and Chromium E2E 8/8. No new model records added because field-level audit rows and embedded data copies must be synchronized before admission.",
+    "validation": "HONOR Magic9 Ultra Edition added to canonical JSON, both source HTML files, and both _site HTML copies. Nine field-level audit rows were added to JSON and CSV reports; eight hardware/date fields have official evidence, while exact launch price-to-SKU mapping remains pending. Ranking and recommendation eligibility explicitly false. GitHub Actions deployment for the latest commits still needs final status verification.",
     "referenceAuditUpdated": true,
     "officialCandidateChecks": "2026-10-18 official-page checks confirm existence of HONOR Magic9 Ultra Edition, HUAWEI Pura 90, HUAWEI Pura 90 Pro, HUAWEI Pura 90 Pro Max, vivo X500 Pro Max, and Xiaomi 18 Pro Max on mainland China manufacturer pages. Detailed field-level admission remains pending.",
     "repositoryWideIdSearch": "Completed across all 35 text files in the 36-path Git tree; both IDs appear in canonical data, HTML copies, generated _site files, and historical audit/status docs.",
     "duplicateIdRemoved": false,
-    "nextAction": "Prepare a controlled realme GT8 Pro ID migration plan; separately add only models whose official fields pass the existing audit threshold.",
+    "nextAction": "Check the latest GitHub Pages deployment, then continue with the next confirmed candidate only after official evidence for the nine required fields is recorded. Keep the realme GT8 Pro duplicate IDs unchanged until migration and regression tests are complete.",
     "addedModelIds": [
       "honor-magic9-ultra"
     ],
