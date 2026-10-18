@@ -16,6 +16,13 @@
 
 也可以双击 `phone-compare-demo.html` 浏览单文件演示。该文件内嵌 53 款机型与当前可用的限期人工商品页快照，不需要 API Key；它不会实时刷新页面价格。
 
+## 实时渠道报价 API
+
+- 接入协议、鉴权与验收标准见 [`API_ACCESS_AND_QA.md`](API_ACCESS_AND_QA.md)。
+- GitHub Pages 不能运行 Python；后端部署步骤见 [`RENDER_DEPLOYMENT.md`](RENDER_DEPLOYMENT.md)，Render Blueprint 为 [`render.yaml`](render.yaml)。
+- API Key 只配置在后端环境变量 `HAINAN_API_KEY`，不要放进前端文件或 Git。
+- 未完成真实授权请求与人工商品页抽检前，渠道报价只标记为候选，不会冒充官方首发价或人工核验价。
+
 ## 功能
 
 - 按品牌、年份、关键词、旗舰定位筛选，支持卡片与表格视图。
