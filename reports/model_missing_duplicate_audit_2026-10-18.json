@@ -57,21 +57,31 @@
       "brand": "Huawei",
       "model": "HUAWEI Pura 90",
       "missingType": "系列缺失",
-      "verificationStatus": "官方产品/支持目录候选；正式销售与规格待核验",
+      "verificationStatus": "已由华为中国大陆官方产品页确认系列型号存在；单机规格、上市信息与首发价仍待分别核验",
       "officialSources": [
         "https://consumer.huawei.com/cn/phones/"
       ],
-      "notes": "正式补录前确认中国大陆型号、上市日期与版本。"
+      "notes": "正式补录前确认中国大陆型号、上市日期与版本。 已确认系列导航出现准确型号；仍不得直接录入未核实参数或价格。",
+      "officialEvidence": {
+        "source": "https://consumer.huawei.com/cn/phones/pura90-pro-max/",
+        "evidence": "华为官方 Pura 90 Pro Max 产品页的系列导航明确列出 HUAWEI Pura 90 Pro 与 HUAWEI Pura 90；该页面仅支持型号存在，不足以确认各自完整规格、上市日期或首发价。",
+        "checkedAt": "2026-10-18"
+      }
     },
     {
       "brand": "Huawei",
       "model": "HUAWEI Pura 90 Pro",
       "missingType": "系列缺失",
-      "verificationStatus": "官方产品/支持目录候选；正式销售与规格待核验",
+      "verificationStatus": "已由华为中国大陆官方产品页确认系列型号存在；单机规格、上市信息与首发价仍待分别核验",
       "officialSources": [
         "https://consumer.huawei.com/cn/phones/"
       ],
-      "notes": "正式补录前确认中国大陆型号、上市日期与版本。"
+      "notes": "正式补录前确认中国大陆型号、上市日期与版本。 已确认系列导航出现准确型号；仍不得直接录入未核实参数或价格。",
+      "officialEvidence": {
+        "source": "https://consumer.huawei.com/cn/phones/pura90-pro-max/",
+        "evidence": "华为官方 Pura 90 Pro Max 产品页的系列导航明确列出 HUAWEI Pura 90 Pro 与 HUAWEI Pura 90；该页面仅支持型号存在，不足以确认各自完整规格、上市日期或首发价。",
+        "checkedAt": "2026-10-18"
+      }
     },
     {
       "brand": "Huawei",
@@ -215,6 +225,7 @@
     "duplicateRemoved": false,
     "validation": "Latest workflow for commit 9c9752f4c30633aee9b9b0f1225fcf3e847074f5 succeeded; a follow-up report-only commit is queued. Existing reports show static gate 8/8 and Chromium E2E 8/8. No new model records added because field-level audit rows and embedded data copies must be synchronized before admission.",
     "referenceAuditUpdated": true,
-    "officialCandidateChecks": "2026-10-18 official-page spot check: HONOR Magic9 Ultra Edition, HUAWEI Pura 90 Pro Max, vivo X500 Pro Max, and Xiaomi 18 Pro Max confirmed as models on mainland China manufacturer pages; other candidates remain unverified or only partially checked."
+    "officialCandidateChecks": "2026-10-18 official-page checks confirm existence of HONOR Magic9 Ultra Edition, HUAWEI Pura 90, HUAWEI Pura 90 Pro, HUAWEI Pura 90 Pro Max, vivo X500 Pro Max, and Xiaomi 18 Pro Max on mainland China manufacturer pages. Detailed field-level admission remains pending.",
+    "repositoryWideIdSearch": "Still incomplete: GitHub code search was incomplete and a full repository-wide local grep has not been run. The nine-file targeted scan is not sufficient to authorize ID deletion."
   }
 }
