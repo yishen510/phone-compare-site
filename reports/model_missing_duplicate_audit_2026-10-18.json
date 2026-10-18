@@ -114,23 +114,41 @@
         "checkedFiles": [
           "data/phones.json",
           "index.html",
-          "phone-compare-demo.html"
+          "phone-compare-demo.html",
+          "_site/phone-compare-demo.html",
+          "DATA_STATUS.md",
+          "reports/model_missing_duplicate_audit_2026-10-18.json",
+          "reports/flagship_catalog_audit_2026-10-17.json",
+          "reports/independent_whole_device_admission_review_2026-10-18.json",
+          "reports/independent_whole_device_admission_review_2026-10-17.json"
         ],
         "idsFound": {
           "realme-gt8p": [
             "data/phones.json",
             "index.html",
-            "phone-compare-demo.html"
+            "phone-compare-demo.html",
+            "_site/phone-compare-demo.html",
+            "DATA_STATUS.md",
+            "reports/model_missing_duplicate_audit_2026-10-18.json",
+            "reports/flagship_catalog_audit_2026-10-17.json",
+            "reports/independent_whole_device_admission_review_2026-10-18.json",
+            "reports/independent_whole_device_admission_review_2026-10-17.json"
           ],
           "realme-gt8-pro": [
             "data/phones.json",
             "index.html",
-            "phone-compare-demo.html"
+            "phone-compare-demo.html",
+            "_site/phone-compare-demo.html",
+            "DATA_STATUS.md",
+            "reports/model_missing_duplicate_audit_2026-10-18.json",
+            "reports/flagship_catalog_audit_2026-10-17.json",
+            "reports/independent_whole_device_admission_review_2026-10-18.json",
+            "reports/independent_whole_device_admission_review_2026-10-17.json"
           ]
         },
-        "result": "Both IDs are present in the source JSON and in both HTML embedded data copies.",
-        "wholeRepositorySearch": "GitHub code search returned zero results with incomplete_results=true; this is not proof of no references elsewhere. Other reports/scripts/tests still require a full local grep.",
-        "deletionDecision": "Do not delete either record until a complete local reference scan and merge are performed."
+        "result": "Targeted scan confirms both IDs in the source catalog, both HTML data copies (including generated _site artifact), and several audit/status reports. This is a partial reference scan, not a complete repository-wide proof.",
+        "wholeRepositorySearch": "Not complete. GitHub code search returned zero results with incomplete_results=true; this cannot establish absence of other references. Remaining scripts, tests, all reports, and other files need a full local grep.",
+        "deletionDecision": "Do not delete either record until full local reference scan, field-by-field merge, all three source data copies update, and regression tests."
       },
       "mergeAssessment": {
         "preferredCanonicalId": "realme-gt8-pro",
@@ -172,10 +190,10 @@
   ],
   "implementationStatus": {
     "reportCreated": true,
-    "repositoryIdReferenceSearch": "尚未完成：GitHub 代码搜索连接未返回匹配结果，不能据此声称全仓库无引用。",
+    "repositoryIdReferenceSearch": "Partial targeted scan completed across 9 key source/generated/audit files; complete repository-wide scan still pending.",
     "modelRecordsAdded": 0,
     "duplicateRemoved": false,
-    "validation": "Build/test commands cannot be run through the current GitHub file connector alone; no local shell runner was available. Do not claim regression tests passed.",
+    "validation": "Latest GitHub Pages workflow for audit commit 9c9752f4c30633aee9b9b0f1225fcf3e847074f5 completed successfully. Existing reports record static gate 8/8 and Chromium E2E 8/8, but these do not validate duplicate merging or factual model specs. No local full build/test rerun performed.",
     "referenceAuditUpdated": true
   }
 }
