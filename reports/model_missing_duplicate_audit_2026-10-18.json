@@ -100,17 +100,78 @@
       "brand": "Huawei",
       "model": "HUAWEI Pura 90 Pro Max",
       "missingType": "系列缺失",
-      "verificationStatus": "已由华为官方规格页确认主要硬件字段；官方发布资料确认 2026-04-29 开售、起售价 6499 元；具体 SKU 首发价映射仍待核验",
+      "verificationStatus": "官方规格九字段预审完成；官方页面可确认起售价6499元，但精确 SKU 首发价映射尚未找到官方价目证据，暂不补录",
       "officialSources": [
         "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/",
         "https://consumer.huawei.com/cn/phones/pura90-pro-max/",
-        "https://feeds-drcn.cloud.huawei.com.cn/landingpage/latest?channel=-1&cpid=666&ctype=news&docid=105148003e498604d4068e0fb764082c7701eb5&dy_scenario=relate&emuiVer=Follow&ifl=zh_CN&r=CN&tn=9b65cebec05a3680a84635b4829d9e389221675b4b24294b248381266cfb7b6a&to_app=hwbrowser"
+        "https://consumer.huawei.com/cn/press/events/2026/huawei-pura-90-series-and-new-product-launch-event/",
+        "https://consumer.huawei.com/cn/press/events/"
       ],
-      "notes": "华为中国大陆官方规格页已核实屏幕、麒麟9030S、影像、电池典型/额定容量、100W有线/80W无线充电、约230.5g及容量档位；官方发布资料确认 2026-04-29 开售及 6499 元起。按项目规则，发布稿尚未将 6499 元明确对应到具体 RAM/ROM SKU，因此补录目录前继续保留价格映射待核验，不得直接填为已核实首发 SKU 价格。",
+      "notes": "本轮已逐项核对华为中国大陆官方规格页及官方系列发布会/开售资料。屏幕、处理器、影像、电池、充电、重量、容量范围和上市日期均有官方来源；官方产品页仅显示6499元起，官方可访问资料尚未逐项列明每个存储 SKU 的首发价。媒体报道列出各 SKU 价格，但按本项目准入规则不能用二手来源替代官方 SKU 价格证据。因此暂不新增目录记录；继续保留为缺失候选，priceCN 不得从媒体报价推断，排名/推荐资格不适用。",
       "officialEvidence": {
         "source": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/",
-        "evidence": "官方规格页列出 6.9 英寸 LTPO OLED、麒麟9030S、12/16GB RAM 与 256/512GB/1TB ROM、5000万主摄+4000万超广角+2亿长焦、6000mAh典型/5850mAh额定、100W有线/80W无线充电、约230.5g；官方发布资料称 2026-04-29 开售、6499元起，但具体起售价 SKU 映射尚未在本轮来源中确认。",
+        "evidence": "官方规格页确认6.9英寸OLED、麒麟9030S、12/16GB RAM与256/512GB/1TB存储范围、5000万主摄+4000万超广角+2亿长焦、6000mAh典型容量、100W有线/80W无线充电、约230.5g；官方产品页显示6499元起。华为官方发布会目录列出2026-04-20发布会，官方资讯确认2026-04-29正式开售。官方来源未提供全部 SKU 对应首发价格表，精确 SKU 映射继续待核验。",
         "checkedAt": "2026-10-18"
+      },
+      "preAudit": {
+        "status": "pre-audit only; not catalog admission",
+        "fields": [
+          {
+            "field": "屏幕",
+            "value": "6.9英寸OLED；2880×1308；1–120Hz LTPO",
+            "status": "verified_official_page_reviewed",
+            "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/"
+          },
+          {
+            "field": "处理器",
+            "value": "麒麟9030S",
+            "status": "verified_official_page_reviewed",
+            "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/"
+          },
+          {
+            "field": "影像",
+            "value": "5000万超高动态主摄（OIS）+4000万超广角+2亿长焦（OIS）；第二代红枫原色摄像头",
+            "status": "verified_official_page_reviewed",
+            "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/"
+          },
+          {
+            "field": "电池",
+            "value": "6000mAh典型值；5850mAh额定值",
+            "status": "verified_official_page_reviewed",
+            "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/"
+          },
+          {
+            "field": "充电",
+            "value": "100W有线超级快充；80W无线超级快充",
+            "status": "verified_official_page_reviewed",
+            "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/"
+          },
+          {
+            "field": "重量",
+            "value": "约230.5g（含电池）",
+            "status": "verified_official_page_reviewed",
+            "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/"
+          },
+          {
+            "field": "容量组合",
+            "value": "12GB/16GB RAM；256GB/512GB/1TB ROM；具体销售SKU组合仍应以大陆销售配置逐项对应",
+            "status": "official_options_confirmed_sku_combinations_need_confirmation",
+            "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/"
+          },
+          {
+            "field": "正式发布/开售日期",
+            "value": "2026-04-20发布会；2026-04-29正式开售",
+            "status": "verified_official_page_reviewed",
+            "sourceUrl": "https://consumer.huawei.com/cn/press/events/2026/huawei-pura-90-series-and-new-product-launch-event/"
+          },
+          {
+            "field": "官方首发起售价及 SKU 映射",
+            "value": "官方产品页当前展示6499元起；各容量 SKU 的首发价映射未获官方价目来源确认",
+            "status": "starting_price_only_sku_mapping_unverified",
+            "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/"
+          }
+        ],
+        "note": "预审记录不等于目录字段终审；在官方 SKU 首发价映射补齐前，不新增到 data/phones.json。"
       }
     },
     {
