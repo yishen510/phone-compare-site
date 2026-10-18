@@ -45,43 +45,25 @@
 
 当前已完成**服务端 API 适配器与候选报价质量检查脚本**；实时 API 需要有效的服务端密钥。未配置或未授权时，主站不会伪造实时价格，相关机型会继续显示“待核验”。独立的 `phone-compare-demo.html` 是静态演示，不会实时刷新价格。截图中曾可见的 Key 不应继续使用；请轮换并仅在本地 `.env` 或托管平台环境变量中配置新 Key。
 
-### 没有 API Key 时如何维护价格
+### 配置并验收实时渠道报价
 
-在本机复制 `.env.example` 为 `.env`，并填入**已轮换、没有再公开过的**海纳 Key：
+1. 在本机复制 `.env.example` 为 `.env`，或在 Render 的 Environment 页面设置 `HAINAN_API_KEY`。只使用已轮换、未公开过的 Key；不要提交 `.env`，也不要把 Key 写进前端文件。
+2. 本地运行 `python price_server.py`，默认打开 `http://127.0.0.1:8000`。访问 `/api/health`：`credentialsConfigured=true` 仅代表环境变量存在，不代表上游授权已通过。
+3. 运行 `python quote_quality_check.py`，检查 9 款代表机型的真实请求和规则指标。每次 API 响应最多处理 5 款；不要在验收前直接扩到整个目录。
+4. 完成 API 返回质量检查后，人工打开每个候选商品页，核对大陆版、全新状态、准确容量、库存和优惠条件。API 候选价不能标成“人工已核验”。
+5. GitHub Pages 不能运行 Python。线上前端需单独部署后端，并将 `api-config.js` 中的 `window.PHONE_API_BASE_URL` 设置为后端 HTTPS 域名；Render 的 `PHONE_CORS_ORIGIN` 必须与前端站点 Origin 一致。
 
-   ```dotenv
-   HAINAN_API_KEY=你在本机获得并保管的新Key
-   ```
+**阻塞项：**如果尚未配置 Render 后端或有效海纳 Key，线上主站不会显示 API 实时报价；未匹配到精确型号/容量时保持“待核验”。当前代码不会自动提供独立的人工快照回退。
 
-5. 重启 `python price_server.py`。服务端按截图中的新版接口发送 `POST https://gw-openapi.zhidemai.com/hj-search/discount/v2`，在 `x-api-key` 请求头传入 Key，JSON 请求体包含 `request_from`（默认与控制台示例一致为 `test_client`）、唯一 `question_id`、`product_query`、`query_process`、`size`、`fields`；旧版 `app_key/app_secret/sign` 签名协议不再使用。Key 只从服务端环境读取，不会发送到浏览器。
-6. 查看 `http://127.0.0.1:8000/api/health`。`credentialsConfigured=true` 只表示检测到 Key，不代表该 Key 已获授权。再运行 `python quote_quality_check.py`，进行 9 个品牌代表机型的真实请求和四项指标验收；样本通过后可运行 `python quote_quality_check.py --all`。API 每次响应最多查询 5 款，网站会自动轮询分批填价以降低 QPS 风险。结果缓存默认 30 分钟；无报价结果缓存 10 分钟。
-7. 详见 [API_ACCESS_AND_QA.md](API_ACCESS_AND_QA.md)。脚本生成 `reports/quote_quality_latest.json` 和 `reports/quote_quality_manual_review.csv`；后者需人工打开真实商品页，复核页面价格、国行新机、精确容量、库存和优惠条件。
+## 常用接口
 
-**报价口径：**平台 API 是商品检索结果，包含标题、价格、商城名、促销信息与商品 URL。它不是平台订单的最终结算承诺。代码会排除二手、翻新、配件、海外版本等明显不合适的标题，并要求产品型号、容量版本和 HTTPS 直链均通过检查；购买前仍需打开商品页确认是否国行、新机、具体颜色/容量/库存，以及优惠券、以旧换新和会员资格。个别平台标题信息缺失时宁可不显示报价，也不进行模糊猜测。
-
-## 常用接口和手工快照工具
-
-- `python update_manual_quotes.py --dry-run`：在无 API Key 模式下校验人工核价 CSV；`python update_manual_quotes.py` 则导入合格记录，快照 72 小时后自动隐藏。
-- `python build_demo.py`：将站点样式、脚本、机型数据库和人工快照重新打包到单文件演示版。
-- `GET /api/health`：服务器和是否配置凭据的状态（不验证密钥有效性）。
-- `GET /api/prices?ids=apple-15pm,op-11`：查询指定机型的最新可匹配报价。
-- `quote_quality_check.py`：真实授权后的跨品牌样本/全库报价质量验收脚本。
-- 当前 GitHub Actions 对后端和报价检查脚本执行 Python 语法检查；真实 API 行为仍需配置有效 Key 后验收。
+- `GET /api/health`：检查服务是否运行，以及服务端是否检测到凭据（不验证密钥有效性）。
+- `GET /api/prices?ids=apple-17pm,sam-25u`：查询指定机型的可匹配候选报价。
+- `quote_quality_check.py`：真实授权后的代表机型报价质量验收脚本。
 - `API_ACCESS_AND_QA.md`：申请步骤、凭据安全及自动/人工验收口径。
-- `API_ACCESS_REQUEST_DRAFT.md`：海纳测试授权申请文字草稿，当前接口的字段口径、调用配额与公开展示规范确认问题。
-- `test_quote_quality_check.py`：四项指标的离线单元测试。
-- `reports/retailer_page_smoke_test_2026-10-17.json` / `.csv`：公开零售页快照抽检，与授权 API 指标严格分开。
-- `QUOTE_AUTH_STATUS.md`：本轮真实授权/报价验收状态和明确阻塞项。
-- 无密钥时示例响应：
-
-  ```json
-  {
-    "provider": "hainan_discount_v2",
-    "status": "needs_credentials",
-    "message": "报价 API 尚未配置；当前展示限期人工商品页快照（非 API 实时报价）……",
-    "items": [{"status": "manual_page_snapshot", "sourceType": "manual_public_page_snapshot"}]
-  }
-  ```
+- `API_ACCESS_REQUEST_DRAFT.md`：海纳测试授权申请草稿。
+- `QUOTE_AUTH_STATUS.md`：真实授权与报价验收的当前状态。
+- GitHub Actions 当前执行后端 Python 语法检查；该结果不等于真实 API 授权或商品价格验收通过。
 
 ## 数据源参考
 
