@@ -2,8 +2,8 @@
   "reportTitle": "2025—2026 旗舰机型逐字段官方来源审计（第四轮）",
   "auditDate": "2026-10-18",
   "scope": "当前数据库中 year=2025 或 2026 的唯一机型；逐款审查九个关键字段。",
-  "modelCount": 60,
-  "fieldCount": 557,
+  "modelCount": 61,
+  "fieldCount": 566,
   "statusCounts": {
     "verified_official_page_reviewed": 222,
     "official_source_linked_needs_field_confirmation": 155,
@@ -6277,6 +6277,105 @@
       "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
       "evidenceText": "官方发布稿仅列系列售价4499元起，需再核对具体版本对应的官方首发价格。",
       "note": "官方系列起售价可确认，但按审计规则需完成具体容量SKU映射；整机不通过准入。"
+    },
+    {
+      "year": 2026,
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "field": "屏幕",
+      "value": "6.85英寸 AMOLED；3168×1440；1–144Hz",
+      "status": "verified_official_page_reviewed",
+      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
+      "evidenceText": "官方规格页列出屏幕尺寸、分辨率、材质与刷新率。",
+      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+    },
+    {
+      "year": 2026,
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "field": "处理器",
+      "value": "天玑 9600 Pro",
+      "status": "verified_official_page_reviewed",
+      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
+      "evidenceText": "官方规格页列出 CPU 型号为天玑 9600 Pro。",
+      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+    },
+    {
+      "year": 2026,
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "field": "影像",
+      "value": "前置5000万；后置5000万蔡司主摄+2亿蔡司APO超级长焦+5000万蔡司超广角；主摄和长焦支持OIS；长焦3.5×光学变焦",
+      "status": "verified_official_page_reviewed",
+      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
+      "evidenceText": "官方规格页列出前后摄像头像素、后置镜头组合、防抖与光学变焦信息。",
+      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+    },
+    {
+      "year": 2026,
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "field": "电池",
+      "value": "8000mAh典型容量；7800mAh额定容量",
+      "status": "verified_official_page_reviewed",
+      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
+      "evidenceText": "官方规格页分别列出典型容量与额定容量。",
+      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+    },
+    {
+      "year": 2026,
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "field": "充电",
+      "value": "最高90W有线；40W无线闪充",
+      "status": "verified_official_page_reviewed",
+      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
+      "evidenceText": "官方规格页列出手机支持的充电器最大输出功率90W及40W无线闪充。",
+      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+    },
+    {
+      "year": 2026,
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "field": "重量",
+      "value": "摄夜约225g；大地回声、晴天、览霞约229g",
+      "status": "verified_official_page_reviewed",
+      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
+      "evidenceText": "官方规格页按配色列出机身重量。",
+      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+    },
+    {
+      "year": 2026,
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "field": "容量组合",
+      "value": "12GB+256GB / 12GB+512GB / 16GB+512GB / 12GB+1TB卫星通信版 / 16GB+1TB卫星通信版 / 16GB+1TB创作者套装版",
+      "status": "verified_official_page_reviewed",
+      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
+      "evidenceText": "官方规格页建议零售价分项列出普通版、卫星通信版与创作者套装版容量 SKU。",
+      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+    },
+    {
+      "year": 2026,
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "field": "正式发布/开售日期",
+      "value": "2026年9月上市（官方规格页仅确认月份）",
+      "status": "verified_official_page_reviewed",
+      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
+      "evidenceText": "官方规格页列出上市时间为2026年9月；不将其扩展推断为具体开售日。",
+      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+    },
+    {
+      "year": 2026,
+      "brand": "vivo",
+      "model": "vivo X500 Pro Max",
+      "field": "官方首发起售价",
+      "value": "官方规格页仅列建议零售价；首发价与容量 SKU 映射未核实",
+      "status": "starting_price_only_sku_mapping_unverified",
+      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
+      "evidenceText": "建议零售价不等同于官方首发价，需官方发布稿或购买指引核实具体容量版本的首发价格。",
+      "note": "priceCN保持null；不以官网建议零售价代替首发价。"
     }
   ],
   "pass3ModelUpdates": [
@@ -6285,8 +6384,8 @@
     "Galaxy S26",
     "Galaxy S26+"
   ],
-  "auditCaveat": "官方来源链接本身不等于字段已核验。仅在官方原文直接支持对应值时标记 verified_official_page_reviewed；本轮不开放任何候选机型排名或推荐。 荣耀 Magic9 超能版的八项字段有官方页面证据，但首发价与容量SKU映射仍待复核，整机资格保持关闭。",
-  "latestBatch": "2026-10-18：新增荣耀 Magic9 超能版九项关键字段审计；八项有官方证据，首发价容量SKU映射待复核。",
+  "auditCaveat": "官方来源链接本身不等于字段已核验。仅在官方原文直接支持对应值时标记 verified_official_page_reviewed；本轮不开放任何候选机型排名或推荐。 荣耀 Magic9 超能版的八项字段有官方页面证据，但首发价与容量SKU映射仍待复核，整机资格保持关闭。 vivo X500 Pro Max 的官网建议零售价不能代替首发价；整机准入保持关闭。",
+  "latestBatch": "2026-10-18：新增 vivo X500 Pro Max 九项字段审计；八项规格/上市月份有官方证据，首发价与 SKU 映射待核验。",
   "frontendGate": {
     "file": "eligibility.js",
     "staticCheck": "passed",
