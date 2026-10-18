@@ -249,12 +249,12 @@
     "repositoryIdReferenceSearch": "Completed repository-wide scan: all 35 text files across the 36-blob Git tree were scanned; both IDs occur in 11 files.",
     "modelRecordsAdded": 1,
     "duplicateRemoved": false,
-    "validation": "HONOR Magic9 Ultra Edition added to canonical JSON, both source HTML files, and both _site HTML copies. Nine field-level audit rows were added to JSON and CSV reports; eight hardware/date fields have official evidence, while exact launch price-to-SKU mapping remains pending. Ranking and recommendation eligibility explicitly false. GitHub Actions deployment for the latest commits still needs final status verification.",
+    "validation": "HONOR Magic9 Ultra Edition has nine fieldAudit records embedded in data/phones.json and synchronized across index.html, phone-compare-demo.html, _site/index.html, and _site/phone-compare-demo.html. Eight hardware/date fields have official evidence; exact first-launch price-to-SKU mapping remains pending, so priceCN is null and verified/ranking/recommendation flags remain false. CSV rows are structurally aligned to nine columns. A prior deployment run for commit 1d43bd1 succeeded; subsequent sync commits are still being deployed.",
     "referenceAuditUpdated": true,
     "officialCandidateChecks": "2026-10-18 official-page checks confirm existence of HONOR Magic9 Ultra Edition, HUAWEI Pura 90, HUAWEI Pura 90 Pro, HUAWEI Pura 90 Pro Max, vivo X500 Pro Max, and Xiaomi 18 Pro Max on mainland China manufacturer pages. Detailed field-level admission remains pending.",
     "repositoryWideIdSearch": "Completed across all 35 text files in the 36-path Git tree; both IDs appear in canonical data, HTML copies, generated _site files, and historical audit/status docs.",
     "duplicateIdRemoved": false,
-    "nextAction": "Check the latest GitHub Pages deployment, then continue with the next confirmed candidate only after official evidence for the nine required fields is recorded. Keep the realme GT8 Pro duplicate IDs unchanged until migration and regression tests are complete.",
+    "nextAction": "Verify deployment after the final synchronization commits. Continue candidate admission only when all nine field-level statuses satisfy AUDIT_POLICY.md; do not infer first-launch SKU pricing from current promotional prices. Keep both realme GT8 Pro IDs until a controlled migration and regression test can be completed.",
     "addedModelIds": [
       "honor-magic9-ultra"
     ],
