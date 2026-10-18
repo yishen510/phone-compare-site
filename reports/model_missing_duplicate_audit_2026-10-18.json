@@ -42,11 +42,16 @@
       "brand": "Honor",
       "model": "荣耀 Magic9 超能版",
       "missingType": "系列变体缺失",
-      "verificationStatus": "厂商发布信息支持机型存在；参数/价格待核验",
+      "verificationStatus": "已由中国大陆官方发布稿确认机型存在及开售；完整参数仍待逐项核验",
       "officialSources": [
         "https://www.honor.com/cn/news/honor-magic9-launch/"
       ],
-      "notes": "目录已有 Magic9 与 Magic9 Pro Max。"
+      "notes": "目录已有 Magic9 与 Magic9 Pro Max。 可进入补录候选队列；价格口径有官方发布稿支持，但需按数据字段审核规则补齐参数证据后才可进入正式排名/推荐。",
+      "officialEvidence": {
+        "source": "https://www.honor.com/cn/news/honor-magic9-launch/",
+        "evidence": "官方发布稿明确列出荣耀 Magic9 超能版，并说明 2026-09-28 正式开售、售价 4499 元起。",
+        "checkedAt": "2026-10-18"
+      }
     },
     {
       "brand": "Huawei",
@@ -72,31 +77,46 @@
       "brand": "Huawei",
       "model": "HUAWEI Pura 90 Pro Max",
       "missingType": "系列缺失",
-      "verificationStatus": "官方产品/支持目录候选；正式销售与规格待核验",
+      "verificationStatus": "已由中国大陆官方规格页确认机型存在；首发价与其他 Pura 90 变体仍待核验",
       "officialSources": [
         "https://consumer.huawei.com/cn/phones/"
       ],
-      "notes": "正式补录前确认中国大陆型号、上市日期与版本。"
+      "notes": "正式补录前确认中国大陆型号、上市日期与版本。 本轮只确认 Pro Max；不能据此自动确认 Pura 90 标准版与 Pro 版，后两者继续待核验。",
+      "officialEvidence": {
+        "source": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/",
+        "evidence": "官方规格页列出 Pura 90 Pro Max，包含屏幕、处理器、存储、摄像头、电池与充电规格。",
+        "checkedAt": "2026-10-18"
+      }
     },
     {
       "brand": "vivo",
       "model": "vivo X500 Pro Max",
       "missingType": "系列变体缺失",
-      "verificationStatus": "候选已发现；需复核 vivo 中国大陆官方发布/产品页",
+      "verificationStatus": "已由中国大陆官方规格页确认机型存在、上市月份、容量 SKU 与建议零售价",
       "officialSources": [
         "https://www.vivo.com.cn/"
       ],
-      "notes": "当前目录有 X500 与 X500 Pro。"
+      "notes": "当前目录有 X500 与 X500 Pro。 可进入补录候选队列；正式首发价口径仍应与发布资料交叉核对。",
+      "officialEvidence": {
+        "source": "https://www.vivo.com.cn/vivo/param/x500promax",
+        "evidence": "官方规格页列出 X500 Pro Max、2026 年 9 月上市及 12GB+256GB 等容量 SKU，并展示建议零售价。",
+        "checkedAt": "2026-10-18"
+      }
     },
     {
       "brand": "Xiaomi",
       "model": "Xiaomi 18 Pro Max",
       "missingType": "系列变体缺失",
-      "verificationStatus": "候选已发现；需复核小米中国大陆官方产品页",
+      "verificationStatus": "已由小米中国大陆官方产品页确认机型存在；价格与部分参数需按字段重新审核",
       "officialSources": [
         "https://www.mi.com/"
       ],
-      "notes": "当前目录有 Xiaomi 18 Pro。"
+      "notes": "当前目录有 Xiaomi 18 Pro。 当前官方页面可支持机型存在与部分参数，但页面内容不自动证明历史首发价；无可靠首发来源时 priceCN 必须为 null。",
+      "officialEvidence": {
+        "source": "https://www.mi.com/prod/xiaomi-18-pro-max",
+        "evidence": "小米官方产品页列出 Xiaomi 18 Pro Max 并提供显示、影像、芯片、电池和充电等产品信息。",
+        "checkedAt": "2026-10-18"
+      }
     }
   ],
   "duplicateCandidates": [
@@ -193,7 +213,8 @@
     "repositoryIdReferenceSearch": "Partial targeted scan completed across 9 key source/generated/audit files; complete repository-wide scan still pending.",
     "modelRecordsAdded": 0,
     "duplicateRemoved": false,
-    "validation": "Latest GitHub Pages workflow for audit commit 9c9752f4c30633aee9b9b0f1225fcf3e847074f5 completed successfully. Existing reports record static gate 8/8 and Chromium E2E 8/8, but these do not validate duplicate merging or factual model specs. No local full build/test rerun performed.",
-    "referenceAuditUpdated": true
+    "validation": "Latest workflow for commit 9c9752f4c30633aee9b9b0f1225fcf3e847074f5 succeeded; a follow-up report-only commit is queued. Existing reports show static gate 8/8 and Chromium E2E 8/8. No new model records added because field-level audit rows and embedded data copies must be synchronized before admission.",
+    "referenceAuditUpdated": true,
+    "officialCandidateChecks": "2026-10-18 official-page spot check: HONOR Magic9 Ultra Edition, HUAWEI Pura 90 Pro Max, vivo X500 Pro Max, and Xiaomi 18 Pro Max confirmed as models on mainland China manufacturer pages; other candidates remain unverified or only partially checked."
   }
 }
