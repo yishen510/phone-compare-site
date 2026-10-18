@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: phone-compare-quote-api
+    runtime: python
+    plan: free
+    buildCommand: python -m py_compile price_server.py quote_quality_check.py
+    startCommand: python price_server.py
+    healthCheckPath: /api/health
+    envVars:
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: HAINAN_API_KEY
+        sync: false
+      - key: PHONE_CORS_ORIGIN
+        value: https://yishen510.github.io
+      - key: HAINAN_MAX_QUERIES_PER_RESPONSE
+        value: 5
+      - key: HAINAN_MIN_REQUEST_INTERVAL_SECONDS
+        value: 0.6
+      - key: HAINAN_RESULT_SIZE
+        value: 20
+      - key: HAINAN_QUERY_PROCESS
+        value: 1
