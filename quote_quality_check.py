@@ -275,8 +275,7 @@ def main() -> int:
     args = parser.parse_args()
 
     ps.load_env_file()
-    app_key = os.getenv("SMZDM_APP_KEY", "")
-    app_secret = os.getenv("SMZDM_APP_SECRET", "")
+    api_key = os.getenv("HAINAN_API_KEY", "")
     phone_map = ps.phones_by_id()
     if args.all:
         ids = list(phone_map.keys())
@@ -289,14 +288,14 @@ def main() -> int:
         print("未知机型 ID: " + ", ".join(unknown), file=sys.stderr)
         return 2
 
-    credentials_present = not is_placeholder(app_key) and not is_placeholder(app_secret)
+    credentials_present = not is_placeholder(api_key)
     if credentials_present:
         payload = ps.query_prices(ids)
     else:
         payload = {
-            "asOf": ps.now_iso(), "provider": "smzdm_openapi",
+            "asOf": ps.now_iso(), "provider": "hainan_discount_v2",
             "status": "needs_credentials",
-            "message": "未检测到有效格式的 API 凭据。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置平台签发凭据。",
+            "message": "未检测到有效的 HAINAN_API_KEY。未发起请求；四项 API 报价指标不能计算。请项目所有者在本地 .env 中配置轮换后的海纳 API Key。",
             "items": [],
         }
 
