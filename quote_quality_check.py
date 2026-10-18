@@ -290,7 +290,25 @@ def main() -> int:
 
     credentials_present = not is_placeholder(api_key)
     if credentials_present:
-        payload = ps.query_prices(ids)
+        combined_items: list[dict[str, Any]] = []
+        batch_messages: list[str] = []
+        api_status = "no_exact_offers"
+        for start in range(0, len(ids), 5):
+            batch_payload = ps.query_prices(ids[start:start + 5])
+            combined_items.extend(x for x in batch_payload.get("items", []) if isinstance(x, dict))
+            batch_messages.append(str(batch_payload.get("message") or ""))
+            if batch_payload.get("status") == "upstream_error":
+                api_status = "upstream_error"
+                break
+            if batch_payload.get("status") == "ok":
+                api_status = "ok"
+        payload = {
+            "asOf": ps.now_iso(),
+            "provider": "hainan_discount_v2",
+            "status": api_status,
+            "message": "；".join(x for x in batch_messages if x),
+            "items": combined_items,
+        }
     else:
         payload = {
             "asOf": ps.now_iso(), "provider": "hainan_discount_v2",
