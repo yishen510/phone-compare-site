@@ -100,17 +100,18 @@
       "brand": "Huawei",
       "model": "HUAWEI Pura 90 Pro Max",
       "missingType": "系列缺失",
-      "verificationStatus": "官方规格九字段预审完成；官方页面可确认起售价6499元，但精确 SKU 首发价映射尚未找到官方价目证据，暂不补录",
+      "verificationStatus": "官方规格与起售价已核实；公开 SKU 价目目前仅找到媒体逐档报道，官方 SKU 首发价映射仍未完成，暂不补录",
       "officialSources": [
         "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/",
         "https://consumer.huawei.com/cn/phones/pura90-pro-max/",
         "https://consumer.huawei.com/cn/press/events/2026/huawei-pura-90-series-and-new-product-launch-event/",
-        "https://consumer.huawei.com/cn/press/events/"
+        "https://www.vmall.com/portal/activity/index.html?cid=380536&isShowLayout=false&pn=purapc",
+        "https://www.ithome.com/0/941/208.htm"
       ],
-      "notes": "本轮已逐项核对华为中国大陆官方规格页及官方系列发布会/开售资料。屏幕、处理器、影像、电池、充电、重量、容量范围和上市日期均有官方来源；官方产品页仅显示6499元起，官方可访问资料尚未逐项列明每个存储 SKU 的首发价。媒体报道列出各 SKU 价格，但按本项目准入规则不能用二手来源替代官方 SKU 价格证据。因此暂不新增目录记录；继续保留为缺失候选，priceCN 不得从媒体报价推断，排名/推荐资格不适用。",
+      "notes": "本轮补充检索华为官网规格页、产品页、官方发布会页与华为商城。官方产品页及华为商城均显示6499元起；IT之家等媒体逐档报道12GB+256GB为6499元、12GB+512GB为6999元、16GB+512GB为7499元、16GB+1TB为8499元，但尚未找到华为官方发布稿/商城页面可直接证明每档为首发价的逐项价格表。按严格准入规则，媒体价格仅作交叉参考，不视为官方首发 SKU 证据；不新增目录记录，不推断 priceCN 与 quoteTargetStorage 的正式映射。",
       "officialEvidence": {
         "source": "https://consumer.huawei.com/cn/phones/pura90-pro-max/specs/",
-        "evidence": "官方规格页确认6.9英寸OLED、麒麟9030S、12/16GB RAM与256/512GB/1TB存储范围、5000万主摄+4000万超广角+2亿长焦、6000mAh典型容量、100W有线/80W无线充电、约230.5g；官方产品页显示6499元起。华为官方发布会目录列出2026-04-20发布会，官方资讯确认2026-04-29正式开售。官方来源未提供全部 SKU 对应首发价格表，精确 SKU 映射继续待核验。",
+        "evidence": "华为官方规格页确认屏幕、麒麟9030S、影像、电池、充电、重量与存储容量范围；官方发布会页确认系列机型存在，官方产品页及华为商城显示Pura 90 Pro Max 6499元起。公开媒体报道提供四档 SKU 价格，但尚未找到官方逐 SKU 首发价表，因此官方 SKU 价格映射继续待核验。",
         "checkedAt": "2026-10-18"
       },
       "preAudit": {
@@ -171,7 +172,7 @@
             "sourceUrl": "https://consumer.huawei.com/cn/phones/pura90-pro-max/"
           }
         ],
-        "note": "预审记录不等于目录字段终审；在官方 SKU 首发价映射补齐前，不新增到 data/phones.json。"
+        "note": "媒体逐 SKU 价格可作交叉线索，不可代替官方首发价证据。当前不新增到 data/phones.json；priceCN/quoteTargetStorage 不作推断。"
       }
     },
     {
