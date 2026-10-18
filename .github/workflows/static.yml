@@ -32,13 +32,16 @@ jobs:
       - name: Test quote validation rules
         run: python -m unittest discover -s tests -v
 
+      - name: Build minimal public site artifact
+        run: python scripts/build_pages.py
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload site files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
 
       - name: Deploy to GitHub Pages
         id: deployment
