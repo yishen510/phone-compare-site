@@ -1,13 +1,12 @@
 #!/usr/bin/env python3
-"""Local web server + server-side Zhidemai/SMZDM offer search adapter.
+"""Local web server + server-side Hainan discount-search Pro v2 adapter.
 
-Only set SMZDM_APP_KEY and SMZDM_APP_SECRET on the server. Never send them to the browser.
+Only set HAINAN_API_KEY on the server. Never send it to the browser.
 The provider returns search offers, not a guaranteed checkout price; all matched offers include
 an exact model/storage check, direct offer URL and query timestamp.
 """
 from __future__ import annotations
 
-import hashlib
 import json
 import os
 import re
@@ -19,7 +18,7 @@ from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from typing import Any
 from urllib.error import HTTPError, URLError
-from urllib.parse import parse_qs, urlencode, urlparse
+from urllib.parse import parse_qs, urlparse
 from urllib.request import Request, urlopen
 
 ROOT = Path(__file__).resolve().parent
@@ -93,20 +92,6 @@ def phones_by_id() -> dict[str, dict[str, Any]]:
 def provider_config() -> dict[str, Any]:
     config = read_json(CONFIG_FILE, {})
     return config if isinstance(config, dict) else {}
-
-
-def sign_params(params: dict[str, str], secret: str) -> str:
-    """SMZDM Open Platform: UPPER(MD5(secret + sorted key/value concatenation + secret))."""
-    parts = []
-    for key in sorted(params.keys()):
-        if key == "sign":
-            continue
-        value = params[key]
-        if value is None or value == "":
-            continue
-        parts.append(f"{key}{value}")
-    raw = secret + "".join(parts) + secret
-    return hashlib.md5(raw.encode("utf-8")).hexdigest().upper()
 
 
 def normalize(text: str) -> str:
