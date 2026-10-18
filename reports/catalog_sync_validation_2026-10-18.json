@@ -1,0 +1,62 @@
+{
+  "checkedAt": "2026-10-18",
+  "checkType": "repository static consistency validation",
+  "passed": 10,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "canonical JSON parses",
+      "status": "PASS"
+    },
+    {
+      "name": "catalog record count",
+      "status": "PASS",
+      "actual": 101,
+      "expected": 101
+    },
+    {
+      "name": "IDs unique",
+      "status": "PASS"
+    },
+    {
+      "name": "all four HTML catalog arrays parse",
+      "status": "PASS"
+    },
+    {
+      "name": "all four HTML catalog counts match canonical JSON",
+      "status": "PASS",
+      "actual": {
+        "index.html": 101,
+        "phone-compare-demo.html": 101,
+        "_site/index.html": 101,
+        "_site/phone-compare-demo.html": 101
+      }
+    },
+    {
+      "name": "HTML ID order matches canonical JSON",
+      "status": "PASS"
+    },
+    {
+      "name": "HONOR Magic9 Ultra fieldAudit has 9 rows",
+      "status": "PASS",
+      "actual": 9
+    },
+    {
+      "name": "HONOR Magic9 Ultra ranking/recommendation gate closed and priceCN null",
+      "status": "PASS"
+    },
+    {
+      "name": "both realme GT8 Pro IDs preserved pending controlled migration",
+      "status": "PASS",
+      "ids": [
+        "realme-gt8p",
+        "realme-gt8-pro"
+      ]
+    },
+    {
+      "name": "last nine CSV rows have nine columns",
+      "status": "PASS"
+    }
+  ],
+  "scope": "This is a remote static consistency check over the current GitHub file contents. It does not execute Chromium/browser interactions, run the local build script, test the production host, or independently validate manufacturer facts."
+}
