@@ -1,6 +1,6 @@
 # 机选 · 中国大陆旗舰手机选购与对比
 
-这是一个原生 HTML/CSS/JavaScript 前端 + Python 标准库服务端的手机选购对比网站。主库有 **53 款代表机型、9 个品牌，覆盖 2021—2026 年**。它关注大陆正式销售的主流旗舰，不宣称穷尽每个品牌的全部版本。
+这是一个原生 HTML/CSS/JavaScript 前端 + Python 标准库服务端的手机选购对比网站。主库有 **102 条机型记录、11 个品牌，覆盖 2021—2026 年**。它关注大陆正式销售的主流旗舰，不宣称穷尽每个品牌的全部版本。
 
 ## 快速运行
 
@@ -14,7 +14,7 @@
 
 4. 浏览器打开 `http://127.0.0.1:8000`。
 
-也可以双击 `phone-compare-demo.html` 浏览单文件演示。该文件内嵌 53 款机型与当前可用的限期人工商品页快照，不需要 API Key；它不会实时刷新页面价格。
+也可以双击 `phone-compare-demo.html` 浏览单文件演示。该文件是独立静态演示版，不需要 API Key；它不会实时刷新页面价格。
 
 ## 实时渠道报价 API
 
@@ -35,29 +35,19 @@
 
 ## 数据库完整度
 
-- `data/phones.json`：53 款机型；本轮对 25 款历史/待复核机型逐条检查官方规格或支持页、存储版本、上市月份与首发价格来源。23 条绑定可用的型号级来源；小米 12S Ultra 和小米 11 Ultra 的历史页面可能重定向，保留历史规格来源，但 UI 会继续提示复核，不夸称永久可访问。
-- `data/price-config.json`：报价 API 的公开字段配置，不含任何密钥。
+- `data/phones.json`：102 款机型；本轮对 25 款历史/待复核机型逐条检查官方规格或支持页、存储版本、上市月份与首发价格来源。23 条绑定可用的型号级来源；小米 12S Ultra 和小米 11 Ultra 的历史页面可能重定向，保留历史规格来源，但 UI 会继续提示复核，不夸称永久可访问。
+- `data/price-config.json`：报价过滤词等公开配置，不含任何密钥。
 - `DATA_STATUS.md`：25 条复核记录与来源清单。
 - `priceCN`：首发价/上市期参考起价，不是现在的实际售价。
 - `quoteTargetStorage`：报价默认匹配的大陆版容量。本版默认采用该机 `storageOptions` 列表中的第一个组合，例如 iPhone 的入门容量或安卓的入门 RAM/ROM；报价必须匹配此容量，未匹配时不显示数字。后续可增加容量选择控件。
 
 ## 实时报价：授权与准确性边界
 
-当前已完成**服务端 API 适配器、无密钥人工快照备用模式、人工核价导入工具及离线回归测试**。本项目不包含任何平台密钥。截图中曾可见的 Key 不应继续使用；请轮换并仅在本地 `.env` 配置新 Key。无有效 API 凭据时，服务器仍能显示 `data/manual-quotes.json` 中少量尚未过期的公开商品页人工快照；卡片会明确标记为“公开商品页快照价”，不是实时成交价，且不计入 API 质量指标。
+当前已完成**服务端 API 适配器与候选报价质量检查脚本**；实时 API 需要有效的服务端密钥。未配置或未授权时，主站不会伪造实时价格，相关机型会继续显示“待核验”。独立的 `phone-compare-demo.html` 是静态演示，不会实时刷新价格。截图中曾可见的 Key 不应继续使用；请轮换并仅在本地 `.env` 或托管平台环境变量中配置新 Key。
 
 ### 没有 API Key 时如何维护价格
 
-1. 网站会暂时展示 `data/manual-quotes.json` 中 4 条有来源的公开商品页价格快照。它们来自 2026-10-17 的初步页面抽检，部分页面信息可能由搜索索引提供；不是当日已保证可下单的库存或最终结算价。快照在记录时间起 72 小时后自动隐藏。
-2. 打开 `reports/manual_page_quote_template.csv`，对待更新行逐一打开商品直链，重新核对国行/全新、精确存储容量、库存和优惠条件。只在全部确认后填 `productPageOpened=Yes`、`mainlandNewUnitConfirmed=Yes`、`exactStorageConfirmedOnPage=Yes`、`stockConfirmed=Yes`、`promotionConditionsClear=Yes`，将 `reviewerVerdict` 改为 `manual_verified`，并填写实际核验时间（含时区，例如 `2026-10-17T14:30:00+08:00`）。不要把搜索结果摘要当作完成了商品页复核。
-3. 运行下面命令预检查并导入最近 72 小时内的合格记录：
-
-   ```bash
-   python update_manual_quotes.py --dry-run
-   python update_manual_quotes.py
-   ```
-
-   只有精确 SKU 属于数据库、价格为有效数值、URL 为 HTTPS，且所有人工核验字段通过的行才会导入。脚本不会爬取零售网站，不需要 API Key。
-4. 在本机复制 `.env.example` 为 `.env`，并填入**已轮换、没有再公开过的**海纳 Key：
+在本机复制 `.env.example` 为 `.env`，并填入**已轮换、没有再公开过的**海纳 Key：
 
    ```dotenv
    HAINAN_API_KEY=你在本机获得并保管的新Key
@@ -76,7 +66,7 @@
 - `GET /api/health`：服务器和是否配置凭据的状态（不验证密钥有效性）。
 - `GET /api/prices?ids=apple-15pm,op-11`：查询指定机型的最新可匹配报价。
 - `quote_quality_check.py`：真实授权后的跨品牌样本/全库报价质量验收脚本。
-- `test_price_server.py`：离线测试新版 API 请求体与鉴权头、响应字段映射、精确容量匹配、排除词、价格解析及 HTTPS 链接；运行 `python -m unittest -v test_price_server.py`。
+- 当前 GitHub Actions 对后端和报价检查脚本执行 Python 语法检查；真实 API 行为仍需配置有效 Key 后验收。
 - `API_ACCESS_AND_QA.md`：申请步骤、凭据安全及自动/人工验收口径。
 - `API_ACCESS_REQUEST_DRAFT.md`：海纳测试授权申请文字草稿，当前接口的字段口径、调用配额与公开展示规范确认问题。
 - `test_quote_quality_check.py`：四项指标的离线单元测试。
@@ -104,7 +94,7 @@
 phone-compare-site/
 ├── index.html                 # 主站；内嵌数据、样式、交互和准入门槛
 ├── phone-compare-demo.html    # 单文件演示版
-├── data/phones.json           # 100 款大陆市场机型与字段级证据
+├── data/phones.json           # 102 款大陆市场机型与字段级证据
 ├── reports/                   # 逐字段审核 JSON/CSV、报价检查报告
 ├── sync_audit_fields.py       # 将审核报告同步到数据库 fieldAudit
 ├── sync_catalog.py            # 将 canonical 数据同步到两个 HTML 入口
