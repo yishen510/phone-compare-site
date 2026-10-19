@@ -226,3 +226,22 @@
 - 每款核验屏幕、电池（区分典型值/额定值）、充电、重量、容量组合中页面明确列出的项目，状态为 `verified_official_page_reviewed`。
 - 通用回填器 `scripts/apply_field_audit.py` + 结构化数据 `.workbuddy/tmp/batch5.json`，便于后续批次复用。
 - 累计：官方核验 **33 款**、第三方核验 **1 款**；仍待核验 18 款（一加 2、realme 2、iPhone 15、Galaxy S24+ 及官方页已下架的 13 款）。
+
+## 2026-10-20 官方首发价回填（26 款）与价格标签分层
+
+- 目标：把 2024—2026 年「只挂厂商页、页面不写价」的机型补上可追溯的首发价。本轮写入 **26 款**，目录有价记录由 172 条增至 **198 / 213**。
+- 三档记账方式（已写入 `AUDIT_POLICY.md`）：
+  - `official_launch_msrp`（21 款）：价格与容量 SKU 双确认，卡片标签「官方首发参考价」。
+  - `official_starting_price`（5 款）：只有「XX 元起」，卡片标签强制显示「官方起售价（容量待核）」——MIX Flip 2、Pura 80 Pro+、Magic9 Pro Max、Magic9 超能版、一加 13T；另把原有 Magic8 Pro 一并归入此类，共 6 条。
+  - `third_party_reference`（46 条，既有）：中关村在线参考价，标签「参考价（第三方）」。
+- 官方页直证（`verified_official_page_reviewed`）：
+  - 华为官网发布会页确认 Pura 80「￥4699 起」，配合官方档位 12GB+256GB 4699 / 12+512 5199 / 12+1TB 6199。
+  - 荣耀官网发布稿确认 Magic9 Pro Max 6499 元起、Magic9 超能版 4499 元起。
+  - 三星中国官网发布稿 + 官方促销页确认 Z Flip7 12+256 ￥7,999、S25 Edge 12+256 ￥7,999。
+  - vivo 官网参数页「建议零售价」确认 X500 12+256 5499 元、iQOO 13 12+256 3999 元（后者与中国新闻网报道五档价格完全一致）。
+  - 中兴（努比亚）官网发布稿确认 Z70 Ultra 12+256 4599 元。
+- 权威媒体交叉核对（`cross_checked_secondary_source`）：小米 15 / 15 Pro / 15S Pro、Pura 80 Pro+、Find X8s / X8s+ / N5 / X10 / X9 Ultra、一加 15、iQOO 15、Mate 80 Pro、S26+ / S26 Ultra、真我 GT8 Pro / GT7、红魔 10 Pro。
+- **已知冲突（未掩盖）**：HUAWEI Mate 80 Pro 发布当时（2025-11-25）中国证券网、黄浦区政府新闻、无锡市科技局简报均报 **5999 元起**，华为官网发布会页面当前标 **￥6999 起**，相差 1000 元。以发布当时价 5999 元（12GB+256GB）入库，并在 `evidenceText` 写明差异与「SKU 归属待复核」。同类现象见于 Galaxy S26 系列（2026-10 官方整体调价 +1000～2000 元），首发价仍按发布时价记录。
+- 顺带修正两条历史数据：`honor-magic8-pro` 价格类型由 `unknown` 改为 `official_starting_price` 并补建价格审计条目；`op-15` 原 `priceSourceName` 写「暂无可靠的首发价格来源」却已填 3999，按 IT之家五档官方定价改为 `official_launch_msrp`（12GB+256GB 3999 元）。
+- 仍缺价格 **15 款**，全部为 2021—2023 年机型（iPhone 13 / 13 mini / 13 Pro / 14 / 14 Plus / 15 Plus、Galaxy Z Fold5 / Z Flip5、Mate X5、REDMI K70 / K70 Pro / K60 Pro、vivo X90 / X Fold2、OPPO Find X6），官方产品页均已下架，需中关村在线链接。清单见 `reports/missing_price_models.md`。
+- 修复一处同步缺陷：此前 HTML 内嵌数据用「保留旧数组 + 追加新数组」的方式拼接，重复执行会让数据成倍膨胀（本轮曾出现 213→639 条）。现改为整体替换 `window.PHONE_DATA=[...]` 块并在写盘前自检条数与内容，`scripts/backfill_launch_prices_2026-10-20.py` 已同步修正。

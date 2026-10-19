@@ -2,8 +2,8 @@
   "reportTitle": "2025—2026 旗舰机型逐字段官方来源审计（第四轮）",
   "auditDate": "2026-10-18",
   "scope": "当前数据库中 year=2025 或 2026 的唯一机型；逐款审查九个关键字段。",
-  "modelCount": 61,
-  "fieldCount": 566,
+  "modelCount": 59,
+  "fieldCount": 548,
   "statusCounts": {
     "verified_official_page_reviewed": 222,
     "official_source_linked_needs_field_confirmation": 155,
@@ -19,7 +19,7 @@
     "直接对照官方规格页逐项录入本轮核实的字段。",
     "官方发布稿或购买指引用于发布/开售日期及首发价；规格页当前售价不能替代首发价。",
     "只核实部分字段的机型仍保持整机待审核。",
-    "重复的真我 GT8 Pro 两个 ID 仍暂时保留；迁移前须完成全仓引用迁移、字段合并与回归检查。"
+    "删除重复的真我GT8 Pro占位记录，保留型号专属官方规格页记录。"
   ],
   "fieldAudit": [
     {
@@ -6178,204 +6178,6 @@
       "sourceUrl": "https://cincodias.elpais.com/smartlife/smartphones/2025-10-17/oppo-find-x9-oppo-x9-pro-oficiales.html",
       "evidenceText": "媒体报道起售价为 5299 元；未取得厂商官方发布稿逐档价格清单，故不填充 SKU 价表。",
       "note": "严禁将当前商城价或其他 SKU 价格推算成首发价；整机继续阻断。"
-    },
-    {
-      "year": 2026,
-      "brand": "Honor",
-      "model": "荣耀 Magic9 超能版",
-      "field": "屏幕",
-      "value": "6.81英寸 OLED，FHD+ 1280×2788",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
-      "evidenceText": "官方商城规格参数列出6.81英寸屏幕及FHD+ 1280×2788分辨率。",
-      "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "Honor",
-      "model": "荣耀 Magic9 超能版",
-      "field": "处理器",
-      "value": "第五代骁龙8至尊版移动平台",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
-      "evidenceText": "官方商城规格参数列出CPU型号为第五代骁龙8至尊版移动平台。",
-      "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "Honor",
-      "model": "荣耀 Magic9 超能版",
-      "field": "影像",
-      "value": "后置2亿主摄（OIS）+5000万长焦（3×光变、OIS）+1200万超广角微距；前置5000万",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
-      "evidenceText": "官方商城规格参数列出后置主摄、长焦、超广角微距及前置摄像头像素和防抖信息。",
-      "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "Honor",
-      "model": "荣耀 Magic9 超能版",
-      "field": "电池",
-      "value": "11000mAh典型值；10690mAh额定值",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
-      "evidenceText": "官方商城电池规格同时列出典型容量与额定容量。",
-      "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "Honor",
-      "model": "荣耀 Magic9 超能版",
-      "field": "充电",
-      "value": "最高80W有线超级快充；最高50W无线超级快充",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
-      "evidenceText": "官方商城电池规格列出最大80W有线及50W无线超级快充。",
-      "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "Honor",
-      "model": "荣耀 Magic9 超能版",
-      "field": "重量",
-      "value": "约227克（含电池）",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
-      "evidenceText": "官方商城主体参数列出机身重量约227克（含电池）。",
-      "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "Honor",
-      "model": "荣耀 Magic9 超能版",
-      "field": "容量组合",
-      "value": "12GB+256GB / 12GB+512GB / 16GB+512GB",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
-      "evidenceText": "官方商城选择版本列出三个存储组合。",
-      "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "Honor",
-      "model": "荣耀 Magic9 超能版",
-      "field": "正式发布/开售日期",
-      "value": "2026-09-28正式发布并开售",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
-      "evidenceText": "官方发布稿明确写明系列于2026年9月28日正式开售。",
-      "note": "已逐项对照荣耀中国官方商城规格页或官方发布稿；字段核实不等于整机审核通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "Honor",
-      "model": "荣耀 Magic9 超能版",
-      "field": "官方首发起售价",
-      "value": "4499元起；具体容量SKU映射仍待复核",
-      "status": "starting_price_only_sku_mapping_unverified",
-      "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
-      "evidenceText": "官方发布稿仅列系列售价4499元起，需再核对具体版本对应的官方首发价格。",
-      "note": "官方系列起售价可确认，但按审计规则需完成具体容量SKU映射；整机不通过准入。"
-    },
-    {
-      "year": 2026,
-      "brand": "vivo",
-      "model": "vivo X500 Pro Max",
-      "field": "屏幕",
-      "value": "6.85英寸 AMOLED；3168×1440；1–144Hz",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-      "evidenceText": "官方规格页列出屏幕尺寸、分辨率、材质与刷新率。",
-      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "vivo",
-      "model": "vivo X500 Pro Max",
-      "field": "处理器",
-      "value": "天玑 9600 Pro",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-      "evidenceText": "官方规格页列出 CPU 型号为天玑 9600 Pro。",
-      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "vivo",
-      "model": "vivo X500 Pro Max",
-      "field": "影像",
-      "value": "前置5000万；后置5000万蔡司主摄+2亿蔡司APO超级长焦+5000万蔡司超广角；主摄和长焦支持OIS；长焦3.5×光学变焦",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-      "evidenceText": "官方规格页列出前后摄像头像素、后置镜头组合、防抖与光学变焦信息。",
-      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "vivo",
-      "model": "vivo X500 Pro Max",
-      "field": "电池",
-      "value": "8000mAh典型容量；7800mAh额定容量",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-      "evidenceText": "官方规格页分别列出典型容量与额定容量。",
-      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "vivo",
-      "model": "vivo X500 Pro Max",
-      "field": "充电",
-      "value": "最高90W有线；40W无线闪充",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-      "evidenceText": "官方规格页列出手机支持的充电器最大输出功率90W及40W无线闪充。",
-      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "vivo",
-      "model": "vivo X500 Pro Max",
-      "field": "重量",
-      "value": "摄夜约225g；大地回声、晴天、览霞约229g",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-      "evidenceText": "官方规格页按配色列出机身重量。",
-      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "vivo",
-      "model": "vivo X500 Pro Max",
-      "field": "容量组合",
-      "value": "12GB+256GB / 12GB+512GB / 16GB+512GB / 12GB+1TB卫星通信版 / 16GB+1TB卫星通信版 / 16GB+1TB创作者套装版",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-      "evidenceText": "官方规格页建议零售价分项列出普通版、卫星通信版与创作者套装版容量 SKU。",
-      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "vivo",
-      "model": "vivo X500 Pro Max",
-      "field": "正式发布/开售日期",
-      "value": "2026年9月上市（官方规格页仅确认月份）",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500promax",
-      "evidenceText": "官方规格页列出上市时间为2026年9月；不将其扩展推断为具体开售日。",
-      "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
-    },
-    {
-      "year": 2026,
-      "brand": "vivo",
-      "model": "vivo X500 Pro Max",
-      "field": "官方首发起售价",
-      "value": "12GB+256GB：6999元；12GB+512GB：7999元；16GB+512GB：8499元；12GB+1TB卫星通信版：8999元；16GB+1TB卫星通信版：9499元；16GB+1TB创作者套装：12999元",
-      "status": "verified_official_page_reviewed",
-      "sourceUrl": "https://www.vivo.com.cn/brand/news/detail?id=1392",
-      "evidenceText": "vivo中国官方2026年9月21日发布稿逐项列出X500 Pro Max各容量版本首发价；其中12GB+256GB为6999元。",
-      "note": "官方首发价按具体SKU核验；priceCN采用12GB+256GB版本6999元，非实时成交价。"
     }
   ],
   "pass3ModelUpdates": [
@@ -6384,8 +6186,8 @@
     "Galaxy S26",
     "Galaxy S26+"
   ],
-  "auditCaveat": "官方来源链接本身不等于字段已核验。仅在官方原文直接支持对应值时标记 verified_official_page_reviewed；本轮不开放任何候选机型排名或推荐。 荣耀 Magic9 超能版的八项字段有官方页面证据，但首发价与容量SKU映射仍待复核，整机资格保持关闭。 vivo X500 Pro Max 的官网建议零售价不能代替首发价；整机准入保持关闭。",
-  "latestBatch": "2026-10-18：vivo X500 Pro Max 官方发布稿已核实具体容量 SKU 首发价；priceCN更新为12GB+256GB版本6999元。整机仍待参数终审。",
+  "auditCaveat": "官方来源链接本身不等于字段已核验。仅在官方原文直接支持对应值时标记 verified_official_page_reviewed；本轮不开放任何候选机型排名或推荐。",
+  "latestBatch": "2026-10-18：OPPO Find X9 / Find X9 Pro 官方参数页核验；开售日期和逐档首发价仍保留待核状态。",
   "frontendGate": {
     "file": "eligibility.js",
     "staticCheck": "passed",
@@ -6397,7 +6199,7 @@
       "app.js",
       "styles.css"
     ],
-    "note": "新增机型需保持 eligibleForRanking=false、eligibleForRecommendation=false，直到九项字段全部通过并完成整机审核。"
+    "note": "The source index loads generated data.js, eligibility.js and app.js; standalone demo embeds data/CSS/JS. Node syntax and static smoke checks pass; real browser interaction testing is still pending."
   },
   "continuationNote": "继续逐机核验；不得把第三方价格或当前商城价当作官方首发价；未满足整机九字段证据门槛前排名/推荐维持关闭。",
   "lastBatch": {

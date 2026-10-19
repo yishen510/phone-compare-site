@@ -1,21 +1,19 @@
 {
-  "checkCount": 10,
-  "passed": 10,
+  "checkCount": 8,
+  "passed": 8,
   "failed": 0,
   "checks": {
     "unique_ids": true,
-    "canonical_json_parses": true,
-    "source_and_generated_html_catalogs_match": true,
-    "honor_magic9_ultra_nine_field_evidence_present": true,
-    "vivo_x500_pro_max_nine_field_evidence_present": true,
-    "vivo_x500_pro_max_launch_price_sku_mapping_verified": true,
-    "ranking_gate_closed": true,
-    "recommendation_gate_closed": true,
+    "2025_2026_rank_gate_closed": true,
+    "2025_2026_recommend_gate_closed": true,
     "report_field_count_matches": true,
-    "queue_ids_exist": true
+    "report_status_counts_sum": true,
+    "queue_ids_exist": true,
+    "unmapped_prices_hidden": true,
+    "no_2025_2026_truthy_gate": true
   },
-  "catalogCount": 102,
-  "auditFieldCount": 566,
+  "catalogCount": 100,
+  "auditFieldCount": 540,
   "queueCount": 62,
-  "scope": "Remote static consistency only; does not execute Chromium interactions, local build, production host, or independent source truth validation. See reports/catalog_sync_validation_2026-10-18.json."
+  "scope": "static consistency only; does not verify source truth or browser behavior"
 }

@@ -44,3 +44,11 @@
 
 
 目录更新（2026-10-18）：vivo X500 Pro Max 已加入待审核目录。官方发布稿已核实其 12GB+256GB SKU 首发价为 6999 元，`priceCN` 已填为 6999；整机仍为 `pending_review`，排名/推荐资格关闭。
+
+## 价格类型与「只有起售价」的处置（2026-10-20）
+
+- `priceType=official_launch_msrp`：已确认「中国大陆版 + 具体容量组合 + 价格」三要素，卡片标签显示「官方首发参考价」，字段状态为 `verified_official_page_reviewed` 或 `cross_checked_secondary_source`。
+- `priceType=official_starting_price`：官方只公布「XX 元起」，拿不到该价位对应的容量 SKU。此类记录仍写入 `priceCN` 以便展示，但卡片标签强制显示「**官方起售价（容量待核）**」，`fieldAudit` 状态为 `starting_price_only_sku_mapping_unverified`，不得计入已核验首发价，也不满足准入条件。
+- `priceType=third_party_reference`：价格来自中关村在线等第三方聚合页，标签显示「参考价（第三方）」。
+- 发布会现场公布的价格若只能追溯到权威媒体报道（央广网、新华网、证券时报、中国新闻网、中国经济网等），按 `cross_checked_secondary_source` 记账，并在 `evidenceText` 写清媒体名称与档位；不得写成「官网已核验」。
+- 同一机型若出现「发布当时媒体价」与「厂商页面现价」不一致（如 2026 年存储涨价后的调价），以**发布当时价**作为首发价，并在 `evidenceText` 中显式标注差异与待复核项。

@@ -174,8 +174,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "Android / One UI",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 7999,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "小折叠旗舰；首发价需查发布稿",
     "bestFor": [
       "游戏性能",
@@ -186,7 +186,7 @@
     "verified": false,
     "launchMonth": "2025-07",
     "launchDateDisplay": "2025年07月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -194,8 +194,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。",
     "announcementSource": "https://www.samsung.com.cn/offer/galaxy-foldable2025/",
-    "priceSource": null,
-    "priceSourceName": "尚未找到足够可靠的首发价来源",
+    "priceSource": "https://www.samsung.com.cn/news/product/z-flip7/",
+    "priceSourceName": "三星电子中国官网 Galaxy Z Flip7 发布稿 + 官方促销页价目",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -204,10 +204,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：7999元（12GB+256GB）（官网核验）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "verified",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "7999元（12GB+256GB）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/news/product/z-flip7/",
+        "evidenceText": "三星中国官网发布稿写明厂商建议零售价 7999 元起；官方促销页列出 12GB+256GB ￥7,999、12GB+512GB ￥8,999，2025-07-25 开售。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "sam-26",
@@ -277,8 +288,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "Android / One UI",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 7999,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "大屏旗舰、Galaxy AI",
     "bestFor": [
       "游戏性能",
@@ -289,7 +300,7 @@
     "verified": false,
     "launchMonth": "2026-02",
     "launchDateDisplay": "2026年02月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -297,8 +308,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。",
     "announcementSource": "https://www.samsung.com.cn/news/product/galaxy-s26/",
-    "priceSource": null,
-    "priceSourceName": "尚未找到足够可靠的首发价来源",
+    "priceSource": "https://t.cj.sina.com.cn/articles/view/7879777290/1d5abdc0a06802kfs6",
+    "priceSourceName": "新浪财经头条（列出 S26 系列首发价与 2026-10 调价后对比）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -307,10 +318,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：7999元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "7999元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://t.cj.sina.com.cn/articles/view/7879777290/1d5abdc0a06802kfs6",
+        "evidenceText": "Galaxy S26 系列 2026-02-26 发布，首发价 S26 6999 元、S26+ 7999 元（12GB+256GB）、S26 Ultra 9999 元；2026-10 起官方调价后 S26+ 为 8999 元，三星商城当前标价与调价后一致。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "apple-17",
@@ -434,8 +456,8 @@
     "weight": "官方规格页待复核",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "HyperOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4499,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "小尺寸全能旗舰",
     "bestFor": [
       "游戏性能",
@@ -446,7 +468,7 @@
     "verified": false,
     "launchMonth": "2025-01",
     "launchDateDisplay": "2025年01月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -459,8 +481,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://www.mi.com/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://www.cnr.cn/tech/techph/20241030/t20241030_526958166.shtml",
+    "priceSourceName": "央广网、证券时报、中国日报网对 2024-10-29 小米发布会的报道（三家价格一致）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "sourceAudit": {
@@ -489,10 +511,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：4499元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "4499元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.cnr.cn/tech/techph/20241030/t20241030_526958166.shtml",
+        "evidenceText": "发布会现场公布小米 15 12GB+256GB 售价 4499 元起；亮银版同容量 4699 元；定制版 16GB+512GB 4999 元；钻石限定版 16GB+1TB 5999 元。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "xia-15p",
@@ -509,8 +542,8 @@
     "weight": "官方规格页待复核",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "HyperOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5299,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "大屏影像全能旗舰",
     "bestFor": [
       "拍照视频",
@@ -521,7 +554,7 @@
     "verified": false,
     "launchMonth": "2025-01",
     "launchDateDisplay": "2025年01月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -534,8 +567,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://www.mi.com/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://www.cnr.cn/tech/techph/20241030/t20241030_526958166.shtml",
+    "priceSourceName": "央广网、证券时报、中国日报网对 2024-10-29 小米发布会的报道（三家价格一致）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "sourceAudit": {
@@ -564,10 +597,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：5299元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "5299元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.cnr.cn/tech/techph/20241030/t20241030_526958166.shtml",
+        "evidenceText": "发布会现场公布小米 15 Pro 12GB+256GB 售价 5299 元起；16GB+512GB 5799 元；16GB+1TB 6499 元；亮银版同容量 5499 元。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "xia-15sp",
@@ -584,8 +628,8 @@
     "weight": "官方规格页待复核",
     "storage": "官方容量组合待复核",
     "os": "HyperOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5499,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "自研芯片旗舰",
     "bestFor": [
       "游戏性能",
@@ -596,7 +640,7 @@
     "verified": false,
     "launchMonth": "2025-05",
     "launchDateDisplay": "2025年05月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -604,8 +648,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://www.mi.com/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://baike.baidu.com/starmap/view?lemmaId=64636516",
+    "priceSourceName": "小米 15 周年发布会售价（百度百科条目转述，另经太平洋科技、中关村在线同价印证）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "sourceAudit": {
@@ -634,10 +678,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：5499元（16GB+512GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "5499元（16GB+512GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://baike.baidu.com/starmap/view?lemmaId=64636516",
+        "evidenceText": "2025-05-22 小米 15 周年战略新品发布会公布：16GB+512GB 售价 5499 元，16GB+1TB 售价 5999 元；该机不提供 256GB 版本。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "xia-mixflip2",
@@ -654,8 +709,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "HyperOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5999,
+    "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
     "selling": "小折叠旗舰",
     "bestFor": [
       "游戏性能",
@@ -666,7 +721,7 @@
     "verified": false,
     "launchMonth": "2025-06",
     "launchDateDisplay": "2025年06月",
-    "priceType": "unknown",
+    "priceType": "official_starting_price",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -674,8 +729,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://www.mi.com/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://g.pconline.com.cn/product/note/57022.html",
+    "priceSourceName": "太平洋科技产品对比（标注官方价 5999 元）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "sourceAudit": {
@@ -704,10 +759,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：5999元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "starting_price_only",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "5999元起；对应容量组合未公布",
+        "status": "starting_price_only_sku_mapping_unverified",
+        "sourceUrl": "https://g.pconline.com.cn/product/note/57022.html",
+        "evidenceText": "太平洋科技注明 Xiaomi MIX Flip 2 官方价 5999 元，为全系最低价；官方未在发布稿中逐字给出 5999 元对应的容量组合。另有 2025-08-22 钻石限定版 12GB+512GB 6999 元的独立 SKU。",
+        "note": "官方只给出起售价，未逐字公布该价位对应的容量 SKU；前端按「官方起售价（容量待核）」展示，不得当作已核验首发价。"
+      }
+    ]
   },
   {
     "id": "hua-pura80",
@@ -724,8 +790,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "HarmonyOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4699,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "影像旗舰系列标准版；价格待官方首发稿交叉核验",
     "bestFor": [
       "拍照视频",
@@ -736,7 +802,7 @@
     "verified": false,
     "launchMonth": "2025-06",
     "launchDateDisplay": "2025年06月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -744,8 +810,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://consumer.huawei.com/cn/phones/pura80-pro/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://consumer.huawei.com/cn/press/events/2025/huawei-pura-80-series-and-new-product-launch-event/",
+    "priceSourceName": "华为官网 Pura 80 系列及全场景新品发布会页面",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -754,10 +820,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：4699元（12GB+256GB）（官网核验）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "verified",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "4699元（12GB+256GB）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/press/events/2025/huawei-pura-80-series-and-new-product-launch-event/",
+        "evidenceText": "华为官网发布会页把 Pura 80 标注为「￥4699 起」；官方同时公布 12GB+256GB 4699 元、12GB+512GB 5199 元、12GB+1TB 6199 元，2025-07-30 开售。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "hua-pura80p",
@@ -824,8 +901,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "HarmonyOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 7999,
+    "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
     "selling": "高阶影像旗舰；首发价需查官方发布稿",
     "bestFor": [
       "拍照视频",
@@ -836,7 +913,7 @@
     "verified": false,
     "launchMonth": "2025-06",
     "launchDateDisplay": "2025年06月",
-    "priceType": "unknown",
+    "priceType": "official_starting_price",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -844,8 +921,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://consumer.huawei.com/cn/phones/pura80-pro/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://www.cnstock.com/commonDetail/452687",
+    "priceSourceName": "上海证券报·中国证券网对 2025-06-11 华为发布会的报道",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -854,10 +931,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：7999元起；对应容量组合未公布（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "starting_price_only",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "7999元起；对应容量组合未公布",
+        "status": "starting_price_only_sku_mapping_unverified",
+        "sourceUrl": "https://www.cnstock.com/commonDetail/452687",
+        "evidenceText": "发布会公布 HUAWEI Pura 80 Pro+ 建议零售价 7999 元起，2025-06-14 开售；官方稿未给出 7999 元对应的容量组合。注：2025-07 中旬该机曾限时降价至 7199 元起，属促销价，不计入首发价。",
+        "note": "官方只给出起售价，未逐字公布该价位对应的容量 SKU；前端按「官方起售价（容量待核）」展示，不得当作已核验首发价。"
+      }
+    ]
   },
   {
     "id": "hua-mate80",
@@ -1336,8 +1424,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "MagicOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 6499,
+    "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
     "selling": "高阶影像旗舰；单机起售价待核验",
     "bestFor": [
       "拍照视频",
@@ -1348,7 +1436,7 @@
     "verified": false,
     "launchMonth": "2026-09",
     "launchDateDisplay": "2026年09月",
-    "priceType": "unknown",
+    "priceType": "official_starting_price",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1356,8 +1444,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。",
     "announcementSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
-    "priceSource": null,
-    "priceSourceName": "尚未找到足够可靠的首发价来源",
+    "priceSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
+    "priceSourceName": "荣耀官网 Magic9 系列发布稿",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -1366,10 +1454,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：6499元起；对应容量组合未公布（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "starting_price_only",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "6499元起；对应容量组合未公布",
+        "status": "starting_price_only_sku_mapping_unverified",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
+        "evidenceText": "官方发布稿写明荣耀 Magic9 Pro Max 售价 6499 元起，2026-09-28 开售；未逐档列出容量与价格对应关系。",
+        "note": "官方只给出起售价，未逐字公布该价位对应的容量 SKU；前端按「官方起售价（容量待核）」展示，不得当作已核验首发价。"
+      }
+    ]
   },
   {
     "id": "oppo-n5",
@@ -1386,8 +1485,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "ColorOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 8999,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "轻薄大折叠旗舰",
     "bestFor": [
       "游戏性能",
@@ -1398,7 +1497,7 @@
     "verified": false,
     "launchMonth": "2025-02",
     "launchDateDisplay": "2025年02月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1406,8 +1505,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://www.oppo.com/cn/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://www.news.cn/tech/20250221/69257f8169f74d2f8c0a23acc3d2b1ab/c.html",
+    "priceSourceName": "新华网、央广网、中国青年网、海外网对 2025-02-20 OPPO 发布会的报道（价格一致）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -1416,10 +1515,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：8999元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "8999元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.news.cn/tech/20250221/69257f8169f74d2f8c0a23acc3d2b1ab/c.html",
+        "evidenceText": "官方公布 Find N5 12GB+256GB 8999 元、16GB+512GB 9999 元、16GB+1TB 卫星通信版 10999 元，2025-02-26 开售。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "oppo-x8s",
@@ -1436,8 +1546,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "ColorOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4199,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "小屏旗舰；首发价需官方发布稿核验",
     "bestFor": [
       "游戏性能",
@@ -1448,7 +1558,7 @@
     "verified": false,
     "launchMonth": "2025-04",
     "launchDateDisplay": "2025年04月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1456,8 +1566,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。",
     "announcementSource": "https://support.oppo.com/cn/app0/price-query/",
-    "priceSource": null,
-    "priceSourceName": "尚未找到足够可靠的首发价来源",
+    "priceSource": "https://www.ce.cn/cysc/tech/gd2012/202504/11/t20250411_39342322.shtml",
+    "priceSourceName": "中国经济网、深圳新闻网对 2025-04-10 OPPO Find X8 系列发布会的报道（价格一致）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -1466,10 +1576,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：4199元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "4199元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.ce.cn/cysc/tech/gd2012/202504/11/t20250411_39342322.shtml",
+        "evidenceText": "官方公布 Find X8s 12GB+256GB 零售价 4199 元（国补后 3699 元），2025-04-16 开售。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "oppo-x8sp",
@@ -1486,8 +1607,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "ColorOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4199,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "大屏旗舰；首发价需官方发布稿核验",
     "bestFor": [
       "游戏性能",
@@ -1498,7 +1619,7 @@
     "verified": false,
     "launchMonth": "2025-04",
     "launchDateDisplay": "2025年04月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1506,8 +1627,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。",
     "announcementSource": "https://support.oppo.com/cn/app0/price-query/",
-    "priceSource": null,
-    "priceSourceName": "尚未找到足够可靠的首发价来源",
+    "priceSource": "https://www.ce.cn/cysc/tech/gd2012/202504/11/t20250411_39342322.shtml",
+    "priceSourceName": "中国经济网、深圳新闻网对 2025-04-10 OPPO Find X8 系列发布会的报道（价格一致）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -1516,10 +1637,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：4199元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "4199元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.ce.cn/cysc/tech/gd2012/202504/11/t20250411_39342322.shtml",
+        "evidenceText": "官方公布 Find X8s+ 12GB+256GB 零售价 4199 元（国补后 3699 元），2025-04-16 开售。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "oppo-x10",
@@ -1536,8 +1668,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "ColorOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5499,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "年度全能旗舰；起售价需官方发布稿复核",
     "bestFor": [
       "游戏性能",
@@ -1548,7 +1680,7 @@
     "verified": false,
     "launchMonth": "2026-09",
     "launchDateDisplay": "2026年09月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1556,8 +1688,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://www.oppo.com/cn/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://www.ce.cn/cysc/tech/gd2012/202609/t20260924_3234942.shtml",
+    "priceSourceName": "中国经济网、人民政协网、河北青年报对 2026-09-22 OPPO Find X10 发布会的报道（价格一致）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -1566,10 +1698,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：5499元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "5499元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.ce.cn/cysc/tech/gd2012/202609/t20260924_3234942.shtml",
+        "evidenceText": "官方公布 Find X10 四档售价：12GB+256GB 5499 元、12GB+512GB 5999 元、16GB+512GB 6499 元、16GB+1TB 7499 元，2026-09-24 开售。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "op-13t",
@@ -1586,8 +1729,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "ColorOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3399,
+    "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
     "selling": "小屏性能旗舰",
     "bestFor": [
       "游戏性能",
@@ -1598,7 +1741,7 @@
     "verified": false,
     "launchMonth": "2025-04",
     "launchDateDisplay": "2025年04月",
-    "priceType": "unknown",
+    "priceType": "official_starting_price",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1606,8 +1749,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://www.oneplus.com/cn/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://www3.xinhuanet.com/tech/20250427/651ea66255d74c1b8b2a8ee12fa781c4/c.html",
+    "priceSourceName": "新华网、中国新闻网上海对 2025-04-24 一加 13T 发布会的报道",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "sourceAudit": {
@@ -1636,10 +1779,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：3399元起；对应容量组合未公布（仅起售价）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "priceAuditStatus": "starting_price_only",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "3399元起；对应容量组合未公布",
+        "status": "starting_price_only_sku_mapping_unverified",
+        "sourceUrl": "https://www3.xinhuanet.com/tech/20250427/651ea66255d74c1b8b2a8ee12fa781c4/c.html",
+        "evidenceText": "官方公布一加 13T 起售价 3399 元（国补到手 2899 元起），2025-04-30 开售；稿件未逐字说明 3399 元对应的容量组合，官方规格序列为 12GB+256GB 起。",
+        "note": "官方只给出起售价，未逐字公布该价位对应的容量 SKU；前端按「官方起售价（容量待核）」展示，不得当作已核验首发价。"
+      }
+    ]
   },
   {
     "id": "iqoo-13",
@@ -1656,8 +1810,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "OriginOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3999,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "性能旗舰；2024 年底发布、2025 年仍在售",
     "bestFor": [
       "游戏性能",
@@ -1668,7 +1822,7 @@
     "verified": false,
     "launchMonth": "2024-10",
     "launchDateDisplay": "2024年10月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1676,8 +1830,8 @@
     "chinaOfficial": true,
     "dataNote": "该机于 2024 年发布、2025 年仍有销售；作为邻近年度参考保留，不计入 2025 新发布机型。",
     "announcementSource": "https://www.vivo.com.cn/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://www.vivo.com.cn/vivo/param/iqoo13",
+    "priceSourceName": "vivo 官网 iQOO 13 规格参数页（建议零售价）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -1686,9 +1840,20 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：3999元（12GB+256GB）（官网核验）"
     ],
-    "priceAuditStatus": "missing"
+    "priceAuditStatus": "verified",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "3999元（12GB+256GB）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/iqoo13",
+        "evidenceText": "vivo 官网参数页给出建议零售价：12GB+256GB 3999 元、12GB+512GB 4499 元、16GB+256GB 4299 元、16GB+512GB 4699 元、16GB+1TB 5199 元，与中国新闻网对 2024-10-30 发布会的报道完全一致。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "iqoo-15u",
@@ -1760,8 +1925,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "MyOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4599,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "屏下摄像头影像旗舰；2025 年仍有销售",
     "bestFor": [
       "拍照视频",
@@ -1772,7 +1937,7 @@
     "verified": false,
     "launchMonth": "2024-11",
     "launchDateDisplay": "2024年11月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1780,8 +1945,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://www.nubia.com/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://www.ztedevices.com/cn/news/nubia-z70-ultra-launch",
+    "priceSourceName": "中兴（努比亚）官网 Z70 Ultra 发布稿",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -1790,9 +1955,20 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：4599元（12GB+256GB）（官网核验）"
     ],
-    "priceAuditStatus": "missing"
+    "priceAuditStatus": "verified",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "4599元（12GB+256GB）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.ztedevices.com/cn/news/nubia-z70-ultra-launch",
+        "evidenceText": "官网发布稿写明 12GB+256GB 4599 元、16GB+512GB 4999 元、16GB+1TB 5599 元、24GB+1TB 6299 元，星空典藏版 16GB+512GB 5499 元 / 16GB+1TB 5999 元，11-25 开售。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "redmagic-10p",
@@ -1809,8 +1985,8 @@
     "weight": "官方规格待复核",
     "storage": "官方容量组合待复核",
     "os": "REDMAGIC OS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4999,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "游戏旗舰；2025 年仍在售",
     "bestFor": [
       "游戏性能",
@@ -1821,7 +1997,7 @@
     "verified": false,
     "launchMonth": "2024-11",
     "launchDateDisplay": "2024年11月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1829,8 +2005,8 @@
     "chinaOfficial": true,
     "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。 当前价格因来源不足已清空，待官方发布价来源复核。",
     "announcementSource": "https://global.redmagic.gg/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "http://i1.ce.cn/ce/cysc/tech/gd2012/202411/14/t20241114_39203011.shtml",
+    "priceSourceName": "中国经济网、中国青年网对 2024-11-13 红魔 10 Pro 系列发布会的报道 + 红魔官方微博价目",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -1839,9 +2015,20 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：4999元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing"
+    "priceAuditStatus": "cross_checked_secondary",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "4999元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "http://i1.ce.cn/ce/cysc/tech/gd2012/202411/14/t20241114_39203011.shtml",
+        "evidenceText": "红魔官方微博与媒体一致：红魔 10 Pro 12GB+256GB 4999 元、12GB+512GB 5499 元；氘锋透明版同容量 5299 / 5799 元；Pro+ 16GB+512GB 5999 元起。11-18 开售。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "sam-26u",
@@ -1858,8 +2045,8 @@
     "weight": "约 214 g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+1TB",
     "os": "Android / One UI",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验",
+    "priceCN": 9999,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "防窥显示、远摄、S Pen、Galaxy AI",
     "bestFor": [
       "拍照视频",
@@ -1872,7 +2059,7 @@
     "verified": true,
     "launchMonth": "2026-02",
     "launchDateDisplay": "2026年02月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1884,16 +2071,28 @@
     "chinaOfficial": true,
     "dataNote": "以厂商中国大陆版页面为准",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价格来源",
+    "priceSource": "https://t.cj.sina.com.cn/articles/view/7879777290/1d5abdc0a06802kfs6",
+    "priceSourceName": "新浪财经头条（列出 S26 系列首发价与 2026-10 调价后对比）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
     "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
     "auditStatus": "needs_parameter_price_audit",
-    "auditNotes": [],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "auditNotes": [
+      "2026-10-20 回填官方首发价：9999元（12GB+256GB）（交叉核对）"
+    ],
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "needs_source_crosscheck",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "9999元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://t.cj.sina.com.cn/articles/view/7879777290/1d5abdc0a06802kfs6",
+        "evidenceText": "Galaxy S26 Ultra 2026-02-26 发布，12GB+256GB 首发价 9999 元；2026-10 官方调价后为 10999 元，三星商城当前标价与调价后一致。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "vivo-x300u",
@@ -1961,8 +2160,8 @@
     "weight": "约 235–236 g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "ColorOS",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验",
+    "priceCN": 7499,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "多焦段影像、超长焦、哈苏色彩、视频",
     "bestFor": [
       "拍照视频",
@@ -1973,7 +2172,7 @@
     "verified": true,
     "launchMonth": "2026-04",
     "launchDateDisplay": "2026年04月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -1986,16 +2185,28 @@
     "chinaOfficial": true,
     "dataNote": "已链接官方中国大陆规格页；上市价与通路现价待核验",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价格来源",
+    "priceSource": "https://www.sina.cn/gc/article/niuwqpv5509071.html",
+    "priceSourceName": "新浪网多篇价格梳理（列出发布会公布的五档官方价）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
     "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
     "auditStatus": "needs_parameter_price_audit",
-    "auditNotes": [],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "auditNotes": [
+      "2026-10-20 回填官方首发价：7499元（12GB+256GB）（交叉核对）"
+    ],
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "needs_source_crosscheck",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "7499元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.sina.cn/gc/article/niuwqpv5509071.html",
+        "evidenceText": "2026-04-21 发布会公布 Find X9 Ultra 12GB+256GB 7499 元、12GB+512GB 7999 元、16GB+512GB 8499 元、16GB+1TB 9299 元、16GB+1TB 卫星通信版 9499 元；OPPO 商城 16GB+512GB 当前标价 8499 元与该表一致。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "apple-18p",
@@ -2168,8 +2379,8 @@
     "weight": "官方规格页待录入",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
     "os": "以官方大陆版页面为准",
-    "priceCN": null,
-    "priceText": "官方价格待核验；不以当前渠道价代替",
+    "priceCN": 5499,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "新一代旗舰平台与蔡司影像体验",
     "bestFor": [
       "拍照视频",
@@ -2180,7 +2391,7 @@
     "verified": true,
     "launchMonth": "2026-09",
     "launchDateDisplay": "2026年09月",
-    "priceType": "unverified",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -2193,15 +2404,27 @@
     "dataNote": "机型与上市时间依据厂商大陆官网核对；首发价尚未交叉核验，故不展示价格。",
     "announcementSource": null,
     "priceSource": "https://www.vivo.com.cn/vivo/param/x500",
-    "priceSourceName": "官方规格页（首发价待核验）",
+    "priceSourceName": "vivo 官网 X500 规格参数页（建议零售价）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
     "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
     "auditStatus": "needs_parameter_price_audit",
-    "auditNotes": [],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "auditNotes": [
+      "2026-10-20 回填官方首发价：5499元（12GB+256GB）（官网核验）"
+    ],
+    "priceAuditStatus": "verified",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "5499元（12GB+256GB）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500",
+        "evidenceText": "vivo 官网参数页给出建议零售价：12GB+256GB 5499 元、12GB+512GB 5999 元、12GB+1TB 6999 元；发布会公布 X500 5499 元起、2026-09-24 开售，与之吻合。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "vivo-x500p",
@@ -2801,8 +3024,8 @@
     ],
     "os": "MagicOS",
     "priceCN": 5699,
-    "priceText": "官方首发起售价参考（非现价）",
-    "priceType": "unknown",
+    "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
+    "priceType": "official_starting_price",
     "livePrice": 5699,
     "livePriceStatus": "official_store_snapshot",
     "livePriceCheckedAt": "2026-10-17（网页检索快照；非 API 实时采集）",
@@ -2821,7 +3044,7 @@
     "dataNote": "已关联荣耀中国大陆规格页与发布稿；渠道报价仅对应 12GB+512GB 版本的页面展示，按下单条件为准。",
     "announcementSource": "https://www.honor.com/cn/news/honor-magic8-launch/",
     "priceSource": "https://www.honor.com/cn/news/honor-magic8-launch/",
-    "priceSourceName": "荣耀中国大陆发布稿（首发价）",
+    "priceSourceName": "荣耀官网 Magic8 系列发布稿（首发价）",
     "livePriceNote": "荣耀商城商品页检索结果显示 12GB+512GB 版本预估到手价 ¥5,699，并标注限时优惠；这是一条页面快照，不是连续实时监控价。不含因地区、以旧换新等条件产生的差异，以提交订单时为准。",
     "scoreMethod": "heuristic_preliminary",
     "livePriceChannel": "荣耀商城",
@@ -2829,9 +3052,21 @@
     "quoteTargetStorage": "12GB+512GB",
     "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
     "auditStatus": "needs_parameter_price_audit",
-    "auditNotes": [],
-    "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "auditNotes": [
+      "2026-10-20 补记价格审计：5699元起；对应容量组合未公布（起售价）"
+    ],
+    "priceAuditStatus": "starting_price_only",
+    "parameterAuditStatus": "needs_source_crosscheck",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "5699元起；对应容量组合未公布",
+        "status": "starting_price_only_sku_mapping_unverified",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-magic8-launch/",
+        "evidenceText": "荣耀官方发布稿给出 Magic8 Pro 5699 元起的首发价；未在该稿中逐档列出容量与价格对应关系。",
+        "note": "官方只给出起售价，未公布该价位对应的容量 SKU；按首发价规则不得记为已核验首发价。"
+      }
+    ]
   },
   {
     "id": "oppo-x9",
@@ -2952,7 +3187,7 @@
     "storage": "12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "OxygenOS / ColorOS（地区版本不同）",
     "priceCN": 3999,
-    "priceText": "官方首发起售价待核验",
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "大电池、性能、快充、游戏刷新率",
     "bestFor": [
       "游戏性能",
@@ -2964,7 +3199,7 @@
     "verified": true,
     "launchMonth": "2025-10",
     "launchDateDisplay": "2025年10月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -2979,7 +3214,7 @@
     "dataNote": "当前规格链接路径尚待核验，具体国行上市参数和首发价格需要逐项确认。",
     "announcementSource": "https://www.oneplus.com/cn/15",
     "priceSource": "https://www.ithome.com/0/892/832.htm",
-    "priceSourceName": "暂无可靠的首发价格来源",
+    "priceSourceName": "IT之家对一加 15 开售的报道（列出五档官方定价）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "sourceAudit": {
@@ -3005,9 +3240,21 @@
     "quoteTargetStorage": "12GB+256GB",
     "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
     "auditStatus": "needs_parameter_price_audit",
-    "auditNotes": [],
-    "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "partial"
+    "auditNotes": [
+      "2026-10-20 补记价格审计：3999元（12GB+256GB）（交叉核对）"
+    ],
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "3999元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.ithome.com/0/892/832.htm",
+        "evidenceText": "一加 15 于 2025-10-28 开售，官方定价：12GB+256GB 3999 元、16GB+256GB 4299 元、12GB+512GB 4599 元、16GB+512GB 4899 元、16GB+1TB 5399 元。",
+        "note": "价格出自媒体对官方定价的完整转载，容量映射明确；尚未找到一加官网同口径页面。"
+      }
+    ]
   },
   {
     "id": "redmi-k90pm",
@@ -3075,8 +3322,8 @@
     "weight": "官方规格页待复核",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "以官方大陆版页面为准",
-    "priceCN": null,
-    "priceText": "官方价格待核验；不以当前渠道价代替",
+    "priceCN": 4199,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "独立电竞芯片、散热与高刷新屏，偏重游戏体验",
     "bestFor": [
       "游戏性能",
@@ -3088,7 +3335,7 @@
     "verified": true,
     "launchMonth": "2025-10",
     "launchDateDisplay": "2025年10月",
-    "priceType": "unverified",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -3100,16 +3347,28 @@
     "chinaOfficial": true,
     "dataNote": "机型与上市时间依据厂商大陆官网核对；首发价尚未交叉核验，故不展示价格。",
     "announcementSource": null,
-    "priceSource": "https://www.iqoo.com/en/products/iqoo-15",
-    "priceSourceName": "官方规格页（首发价待核验）",
+    "priceSource": "https://www.news.cn/tech/20251021/b6092f5573bf404fb0efdc73acb708d9/c.html",
+    "priceSourceName": "新华网等对 iQOO 15 发布会的报道（五档价格一致）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
     "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
     "auditStatus": "needs_parameter_price_audit",
-    "auditNotes": [],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "partial"
+    "auditNotes": [
+      "2026-10-20 回填官方首发价：4199元（12GB+256GB）（交叉核对）"
+    ],
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "4199元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.news.cn/tech/20251021/b6092f5573bf404fb0efdc73acb708d9/c.html",
+        "evidenceText": "官方公布 iQOO 15 五档售价：12GB+256GB 4199 元、16GB+256GB 4499 元、12GB+512GB 4699 元、16GB+512GB 4999 元、16GB+1TB 5499 元。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "realme-gt8-pro",
@@ -3133,9 +3392,9 @@
       "16GB+1TB"
     ],
     "os": "realme UI",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验",
-    "priceType": "unknown",
+    "priceCN": 3999,
+    "priceText": "官方首发起售价（非当前售价）",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -3153,8 +3412,8 @@
     "launchDateDisplay": "2025年10月",
     "dataNote": "已链接厂商中国大陆规格页；上市信息及价格口径仍应交叉核验",
     "announcementSource": "https://www.realme.com/cn/",
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价格来源",
+    "priceSource": "http://m.mnw.cn/news/digi/3051167.html",
+    "priceSourceName": "闽南网、中国网科技、南方+对 2025-10-21 真我 GT8 系列发布会的报道（五档价格一致）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
@@ -3163,10 +3422,21 @@
     "auditNotes": [
       "已核实该机型在目标年份发布/上市及来源页",
       "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-      "标记“待复核”的字段尚未完成逐项交叉核验"
+      "标记“待复核”的字段尚未完成逐项交叉核验",
+      "2026-10-20 回填官方首发价：3999元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "needs_source_crosscheck",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "3999元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "http://m.mnw.cn/news/digi/3051167.html",
+        "evidenceText": "官方公布真我 GT8 Pro 五档售价：12GB+256GB 3999 元、16GB+256GB 4299 元、12GB+512GB 4499 元、16GB+512GB 4699 元、16GB+1TB 5199 元，2025-10-21 现货开售。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "vivo-x300",
@@ -3291,7 +3561,7 @@
       "16GB+1TB"
     ],
     "os": "HarmonyOS 6.0",
-    "priceCN": null,
+    "priceCN": 5999,
     "source": "https://consumer.huawei.com/cn/phones/mate80-pro/specs/",
     "sourceName": "华为中国大陆官方规格",
     "selling": "标准尺寸 Mate 高端旗舰；通信、影像和鸿蒙生态",
@@ -3307,20 +3577,32 @@
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
-    "priceType": "unknown",
-    "priceText": "官方首发价待核验",
+    "priceType": "official_launch_msrp",
+    "priceText": "官方首发起售价（非当前售价）",
     "launchDateDisplay": "2025年11月",
     "dataNote": "已链接华为中国大陆官方规格页；价格口径需与首发发布信息交叉核对",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "官方来源待核验",
+    "priceSource": "https://www.cnstock.com/commonDetail/593079",
+    "priceSourceName": "中国证券网、上海市黄浦区政府新闻、无锡市科技局简报对 2025-11-25 华为发布会的报道（三家一致）",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
     "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
     "auditStatus": "needs_parameter_price_audit",
-    "auditNotes": [],
-    "priceAuditStatus": "missing",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "auditNotes": [
+      "2026-10-20 回填官方首发价：5999元（12GB+256GB）（交叉核对）"
+    ],
+    "priceAuditStatus": "cross_checked_secondary",
+    "parameterAuditStatus": "needs_source_crosscheck",
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": "5999元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.cnstock.com/commonDetail/593079",
+        "evidenceText": "发布会公布 HUAWEI Mate 80 Pro 售价 5999 元起，11 月 28 日开售；中关村在线参数页 12GB+256GB 亦标 5999 元。⚠ 华为官网发布会页当前标注「￥6999 起」，与发布当时媒体报道相差 1000 元，疑为 2026 年存储涨价后的调价或高配版本起售，SKU 归属待复核。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      }
+    ]
   },
   {
     "id": "hua-m80pm",
@@ -5541,8 +5823,8 @@
     "weight": "约 227 g（含电池）",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
     "os": "MagicOS 11（基于 Android 17）",
-    "priceCN": null,
-    "priceText": "官方首发价虽有 4499 元起公开信息，但首发价与具体容量 SKU 映射仍待复核",
+    "priceCN": 4499,
+    "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
     "selling": "11000mAh 大电池、主动散热与旗舰平台，面向长时间游戏和重载使用",
     "bestFor": [
       "游戏性能",
@@ -5554,7 +5836,7 @@
     "verified": false,
     "launchMonth": "2026-09",
     "launchDateDisplay": "2026年09月",
-    "priceType": "unknown",
+    "priceType": "official_starting_price",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -5566,8 +5848,8 @@
     "chinaOfficial": true,
     "dataNote": "已按荣耀官方商城规格页录入主要硬件参数；首发价具体容量映射尚未完成复核。整机仍处于待审核状态，不得进入正式排名或推荐。",
     "announcementSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
-    "priceSource": null,
-    "priceSourceName": "首发价容量 SKU 映射待核验；不将当前商城价当作首发价",
+    "priceSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
+    "priceSourceName": "荣耀官网 Magic9 系列发布稿",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -5577,9 +5859,10 @@
       "官方发布稿确认机型于2026年9月28日正式开售，系列发布稿标注4499元起。",
       "屏幕、处理器、相机、电池、充电、重量和容量组合依据荣耀官方商城规格页录入。",
       "官方商城当前展示价格不等同于官方首发价；具体首发价与容量 SKU 映射待复核。",
-      "verified保持false，正式排名与推荐资格保持关闭。"
+      "verified保持false，正式排名与推荐资格保持关闭。",
+      "2026-10-20 回填官方首发价：4499元起；对应容量组合未公布（仅起售价）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "starting_price_only",
     "parameterAuditStatus": "partial",
     "eligibleForRanking": false,
     "eligibleForRecommendation": false,
@@ -5650,11 +5933,11 @@
       },
       {
         "field": "官方首发起售价",
-        "value": "4499元起；具体容量SKU映射仍待复核",
+        "value": "4499元起；对应容量组合未公布",
         "status": "starting_price_only_sku_mapping_unverified",
         "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
-        "evidenceText": "官方发布稿仅列系列售价4499元起，需再核对具体版本对应的官方首发价格。",
-        "note": "官方系列起售价可确认，但按审计规则需完成具体容量SKU映射；整机不通过准入。"
+        "evidenceText": "官方发布稿写明荣耀 Magic9 超能版售价 4499 元起，2026-09-28 开售；未逐档列出容量与价格对应关系。",
+        "note": "官方只给出起售价，未逐字公布该价位对应的容量 SKU；前端按「官方起售价（容量待核）」展示，不得当作已核验首发价。"
       }
     ]
   },
@@ -7095,8 +7378,8 @@
     "weight": "163 g",
     "storage": "12GB+256GB / 12GB+512GB",
     "os": "Android / One UI 7",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 7999,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "5.8mm 级超薄机身，主打轻薄手感",
     "bestFor": [
       "拍照视频",
@@ -7108,7 +7391,7 @@
     "verified": false,
     "launchMonth": "2025-05",
     "launchDateDisplay": "2025年05月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -7119,8 +7402,8 @@
     "chinaOfficial": true,
     "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://support-cn.samsung.com.cn/campaign/event/psg/2025/promotion/july/index.html",
+    "priceSourceName": "三星电子中国官方活动页（厂商建议零售价价目）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
@@ -7129,9 +7412,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
-      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭",
+      "2026-10-20 回填官方首发价：7999元（12GB+256GB）（官网核验）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "verified",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -7169,6 +7453,14 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "7999元（12GB+256GB）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support-cn.samsung.com.cn/campaign/event/psg/2025/promotion/july/index.html",
+        "evidenceText": "三星中国官方活动页列出 Galaxy S25 Edge 12GB+256GB 厂商建议零售价 ￥7,999、12GB+512GB ￥8,999。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
       }
     ]
   },
@@ -11088,8 +11380,8 @@
     "weight": "约 203 g（黑/蓝/白）/ 209 g（绿）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "realme UI 6.0",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 2599,
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "7000mAh 大电池的高刷性能机",
     "bestFor": [
       "游戏性能",
@@ -11101,7 +11393,7 @@
     "verified": false,
     "launchMonth": "2025-04",
     "launchDateDisplay": "2025年04月",
-    "priceType": "unknown",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -11113,8 +11405,8 @@
     "chinaOfficial": true,
     "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.realme.com/cn/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "https://www.news.cn/tech/20250424/542d609da75d4e7bb8c44e791b6a4df5/c.html",
+    "priceSourceName": "新华网、中国日报网、中国经济网对 2025-04-23 真我 GT7 发布会的报道（价格一致）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
@@ -11123,9 +11415,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
-      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭",
+      "2026-10-20 回填官方首发价：2599元（12GB+256GB）（交叉核对）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "cross_checked_secondary",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -11163,6 +11456,14 @@
         "evidenceText": "官方规格页明确列出：约 203 g（黑/蓝/白）/ 209 g（绿）。",
         "valueAtAudit": "约 203 g（黑/蓝/白）/ 209 g（绿）",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "2599元（12GB+256GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.news.cn/tech/20250424/542d609da75d4e7bb8c44e791b6a4df5/c.html",
+        "evidenceText": "官方公布真我 GT7 售价 2599 元起（国补到手 2210 元起），共 5 个版本；中关村在线参数页 12GB+256GB 标价 2599 元，与之一致。",
+        "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
       }
     ]
   },
