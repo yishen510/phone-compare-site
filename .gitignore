@@ -4,3 +4,12 @@
 !.env.example
 __pycache__/
 *.py[cod]
+
+# Local edit backups and one-off verification artifacts
+index.before-*.html
+index.html.backup
+*.backup
+price_server.before-*.py
+_verify_*.py
+_shot*.png
+_archive/

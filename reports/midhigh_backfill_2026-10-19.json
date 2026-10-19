@@ -1,0 +1,829 @@
+{
+  "generatedAt": "2026-10-19",
+  "scope": "补齐 2021—2026 中国大陆中高端机型（旗舰 / 折叠 / 性能子品牌）",
+  "before": {
+    "records": 102,
+    "brands": 11
+  },
+  "after": {
+    "records": 155,
+    "brands": 11
+  },
+  "policy": {
+    "price": "priceCN 仅在有官方首发价把握时填写，其余留空；不以当前渠道价代替",
+    "audit": "新增记录全部 auditStatus=needs_parameter_price_audit，eligibleForRanking/Recommendation 关闭",
+    "appleBattery": "沿用既有口径：官方未按 mAh 公布，不写 mAh"
+  },
+  "added": [
+    {
+      "id": "apple-17p",
+      "brand": "Apple",
+      "name": "iPhone 17 Pro",
+      "year": 2025,
+      "type": "全能旗舰",
+      "launchMonth": "2025-09",
+      "priceCN": 8999,
+      "quoteTargetStorage": "256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "apple-16p",
+      "brand": "Apple",
+      "name": "iPhone 16 Pro",
+      "year": 2024,
+      "type": "全能旗舰",
+      "launchMonth": "2024-09",
+      "priceCN": 7999,
+      "quoteTargetStorage": "128GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "apple-16",
+      "brand": "Apple",
+      "name": "iPhone 16",
+      "year": 2024,
+      "type": "标准旗舰",
+      "launchMonth": "2024-09",
+      "priceCN": 5999,
+      "quoteTargetStorage": "128GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "apple-15p",
+      "brand": "Apple",
+      "name": "iPhone 15 Pro",
+      "year": 2023,
+      "type": "全能旗舰",
+      "launchMonth": "2023-09",
+      "priceCN": 7999,
+      "quoteTargetStorage": "128GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "apple-15",
+      "brand": "Apple",
+      "name": "iPhone 15",
+      "year": 2023,
+      "type": "标准旗舰",
+      "launchMonth": "2023-09",
+      "priceCN": 5999,
+      "quoteTargetStorage": "128GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "apple-14p",
+      "brand": "Apple",
+      "name": "iPhone 14 Pro",
+      "year": 2022,
+      "type": "全能旗舰",
+      "launchMonth": "2022-09",
+      "priceCN": 7999,
+      "quoteTargetStorage": "128GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "sam-24",
+      "brand": "Samsung",
+      "name": "Galaxy S24",
+      "year": 2024,
+      "type": "全能旗舰",
+      "launchMonth": "2024-01",
+      "priceCN": 5999,
+      "quoteTargetStorage": "8GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "sam-24p",
+      "brand": "Samsung",
+      "name": "Galaxy S24+",
+      "year": 2024,
+      "type": "全能旗舰",
+      "launchMonth": "2024-01",
+      "priceCN": 6999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "sam-zf6",
+      "brand": "Samsung",
+      "name": "Galaxy Z Fold6",
+      "year": 2024,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2024-07",
+      "priceCN": 13999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "sam-zflip6",
+      "brand": "Samsung",
+      "name": "Galaxy Z Flip6",
+      "year": 2024,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2024-07",
+      "priceCN": 7999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "sam-zf5",
+      "brand": "Samsung",
+      "name": "Galaxy Z Fold5",
+      "year": 2023,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2023-07",
+      "priceCN": null,
+      "quoteTargetStorage": null,
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "sam-zflip5",
+      "brand": "Samsung",
+      "name": "Galaxy Z Flip5",
+      "year": 2023,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2023-07",
+      "priceCN": null,
+      "quoteTargetStorage": null,
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "sam-25e",
+      "brand": "Samsung",
+      "name": "Galaxy S25 Edge",
+      "year": 2025,
+      "type": "全能旗舰",
+      "launchMonth": "2025-05",
+      "priceCN": null,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-14",
+      "brand": "Xiaomi",
+      "name": "小米 14",
+      "year": 2023,
+      "type": "全能旗舰",
+      "launchMonth": "2023-10",
+      "priceCN": 3999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-14p",
+      "brand": "Xiaomi",
+      "name": "小米 14 Pro",
+      "year": 2023,
+      "type": "全能旗舰",
+      "launchMonth": "2023-10",
+      "priceCN": 4999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-13",
+      "brand": "Xiaomi",
+      "name": "小米 13",
+      "year": 2022,
+      "type": "全能旗舰",
+      "launchMonth": "2022-12",
+      "priceCN": 3999,
+      "quoteTargetStorage": "8GB+128GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-13p",
+      "brand": "Xiaomi",
+      "name": "小米 13 Pro",
+      "year": 2022,
+      "type": "全能旗舰",
+      "launchMonth": "2022-12",
+      "priceCN": 4999,
+      "quoteTargetStorage": "8GB+128GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-mixfold4",
+      "brand": "Xiaomi",
+      "name": "MIX Fold 4",
+      "year": 2024,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2024-07",
+      "priceCN": 8999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-mixfold3",
+      "brand": "Xiaomi",
+      "name": "MIX Fold 3",
+      "year": 2023,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2023-08",
+      "priceCN": 8999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "xia-mixflip",
+      "brand": "Xiaomi",
+      "name": "MIX Flip",
+      "year": 2024,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2024-07",
+      "priceCN": 5999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "redmi-k80p",
+      "brand": "Xiaomi",
+      "name": "REDMI K80 Pro",
+      "year": 2024,
+      "type": "性能旗舰",
+      "launchMonth": "2024-11",
+      "priceCN": 3699,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "redmi-k80",
+      "brand": "Xiaomi",
+      "name": "REDMI K80",
+      "year": 2024,
+      "type": "性能续航旗舰",
+      "launchMonth": "2024-11",
+      "priceCN": 2499,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "hua-mate70",
+      "brand": "Huawei",
+      "name": "HUAWEI Mate 70",
+      "year": 2024,
+      "type": "全能旗舰",
+      "launchMonth": "2024-11",
+      "priceCN": 5499,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "hua-mate70pp",
+      "brand": "Huawei",
+      "name": "HUAWEI Mate 70 Pro+",
+      "year": 2024,
+      "type": "顶级全能旗舰",
+      "launchMonth": "2024-11",
+      "priceCN": 8499,
+      "quoteTargetStorage": "16GB+512GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "hua-matex6",
+      "brand": "Huawei",
+      "name": "HUAWEI Mate X6",
+      "year": 2024,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2024-11",
+      "priceCN": 12999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "hua-matex5",
+      "brand": "Huawei",
+      "name": "HUAWEI Mate X5",
+      "year": 2023,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2023-09",
+      "priceCN": null,
+      "quoteTargetStorage": null,
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "hua-pura70",
+      "brand": "Huawei",
+      "name": "HUAWEI Pura 70",
+      "year": 2024,
+      "type": "影像旗舰",
+      "launchMonth": "2024-04",
+      "priceCN": 5499,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "hua-pura70p",
+      "brand": "Huawei",
+      "name": "HUAWEI Pura 70 Pro",
+      "year": 2024,
+      "type": "影像旗舰",
+      "launchMonth": "2024-04",
+      "priceCN": 6499,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "hua-purax",
+      "brand": "Huawei",
+      "name": "HUAWEI Pura X",
+      "year": 2025,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2025-03",
+      "priceCN": 7499,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "honor-magic7",
+      "brand": "Honor",
+      "name": "荣耀 Magic7",
+      "year": 2024,
+      "type": "全能旗舰",
+      "launchMonth": "2024-10",
+      "priceCN": 4499,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "honor-magic6",
+      "brand": "Honor",
+      "name": "荣耀 Magic6",
+      "year": 2024,
+      "type": "全能旗舰",
+      "launchMonth": "2024-01",
+      "priceCN": 4399,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "honor-v3",
+      "brand": "Honor",
+      "name": "荣耀 Magic V3",
+      "year": 2024,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2024-07",
+      "priceCN": 8999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "honor-v2",
+      "brand": "Honor",
+      "name": "荣耀 Magic V2",
+      "year": 2023,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2023-07",
+      "priceCN": 8999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "oppo-x8",
+      "brand": "OPPO",
+      "name": "OPPO Find X8",
+      "year": 2024,
+      "type": "影像旗舰",
+      "launchMonth": "2024-10",
+      "priceCN": 4199,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "oppo-x8p",
+      "brand": "OPPO",
+      "name": "OPPO Find X8 Pro",
+      "year": 2024,
+      "type": "影像旗舰",
+      "launchMonth": "2024-10",
+      "priceCN": 5299,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "oppo-x7",
+      "brand": "OPPO",
+      "name": "OPPO Find X7",
+      "year": 2024,
+      "type": "影像旗舰",
+      "launchMonth": "2024-01",
+      "priceCN": 3999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "oppo-n3",
+      "brand": "OPPO",
+      "name": "OPPO Find N3",
+      "year": 2023,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2023-10",
+      "priceCN": 9999,
+      "quoteTargetStorage": "12GB+512GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "oppo-n3flip",
+      "brand": "OPPO",
+      "name": "OPPO Find N3 Flip",
+      "year": 2023,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2023-08",
+      "priceCN": 6799,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "oppo-n2",
+      "brand": "OPPO",
+      "name": "OPPO Find N2",
+      "year": 2022,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2022-12",
+      "priceCN": 7999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-x200",
+      "brand": "vivo",
+      "name": "vivo X200",
+      "year": 2024,
+      "type": "影像旗舰",
+      "launchMonth": "2024-10",
+      "priceCN": 4299,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-x200p",
+      "brand": "vivo",
+      "name": "vivo X200 Pro",
+      "year": 2024,
+      "type": "影像旗舰",
+      "launchMonth": "2024-10",
+      "priceCN": 5299,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-x200pm",
+      "brand": "vivo",
+      "name": "vivo X200 Pro mini",
+      "year": 2024,
+      "type": "影像旗舰",
+      "launchMonth": "2024-10",
+      "priceCN": 4699,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-x100",
+      "brand": "vivo",
+      "name": "vivo X100",
+      "year": 2023,
+      "type": "影像旗舰",
+      "launchMonth": "2023-11",
+      "priceCN": 3999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-x100p",
+      "brand": "vivo",
+      "name": "vivo X100 Pro",
+      "year": 2023,
+      "type": "影像旗舰",
+      "launchMonth": "2023-11",
+      "priceCN": 4999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-xfold5",
+      "brand": "vivo",
+      "name": "vivo X Fold5",
+      "year": 2025,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2025-07",
+      "priceCN": 6999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "vivo-xfold3p",
+      "brand": "vivo",
+      "name": "vivo X Fold3 Pro",
+      "year": 2024,
+      "type": "折叠屏旗舰",
+      "launchMonth": "2024-03",
+      "priceCN": 9999,
+      "quoteTargetStorage": "16GB+512GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "op-ace5p",
+      "brand": "OnePlus",
+      "name": "一加 Ace 5 Pro",
+      "year": 2024,
+      "type": "性能旗舰",
+      "launchMonth": "2024-12",
+      "priceCN": 3399,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "op-ace5",
+      "brand": "OnePlus",
+      "name": "一加 Ace 5",
+      "year": 2024,
+      "type": "性能旗舰",
+      "launchMonth": "2024-12",
+      "priceCN": 2299,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "iqoo-12",
+      "brand": "iQOO",
+      "name": "iQOO 12",
+      "year": 2023,
+      "type": "游戏性能旗舰",
+      "launchMonth": "2023-11",
+      "priceCN": 3999,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "iqoo-12p",
+      "brand": "iQOO",
+      "name": "iQOO 12 Pro",
+      "year": 2023,
+      "type": "游戏性能旗舰",
+      "launchMonth": "2023-11",
+      "priceCN": 4999,
+      "quoteTargetStorage": "16GB+512GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "iqoo-neo10p",
+      "brand": "iQOO",
+      "name": "iQOO Neo10 Pro",
+      "year": 2024,
+      "type": "游戏性能旗舰",
+      "launchMonth": "2024-11",
+      "priceCN": 3199,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "realme-gt6",
+      "brand": "realme",
+      "name": "真我 GT6",
+      "year": 2024,
+      "type": "性能旗舰",
+      "launchMonth": "2024-07",
+      "priceCN": 2799,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "realme-gt7",
+      "brand": "realme",
+      "name": "真我 GT7",
+      "year": 2025,
+      "type": "性能旗舰",
+      "launchMonth": "2025-04",
+      "priceCN": null,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    },
+    {
+      "id": "redmagic-9p",
+      "brand": "nubia",
+      "name": "红魔 9 Pro",
+      "year": 2023,
+      "type": "游戏性能旗舰",
+      "launchMonth": "2023-11",
+      "priceCN": 4399,
+      "quoteTargetStorage": "12GB+256GB",
+      "parameterAuditStatus": "needs_source_crosscheck"
+    }
+  ],
+  "addedByBrand": {
+    "Apple": 6,
+    "Honor": 4,
+    "Huawei": 7,
+    "OPPO": 6,
+    "OnePlus": 2,
+    "Samsung": 7,
+    "Xiaomi": 9,
+    "iQOO": 3,
+    "nubia": 1,
+    "realme": 2,
+    "vivo": 7
+  },
+  "coverageBefore": {
+    "Apple": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 3,
+      "2026": 2
+    },
+    "Honor": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 2,
+      "2025": 3,
+      "2026": 4
+    },
+    "Huawei": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 2,
+      "2024": 2,
+      "2025": 9,
+      "2026": 3
+    },
+    "OPPO": {
+      "2021": 0,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 6,
+      "2026": 2
+    },
+    "OnePlus": {
+      "2021": 0,
+      "2022": 1,
+      "2023": 2,
+      "2024": 1,
+      "2025": 2,
+      "2026": 0
+    },
+    "Samsung": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 5,
+      "2026": 3
+    },
+    "Xiaomi": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 1,
+      "2024": 1,
+      "2025": 10,
+      "2026": 1
+    },
+    "iQOO": {
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 1,
+      "2025": 1,
+      "2026": 1
+    },
+    "nubia": {
+      "2021": 0,
+      "2022": 0,
+      "2023": 0,
+      "2024": 2,
+      "2025": 0,
+      "2026": 0
+    },
+    "realme": {
+      "2021": 0,
+      "2022": 0,
+      "2023": 1,
+      "2024": 1,
+      "2025": 2,
+      "2026": 0
+    },
+    "vivo": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 0,
+      "2024": 1,
+      "2025": 3,
+      "2026": 4
+    }
+  },
+  "coverageAfter": {
+    "Apple": {
+      "2021": 1,
+      "2022": 2,
+      "2023": 3,
+      "2024": 3,
+      "2025": 4,
+      "2026": 2
+    },
+    "Honor": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 2,
+      "2024": 5,
+      "2025": 3,
+      "2026": 4
+    },
+    "Huawei": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 3,
+      "2024": 7,
+      "2025": 10,
+      "2026": 3
+    },
+    "OPPO": {
+      "2021": 0,
+      "2022": 2,
+      "2023": 3,
+      "2024": 4,
+      "2025": 6,
+      "2026": 2
+    },
+    "OnePlus": {
+      "2021": 0,
+      "2022": 1,
+      "2023": 2,
+      "2024": 3,
+      "2025": 2,
+      "2026": 0
+    },
+    "Samsung": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 3,
+      "2024": 5,
+      "2025": 6,
+      "2026": 3
+    },
+    "Xiaomi": {
+      "2021": 1,
+      "2022": 3,
+      "2023": 4,
+      "2024": 5,
+      "2025": 10,
+      "2026": 1
+    },
+    "iQOO": {
+      "2021": 0,
+      "2022": 0,
+      "2023": 2,
+      "2024": 2,
+      "2025": 1,
+      "2026": 1
+    },
+    "nubia": {
+      "2021": 0,
+      "2022": 0,
+      "2023": 1,
+      "2024": 2,
+      "2025": 0,
+      "2026": 0
+    },
+    "realme": {
+      "2021": 0,
+      "2022": 0,
+      "2023": 1,
+      "2024": 2,
+      "2025": 3,
+      "2026": 0
+    },
+    "vivo": {
+      "2021": 1,
+      "2022": 1,
+      "2023": 2,
+      "2024": 5,
+      "2025": 4,
+      "2026": 4
+    }
+  },
+  "notAdded": [
+    {
+      "item": "2026 年未在现有目录中的兄弟机型（如 iPhone 18、Galaxy S26 系列其余款、各家 2026 折叠）",
+      "reason": "无法核对官方规格与上市信息，不凭命名规律推断存在性，留待官方规格页可查后补录"
+    },
+    {
+      "item": "Motorola / 魅族 / 中兴 Axon / ROG 等未纳入目录的品牌",
+      "reason": "现有品牌维度只有 11 个，新增品牌会影响筛选口径；且缺少可核验的大陆官方规格页，暂不引入"
+    },
+    {
+      "item": "各机型非基础存储 SKU 的独立记录",
+      "reason": "目录口径为一款机型一条记录，容量差异记录在 storageOptions"
+    }
+  ],
+  "knownIssues": [
+    "新增记录的参数与首发价尚未逐项对照官方规格页，UI 显示“待核验”"
+  ],
+  "merge": {
+    "mergedAt": "2026-10-19",
+    "dropped": "realme-gt8p",
+    "kept": "realme-gt8-pro",
+    "reason": "同一机型的占位记录与官方规格页记录重复；保留字段完整、带官方规格页的一条"
+  }
+}

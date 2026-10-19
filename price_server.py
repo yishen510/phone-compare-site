@@ -25,7 +25,27 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parent
 PHONES_FILE = ROOT / "data" / "phones.json"
 CONFIG_FILE = ROOT / "data" / "price-config.json"
-API_URL = "https://gw-openapi.zhidemai.com/hj-search/discount/v2"
+
+
+def load_env_file() -> None:
+    """Load simple KEY=value lines from a project-local .env without overriding real env vars."""
+    env_file = ROOT / ".env"
+    if not env_file.is_file():
+        return
+    for raw in env_file.read_text(encoding="utf-8").splitlines():
+        line = raw.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        key, value = key.strip(), value.strip().strip("\"'")
+        if key and value and key not in os.environ:
+            os.environ[key] = value
+
+
+# Load .env before reading any tunable below, so server-side settings actually apply.
+load_env_file()
+
+API_URL = os.getenv("HAINAN_API_URL", "https://gw-openapi.zhidemai.com/hj-search/discount/v2").strip() or "https://gw-openapi.zhidemai.com/hj-search/discount/v2"
 TZ_CN = timezone(timedelta(hours=8))
 CACHE_TTL_SECONDS = int(os.getenv("PHONE_QUOTE_CACHE_TTL_SECONDS", "1800"))
 EMPTY_CACHE_TTL_SECONDS = int(os.getenv("PHONE_EMPTY_QUOTE_CACHE_TTL_SECONDS", "600"))
@@ -35,11 +55,15 @@ REQUEST_FROM = os.getenv("HAINAN_REQUEST_FROM", "phone_compare_site")
 QUERY_PROCESS = int(os.getenv("HAINAN_QUERY_PROCESS", "1"))
 RESULT_SIZE = max(1, min(20, int(os.getenv("HAINAN_RESULT_SIZE", "20"))))
 FIELDS = os.getenv("HAINAN_FIELDS", "")
-HTTP_TIMEOUT_SECONDS = 15
+HTTP_TIMEOUT_SECONDS = max(3.0, min(60.0, float(os.getenv("HAINAN_HTTP_TIMEOUT_SECONDS", "15"))))
+CLIENT_RATE_LIMIT_PER_MINUTE = max(1, int(os.getenv("PHONE_API_RATE_LIMIT_PER_MINUTE", "40")))
 PHONE_CORS_ORIGIN = os.getenv("PHONE_CORS_ORIGIN", "").strip()
 PHONE_SERVE_STATIC = os.getenv("PHONE_SERVE_STATIC", "true").strip().lower() in {"1", "true", "yes", "on"}
 _LAST_PROVIDER_REQUEST_AT = 0.0
 _PROVIDER_REQUEST_LOCK = Lock()
+_CLIENT_HITS: dict[str, list[float]] = {}
+_CLIENT_HITS_LOCK = Lock()
+_LAST_UPSTREAM: dict[str, Any] = {"at": None, "status": "not_called", "message": ""}
 
 # phoneId -> (cache_epoch, result_or_none); None entries avoid repeated unproductive searches.
 QUOTE_CACHE: dict[str, tuple[float, dict[str, Any] | None]] = {}
@@ -60,21 +84,6 @@ EXCLUDE_TERMS_DEFAULT = [
     "贴膜", "模型", "美版", "港版", "海外版", "日版", "韩版", "以旧换新价", "换新价", "补贴价", "回收价", "回收", "维修",
     "配件", "碎屏", "屏幕总成", "拆机", "空盒", "模型机", "后封", "无锁版", "卡贴机", "激活机",
 ]
-
-
-def load_env_file() -> None:
-    """Load simple KEY=value lines from a project-local .env without overriding real env vars."""
-    env_file = ROOT / ".env"
-    if not env_file.is_file():
-        return
-    for raw in env_file.read_text(encoding="utf-8").splitlines():
-        line = raw.strip()
-        if not line or line.startswith("#") or "=" not in line:
-            continue
-        key, value = line.split("=", 1)
-        key, value = key.strip(), value.strip().strip("\"'")
-        if key and value and key not in os.environ:
-            os.environ[key] = value
 
 
 def now_iso() -> str:
@@ -106,12 +115,17 @@ def normalize(text: str) -> str:
 
 
 def first_storage_target(phone: dict[str, Any]) -> str | None:
-    target = phone.get("quoteTargetStorage")
-    if isinstance(target, str) and target.strip():
-        return target.strip()
+    """Only quote the SKU the catalogue explicitly designates as quotable.
+
+    An explicit ``quoteTargetStorage: null`` means the SKU mapping is still under review;
+    falling back to storageOptions[0] would present an unverified capacity as exact.
+    """
+    if "quoteTargetStorage" in phone:
+        target = phone.get("quoteTargetStorage")
+        return target.strip() if isinstance(target, str) and target.strip() else None
     options = phone.get("storageOptions") or []
-    if options and isinstance(options[0], str):
-        return options[0]
+    if options and isinstance(options[0], str) and options[0].strip():
+        return options[0].strip()
     return None
 
 
@@ -188,22 +202,65 @@ def model_aliases(phone: dict[str, Any]) -> list[str]:
     return normalized
 
 
+CN_VARIANT_MARKERS = ("至尊版", "至臻版", "非凡大师", "典藏版", "卫星通信版", "创作者套装", "折叠版")
+
+
+def alias_matches_title(alias: str, norm_title: str, model_key: str) -> bool:
+    """Match an alias without letting a base model absorb a longer variant.
+
+    A plain substring test makes "Galaxy S25" match "Galaxy S25 Ultra" (or "一加 13"
+    match "一加 13T"), which would attach another model's price to this phoneId.
+    Any ASCII variant suffix immediately after the alias must also belong to this model.
+    """
+    start = 0
+    while True:
+        idx = norm_title.find(alias, start)
+        if idx < 0:
+            return False
+        end = idx + len(alias)
+        tail_end = end
+        while tail_end < len(norm_title) and norm_title[tail_end].isascii() and norm_title[tail_end].isalpha():
+            tail_end += 1
+        tail = norm_title[end:tail_end]
+        if not tail or tail in model_key:
+            cn_tail = norm_title[end:end + 6]
+            if not any(marker in cn_tail and marker not in model_key for marker in CN_VARIANT_MARKERS):
+                return True
+        start = idx + 1
+
+
+def _sku_tokens(text: str) -> list[str]:
+    value = unicodedata.normalize("NFKC", str(text or "")).lower().replace("+", " plus ")
+    value = re.sub(r"[^0-9a-z\u4e00-\u9fff]+", " ", value)
+    return [token for token in value.split() if token]
+
+
 def offer_matches_sku(title: str, target: str) -> bool:
-    text = normalize(title)
+    """Require the exact RAM/ROM pair as standalone tokens.
+
+    Token matching avoids two classic false results: model digits glued to storage
+    ("一加 13" + "12GB" -> "1312gb") and bare concatenations such as "12256".
+    """
     ram, rom = storage_parts(target)
     if rom is None:
         return False
-    # For iPhone storage strings such as 256GB, accept 256GB/256G but not 1256GB/2560GB.
+    tokens = _sku_tokens(title)
+    rom_tokens = {f"{rom}gb", f"{rom}g", str(rom)}
+    has_rom = any(token in rom_tokens for token in tokens)
     if ram is None:
-        return bool(re.search(rf"(?<!\d){rom}(?:gb|g)(?!\d)", text))
-    # Preferred explicit pairs: 12GB+256GB, 12G+256G, 12+256GB.
-    pair_pattern = rf"(?<!\d){ram}(?:gb|g)?(?:\+|plus|/|x|×)?{rom}(?:gb|g)?(?!\d)"
-    if re.search(pair_pattern, text):
+        return has_rom
+    ram_tokens = {f"{ram}gb", f"{ram}g", str(ram)}
+    if has_rom and any(token in ram_tokens for token in tokens):
         return True
-    # Some marketplace titles split the two values: e.g. 12GB 内存 256GB 存储.
-    ram_found = re.search(rf"(?<!\d){ram}(?:gb|g)(?!\d)", text)
-    rom_found = re.search(rf"(?<!\d){rom}(?:gb|g)(?!\d)", text)
-    return bool(ram_found and rom_found)
+    # Fallback for titles where the pair is written as one token, e.g. 12GB+256GB.
+    joined = "".join(tokens)
+    patterns = (
+        rf"(?<!\d){ram}gb(?:plus|/|x){rom}(?:gb|g)?(?!\d)",
+        rf"(?<!\d){ram}g(?:plus|/|x){rom}(?:gb|g)?(?!\d)",
+        rf"(?<!\d){ram}(?:plus|/|x){rom}(?:gb|g)?(?!\d)",
+        rf"(?<!\d){ram}gb{rom}(?:gb|g)(?!\d)",
+    )
+    return any(re.search(pattern, joined) for pattern in patterns)
 
 
 def parse_price(value: Any) -> float | None:
@@ -231,6 +288,20 @@ def reject_offer(title: str, exclude_terms: list[str]) -> bool:
     return any(normalize(term) in t for term in exclude_terms if term)
 
 
+class ProviderError(RuntimeError):
+    """Upstream failure with a machine-readable kind for per-model status reporting."""
+
+    def __init__(self, message: str, kind: str = "upstream", status: int | None = None) -> None:
+        super().__init__(message)
+        self.kind = kind
+        self.status = status
+
+
+def _record_upstream(status: str, message: str) -> None:
+    global _LAST_UPSTREAM
+    _LAST_UPSTREAM = {"at": now_iso(), "status": status, "message": str(message)[:160]}
+
+
 def _call_provider(query: str, api_key: str) -> list[dict[str, Any]]:
     """Call Hainan discount-search Pro v2; credentials stay server-side."""
     global _LAST_PROVIDER_REQUEST_AT
@@ -248,29 +319,46 @@ def _call_provider(query: str, api_key: str) -> list[dict[str, Any]]:
             status_code, raw = response.status, response.read(4_000_000)
     except HTTPError as exc:
         hints = {401:"API Key 无效或已轮换",403:"Key 可能没有好价检索 Pro 权限",422:"请求字段不符合上游接口要求",429:"已达到调用频率或配额限制",502:"上游服务暂时不可用",504:"上游处理超时"}
-        if exc.code in hints:
-            raise RuntimeError("海纳 API HTTP " + str(exc.code) + "：" + hints[exc.code]) from exc
-        raise RuntimeError("海纳 API HTTP " + str(exc.code)) from exc
+        kind = {401:"auth",403:"auth",422:"bad_request",429:"quota"}.get(exc.code, "upstream")
+        message = "海纳 API HTTP " + str(exc.code) + ("：" + hints[exc.code] if exc.code in hints else "")
+        _record_upstream("error", message)
+        raise ProviderError(message, kind=kind, status=exc.code) from exc
     except URLError as exc:
-        raise RuntimeError("无法连接海纳好价检索 API") from exc
+        if isinstance(getattr(exc, "reason", None), TimeoutError):
+            message = f"海纳好价检索 API 请求超时（{HTTP_TIMEOUT_SECONDS:g} 秒）"
+            kind = "timeout"
+        else:
+            message, kind = "无法连接海纳好价检索 API", "network"
+        _record_upstream("error", message)
+        raise ProviderError(message, kind=kind) from exc
     except TimeoutError as exc:
-        raise RuntimeError("海纳好价检索 API 请求超时") from exc
+        message = f"海纳好价检索 API 请求超时（{HTTP_TIMEOUT_SECONDS:g} 秒）"
+        _record_upstream("error", message)
+        raise ProviderError(message, kind="timeout") from exc
     if status_code < 200 or status_code >= 300:
-        raise RuntimeError("海纳 API 返回 HTTP " + str(status_code))
+        message = "海纳 API 返回 HTTP " + str(status_code)
+        _record_upstream("error", message)
+        raise ProviderError(message, kind="upstream", status=status_code)
     try:
         payload = json.loads(raw.decode("utf-8"))
     except (UnicodeDecodeError, json.JSONDecodeError) as exc:
-        raise RuntimeError("海纳 API 返回的不是有效 JSON") from exc
+        message = "海纳 API 返回的不是有效 JSON"
+        _record_upstream("error", message)
+        raise ProviderError(message, kind="format") from exc
     if not isinstance(payload, dict):
-        raise RuntimeError("海纳 API 返回格式异常")
+        _record_upstream("error", "海纳 API 返回格式异常")
+        raise ProviderError("海纳 API 返回格式异常", kind="format")
     error_code = payload.get("error_code")
     if error_code not in (None, 0, "0", ""):
         msg = str(payload.get("error_msg") or payload.get("message") or "上游返回错误")[:160]
-        raise RuntimeError("海纳 API 错误 " + str(error_code) + ": " + msg)
+        message = "海纳 API 错误 " + str(error_code) + ": " + msg
+        _record_upstream("error", message)
+        raise ProviderError(message, kind="api_error")
     data = payload.get("data") or {}
     rows = data.get("rows", []) if isinstance(data, dict) else data if isinstance(data, list) else []
     if not isinstance(rows, list):
-        raise RuntimeError("海纳 API 的 data.rows 字段格式异常")
+        _record_upstream("error", "海纳 API 的 data.rows 字段格式异常")
+        raise ProviderError("海纳 API 的 data.rows 字段格式异常", kind="format")
     mapped = []
     for row in rows:
         if not isinstance(row, dict):
@@ -278,6 +366,7 @@ def _call_provider(query: str, api_key: str) -> list[dict[str, Any]]:
         price_field = next((key for key in ("digital_price", "price", "page_price") if row.get(key) not in (None, "")), None)
         direct_url = row.get("direct_link") or row.get("haojia_dplink") or row.get("url")
         mapped.append({**row, "title":row.get("title") or row.get("goods_name") or "", "price":row.get(price_field) if price_field else None, "priceFieldUsed":price_field, "url":direct_url, "mall_name":row.get("mall_name") or row.get("mall") or "", "prom_info":[str(x) for x in (row.get("coupon"),row.get("activity")) if x not in (None,"")]})
+    _record_upstream("ok", f"HTTP 200，返回 {len(mapped)} 条商品")
     return mapped
 
 
@@ -286,13 +375,14 @@ def match_offer(phone: dict[str, Any], offers: list[dict[str, Any]], exclude_ter
     if not target:
         return None
     aliases = model_aliases(phone)
+    model_key = normalize(phone.get("name") or "")
     matched: list[dict[str, Any]] = []
     for offer in offers:
         title = str(offer.get("title") or "").strip()
         norm_title = normalize(title)
         if not title or reject_offer(title, exclude_terms):
             continue
-        if not any(alias and alias in norm_title for alias in aliases):
+        if not any(alias and alias_matches_title(alias, norm_title, model_key) for alias in aliases):
             continue
         if not offer_matches_sku(title, target):
             continue
@@ -343,30 +433,44 @@ def query_prices(ids: list[str]) -> dict[str, Any]:
     api_key = os.getenv("HAINAN_API_KEY", "").strip()
     as_of = now_iso()
     if not api_key or api_key.casefold().startswith(("replace_", "your_", "填入")):
-        return {"asOf":as_of,"provider":"hainan_discount_v2","status":"needs_credentials","message":"未检测到有效的 HAINAN_API_KEY。请将轮换后的 Key 仅配置在服务端 .env；未授权时不会伪造实时价格。","items":[]}
+        return {"asOf":as_of,"provider":"hainan_discount_v2","status":"needs_credentials","message":"未检测到有效的 HAINAN_API_KEY。请将轮换后的 Key 仅配置在服务端 .env；未授权时不会伪造实时价格。","items":[],"statuses":{},"counts":{"requested":0,"matched":0,"noOffer":0,"failed":0,"skipped":0}}
     phone_map = phones_by_id()
-    ids = list(dict.fromkeys(id_ for id_ in ids if id_ in phone_map))
-    if not ids:
-        return {"asOf":as_of,"provider":"hainan_discount_v2","status":"no_exact_offers","message":"没有可查询的有效机型 ID。","items":[]}
-    requested_ids = ids[:MAX_QUERIES_PER_RESPONSE]
+    unique_ids = list(dict.fromkeys(str(i).strip() for i in ids if str(i).strip()))
+    valid_ids = [id_ for id_ in unique_ids if id_ in phone_map]
+    statuses: dict[str, dict[str, Any]] = {}
+    for id_ in unique_ids:
+        if id_ not in phone_map:
+            statuses[id_] = {"status": "unknown_phone", "message": "后端机型库没有该 ID，未发起查询"}
+    if not valid_ids:
+        return {"asOf":as_of,"provider":"hainan_discount_v2","status":"no_exact_offers","message":"没有可查询的有效机型 ID。","items":[],"statuses":statuses,"counts":{"requested":0,"matched":0,"noOffer":0,"failed":0,"skipped":len(statuses)}}
+    requested_ids = valid_ids[:MAX_QUERIES_PER_RESPONSE]
+    omitted_ids = valid_ids[MAX_QUERIES_PER_RESPONSE:]
+    for id_ in omitted_ids:
+        statuses[id_] = {"status": "not_requested", "message": "超出单次批量上限，请继续下一批请求"}
     output: list[dict[str, Any]] = []
     errors: list[str] = []
     config = provider_config()
     exclude_terms = list(dict.fromkeys((config.get("excludeKeywords") or []) + EXCLUDE_TERMS_DEFAULT))
-    for id_ in requested_ids:
+    consecutive_errors = 0
+    for idx, id_ in enumerate(requested_ids):
         phone = phone_map[id_]
         query = create_query(phone)
         target = first_storage_target(phone)
         if not query or not target:
-            QUOTE_CACHE[id_] = (time.time(), None)
+            statuses[id_] = {"status": "skipped", "sku": target, "message": "该机型尚未确定可报价的大陆版容量，未发起查询"}
             continue
         cached = QUOTE_CACHE.get(id_)
         if cached:
-            cached_at, item = cached
-            ttl = CACHE_TTL_SECONDS if item else EMPTY_CACHE_TTL_SECONDS
+            cached_at, cached_item = cached
+            ttl = CACHE_TTL_SECONDS if cached_item else EMPTY_CACHE_TTL_SECONDS
             if time.time() - cached_at < ttl:
-                if item:
+                if cached_item:
+                    item = dict(cached_item)
+                    item["cached"] = True
                     output.append(item)
+                    statuses[id_] = {"status": "ok", "cached": True, "checkedAt": item.get("checkedAt"), "sku": item.get("sku")}
+                else:
+                    statuses[id_] = {"status": "no_exact_offers", "cached": True, "sku": target, "message": "缓存结果：未找到同时匹配型号与容量的商品"}
                 continue
         try:
             offers = _call_provider(query, api_key)
@@ -377,20 +481,63 @@ def query_prices(ids: list[str]) -> dict[str, Any]:
             QUOTE_CACHE[id_] = (time.time(), item)
             if item:
                 output.append(item)
-        except RuntimeError as exc:
+                statuses[id_] = {"status": "ok", "cached": False, "checkedAt": item.get("checkedAt"), "sku": item.get("sku")}
+            else:
+                statuses[id_] = {"status": "no_exact_offers", "cached": False, "sku": target, "message": "已查询，但未找到同时匹配型号与目标容量的商品"}
+            consecutive_errors = 0
+        except ProviderError as exc:
             QUOTE_CACHE.pop(id_, None)
             errors.append(str(phone.get("name")) + ": " + str(exc))
-            break
-    omitted_count = max(0, len(ids) - len(requested_ids))
-    if errors:
-        status, message = "upstream_error", errors[0]
+            statuses[id_] = {"status": "error", "errorKind": exc.kind, "message": str(exc), "sku": target}
+            # Auth/quota/parameter errors will repeat for every remaining model: stop burning quota.
+            if exc.kind in ("auth", "quota", "bad_request"):
+                fatal = True
+            else:
+                consecutive_errors += 1
+                fatal = consecutive_errors >= 3
+            if fatal:
+                for rest in requested_ids[idx + 1:]:
+                    statuses[rest] = {"status": "skipped", "message": "上游错误，本轮已停止查询"}
+                break
+    def count_status(name: str) -> int:
+        return sum(1 for value in statuses.values() if value.get("status") == name)
+    counts = {
+        "requested": len(requested_ids),
+        "matched": len(output),
+        "noOffer": count_status("no_exact_offers"),
+        "failed": count_status("error"),
+        "skipped": count_status("skipped") + count_status("not_requested") + count_status("unknown_phone"),
+    }
+    if output and (counts["failed"] or counts["noOffer"] or counts["skipped"]):
+        status, message = "partial", "已获取 " + str(len(output)) + "/" + str(len(requested_ids)) + " 款机型的精确型号与容量候选报价；其余机型暂无精确匹配、跳过或查询失败。"
     elif output:
         status, message = "ok", "已获得 " + str(len(output)) + "/" + str(len(requested_ids)) + " 款机型的精确型号与容量候选报价。"
+    elif errors:
+        status, message = "upstream_error", errors[0]
+    elif counts["skipped"] and counts["skipped"] >= counts["requested"]:
+        status, message = "no_exact_offers", "本轮机型都没有可报价的大陆版容量映射（或 ID 未知），未向上游发起查询。"
     else:
         status, message = "no_exact_offers", "接口已成功查询，但没有返回同时匹配型号、指定容量、合理价格与 HTTPS 链接的商品。"
-    if omitted_count:
-        message += " 本次最多处理 " + str(len(requested_ids)) + " 款；另有 " + str(omitted_count) + " 款需要下一批请求。"
-    return {"asOf":now_iso(),"provider":"hainan_discount_v2","status":status,"message":message,"requestedIds":requested_ids,"remainingIds":ids[len(requested_ids):],"items":output}
+    if omitted_ids:
+        message += " 本次最多处理 " + str(len(requested_ids)) + " 款；另有 " + str(len(omitted_ids)) + " 款需要下一批请求。"
+    return {"asOf":now_iso(),"provider":"hainan_discount_v2","status":status,"message":message,"requestedIds":requested_ids,"remainingIds":valid_ids[len(requested_ids):],"items":output,"statuses":statuses,"counts":counts}
+
+
+def _client_rate_ok(client_ip: str) -> tuple[bool, int]:
+    """Light per-IP limiter so the browser cannot flood the paid upstream by accident."""
+    now = time.monotonic()
+    with _CLIENT_HITS_LOCK:
+        hits = [t for t in _CLIENT_HITS.get(client_ip, []) if now - t < 60]
+        if len(hits) >= CLIENT_RATE_LIMIT_PER_MINUTE:
+            retry_after = max(1, int(60 - (now - hits[0])) + 1)
+            _CLIENT_HITS[client_ip] = hits
+            return False, retry_after
+        hits.append(now)
+        _CLIENT_HITS[client_ip] = hits
+        if len(_CLIENT_HITS) > 500:
+            for key in [k for k, v in _CLIENT_HITS.items() if not v or now - v[-1] > 600]:
+                _CLIENT_HITS.pop(key, None)
+        return True, 0
 
 
 class PhoneCompareHandler(SimpleHTTPRequestHandler):
@@ -401,11 +548,13 @@ class PhoneCompareHandler(SimpleHTTPRequestHandler):
         # Log paths/status only; never print query signatures or credential-bearing URLs.
         print(f"[{self.log_date_time_string()}] {self.client_address[0]} {fmt % args}")
 
-    def send_json(self, status: int, payload: dict[str, Any]) -> None:
+    def send_json(self, status: int, payload: dict[str, Any], extra_headers: dict[str, str] | None = None) -> None:
         body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
         self.send_response(status)
         self.send_header("Content-Type", "application/json; charset=utf-8")
         self.send_header("Cache-Control", "no-store")
+        for key, value in (extra_headers or {}).items():
+            self.send_header(key, value)
         origin = self.headers.get("Origin", "")
         if PHONE_CORS_ORIGIN and origin == PHONE_CORS_ORIGIN:
             self.send_header("Access-Control-Allow-Origin", PHONE_CORS_ORIGIN)
@@ -438,14 +587,40 @@ class PhoneCompareHandler(SimpleHTTPRequestHandler):
                 "status": "ok",
                 "provider": "hainan_discount_v2",
                 "credentialsConfigured": bool(os.getenv("HAINAN_API_KEY", "").strip() and not os.getenv("HAINAN_API_KEY", "").strip().casefold().startswith(("replace_", "your_", "填入"))),
+                "requestTimeoutSeconds": HTTP_TIMEOUT_SECONDS,
+                "maxQueriesPerResponse": MAX_QUERIES_PER_RESPONSE,
+                "minRequestIntervalSeconds": MIN_REQUEST_INTERVAL_SECONDS,
+                "clientRateLimitPerMinute": CLIENT_RATE_LIMIT_PER_MINUTE,
+                "lastUpstream": dict(_LAST_UPSTREAM),
                 "message": "服务器已运行；该状态不代表报价 API 授权已通过。"
             })
             return
         if parsed.path == "/api/prices":
+            allowed, retry_after = _client_rate_ok(self.client_address[0])
+            if not allowed:
+                self.send_json(429, {
+                    "status": "rate_limited",
+                    "provider": "hainan_discount_v2",
+                    "message": "请求过于频繁，请 " + str(retry_after) + " 秒后再试。",
+                    "retryAfterSeconds": retry_after,
+                    "items": [],
+                    "statuses": {},
+                }, {"Retry-After": str(retry_after)})
+                return
             qs = parse_qs(parsed.query)
             requested = qs.get("ids", [""])[0]
-            ids = [part.strip() for part in requested.split(",") if part.strip()]
-            result = query_prices(ids)
+            ids = [part.strip() for part in requested.split(",") if part.strip()][:100]
+            try:
+                result = query_prices(ids)
+            except Exception:
+                self.send_json(500, {
+                    "status": "internal_error",
+                    "provider": "hainan_discount_v2",
+                    "message": "后端处理报价请求时发生内部错误；未返回任何价格。",
+                    "items": [],
+                    "statuses": {},
+                })
+                return
             self.send_json(200, result)
             return
         if parsed.path.startswith("/api/"):

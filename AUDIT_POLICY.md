@@ -35,7 +35,7 @@
 - 必需字段为屏幕、处理器、影像、电池、充电、重量、容量组合、正式发布/开售日期、官方首发起售价。每个字段都必须具备已核验状态、HTTPS 来源、非空证据文字和非占位值。
 - 历史说明中提及的 `sync_audit_fields.py`、`verify_eligibility.py` 与 `tests_browser.py` 在本轮仓库检查中未确认存在于当前文件树，因此本轮不将这些脚本或浏览器 E2E 结果视为已重新执行。
 - 最近一次可复核的验证是 `reports/catalog_sync_validation_2026-10-18.json` 与 `reports/release_gate_static_check_2026-10-18.json` 中的远程静态一致性检查，各记录 10/10 通过；范围仅包括 JSON/HTML/报告静态内容，不包括 Chromium 浏览器交互测试、生产站点实测或所有参数的独立事实核验。
-- 当前有 102 款目录记录，61 款有九字段审计行；荣耀 Magic9 超能版与 vivo X500 Pro Max 均仍待整机终审，后者首发价与 SKU 映射已核实，但九字段整体准入未全部通过。没有机型满足整机准入条件，正式排名与推荐继续关闭。
+- 当前有 155 款目录记录，其中 61 款有九字段审计行；2026-10-19 补录的 54 款中高端机型尚未建立 `fieldAudit`，一律为 `auditStatus=needs_parameter_price_audit`、`eligibleForRanking=false`。荣耀 Magic9 超能版与 vivo X500 Pro Max 均仍待整机终审，后者首发价与 SKU 映射已核实，但九字段整体准入未全部通过。没有机型满足整机准入条件，正式排名与推荐继续关闭。
 
 ## 日期与容量口径
 - `launchMonth` 记录上市月份；`launchDateDisplay` 可记录具体开售日期，也可明确标注“官方仅核实到月份”。不得将发布会日期、海外上市日期和中国大陆开售日期混为一谈。

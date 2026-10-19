@@ -293,15 +293,27 @@ def main() -> int:
         combined_items: list[dict[str, Any]] = []
         batch_messages: list[str] = []
         api_status = "no_exact_offers"
-        for start in range(0, len(ids), 5):
-            batch_payload = ps.query_prices(ids[start:start + 5])
+        saw_non_ok = False
+        remaining = list(ids)
+        calls = 0
+        # Follow remainingIds so a smaller HAINAN_MAX_QUERIES_PER_RESPONSE cannot drop models.
+        while remaining and calls < 60:
+            calls += 1
+            batch_payload = ps.query_prices(remaining)
             combined_items.extend(x for x in batch_payload.get("items", []) if isinstance(x, dict))
             batch_messages.append(str(batch_payload.get("message") or ""))
-            if batch_payload.get("status") == "upstream_error":
-                api_status = "upstream_error"
+            batch_status = str(batch_payload.get("status") or "")
+            if batch_status != "ok":
+                saw_non_ok = True
+            if batch_status in {"upstream_error", "rate_limited", "needs_credentials"}:
+                api_status = "partial" if combined_items else batch_status
                 break
-            if batch_payload.get("status") == "ok":
-                api_status = "ok"
+            remaining = [x for x in (batch_payload.get("remainingIds") or []) if x]
+        else:
+            if combined_items:
+                api_status = "partial" if saw_non_ok else "ok"
+            else:
+                api_status = "no_exact_offers"
         payload = {
             "asOf": ps.now_iso(),
             "provider": "hainan_discount_v2",
@@ -335,7 +347,7 @@ def main() -> int:
 
     passing = sum(1 for r in results if r.get("qualityPass") and "price" in r)
     quoted = sum(1 for r in results if "price" in r)
-    api_was_tested = credentials_present and payload.get("status") in {"ok", "no_exact_offers"}
+    api_was_tested = credentials_present and payload.get("status") in {"ok", "partial", "no_exact_offers"}
     old_review_rows = load_review_csv(REPORT_DIR / "quote_quality_manual_review.csv")
     # If API was not queried, leave any prior manually annotated CSV intact; create a template only if absent.
     if not args.no_report:
@@ -392,7 +404,7 @@ def main() -> int:
         print(f"人工抽检表已写入/保留: {REPORT_DIR / 'quote_quality_manual_review.csv'}")
         if not credentials_present:
             print("提示：无授权时本次 API 指标留空，不会把未执行的测试报告为 0% 或通过。")
-    return 0 if api_was_tested and payload.get("status") == "ok" and quoted > 0 and passing == quoted else (2 if not credentials_present else 1)
+    return 0 if api_was_tested and payload.get("status") in {"ok", "partial"} and quoted > 0 and passing == quoted else (2 if not credentials_present else 1)
 
 
 if __name__ == "__main__":

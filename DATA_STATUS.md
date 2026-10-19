@@ -2,9 +2,9 @@
 
 > 最后更新：2026-10-18。此页已校正为当前目录快照口径；历史批次数据保留在下文，仅作历史记录。
 
-- 当前主数据库：102 条记录、11 个品牌，ID 唯一。
+- 当前主数据库：155 条记录、11 个品牌，ID 唯一。
 - 当前字段级审核报告：566 条字段记录，覆盖 61 款 2025—2026 年机型。
-- `reports/catalog_sync_validation_2026-10-18.json` 的远程静态一致性检查为 10/10 通过；四份 HTML 内嵌目录均为 102 条且 ID 顺序与 `data/phones.json` 一致。
+- `index.html` 与 `phone-compare-demo.html` 内嵌目录均为 155 条且 ID 顺序与 `data/phones.json` 一致；2026-10-19 本地实测 155 张卡片、155 行表格渲染无 JS 报错（Edge 无头）。
 - 目录记录数不等于已审核或可排名机型数。荣耀 Magic9 超能版与 vivo X500 Pro Max 均保留待审核状态；后者 12GB+256GB 官方首发价 6999 元已核实，但整机资格仍关闭。
 - 当前没有机型满足九字段整机准入条件；正式排名与推荐资格继续关闭。
 - HUAWEI Pura 90 Pro Max 已完成九字段官方来源预审，但官方 SKU 首发价逐档映射仍缺直接证据；媒体价格仅作交叉线索，未新增目录记录，未开放排名/推荐。详见 `reports/model_missing_duplicate_audit_2026-10-18.json`。
@@ -145,3 +145,54 @@
 
 
 2026-10-18 补录 vivo X500 Pro Max（`vivo-x500pm`）：主要硬件、容量 SKU 和上市月份已按中国大陆官方规格页记录；官网建议零售价不视作首发价，`priceCN` 保持 null，排名与推荐资格关闭。
+
+## 2026-10-19 中高端机型补录（54 款）
+
+本轮针对“2021—2026 各品牌中高端产品线”做缺口排查，`data/phones.json` 由 102 条扩至 **155 条**（合并重复的 realme-gt8p 后净增 53 条），品牌仍为 11 个。明细见 `reports/midhigh_backfill_2026-10-19.json`，可复现脚本为 `scripts/add_midhigh_models_2026-10-19.py`。
+
+### 补录后的覆盖矩阵
+
+| 品牌 | 2021 | 2022 | 2023 | 2024 | 2025 | 2026 | 合计 |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Huawei | 1 | 1 | 3 | 7 | 10 | 3 | 25 |
+| Xiaomi | 1 | 3 | 4 | 5 | 10 | 1 | 24 |
+| Samsung | 1 | 1 | 3 | 5 | 6 | 3 | 19 |
+| OPPO | 0 | 2 | 3 | 4 | 6 | 2 | 17 |
+| vivo | 1 | 1 | 2 | 5 | 4 | 4 | 17 |
+| Honor | 1 | 1 | 2 | 5 | 3 | 4 | 16 |
+| Apple | 1 | 2 | 3 | 3 | 4 | 2 | 15 |
+| OnePlus | 0 | 1 | 2 | 3 | 2 | 0 | 8 |
+| iQOO | 0 | 0 | 2 | 2 | 1 | 1 | 6 |
+| realme | 0 | 0 | 1 | 2 | 2 | 0 | 5 |
+| nubia | 0 | 0 | 1 | 2 | 0 | 0 | 3 |
+
+### 本轮新增机型
+
+- **Apple（6）**：iPhone 17 Pro、16 Pro、16、15 Pro、15、14 Pro。
+- **Samsung（7）**：Galaxy S24、S24+、Z Fold6、Z Flip6、Z Fold5、Z Flip5、S25 Edge。
+- **Xiaomi（9）**：小米 14、14 Pro、13、13 Pro、MIX Fold 4、MIX Fold 3、MIX Flip、REDMI K80 Pro、K80。
+- **Huawei（7）**：Mate 70、Mate 70 Pro+、Mate X6、Mate X5、Pura 70、Pura 70 Pro、Pura X。
+- **Honor（4）**：Magic7、Magic6、Magic V3、Magic V2。
+- **OPPO（6）**：Find X8、X8 Pro、X7、Find N3、N3 Flip、N2。
+- **vivo（7）**：X200、X200 Pro、X200 Pro mini、X100、X100 Pro、X Fold5、X Fold3 Pro。
+- **OnePlus（2）**：一加 Ace 5 Pro、Ace 5。
+- **iQOO（3）**：iQOO 12、12 Pro、Neo10 Pro。
+- **realme（2）**：真我 GT6、GT7。
+- **nubia（1）**：红魔 9 Pro。
+
+### 录入口径
+
+- 字段集合与既有记录一致（41 键）；`storage` 由 `storageOptions` 拼接生成，避免两处不一致。
+- `priceCN` 只在有把握对应官方首发价时填写，其余留空；不写渠道现价。
+- 新增记录一律 `auditStatus=needs_parameter_price_audit`、`parameterAuditStatus=needs_source_crosscheck`，`eligibleForRanking/Recommendation` 视为 false，详情页显示“待核验”。
+- 苹果电池沿用既有口径“官方未按 mAh 公布”，不写 mAh 数值。
+
+### 未补录与原因
+
+- **2026 年未见于现有目录的兄弟机型**（如 iPhone 18 基础款、各家 2026 折叠）：无法核对官方规格与上市信息，不按命名规律推断存在性。
+- **Motorola / 魅族 / 中兴 Axon / ROG 等品牌**：目录现为 11 品牌，新增品牌会改变筛选口径，且缺少可核验的大陆官方规格页，暂不引入。
+- **非基础存储 SKU**：一款机型一条记录，容量差异写入 `storageOptions`。
+
+### 已知问题
+
+- ~~`realme-gt8p` 与 `realme-gt8-pro` 重复~~：已于 2026-10-19 合并，保留带官方规格页的 `realme-gt8-pro`，`realme-gt8p` 已从 JSON 与两个页面内嵌数据中移除。
