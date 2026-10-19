@@ -28,7 +28,11 @@ CONFIG_FILE = ROOT / "data" / "price-config.json"
 
 
 def load_env_file() -> None:
-    """Load simple KEY=value lines from a project-local .env without overriding real env vars."""
+    """Load simple KEY=value lines from a project-local .env without overriding real env vars.
+
+    An explicitly empty env var (``HAINAN_API_KEY=""``) is treated as "not set" so that a
+    host or launcher that predefines blank variables cannot silently shadow the .env file.
+    """
     env_file = ROOT / ".env"
     if not env_file.is_file():
         return
@@ -38,7 +42,7 @@ def load_env_file() -> None:
             continue
         key, value = line.split("=", 1)
         key, value = key.strip(), value.strip().strip("\"'")
-        if key and value and key not in os.environ:
+        if key and value and not os.environ.get(key, "").strip():
             os.environ[key] = value
 
 

@@ -472,6 +472,9 @@ function setQuoteRunning(running){
 }
 function setQuoteProgress(text){setText('quoteProgress',text);}
 function apiBaseUrl(){return String(window.PHONE_API_BASE_URL||'').replace(/\/+$/,'');}
+/* 后端是否可用：显式配置了域名，或本机同源运行（python price_server.py 托管本页）。
+   纯静态托管（GitHub Pages）且未配置域名时不发请求，避免每次打开都 404。 */
+function apiConfigured(){const b=apiBaseUrl();if(b)return true;const h=String(location.hostname||'');return h==='127.0.0.1'||h==='localhost'||h==='[::1]'||location.protocol==='file:';}
 async function fetchJson(url,timeoutMs){
  const controller=typeof AbortController!=='undefined'?new AbortController():null;
  const timer=setTimeout(()=>{if(controller)controller.abort();},timeoutMs);
@@ -574,13 +577,28 @@ async function queryQuotes(ids,opts){
  return {ok,none,fail,total,done,stopped:stopReason};
 }
 async function initQuoteApi(){
+ if(!apiConfigured()){
+  setApiStatus('报价 API 状态：未接入','未配置后端地址，当前只显示官方首发价与第三方参考价；渠道报价需部署 price_server.py 后在 api-config.js 填入域名。','is-warn');
+  return;
+ }
  let health=null;
- try{
-  const r=await fetchJson(apiBaseUrl()+'/api/health',8000);
-  if(!r.res.ok)throw new Error('HTTP '+r.res.status);
-  health=r.data||{};
- }catch(err){
-  setApiStatus('报价 API 状态：后端未连接',String((err&&err.message)||'请先运行 price_server.py')+'；页面仍可浏览官方首发价。','is-error');
+ let lastErr=null;
+ /* Render 免费实例空闲后会休眠，首次请求可能要等 30-60 秒冷启动，因此给两次机会。 */
+ for(let attempt=0;attempt<2;attempt++){
+  try{
+   const r=await fetchJson(apiBaseUrl()+'/api/health',25000);
+   if(!r.res.ok)throw new Error('HTTP '+r.res.status);
+   health=r.data||{};
+   lastErr=null;
+   break;
+  }catch(err){
+   lastErr=err;
+   if(attempt===0)await new Promise(resolve=>setTimeout(resolve,2500));
+  }
+ }
+ if(!health){
+  const reason=String((lastErr&&lastErr.message)||'无法连接后端');
+  setApiStatus('报价 API 状态：后端未连接',reason+'；页面仍可浏览官方首发价。','is-error');
   return;
  }
  if(!health.credentialsConfigured){
