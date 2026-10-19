@@ -16846,5 +16846,83 @@
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
       }
     ]
+  },
+  {
+    "id": "apple-z21052104329",
+    "brand": "Apple",
+    "name": "iPhone 16 Plus",
+    "year": 2024,
+    "type": "全能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.7 英寸",
+    "chip": "苹果 A18",
+    "camera": "第三方参数页未逐项整理镜头组合，待核验",
+    "battery": "待核验",
+    "charging": "待核验",
+    "weight": "199g",
+    "storage": "128GB>",
+    "os": "以官方页面为准",
+    "priceCN": null,
+    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "selling": "第三方参数页补录",
+    "bestFor": [
+      "日常全能"
+    ],
+    "source": "https://detail.zol.com.cn/2105/2104329/param.shtml",
+    "sourceName": "中关村在线参数页（第三方）",
+    "verified": false,
+    "launchMonth": "2024-09",
+    "launchDateDisplay": "2024年9月",
+    "priceType": "unknown",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [],
+    "chinaOfficial": true,
+    "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
+    "announcementSource": null,
+    "priceSource": null,
+    "priceSourceName": "暂无可靠的首发价来源",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": null,
+    "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "由中关村在线参数页补录，第三方来源",
+      "参数与首发价未经厂商官方页核对",
+      "整机准入保持关闭"
+    ],
+    "priceAuditStatus": "missing",
+    "parameterAuditStatus": "partial_secondary_source",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.7 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2105/2104329/param.shtml",
+        "evidenceText": "第三方参数页列出：6.7 英寸。",
+        "valueAtAudit": "6.7 英寸",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "苹果 A18",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2105/2104329/param.shtml",
+        "evidenceText": "第三方参数页列出：苹果 A18。",
+        "valueAtAudit": "苹果 A18",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "199g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2105/2104329/param.shtml",
+        "evidenceText": "第三方参数页列出：199g。",
+        "valueAtAudit": "199g",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   }
 ]
