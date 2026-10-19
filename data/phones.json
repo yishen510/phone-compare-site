@@ -12450,5 +12450,117 @@
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
       }
     ]
+  },
+  {
+    "id": "apple-13-pro",
+    "brand": "Apple",
+    "name": "iPhone 13 Pro",
+    "year": 2021,
+    "type": "全能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.1 英寸 OLED",
+    "chip": "A15 仿生",
+    "camera": "1200 万像素三摄系统（含 3× 长焦）",
+    "battery": "官方未按 mAh 公布；视频播放最长 22 小时",
+    "charging": "USB-C / Lightning 有线充电 + MagSafe 无线充电",
+    "weight": "203 克",
+    "storage": "128GB / 256GB / 512GB / 1TB",
+    "os": "iOS 15",
+    "priceCN": null,
+    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "selling": "ProMotion 高刷与三摄",
+    "bestFor": [
+      "拍照视频",
+      "日常全能",
+      "苹果生态"
+    ],
+    "source": "https://support.apple.com/zh-cn/111871",
+    "sourceName": "厂商官方站点；字段核验状态见 auditStatus",
+    "verified": false,
+    "launchMonth": "2021-09",
+    "launchDateDisplay": "2021年09月",
+    "priceType": "unknown",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "128GB",
+      "256GB",
+      "512GB",
+      "1TB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
+    "announcementSource": "https://support.apple.com/zh-cn/111871",
+    "priceSource": null,
+    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "128GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "机型身份与发布月份按厂商公开信息录入",
+      "主要参数已按厂商官方规格页核对（2026-10-20）",
+      "影像细节与首发价未核验，整机准入保持关闭"
+    ],
+    "priceAuditStatus": "missing",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.1 英寸 OLED",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111871",
+        "evidenceText": "规格页列出 6.1 英寸 OLED 与 ProMotion。",
+        "valueAtAudit": "6.1 英寸 OLED",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "A15 仿生",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111871",
+        "evidenceText": "规格页列出 A15 仿生芯片。",
+        "valueAtAudit": "A15 仿生",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "1200 万像素三摄系统（含 3× 长焦）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111871",
+        "evidenceText": "规格页列出三颗 1200 万像素后置镜头。",
+        "valueAtAudit": "1200 万像素三摄系统（含 3× 长焦）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "官方未按 mAh 公布；视频播放最长 22 小时",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111871",
+        "evidenceText": "规格页写明视频播放最长 22 小时，未公布 mAh。",
+        "valueAtAudit": "官方未按 mAh 公布；视频播放最长 22 小时",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "203 克",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111871",
+        "evidenceText": "规格页列出重量 203 克。",
+        "valueAtAudit": "203 克",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "128GB / 256GB / 512GB / 1TB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111871",
+        "evidenceText": "规格页列出 128GB/256GB/512GB/1TB。",
+        "valueAtAudit": "128GB / 256GB / 512GB / 1TB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   }
 ]
