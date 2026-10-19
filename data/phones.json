@@ -10636,11 +10636,11 @@
     "year": 2023,
     "type": "游戏性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.8 英寸 OLED · 120Hz（屏下前摄）",
-    "chip": "骁龙 8 Gen 3",
+    "display": "6.8 英寸，2480×1116，120Hz",
+    "chip": "高通 骁龙 8 Gen 3",
     "camera": "5000 万主摄 + 5000 万超广角 + 200 万微距",
     "battery": "6500 mAh",
-    "charging": "80W 有线",
+    "charging": "80W 有线（支持充电分离）",
     "weight": "229 g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "RedMagic OS 9.0",
@@ -10667,7 +10667,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.nubia.com/",
     "priceSource": "https://www.nubia.com/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -10678,10 +10678,57 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.8 英寸，2480×1116，120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1949/1948879/param.shtml",
+        "evidenceText": "第三方参数页列出：6.8 英寸，2480×1116，120Hz。",
+        "valueAtAudit": "6.8 英寸，2480×1116，120Hz",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通 骁龙 8 Gen 3",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1949/1948879/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙 8 Gen 3。",
+        "valueAtAudit": "高通 骁龙 8 Gen 3",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "6500 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1949/1948879/param.shtml",
+        "evidenceText": "第三方参数页列出：6500 mAh。",
+        "valueAtAudit": "6500 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线（支持充电分离）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1949/1948879/param.shtml",
+        "evidenceText": "第三方参数页列出：80W 有线（支持充电分离）。",
+        "valueAtAudit": "80W 有线（支持充电分离）",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "229 g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1949/1948879/param.shtml",
+        "evidenceText": "第三方参数页列出：229 g。",
+        "valueAtAudit": "229 g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   }
 ]
