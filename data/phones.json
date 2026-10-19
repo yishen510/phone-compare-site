@@ -7287,7 +7287,7 @@
     "storage": "8GB+256GB / 8GB+512GB",
     "os": "Android / One UI 5.1",
     "priceCN": 8499,
-    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "外屏扩至 3.4 英寸的竖向小折叠",
     "bestFor": [
       "小屏手感",
@@ -7299,7 +7299,7 @@
     "verified": false,
     "launchMonth": "2023-07",
     "launchDateDisplay": "2023年07月",
-    "priceType": "third_party_reference",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -7310,8 +7310,8 @@
     "chinaOfficial": true,
     "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
-    "priceSource": "",
-    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
+    "priceSource": "https://www.toutiao.com/article/7263075118048608783/",
+    "priceSourceName": "2023-08-03 国行发布报道（8GB+512GB 8499 元）；用户在中关村在线看到的参考价同为 8499 元",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -7321,9 +7321,9 @@
       "机型身份与发布月份按厂商公开信息录入",
       "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
       "其余字段与整机准入仍未通过，排名与推荐保持关闭",
-      "2026-10-20 按用户填写表补入：8499元 / 256GB（与官方 512GB 价位重合，待确认）"
+      "2026-10-20 按用户填写表补入：8499元 / 8GB+512GB（用户确认 512GB，与官方首发价一致）"
     ],
-    "priceAuditStatus": "secondary_source_reference",
+    "priceAuditStatus": "cross_checked_secondary",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -7373,11 +7373,11 @@
       },
       {
         "field": "官方首发起售价",
-        "value": "8499元（用户填 256GB，官方对应 512GB）",
-        "status": "unverified_missing_or_insufficient_official_evidence",
-        "sourceUrl": "",
-        "evidenceText": "用户在填写表中填参考价 8499 元、容量 256GB。2023-08-03 国行首发价为 8GB+256GB 7499 元、8GB+512GB 8499 元——8499 元对应的是 512GB。两者必有一项标注有误，待用户确认或补中关村参数页链接。",
-        "note": "容量与价格不匹配，未升级为官方首发价；先按用户原值记录并标注。"
+        "value": "8499元（8GB+512GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.toutiao.com/article/7263075118048608783/",
+        "evidenceText": "2023-08-03 国行发布：Galaxy Z Flip5 8GB+256GB 7499 元、8GB+512GB 8499 元。用户在中关村在线看到 8499 元，经确认为 512GB 版本，与官方首发价一致。",
+        "note": "容量已按用户确认修正为 512GB；价格与官方首发价吻合。"
       }
     ]
   },

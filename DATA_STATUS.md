@@ -250,9 +250,9 @@
 
 - 用户填写《待补价格机型填写表》后，最后 15 款 2021—2023 年机型补入价格，**目录 213 条全部有价**。
 - 记账口径：用户只提供参考价与容量、未附中关村参数页链接，统一记 `priceType=third_party_reference`、`priceAuditStatus=secondary_source_reference`、`priceSource=""`，字段证据状态 `unverified_missing_or_insufficient_official_evidence`（详情页显示「待核验」）。不冒充官方首发价。
-- 当前分布：`official_launch_msrp` 145、`third_party_reference` 61、`official_starting_price` 6、`official_retail_msrp` 1。
+- 当前分布：`official_launch_msrp` 147、`third_party_reference` 59、`official_starting_price` 6、`official_retail_msrp` 1。
 - **三星两条已核对**：
   - Galaxy Z Fold5（512GB / 12999 元）**正确**。国行 2023-08-03 发布时大陆只有 12GB+512GB（12999 元）与 12GB+1TB（14999 元），无 256GB 版本。该条已升级为 `official_launch_msrp`。
-  - Galaxy Z Flip5（256GB / 8499 元）**待确认**。国行首发 8GB+256GB 为 7499 元、8GB+512GB 为 8499 元，8499 元对应 512GB，价格与容量必有一项标注有误。
+  - Galaxy Z Flip5（**512GB** / 8499 元）**已确认**。用户确认看到的是 512GB 版本；国行首发 8GB+256GB 为 7499 元、8GB+512GB 为 8499 元，与官方首发价吻合，已升级为 `official_launch_msrp`。
 - ⚠ 修正记录：本文件与 `reports/missing_price_models.md` 初稿曾写「官方 12999 元对应 256GB、512GB 为 13999 元」，经中关村在线与三星中国商城页核对后证伪，已改正。教训：不要凭对海外版本 SKU 的印象推断国行版本序列。
 - 后续若要升级这 15 条的来源等级，只需补中关村 `param.shtml` 地址，脚本 `scripts/apply_filled_prices_2026-10-20.py` 可按同一口径改写。

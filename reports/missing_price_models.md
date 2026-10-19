@@ -18,7 +18,7 @@
 | iPhone 14 Plus | 6999 | 128GB |
 | iPhone 15 Plus | 6999 | 128GB |
 | Galaxy Z Fold5 | 12999 | 512GB（已核为官方首发价） |
-| Galaxy Z Flip5 | 8499 | 256GB ⚠（与官方 512GB 价位重合） |
+| Galaxy Z Flip5 | 8499 | 512GB（用户确认，已核为官方首发价） |
 | REDMI K70 | 2499 | 256GB |
 | REDMI K70 Pro | 3299 | 256GB |
 | REDMI K60 Pro | 3299 | 128GB |
@@ -33,9 +33,9 @@
   12GB+512GB（12999 元）与 12GB+1TB（14999 元）两个版本，没有 256GB 版本。
   已据此把该条从「第三方参考价」升级为 `official_launch_msrp`，来源为三星中国商城页
   与国行发布报道。
-- **Galaxy Z Flip5 8499 元 / 256GB —— 待确认。** 国行首发 8GB+256GB 为 7499 元、
-  8GB+512GB 为 8499 元，8499 元对应的是 512GB。价格与容量必有一项标注有误，
-  暂按用户原值记录并标「待核验」。
+- **Galaxy Z Flip5 8499 元 / 512GB —— 已确认。** 国行首发 8GB+256GB 为 7499 元、
+  8GB+512GB 为 8499 元；用户确认看到的是 512GB 版本，与官方首发价吻合。
+  已升级为 `official_launch_msrp`。
 
 ## 遗留
 
