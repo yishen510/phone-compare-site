@@ -1,0 +1,111 @@
+{
+  "batchedAt": "2026-10-19",
+  "batch": "apple-5",
+  "policy": "只记录 Apple 官方规格页直接列出的字段；上市日期与首发价不在规格页内，保持未核验。",
+  "models": [
+    {
+      "id": "apple-17p",
+      "name": "iPhone 17 Pro",
+      "sourceUrl": "https://support.apple.com/zh-cn/125090",
+      "verifiedFields": [
+        "屏幕",
+        "处理器",
+        "影像",
+        "电池",
+        "充电",
+        "重量",
+        "容量组合"
+      ],
+      "unverifiedFields": [
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    },
+    {
+      "id": "apple-16p",
+      "name": "iPhone 16 Pro",
+      "sourceUrl": "https://support.apple.com/zh-cn/121031",
+      "verifiedFields": [
+        "屏幕",
+        "处理器",
+        "影像",
+        "电池",
+        "充电",
+        "重量",
+        "容量组合"
+      ],
+      "unverifiedFields": [
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    },
+    {
+      "id": "apple-16",
+      "name": "iPhone 16",
+      "sourceUrl": "https://www.apple.com.cn/iphone-16/specs",
+      "verifiedFields": [
+        "屏幕",
+        "处理器",
+        "影像",
+        "电池",
+        "充电",
+        "重量",
+        "容量组合"
+      ],
+      "unverifiedFields": [
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    },
+    {
+      "id": "apple-15p",
+      "name": "iPhone 15 Pro",
+      "sourceUrl": "https://support.apple.com/zh-cn/111829",
+      "verifiedFields": [
+        "屏幕",
+        "处理器",
+        "影像",
+        "电池",
+        "充电",
+        "重量",
+        "容量组合"
+      ],
+      "unverifiedFields": [
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    },
+    {
+      "id": "apple-14p",
+      "name": "iPhone 14 Pro",
+      "sourceUrl": "https://support.apple.com/zh-cn/111849",
+      "verifiedFields": [
+        "屏幕",
+        "处理器",
+        "影像",
+        "电池",
+        "充电",
+        "重量",
+        "容量组合"
+      ],
+      "unverifiedFields": [
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    }
+  ],
+  "notes": [
+    "iPhone 15（标准版）支持页编号未确认，本轮未纳入，保持原状。",
+    "Apple 中国官网已下架 16 Pro / 15 Pro / 14 Pro 的在售页，改用 support.apple.com 官方技术规格页（长期保留）。"
+  ]
+}

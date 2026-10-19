@@ -5800,12 +5800,12 @@
     "year": 2025,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.3 英寸 LTPO OLED · 1–120Hz",
+    "display": "6.3 英寸 OLED · ProMotion 1–120Hz",
     "chip": "A19 Pro",
-    "camera": "4800 万像素主摄 + 4800 万像素超广角 + 4800 万像素 4× 长焦（以官方规格页为准）",
-    "battery": "官方未按 mAh 公布",
-    "charging": "USB-C 快充 / MagSafe 无线充电",
-    "weight": "约 206 g",
+    "camera": "4800 万融合式主摄 + 4800 万融合式超广角 + 4800 万融合式长焦（4×/8× 光学品质变焦）",
+    "battery": "官方未按 mAh 公布；视频播放最长 31 小时",
+    "charging": "USB-C 快充（40W 及以上适配器 20 分钟充至 50%）；MagSafe 最高 15W",
+    "weight": "204 g",
     "storage": "256GB / 512GB / 1TB",
     "os": "iOS 26",
     "priceCN": 8999,
@@ -5831,7 +5831,7 @@
       "1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "屏幕/处理器/影像/电池/充电/重量/容量组合已按 Apple 中国大陆官方规格页逐项核对；上市日期与首发价尚未取得官方直接证据。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.apple.com.cn/",
     "priceSource": "https://www.apple.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -5842,11 +5842,76 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕、处理器、影像、电池、充电、重量、容量组合已按 Apple 官方规格页逐项核对（2026-10-19）",
+      "上市日期与官方首发价不在规格页内，仍未核验，整机准入保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.3 英寸 OLED，2622×1206，ProMotion 最高 120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/125090",
+        "evidenceText": "规格页「显示屏」列出 6.3 英寸 OLED、2622×1206 分辨率与 ProMotion 最高 120Hz。",
+        "valueAtAudit": "6.3 英寸 OLED，2622×1206，ProMotion 最高 120Hz",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "A19 Pro",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/125090",
+        "evidenceText": "规格页「芯片」列出 A19 Pro，6 核 CPU / 6 核 GPU / 16 核神经网络引擎。",
+        "valueAtAudit": "A19 Pro",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "4800 万融合式主摄 + 4800 万融合式超广角 + 4800 万融合式长焦；4×/8× 光学品质变焦",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/125090",
+        "evidenceText": "规格页「摄像头」列出三颗 4800 万像素融合式镜头，并注明 8 倍光学品质变焦。",
+        "valueAtAudit": "4800 万融合式主摄 + 4800 万融合式超广角 + 4800 万融合式长焦；4×/8× 光学品质变焦",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "官方未按 mAh 公布；视频播放最长 31 小时",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/125090",
+        "evidenceText": "规格页「电源和电池」写明视频播放最长可达 31 小时，未公布 mAh。",
+        "valueAtAudit": "官方未按 mAh 公布；视频播放最长 31 小时",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "USB-C 快充（40W 及以上适配器 20 分钟充至 50%）；MagSafe 最高 15W",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/125090",
+        "evidenceText": "规格页写明需 40W 或更大功率适配器、20 分钟充至 50%，MagSafe 最高 15 瓦。",
+        "valueAtAudit": "USB-C 快充（40W 及以上适配器 20 分钟充至 50%）；MagSafe 最高 15W",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "204 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/125090",
+        "evidenceText": "规格页「尺寸与重量」列出重量 204 克。",
+        "valueAtAudit": "204 g",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "256GB / 512GB / 1TB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/125090",
+        "evidenceText": "规格页「容量」列出 256GB、512GB、1TB。",
+        "valueAtAudit": "256GB / 512GB / 1TB",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "apple-16p",
@@ -5855,11 +5920,11 @@
     "year": 2024,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.3 英寸 LTPO OLED · 1–120Hz",
+    "display": "6.3 英寸 OLED · ProMotion 1–120Hz",
     "chip": "A18 Pro",
-    "camera": "4800 万像素主摄 + 4800 万像素超广角 + 1200 万像素 5× 长焦",
-    "battery": "官方未按 mAh 公布",
-    "charging": "USB-C 快充 / MagSafe 无线充电",
+    "camera": "4800 万融合式主摄 + 4800 万超广角 + 1200 万 5× 长焦",
+    "battery": "官方未按 mAh 公布；视频播放最长 27 小时",
+    "charging": "USB-C 快充（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
     "weight": "199 g",
     "storage": "128GB / 256GB / 512GB / 1TB",
     "os": "iOS 18",
@@ -5887,7 +5952,7 @@
       "1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "屏幕/处理器/影像/电池/充电/重量/容量组合已按 Apple 中国大陆官方规格页逐项核对；上市日期与首发价尚未取得官方直接证据。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.apple.com.cn/",
     "priceSource": "https://www.apple.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -5898,11 +5963,76 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕、处理器、影像、电池、充电、重量、容量组合已按 Apple 官方规格页逐项核对（2026-10-19）",
+      "上市日期与官方首发价不在规格页内，仍未核验，整机准入保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.3 英寸 OLED，2622×1206，ProMotion 最高 120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/121031",
+        "evidenceText": "规格页「显示屏」列出 6.3 英寸 OLED、2622×1206 与 ProMotion 最高 120Hz。",
+        "valueAtAudit": "6.3 英寸 OLED，2622×1206，ProMotion 最高 120Hz",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "A18 Pro",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/121031",
+        "evidenceText": "规格页「芯片」列出 A18 Pro。",
+        "valueAtAudit": "A18 Pro",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "4800 万融合式主摄 + 4800 万超广角 + 1200 万 5× 长焦",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/121031",
+        "evidenceText": "规格页「摄像头」列出主摄 4800 万、超广角 4800 万、长焦 1200 万，5 倍光学变焦。",
+        "valueAtAudit": "4800 万融合式主摄 + 4800 万超广角 + 1200 万 5× 长焦",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "官方未按 mAh 公布；视频播放最长 27 小时",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/121031",
+        "evidenceText": "规格页「电源和电池」写明视频播放最长可达 27 小时，未公布 mAh。",
+        "valueAtAudit": "官方未按 mAh 公布；视频播放最长 27 小时",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "USB-C 快充（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/121031",
+        "evidenceText": "规格页写明需 20W 或更大功率适配器、30 分钟充至 50%，MagSafe 最高 15 瓦。",
+        "valueAtAudit": "USB-C 快充（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "199 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/121031",
+        "evidenceText": "规格页「尺寸与重量」列出重量 199 克。",
+        "valueAtAudit": "199 g",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "128GB / 256GB / 512GB / 1TB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/121031",
+        "evidenceText": "规格页「容量」列出 128GB、256GB、512GB、1TB。",
+        "valueAtAudit": "128GB / 256GB / 512GB / 1TB",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "apple-16",
@@ -5913,9 +6043,9 @@
     "market": "中国大陆正式销售",
     "display": "6.1 英寸 OLED · 60Hz",
     "chip": "A18",
-    "camera": "4800 万像素主摄 + 1200 万像素超广角",
-    "battery": "官方未按 mAh 公布",
-    "charging": "USB-C 快充 / MagSafe 无线充电",
+    "camera": "4800 万融合式主摄 + 1200 万超广角（支持 2× 光学品质变焦）",
+    "battery": "官方未按 mAh 公布；视频播放最长 22 小时",
+    "charging": "USB-C 快充（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
     "weight": "170 g",
     "storage": "128GB / 256GB / 512GB",
     "os": "iOS 18",
@@ -5942,7 +6072,7 @@
       "512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "屏幕/处理器/影像/电池/充电/重量/容量组合已按 Apple 中国大陆官方规格页逐项核对；上市日期与首发价尚未取得官方直接证据。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.apple.com.cn/",
     "priceSource": "https://www.apple.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -5953,11 +6083,76 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕、处理器、影像、电池、充电、重量、容量组合已按 Apple 官方规格页逐项核对（2026-10-19）",
+      "上市日期与官方首发价不在规格页内，仍未核验，整机准入保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.1 英寸 OLED，2556×1179，60Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.apple.com.cn/iphone-16/specs",
+        "evidenceText": "规格页「显示屏」列出 6.1 英寸 OLED、2556×1179 分辨率，未标注高刷新率。",
+        "valueAtAudit": "6.1 英寸 OLED，2556×1179，60Hz",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "A18",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.apple.com.cn/iphone-16/specs",
+        "evidenceText": "规格页「芯片」列出 A18 芯片（6 核 CPU / 5 核 GPU / 16 核神经网络引擎）。",
+        "valueAtAudit": "A18",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "4800 万融合式主摄 + 1200 万超广角；支持 2× 光学品质变焦",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.apple.com.cn/iphone-16/specs",
+        "evidenceText": "规格页「摄像头」列出 4800 万融合式主摄与 1200 万超广角，注明 2 倍光学品质变焦。",
+        "valueAtAudit": "4800 万融合式主摄 + 1200 万超广角；支持 2× 光学品质变焦",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "官方未按 mAh 公布；视频播放最长 22 小时",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.apple.com.cn/iphone-16/specs",
+        "evidenceText": "规格页「电源和电池」写明视频播放最长可达 22 小时，未公布 mAh。",
+        "valueAtAudit": "官方未按 mAh 公布；视频播放最长 22 小时",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "USB-C 快充（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.apple.com.cn/iphone-16/specs",
+        "evidenceText": "规格页写明需 20 瓦或更大功率适配器、30 分钟充至 50%，MagSafe 最高 15 瓦。",
+        "valueAtAudit": "USB-C 快充（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "170 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.apple.com.cn/iphone-16/specs",
+        "evidenceText": "规格页「尺寸与重量」列出重量 170 克。",
+        "valueAtAudit": "170 g",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "128GB / 256GB / 512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.apple.com.cn/iphone-16/specs",
+        "evidenceText": "规格页「容量」列出 128GB 起，中国大陆在售档位为 128/256/512GB。",
+        "valueAtAudit": "128GB / 256GB / 512GB",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "apple-15p",
@@ -5966,11 +6161,11 @@
     "year": 2023,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.1 英寸 LTPO OLED · 1–120Hz",
+    "display": "6.1 英寸 OLED · ProMotion 1–120Hz",
     "chip": "A17 Pro",
-    "camera": "4800 万像素主摄 + 1200 万像素超广角 + 1200 万像素 3× 长焦",
-    "battery": "官方未按 mAh 公布",
-    "charging": "USB-C 快充 / MagSafe 无线充电",
+    "camera": "4800 万主摄 + 1200 万超广角 + 1200 万 3× 长焦",
+    "battery": "官方未按 mAh 公布；视频播放最长 23 小时",
+    "charging": "USB-C 快充（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
     "weight": "187 g",
     "storage": "128GB / 256GB / 512GB / 1TB",
     "os": "iOS 17",
@@ -5998,7 +6193,7 @@
       "1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "屏幕/处理器/影像/电池/充电/重量/容量组合已按 Apple 中国大陆官方规格页逐项核对；上市日期与首发价尚未取得官方直接证据。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.apple.com.cn/",
     "priceSource": "https://www.apple.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -6009,11 +6204,76 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕、处理器、影像、电池、充电、重量、容量组合已按 Apple 官方规格页逐项核对（2026-10-19）",
+      "上市日期与官方首发价不在规格页内，仍未核验，整机准入保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.1 英寸 OLED，2556×1179，ProMotion 最高 120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111829",
+        "evidenceText": "规格页「显示屏」列出 6.1 英寸 OLED、2556×1179 与 ProMotion 最高 120Hz。",
+        "valueAtAudit": "6.1 英寸 OLED，2556×1179，ProMotion 最高 120Hz",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "A17 Pro",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111829",
+        "evidenceText": "规格页「芯片」列出 A17 Pro（6 核 CPU / 6 核 GPU / 16 核神经网络引擎）。",
+        "valueAtAudit": "A17 Pro",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "4800 万主摄 + 1200 万超广角 + 1200 万 3× 长焦",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111829",
+        "evidenceText": "规格页「摄像头」列出三颗镜头像素，3 倍光学变焦。",
+        "valueAtAudit": "4800 万主摄 + 1200 万超广角 + 1200 万 3× 长焦",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "官方未按 mAh 公布；视频播放最长 23 小时",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111829",
+        "evidenceText": "规格页「电源和电池」写明视频播放最长可达 23 小时，未公布 mAh。",
+        "valueAtAudit": "官方未按 mAh 公布；视频播放最长 23 小时",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "USB-C 快充（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111829",
+        "evidenceText": "规格页写明需 20 瓦或更大功率适配器、30 分钟充至 50%，MagSafe 最高 15 瓦。",
+        "valueAtAudit": "USB-C 快充（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "187 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111829",
+        "evidenceText": "规格页「尺寸与重量」列出重量 187 克。",
+        "valueAtAudit": "187 g",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "128GB / 256GB / 512GB / 1TB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111829",
+        "evidenceText": "规格页「容量」列出 128GB、256GB、512GB、1TB。",
+        "valueAtAudit": "128GB / 256GB / 512GB / 1TB",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "apple-15",
@@ -6077,11 +6337,11 @@
     "year": 2022,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.1 英寸 LTPO OLED · 1–120Hz",
+    "display": "6.1 英寸 OLED · ProMotion 1–120Hz",
     "chip": "A16",
-    "camera": "4800 万像素主摄 + 1200 万像素超广角 + 1200 万像素 3× 长焦",
-    "battery": "官方未按 mAh 公布",
-    "charging": "USB-C 快充 / MagSafe 无线充电",
+    "camera": "4800 万主摄 + 1200 万超广角 + 1200 万 3× 长焦",
+    "battery": "官方未按 mAh 公布；视频播放最长 23 小时",
+    "charging": "闪电接口有线充电（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
     "weight": "206 g",
     "storage": "128GB / 256GB / 512GB / 1TB",
     "os": "iOS 16",
@@ -6109,7 +6369,7 @@
       "1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "屏幕/处理器/影像/电池/充电/重量/容量组合已按 Apple 中国大陆官方规格页逐项核对；上市日期与首发价尚未取得官方直接证据。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.apple.com.cn/",
     "priceSource": "https://www.apple.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -6120,11 +6380,76 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕、处理器、影像、电池、充电、重量、容量组合已按 Apple 官方规格页逐项核对（2026-10-19）",
+      "上市日期与官方首发价不在规格页内，仍未核验，整机准入保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.1 英寸 OLED，2556×1179，ProMotion 最高 120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111849",
+        "evidenceText": "规格页「显示屏」列出 6.1 英寸 OLED、2556×1179 与 ProMotion 最高 120Hz。",
+        "valueAtAudit": "6.1 英寸 OLED，2556×1179，ProMotion 最高 120Hz",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "A16 仿生",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111849",
+        "evidenceText": "规格页「芯片」列出 A16 仿生芯片（6 核 CPU / 5 核 GPU / 16 核神经网络引擎）。",
+        "valueAtAudit": "A16 仿生",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "4800 万主摄 + 1200 万超广角 + 1200 万 3× 长焦",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111849",
+        "evidenceText": "规格页「摄像头」列出三颗镜头像素，3 倍光学变焦。",
+        "valueAtAudit": "4800 万主摄 + 1200 万超广角 + 1200 万 3× 长焦",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "官方未按 mAh 公布；视频播放最长 23 小时",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111849",
+        "evidenceText": "规格页「电源和电池」写明视频播放最长可达 23 小时，未公布 mAh。",
+        "valueAtAudit": "官方未按 mAh 公布；视频播放最长 23 小时",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "闪电接口有线充电（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111849",
+        "evidenceText": "规格页写明通过闪电接口有线充电、20 瓦适配器 30 分钟充至 50%，MagSafe 最高 15 瓦。",
+        "valueAtAudit": "闪电接口有线充电（20W 及以上适配器 30 分钟充至 50%）；MagSafe 最高 15W",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "206 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111849",
+        "evidenceText": "规格页「尺寸与重量」列出重量 206 克。",
+        "valueAtAudit": "206 g",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "128GB / 256GB / 512GB / 1TB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111849",
+        "evidenceText": "规格页「容量」列出 128GB、256GB、512GB、1TB。",
+        "valueAtAudit": "128GB / 256GB / 512GB / 1TB",
+        "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "sam-24",
