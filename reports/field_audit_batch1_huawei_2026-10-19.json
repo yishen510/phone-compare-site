@@ -1,0 +1,71 @@
+{
+  "batchedAt": "2026-10-19",
+  "batch": "huawei-mate70-x6",
+  "policy": "仅记录官方规格页直接列出的字段；处理器/上市日期/首发价不在规格页内，保持未核验。",
+  "models": [
+    {
+      "id": "hua-mate70",
+      "name": "HUAWEI Mate 70",
+      "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70/specs/",
+      "verifiedFields": [
+        "屏幕",
+        "影像",
+        "电池",
+        "充电",
+        "重量",
+        "容量组合"
+      ],
+      "unverifiedFields": [
+        "处理器",
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    },
+    {
+      "id": "hua-mate70pp",
+      "name": "HUAWEI Mate 70 Pro+",
+      "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70-pro-plus/specs/",
+      "verifiedFields": [
+        "屏幕",
+        "影像",
+        "电池",
+        "充电",
+        "重量",
+        "容量组合"
+      ],
+      "unverifiedFields": [
+        "处理器",
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    },
+    {
+      "id": "hua-matex6",
+      "name": "HUAWEI Mate X6",
+      "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x6/specs/",
+      "verifiedFields": [
+        "屏幕",
+        "影像",
+        "电池",
+        "充电",
+        "重量",
+        "容量组合"
+      ],
+      "unverifiedFields": [
+        "处理器",
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    }
+  ],
+  "notes": [
+    "HUAWEI Pura 70 / Pura 70 Pro 官方规格页已下线（跳转产品总览），本轮无法完成官方页核验。",
+    "HUAWEI Mate X5 页面本轮未取得可用规格内容，保持未核验。"
+  ]
+}

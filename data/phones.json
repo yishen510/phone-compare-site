@@ -7012,12 +7012,12 @@
     "year": 2024,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.7 英寸 OLED · 1–120Hz",
+    "display": "6.7 英寸 OLED · 1–120Hz LTPO 自适应刷新率",
     "chip": "麒麟 9020",
-    "camera": "红枫原色影像：5000 万主摄 + 4000 万超广角 + 1200 万潜望长焦",
+    "camera": "5000 万超光变主摄 + 4000 万超广角 + 1200 万潜望长焦 + 150 万多光谱红枫原色摄像头；5.5× 光学变焦",
     "battery": "5300 mAh",
     "charging": "66W 有线 / 50W 无线",
-    "weight": "203 g",
+    "weight": "约 203 g（含电池）",
     "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
     "os": "HarmonyOS 4.3",
     "priceCN": 5499,
@@ -7043,7 +7043,7 @@
       "12GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "屏幕/影像/电池/充电/重量/容量组合已按厂商中国大陆官方规格页逐项核对；处理器、上市日期与首发价尚未取得官方直接证据。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://consumer.huawei.com/cn/",
     "priceSource": "https://consumer.huawei.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -7054,11 +7054,67 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕、影像、电池、充电、重量、容量组合已按官方规格页逐项核对（2026-10-19）",
+      "处理器、上市日期与官方首发价不在规格页内，仍未核验，整机准入保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.7 英寸 OLED，1–120Hz LTPO 自适应刷新率，FHD+ 2688×1216",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70/specs/",
+        "evidenceText": "规格页「屏幕」列出尺寸 6.7 英寸、OLED 类型与 1-120 Hz LTPO 自适应刷新率及分辨率。",
+        "valueAtAudit": "6.7 英寸 OLED，1–120Hz LTPO 自适应刷新率，FHD+ 2688×1216",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万超光变主摄 + 4000 万超广角 + 1200 万潜望长焦 + 150 万多光谱红枫原色摄像头；5.5× 光学变焦",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70/specs/",
+        "evidenceText": "规格页「后置摄像头」逐项列出三颗镜头像素与 150 万多光谱通道红枫原色摄像头，并注明 5.5 倍光学变焦。",
+        "valueAtAudit": "5000 万超光变主摄 + 4000 万超广角 + 1200 万潜望长焦 + 150 万多光谱红枫原色摄像头；5.5× 光学变焦",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5300 mAh（典型值），额定 5200 mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70/specs/",
+        "evidenceText": "规格页「电池」写明 5300 mAh 典型值、额定容量 5200 mAh。",
+        "valueAtAudit": "5300 mAh（典型值），额定 5200 mAh",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "最大 66W 有线超级快充；50W 无线超级快充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70/specs/",
+        "evidenceText": "规格页「充电」写明最大 66W 有线、50W 无线，并支持无线反向充电。",
+        "valueAtAudit": "最大 66W 有线超级快充；50W 无线超级快充",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 203 g（含电池）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70/specs/",
+        "evidenceText": "规格页「尺寸与重量」列出重量约 203 g（含电池）。",
+        "valueAtAudit": "约 203 g（含电池）",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB / 12GB+1TB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70/specs/",
+        "evidenceText": "规格页「存储」列出 12GB RAM 与 256GB/512GB/1TB ROM 组合。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB / 12GB+1TB",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "hua-mate70pp",
@@ -7067,12 +7123,12 @@
     "year": 2024,
     "type": "顶级全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.9 英寸 OLED · 1–120Hz",
+    "display": "6.9 英寸 OLED · 1–120Hz LTPO 自适应刷新率",
     "chip": "麒麟 9020",
-    "camera": "5000 万主摄 + 4000 万超广角 + 4800 万潜望长焦",
+    "camera": "5000 万超聚光主摄 + 4000 万超广角 + 4800 万超聚光微距长焦 + 150 万多光谱红枫原色摄像头；4× 光学变焦",
     "battery": "5700 mAh",
     "charging": "100W 有线 / 80W 无线",
-    "weight": "226 g",
+    "weight": "约 226 g（含电池）",
     "storage": "16GB+512GB / 16GB+1TB",
     "os": "HarmonyOS 4.3",
     "priceCN": 8499,
@@ -7097,7 +7153,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "屏幕/影像/电池/充电/重量/容量组合已按厂商中国大陆官方规格页逐项核对；处理器、上市日期与首发价尚未取得官方直接证据。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://consumer.huawei.com/cn/",
     "priceSource": "https://consumer.huawei.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -7108,11 +7164,67 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕、影像、电池、充电、重量、容量组合已按官方规格页逐项核对（2026-10-19）",
+      "处理器、上市日期与官方首发价不在规格页内，仍未核验，整机准入保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.9 英寸 OLED，1–120Hz LTPO 自适应刷新率，FHD+ 2832×1316",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70-pro-plus/specs/",
+        "evidenceText": "规格页「屏幕」列出 6.9 英寸、OLED 类型、1-120 Hz LTPO 与分辨率 2832×1316。",
+        "valueAtAudit": "6.9 英寸 OLED，1–120Hz LTPO 自适应刷新率，FHD+ 2832×1316",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万超聚光主摄 + 4000 万超广角 + 4800 万超聚光微距长焦 + 150 万多光谱红枫原色摄像头；4× 光学变焦",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70-pro-plus/specs/",
+        "evidenceText": "规格页「后置摄像头」逐项列出三颗镜头像素、RYYB 传感器与 150 万多光谱通道红枫原色摄像头，注明 4 倍光学变焦。",
+        "valueAtAudit": "5000 万超聚光主摄 + 4000 万超广角 + 4800 万超聚光微距长焦 + 150 万多光谱红枫原色摄像头；4× 光学变焦",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5700 mAh（典型值），额定 5600 mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70-pro-plus/specs/",
+        "evidenceText": "规格页「电池」写明 5700 mAh 典型值、额定容量 5600 mAh。",
+        "valueAtAudit": "5700 mAh（典型值），额定 5600 mAh",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "最大 100W 有线超级快充；80W 无线超级快充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70-pro-plus/specs/",
+        "evidenceText": "规格页「充电」写明最大 100W 有线、80W 无线与 20W 无线反向充电。",
+        "valueAtAudit": "最大 100W 有线超级快充；80W 无线超级快充",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 226 g（含电池）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70-pro-plus/specs/",
+        "evidenceText": "规格页「尺寸与重量」列出重量约 226 g（含电池）。",
+        "valueAtAudit": "约 226 g（含电池）",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "16GB+512GB / 16GB+1TB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70-pro-plus/specs/",
+        "evidenceText": "规格页「存储」列出 16GB RAM 与 512GB/1TB ROM。",
+        "valueAtAudit": "16GB+512GB / 16GB+1TB",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "hua-matex6",
@@ -7121,12 +7233,12 @@
     "year": 2024,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "7.93 英寸内屏 + 6.45 英寸外屏 · 1–120Hz",
+    "display": "7.93 英寸内屏 + 6.45 英寸外屏 · 1–120Hz LTPO",
     "chip": "麒麟 9020",
-    "camera": "5000 万主摄 + 4000 万超广角 + 4800 万潜望长焦",
+    "camera": "5000 万超光变主摄 + 4000 万超广角 + 4800 万长焦微距 + 150 万多光谱红枫原色摄像头；4× 光学变焦",
     "battery": "5110 mAh",
     "charging": "66W 有线 / 50W 无线",
-    "weight": "239 g",
+    "weight": "约 239 g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "HarmonyOS 4.3",
     "priceCN": 12999,
@@ -7153,7 +7265,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "屏幕/影像/电池/充电/重量/容量组合已按厂商中国大陆官方规格页逐项核对；处理器、上市日期与首发价尚未取得官方直接证据。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://consumer.huawei.com/cn/",
     "priceSource": "https://consumer.huawei.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -7164,11 +7276,67 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕、影像、电池、充电、重量、容量组合已按官方规格页逐项核对（2026-10-19）",
+      "处理器、上市日期与官方首发价不在规格页内，仍未核验，整机准入保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "内屏 7.93 英寸可折叠柔性 OLED，外屏 6.45 英寸 3D 四曲 OLED，均支持 1–120Hz LTPO",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x6/specs/",
+        "evidenceText": "规格页「屏幕」分别列出内屏 7.93 英寸、外屏 6.45 英寸及两者的 1-120 Hz LTPO 自适应刷新率。",
+        "valueAtAudit": "内屏 7.93 英寸可折叠柔性 OLED，外屏 6.45 英寸 3D 四曲 OLED，均支持 1–120Hz LTPO",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万超光变主摄 + 4000 万超广角 + 4800 万长焦微距 + 150 万多光谱红枫原色摄像头；4× 光学变焦",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x6/specs/",
+        "evidenceText": "规格页「后置摄像头配置」列出三颗镜头像素与 150 万多光谱通道红枫原色摄像头，注明 4 倍光学变焦。",
+        "valueAtAudit": "5000 万超光变主摄 + 4000 万超广角 + 4800 万长焦微距 + 150 万多光谱红枫原色摄像头；4× 光学变焦",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5110 mAh（典型值，标准版）；典藏版 5200 mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x6/specs/",
+        "evidenceText": "规格页「电池」按标准版与典藏版分别列出 5110 mAh / 5200 mAh 典型容量。",
+        "valueAtAudit": "5110 mAh（典型值，标准版）；典藏版 5200 mAh",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "最大 66W 有线超级快充；50W 无线超级快充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x6/specs/",
+        "evidenceText": "规格页「充电」写明最大 66W 有线、50W 无线。",
+        "valueAtAudit": "最大 66W 有线超级快充；50W 无线超级快充",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 239 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x6/specs/",
+        "evidenceText": "规格页「尺寸与重量」列出重量约 239 克。",
+        "valueAtAudit": "约 239 g",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "标准版 12GB+256GB / 12GB+512GB；典藏版 16GB+512GB / 16GB+1TB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x6/specs/",
+        "evidenceText": "规格页「存储」按标准版与典藏版分别列出 RAM/ROM 组合。",
+        "valueAtAudit": "标准版 12GB+256GB / 12GB+512GB；典藏版 16GB+512GB / 16GB+1TB",
+        "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "hua-matex5",
