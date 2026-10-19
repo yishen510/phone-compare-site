@@ -8317,9 +8317,9 @@
     "display": "6.3 英寸 16:10 内屏 + 3.5 英寸外屏 · 1–120Hz",
     "chip": "麒麟 9020",
     "camera": "5000 万主摄 + 4000 万超广角 + 800 万长焦",
-    "battery": "4720 mAh",
-    "charging": "66W 有线 / 40W 无线",
-    "weight": "195 g",
+    "battery": "4720 mAh（典型值）",
+    "charging": "66W 有线超级快充 / 40W 无线超级快充",
+    "weight": "193.7 g / 195.9 g（含电池，版本不同）",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "HarmonyOS 5",
     "priceCN": 7499,
@@ -8346,7 +8346,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://consumer.huawei.com/cn/",
     "priceSource": "https://consumer.huawei.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8357,11 +8357,40 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "电池",
+        "value": "4720 mAh（典型值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/pura-x/specs/",
+        "evidenceText": "官方规格页明确列出：4720 mAh（典型值）。",
+        "valueAtAudit": "4720 mAh（典型值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线超级快充 / 40W 无线超级快充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/pura-x/specs/",
+        "evidenceText": "官方规格页明确列出：66W 有线超级快充 / 40W 无线超级快充。",
+        "valueAtAudit": "66W 有线超级快充 / 40W 无线超级快充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "193.7 g / 195.9 g（含电池，版本不同）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/pura-x/specs/",
+        "evidenceText": "官方规格页明确列出：193.7 g / 195.9 g（含电池，版本不同）。",
+        "valueAtAudit": "193.7 g / 195.9 g（含电池，版本不同）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "honor-magic7",
