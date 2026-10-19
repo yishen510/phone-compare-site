@@ -11690,5 +11690,210 @@
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
       }
     ]
+  },
+  {
+    "id": "redmi-k70",
+    "brand": "Xiaomi",
+    "name": "REDMI K70",
+    "year": 2023,
+    "type": "性能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.67 英寸 · 120Hz",
+    "chip": "骁龙 8 移动平台",
+    "camera": "官方规格页未逐项列出镜头组合，待核验",
+    "battery": "5000 mAh",
+    "charging": "120W 有线快充",
+    "weight": "209 g",
+    "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
+    "os": "MIUI 14",
+    "priceCN": null,
+    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "selling": "2K 直屏的标准版性能机",
+    "bestFor": [
+      "游戏性能",
+      "续航",
+      "性价比"
+    ],
+    "source": "https://www.mi.com/redmi-k70/specs",
+    "sourceName": "厂商官方站点；字段核验状态见 auditStatus",
+    "verified": false,
+    "launchMonth": "2023-11",
+    "launchDateDisplay": "2023年11月",
+    "priceType": "unknown",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "16GB+512GB",
+      "16GB+1TB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
+    "announcementSource": "https://www.mi.com/redmi-k70/specs",
+    "priceSource": null,
+    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "机型身份与发布月份按厂商公开信息录入",
+      "主要参数已按厂商官方规格页核对（2026-10-20）",
+      "影像细节与首发价未核验，整机准入保持关闭"
+    ],
+    "priceAuditStatus": "missing",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.67 英寸，120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70/specs",
+        "evidenceText": "官方规格页列出 6.67 英寸屏幕与 120Hz。",
+        "valueAtAudit": "6.67 英寸，120Hz",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 移动平台",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70/specs",
+        "evidenceText": "官方规格页列出骁龙 8 移动平台。",
+        "valueAtAudit": "骁龙 8 移动平台",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5000 mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70/specs",
+        "evidenceText": "官方规格页列出 5000mAh（典型值）。",
+        "valueAtAudit": "5000 mAh",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70/specs",
+        "evidenceText": "官方规格页列出 120W 有线快充。",
+        "valueAtAudit": "120W 有线",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "209 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70/specs",
+        "evidenceText": "官方规格页列出重量 209g。",
+        "valueAtAudit": "209 g",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
+  },
+  {
+    "id": "redmi-k60-pro",
+    "brand": "Xiaomi",
+    "name": "REDMI K60 Pro",
+    "year": 2022,
+    "type": "性能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.67 英寸 · 120Hz",
+    "chip": "骁龙 8 移动平台",
+    "camera": "官方规格页未逐项列出镜头组合，待核验",
+    "battery": "5000 mAh",
+    "charging": "120W 有线 + 30W 无线",
+    "weight": "205 g / 201 g（版本不同）",
+    "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB / 12GB+512GB",
+    "os": "MIUI 14",
+    "priceCN": null,
+    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "selling": "120W + 30W 无线的性能旗舰",
+    "bestFor": [
+      "游戏性能",
+      "续航",
+      "性价比"
+    ],
+    "source": "https://www.mi.com/redmi-k60-pro/specs",
+    "sourceName": "厂商官方站点；字段核验状态见 auditStatus",
+    "verified": false,
+    "launchMonth": "2022-12",
+    "launchDateDisplay": "2022年12月",
+    "priceType": "unknown",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "8GB+128GB",
+      "8GB+256GB",
+      "12GB+256GB",
+      "12GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
+    "announcementSource": "https://www.mi.com/redmi-k60-pro/specs",
+    "priceSource": null,
+    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "机型身份与发布月份按厂商公开信息录入",
+      "主要参数已按厂商官方规格页核对（2026-10-20）",
+      "影像细节与首发价未核验，整机准入保持关闭"
+    ],
+    "priceAuditStatus": "missing",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.67 英寸，120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k60-pro/specs",
+        "evidenceText": "官方规格页列出 6.67 英寸屏幕与 120Hz。",
+        "valueAtAudit": "6.67 英寸，120Hz",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 移动平台",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k60-pro/specs",
+        "evidenceText": "官方规格页列出骁龙 8 移动平台。",
+        "valueAtAudit": "骁龙 8 移动平台",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5000 mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k60-pro/specs",
+        "evidenceText": "官方规格页列出 5000mAh（典型值）。",
+        "valueAtAudit": "5000 mAh",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线 / 30W 无线",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k60-pro/specs",
+        "evidenceText": "官方规格页列出 120W 秒充与 30W 无线秒充。",
+        "valueAtAudit": "120W 有线 / 30W 无线",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "205 g / 201 g（版本不同）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k60-pro/specs",
+        "evidenceText": "官方规格页按版本列出 205g 与 201g。",
+        "valueAtAudit": "205 g / 201 g（版本不同）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   }
 ]
