@@ -7642,7 +7642,7 @@
     "type": "性能旗舰",
     "market": "中国大陆正式销售",
     "display": "6.67 英寸 2K OLED · 120Hz",
-    "chip": "骁龙 8 至尊版",
+    "chip": "高通 骁龙 8 Elite",
     "camera": "5000 万主摄 + 5000 万浮动长焦 + 3200 万超广角",
     "battery": "6000 mAh",
     "charging": "120W 有线 / 50W 无线",
@@ -7672,7 +7672,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.mi.com/",
     "priceSource": "https://www.mi.com/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -7683,11 +7683,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "处理器",
+        "value": "高通 骁龙 8 Elite",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2115/2114605/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙 8 Elite。",
+        "valueAtAudit": "高通 骁龙 8 Elite",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "6000 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2115/2114605/param.shtml",
+        "evidenceText": "第三方参数页列出：6000 mAh。",
+        "valueAtAudit": "6000 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2115/2114605/param.shtml",
+        "evidenceText": "第三方参数页列出：120W 有线 / 50W 无线。",
+        "valueAtAudit": "120W 有线 / 50W 无线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "212 g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2115/2114605/param.shtml",
+        "evidenceText": "第三方参数页列出：212 g。",
+        "valueAtAudit": "212 g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "redmi-k80",
