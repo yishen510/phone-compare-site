@@ -12578,8 +12578,8 @@
     "weight": "187g",
     "storage": "512GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 7499,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -12589,7 +12589,7 @@
     "verified": false,
     "launchMonth": "2022-09",
     "launchDateDisplay": "2022年9月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12597,8 +12597,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1425/1424046/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -12609,7 +12609,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -12674,8 +12674,8 @@
     "weight": "167g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3550,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -12685,7 +12685,7 @@
     "verified": false,
     "launchMonth": "2022-03",
     "launchDateDisplay": "2022年3月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12693,8 +12693,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1365/1364781/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -12705,7 +12705,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -12770,8 +12770,8 @@
     "weight": "168g",
     "storage": "512GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4899,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -12781,7 +12781,7 @@
     "verified": false,
     "launchMonth": "2023-02",
     "launchDateDisplay": "2023年2月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12789,8 +12789,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1449/1448934/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -12801,7 +12801,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -12866,8 +12866,8 @@
     "weight": "271g",
     "storage": "512GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 9500,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -12877,7 +12877,7 @@
     "verified": false,
     "launchMonth": "2021-09",
     "launchDateDisplay": "2021年9月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12885,8 +12885,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1348/1347064/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -12897,7 +12897,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -12962,8 +12962,8 @@
     "weight": "263g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 11700,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -12973,7 +12973,7 @@
     "verified": false,
     "launchMonth": "2022-09",
     "launchDateDisplay": "2022年9月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12981,8 +12981,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1408/1407687/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -12993,7 +12993,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13058,8 +13058,8 @@
     "weight": "183g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5150,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13069,7 +13069,7 @@
     "verified": false,
     "launchMonth": "2021-09",
     "launchDateDisplay": "2021年9月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13077,8 +13077,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1383/1382507/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13089,7 +13089,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13154,8 +13154,8 @@
     "weight": "179g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13165,7 +13165,7 @@
     "verified": false,
     "launchMonth": "2021-12",
     "launchDateDisplay": "2021年12月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13173,8 +13173,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1372/1371752/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13185,7 +13185,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13250,8 +13250,8 @@
     "weight": "205g / 204g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4799,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13261,7 +13261,7 @@
     "verified": false,
     "launchMonth": "2021-12",
     "launchDateDisplay": "2021年12月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13269,8 +13269,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1372/1371912/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13281,7 +13281,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13346,8 +13346,8 @@
     "weight": "204g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5899,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13357,7 +13357,7 @@
     "verified": false,
     "launchMonth": "2022-07",
     "launchDateDisplay": "2022年7月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13365,8 +13365,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1412/1411925/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13377,7 +13377,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13442,8 +13442,8 @@
     "weight": "262g",
     "storage": "512GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 11999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13453,7 +13453,7 @@
     "verified": false,
     "launchMonth": "2022-08",
     "launchDateDisplay": "2022年8月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13461,8 +13461,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1425/1424177/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13473,7 +13473,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13538,8 +13538,8 @@
     "weight": "212g",
     "storage": "1TB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 2599,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13549,7 +13549,7 @@
     "verified": false,
     "launchMonth": "2024-07",
     "launchDateDisplay": "2024年7月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13557,8 +13557,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/2099/2098425/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13569,7 +13569,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13634,8 +13634,8 @@
     "weight": "209g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5499,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13645,7 +13645,7 @@
     "verified": false,
     "launchMonth": "2023-09",
     "launchDateDisplay": "2023年9月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13653,8 +13653,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1428/1427336/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13665,7 +13665,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13730,8 +13730,8 @@
     "weight": "239g",
     "storage": "512GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 12999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13741,7 +13741,7 @@
     "verified": false,
     "launchMonth": "2023-04",
     "launchDateDisplay": "2023年4月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13749,8 +13749,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1479/1478249/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13761,7 +13761,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13826,8 +13826,8 @@
     "weight": "251g",
     "storage": "1TB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 11999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13837,7 +13837,7 @@
     "verified": false,
     "launchMonth": "2024-11",
     "launchDateDisplay": "2024年11月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13845,8 +13845,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/2116/2115265/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13857,7 +13857,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -13913,8 +13913,8 @@
     "weight": "220g",
     "storage": "512GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 7999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -13924,7 +13924,7 @@
     "verified": false,
     "launchMonth": "2024-04",
     "launchDateDisplay": "2024年4月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -13932,8 +13932,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/2000/1999708/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -13944,7 +13944,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14000,8 +14000,8 @@
     "weight": "204g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 2749,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14011,7 +14011,7 @@
     "verified": false,
     "launchMonth": "2025-05",
     "launchDateDisplay": "2025年5月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14019,8 +14019,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/2129/2128093/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14031,7 +14031,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14087,8 +14087,8 @@
     "weight": "206g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4399,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14098,7 +14098,7 @@
     "verified": false,
     "launchMonth": "2022-11",
     "launchDateDisplay": "2022年11月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14106,8 +14106,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1393/1392791/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14118,7 +14118,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14183,8 +14183,8 @@
     "weight": "219g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14194,7 +14194,7 @@
     "verified": false,
     "launchMonth": "2022-04",
     "launchDateDisplay": "2022年4月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14202,8 +14202,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1406/1405721/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14214,7 +14214,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14279,8 +14279,8 @@
     "weight": "215g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14290,7 +14290,7 @@
     "verified": false,
     "launchMonth": "2022-04",
     "launchDateDisplay": "2022年4月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14298,8 +14298,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1393/1392798/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14310,7 +14310,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14375,8 +14375,8 @@
     "weight": "311g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 9999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14386,7 +14386,7 @@
     "verified": false,
     "launchMonth": "2022-04",
     "launchDateDisplay": "2022年4月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14394,8 +14394,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1378/1377260/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14406,7 +14406,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14471,8 +14471,8 @@
     "weight": "203g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4499,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14482,7 +14482,7 @@
     "verified": false,
     "launchMonth": "2021-08",
     "launchDateDisplay": "2021年8月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14490,8 +14490,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1383/1382712/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14502,7 +14502,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14567,8 +14567,8 @@
     "weight": "199g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 1788,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14578,7 +14578,7 @@
     "verified": false,
     "launchMonth": "2022-03",
     "launchDateDisplay": "2022年3月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14586,8 +14586,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1395/1394399/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14598,7 +14598,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14663,8 +14663,8 @@
     "weight": "191g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14674,7 +14674,7 @@
     "verified": false,
     "launchMonth": "2023-03",
     "launchDateDisplay": "2023年3月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14682,8 +14682,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1427/1426635/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14694,7 +14694,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14759,8 +14759,8 @@
     "weight": "193g",
     "storage": "512GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14770,7 +14770,7 @@
     "verified": false,
     "launchMonth": "2024-06",
     "launchDateDisplay": "2024年6月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14778,8 +14778,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/2019/2018979/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14790,7 +14790,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14855,8 +14855,8 @@
     "weight": "183g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3599,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14866,7 +14866,7 @@
     "verified": false,
     "launchMonth": "2021-03",
     "launchDateDisplay": "2021年3月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14874,8 +14874,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1365/1364201/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14886,7 +14886,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -14951,8 +14951,8 @@
     "weight": "197g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5499,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -14962,7 +14962,7 @@
     "verified": false,
     "launchMonth": "2021-03",
     "launchDateDisplay": "2021年3月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -14970,8 +14970,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1327/1326868/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -14982,7 +14982,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15047,8 +15047,8 @@
     "weight": "203.5g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15058,7 +15058,7 @@
     "verified": false,
     "launchMonth": "2022-09",
     "launchDateDisplay": "2022年9月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15066,8 +15066,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1415/1414643/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15078,7 +15078,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15143,8 +15143,8 @@
     "weight": "210g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 2999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15154,7 +15154,7 @@
     "verified": false,
     "launchMonth": "2023-08",
     "launchDateDisplay": "2023年8月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15162,8 +15162,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1509/1508911/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15174,7 +15174,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15239,8 +15239,8 @@
     "weight": "212g / 207g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3199,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15250,7 +15250,7 @@
     "verified": false,
     "launchMonth": "2024-07",
     "launchDateDisplay": "2024年7月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15258,8 +15258,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/2031/2030190/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15270,7 +15270,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15326,8 +15326,8 @@
     "weight": "195g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5550,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15337,7 +15337,7 @@
     "verified": false,
     "launchMonth": "2022-03",
     "launchDateDisplay": "2022年3月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15345,8 +15345,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1399/1398124/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15357,7 +15357,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15422,8 +15422,8 @@
     "weight": "195g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 6999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15433,7 +15433,7 @@
     "verified": false,
     "launchMonth": "2023-02",
     "launchDateDisplay": "2023年2月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15441,8 +15441,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1404/1403118/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15453,7 +15453,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15518,8 +15518,8 @@
     "weight": "85g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5499,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15529,7 +15529,7 @@
     "verified": false,
     "launchMonth": "2022-12",
     "launchDateDisplay": "2022年12月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15537,8 +15537,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1435/1434232/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15549,7 +15549,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15614,8 +15614,8 @@
     "weight": "206g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3699,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15625,7 +15625,7 @@
     "verified": false,
     "launchMonth": "2022-07",
     "launchDateDisplay": "2022年7月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15633,8 +15633,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1413/1412273/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15645,7 +15645,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15710,8 +15710,8 @@
     "weight": "216.2g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5299,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15721,7 +15721,7 @@
     "verified": false,
     "launchMonth": "2022-07",
     "launchDateDisplay": "2022年7月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15729,8 +15729,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1421/1420662/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15741,7 +15741,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15806,8 +15806,8 @@
     "weight": "208g / 205g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3799,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15817,7 +15817,7 @@
     "verified": false,
     "launchMonth": "2022-12",
     "launchDateDisplay": "2022年12月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15825,8 +15825,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1436/1435912/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15837,7 +15837,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15902,8 +15902,8 @@
     "weight": "196g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 2999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -15913,7 +15913,7 @@
     "verified": false,
     "launchMonth": "2023-12",
     "launchDateDisplay": "2023年12月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -15921,8 +15921,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1611/1610857/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -15933,7 +15933,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -15998,8 +15998,8 @@
     "weight": "189g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 2799,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16009,7 +16009,7 @@
     "verified": false,
     "launchMonth": "2022-01",
     "launchDateDisplay": "2022年1月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16017,8 +16017,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1397/1396428/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16029,7 +16029,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -16094,8 +16094,8 @@
     "weight": "194.5g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 8240,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16105,7 +16105,7 @@
     "verified": false,
     "launchMonth": "2023-02",
     "launchDateDisplay": "2023年02月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16113,8 +16113,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1433/1432133/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16125,7 +16125,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -16190,8 +16190,8 @@
     "weight": "205g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 2999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16201,7 +16201,7 @@
     "verified": false,
     "launchMonth": "2023-09",
     "launchDateDisplay": "2023年9月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16209,8 +16209,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1857/1856215/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16221,7 +16221,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -16286,8 +16286,8 @@
     "weight": "199g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 2499,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16297,7 +16297,7 @@
     "verified": false,
     "launchMonth": "2023-02",
     "launchDateDisplay": "2023年2月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16305,8 +16305,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1458/1457605/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16317,7 +16317,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -16382,8 +16382,8 @@
     "weight": "196g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4399,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16393,7 +16393,7 @@
     "verified": false,
     "launchMonth": "2022-02",
     "launchDateDisplay": "2022年2月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16401,8 +16401,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1384/1383816/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16413,7 +16413,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -16478,8 +16478,8 @@
     "weight": "191g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16489,7 +16489,7 @@
     "verified": false,
     "launchMonth": "2022-12",
     "launchDateDisplay": "2022年12月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16497,8 +16497,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1438/1437089/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16509,7 +16509,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -16574,8 +16574,8 @@
     "weight": "228g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4799,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16585,7 +16585,7 @@
     "verified": false,
     "launchMonth": "2023-03",
     "launchDateDisplay": "2023年3月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16593,8 +16593,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1465/1464807/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16605,7 +16605,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -16670,8 +16670,8 @@
     "weight": "246g",
     "storage": "256GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4299,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16681,7 +16681,7 @@
     "verified": false,
     "launchMonth": "2023-12",
     "launchDateDisplay": "2023年12月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16689,8 +16689,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1961/1960082/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16701,7 +16701,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -16766,8 +16766,8 @@
     "weight": "228g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16777,7 +16777,7 @@
     "verified": false,
     "launchMonth": "2022-12",
     "launchDateDisplay": "2022年12月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16785,8 +16785,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/1434/1433615/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16797,7 +16797,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
@@ -16862,8 +16862,8 @@
     "weight": "199g",
     "storage": "128GB>",
     "os": "以官方页面为准",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 9999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "第三方参数页补录",
     "bestFor": [
       "日常全能"
@@ -16873,7 +16873,7 @@
     "verified": false,
     "launchMonth": "2024-09",
     "launchDateDisplay": "2024年9月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -16881,8 +16881,8 @@
     "chinaOfficial": true,
     "dataNote": "机型由中关村在线参数页补录，字段为第三方来源，未经厂商官方页核对。",
     "announcementSource": null,
-    "priceSource": null,
-    "priceSourceName": "暂无可靠的首发价来源",
+    "priceSource": "https://detail.zol.com.cn/2105/2104329/param.shtml",
+    "priceSourceName": "中关村在线商品页参考价",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -16893,7 +16893,7 @@
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
     "fieldAudit": [
       {
