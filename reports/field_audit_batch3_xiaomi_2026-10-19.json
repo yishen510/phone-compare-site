@@ -1,0 +1,88 @@
+{
+  "batchedAt": "2026-10-19",
+  "batch": "xiaomi-4",
+  "policy": "只写入官方规格页原文明确列出的字段；未确认的容量组合/日期/价格保持未核验。",
+  "models": [
+    {
+      "id": "xia-14",
+      "name": "小米 14",
+      "sourceUrl": "https://www.mi.com/xiaomi-14/specs",
+      "verifiedFields": [
+        "屏幕",
+        "处理器",
+        "影像",
+        "电池",
+        "充电",
+        "重量"
+      ],
+      "unverifiedFields": [
+        "容量组合",
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    },
+    {
+      "id": "xia-14p",
+      "name": "小米 14 Pro",
+      "sourceUrl": "https://www.mi.com/xiaomi-14-pro/specs",
+      "verifiedFields": [
+        "屏幕",
+        "处理器",
+        "影像",
+        "电池",
+        "充电",
+        "重量"
+      ],
+      "unverifiedFields": [
+        "容量组合",
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    },
+    {
+      "id": "xia-13",
+      "name": "小米 13",
+      "sourceUrl": "https://www.mi.com/xiaomi-13/specs",
+      "verifiedFields": [
+        "屏幕",
+        "处理器",
+        "电池",
+        "充电",
+        "重量"
+      ],
+      "unverifiedFields": [
+        "容量组合",
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    },
+    {
+      "id": "xia-13p",
+      "name": "小米 13 Pro",
+      "sourceUrl": "https://www.mi.com/xiaomi-13-pro/specs",
+      "verifiedFields": [
+        "屏幕",
+        "处理器",
+        "电池",
+        "充电",
+        "重量"
+      ],
+      "unverifiedFields": [
+        "容量组合",
+        "正式发布/开售日期",
+        "官方首发起售价"
+      ],
+      "parameterAuditStatus": "partial",
+      "eligibleForRanking": false
+    }
+  ],
+  "notes": [
+    "MIX Fold 4 / MIX Fold 3 / MIX Flip / REDMI K80 Pro / K80 的 mi.com 规格页路径本轮未取到内容，未纳入。"
+  ]
+}
