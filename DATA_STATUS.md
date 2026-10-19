@@ -211,3 +211,18 @@
 - 来源：iPhone 16 用 apple.com.cn 在售规格页；16 Pro / 15 Pro / 14 Pro 的在售页已下架，改用 support.apple.com 官方技术规格页（长期保留）。
 - **iPhone 15 标准版**的支持页编号未确认，本轮未纳入；上市日期与首发价仍无官方直接证据，整机准入继续关闭。
 - **华为老机型**：计划中的官方存档页方案因 archive.org 在当前网络不可达而无法执行，Pura 70 / Pura 70 Pro / Mate X5 仍未核验，不以媒体参数替代。
+
+## 2026-10-19 字段核验第三批（小米 4 款）与进度
+
+- 小米 14、14 Pro、13、13 Pro 按 mi.com 官方规格页核对屏幕、处理器、影像（14/14 Pro）、电池、充电、重量，共 **22 项**。明细见 `reports/field_audit_batch3_xiaomi_2026-10-19.json`。
+- 累计已核验 **12 款**：华为 Mate 70 / Mate 70 Pro+ / Mate X6，Apple iPhone 17 Pro / 16 Pro / 16 / 15 Pro / 14 Pro，小米 14 / 14 Pro / 13 / 13 Pro。
+- 自动化解析只作线索，**不直接入库**：试跑时曾把 vivo X100 电池误读为 2500mAh、把 100W 误读为 04W，说明正则抽取不可靠，最终值均由页面原文人工确认。
+- 剩余机型的官方规格页多数已下架（Pura 70 系列、Z Fold5 / Flip5、MIX Fold / Flip、REDMI K80 系列、iQOO 12 系列、红魔 9 Pro 等），需改用官方存档或其他官方文档，才能继续核验。
+- 本地提交 `25b559a` 因 GitHub 网络中断暂未推送，线上仍停留在 `b7db3bf`（8 款已核验版本）。
+
+## 2026-10-19 字段核验第五批（官方页 21 款）
+
+- 荣耀 Magic7 / Magic6 / Magic V3 / Magic V2、OPPO Find X8 / X8 Pro / X7 / N3 / N3 Flip / N2、vivo X200 / X200 Pro / X200 Pro mini / X100 / X100 Pro / X Fold5 / X Fold3 Pro、三星 Galaxy S24 / Z Fold6 / Z Flip6 / S25 Edge，共 **21 款**。
+- 每款核验屏幕、电池（区分典型值/额定值）、充电、重量、容量组合中页面明确列出的项目，状态为 `verified_official_page_reviewed`。
+- 通用回填器 `scripts/apply_field_audit.py` + 结构化数据 `.workbuddy/tmp/batch5.json`，便于后续批次复用。
+- 累计：官方核验 **33 款**、第三方核验 **1 款**；仍待核验 18 款（一加 2、realme 2、iPhone 15、Galaxy S24+ 及官方页已下架的 13 款）。

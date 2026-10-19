@@ -6458,10 +6458,10 @@
     "year": 2024,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.2 英寸 Dynamic AMOLED 2X · 1–120Hz",
+    "display": "6.2 英寸（直角）/ 6.0 英寸（圆角）",
     "chip": "骁龙 8 Gen 3 for Galaxy",
     "camera": "5000 万像素主摄 + 1200 万像素超广角 + 1000 万像素 3× 长焦",
-    "battery": "4000 mAh",
+    "battery": "4000 mAh（典型值）",
     "charging": "25W 有线 / 15W 无线",
     "weight": "167 g",
     "storage": "8GB+256GB / 12GB+256GB / 8GB+512GB",
@@ -6489,7 +6489,7 @@
       "8GB+512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
     "priceSource": "https://www.samsung.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -6500,11 +6500,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.2 英寸（直角）/ 6.0 英寸（圆角）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s24/specs/",
+        "evidenceText": "官方规格页明确列出：6.2 英寸（直角）/ 6.0 英寸（圆角）。",
+        "valueAtAudit": "6.2 英寸（直角）/ 6.0 英寸（圆角）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "4000 mAh（典型值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s24/specs/",
+        "evidenceText": "官方规格页明确列出：4000 mAh（典型值）。",
+        "valueAtAudit": "4000 mAh（典型值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "167 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s24/specs/",
+        "evidenceText": "官方规格页明确列出：167 g。",
+        "valueAtAudit": "167 g",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "8GB+256GB / 12GB+256GB / 8GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s24/specs/",
+        "evidenceText": "官方规格页明确列出：8GB+256GB / 12GB+256GB / 8GB+512GB。",
+        "valueAtAudit": "8GB+256GB / 12GB+256GB / 8GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "sam-24p",
@@ -6567,10 +6605,10 @@
     "year": 2024,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "7.6 英寸内屏 + 6.3 英寸外屏 · 1–120Hz",
+    "display": "7.6 英寸内屏 + 6.3 英寸外屏（直角）",
     "chip": "骁龙 8 Gen 3 for Galaxy",
     "camera": "5000 万像素主摄 + 1200 万像素超广角 + 1000 万像素 3× 长焦",
-    "battery": "4400 mAh",
+    "battery": "4400 mAh（典型值）",
     "charging": "25W 有线 / 无线充电",
     "weight": "239 g",
     "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
@@ -6598,7 +6636,7 @@
       "12GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
     "priceSource": "https://www.samsung.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -6609,11 +6647,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "7.6 英寸内屏 + 6.3 英寸外屏（直角）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-z-fold6/specs/",
+        "evidenceText": "官方规格页明确列出：7.6 英寸内屏 + 6.3 英寸外屏（直角）。",
+        "valueAtAudit": "7.6 英寸内屏 + 6.3 英寸外屏（直角）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "4400 mAh（典型值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-z-fold6/specs/",
+        "evidenceText": "官方规格页明确列出：4400 mAh（典型值）。",
+        "valueAtAudit": "4400 mAh（典型值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "239 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-z-fold6/specs/",
+        "evidenceText": "官方规格页明确列出：239 g。",
+        "valueAtAudit": "239 g",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-z-fold6/specs/",
+        "evidenceText": "官方规格页明确列出：12GB+512GB。",
+        "valueAtAudit": "12GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "sam-zflip6",
@@ -6622,10 +6698,10 @@
     "year": 2024,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.7 英寸内屏 + 3.4 英寸外屏 · 1–120Hz",
+    "display": "6.7 英寸内屏 + 3.4 英寸外屏（直角）",
     "chip": "骁龙 8 Gen 3 for Galaxy",
     "camera": "5000 万像素主摄 + 1200 万像素超广角",
-    "battery": "4000 mAh",
+    "battery": "4000 mAh（典型值）",
     "charging": "25W 有线 / 无线充电",
     "weight": "187 g",
     "storage": "12GB+256GB / 12GB+512GB",
@@ -6652,7 +6728,7 @@
       "12GB+512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
     "priceSource": "https://www.samsung.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -6663,11 +6739,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.7 英寸内屏 + 3.4 英寸外屏（直角）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-z-flip6/specs/",
+        "evidenceText": "官方规格页明确列出：6.7 英寸内屏 + 3.4 英寸外屏（直角）。",
+        "valueAtAudit": "6.7 英寸内屏 + 3.4 英寸外屏（直角）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "4000 mAh（典型值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-z-flip6/specs/",
+        "evidenceText": "官方规格页明确列出：4000 mAh（典型值）。",
+        "valueAtAudit": "4000 mAh（典型值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "187 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-z-flip6/specs/",
+        "evidenceText": "官方规格页明确列出：187 g。",
+        "valueAtAudit": "187 g",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-z-flip6/specs/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "sam-zf5",
@@ -6785,10 +6899,10 @@
     "year": 2025,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.7 英寸 Dynamic AMOLED 2X · 1–120Hz",
+    "display": "6.7 英寸（直角）/ 6.5 英寸（圆角）",
     "chip": "骁龙 8 至尊版 for Galaxy",
     "camera": "2 亿像素主摄 + 1200 万像素超广角",
-    "battery": "3900 mAh",
+    "battery": "3900 mAh（典型值）",
     "charging": "25W 有线 / 无线充电",
     "weight": "163 g",
     "storage": "12GB+256GB / 12GB+512GB",
@@ -6815,7 +6929,7 @@
       "12GB+512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
     "priceSource": null,
     "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
@@ -6826,11 +6940,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "missing",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.7 英寸（直角）/ 6.5 英寸（圆角）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s25-edge/specs/",
+        "evidenceText": "官方规格页明确列出：6.7 英寸（直角）/ 6.5 英寸（圆角）。",
+        "valueAtAudit": "6.7 英寸（直角）/ 6.5 英寸（圆角）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "3900 mAh（典型值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s25-edge/specs/",
+        "evidenceText": "官方规格页明确列出：3900 mAh（典型值）。",
+        "valueAtAudit": "3900 mAh（典型值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "163 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s25-edge/specs/",
+        "evidenceText": "官方规格页明确列出：163 g。",
+        "valueAtAudit": "163 g",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s25-edge/specs/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "xia-14",
@@ -8162,12 +8314,12 @@
     "year": 2024,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 OLED · 1–120Hz",
+    "display": "6.78 英寸",
     "chip": "骁龙 8 至尊版",
     "camera": "5000 万主摄 + 5000 万潜望长焦 + 5000 万超广角",
-    "battery": "5650 mAh",
-    "charging": "100W 有线 / 80W 无线",
-    "weight": "199 g",
+    "battery": "5650 mAh（典型值）/ 5550 mAh（额定值）",
+    "charging": "100W 有线超级快充",
+    "weight": "约 199 克（含电池）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "MagicOS 9.0",
     "priceCN": 4499,
@@ -8193,7 +8345,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.honor.com/cn/",
     "priceSource": "https://www.honor.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8204,11 +8356,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic7/spec/",
+        "evidenceText": "官方规格页明确列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5650 mAh（典型值）/ 5550 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic7/spec/",
+        "evidenceText": "官方规格页明确列出：5650 mAh（典型值）/ 5550 mAh（额定值）。",
+        "valueAtAudit": "5650 mAh（典型值）/ 5550 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线超级快充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic7/spec/",
+        "evidenceText": "官方规格页明确列出：100W 有线超级快充。",
+        "valueAtAudit": "100W 有线超级快充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 199 克（含电池）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic7/spec/",
+        "evidenceText": "官方规格页明确列出：约 199 克（含电池）。",
+        "valueAtAudit": "约 199 克（含电池）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic7/spec/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "honor-magic6",
@@ -8217,12 +8416,12 @@
     "year": 2024,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 OLED · 1–120Hz",
+    "display": "6.78 英寸",
     "chip": "骁龙 8 Gen 3",
     "camera": "5000 万主摄 + 5000 万潜望长焦 + 5000 万超广角",
-    "battery": "5450 mAh",
-    "charging": "66W 有线 / 50W 无线",
-    "weight": "206 g",
+    "battery": "5450 mAh（典型值）/ 5350 mAh（额定值）",
+    "charging": "66W 有线超级快充",
+    "weight": "玻璃版约 206 克 / 素皮版约 199 克（含电池）",
     "storage": "12GB+256GB / 16GB+512GB",
     "os": "MagicOS 8.0",
     "priceCN": 4399,
@@ -8246,7 +8445,7 @@
       "16GB+512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.honor.com/cn/",
     "priceSource": "https://www.honor.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8257,11 +8456,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic6/spec/",
+        "evidenceText": "官方规格页明确列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5450 mAh（典型值）/ 5350 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic6/spec/",
+        "evidenceText": "官方规格页明确列出：5450 mAh（典型值）/ 5350 mAh（额定值）。",
+        "valueAtAudit": "5450 mAh（典型值）/ 5350 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线超级快充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic6/spec/",
+        "evidenceText": "官方规格页明确列出：66W 有线超级快充。",
+        "valueAtAudit": "66W 有线超级快充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "玻璃版约 206 克 / 素皮版约 199 克（含电池）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic6/spec/",
+        "evidenceText": "官方规格页明确列出：玻璃版约 206 克 / 素皮版约 199 克（含电池）。",
+        "valueAtAudit": "玻璃版约 206 克 / 素皮版约 199 克（含电池）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 16GB+256GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic6/spec/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+256GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 16GB+256GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "honor-v3",
@@ -8270,12 +8516,12 @@
     "year": 2024,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "7.92 英寸内屏 + 6.43 英寸外屏 · 1–120Hz",
+    "display": "7.92 英寸内屏 + 6.43 英寸外屏",
     "chip": "骁龙 8 Gen 3",
     "camera": "5000 万主摄 + 4000 万超广角 + 5000 万潜望长焦",
-    "battery": "5150 mAh",
-    "charging": "66W 有线 / 50W 无线",
-    "weight": "226 g",
+    "battery": "5150 mAh（典型值）/ 5050 mAh（额定值）",
+    "charging": "66W 有线超级快充",
+    "weight": "绒黑色约 226 克（含电池）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "MagicOS 8.0",
     "priceCN": 8999,
@@ -8301,7 +8547,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.honor.com/cn/",
     "priceSource": "https://www.honor.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8312,11 +8558,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "7.92 英寸内屏 + 6.43 英寸外屏",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v3/spec/",
+        "evidenceText": "官方规格页明确列出：7.92 英寸内屏 + 6.43 英寸外屏。",
+        "valueAtAudit": "7.92 英寸内屏 + 6.43 英寸外屏",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5150 mAh（典型值）/ 5050 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v3/spec/",
+        "evidenceText": "官方规格页明确列出：5150 mAh（典型值）/ 5050 mAh（额定值）。",
+        "valueAtAudit": "5150 mAh（典型值）/ 5050 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线超级快充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v3/spec/",
+        "evidenceText": "官方规格页明确列出：66W 有线超级快充。",
+        "valueAtAudit": "66W 有线超级快充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "绒黑色约 226 克（含电池）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v3/spec/",
+        "evidenceText": "官方规格页明确列出：绒黑色约 226 克（含电池）。",
+        "valueAtAudit": "绒黑色约 226 克（含电池）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v3/spec/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "honor-v2",
@@ -8325,12 +8618,12 @@
     "year": 2023,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "7.92 英寸内屏 + 6.43 英寸外屏 · 1–120Hz",
+    "display": "7.92 英寸内屏 + 6.43 英寸外屏",
     "chip": "骁龙 8 Gen 2 领先版",
     "camera": "5000 万主摄 + 5000 万超广角 + 5000 万长焦",
-    "battery": "5000 mAh",
-    "charging": "66W 有线",
-    "weight": "231 g",
+    "battery": "5000 mAh（典型值）/ 4900 mAh（额定值）",
+    "charging": "66W 有线超级快充",
+    "weight": "素皮版约 231 克（含电池）",
     "storage": "12GB+256GB / 16GB+512GB",
     "os": "MagicOS 7.2",
     "priceCN": 8999,
@@ -8355,7 +8648,7 @@
       "16GB+512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.honor.com/cn/",
     "priceSource": "https://www.honor.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8366,11 +8659,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "7.92 英寸内屏 + 6.43 英寸外屏",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v2/spec/",
+        "evidenceText": "官方规格页明确列出：7.92 英寸内屏 + 6.43 英寸外屏。",
+        "valueAtAudit": "7.92 英寸内屏 + 6.43 英寸外屏",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5000 mAh（典型值）/ 4900 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v2/spec/",
+        "evidenceText": "官方规格页明确列出：5000 mAh（典型值）/ 4900 mAh（额定值）。",
+        "valueAtAudit": "5000 mAh（典型值）/ 4900 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线超级快充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v2/spec/",
+        "evidenceText": "官方规格页明确列出：66W 有线超级快充。",
+        "valueAtAudit": "66W 有线超级快充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "素皮版约 231 克（含电池）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v2/spec/",
+        "evidenceText": "官方规格页明确列出：素皮版约 231 克（含电池）。",
+        "valueAtAudit": "素皮版约 231 克（含电池）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "16GB+256GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic-v2/spec/",
+        "evidenceText": "官方规格页明确列出：16GB+256GB / 16GB+512GB。",
+        "valueAtAudit": "16GB+256GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "oppo-x8",
@@ -8379,12 +8719,12 @@
     "year": 2024,
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.59 英寸 OLED · 1–120Hz",
+    "display": "6.59 英寸",
     "chip": "天玑 9400",
     "camera": "5000 万主摄 + 5000 万潜望长焦 + 5000 万超广角",
-    "battery": "5630 mAh",
-    "charging": "80W 有线 / 50W 无线",
-    "weight": "193 g",
+    "battery": "5630 mAh（典型值）/ 5490 mAh（额定值）",
+    "charging": "80W 超级闪充",
+    "weight": "约 193 克",
     "storage": "12GB+256GB / 16GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "ColorOS 15",
     "priceCN": 4199,
@@ -8411,7 +8751,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.oppo.com/cn/",
     "priceSource": "https://www.oppo.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8422,11 +8762,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.59 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8/specs/",
+        "evidenceText": "官方规格页明确列出：6.59 英寸。",
+        "valueAtAudit": "6.59 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5630 mAh（典型值）/ 5490 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8/specs/",
+        "evidenceText": "官方规格页明确列出：5630 mAh（典型值）/ 5490 mAh（额定值）。",
+        "valueAtAudit": "5630 mAh（典型值）/ 5490 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "80W 超级闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8/specs/",
+        "evidenceText": "官方规格页明确列出：80W 超级闪充。",
+        "valueAtAudit": "80W 超级闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 193 克",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8/specs/",
+        "evidenceText": "官方规格页明确列出：约 193 克。",
+        "valueAtAudit": "约 193 克",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB / 16GB+256GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8/specs/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+256GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+256GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "oppo-x8p",
@@ -8435,12 +8822,12 @@
     "year": 2024,
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 OLED · 1–120Hz",
+    "display": "6.78 英寸",
     "chip": "天玑 9400",
     "camera": "5000 万主摄 + 5000 万潜望长焦 ×2 + 5000 万超广角",
-    "battery": "5910 mAh",
-    "charging": "80W 有线 / 50W 无线",
-    "weight": "215 g",
+    "battery": "5910 mAh（典型值）/ 5770 mAh（额定值）",
+    "charging": "80W 超级闪充",
+    "weight": "约 215 克",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "ColorOS 15",
     "priceCN": 5299,
@@ -8466,7 +8853,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.oppo.com/cn/",
     "priceSource": "https://www.oppo.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8477,11 +8864,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-pro/specs/",
+        "evidenceText": "官方规格页明确列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5910 mAh（典型值）/ 5770 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-pro/specs/",
+        "evidenceText": "官方规格页明确列出：5910 mAh（典型值）/ 5770 mAh（额定值）。",
+        "valueAtAudit": "5910 mAh（典型值）/ 5770 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "80W 超级闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-pro/specs/",
+        "evidenceText": "官方规格页明确列出：80W 超级闪充。",
+        "valueAtAudit": "80W 超级闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 215 克",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-pro/specs/",
+        "evidenceText": "官方规格页明确列出：约 215 克。",
+        "valueAtAudit": "约 215 克",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-pro/specs/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "oppo-x7",
@@ -8490,12 +8924,12 @@
     "year": 2024,
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.74 英寸 OLED · 1–120Hz",
+    "display": "6.78 英寸",
     "chip": "天玑 9300",
     "camera": "5000 万主摄 + 6400 万潜望长焦 + 5000 万超广角",
-    "battery": "5000 mAh",
-    "charging": "100W 有线",
-    "weight": "202 g",
+    "battery": "等效 5000 mAh（典型值，双电芯）/ 等效 4860 mAh（额定值）",
+    "charging": "100W 超级闪充",
+    "weight": "206 克（星空黑、烟云紫、白日梦想家）/ 202 克（海阔天空、大漠银月）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "ColorOS 14",
     "priceCN": 3999,
@@ -8520,7 +8954,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.oppo.com/cn/",
     "priceSource": "https://www.oppo.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8531,11 +8965,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x7/specs/",
+        "evidenceText": "官方规格页明确列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "等效 5000 mAh（典型值，双电芯）/ 等效 4860 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x7/specs/",
+        "evidenceText": "官方规格页明确列出：等效 5000 mAh（典型值，双电芯）/ 等效 4860 mAh（额定值）。",
+        "valueAtAudit": "等效 5000 mAh（典型值，双电芯）/ 等效 4860 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 超级闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x7/specs/",
+        "evidenceText": "官方规格页明确列出：100W 超级闪充。",
+        "valueAtAudit": "100W 超级闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "206 克（星空黑、烟云紫、白日梦想家）/ 202 克（海阔天空、大漠银月）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x7/specs/",
+        "evidenceText": "官方规格页明确列出：206 克（星空黑、烟云紫、白日梦想家）/ 202 克（海阔天空、大漠银月）。",
+        "valueAtAudit": "206 克（星空黑、烟云紫、白日梦想家）/ 202 克（海阔天空、大漠银月）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 16GB+256GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x7/specs/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+256GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 16GB+256GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "oppo-n3",
@@ -8544,11 +9025,11 @@
     "year": 2023,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "7.82 英寸内屏 + 6.31 英寸外屏 · 1–120Hz",
+    "display": "7.82 英寸内屏 + 6.31 英寸外屏",
     "chip": "骁龙 8 Gen 2",
     "camera": "4800 万主摄 + 6400 万潜望长焦 + 4800 万超广角",
-    "battery": "4805 mAh",
-    "charging": "67W 有线",
+    "battery": "4805 mAh（典型值）/ 4680 mAh（额定值）",
+    "charging": "67W 超级闪充",
     "weight": "239 g",
     "storage": "12GB+512GB / 16GB+1TB",
     "os": "ColorOS 13.2",
@@ -8574,7 +9055,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.oppo.com/cn/",
     "priceSource": "https://www.oppo.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8585,11 +9066,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "7.82 英寸内屏 + 6.31 英寸外屏",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n3/specs/",
+        "evidenceText": "官方规格页明确列出：7.82 英寸内屏 + 6.31 英寸外屏。",
+        "valueAtAudit": "7.82 英寸内屏 + 6.31 英寸外屏",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "4805 mAh（典型值）/ 4680 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n3/specs/",
+        "evidenceText": "官方规格页明确列出：4805 mAh（典型值）/ 4680 mAh（额定值）。",
+        "valueAtAudit": "4805 mAh（典型值）/ 4680 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "67W 超级闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n3/specs/",
+        "evidenceText": "官方规格页明确列出：67W 超级闪充。",
+        "valueAtAudit": "67W 超级闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n3/specs/",
+        "evidenceText": "官方规格页明确列出：12GB+512GB。",
+        "valueAtAudit": "12GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "oppo-n3flip",
@@ -8598,12 +9117,12 @@
     "year": 2023,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.8 英寸内屏 + 3.26 英寸外屏 · 1–120Hz",
+    "display": "6.80 英寸内屏 + 3.26 英寸外屏",
     "chip": "天玑 9200",
     "camera": "5000 万主摄 + 4800 万超广角 + 3200 万长焦",
-    "battery": "4300 mAh",
-    "charging": "44W 有线",
-    "weight": "198 g",
+    "battery": "4300 mAh（典型值）/ 4170 mAh（额定值）",
+    "charging": "44W 超级闪充",
+    "weight": "198 克",
     "storage": "12GB+256GB / 12GB+512GB",
     "os": "ColorOS 13.2",
     "priceCN": 6799,
@@ -8628,7 +9147,7 @@
       "12GB+512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.oppo.com/cn/",
     "priceSource": "https://www.oppo.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8639,11 +9158,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.80 英寸内屏 + 3.26 英寸外屏",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n3-flip/specs/",
+        "evidenceText": "官方规格页明确列出：6.80 英寸内屏 + 3.26 英寸外屏。",
+        "valueAtAudit": "6.80 英寸内屏 + 3.26 英寸外屏",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "4300 mAh（典型值）/ 4170 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n3-flip/specs/",
+        "evidenceText": "官方规格页明确列出：4300 mAh（典型值）/ 4170 mAh（额定值）。",
+        "valueAtAudit": "4300 mAh（典型值）/ 4170 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "44W 超级闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n3-flip/specs/",
+        "evidenceText": "官方规格页明确列出：44W 超级闪充。",
+        "valueAtAudit": "44W 超级闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "198 克",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n3-flip/specs/",
+        "evidenceText": "官方规格页明确列出：198 克。",
+        "valueAtAudit": "198 克",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n3-flip/specs/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "oppo-n2",
@@ -8652,12 +9218,12 @@
     "year": 2022,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "7.1 英寸内屏 + 5.54 英寸外屏 · 1–120Hz",
+    "display": "7.10 英寸内屏 + 5.54 英寸外屏",
     "chip": "骁龙 8+ Gen 1",
     "camera": "5000 万主摄 + 4800 万超广角 + 3200 万长焦",
-    "battery": "4520 mAh",
-    "charging": "67W 有线",
-    "weight": "233 g",
+    "battery": "4520 mAh（典型值）/ 4420 mAh（额定值）",
+    "charging": "67W 超级闪充",
+    "weight": "237 克（松绿、云白）/ 233 克（素黑）",
     "storage": "12GB+256GB / 16GB+512GB",
     "os": "ColorOS 13",
     "priceCN": 7999,
@@ -8682,7 +9248,7 @@
       "16GB+512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.oppo.com/cn/",
     "priceSource": "https://www.oppo.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8693,11 +9259,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "7.10 英寸内屏 + 5.54 英寸外屏",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n2/specs/",
+        "evidenceText": "官方规格页明确列出：7.10 英寸内屏 + 5.54 英寸外屏。",
+        "valueAtAudit": "7.10 英寸内屏 + 5.54 英寸外屏",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "4520 mAh（典型值）/ 4420 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n2/specs/",
+        "evidenceText": "官方规格页明确列出：4520 mAh（典型值）/ 4420 mAh（额定值）。",
+        "valueAtAudit": "4520 mAh（典型值）/ 4420 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "67W 超级闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n2/specs/",
+        "evidenceText": "官方规格页明确列出：67W 超级闪充。",
+        "valueAtAudit": "67W 超级闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "237 克（松绿、云白）/ 233 克（素黑）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n2/specs/",
+        "evidenceText": "官方规格页明确列出：237 克（松绿、云白）/ 233 克（素黑）。",
+        "valueAtAudit": "237 克（松绿、云白）/ 233 克（素黑）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-n/find-n2/specs/",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "vivo-x200",
@@ -8706,12 +9319,12 @@
     "year": 2024,
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.67 英寸 AMOLED · 1–120Hz",
+    "display": "6.67 英寸",
     "chip": "天玑 9400",
     "camera": "5000 万主摄 + 5000 万潜望长焦 + 5000 万超广角",
-    "battery": "5800 mAh",
-    "charging": "90W 有线",
-    "weight": "197 g",
+    "battery": "5800 mAh（典型值）/ 5695 mAh（额定值）",
+    "charging": "90W 闪充",
+    "weight": "202 g（宝石蓝、钛色、白月光）/ 197 g（辰夜黑）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "OriginOS 5",
     "priceCN": 4299,
@@ -8737,7 +9350,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8748,11 +9361,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.67 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200",
+        "evidenceText": "官方规格页明确列出：6.67 英寸。",
+        "valueAtAudit": "6.67 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5800 mAh（典型值）/ 5695 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200",
+        "evidenceText": "官方规格页明确列出：5800 mAh（典型值）/ 5695 mAh（额定值）。",
+        "valueAtAudit": "5800 mAh（典型值）/ 5695 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "90W 闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200",
+        "evidenceText": "官方规格页明确列出：90W 闪充。",
+        "valueAtAudit": "90W 闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "202 g（宝石蓝、钛色、白月光）/ 197 g（辰夜黑）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200",
+        "evidenceText": "官方规格页明确列出：202 g（宝石蓝、钛色、白月光）/ 197 g（辰夜黑）。",
+        "valueAtAudit": "202 g（宝石蓝、钛色、白月光）/ 197 g（辰夜黑）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "vivo-x200p",
@@ -8761,12 +9421,12 @@
     "year": 2024,
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 AMOLED · 1–120Hz",
+    "display": "6.78 英寸",
     "chip": "天玑 9400",
     "camera": "5000 万主摄 + 2 亿潜望长焦 + 5000 万超广角",
-    "battery": "6000 mAh",
-    "charging": "90W 有线 / 30W 无线",
-    "weight": "223 g",
+    "battery": "6000 mAh（典型值）/ 5865 mAh（额定值）",
+    "charging": "90W 有线闪充 / 30W 无线闪充",
+    "weight": "228 g（宝石蓝、钛色、白月光）/ 223 g（辰夜黑）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "OriginOS 5",
     "priceCN": 5299,
@@ -8792,7 +9452,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8803,11 +9463,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200pro",
+        "evidenceText": "官方规格页明确列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "6000 mAh（典型值）/ 5865 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200pro",
+        "evidenceText": "官方规格页明确列出：6000 mAh（典型值）/ 5865 mAh（额定值）。",
+        "valueAtAudit": "6000 mAh（典型值）/ 5865 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "90W 有线闪充 / 30W 无线闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200pro",
+        "evidenceText": "官方规格页明确列出：90W 有线闪充 / 30W 无线闪充。",
+        "valueAtAudit": "90W 有线闪充 / 30W 无线闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "228 g（宝石蓝、钛色、白月光）/ 223 g（辰夜黑）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200pro",
+        "evidenceText": "官方规格页明确列出：228 g（宝石蓝、钛色、白月光）/ 223 g（辰夜黑）。",
+        "valueAtAudit": "228 g（宝石蓝、钛色、白月光）/ 223 g（辰夜黑）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200pro",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "vivo-x200pm",
@@ -8816,11 +9523,11 @@
     "year": 2024,
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.31 英寸 AMOLED · 1–120Hz",
+    "display": "6.31 英寸",
     "chip": "天玑 9400",
     "camera": "5000 万主摄 + 5000 万潜望长焦 + 5000 万超广角",
-    "battery": "5700 mAh",
-    "charging": "90W 有线 / 30W 无线",
+    "battery": "5700 mAh（典型值）/ 5560 mAh（额定值）",
+    "charging": "90W 有线闪充 / 30W 无线闪充",
     "weight": "187 g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "OriginOS 5",
@@ -8847,7 +9554,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8858,11 +9565,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.31 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200promini",
+        "evidenceText": "官方规格页明确列出：6.31 英寸。",
+        "valueAtAudit": "6.31 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5700 mAh（典型值）/ 5560 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200promini",
+        "evidenceText": "官方规格页明确列出：5700 mAh（典型值）/ 5560 mAh（额定值）。",
+        "valueAtAudit": "5700 mAh（典型值）/ 5560 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "90W 有线闪充 / 30W 无线闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200promini",
+        "evidenceText": "官方规格页明确列出：90W 有线闪充 / 30W 无线闪充。",
+        "valueAtAudit": "90W 有线闪充 / 30W 无线闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "187 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200promini",
+        "evidenceText": "官方规格页明确列出：187 g。",
+        "valueAtAudit": "187 g",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200promini",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "vivo-x100",
@@ -8871,12 +9625,12 @@
     "year": 2023,
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 AMOLED · 1–120Hz",
+    "display": "6.78 英寸",
     "chip": "天玑 9300",
     "camera": "5000 万主摄 + 6400 万潜望长焦 + 5000 万超广角",
-    "battery": "5000 mAh",
+    "battery": "等效 5000 mAh（典型值，双电芯）/ 等效 4880 mAh（额定值）",
     "charging": "100W 有线",
-    "weight": "206 g",
+    "weight": "约 206 g（辰夜黑、星迹蓝、白月光）/ 约 202 g（落日橙）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "OriginOS 4",
     "priceCN": 3999,
@@ -8901,7 +9655,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8912,11 +9666,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x100",
+        "evidenceText": "官方规格页明确列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "等效 5000 mAh（典型值，双电芯）/ 等效 4880 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x100",
+        "evidenceText": "官方规格页明确列出：等效 5000 mAh（典型值，双电芯）/ 等效 4880 mAh（额定值）。",
+        "valueAtAudit": "等效 5000 mAh（典型值，双电芯）/ 等效 4880 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 206 g（辰夜黑、星迹蓝、白月光）/ 约 202 g（落日橙）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x100",
+        "evidenceText": "官方规格页明确列出：约 206 g（辰夜黑、星迹蓝、白月光）/ 约 202 g（落日橙）。",
+        "valueAtAudit": "约 206 g（辰夜黑、星迹蓝、白月光）/ 约 202 g（落日橙）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 16GB+256GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x100",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+256GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 16GB+256GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "vivo-x100p",
@@ -8925,12 +9717,12 @@
     "year": 2023,
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 AMOLED · 1–120Hz",
+    "display": "6.78 英寸",
     "chip": "天玑 9300",
     "camera": "1 英寸 5000 万主摄 + 5000 万潜望长焦 + 5000 万超广角",
-    "battery": "5400 mAh",
+    "battery": "等效 5400 mAh（典型值，双电芯）/ 等效 5260 mAh（额定值）",
     "charging": "100W 有线 / 50W 无线",
-    "weight": "221 g",
+    "weight": "225 g（辰夜黑、星迹蓝、白月光）/ 221 g（落日橙）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "OriginOS 4",
     "priceCN": 4999,
@@ -8956,7 +9748,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8967,11 +9759,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x100pro",
+        "evidenceText": "官方规格页明确列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "等效 5400 mAh（典型值，双电芯）/ 等效 5260 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x100pro",
+        "evidenceText": "官方规格页明确列出：等效 5400 mAh（典型值，双电芯）/ 等效 5260 mAh（额定值）。",
+        "valueAtAudit": "等效 5400 mAh（典型值，双电芯）/ 等效 5260 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "225 g（辰夜黑、星迹蓝、白月光）/ 221 g（落日橙）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x100pro",
+        "evidenceText": "官方规格页明确列出：225 g（辰夜黑、星迹蓝、白月光）/ 221 g（落日橙）。",
+        "valueAtAudit": "225 g（辰夜黑、星迹蓝、白月光）/ 221 g（落日橙）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 16GB+256GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x100pro",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+256GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 16GB+256GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "vivo-xfold5",
@@ -8980,12 +9810,12 @@
     "year": 2025,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "8.03 英寸内屏 + 6.53 英寸外屏 · 1–120Hz",
+    "display": "8.03 英寸内屏 + 6.53 英寸外屏",
     "chip": "骁龙 8 Gen 3",
     "camera": "5000 万主摄 + 5000 万潜望长焦 + 5000 万超广角",
-    "battery": "6000 mAh",
+    "battery": "等效 6000 mAh（典型值，双电池并联）",
     "charging": "80W 有线 / 40W 无线",
-    "weight": "217 g",
+    "weight": "217 g（钛度）/ 226 g（明白、青松）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "OriginOS 5",
     "priceCN": 6999,
@@ -9011,7 +9841,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -9022,11 +9852,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "8.03 英寸内屏 + 6.53 英寸外屏",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold5",
+        "evidenceText": "官方规格页明确列出：8.03 英寸内屏 + 6.53 英寸外屏。",
+        "valueAtAudit": "8.03 英寸内屏 + 6.53 英寸外屏",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "等效 6000 mAh（典型值，双电池并联）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold5",
+        "evidenceText": "官方规格页明确列出：等效 6000 mAh（典型值，双电池并联）。",
+        "valueAtAudit": "等效 6000 mAh（典型值，双电池并联）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "217 g（钛度）/ 226 g（明白、青松）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold5",
+        "evidenceText": "官方规格页明确列出：217 g（钛度）/ 226 g（明白、青松）。",
+        "valueAtAudit": "217 g（钛度）/ 226 g（明白、青松）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold5",
+        "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+512GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "vivo-xfold3p",
@@ -9035,10 +9903,10 @@
     "year": 2024,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "8.03 英寸内屏 + 6.53 英寸外屏 · 1–120Hz",
+    "display": "8.03 英寸内屏 + 6.53 英寸外屏",
     "chip": "骁龙 8 Gen 3",
     "camera": "5000 万主摄 + 6400 万潜望长焦 + 5000 万超广角",
-    "battery": "5700 mAh",
+    "battery": "等效 5700 mAh（典型值，双电池串联）/ 等效 5550 mAh（额定值）",
     "charging": "100W 有线 / 50W 无线",
     "weight": "236 g",
     "storage": "16GB+512GB / 16GB+1TB",
@@ -9065,7 +9933,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -9076,11 +9944,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "8.03 英寸内屏 + 6.53 英寸外屏",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold3pro",
+        "evidenceText": "官方规格页明确列出：8.03 英寸内屏 + 6.53 英寸外屏。",
+        "valueAtAudit": "8.03 英寸内屏 + 6.53 英寸外屏",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "等效 5700 mAh（典型值，双电池串联）/ 等效 5550 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold3pro",
+        "evidenceText": "官方规格页明确列出：等效 5700 mAh（典型值，双电池串联）/ 等效 5550 mAh（额定值）。",
+        "valueAtAudit": "等效 5700 mAh（典型值，双电池串联）/ 等效 5550 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "236 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold3pro",
+        "evidenceText": "官方规格页明确列出：236 g。",
+        "valueAtAudit": "236 g",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold3pro",
+        "evidenceText": "官方规格页明确列出：16GB+512GB。",
+        "valueAtAudit": "16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "op-ace5p",
