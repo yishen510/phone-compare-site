@@ -11267,5 +11267,428 @@
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
       }
     ]
+  },
+  {
+    "id": "redmi-k70-pro",
+    "brand": "Xiaomi",
+    "name": "REDMI K70 Pro",
+    "year": 2023,
+    "type": "性能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.67 英寸 · 120Hz",
+    "chip": "第三代骁龙 8",
+    "camera": "官方规格页未逐项列出镜头组合，待核验",
+    "battery": "5000 mAh",
+    "charging": "120W 有线快充",
+    "weight": "209 g / 211 g（版本不同）",
+    "storage": "12GB+256GB / 16GB+512GB / 24GB+1TB",
+    "os": "MIUI 14",
+    "priceCN": null,
+    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "selling": "2K 直屏 + 第三代骁龙 8 的性能旗舰",
+    "bestFor": [
+      "游戏性能",
+      "续航",
+      "性价比"
+    ],
+    "source": "https://www.mi.com/redmi-k70-pro/specs",
+    "sourceName": "厂商官方站点；字段核验状态见 auditStatus",
+    "verified": false,
+    "launchMonth": "2023-11",
+    "launchDateDisplay": "2023年11月",
+    "priceType": "unknown",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "16GB+512GB",
+      "24GB+1TB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
+    "announcementSource": "https://www.mi.com/redmi-k70-pro/specs",
+    "priceSource": null,
+    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "机型身份与发布月份按厂商公开信息录入",
+      "主要参数已按厂商官方规格页核对（2026-10-20）",
+      "影像细节与首发价未核验，整机准入保持关闭"
+    ],
+    "priceAuditStatus": "missing",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.67 英寸，120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70-pro/specs",
+        "evidenceText": "官方规格页列出 6.67 英寸屏幕与 120Hz。",
+        "valueAtAudit": "6.67 英寸，120Hz",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "第三代骁龙 8",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70-pro/specs",
+        "evidenceText": "官方规格页列出第三代骁龙 8 移动平台。",
+        "valueAtAudit": "第三代骁龙 8",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5000 mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70-pro/specs",
+        "evidenceText": "官方规格页列出 5000mAh（典型值）。",
+        "valueAtAudit": "5000 mAh",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70-pro/specs",
+        "evidenceText": "官方规格页列出 120W 有线快充。",
+        "valueAtAudit": "120W 有线",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "209 g / 211 g（版本不同）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.mi.com/redmi-k70-pro/specs",
+        "evidenceText": "官方规格页按版本列出 209g / 211g。",
+        "valueAtAudit": "209 g / 211 g（版本不同）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
+  },
+  {
+    "id": "vivo-x90",
+    "brand": "vivo",
+    "name": "vivo X90",
+    "year": 2022,
+    "type": "影像旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.78 英寸 · 120Hz",
+    "chip": "天玑 9200",
+    "camera": "官方规格页未逐项列出镜头组合，待核验",
+    "battery": "等效 4810 mAh（典型值，双电芯）/ 等效 4690 mAh（额定）",
+    "charging": "120W 闪充",
+    "weight": "约 200 g（至黑、冰蓝）/ 196 g（华夏红）/ 202 g（告白）",
+    "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB / 12GB+512GB",
+    "os": "OriginOS 3",
+    "priceCN": null,
+    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "selling": "天玑 9200 与蔡司影像的标准旗舰",
+    "bestFor": [
+      "拍照视频",
+      "日常全能"
+    ],
+    "source": "https://www.vivo.com.cn/vivo/param/x90",
+    "sourceName": "厂商官方站点；字段核验状态见 auditStatus",
+    "verified": false,
+    "launchMonth": "2022-11",
+    "launchDateDisplay": "2022年11月",
+    "priceType": "unknown",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "8GB+128GB",
+      "8GB+256GB",
+      "12GB+256GB",
+      "12GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
+    "announcementSource": "https://www.vivo.com.cn/vivo/param/x90",
+    "priceSource": null,
+    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "机型身份与发布月份按厂商公开信息录入",
+      "主要参数已按厂商官方规格页核对（2026-10-20）",
+      "影像细节与首发价未核验，整机准入保持关闭"
+    ],
+    "priceAuditStatus": "missing",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x90",
+        "evidenceText": "官方规格页列出 6.78 英寸屏幕。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "天玑 9200",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x90",
+        "evidenceText": "官方规格页列出天玑 9200 旗舰 5G 移动平台。",
+        "valueAtAudit": "天玑 9200",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "等效 4810 mAh（典型值）/ 4690 mAh（额定）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x90",
+        "evidenceText": "官方规格页按双电芯列出典型与额定等效容量。",
+        "valueAtAudit": "等效 4810 mAh（典型值）/ 4690 mAh（额定）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x90",
+        "evidenceText": "官方规格页列出 120W 闪充。",
+        "valueAtAudit": "120W 闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 200 g / 196 g / 202 g（配色不同）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x90",
+        "evidenceText": "官方规格页按配色列出重量。",
+        "valueAtAudit": "约 200 g / 196 g / 202 g（配色不同）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
+  },
+  {
+    "id": "vivo-xfold2",
+    "brand": "vivo",
+    "name": "vivo X Fold2",
+    "year": 2023,
+    "type": "折叠屏旗舰",
+    "market": "中国大陆正式销售",
+    "display": "8.03 英寸内屏 + 6.53 英寸外屏 · 120Hz",
+    "chip": "骁龙 8 Gen 2",
+    "camera": "官方规格页未逐项列出镜头组合，待核验",
+    "battery": "等效 4800 mAh（典型值，双电池）/ 等效 4680 mAh（额定）",
+    "charging": "120W 有线 + 50W 无线",
+    "weight": "278.5 g（华夏红、天青蓝）/ 279.5 g（弦影黑）",
+    "storage": "12GB+256GB / 12GB+512GB",
+    "os": "OriginOS 3",
+    "priceCN": null,
+    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "selling": "大折叠中的快充与影像堆料款",
+    "bestFor": [
+      "大屏办公",
+      "拍照视频",
+      "日常全能"
+    ],
+    "source": "https://www.vivo.com.cn/vivo/param/xfold2",
+    "sourceName": "厂商官方站点；字段核验状态见 auditStatus",
+    "verified": false,
+    "launchMonth": "2023-04",
+    "launchDateDisplay": "2023年04月",
+    "priceType": "unknown",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "12GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
+    "announcementSource": "https://www.vivo.com.cn/vivo/param/xfold2",
+    "priceSource": null,
+    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "机型身份与发布月份按厂商公开信息录入",
+      "主要参数已按厂商官方规格页核对（2026-10-20）",
+      "影像细节与首发价未核验，整机准入保持关闭"
+    ],
+    "priceAuditStatus": "missing",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "内屏 8.03 英寸 / 外屏 6.53 英寸",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold2",
+        "evidenceText": "官方规格页分别列出内屏与外屏尺寸。",
+        "valueAtAudit": "内屏 8.03 英寸 / 外屏 6.53 英寸",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 Gen 2",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold2",
+        "evidenceText": "官方规格页列出骁龙 8 移动平台。",
+        "valueAtAudit": "骁龙 8 Gen 2",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "等效 4800 mAh（典型值）/ 4680 mAh（额定）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold2",
+        "evidenceText": "官方规格页按双电池列出等效容量。",
+        "valueAtAudit": "等效 4800 mAh（典型值）/ 4680 mAh（额定）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线 / 50W 无线",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold2",
+        "evidenceText": "官方规格页列出 120W 闪充与 50W 无线充电。",
+        "valueAtAudit": "120W 有线 / 50W 无线",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "278.5 g / 279.5 g（配色不同）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold2",
+        "evidenceText": "官方规格页按配色列出重量。",
+        "valueAtAudit": "278.5 g / 279.5 g（配色不同）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold2",
+        "evidenceText": "官方规格页列出两种容量组合。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
+  },
+  {
+    "id": "oppo-x6",
+    "brand": "OPPO",
+    "name": "OPPO Find X6",
+    "year": 2023,
+    "type": "影像旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.74 英寸 · 120Hz",
+    "chip": "天玑 9200",
+    "camera": "官方规格页未逐项列出镜头组合，待核验",
+    "battery": "等效 4800 mAh（典型值，双电芯）/ 等效 4700 mAh（额定）",
+    "charging": "80W 超级闪充",
+    "weight": "207 克",
+    "storage": "12GB+256GB / 16GB+512GB",
+    "os": "ColorOS 13.1",
+    "priceCN": null,
+    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "selling": "哈苏影像的标准旗舰",
+    "bestFor": [
+      "拍照视频",
+      "日常全能"
+    ],
+    "source": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/",
+    "sourceName": "厂商官方站点；字段核验状态见 auditStatus",
+    "verified": false,
+    "launchMonth": "2023-03",
+    "launchDateDisplay": "2023年03月",
+    "priceType": "unknown",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "16GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
+    "announcementSource": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/",
+    "priceSource": null,
+    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "机型身份与发布月份按厂商公开信息录入",
+      "主要参数已按厂商官方规格页核对（2026-10-20）",
+      "影像细节与首发价未核验，整机准入保持关闭"
+    ],
+    "priceAuditStatus": "missing",
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.74 英寸（对角线）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/",
+        "evidenceText": "官方规格页列出 6.74 英寸屏幕。",
+        "valueAtAudit": "6.74 英寸（对角线）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "天玑 9200",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/",
+        "evidenceText": "官方规格页列出天玑 9200 移动平台。",
+        "valueAtAudit": "天玑 9200",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "等效 4800 mAh（典型值）/ 4700 mAh（额定）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/",
+        "evidenceText": "官方规格页按双电芯列出等效容量。",
+        "valueAtAudit": "等效 4800 mAh（典型值）/ 4700 mAh（额定）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "80W 超级闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/",
+        "evidenceText": "官方规格页列出 80W 超级闪充。",
+        "valueAtAudit": "80W 超级闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "207 克",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/",
+        "evidenceText": "官方规格页列出重量 207 克。",
+        "valueAtAudit": "207 克",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 16GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/",
+        "evidenceText": "官方规格页列出两种容量组合。",
+        "valueAtAudit": "12GB+256GB / 16GB+512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   }
 ]
