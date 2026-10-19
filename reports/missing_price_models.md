@@ -1,34 +1,39 @@
-# 暂无价格的机型（15 款）
+# 待补价格机型清单（已清空）
 
-更新时间：2026-10-20。2024—2026 年新机的官方首发价已经补齐，
-剩下这批主要是 2021—2023 年的老机型：厂商官网早已下架对应产品页，
-发布会稿也过了新闻周期，因此需要中关村在线 `param.shtml` 页作为第三方参考价来源。
+更新时间：2026-10-20。
 
-补价方式：把下列机型的中关村在线 `param.shtml` 地址发我，我会按「参考价（第三方）」补入。
+213 款目录记录已全部有价格来源，本清单不再有待办项。
 
-## Samsung（2）
-- [ ] Galaxy Z Fold5（2023）  搜索：Galaxy Z Fold5 参数 中关村在线
-- [ ] Galaxy Z Flip5（2023）  搜索：Galaxy Z Flip5 参数 中关村在线
+## 本轮补齐的 15 款
 
-## Huawei（1）
-- [ ] HUAWEI Mate X5（2023）  搜索：HUAWEI Mate X5 参数 中关村在线
+由用户在《待补价格机型填写表》中提供中关村在线参考价后录入，统一按
+`priceType=third_party_reference`（卡片标签「参考价（第三方）」）记账：
 
-## Xiaomi（3）
-- [ ] REDMI K70 Pro（2023）  搜索：REDMI K70 Pro 参数 中关村在线
-- [ ] REDMI K70（2023）  搜索：REDMI K70 参数 中关村在线
-- [ ] REDMI K60 Pro（2022）  搜索：REDMI K60 Pro 参数 中关村在线
+| 机型 | 参考价 | 用户填写容量 |
+|---|---|---|
+| iPhone 13 | 5999 | 128GB |
+| iPhone 13 mini | 5199 | 128GB |
+| iPhone 13 Pro | 7999 | 128GB |
+| iPhone 14 | 5999 | 128GB |
+| iPhone 14 Plus | 6999 | 128GB |
+| iPhone 15 Plus | 6999 | 128GB |
+| Galaxy Z Fold5 | 12999 | 512GB ⚠ |
+| Galaxy Z Flip5 | 8499 | 256GB ⚠ |
+| REDMI K70 | 2499 | 256GB |
+| REDMI K70 Pro | 3299 | 256GB |
+| REDMI K60 Pro | 3299 | 128GB |
+| vivo X90 | 3699 | 128GB |
+| vivo X Fold2 | 8999 | 256GB |
+| HUAWEI Mate X5 | 12999 | 256GB |
+| OPPO Find X6 | 4999 | 256GB |
 
-## vivo（2）
-- [ ] vivo X Fold2（2023）  搜索：vivo X Fold2 参数 中关村在线
-- [ ] vivo X90（2022）  搜索：vivo X90 参数 中关村在线
+⚠ 两条容量与价格的搭配与官方首发时不一致，已写入 `fieldAudit.evidenceText` 待核：
 
-## OPPO（1）
-- [ ] OPPO Find X6（2023）  搜索：OPPO Find X6 参数 中关村在线
+- Galaxy Z Fold5：官方 2023-07 首发 12999 元对应 12GB+256GB，512GB 为 13999 元。
+- Galaxy Z Flip5：官方 2023-07 首发 8GB+256GB 为 7499 元，8GB+512GB 为 8499 元。
 
-## Apple（6）
-- [ ] iPhone 15 Plus（2023）  搜索：iPhone 15 Plus 参数 中关村在线
-- [ ] iPhone 14（2022）  搜索：iPhone 14 参数 中关村在线
-- [ ] iPhone 14 Plus（2022）  搜索：iPhone 14 Plus 参数 中关村在线
-- [ ] iPhone 13（2021）  搜索：iPhone 13 参数 中关村在线
-- [ ] iPhone 13 mini（2021）  搜索：iPhone 13 mini 参数 中关村在线
-- [ ] iPhone 13 Pro（2021）  搜索：iPhone 13 Pro 参数 中关村在线
+## 遗留
+
+这 15 条均未附中关村参数页链接，`priceSource` 为空，字段证据状态为
+`unverified_missing_or_insufficient_official_evidence`，详情页显示「待核验」。
+补上链接后可升级为可点击来源。

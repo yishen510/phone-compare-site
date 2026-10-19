@@ -245,3 +245,11 @@
 - 顺带修正两条历史数据：`honor-magic8-pro` 价格类型由 `unknown` 改为 `official_starting_price` 并补建价格审计条目；`op-15` 原 `priceSourceName` 写「暂无可靠的首发价格来源」却已填 3999，按 IT之家五档官方定价改为 `official_launch_msrp`（12GB+256GB 3999 元）。
 - 仍缺价格 **15 款**，全部为 2021—2023 年机型（iPhone 13 / 13 mini / 13 Pro / 14 / 14 Plus / 15 Plus、Galaxy Z Fold5 / Z Flip5、Mate X5、REDMI K70 / K70 Pro / K60 Pro、vivo X90 / X Fold2、OPPO Find X6），官方产品页均已下架，需中关村在线链接。清单见 `reports/missing_price_models.md`。
 - 修复一处同步缺陷：此前 HTML 内嵌数据用「保留旧数组 + 追加新数组」的方式拼接，重复执行会让数据成倍膨胀（本轮曾出现 213→639 条）。现改为整体替换 `window.PHONE_DATA=[...]` 块并在写盘前自检条数与内容，`scripts/backfill_launch_prices_2026-10-20.py` 已同步修正。
+
+## 2026-10-20 价格覆盖收口：213 / 213
+
+- 用户填写《待补价格机型填写表》后，最后 15 款 2021—2023 年机型补入价格，**目录 213 条全部有价**。
+- 记账口径：用户只提供参考价与容量、未附中关村参数页链接，统一记 `priceType=third_party_reference`、`priceAuditStatus=secondary_source_reference`、`priceSource=""`，字段证据状态 `unverified_missing_or_insufficient_official_evidence`（详情页显示「待核验」）。不冒充官方首发价。
+- 当前分布：`official_launch_msrp` 145、`third_party_reference` 61、`official_starting_price` 6、`official_retail_msrp` 1。
+- **两条待核**：Galaxy Z Fold5（用户填 512GB / 12999 元）与 Galaxy Z Flip5（用户填 256GB / 8499 元）的容量-价格搭配与 2023-07 官方首发价不一致（官方 12999 元对应 256GB、8499 元对应 512GB）。已写入 `fieldAudit.evidenceText` 与 `auditNotes`，等用户确认或补链接后修正。
+- 后续若要升级这 15 条的来源等级，只需补中关村 `param.shtml` 地址，脚本 `scripts/apply_filled_prices_2026-10-20.py` 可按同一口径改写。

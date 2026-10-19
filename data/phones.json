@@ -7175,8 +7175,8 @@
     "weight": "253g",
     "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
     "os": "Android / One UI 5.1",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 12999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "水滴铰链闭合无缝的横向大折叠",
     "bestFor": [
       "大屏办公",
@@ -7188,7 +7188,7 @@
     "verified": false,
     "launchMonth": "2023-07",
     "launchDateDisplay": "2023年07月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -7200,8 +7200,8 @@
     "chinaOfficial": true,
     "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -7210,9 +7210,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
-      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭",
+      "2026-10-20 按用户填写表补入参考价：12999元 / 512GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -7259,6 +7260,14 @@
         "evidenceText": "第三方参数页列出：253g。",
         "valueAtAudit": "253g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "12999元（512GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 12999 元、容量 512GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。⚠ 用户填写为 512GB/12999 元；官方 2023-07 首发时 12999 元对应 12GB+256GB，512GB 为 13999 元，容量与价格搭配待与中关村页面核对。",
+        "note": "第三方参考价，未经厂商官方页核对；容量与价格搭配存疑，待核。"
       }
     ]
   },
@@ -7277,8 +7286,8 @@
     "weight": "187g",
     "storage": "8GB+256GB / 8GB+512GB",
     "os": "Android / One UI 5.1",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 8499,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "外屏扩至 3.4 英寸的竖向小折叠",
     "bestFor": [
       "小屏手感",
@@ -7290,7 +7299,7 @@
     "verified": false,
     "launchMonth": "2023-07",
     "launchDateDisplay": "2023年07月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -7301,8 +7310,8 @@
     "chinaOfficial": true,
     "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -7311,9 +7320,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
-      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭",
+      "2026-10-20 按用户填写表补入参考价：8499元 / 256GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -7360,6 +7370,14 @@
         "evidenceText": "第三方参数页列出：187g。",
         "valueAtAudit": "187g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "8499元（256GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 8499 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。⚠ 用户填写为 256GB/8499 元；官方 2023-07 首发时 8GB+256GB 为 7499 元、8GB+512GB 为 8499 元，容量与价格搭配待与中关村页面核对。",
+        "note": "第三方参考价，未经厂商官方页核对；容量与价格搭配存疑，待核。"
       }
     ]
   },
@@ -8742,8 +8760,8 @@
     "weight": "243g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "HarmonyOS 4",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 12999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "轻薄横向大折叠，玄武钢化玻璃",
     "bestFor": [
       "大屏办公",
@@ -8755,7 +8773,7 @@
     "verified": false,
     "launchMonth": "2023-09",
     "launchDateDisplay": "2023年09月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -8768,8 +8786,8 @@
     "chinaOfficial": true,
     "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://consumer.huawei.com/cn/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -8778,9 +8796,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
-      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭",
+      "2026-10-20 按用户填写表补入参考价：12999元 / 256GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -8818,6 +8837,14 @@
         "evidenceText": "第三方参数页列出：243g。",
         "valueAtAudit": "243g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "12999元（256GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 12999 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -11584,8 +11611,8 @@
     "weight": "209 g / 211 g（版本不同）",
     "storage": "12GB+256GB / 16GB+512GB / 24GB+1TB",
     "os": "MIUI 14",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3299,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "2K 直屏 + 第三代骁龙 8 的性能旗舰",
     "bestFor": [
       "游戏性能",
@@ -11597,7 +11624,7 @@
     "verified": false,
     "launchMonth": "2023-11",
     "launchDateDisplay": "2023年11月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -11609,8 +11636,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://www.mi.com/redmi-k70-pro/specs",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
@@ -11619,9 +11646,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：3299元 / 256GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -11668,6 +11696,14 @@
         "evidenceText": "官方规格页按版本列出 209g / 211g。",
         "valueAtAudit": "209 g / 211 g（版本不同）",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "3299元（256GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 3299 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -11686,8 +11722,8 @@
     "weight": "约 200 g（至黑、冰蓝）/ 196 g（华夏红）/ 202 g（告白）",
     "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB / 12GB+512GB",
     "os": "OriginOS 3",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3699,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "天玑 9200 与蔡司影像的标准旗舰",
     "bestFor": [
       "拍照视频",
@@ -11698,7 +11734,7 @@
     "verified": false,
     "launchMonth": "2022-11",
     "launchDateDisplay": "2022年11月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -11711,8 +11747,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/vivo/param/x90",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
@@ -11721,9 +11757,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：3699元 / 128GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -11770,6 +11807,14 @@
         "evidenceText": "官方规格页按配色列出重量。",
         "valueAtAudit": "约 200 g / 196 g / 202 g（配色不同）",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "3699元（128GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 3699 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -11788,8 +11833,8 @@
     "weight": "278.5 g（华夏红、天青蓝）/ 279.5 g（弦影黑）",
     "storage": "12GB+256GB / 12GB+512GB",
     "os": "OriginOS 3",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 8999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "大折叠中的快充与影像堆料款",
     "bestFor": [
       "大屏办公",
@@ -11801,7 +11846,7 @@
     "verified": false,
     "launchMonth": "2023-04",
     "launchDateDisplay": "2023年04月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -11812,8 +11857,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/vivo/param/xfold2",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
@@ -11822,9 +11867,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：8999元 / 256GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -11880,6 +11926,14 @@
         "evidenceText": "官方规格页列出两种容量组合。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "8999元（256GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 8999 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -11898,8 +11952,8 @@
     "weight": "207 克",
     "storage": "12GB+256GB / 16GB+512GB",
     "os": "ColorOS 13.1",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 4999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "哈苏影像的标准旗舰",
     "bestFor": [
       "拍照视频",
@@ -11910,7 +11964,7 @@
     "verified": false,
     "launchMonth": "2023-03",
     "launchDateDisplay": "2023年03月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -11921,8 +11975,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6/specs/",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
@@ -11931,9 +11985,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：4999元 / 256GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -11989,6 +12044,14 @@
         "evidenceText": "官方规格页列出两种容量组合。",
         "valueAtAudit": "12GB+256GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "4999元（256GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 4999 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -12007,8 +12070,8 @@
     "weight": "209 g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "MIUI 14",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 2499,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "2K 直屏的标准版性能机",
     "bestFor": [
       "游戏性能",
@@ -12020,7 +12083,7 @@
     "verified": false,
     "launchMonth": "2023-11",
     "launchDateDisplay": "2023年11月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12032,8 +12095,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://www.mi.com/redmi-k70/specs",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
@@ -12042,9 +12105,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：2499元 / 256GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -12091,6 +12155,14 @@
         "evidenceText": "官方规格页列出重量 209g。",
         "valueAtAudit": "209 g",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "2499元（256GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 2499 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -12109,8 +12181,8 @@
     "weight": "205 g / 201 g（版本不同）",
     "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB / 12GB+512GB",
     "os": "MIUI 14",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 3299,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "120W + 30W 无线的性能旗舰",
     "bestFor": [
       "游戏性能",
@@ -12122,7 +12194,7 @@
     "verified": false,
     "launchMonth": "2022-12",
     "launchDateDisplay": "2022年12月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12135,8 +12207,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://www.mi.com/redmi-k60-pro/specs",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "12GB+256GB",
@@ -12145,9 +12217,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：3299元 / 128GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -12194,6 +12267,14 @@
         "evidenceText": "官方规格页按版本列出 205g 与 201g。",
         "valueAtAudit": "205 g / 201 g（版本不同）",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "3299元（128GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 3299 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -12212,8 +12293,8 @@
     "weight": "173 克",
     "storage": "128GB / 256GB / 512GB",
     "os": "iOS 15",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "A15 与双摄下放的标准旗舰",
     "bestFor": [
       "拍照视频",
@@ -12225,7 +12306,7 @@
     "verified": false,
     "launchMonth": "2021-09",
     "launchDateDisplay": "2021年09月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12237,8 +12318,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://support.apple.com/zh-cn/111872",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "128GB",
@@ -12247,9 +12328,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：5999元 / 128GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -12305,6 +12387,14 @@
         "evidenceText": "规格页列出 128GB/256GB/512GB。",
         "valueAtAudit": "128GB / 256GB / 512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "5999元（128GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 5999 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -12323,8 +12413,8 @@
     "weight": "140 克",
     "storage": "128GB / 256GB / 512GB",
     "os": "iOS 15",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5199,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "5.4 英寸小屏旗舰",
     "bestFor": [
       "拍照视频",
@@ -12336,7 +12426,7 @@
     "verified": false,
     "launchMonth": "2021-09",
     "launchDateDisplay": "2021年09月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12348,8 +12438,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://support.apple.com/zh-cn/111873",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "128GB",
@@ -12358,9 +12448,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：5199元 / 128GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -12416,6 +12507,14 @@
         "evidenceText": "规格页列出 128GB/256GB/512GB。",
         "valueAtAudit": "128GB / 256GB / 512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "5199元（128GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 5199 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -12434,8 +12533,8 @@
     "weight": "172 克",
     "storage": "128GB / 256GB / 512GB",
     "os": "iOS 16",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 5999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "标准尺寸的 14 代机型",
     "bestFor": [
       "拍照视频",
@@ -12447,7 +12546,7 @@
     "verified": false,
     "launchMonth": "2022-09",
     "launchDateDisplay": "2022年09月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12459,8 +12558,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://support.apple.com/zh-cn/111850",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "128GB",
@@ -12469,9 +12568,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：5999元 / 128GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -12527,6 +12627,14 @@
         "evidenceText": "规格页列出 128GB/256GB/512GB。",
         "valueAtAudit": "128GB / 256GB / 512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "5999元（128GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 5999 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -12545,8 +12653,8 @@
     "weight": "203 克",
     "storage": "128GB / 256GB / 512GB",
     "os": "iOS 16",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 6999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "6.7 英寸大屏长续航标准款",
     "bestFor": [
       "拍照视频",
@@ -12558,7 +12666,7 @@
     "verified": false,
     "launchMonth": "2022-09",
     "launchDateDisplay": "2022年09月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12570,8 +12678,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://support.apple.com/zh-cn/111854",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "128GB",
@@ -12580,9 +12688,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：6999元 / 128GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -12638,6 +12747,14 @@
         "evidenceText": "规格页列出 128GB/256GB/512GB。",
         "valueAtAudit": "128GB / 256GB / 512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "6999元（128GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 6999 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -12656,8 +12773,8 @@
     "weight": "201 克",
     "storage": "128GB / 256GB / 512GB",
     "os": "iOS 17",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 6999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "6.7 英寸大屏 + 4800 万主摄",
     "bestFor": [
       "拍照视频",
@@ -12669,7 +12786,7 @@
     "verified": false,
     "launchMonth": "2023-09",
     "launchDateDisplay": "2023年09月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12681,8 +12798,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://support.apple.com/zh-cn/111830",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "128GB",
@@ -12691,9 +12808,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：6999元 / 128GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -12749,6 +12867,14 @@
         "evidenceText": "规格页列出 128GB/256GB/512GB。",
         "valueAtAudit": "128GB / 256GB / 512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "6999元（128GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 6999 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
@@ -12767,8 +12893,8 @@
     "weight": "203 克",
     "storage": "128GB / 256GB / 512GB / 1TB",
     "os": "iOS 15",
-    "priceCN": null,
-    "priceText": "官方首发起售价待核验；不以当前渠道价代替",
+    "priceCN": 7999,
+    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
     "selling": "ProMotion 高刷与三摄",
     "bestFor": [
       "拍照视频",
@@ -12780,7 +12906,7 @@
     "verified": false,
     "launchMonth": "2021-09",
     "launchDateDisplay": "2021年09月",
-    "priceType": "unknown",
+    "priceType": "third_party_reference",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -12793,8 +12919,8 @@
     "chinaOfficial": true,
     "dataNote": "主要参数已按厂商中国大陆官方规格页核对；未列出的字段仍待核验，整机准入保持关闭。",
     "announcementSource": "https://support.apple.com/zh-cn/111871",
-    "priceSource": null,
-    "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
+    "priceSource": "",
+    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": "128GB",
@@ -12803,9 +12929,10 @@
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
       "主要参数已按厂商官方规格页核对（2026-10-20）",
-      "影像细节与首发价未核验，整机准入保持关闭"
+      "影像细节与首发价未核验，整机准入保持关闭",
+      "2026-10-20 按用户填写表补入参考价：7999元 / 128GB（第三方参考价，缺链接）"
     ],
-    "priceAuditStatus": "missing",
+    "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -12861,6 +12988,14 @@
         "evidenceText": "规格页列出 128GB/256GB/512GB/1TB。",
         "valueAtAudit": "128GB / 256GB / 512GB / 1TB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": "7999元（128GB，第三方参考价）",
+        "status": "unverified_missing_or_insufficient_official_evidence",
+        "sourceUrl": "",
+        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 7999 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
+        "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
       }
     ]
   },
