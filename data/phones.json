@@ -6607,12 +6607,12 @@
     "year": 2024,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.7 英寸 Dynamic AMOLED 2X · 1–120Hz",
-    "chip": "骁龙 8 Gen 3 for Galaxy",
+    "display": "6.7 英寸",
+    "chip": "高通 骁龙8 Gen3 for Galaxy",
     "camera": "5000 万像素主摄 + 1200 万像素超广角 + 1000 万像素 3× 长焦",
     "battery": "4900 mAh",
     "charging": "45W 有线 / 15W 无线",
-    "weight": "196 g",
+    "weight": "196g",
     "storage": "12GB+256GB / 12GB+512GB",
     "os": "Android / One UI 6.1",
     "priceCN": 6999,
@@ -6637,7 +6637,7 @@
       "12GB+512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
     "priceSource": "https://www.samsung.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -6648,11 +6648,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.7 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1976/1975492/param.shtml",
+        "evidenceText": "第三方参数页列出：6.7 英寸。",
+        "valueAtAudit": "6.7 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通 骁龙8 Gen3 for Galaxy",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1976/1975492/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙8 Gen3 for Galaxy。",
+        "valueAtAudit": "高通 骁龙8 Gen3 for Galaxy",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "4900 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1976/1975492/param.shtml",
+        "evidenceText": "第三方参数页列出：4900 mAh。",
+        "valueAtAudit": "4900 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "196g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1976/1975492/param.shtml",
+        "evidenceText": "第三方参数页列出：196g。",
+        "valueAtAudit": "196g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "sam-zf6",
@@ -6846,12 +6884,12 @@
     "year": 2023,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "7.6 英寸内屏 + 6.2 英寸外屏 · 1–120Hz",
-    "chip": "骁龙 8 Gen 2 for Galaxy",
+    "display": "内屏 7.6 英寸 + 外屏 6.2 英寸",
+    "chip": "高通 骁龙8 Gen2 for Galaxy （4nm）",
     "camera": "5000 万像素主摄 + 1200 万像素超广角 + 1000 万像素 3× 长焦",
     "battery": "4400 mAh",
-    "charging": "25W 有线 / 无线充电",
-    "weight": "253 g",
+    "charging": "25W 有线",
+    "weight": "253g",
     "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
     "os": "Android / One UI 5.1",
     "priceCN": null,
@@ -6877,7 +6915,7 @@
       "12GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
     "priceSource": null,
     "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
@@ -6888,11 +6926,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "missing",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "内屏 7.6 英寸 + 外屏 6.2 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438747/param.shtml",
+        "evidenceText": "第三方参数页列出：内屏 7.6 英寸 + 外屏 6.2 英寸。",
+        "valueAtAudit": "内屏 7.6 英寸 + 外屏 6.2 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通 骁龙8 Gen2 for Galaxy （4nm）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438747/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙8 Gen2 for Galaxy （4nm）。",
+        "valueAtAudit": "高通 骁龙8 Gen2 for Galaxy （4nm）",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "4400 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438747/param.shtml",
+        "evidenceText": "第三方参数页列出：4400 mAh。",
+        "valueAtAudit": "4400 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "25W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438747/param.shtml",
+        "evidenceText": "第三方参数页列出：25W 有线。",
+        "valueAtAudit": "25W 有线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "253g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438747/param.shtml",
+        "evidenceText": "第三方参数页列出：253g。",
+        "valueAtAudit": "253g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "sam-zflip5",
@@ -6901,12 +6986,12 @@
     "year": 2023,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.7 英寸内屏 + 3.4 英寸外屏 · 1–120Hz",
-    "chip": "骁龙 8 Gen 2 for Galaxy",
+    "display": "6.7 英寸",
+    "chip": "高通 骁龙8 Gen2 for Galaxy （4nm）",
     "camera": "1200 万像素主摄 + 1200 万像素超广角",
     "battery": "3700 mAh",
-    "charging": "25W 有线 / 无线充电",
-    "weight": "187 g",
+    "charging": "25W 有线",
+    "weight": "187g",
     "storage": "8GB+256GB / 8GB+512GB",
     "os": "Android / One UI 5.1",
     "priceCN": null,
@@ -6931,7 +7016,7 @@
       "8GB+512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
     "priceSource": null,
     "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
@@ -6942,11 +7027,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "missing",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.7 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438746/param.shtml",
+        "evidenceText": "第三方参数页列出：6.7 英寸。",
+        "valueAtAudit": "6.7 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通 骁龙8 Gen2 for Galaxy （4nm）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438746/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙8 Gen2 for Galaxy （4nm）。",
+        "valueAtAudit": "高通 骁龙8 Gen2 for Galaxy （4nm）",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "3700 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438746/param.shtml",
+        "evidenceText": "第三方参数页列出：3700 mAh。",
+        "valueAtAudit": "3700 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "25W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438746/param.shtml",
+        "evidenceText": "第三方参数页列出：25W 有线。",
+        "valueAtAudit": "25W 有线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "187g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438746/param.shtml",
+        "evidenceText": "第三方参数页列出：187g。",
+        "valueAtAudit": "187g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "sam-25e",
@@ -7476,12 +7608,12 @@
     "year": 2024,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "7.98 英寸内屏 + 6.56 英寸外屏 · 1–120Hz",
-    "chip": "骁龙 8 Gen 3",
+    "display": "内屏 7.98 英寸 + 外屏 6.56 英寸",
+    "chip": "高通骁龙8 Gen3",
     "camera": "徕卡四摄：5000 万主摄 + 1000 万潜望长焦 + 5000 万浮动长焦 + 1200 万超广角",
     "battery": "5100 mAh",
     "charging": "67W 有线 / 50W 无线",
-    "weight": "226 g",
+    "weight": "226g / 228g（版本不同）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "Xiaomi HyperOS",
     "priceCN": 8999,
@@ -7507,7 +7639,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.mi.com/",
     "priceSource": "https://www.mi.com/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -7518,11 +7650,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "内屏 7.98 英寸 + 外屏 6.56 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2087/2086684/param.shtml",
+        "evidenceText": "第三方参数页列出：内屏 7.98 英寸 + 外屏 6.56 英寸。",
+        "valueAtAudit": "内屏 7.98 英寸 + 外屏 6.56 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通骁龙8 Gen3",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2087/2086684/param.shtml",
+        "evidenceText": "第三方参数页列出：高通骁龙8 Gen3。",
+        "valueAtAudit": "高通骁龙8 Gen3",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "5100 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2087/2086684/param.shtml",
+        "evidenceText": "第三方参数页列出：5100 mAh。",
+        "valueAtAudit": "5100 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "67W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2087/2086684/param.shtml",
+        "evidenceText": "第三方参数页列出：67W 有线 / 50W 无线。",
+        "valueAtAudit": "67W 有线 / 50W 无线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "226g / 228g（版本不同）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2087/2086684/param.shtml",
+        "evidenceText": "第三方参数页列出：226g / 228g（版本不同）。",
+        "valueAtAudit": "226g / 228g（版本不同）",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "xia-mixfold3",
@@ -7531,12 +7710,12 @@
     "year": 2023,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "8.03 英寸内屏 + 6.56 英寸外屏 · 1–120Hz",
-    "chip": "骁龙 8 Gen 2 领先版",
+    "display": "8.03 英寸，120Hz",
+    "chip": "高通 骁龙8 Gen2（领先版）",
     "camera": "徕卡四摄：5000 万主摄 + 1000 万潜望长焦 + 1000 万浮动长焦 + 1200 万超广角",
     "battery": "4800 mAh",
     "charging": "67W 有线 / 50W 无线",
-    "weight": "255 g",
+    "weight": "255g / 259g（版本不同）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "MIUI 14",
     "priceCN": 8999,
@@ -7562,7 +7741,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.mi.com/",
     "priceSource": "https://www.mi.com/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -7573,11 +7752,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "8.03 英寸，120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1461/1460897/param.shtml",
+        "evidenceText": "第三方参数页列出：8.03 英寸，120Hz。",
+        "valueAtAudit": "8.03 英寸，120Hz",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通 骁龙8 Gen2（领先版）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1461/1460897/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙8 Gen2（领先版）。",
+        "valueAtAudit": "高通 骁龙8 Gen2（领先版）",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "4800 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1461/1460897/param.shtml",
+        "evidenceText": "第三方参数页列出：4800 mAh。",
+        "valueAtAudit": "4800 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "67W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1461/1460897/param.shtml",
+        "evidenceText": "第三方参数页列出：67W 有线 / 50W 无线。",
+        "valueAtAudit": "67W 有线 / 50W 无线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "255g / 259g（版本不同）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1461/1460897/param.shtml",
+        "evidenceText": "第三方参数页列出：255g / 259g（版本不同）。",
+        "valueAtAudit": "255g / 259g（版本不同）",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "xia-mixflip",
@@ -7586,12 +7812,12 @@
     "year": 2024,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.86 英寸内屏 + 4.01 英寸外屏 · 1–120Hz",
-    "chip": "骁龙 8 Gen 3",
+    "display": "6.86 英寸",
+    "chip": "高通 骁龙8 Gen3",
     "camera": "5000 万主摄 + 5000 万浮动长焦",
-    "battery": "4780 mAh",
-    "charging": "67W 有线 / 无线充电",
-    "weight": "192 g",
+    "battery": "4665 mAh",
+    "charging": "67W 有线",
+    "weight": "192g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+1TB",
     "os": "Xiaomi HyperOS",
     "priceCN": 5999,
@@ -7617,7 +7843,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.mi.com/",
     "priceSource": "https://www.mi.com/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -7628,11 +7854,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.86 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2031/2030412/param.shtml",
+        "evidenceText": "第三方参数页列出：6.86 英寸。",
+        "valueAtAudit": "6.86 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通 骁龙8 Gen3",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2031/2030412/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙8 Gen3。",
+        "valueAtAudit": "高通 骁龙8 Gen3",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "4665 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2031/2030412/param.shtml",
+        "evidenceText": "第三方参数页列出：4665 mAh。",
+        "valueAtAudit": "4665 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "67W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2031/2030412/param.shtml",
+        "evidenceText": "第三方参数页列出：67W 有线。",
+        "valueAtAudit": "67W 有线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "192g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2031/2030412/param.shtml",
+        "evidenceText": "第三方参数页列出：192g。",
+        "valueAtAudit": "192g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "redmi-k80p",
@@ -7734,12 +8007,12 @@
     "year": 2024,
     "type": "性能续航旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.67 英寸 2K OLED · 120Hz",
-    "chip": "骁龙 8 Gen 3",
+    "display": "6.67 英寸",
+    "chip": "高通 骁龙8 Gen3",
     "camera": "5000 万主摄 + 800 万超广角",
     "battery": "6550 mAh",
     "charging": "90W 有线",
-    "weight": "206 g",
+    "weight": "206g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "Xiaomi HyperOS 2",
     "priceCN": 2499,
@@ -7765,7 +8038,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.mi.com/",
     "priceSource": "https://www.mi.com/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -7776,11 +8049,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.67 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2103/2102664/param.shtml",
+        "evidenceText": "第三方参数页列出：6.67 英寸。",
+        "valueAtAudit": "6.67 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通 骁龙8 Gen3",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2103/2102664/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙8 Gen3。",
+        "valueAtAudit": "高通 骁龙8 Gen3",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "6550 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2103/2102664/param.shtml",
+        "evidenceText": "第三方参数页列出：6550 mAh。",
+        "valueAtAudit": "6550 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "90W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2103/2102664/param.shtml",
+        "evidenceText": "第三方参数页列出：90W 有线。",
+        "valueAtAudit": "90W 有线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "206g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2103/2102664/param.shtml",
+        "evidenceText": "第三方参数页列出：206g。",
+        "valueAtAudit": "206g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "hua-mate70",
@@ -8122,12 +8442,12 @@
     "year": 2023,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "7.85 英寸内屏 + 6.4 英寸外屏 · 1–120Hz",
+    "display": "内屏 7.85 英寸 + 外屏 6.4 英寸",
     "chip": "麒麟 9000S",
     "camera": "5000 万主摄 + 1300 万超广角 + 1200 万潜望长焦",
     "battery": "5060 mAh",
-    "charging": "66W 有线 / 50W 无线",
-    "weight": "243 g",
+    "charging": "66W 有线",
+    "weight": "243g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "HarmonyOS 4",
     "priceCN": null,
@@ -8154,7 +8474,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://consumer.huawei.com/cn/",
     "priceSource": null,
     "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
@@ -8165,11 +8485,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "missing",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "内屏 7.85 英寸 + 外屏 6.4 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1858/1857626/param.shtml",
+        "evidenceText": "第三方参数页列出：内屏 7.85 英寸 + 外屏 6.4 英寸。",
+        "valueAtAudit": "内屏 7.85 英寸 + 外屏 6.4 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "5060 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1858/1857626/param.shtml",
+        "evidenceText": "第三方参数页列出：5060 mAh。",
+        "valueAtAudit": "5060 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1858/1857626/param.shtml",
+        "evidenceText": "第三方参数页列出：66W 有线。",
+        "valueAtAudit": "66W 有线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "243g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1858/1857626/param.shtml",
+        "evidenceText": "第三方参数页列出：243g。",
+        "valueAtAudit": "243g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "hua-pura70",
@@ -8297,12 +8655,12 @@
     "year": 2024,
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.8 英寸 OLED · 1–120Hz",
+    "display": "6.8 英寸",
     "chip": "麒麟 9010",
     "camera": "5000 万主摄 + 1250 万超广角 + 4800 万潜望长焦",
     "battery": "5050 mAh",
     "charging": "100W 有线 / 80W 无线",
-    "weight": "220 g",
+    "weight": "220g",
     "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
     "os": "HarmonyOS 4.2",
     "priceCN": 6499,
@@ -8328,7 +8686,7 @@
       "12GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://consumer.huawei.com/cn/",
     "priceSource": "https://consumer.huawei.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -8339,11 +8697,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.8 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2000/1999703/param.shtml",
+        "evidenceText": "第三方参数页列出：6.8 英寸。",
+        "valueAtAudit": "6.8 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "5050 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2000/1999703/param.shtml",
+        "evidenceText": "第三方参数页列出：5050 mAh。",
+        "valueAtAudit": "5050 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 80W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2000/1999703/param.shtml",
+        "evidenceText": "第三方参数页列出：100W 有线 / 80W 无线。",
+        "valueAtAudit": "100W 有线 / 80W 无线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "220g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2000/1999703/param.shtml",
+        "evidenceText": "第三方参数页列出：220g。",
+        "valueAtAudit": "220g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "hua-purax",
@@ -10277,12 +10673,12 @@
     "year": 2023,
     "type": "游戏性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 1.5K OLED · 144Hz",
-    "chip": "骁龙 8 Gen 3",
+    "display": "6.78 英寸",
+    "chip": "高通 骁龙8 Gen3",
     "camera": "5000 万主摄 + 6400 万潜望长焦 + 5000 万超广角",
     "battery": "5000 mAh",
     "charging": "120W 有线",
-    "weight": "203 g",
+    "weight": "203.7g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "OriginOS 4",
     "priceCN": 3999,
@@ -10308,7 +10704,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -10319,11 +10715,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544390/param.shtml",
+        "evidenceText": "第三方参数页列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通 骁龙8 Gen3",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544390/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙8 Gen3。",
+        "valueAtAudit": "高通 骁龙8 Gen3",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "5000 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544390/param.shtml",
+        "evidenceText": "第三方参数页列出：5000 mAh。",
+        "valueAtAudit": "5000 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544390/param.shtml",
+        "evidenceText": "第三方参数页列出：120W 有线。",
+        "valueAtAudit": "120W 有线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "203.7g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544390/param.shtml",
+        "evidenceText": "第三方参数页列出：203.7g。",
+        "valueAtAudit": "203.7g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "iqoo-12p",
@@ -10332,12 +10775,12 @@
     "year": 2023,
     "type": "游戏性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 2K OLED · 144Hz",
-    "chip": "骁龙 8 Gen 3",
+    "display": "6.78 英寸",
+    "chip": "高通 骁龙8 Gen3",
     "camera": "5000 万主摄 + 6400 万潜望长焦 + 5000 万超广角",
     "battery": "5100 mAh",
-    "charging": "120W 有线 / 50W 无线",
-    "weight": "210 g",
+    "charging": "120W 有线",
+    "weight": "210g",
     "storage": "16GB+512GB / 16GB+1TB",
     "os": "OriginOS 4",
     "priceCN": 4999,
@@ -10362,7 +10805,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -10373,11 +10816,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544392/param.shtml",
+        "evidenceText": "第三方参数页列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "高通 骁龙8 Gen3",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544392/param.shtml",
+        "evidenceText": "第三方参数页列出：高通 骁龙8 Gen3。",
+        "valueAtAudit": "高通 骁龙8 Gen3",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "5100 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544392/param.shtml",
+        "evidenceText": "第三方参数页列出：5100 mAh。",
+        "valueAtAudit": "5100 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544392/param.shtml",
+        "evidenceText": "第三方参数页列出：120W 有线。",
+        "valueAtAudit": "120W 有线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "210g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544392/param.shtml",
+        "evidenceText": "第三方参数页列出：210g。",
+        "valueAtAudit": "210g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "iqoo-neo10p",
@@ -10386,12 +10876,12 @@
     "year": 2024,
     "type": "游戏性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 1.5K OLED · 144Hz",
-    "chip": "天玑 9400",
+    "display": "6.78 英寸",
+    "chip": "联发科 天玑9400",
     "camera": "5000 万主摄 + 5000 万超广角",
     "battery": "6100 mAh",
     "charging": "120W 有线",
-    "weight": "206 g",
+    "weight": "206g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "OriginOS 5",
     "priceCN": 3199,
@@ -10417,7 +10907,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.vivo.com.cn/",
     "priceSource": "https://www.vivo.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -10428,11 +10918,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113956/param.shtml",
+        "evidenceText": "第三方参数页列出：6.78 英寸。",
+        "valueAtAudit": "6.78 英寸",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "联发科 天玑9400",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113956/param.shtml",
+        "evidenceText": "第三方参数页列出：联发科 天玑9400。",
+        "valueAtAudit": "联发科 天玑9400",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "6100 mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113956/param.shtml",
+        "evidenceText": "第三方参数页列出：6100 mAh。",
+        "valueAtAudit": "6100 mAh",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113956/param.shtml",
+        "evidenceText": "第三方参数页列出：120W 有线。",
+        "valueAtAudit": "120W 有线",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "206g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113956/param.shtml",
+        "evidenceText": "第三方参数页列出：206g。",
+        "valueAtAudit": "206g",
+        "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "realme-gt6",
