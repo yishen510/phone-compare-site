@@ -7176,7 +7176,7 @@
     "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
     "os": "Android / One UI 5.1",
     "priceCN": 12999,
-    "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
+    "priceText": "官方首发起售价（非当前售价）",
     "selling": "水滴铰链闭合无缝的横向大折叠",
     "bestFor": [
       "大屏办公",
@@ -7188,7 +7188,7 @@
     "verified": false,
     "launchMonth": "2023-07",
     "launchDateDisplay": "2023年07月",
-    "priceType": "third_party_reference",
+    "priceType": "official_launch_msrp",
     "livePrice": null,
     "livePriceStatus": "not_connected",
     "livePriceCheckedAt": null,
@@ -7200,8 +7200,8 @@
     "chinaOfficial": true,
     "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.samsung.com.cn/",
-    "priceSource": "",
-    "priceSourceName": "用户按中关村在线参考价填写（2026-10-20 填写表；未附参数页链接）",
+    "priceSource": "https://www.samsung.com.cn/smartphones/galaxy-z-fold5/buy/",
+    "priceSourceName": "三星电子中国商城 Z Fold5 页（12GB+512GB ￥12,999）+ 2023-08-03 国行发布报道",
     "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
     "scoreMethod": "heuristic_preliminary",
     "quoteTargetStorage": null,
@@ -7211,9 +7211,9 @@
       "机型身份与发布月份按厂商公开信息录入",
       "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
       "其余字段与整机准入仍未通过，排名与推荐保持关闭",
-      "2026-10-20 按用户填写表补入参考价：12999元 / 512GB（第三方参考价，缺链接）"
+      "2026-10-20 按用户填写表补入：12999元 / 12GB+512GB（核对国行版本序列后升级为官方首发价）"
     ],
-    "priceAuditStatus": "secondary_source_reference",
+    "priceAuditStatus": "cross_checked_secondary",
     "parameterAuditStatus": "partial",
     "fieldAudit": [
       {
@@ -7263,11 +7263,11 @@
       },
       {
         "field": "官方首发起售价",
-        "value": "12999元（512GB，第三方参考价）",
-        "status": "unverified_missing_or_insufficient_official_evidence",
-        "sourceUrl": "",
-        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 12999 元、容量 512GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。⚠ 用户填写为 512GB/12999 元；官方 2023-07 首发时 12999 元对应 12GB+256GB，512GB 为 13999 元，容量与价格搭配待与中关村页面核对。",
-        "note": "第三方参考价，未经厂商官方页核对；容量与价格搭配存疑，待核。"
+        "value": "12999元（12GB+512GB）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-z-fold5/buy/",
+        "evidenceText": "2023-08-03 国行发布：Galaxy Z Fold5 在中国大陆仅提供 12GB+512GB（12999 元）与 12GB+1TB（14999 元）两个版本，没有 256GB 版本；三星中国商城该页当前标价12GB+512GB ￥12,999，与首发价一致。用户在填写表中填写的 512GB / 12999 元正确。",
+        "note": "已核对国行版本序列与官方商城标价；首发价不等于当前售价。"
       }
     ]
   },
@@ -7321,7 +7321,7 @@
       "机型身份与发布月份按厂商公开信息录入",
       "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
       "其余字段与整机准入仍未通过，排名与推荐保持关闭",
-      "2026-10-20 按用户填写表补入参考价：8499元 / 256GB（第三方参考价，缺链接）"
+      "2026-10-20 按用户填写表补入：8499元 / 256GB（与官方 512GB 价位重合，待确认）"
     ],
     "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial",
@@ -7373,11 +7373,11 @@
       },
       {
         "field": "官方首发起售价",
-        "value": "8499元（256GB，第三方参考价）",
+        "value": "8499元（用户填 256GB，官方对应 512GB）",
         "status": "unverified_missing_or_insufficient_official_evidence",
         "sourceUrl": "",
-        "evidenceText": "用户在《待补价格机型填写表》中填入参考价 8499 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。⚠ 用户填写为 256GB/8499 元；官方 2023-07 首发时 8GB+256GB 为 7499 元、8GB+512GB 为 8499 元，容量与价格搭配待与中关村页面核对。",
-        "note": "第三方参考价，未经厂商官方页核对；容量与价格搭配存疑，待核。"
+        "evidenceText": "用户在填写表中填参考价 8499 元、容量 256GB。2023-08-03 国行首发价为 8GB+256GB 7499 元、8GB+512GB 8499 元——8499 元对应的是 512GB。两者必有一项标注有误，待用户确认或补中关村参数页链接。",
+        "note": "容量与价格不匹配，未升级为官方首发价；先按用户原值记录并标注。"
       }
     ]
   },
