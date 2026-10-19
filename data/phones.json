@@ -7934,8 +7934,8 @@
     "market": "中国大陆正式销售",
     "display": "6.6 英寸 OLED · 1–120Hz",
     "chip": "麒麟 9010",
-    "camera": "5000 万主摄 + 1300 万超广角 + 1200 万潜望长焦",
-    "battery": "4900 mAh",
+    "camera": "5000 万超聚光主摄（F1.4–F4.0，OIS）+ 1300 万超广角 + 1200 万潜望长焦（5× 光学）",
+    "battery": "4900 mAh（典型值）",
     "charging": "66W 有线 / 50W 无线",
     "weight": "207 g",
     "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
@@ -7962,7 +7962,7 @@
       "12GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "厂商官方规格页已下架，参数改由中关村在线产品页交叉核对，界面标注为「第三方核验」；该等级不等同于官方核验，排名与推荐保持关闭。",
     "announcementSource": "https://consumer.huawei.com/cn/",
     "priceSource": "https://consumer.huawei.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -7972,12 +7972,77 @@
     "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；未确定容量组合时不应触发报价检索。",
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
-      "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "厂商官方规格页已下架，改用中关村在线产品页交叉核对（2026-10-19）",
+      "第三方来源仅作参考，与官方核验分开记录",
+      "整机准入保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial_secondary_source",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.6 英寸 OLED，2760×1256，120Hz（1–120）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/1987/1986304/index.html",
+        "evidenceText": "中关村在线参数页列出 6.6 英寸 OLED、2760×1256、120Hz（1-120）。",
+        "valueAtAudit": "6.6 英寸 OLED，2760×1256，120Hz（1–120）",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "处理器",
+        "value": "麒麟 9010",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/1987/1986304/index.html",
+        "evidenceText": "中关村在线参数页「CPU 型号」为麒麟 9010。",
+        "valueAtAudit": "麒麟 9010",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万超聚光主摄 + 1300 万超广角 + 1200 万潜望长焦，5× 光学",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/1987/1986304/index.html",
+        "evidenceText": "中关村在线参数页列出后置三摄像素与 5 倍光学变焦。",
+        "valueAtAudit": "5000 万超聚光主摄 + 1300 万超广角 + 1200 万潜望长焦，5× 光学",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "电池",
+        "value": "4900 mAh（典型值）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/1987/1986304/index.html",
+        "evidenceText": "中关村在线参数页「电池容量」为 4900mAh。",
+        "valueAtAudit": "4900 mAh（典型值）",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/1987/1986304/index.html",
+        "evidenceText": "中关村在线参数页列出有线 66W、无线 50W。",
+        "valueAtAudit": "66W 有线 / 50W 无线",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "重量",
+        "value": "207 g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/1987/1986304/index.html",
+        "evidenceText": "中关村在线参数页「重量」为 207g。",
+        "valueAtAudit": "207 g",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB / 12GB+512GB / 12GB+1TB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/1987/1986304/index.html",
+        "evidenceText": "中关村在线参数页 ROM 容量列出 256GB/512GB/1TB，RAM 为 12GB。",
+        "valueAtAudit": "12GB+256GB / 12GB+512GB / 12GB+1TB",
+        "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      }
+    ]
   },
   {
     "id": "hua-pura70p",
