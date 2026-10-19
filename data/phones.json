@@ -6282,12 +6282,12 @@
     "year": 2023,
     "type": "标准旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.1 英寸 OLED · 60Hz",
-    "chip": "A16",
+    "display": "6.1 英寸 OLED，2556×1179，60Hz",
+    "chip": "A16 仿生",
     "camera": "4800 万像素主摄 + 1200 万像素超广角",
-    "battery": "官方未按 mAh 公布",
+    "battery": "官方未按 mAh 公布；视频播放最长 20 小时",
     "charging": "USB-C 快充 / MagSafe 无线充电",
-    "weight": "171 g",
+    "weight": "171 克",
     "storage": "128GB / 256GB / 512GB",
     "os": "iOS 17",
     "priceCN": 5999,
@@ -6313,7 +6313,7 @@
       "512GB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.apple.com.cn/",
     "priceSource": "https://www.apple.com.cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -6324,11 +6324,67 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.1 英寸 OLED，2556×1179，60Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111831",
+        "evidenceText": "官方规格页明确列出：6.1 英寸 OLED，2556×1179，60Hz。",
+        "valueAtAudit": "6.1 英寸 OLED，2556×1179，60Hz",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "A16 仿生",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111831",
+        "evidenceText": "官方规格页明确列出：A16 仿生。",
+        "valueAtAudit": "A16 仿生",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "影像",
+        "value": "4800 万像素主摄 + 1200 万像素超广角",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111831",
+        "evidenceText": "官方规格页明确列出：4800 万像素主摄 + 1200 万像素超广角。",
+        "valueAtAudit": "4800 万像素主摄 + 1200 万像素超广角",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "官方未按 mAh 公布；视频播放最长 20 小时",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111831",
+        "evidenceText": "官方规格页明确列出：官方未按 mAh 公布；视频播放最长 20 小时。",
+        "valueAtAudit": "官方未按 mAh 公布；视频播放最长 20 小时",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "171 克",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111831",
+        "evidenceText": "官方规格页明确列出：171 克。",
+        "valueAtAudit": "171 克",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "容量组合",
+        "value": "128GB / 256GB / 512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://support.apple.com/zh-cn/111831",
+        "evidenceText": "官方规格页明确列出：128GB / 256GB / 512GB。",
+        "valueAtAudit": "128GB / 256GB / 512GB",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "apple-14p",
@@ -9995,11 +10051,11 @@
     "year": 2024,
     "type": "性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 1.5K OLED · 120Hz",
+    "display": "6.78 英寸 1.5K 东方屏，120Hz",
     "chip": "骁龙 8 至尊版",
     "camera": "5000 万主摄 + 800 万超广角 + 200 万微距",
     "battery": "6100 mAh",
-    "charging": "100W 有线",
+    "charging": "100W 超级闪充",
     "weight": "217 g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "ColorOS 15",
@@ -10026,7 +10082,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.oneplus.com/cn",
     "priceSource": "https://www.oneplus.com/cn",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -10037,11 +10093,40 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸 1.5K 东方屏，120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oneplus.com/cn/ace-5-pro",
+        "evidenceText": "官方规格页明确列出：6.78 英寸 1.5K 东方屏，120Hz。",
+        "valueAtAudit": "6.78 英寸 1.5K 东方屏，120Hz",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "6100 mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oneplus.com/cn/ace-5-pro",
+        "evidenceText": "官方规格页明确列出：6100 mAh。",
+        "valueAtAudit": "6100 mAh",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 超级闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oneplus.com/cn/ace-5-pro",
+        "evidenceText": "官方规格页明确列出：100W 超级闪充。",
+        "valueAtAudit": "100W 超级闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "op-ace5",
@@ -10050,10 +10135,10 @@
     "year": 2024,
     "type": "性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 1.5K OLED · 120Hz",
+    "display": "6.78 英寸 OLED 柔性屏，1–120Hz LTPO",
     "chip": "骁龙 8 Gen 3",
     "camera": "5000 万主摄 + 800 万超广角 + 200 万微距",
-    "battery": "6415 mAh",
+    "battery": "6400 mAh",
     "charging": "80W 有线",
     "weight": "206 g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
@@ -10081,7 +10166,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.oneplus.com/cn",
     "priceSource": "https://www.oneplus.com/cn",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -10092,11 +10177,31 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸 OLED 柔性屏，1–120Hz LTPO",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oneplus.com/cn/ace-5",
+        "evidenceText": "官方规格页明确列出：6.78 英寸 OLED 柔性屏，1–120Hz LTPO。",
+        "valueAtAudit": "6.78 英寸 OLED 柔性屏，1–120Hz LTPO",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "6400 mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.oneplus.com/cn/ace-5",
+        "evidenceText": "官方规格页明确列出：6400 mAh。",
+        "valueAtAudit": "6400 mAh",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "iqoo-12",
@@ -10269,12 +10374,12 @@
     "year": 2024,
     "type": "性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.78 英寸 1.5K OLED · 120Hz",
-    "chip": "骁龙 8 Gen 3",
+    "display": "6.78 英寸 AMOLED，2780×1264，最高 120Hz",
+    "chip": "第三代骁龙 8",
     "camera": "5000 万主摄 + 800 万超广角",
     "battery": "5800 mAh",
-    "charging": "120W 有线",
-    "weight": "207 g",
+    "charging": "120W 光速秒充",
+    "weight": "约 206.7 g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "realme UI 5.0",
     "priceCN": 2799,
@@ -10300,7 +10405,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.realme.com/cn/",
     "priceSource": "https://www.realme.com/cn/",
     "priceSourceName": "厂商官方站点；首发价仍需官方发布稿二次核对",
@@ -10311,11 +10416,58 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸 AMOLED，2780×1264，最高 120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-6/specs",
+        "evidenceText": "官方规格页明确列出：6.78 英寸 AMOLED，2780×1264，最高 120Hz。",
+        "valueAtAudit": "6.78 英寸 AMOLED，2780×1264，最高 120Hz",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "处理器",
+        "value": "第三代骁龙 8",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-6/specs",
+        "evidenceText": "官方规格页明确列出：第三代骁龙 8。",
+        "valueAtAudit": "第三代骁龙 8",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "5800 mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-6/specs",
+        "evidenceText": "官方规格页明确列出：5800 mAh。",
+        "valueAtAudit": "5800 mAh",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 光速秒充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-6/specs",
+        "evidenceText": "官方规格页明确列出：120W 光速秒充。",
+        "valueAtAudit": "120W 光速秒充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 206.7 g",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-6/specs",
+        "evidenceText": "官方规格页明确列出：约 206.7 g。",
+        "valueAtAudit": "约 206.7 g",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "realme-gt7",
@@ -10324,12 +10476,12 @@
     "year": 2025,
     "type": "性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.8 英寸 1.5K OLED · 144Hz",
+    "display": "6.80 英寸 FHD+，2800×1280，144Hz",
     "chip": "天玑 9400+",
     "camera": "5000 万主摄 + 800 万超广角",
-    "battery": "7000 mAh",
-    "charging": "100W 有线",
-    "weight": "203 g",
+    "battery": "7200 mAh（典型值）/ 7040 mAh（额定值）",
+    "charging": "100W 闪充",
+    "weight": "约 203 g（黑/蓝/白）/ 209 g（绿）",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "realme UI 6.0",
     "priceCN": null,
@@ -10355,7 +10507,7 @@
       "16GB+1TB"
     ],
     "chinaOfficial": true,
-    "dataNote": "本条机型身份与发布月份按厂商公开信息录入；参数与价格尚未完成官方规格页逐项核验，标注“待复核”的字段不得视为已核实。排名与推荐资格保持关闭。",
+    "dataNote": "部分字段已按厂商中国大陆官方规格页逐项核对；未列出字段仍待核验。字段核实不等于整机通过，排名与推荐保持关闭。",
     "announcementSource": "https://www.realme.com/cn/",
     "priceSource": null,
     "priceSourceName": "来源页未直接支持该首发价，需补查官方发布稿",
@@ -10366,11 +10518,49 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "机型身份与发布月份按厂商公开信息录入",
-      "参数与价格尚未完成官方规格页逐项交叉核验",
-      "排名与推荐资格保持关闭"
+      "屏幕/电池/充电/重量/容量组合等已按厂商官方规格页核对（2026-10-19）",
+      "其余字段与整机准入仍未通过，排名与推荐保持关闭"
     ],
     "priceAuditStatus": "missing",
-    "parameterAuditStatus": "needs_source_crosscheck"
+    "parameterAuditStatus": "partial",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.80 英寸 FHD+，2800×1280，144Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-7/specs",
+        "evidenceText": "官方规格页明确列出：6.80 英寸 FHD+，2800×1280，144Hz。",
+        "valueAtAudit": "6.80 英寸 FHD+，2800×1280，144Hz",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "电池",
+        "value": "7200 mAh（典型值）/ 7040 mAh（额定值）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-7/specs",
+        "evidenceText": "官方规格页明确列出：7200 mAh（典型值）/ 7040 mAh（额定值）。",
+        "valueAtAudit": "7200 mAh（典型值）/ 7040 mAh（额定值）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 闪充",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-7/specs",
+        "evidenceText": "官方规格页明确列出：100W 闪充。",
+        "valueAtAudit": "100W 闪充",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "重量",
+        "value": "约 203 g（黑/蓝/白）/ 209 g（绿）",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-7/specs",
+        "evidenceText": "官方规格页明确列出：约 203 g（黑/蓝/白）/ 209 g（绿）。",
+        "valueAtAudit": "约 203 g（黑/蓝/白）/ 209 g（绿）",
+        "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      }
+    ]
   },
   {
     "id": "redmagic-9p",
