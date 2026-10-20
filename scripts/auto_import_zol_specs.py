@@ -35,9 +35,10 @@ UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126",
       "Accept-Language": "zh-CN"}
 
 BRAND_ALIAS = {
-    "huawei": ["huawei", "华为"], "samsung": ["samsung", "三星"], "xiaomi": ["xiaomi", "小米"],
-    "redmi": ["redmi", "红米"], "honor": ["honor", "荣耀"], "oneplus": ["oneplus", "一加"],
-    "iqoo": ["iqoo", "iqoo"], "realme": ["realme", "真我"], "nubia": ["nubia", "努比亚"],
+    "huawei": ["huawei", "华为"], "samsung": ["samsung", "三星"],
+    "xiaomi": ["xiaomi", "小米", "redmi", "红米"], "redmi": ["redmi", "红米", "xiaomi", "小米"],
+    "honor": ["honor", "荣耀"], "oneplus": ["oneplus", "一加"],
+    "iqoo": ["iqoo"], "realme": ["realme", "真我"], "nubia": ["nubia", "努比亚"],
     "oppo": ["oppo"], "vivo": ["vivo"], "apple": ["apple", "苹果"],
 }
 BRAND_CN = {"huawei": "华为", "samsung": "三星", "xiaomi": "小米", "redmi": "红米",
@@ -111,13 +112,26 @@ def in_base(base: str, cbase: str) -> bool:
 def queries(p: dict) -> list[str]:
     name = p["name"]
     cn = BRAND_CN.get(str(p["brand"]).lower(), "")
-    bare = re.sub(r"(?i)^(huawei|samsung|xiaomi|redmi|honor|oneplus|iqoo|realme|nubia|oppo|vivo|apple)\s*",
-                  "", name).strip()
+    bare = name
+    for alias in BRAND_ALIAS.get(str(p["brand"]).lower(), []):
+        bare = re.sub(re.escape(alias), "", bare, flags=re.I)
+    bare = bare.strip()
+    bare_ns = re.sub(r"\s+", "", bare)
+    nospace = re.sub(r"\s+", "", name)
     out = [f"{name} 参数"]
-    if cn and bare:
-        out.append(f"{cn}{bare} 参数")
-    out += [name, f"{name} 手机"]
-    return out
+    if nospace != name:
+        out.append(f"{nospace} 参数")
+    if cn and bare_ns:
+        out.append(f"{cn}{bare_ns} 参数")
+    out += [name, nospace]
+    return list(dict.fromkeys(out))
+
+
+def brand_ok(title: str, brand: str) -> bool:
+    """候选页标题必须出现目标品牌的任一别名，防止「小米14 Pro」命中「iPhone 14 Pro」。"""
+    t = norm(title)
+    aliases = BRAND_ALIAS.get(str(brand).lower(), [str(brand).lower()])
+    return any(norm(a) and norm(a) in t for a in aliases)
 
 
 def search_links(kw: str) -> list[str]:
@@ -181,7 +195,7 @@ def main() -> None:
                 report["rejected"].append({"id": p["id"], "name": p["name"], "title": t,
                                            "url": link, "reason": "non_phone"})
                 continue
-            if in_base(base, cbase) and cquals == quals and link not in used_urls:
+            if in_base(base, cbase) and cquals == quals and link not in used_urls and brand_ok(t, p["brand"]):
                 hit = (link, t, h)
                 break
             report["rejected"].append({"id": p["id"], "name": p["name"], "title": t, "url": link})

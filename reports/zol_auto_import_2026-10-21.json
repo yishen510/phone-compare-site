@@ -1,45 +1,87 @@
 {
   "matched": [
     {
-      "id": "hua-p60p",
-      "name": "HUAWEI P60 Pro",
-      "title": "【华为HUAWEI P60 Pro 8GB+256GB参数】华为 HUAWEI P60 Pro 8GB+256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1356/1355563/param.shtml",
-      "groups": 10,
-      "items": 65
+      "id": "redmi-k90pm",
+      "name": "REDMI K90 Pro Max",
+      "title": "【红米Redmi K90 Pro Max 12GB/256GB参数】Redmi Redmi K90 Pro Max 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2146/2145334/param.shtml",
+      "groups": 9,
+      "items": 77
     },
     {
-      "id": "huawei-z14791478249",
-      "name": "华为HUAWEI Mate X3",
-      "title": "【华为HUAWEI Mate X3 12GB+256GB参数】华为 HUAWEI Mate X3 12GB+256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1406/1405053/param.shtml",
-      "groups": 10,
-      "items": 62
+      "id": "redmi-k80p",
+      "name": "REDMI K80 Pro",
+      "title": "【红米Redmi K80 Pro 12GB/256GB参数】Redmi Redmi K80 Pro 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2115/2114605/param.shtml",
+      "groups": 9,
+      "items": 52
     },
     {
-      "id": "realme-z18571856215",
-      "name": "真我GT5",
-      "title": "【真我GT5 150W 12GB/256GB参数】realme GT5 150W 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1857/1856215/param.shtml",
-      "groups": 10,
-      "items": 69
+      "id": "redmi-k80",
+      "name": "REDMI K80",
+      "title": "【红米Redmi K80 12GB/256GB参数】Redmi Redmi K80 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2103/2102664/param.shtml",
+      "groups": 9,
+      "items": 57
+    },
+    {
+      "id": "redmi-k70-pro",
+      "name": "REDMI K70 Pro",
+      "title": "【红米Redmi K70 Pro 12GB/256GB参数】Redmi Redmi K70 Pro 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1611/1610864/param.shtml",
+      "groups": 9,
+      "items": 60
+    },
+    {
+      "id": "redmi-k70",
+      "name": "REDMI K70",
+      "title": "【红米Redmi K70 12GB/256GB参数】Redmi Redmi K70 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1611/1610863/param.shtml",
+      "groups": 9,
+      "items": 61
+    },
+    {
+      "id": "redmi-k60-pro",
+      "name": "REDMI K60 Pro",
+      "title": "【红米Redmi K60 Pro 8GB/128GB参数】Redmi Redmi K60 Pro 8GB/128GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1433/1432138/param.shtml",
+      "groups": 9,
+      "items": 67
     }
   ],
   "rejected": [
     {
-      "id": "op-10pro",
-      "name": "一加 10 Pro",
-      "title": "【佳维若10Pro参数】佳维若 10Pro移动电源(充电宝)参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1468/1467643/param.shtml",
-      "reason": "non_phone"
+      "id": "redmi-k90pm",
+      "name": "REDMI K90 Pro Max",
+      "title": "【红米Redmi K90 12GB/256GB参数】Redmi Redmi K90 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2146/2145333/param.shtml"
+    },
+    {
+      "id": "xia-14p",
+      "name": "小米 14 Pro",
+      "title": "【苹果iPhone 14 Pro 128GB参数】Apple iPhone 14 Pro 128GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1389/1388430/param.shtml"
+    },
+    {
+      "id": "xiaomi-z20992098425",
+      "name": "红米Redmi K70至尊版",
+      "title": "【红米Redmi K70 12GB/256GB参数】Redmi Redmi K70 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1611/1610863/param.shtml"
     }
   ],
   "not_found": [
     {
-      "id": "op-10pro",
-      "name": "一加 10 Pro",
+      "id": "xia-14p",
+      "name": "小米 14 Pro",
       "links": [
-        "https://detail.zol.com.cn/1468/1467643/param.shtml"
+        "https://detail.zol.com.cn/1389/1388430/param.shtml"
+      ]
+    },
+    {
+      "id": "xiaomi-z20992098425",
+      "name": "红米Redmi K70至尊版",
+      "links": [
+        "https://detail.zol.com.cn/1611/1610863/param.shtml"
       ]
     }
   ],

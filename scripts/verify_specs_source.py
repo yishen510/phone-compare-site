@@ -12,7 +12,7 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from auto_import_zol_specs import in_base, is_phone_page, key_of, title_of  # noqa: E402
+from auto_import_zol_specs import brand_ok, in_base, is_phone_page, key_of, title_of  # noqa: E402
 from import_zol_params import fetch, patch_html  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,7 +33,7 @@ def main() -> None:
             continue
         base, quals = key_of(p["name"], p["brand"])
         cbase, cquals = key_of(t, p["brand"])
-        ok = is_phone_page(t) and in_base(base, cbase) and cquals == quals
+        ok = is_phone_page(t) and brand_ok(t, p["brand"]) and in_base(base, cbase) and cquals == quals
         if not ok:
             dropped.append({"id": p["id"], "name": p["name"], "url": url, "title": t})
             print(f"[{idx}] DROP {p['name']} <- {t[:44]}")
