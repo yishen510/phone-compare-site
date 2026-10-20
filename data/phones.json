@@ -249,7 +249,8 @@
     "specSource": "https://detail.zol.com.cn/2120/2119177/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 38,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": []
   },
   {
     "id": "sam-25p",
@@ -501,7 +502,8 @@
     "specSource": "https://detail.zol.com.cn/2120/2119178/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 38,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": []
   },
   {
     "id": "sam-zf7",
@@ -513,9 +515,9 @@
     "display": "折叠内屏/外屏；以官方规格页为准",
     "chip": "骁龙 8 Elite for Galaxy",
     "camera": "旗舰多摄；具体参数待复核",
-    "battery": "官方规格待复核",
-    "charging": "有线 / 无线充电，参数待复核",
-    "weight": "官方规格待复核",
+    "battery": "4400mAh",
+    "charging": "25W 有线",
+    "weight": "215g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+1TB",
     "os": "Android / One UI",
     "priceCN": 13999,
@@ -832,7 +834,36 @@
     "specSource": "https://detail.zol.com.cn/2133/2132972/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 55,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "电池",
+        "value": "4400mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2133/2132972/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 4400mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "4400mAh"
+      },
+      {
+        "field": "充电",
+        "value": "25W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2133/2132972/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 25W 有线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "25W 有线"
+      },
+      {
+        "field": "重量",
+        "value": "215g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2133/2132972/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 215g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "215g"
+      }
+    ]
   },
   {
     "id": "sam-zflip7",
@@ -902,12 +933,12 @@
     "year": 2026,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.3 英寸 Dynamic AMOLED 2X（详细参数待复核）",
+    "display": "6.3 英寸 · 全面屏 · 120Hz",
     "chip": "中国大陆版芯片以官方规格页为准",
     "camera": "三摄系统；详细参数待复核",
-    "battery": "官方规格待复核",
+    "battery": "4300mAh",
     "charging": "有线 / 无线充电，参数待复核",
-    "weight": "官方规格待复核",
+    "weight": "167g",
     "storage": "12GB+256GB / 12GB+512GB",
     "os": "Android / One UI",
     "priceCN": 6999,
@@ -1210,7 +1241,36 @@
     "specSource": "https://detail.zol.com.cn/2159/2158490/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 53,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.3 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2159/2158490/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.3 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.3 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "电池",
+        "value": "4300mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2159/2158490/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 4300mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "4300mAh"
+      },
+      {
+        "field": "重量",
+        "value": "167g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2159/2158490/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 167g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "167g"
+      }
+    ]
   },
   {
     "id": "sam-26p",
@@ -1285,7 +1345,7 @@
     "camera": "4800 万融合式主摄 + 4800 万超广角",
     "battery": "官方不公布 mAh；续航以官网为准",
     "charging": "USB-C 快充 / MagSafe",
-    "weight": "官方规格页待复核",
+    "weight": "177g",
     "storage": "256GB / 512GB",
     "os": "iOS 26",
     "priceCN": 5999,
@@ -1693,7 +1753,27 @@
     "specSource": "https://detail.zol.com.cn/2140/2139583/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 78,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "重量",
+        "value": "177g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2140/2139583/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 177g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "177g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年09月19日",
+        "valueAtAudit": "2025年09月19日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2140/2139583/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年09月19日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "apple-air",
@@ -2104,7 +2184,18 @@
     "specSource": "https://detail.zol.com.cn/2140/2139686/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 75,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年09月19日",
+        "valueAtAudit": "2025年09月19日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2140/2139686/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年09月19日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "xia-15",
@@ -2199,12 +2290,12 @@
     "year": 2025,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.73 英寸 2K OLED（具体规格页待复核）",
+    "display": "6.73 英寸 · 全面屏 · 120Hz",
     "chip": "骁龙 8 Elite",
     "camera": "徕卡三摄，含长焦（具体参数待复核）",
-    "battery": "官方规格页待复核",
-    "charging": "有线 / 无线充电，具体参数待复核",
-    "weight": "官方规格页待复核",
+    "battery": "6100mAh",
+    "charging": "90W 有线 / 50W 无线",
+    "weight": "219g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "HyperOS",
     "priceCN": 5299,
@@ -2276,6 +2367,51 @@
         "sourceUrl": "https://www.cnr.cn/tech/techph/20241030/t20241030_526958166.shtml",
         "evidenceText": "发布会现场公布小米 15 Pro 12GB+256GB 售价 5299 元起；16GB+512GB 5799 元；16GB+1TB 6499 元；亮银版同容量 5499 元。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "屏幕",
+        "value": "6.73 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2112/2111497/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.73 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.73 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "电池",
+        "value": "6100mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2112/2111497/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 6100mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6100mAh"
+      },
+      {
+        "field": "充电",
+        "value": "90W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2112/2111497/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 90W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "90W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "219g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2112/2111497/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 219g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "219g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年10月31日",
+        "valueAtAudit": "2024年10月31日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2112/2111497/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年10月31日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -2556,13 +2692,13 @@
     "year": 2025,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "6.73 英寸 OLED（详细规格待复核）",
+    "display": "6.73 英寸 · 全面屏 · 120Hz",
     "chip": "玄戒 O1",
     "camera": "徕卡影像系统；具体参数待复核",
-    "battery": "官方规格页待复核",
-    "charging": "有线 / 无线充电，具体参数待复核",
-    "weight": "官方规格页待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "6100mAh",
+    "charging": "90W 有线 / 50W 无线",
+    "weight": "216g",
+    "storage": "16GB+512GB",
     "os": "HyperOS",
     "priceCN": 5499,
     "priceText": "官方首发起售价（非当前售价）",
@@ -2628,6 +2764,60 @@
         "sourceUrl": "https://baike.baidu.com/starmap/view?lemmaId=64636516",
         "evidenceText": "2025-05-22 小米 15 周年战略新品发布会公布：16GB+512GB 售价 5499 元，16GB+1TB 售价 5999 元；该机不提供 256GB 版本。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "屏幕",
+        "value": "6.73 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2129/2128523/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.73 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.73 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "电池",
+        "value": "6100mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2129/2128523/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 6100mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6100mAh"
+      },
+      {
+        "field": "充电",
+        "value": "90W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2129/2128523/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 90W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "90W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "216g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2129/2128523/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 216g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "216g"
+      },
+      {
+        "field": "容量组合",
+        "value": "16GB+512GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2129/2128523/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 16GB+512GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "16GB+512GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年05月22日",
+        "valueAtAudit": "2025年05月22日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2129/2128523/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年05月22日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -3110,10 +3300,10 @@
     "display": "OLED 屏幕，详细参数以对应型号页为准",
     "chip": "麒麟平台；型号规格待复核",
     "camera": "XMAGE 影像系统，详细参数待复核",
-    "battery": "官方规格待复核",
-    "charging": "有线 / 无线充电，详细参数待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "5600mAh",
+    "charging": "66W 有线 / 50W 无线",
+    "weight": "211g",
+    "storage": "12GB+256GB",
     "os": "HarmonyOS",
     "priceCN": 4699,
     "priceText": "官方首发起售价（非当前售价）",
@@ -3159,6 +3349,51 @@
         "sourceUrl": "https://consumer.huawei.com/cn/press/events/2025/huawei-pura-80-series-and-new-product-launch-event/",
         "evidenceText": "华为官网发布会页把 Pura 80 标注为「￥4699 起」；官方同时公布 12GB+256GB 4699 元、12GB+512GB 5199 元、12GB+1TB 6199 元，2025-07-30 开售。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "电池",
+        "value": "5600mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129355/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 5600mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "5600mAh"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129355/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 66W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "66W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "211g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129355/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 211g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "211g"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129355/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+256GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年06月11日",
+        "valueAtAudit": "2025年06月11日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129355/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年06月11日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -3481,13 +3716,13 @@
     "year": 2025,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "OLED 屏幕；具体参数待复核",
+    "display": "6.8 英寸 · 全面屏 · 120Hz",
     "chip": "麒麟平台；型号规格待复核",
     "camera": "一英寸主摄 + 超聚光微距长焦",
-    "battery": "官方规格待复核",
-    "charging": "有线 / 无线充电，详细参数待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "5700mAh",
+    "charging": "100W 有线 / 80W 无线",
+    "weight": "219g",
+    "storage": "12GB+256GB",
     "os": "HarmonyOS",
     "priceCN": 6499,
     "priceText": "官方首发起售价（非当前售价）",
@@ -3831,7 +4066,63 @@
     "specSource": "https://detail.zol.com.cn/2130/2129587/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 63,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.8 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129587/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.8 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.8 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "电池",
+        "value": "5700mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129587/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 5700mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "5700mAh"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 80W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129587/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 100W 有线 / 80W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "100W 有线 / 80W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "219g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129587/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 219g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "219g"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129587/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+256GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年06月11日",
+        "valueAtAudit": "2025年06月11日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129587/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年06月11日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "hua-pura80pp",
@@ -3840,13 +4131,13 @@
     "year": 2025,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "官方规格页待逐项录入",
+    "display": "6.8 英寸 · 全面屏 · 120Hz",
     "chip": "官方规格待复核",
     "camera": "XMAGE 影像；具体参数待复核",
-    "battery": "官方规格待复核",
-    "charging": "官方规格待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "5700mAh",
+    "charging": "100W 有线 / 80W 无线",
+    "weight": "219g",
+    "storage": "16GB+512GB",
     "os": "HarmonyOS",
     "priceCN": 7999,
     "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
@@ -3892,6 +4183,60 @@
         "sourceUrl": "https://www.cnstock.com/commonDetail/452687",
         "evidenceText": "发布会公布 HUAWEI Pura 80 Pro+ 建议零售价 7999 元起，2025-06-14 开售；官方稿未给出 7999 元对应的容量组合。注：2025-07 中旬该机曾限时降价至 7199 元起，属促销价，不计入首发价。",
         "note": "官方只给出起售价，未逐字公布该价位对应的容量 SKU；前端按「官方起售价（容量待核）」展示，不得当作已核验首发价。"
+      },
+      {
+        "field": "屏幕",
+        "value": "6.8 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129586/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.8 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.8 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "电池",
+        "value": "5700mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129586/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 5700mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "5700mAh"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 80W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129586/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 100W 有线 / 80W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "100W 有线 / 80W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "219g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129586/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 219g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "219g"
+      },
+      {
+        "field": "容量组合",
+        "value": "16GB+512GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129586/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 16GB+512GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "16GB+512GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年06月14日",
+        "valueAtAudit": "2025年06月14日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2130/2129586/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年06月14日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -4234,13 +4579,13 @@
     "year": 2025,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "OLED 屏幕；具体参数待复核",
+    "display": "6.75 英寸 · 全面屏 · 120Hz",
     "chip": "麒麟 9030 系列（以官方型号页为准）",
     "camera": "第二代红枫影像",
-    "battery": "官方规格待复核",
-    "charging": "官方规格待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "5750mAh",
+    "charging": "66W 有线 / 50W 无线",
+    "weight": "217g",
+    "storage": "12GB+256GB",
     "os": "HarmonyOS 6",
     "priceCN": 5499,
     "priceText": "官方首发起售价（非当前售价）",
@@ -4596,7 +4941,63 @@
     "specSource": "https://detail.zol.com.cn/2146/2145478/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 66,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.75 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145478/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.75 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.75 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "电池",
+        "value": "5750mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145478/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 5750mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "5750mAh"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145478/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 66W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "66W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "217g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145478/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 217g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "217g"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145478/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+256GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年11月25日",
+        "valueAtAudit": "2025年11月25日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145478/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年11月25日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "hua-mate80rs",
@@ -4655,13 +5056,13 @@
     "year": 2025,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "折叠内屏/外屏；详细参数待复核",
-    "chip": "麒麟平台；型号规格待复核",
+    "display": "8 英寸 · 主：全面屏 · 120Hz",
+    "chip": "海思 麒麟9030 Pro",
     "camera": "第二代红枫影像",
-    "battery": "官方规格待复核",
-    "charging": "官方规格待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "5525mAh",
+    "charging": "66W 有线 / 50W 无线",
+    "weight": "235g",
+    "storage": "12GB+512GB",
     "os": "HarmonyOS 6",
     "priceCN": 12999,
     "priceText": "官方首发起售价（非当前售价）",
@@ -5016,7 +5417,72 @@
     "specSource": "https://detail.zol.com.cn/2149/2148339/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 67,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "8 英寸 · 主：全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148339/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 8 英寸 · 主：全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "8 英寸 · 主：全面屏 · 120Hz"
+      },
+      {
+        "field": "处理器",
+        "value": "海思 麒麟9030 Pro",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148339/param.shtml",
+        "evidenceText": "中关村在线参数页：处理器 海思 麒麟9030 Pro",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "海思 麒麟9030 Pro"
+      },
+      {
+        "field": "电池",
+        "value": "5525mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148339/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 5525mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "5525mAh"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148339/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 66W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "66W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "235g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148339/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 235g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "235g"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+512GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148339/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+512GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+512GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年12月05日",
+        "valueAtAudit": "2025年12月05日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148339/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年12月05日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "hua-mate90",
@@ -5025,12 +5491,12 @@
     "year": 2026,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "OLED 屏幕；详细参数待复核",
-    "chip": "官方规格待复核",
+    "display": "6.75 英寸 · 全面屏 · 120Hz",
+    "chip": "海思 麒麟 9030",
     "camera": "华为睿影 XMAGE / 红枫影像功能",
-    "battery": "官方规格待复核",
-    "charging": "官方规格待复核",
-    "weight": "官方规格待复核",
+    "battery": "6600mAh",
+    "charging": "66W 有线 / 50W 无线",
+    "weight": "217g",
     "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
     "os": "HarmonyOS 7.0",
     "priceCN": 5999,
@@ -5383,7 +5849,63 @@
     "specSource": "https://detail.zol.com.cn/2180/2179096/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 64,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.75 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2180/2179096/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.75 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.75 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "处理器",
+        "value": "海思 麒麟 9030",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2180/2179096/param.shtml",
+        "evidenceText": "中关村在线参数页：处理器 海思 麒麟 9030",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "海思 麒麟 9030"
+      },
+      {
+        "field": "电池",
+        "value": "6600mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2180/2179096/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 6600mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6600mAh"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2180/2179096/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 66W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "66W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "217g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2180/2179096/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 217g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "217g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年10月01日",
+        "valueAtAudit": "2026年10月01日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2180/2179096/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2026年10月01日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "hua-mate90p",
@@ -5500,13 +6022,13 @@
     "year": 2025,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "折叠内外双屏；峰值亮度等详细参数待复核",
+    "display": "7.95 英寸 · 主：全面屏 · 120Hz",
     "chip": "骁龙 8 至尊版",
     "camera": "全焦段三摄；最高 6400 万像素",
     "battery": "6100 mAh",
     "charging": "66W 有线 / 50W 无线",
     "weight": "约 217 g",
-    "storage": "官方容量组合待复核",
+    "storage": "12GB+256GB",
     "os": "MagicOS",
     "priceCN": 8999,
     "priceText": "官方首发起售价（非当前售价）",
@@ -5869,7 +6391,36 @@
     "specSource": "https://detail.zol.com.cn/2132/2131995/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 69,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "7.95 英寸 · 主：全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2132/2131995/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 7.95 英寸 · 主：全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "7.95 英寸 · 主：全面屏 · 120Hz"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2132/2131995/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+256GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年07月02日",
+        "valueAtAudit": "2025年07月02日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2132/2131995/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年07月02日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "honor-v6",
@@ -5878,13 +6429,13 @@
     "year": 2026,
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
-    "display": "折叠内外双屏；详细参数待复核",
-    "chip": "旗舰平台；型号规格待复核",
+    "display": "7.95 英寸 · 主：全面屏 · 120Hz",
+    "chip": "骁龙 8 Elite Gen5",
     "camera": "旗舰影像系统；详细参数待复核",
     "battery": "7000mAh 以上（官方发布稿）",
-    "charging": "官方规格待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "charging": "120W 有线",
+    "weight": "224g",
+    "storage": "12GB+256GB",
     "os": "MagicOS",
     "priceCN": 8999,
     "priceText": "官方首发起售价（非当前售价）",
@@ -6247,7 +6798,63 @@
     "specSource": "https://detail.zol.com.cn/2159/2158917/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 69,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "7.95 英寸 · 主：全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2159/2158917/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 7.95 英寸 · 主：全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "7.95 英寸 · 主：全面屏 · 120Hz"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 Elite Gen5",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2159/2158917/param.shtml",
+        "evidenceText": "中关村在线参数页：处理器 骁龙 8 Elite Gen5",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "骁龙 8 Elite Gen5"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2159/2158917/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 120W 有线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "120W 有线"
+      },
+      {
+        "field": "重量",
+        "value": "224g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2159/2158917/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 224g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "224g"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2159/2158917/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+256GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年03月10日",
+        "valueAtAudit": "2026年03月10日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2159/2158917/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2026年03月10日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "honor-magic9",
@@ -6256,13 +6863,13 @@
     "year": 2026,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "官方规格页待逐项录入",
-    "chip": "官方规格待复核",
+    "display": "6.37 英寸 · 全面屏 · 120Hz",
+    "chip": "骁龙 8 Elite Gen5",
     "camera": "与 ARRI 合作影像；详细规格待复核",
-    "battery": "官方规格待复核",
-    "charging": "官方规格待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "8000mAh",
+    "charging": "80W 有线 / 50W 无线",
+    "weight": "209g",
+    "storage": "16GB+1TB",
     "os": "MagicOS",
     "priceCN": 4499,
     "priceText": "官方首发起售价（非当前售价）",
@@ -6662,7 +7269,72 @@
     "specSource": "https://detail.zol.com.cn/2179/2178511/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 77,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.37 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.37 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.37 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 Elite Gen5",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
+        "evidenceText": "中关村在线参数页：处理器 骁龙 8 Elite Gen5",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "骁龙 8 Elite Gen5"
+      },
+      {
+        "field": "电池",
+        "value": "8000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 8000mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "8000mAh"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 80W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "80W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "209g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 209g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "209g"
+      },
+      {
+        "field": "容量组合",
+        "value": "16GB+1TB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 16GB+1TB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "16GB+1TB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年09月28日",
+        "valueAtAudit": "2026年09月28日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2026年09月28日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "honor-magic9pm",
@@ -6915,13 +7587,13 @@
     "year": 2026,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "官方规格页待逐项录入",
-    "chip": "官方规格待复核",
+    "display": "6.59 英寸 · 全面屏 · 120Hz",
+    "chip": "联发科 天玑 9600M",
     "camera": "旗舰影像系统；详细参数待复核",
-    "battery": "官方规格待复核",
-    "charging": "官方规格待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "8000mAh",
+    "charging": "80W 有线 / 50W 无线",
+    "weight": "216g",
+    "storage": "12GB+256GB",
     "os": "ColorOS",
     "priceCN": 5499,
     "priceText": "官方首发起售价（非当前售价）",
@@ -6967,6 +7639,60 @@
         "sourceUrl": "https://www.ce.cn/cysc/tech/gd2012/202609/t20260924_3234942.shtml",
         "evidenceText": "官方公布 Find X10 四档售价：12GB+256GB 5499 元、12GB+512GB 5999 元、16GB+512GB 6499 元、16GB+1TB 7499 元，2026-09-24 开售。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "屏幕",
+        "value": "6.59 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178430/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.59 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.59 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "处理器",
+        "value": "联发科 天玑 9600M",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178430/param.shtml",
+        "evidenceText": "中关村在线参数页：处理器 联发科 天玑 9600M",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "联发科 天玑 9600M"
+      },
+      {
+        "field": "电池",
+        "value": "8000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178430/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 8000mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "8000mAh"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178430/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 80W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "80W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "216g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178430/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 216g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "216g"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178430/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+256GB"
       }
     ],
     "specs": [
@@ -7399,13 +8125,13 @@
     "year": 2025,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "小屏 OLED；详细参数待复核",
+    "display": "6.32 英寸 · 全面屏 · 120Hz",
     "chip": "骁龙 8 至尊版（规格需官方页复核）",
     "camera": "后置双摄；详细参数待复核",
-    "battery": "官方规格待复核",
-    "charging": "有线快充，具体参数待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "6260mAh",
+    "charging": "80W 有线",
+    "weight": "185g",
+    "storage": "12GB+256GB",
     "os": "ColorOS",
     "priceCN": 3399,
     "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
@@ -7471,6 +8197,60 @@
         "sourceUrl": "https://www3.xinhuanet.com/tech/20250427/651ea66255d74c1b8b2a8ee12fa781c4/c.html",
         "evidenceText": "官方公布一加 13T 起售价 3399 元（国补到手 2899 元起），2025-04-30 开售；稿件未逐字说明 3399 元对应的容量组合，官方规格序列为 12GB+256GB 起。",
         "note": "官方只给出起售价，未逐字公布该价位对应的容量 SKU；前端按「官方起售价（容量待核）」展示，不得当作已核验首发价。"
+      },
+      {
+        "field": "屏幕",
+        "value": "6.32 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2127/2126339/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.32 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.32 英寸 · 全面屏 · 120Hz"
+      },
+      {
+        "field": "电池",
+        "value": "6260mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2127/2126339/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 6260mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6260mAh"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2127/2126339/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 80W 有线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "80W 有线"
+      },
+      {
+        "field": "重量",
+        "value": "185g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2127/2126339/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 185g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "185g"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2127/2126339/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+256GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年04月30日",
+        "valueAtAudit": "2025年04月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2127/2126339/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年04月30日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -7801,13 +8581,13 @@
     "year": 2024,
     "type": "游戏性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "2K OLED · 高刷新率（详细参数待复核）",
+    "display": "6.82 英寸 · 全面屏 · 144Hz",
     "chip": "骁龙 8 至尊版",
     "camera": "旗舰三摄；详细参数待复核",
-    "battery": "官方规格待复核",
-    "charging": "有线快充，详细参数待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "6150mAh",
+    "charging": "120W 有线",
+    "weight": "213g",
+    "storage": "12GB+256GB",
     "os": "OriginOS",
     "priceCN": 3999,
     "priceText": "官方首发起售价（非当前售价）",
@@ -7852,6 +8632,60 @@
         "sourceUrl": "https://www.vivo.com.cn/vivo/param/iqoo13",
         "evidenceText": "vivo 官网参数页给出建议零售价：12GB+256GB 3999 元、12GB+512GB 4499 元、16GB+256GB 4299 元、16GB+512GB 4699 元、16GB+1TB 5199 元，与中国新闻网对 2024-10-30 发布会的报道完全一致。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "屏幕",
+        "value": "6.82 英寸 · 全面屏 · 144Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1960/1959969/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.82 英寸 · 全面屏 · 144Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.82 英寸 · 全面屏 · 144Hz"
+      },
+      {
+        "field": "电池",
+        "value": "6150mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1960/1959969/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 6150mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6150mAh"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1960/1959969/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 120W 有线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "120W 有线"
+      },
+      {
+        "field": "重量",
+        "value": "213g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1960/1959969/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 213g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "213g"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1960/1959969/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+256GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年11月11日",
+        "valueAtAudit": "2024年11月11日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1960/1959969/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年11月11日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -8145,11 +8979,11 @@
     "year": 2026,
     "type": "游戏性能旗舰",
     "market": "中国大陆正式销售",
-    "display": "官方规格页待逐项录入",
+    "display": "6.85 英寸 · 全面屏 · 144Hz",
     "chip": "第五代骁龙 8 至尊版",
     "camera": "旗舰影像系统；详细参数待复核",
-    "battery": "官方规格待复核",
-    "charging": "官方规格待复核",
+    "battery": "7400mAh",
+    "charging": "100W 有线 / 40W 无线",
     "weight": "227 g",
     "storage": "16GB+256GB / 16GB+512GB / 16GB+1TB / 24GB+1TB",
     "os": "OriginOS",
@@ -8587,7 +9421,45 @@
     "specSource": "https://detail.zol.com.cn/2156/2155142/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 86,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.85 英寸 · 全面屏 · 144Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2156/2155142/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.85 英寸 · 全面屏 · 144Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.85 英寸 · 全面屏 · 144Hz"
+      },
+      {
+        "field": "电池",
+        "value": "7400mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2156/2155142/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 7400mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "7400mAh"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 40W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2156/2155142/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 100W 有线 / 40W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "100W 有线 / 40W 无线"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年02月04日",
+        "valueAtAudit": "2026年02月04日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2156/2155142/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2026年02月04日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "nubia-z70u",
@@ -8596,13 +9468,13 @@
     "year": 2024,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "屏下摄像头全面屏；详细参数待复核",
+    "display": "6.85 英寸 · 全面屏 · 144Hz",
     "chip": "骁龙 8 至尊版",
     "camera": "旗舰三摄；详细参数待复核",
     "battery": "6150 mAh（以官方规格页为准）",
-    "charging": "有线快充，详细参数待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "charging": "80W 有线",
+    "weight": "228g",
+    "storage": "12GB+256GB",
     "os": "MyOS",
     "priceCN": 4599,
     "priceText": "官方首发起售价（非当前售价）",
@@ -8647,6 +9519,51 @@
         "sourceUrl": "https://www.ztedevices.com/cn/news/nubia-z70-ultra-launch",
         "evidenceText": "官网发布稿写明 12GB+256GB 4599 元、16GB+512GB 4999 元、16GB+1TB 5599 元、24GB+1TB 6299 元，星空典藏版 16GB+512GB 5499 元 / 16GB+1TB 5999 元，11-25 开售。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "屏幕",
+        "value": "6.85 英寸 · 全面屏 · 144Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113681/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.85 英寸 · 全面屏 · 144Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6.85 英寸 · 全面屏 · 144Hz"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113681/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 80W 有线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "80W 有线"
+      },
+      {
+        "field": "重量",
+        "value": "228g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113681/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 228g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "228g"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113681/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "12GB+256GB"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年11月21日",
+        "valueAtAudit": "2024年11月21日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113681/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年11月21日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -9413,6 +10330,15 @@
         "sourceUrl": "https://www.sina.cn/gc/article/niuwqpv5509071.html",
         "evidenceText": "2026-04-21 发布会公布 Find X9 Ultra 12GB+256GB 7499 元、12GB+512GB 7999 元、16GB+512GB 8499 元、16GB+1TB 9299 元、16GB+1TB 卫星通信版 9499 元；OPPO 商城 16GB+512GB 当前标价 8499 元与该表一致。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年04月21日",
+        "valueAtAudit": "2026年04月21日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2164/2163011/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2026年04月21日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -9780,7 +10706,7 @@
     "camera": "4800 万像素融合式可变光圈主摄 + 超广角 + 长焦",
     "battery": "官方未按 mAh 公布；视频播放最长约 34 小时",
     "charging": "USB-C 快充 / MagSafe",
-    "weight": "官方页面待核验",
+    "weight": "211g",
     "storage": "256GB / 512GB / 1TB / 2TB",
     "os": "iOS 27",
     "priceCN": 9999,
@@ -10107,7 +11033,27 @@
     "specSource": "https://detail.zol.com.cn/2178/2177308/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 59,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "重量",
+        "value": "211g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2178/2177308/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 211g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "211g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年09月18日",
+        "valueAtAudit": "2026年09月18日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2178/2177308/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2026年09月18日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "apple-18pm",
@@ -10121,7 +11067,7 @@
     "camera": "4800 万像素融合式可变光圈主摄 + 超广角 + 长焦",
     "battery": "官方未按 mAh 公布；视频播放最长约 43 小时",
     "charging": "USB-C 快充 / MagSafe",
-    "weight": "官方页面待核验",
+    "weight": "249g",
     "storage": "256GB / 512GB / 1TB / 2TB",
     "os": "iOS 27",
     "priceCN": 10999,
@@ -10504,7 +11450,27 @@
     "specSource": "https://detail.zol.com.cn/2178/2177461/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 73,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "重量",
+        "value": "249g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2178/2177461/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 249g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "249g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年09月18日",
+        "valueAtAudit": "2026年09月18日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2178/2177461/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2026年09月18日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "xia-18p",
@@ -10517,8 +11483,8 @@
     "chip": "第六代骁龙 8 至尊版",
     "camera": "双 2 亿像素主摄/长焦；以官方页面为准",
     "battery": "7000mAh",
-    "charging": "官方规格页待复核",
-    "weight": "官方规格页待复核",
+    "charging": "100W 有线 / 50W 无线",
+    "weight": "203g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "以官方大陆版页面为准",
     "priceCN": 5999,
@@ -10937,7 +11903,36 @@
     "specSource": "https://detail.zol.com.cn/2179/2178429/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 82,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "充电",
+        "value": "100W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178429/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 100W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "100W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "203g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178429/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 203g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "203g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年09月23日",
+        "valueAtAudit": "2026年09月23日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178429/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2026年09月23日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "vivo-x500",
@@ -10949,9 +11944,9 @@
     "display": "旗舰 OLED；详细参数以官方规格页为准",
     "chip": "天玑 9600 系列；以官方规格页为准",
     "camera": "蔡司影像系统；详细镜头参数以官方规格页为准",
-    "battery": "官方规格页待录入",
-    "charging": "官方规格页待录入",
-    "weight": "官方规格页待录入",
+    "battery": "7500mAh",
+    "charging": "90W 有线 / 40W 无线",
+    "weight": "211g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
     "os": "以官方大陆版页面为准",
     "priceCN": 5499,
@@ -10999,6 +11994,42 @@
         "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500",
         "evidenceText": "vivo 官网参数页给出建议零售价：12GB+256GB 5499 元、12GB+512GB 5999 元、12GB+1TB 6999 元；发布会公布 X500 5499 元起、2026-09-24 开售，与之吻合。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "电池",
+        "value": "7500mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178469/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 7500mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "7500mAh"
+      },
+      {
+        "field": "充电",
+        "value": "90W 有线 / 40W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178469/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 90W 有线 / 40W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "90W 有线 / 40W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "211g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178469/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 211g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "211g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年09月21日",
+        "valueAtAudit": "2025年09月21日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178469/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年09月21日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -11809,7 +12840,18 @@
     "specSource": "https://detail.zol.com.cn/2100/2099705/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 54,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年01月23日",
+        "valueAtAudit": "2025年01月23日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2100/2099705/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年01月23日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "xia-15u",
@@ -12261,7 +13303,18 @@
     "specSource": "https://detail.zol.com.cn/2118/2117401/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 70,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年04月10日",
+        "valueAtAudit": "2025年04月10日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2118/2117401/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年04月10日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "vivo-x200u",
@@ -12676,7 +13729,18 @@
     "specSource": "https://detail.zol.com.cn/2126/2125333/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 78,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年04月21日",
+        "valueAtAudit": "2025年04月21日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2126/2125333/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年04月21日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "hua-pura80u",
@@ -13061,7 +14125,18 @@
     "specSource": "https://detail.zol.com.cn/2140/2139685/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 58,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年09月19日",
+        "valueAtAudit": "2025年09月19日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2140/2139685/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年09月19日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "xia-17p",
@@ -13229,7 +14304,7 @@
     "camera": "旗舰多摄系统；详细镜头参数以官方规格页为准",
     "battery": "7000mAh 以上（系列官方描述）",
     "charging": "最高 120W 有线 / 80W 无线（系列官方描述）",
-    "weight": "官方规格页待复核",
+    "weight": "205g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
     "os": "以官方大陆版页面为准",
     "priceCN": 4499,
@@ -13620,7 +14695,27 @@
     "specSource": "https://detail.zol.com.cn/2145/2144212/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 74,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "重量",
+        "value": "205g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2145/2144212/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 205g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "205g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年10月15日",
+        "valueAtAudit": "2025年10月15日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2145/2144212/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年10月15日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "honor-magic8-pro",
@@ -13699,7 +14794,7 @@
     "camera": "哈苏影像系统；主摄/超广角/长焦以官方规格页为准",
     "battery": "7025mAh（典型值）",
     "charging": "80W 有线 / 50W 无线",
-    "weight": "官方规格页待复核",
+    "weight": "203g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
     "os": "以官方大陆版页面为准",
     "priceCN": 4399,
@@ -14045,7 +15140,27 @@
     "specSource": "https://detail.zol.com.cn/2145/2144018/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 64,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "重量",
+        "value": "203g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2145/2144018/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 203g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "203g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年10月16日",
+        "valueAtAudit": "2025年10月16日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2145/2144018/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年10月16日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "oppo-x9p",
@@ -14471,7 +15586,18 @@
     "specSource": "https://detail.zol.com.cn/2145/2144019/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 79,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年10月22日",
+        "valueAtAudit": "2025年10月22日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2145/2144019/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年10月22日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "op-15",
@@ -14568,9 +15694,9 @@
     "display": "旗舰 OLED 屏；详细参数以官方规格页为准",
     "chip": "旗舰级移动平台；型号以官方规格页为准",
     "camera": "旗舰多摄系统；详细镜头参数以官方规格页为准",
-    "battery": "官方规格页待录入",
-    "charging": "官方规格页待录入",
-    "weight": "官方规格页待录入",
+    "battery": "7560mAh",
+    "charging": "100W 有线 / 50W 无线",
+    "weight": "218g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
     "os": "以官方大陆版页面为准",
     "priceCN": 3999,
@@ -14968,7 +16094,45 @@
     "specSource": "https://detail.zol.com.cn/2146/2145334/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 77,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "电池",
+        "value": "7560mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145334/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 7560mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "7560mAh"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145334/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 100W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "100W 有线 / 50W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "218g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145334/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 218g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "218g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年10月23日",
+        "valueAtAudit": "2025年10月23日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145334/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年10月23日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "iqoo-15",
@@ -14981,8 +16145,8 @@
     "chip": "第五代骁龙 8 至尊版",
     "camera": "5000 万主摄 + 5000 万 3× 潜望长焦；完整组合以官方规格页为准",
     "battery": "7000mAh",
-    "charging": "官方规格页待复核",
-    "weight": "官方规格页待复核",
+    "charging": "100W 有线 / 40W 无线",
+    "weight": "215g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "以官方大陆版页面为准",
     "priceCN": 4199,
@@ -15031,6 +16195,33 @@
         "sourceUrl": "https://www.news.cn/tech/20251021/b6092f5573bf404fb0efdc73acb708d9/c.html",
         "evidenceText": "官方公布 iQOO 15 五档售价：12GB+256GB 4199 元、16GB+256GB 4499 元、12GB+512GB 4699 元、16GB+512GB 4999 元、16GB+1TB 5499 元。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 40W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2145/2144224/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 100W 有线 / 40W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "100W 有线 / 40W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "215g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2145/2144224/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 215g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "215g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年10月20日",
+        "valueAtAudit": "2025年10月20日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2145/2144224/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年10月20日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -15379,8 +16570,8 @@
     "display": "6.79 英寸 QHD+ AMOLED · 最高 144Hz",
     "chip": "新一代骁龙旗舰平台（以官网页为准）",
     "camera": "5000 万理光 GR 主摄 + 5000 万超广角 + 2 亿长焦",
-    "battery": "官方规格页待录入",
-    "charging": "官方规格页待录入",
+    "battery": "7000mAh",
+    "charging": "120W 有线 / 50W 无线",
     "weight": "约 214–218 g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB / 16GB+1TB",
     "storageOptions": [
@@ -15435,6 +16626,33 @@
         "sourceUrl": "http://m.mnw.cn/news/digi/3051167.html",
         "evidenceText": "官方公布真我 GT8 Pro 五档售价：12GB+256GB 3999 元、16GB+256GB 4299 元、12GB+512GB 4499 元、16GB+512GB 4699 元、16GB+1TB 5199 元，2025-10-21 现货开售。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "电池",
+        "value": "7000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145223/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 7000mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "7000mAh"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145223/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 120W 有线 / 50W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "120W 有线 / 50W 无线"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年10月21日",
+        "valueAtAudit": "2025年10月21日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145223/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年10月21日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -15795,9 +17013,9 @@
     "display": "6.31 英寸 OLED；刷新率以官方规格页为准",
     "chip": "天玑 9500",
     "camera": "蔡司 2 亿像素主摄；完整镜头组合以官方规格页为准",
-    "battery": "官方规格页待录入",
-    "charging": "官方规格页待录入",
-    "weight": "官方规格页待录入",
+    "battery": "6040mAh",
+    "charging": "90W 有线 / 40W 无线",
+    "weight": "190g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "以官方大陆版页面为准",
     "priceCN": 4399,
@@ -16197,7 +17415,45 @@
     "specSource": "https://detail.zol.com.cn/2143/2142760/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 76,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "电池",
+        "value": "6040mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2143/2142760/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 6040mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "6040mAh"
+      },
+      {
+        "field": "充电",
+        "value": "90W 有线 / 40W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2143/2142760/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 90W 有线 / 40W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "90W 有线 / 40W 无线"
+      },
+      {
+        "field": "重量",
+        "value": "190g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2143/2142760/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 190g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "190g"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年10月13日",
+        "valueAtAudit": "2025年10月13日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2143/2142760/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年10月13日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "vivo-x300p",
@@ -16864,6 +18120,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 70 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年01月12日",
+        "valueAtAudit": "2024年01月12日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1972/1971108/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年01月12日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -17219,6 +18486,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 57 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年01月25日",
+        "valueAtAudit": "2024年01月25日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1466/1465383/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年01月25日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -17650,6 +18928,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 60 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年04月18日",
+        "valueAtAudit": "2024年04月18日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2000/1999701/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年04月18日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -17662,8 +18951,8 @@
     "display": "6.78 英寸 AMOLED · 1–120Hz LTPO",
     "chip": "第三代骁龙 8 移动平台",
     "camera": "2 亿像素蔡司 APO 超长焦 + 5000 万主摄 + 5000 万超广角",
-    "battery": "官方页面待录入",
-    "charging": "官方页面待录入",
+    "battery": "5500mAh",
+    "charging": "80W 有线 / 30W 无线",
     "weight": "约 229 g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
     "os": "OriginOS",
@@ -17997,6 +19286,35 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：8 组 / 63 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "电池",
+        "value": "5500mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2003/2002105/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 5500mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "5500mAh"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线 / 30W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2003/2002105/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 80W 有线 / 30W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
+        "valueAtAudit": "80W 有线 / 30W 无线"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年05月28日",
+        "valueAtAudit": "2024年05月28日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2003/2002105/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年05月28日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -18257,6 +19575,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：8 组 / 41 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年09月10日",
+        "valueAtAudit": "2024年09月10日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1951/1950441/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年09月10日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -18667,6 +19996,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 76 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年11月08日",
+        "valueAtAudit": "2024年11月08日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2112/2111294/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年11月08日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -19131,6 +20471,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：9 组 / 61 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年11月04日",
+        "valueAtAudit": "2024年11月04日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2103/2102663/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年11月04日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -19553,6 +20904,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 57 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年02月24日",
+        "valueAtAudit": "2023年02月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1404/1403116/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年02月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -19989,7 +21351,18 @@
     "specSource": "https://detail.zol.com.cn/1356/1355563/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 65,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年03月30日",
+        "valueAtAudit": "2023年03月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1356/1355563/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年03月30日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
+    ]
   },
   {
     "id": "oppo-x6p",
@@ -20393,6 +21766,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：9 组 / 76 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年03月24日",
+        "valueAtAudit": "2023年03月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1426/1425497/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年03月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -20824,7 +22208,8 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 60 项（中关村在线，标题比对通过）"
-    ]
+    ],
+    "fieldAudit": []
   },
   {
     "id": "apple-15pm",
@@ -21354,6 +22739,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 72 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年12月14日",
+        "valueAtAudit": "2023年12月14日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1936/1935239/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年12月14日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -21810,6 +23206,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 75 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年03月03日",
+        "valueAtAudit": "2022年03月03日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1384/1383817/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年03月03日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -22192,6 +23599,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 64 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年03月04日",
+        "valueAtAudit": "2022年03月04日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1367/1366619/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年03月04日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -22768,6 +24186,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 79 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年09月16日",
+        "valueAtAudit": "2022年09月16日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1389/1388433/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年09月16日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -23269,6 +24698,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 78 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年12月06日",
+        "valueAtAudit": "2022年12月06日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1429/1428480/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年12月06日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -23804,6 +25244,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 69 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年08月12日",
+        "valueAtAudit": "2021年08月12日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1350/1349131/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年08月12日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -24165,6 +25616,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：8 组 / 44 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年09月24日",
+        "valueAtAudit": "2021年09月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1343/1342492/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年09月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -24566,6 +26028,17 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 74 项（中关村在线，标题比对通过）"
+    ],
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年09月17日",
+        "valueAtAudit": "2021年09月17日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1372/1371908/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年09月17日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      }
     ]
   },
   {
@@ -24954,6 +26427,15 @@
         "evidenceText": "规格页「容量」列出 256GB、512GB、1TB。",
         "valueAtAudit": "256GB / 512GB / 1TB",
         "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年09月19日",
+        "valueAtAudit": "2025年09月19日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2140/2139584/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年09月19日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -25359,6 +26841,15 @@
         "evidenceText": "规格页「容量」列出 128GB、256GB、512GB、1TB。",
         "valueAtAudit": "128GB / 256GB / 512GB / 1TB",
         "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年09月10日",
+        "valueAtAudit": "2024年09月10日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1951/1950438/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年09月10日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -25694,6 +27185,15 @@
         "evidenceText": "规格页「容量」列出 128GB 起，中国大陆在售档位为 128/256/512GB。",
         "valueAtAudit": "128GB / 256GB / 512GB",
         "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年09月20日",
+        "valueAtAudit": "2024年09月20日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1951/1950439/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年09月20日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -26164,6 +27664,15 @@
         "evidenceText": "规格页「容量」列出 128GB、256GB、512GB、1TB。",
         "valueAtAudit": "128GB / 256GB / 512GB / 1TB",
         "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年09月22日",
+        "valueAtAudit": "2023年09月22日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1428/1427368/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年09月22日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -26644,6 +28153,15 @@
         "evidenceText": "官方规格页明确列出：128GB / 256GB / 512GB。",
         "valueAtAudit": "128GB / 256GB / 512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年09月22日",
+        "valueAtAudit": "2023年09月22日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1428/1427365/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年09月22日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -27138,6 +28656,15 @@
         "evidenceText": "规格页「容量」列出 128GB、256GB、512GB、1TB。",
         "valueAtAudit": "128GB / 256GB / 512GB / 1TB",
         "note": "已逐项对照 Apple 中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年09月16日",
+        "valueAtAudit": "2022年09月16日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1389/1388430/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年09月16日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -27608,6 +29135,15 @@
         "evidenceText": "官方规格页明确列出：8GB+256GB / 12GB+256GB / 8GB+512GB。",
         "valueAtAudit": "8GB+256GB / 12GB+256GB / 8GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年01月25日",
+        "valueAtAudit": "2024年01月25日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1466/1465382/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年01月25日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -27915,6 +29451,15 @@
         "evidenceText": "第三方参数页列出：196g。",
         "valueAtAudit": "196g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年01月25日",
+        "valueAtAudit": "2024年01月25日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1976/1975492/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年01月25日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -28223,6 +29768,15 @@
         "evidenceText": "官方规格页明确列出：12GB+512GB。",
         "valueAtAudit": "12GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年07月24日",
+        "valueAtAudit": "2024年07月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1985/1984415/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年07月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -29076,6 +30630,15 @@
         "sourceUrl": "https://www.toutiao.com/article/7263075118048608783/",
         "evidenceText": "2023-08-03 国行发布：Galaxy Z Flip5 8GB+256GB 7499 元、8GB+512GB 8499 元。用户在中关村在线看到 8499 元，经确认为 512GB 版本，与官方首发价一致。",
         "note": "容量已按用户确认修正为 512GB；价格与官方首发价吻合。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年08月06日",
+        "valueAtAudit": "2023年08月06日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438746/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年08月06日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -29404,6 +30967,15 @@
         "sourceUrl": "https://support-cn.samsung.com.cn/campaign/event/psg/2025/promotion/july/index.html",
         "evidenceText": "三星中国官方活动页列出 Galaxy S25 Edge 12GB+256GB 厂商建议零售价 ￥7,999、12GB+512GB ￥8,999。",
         "note": "已核对中国大陆版与具体容量组合；首发价不等于当前售价。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年05月20日",
+        "valueAtAudit": "2025年05月20日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2128/2127800/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年05月20日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -30224,6 +31796,15 @@
         "evidenceText": "第三方参数页列出：226g / 228g（版本不同）。",
         "valueAtAudit": "226g / 228g（版本不同）",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年07月19日",
+        "valueAtAudit": "2024年07月19日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2087/2086684/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年07月19日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -30683,6 +32264,15 @@
         "evidenceText": "第三方参数页列出：255g / 259g（版本不同）。",
         "valueAtAudit": "255g / 259g（版本不同）",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年08月16日",
+        "valueAtAudit": "2023年08月16日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1461/1460897/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年08月16日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -31114,6 +32704,15 @@
         "evidenceText": "第三方参数页列出：192g。",
         "valueAtAudit": "192g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年07月23日",
+        "valueAtAudit": "2024年07月23日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2031/2030412/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年07月23日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -31520,6 +33119,15 @@
         "evidenceText": "第三方参数页列出：212 g。",
         "valueAtAudit": "212 g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年11月27日",
+        "valueAtAudit": "2024年11月27日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2115/2114605/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年11月27日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -31882,6 +33490,15 @@
         "evidenceText": "第三方参数页列出：206g。",
         "valueAtAudit": "206g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年11月27日",
+        "valueAtAudit": "2024年11月27日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2103/2102664/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年11月27日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -32273,6 +33890,15 @@
         "evidenceText": "规格页「存储」列出 12GB RAM 与 256GB/512GB/1TB ROM 组合。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB / 12GB+1TB",
         "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年12月04日",
+        "valueAtAudit": "2024年12月04日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1952/1951375/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年12月04日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -32808,6 +34434,15 @@
         "evidenceText": "规格页「存储」按标准版与典藏版分别列出 RAM/ROM 组合。",
         "valueAtAudit": "标准版 12GB+256GB / 12GB+512GB；典藏版 16GB+512GB / 16GB+1TB",
         "note": "已逐项对照中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年11月26日",
+        "valueAtAudit": "2024年11月26日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113955/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年11月26日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -33147,6 +34782,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 12999 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年09月08日",
+        "valueAtAudit": "2023年09月08日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1858/1857626/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年09月08日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -33567,6 +35211,15 @@
         "evidenceText": "中关村在线参数页 ROM 容量列出 256GB/512GB/1TB，RAM 为 12GB。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB / 12GB+1TB",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年04月22日",
+        "valueAtAudit": "2024年04月22日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1987/1986304/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年04月22日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -33949,6 +35602,15 @@
         "evidenceText": "第三方参数页列出：220g。",
         "valueAtAudit": "220g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年04月18日",
+        "valueAtAudit": "2024年04月18日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2000/1999703/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年04月18日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -34331,6 +35993,15 @@
         "evidenceText": "官方规格页明确列出：193.7 g / 195.9 g（含电池，版本不同）。",
         "valueAtAudit": "193.7 g / 195.9 g（含电池，版本不同）",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年08月28日",
+        "valueAtAudit": "2026年08月28日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2176/2175582/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2026年08月28日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -34754,6 +36425,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年10月30日",
+        "valueAtAudit": "2024年10月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2106/2105342/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年10月30日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -35171,6 +36851,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+256GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 16GB+256GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年01月18日",
+        "valueAtAudit": "2024年01月18日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1960/1959987/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年01月18日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -35618,6 +37307,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年07月19日",
+        "valueAtAudit": "2024年07月19日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2035/2034383/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年07月19日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -36073,6 +37771,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+256GB。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+256GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年10月24日",
+        "valueAtAudit": "2024年10月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2103/2102661/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年10月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -36438,6 +38145,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年10月30日",
+        "valueAtAudit": "2024年10月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2107/2106121/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年10月30日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -36951,6 +38667,15 @@
         "evidenceText": "官方规格页明确列出：12GB+512GB。",
         "valueAtAudit": "12GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年10月27日",
+        "valueAtAudit": "2023年10月27日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1495/1494542/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年10月27日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -37368,6 +39093,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年09月08日",
+        "valueAtAudit": "2023年09月08日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1850/1849601/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年09月08日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -37757,6 +39491,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年12月23日",
+        "valueAtAudit": "2022年12月23日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1428/1427932/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年12月23日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -38155,6 +39898,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年10月19日",
+        "valueAtAudit": "2024年10月19日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2110/2109733/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年10月19日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -38528,6 +40280,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年10月19日",
+        "valueAtAudit": "2024年10月19日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2035/2034339/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年10月19日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -38917,6 +40678,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 12GB+512GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年10月25日",
+        "valueAtAudit": "2024年10月25日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2109/2108866/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年10月25日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -39374,6 +41144,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+256GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 16GB+256GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年11月21日",
+        "valueAtAudit": "2023年11月21日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1773/1772535/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年11月21日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -39791,6 +41570,15 @@
         "evidenceText": "官方规格页明确列出：12GB+256GB / 16GB+256GB / 16GB+512GB。",
         "valueAtAudit": "12GB+256GB / 16GB+256GB / 16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年11月21日",
+        "valueAtAudit": "2023年11月21日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1773/1772537/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年11月21日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -40324,6 +42112,15 @@
         "evidenceText": "官方规格页明确列出：16GB+512GB。",
         "valueAtAudit": "16GB+512GB",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年04月03日",
+        "valueAtAudit": "2024年04月03日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1993/1992906/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年04月03日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -40773,6 +42570,15 @@
         "evidenceText": "官方规格页明确列出：100W 超级闪充。",
         "valueAtAudit": "100W 超级闪充",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年12月31日",
+        "valueAtAudit": "2024年12月31日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2116/2115776/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年12月31日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -41127,6 +42933,15 @@
         "evidenceText": "官方规格页明确列出：6400 mAh。",
         "valueAtAudit": "6400 mAh",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年12月26日",
+        "valueAtAudit": "2024年12月26日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113677/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年12月26日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -41508,6 +43323,15 @@
         "evidenceText": "第三方参数页列出：203.7g。",
         "valueAtAudit": "203.7g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年12月14日",
+        "valueAtAudit": "2023年12月14日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544390/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年12月14日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -41925,6 +43749,15 @@
         "evidenceText": "第三方参数页列出：210g。",
         "valueAtAudit": "210g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年12月14日",
+        "valueAtAudit": "2023年12月14日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1545/1544392/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年12月14日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -42351,6 +44184,15 @@
         "evidenceText": "第三方参数页列出：206g。",
         "valueAtAudit": "206g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年11月29日",
+        "valueAtAudit": "2024年11月29日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2114/2113956/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年11月29日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -42810,6 +44652,15 @@
         "evidenceText": "官方规格页明确列出：约 206.7 g。",
         "valueAtAudit": "约 206.7 g",
         "note": "已逐项对照厂商中国大陆官方规格页；字段核实不等于整机准入通过。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年07月15日",
+        "valueAtAudit": "2024年07月15日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2031/2030596/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年07月15日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -43245,6 +45096,15 @@
         "evidenceText": "第三方参数页列出：229 g。",
         "valueAtAudit": "229 g",
         "note": "第三方参数站核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年11月28日",
+        "valueAtAudit": "2023年11月28日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1949/1948879/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年11月28日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -43653,6 +45513,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 3299 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年12月01日",
+        "valueAtAudit": "2023年12月01日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1611/1610864/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年12月01日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -44056,6 +45925,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 3699 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年11月30日",
+        "valueAtAudit": "2022年11月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1435/1434230/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年11月30日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -44507,6 +46385,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 8999 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年04月28日",
+        "valueAtAudit": "2023年04月28日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1439/1438320/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年04月28日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -44994,6 +46881,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 4999 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年03月24日",
+        "valueAtAudit": "2023年03月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1426/1425427/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年03月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -45453,6 +47349,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 2499 元、容量 256GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年12月01日",
+        "valueAtAudit": "2023年12月01日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1611/1610863/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年12月01日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -45861,6 +47766,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 3299 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年12月31日",
+        "valueAtAudit": "2022年12月31日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1433/1432138/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年12月31日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -46301,6 +48215,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 5999 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年09月24日",
+        "valueAtAudit": "2021年09月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1343/1342489/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年09月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -46766,6 +48689,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 5199 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年09月24日",
+        "valueAtAudit": "2021年09月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1359/1358319/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年09月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -47227,6 +49159,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 5999 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年09月16日",
+        "valueAtAudit": "2022年09月16日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1384/1383667/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年09月16日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -47712,6 +49653,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 6999 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年10月07日",
+        "valueAtAudit": "2022年10月07日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1384/1383996/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年10月07日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -48322,6 +50272,15 @@
         "sourceUrl": "",
         "evidenceText": "用户在《待补价格机型填写表》中填入参考价 7999 元、容量 128GB，来源为中关村在线页面；未提供参数页链接，故按第三方参考价记录，不作为官方首发价。",
         "note": "第三方参考价，未经厂商官方页核对；缺参数页链接，待补。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年09月24日",
+        "valueAtAudit": "2021年09月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1343/1342491/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年09月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -48767,6 +50726,15 @@
         "evidenceText": "第三方参数页列出：187g。",
         "valueAtAudit": "187g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年09月02日",
+        "valueAtAudit": "2022年09月02日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1425/1424046/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年09月02日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -49102,6 +51070,15 @@
         "evidenceText": "第三方参数页列出：167g。",
         "valueAtAudit": "167g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年03月04日",
+        "valueAtAudit": "2022年03月04日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1365/1364781/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年03月04日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -49507,6 +51484,15 @@
         "evidenceText": "第三方参数页列出：168g。",
         "valueAtAudit": "168g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年02月24日",
+        "valueAtAudit": "2023年02月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1449/1448934/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年02月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -49883,6 +51869,15 @@
         "evidenceText": "第三方参数页列出：271g。",
         "valueAtAudit": "271g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年09月10日",
+        "valueAtAudit": "2021年09月10日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1348/1347064/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年09月10日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -50275,6 +52270,15 @@
         "evidenceText": "第三方参数页列出：263g。",
         "valueAtAudit": "263g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年09月02日",
+        "valueAtAudit": "2022年09月02日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1408/1407687/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年09月02日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -50614,6 +52618,15 @@
         "evidenceText": "第三方参数页列出：183g。",
         "valueAtAudit": "183g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年09月10日",
+        "valueAtAudit": "2021年09月10日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1383/1382507/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年09月10日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -51122,6 +53135,15 @@
         "evidenceText": "第三方参数页列出：205g / 204g。",
         "valueAtAudit": "205g / 204g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年12月31日",
+        "valueAtAudit": "2021年12月31日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1372/1371912/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年12月31日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -51595,6 +53617,15 @@
         "evidenceText": "第三方参数页列出：204g。",
         "valueAtAudit": "204g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年07月06日",
+        "valueAtAudit": "2022年07月06日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1412/1411925/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年07月06日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -52040,6 +54071,15 @@
         "evidenceText": "第三方参数页列出：262g。",
         "valueAtAudit": "262g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年08月16日",
+        "valueAtAudit": "2022年08月16日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1425/1424177/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年08月16日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -52461,6 +54501,15 @@
         "evidenceText": "第三方参数页列出：212g。",
         "valueAtAudit": "212g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年07月23日",
+        "valueAtAudit": "2024年07月23日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2099/2098425/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年07月23日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -53240,6 +55289,15 @@
         "evidenceText": "第三方参数页列出：239g。",
         "valueAtAudit": "239g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年04月07日",
+        "valueAtAudit": "2023年04月07日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1406/1405053/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年04月07日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -53632,6 +55690,15 @@
         "evidenceText": "第三方参数页列出：251g。",
         "valueAtAudit": "251g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年11月26日",
+        "valueAtAudit": "2024年11月26日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2116/2115265/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年11月26日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -54016,6 +56083,15 @@
         "evidenceText": "第三方参数页列出：220g。",
         "valueAtAudit": "220g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年04月22日",
+        "valueAtAudit": "2024年04月22日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2000/1999708/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年04月22日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -54392,6 +56468,15 @@
         "evidenceText": "第三方参数页列出：204g。",
         "valueAtAudit": "204g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年05月23日",
+        "valueAtAudit": "2025年05月23日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2129/2128093/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年05月23日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -55250,6 +57335,15 @@
         "evidenceText": "第三方参数页列出：219g。",
         "valueAtAudit": "219g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年04月25日",
+        "valueAtAudit": "2022年04月25日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1406/1405721/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年04月25日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -55699,6 +57793,15 @@
         "evidenceText": "第三方参数页列出：215g。",
         "valueAtAudit": "215g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年04月25日",
+        "valueAtAudit": "2022年04月25日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1393/1392798/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年04月25日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -56152,6 +58255,15 @@
         "evidenceText": "第三方参数页列出：311g。",
         "valueAtAudit": "311g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年04月15日",
+        "valueAtAudit": "2022年04月15日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1378/1377260/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年04月15日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -56617,6 +58729,15 @@
         "evidenceText": "第三方参数页列出：203g。",
         "valueAtAudit": "203g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年08月20日",
+        "valueAtAudit": "2021年08月20日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1383/1382712/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年08月20日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -57479,6 +59600,15 @@
         "evidenceText": "第三方参数页列出：191g。",
         "valueAtAudit": "191g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年03月10日",
+        "valueAtAudit": "2023年03月10日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1427/1426635/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年03月10日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -57908,6 +60038,15 @@
         "evidenceText": "第三方参数页列出：193g。",
         "valueAtAudit": "193g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年06月21日",
+        "valueAtAudit": "2024年06月21日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2019/2018979/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年06月21日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -58255,6 +60394,15 @@
         "evidenceText": "第三方参数页列出：183g。",
         "valueAtAudit": "183g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年03月30日",
+        "valueAtAudit": "2021年03月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1365/1364201/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年03月30日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -58716,6 +60864,15 @@
         "evidenceText": "第三方参数页列出：197g。",
         "valueAtAudit": "197g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2021年03月30日",
+        "valueAtAudit": "2021年03月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1327/1326868/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2021年03月30日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -59161,6 +61318,15 @@
         "evidenceText": "第三方参数页列出：203.5g。",
         "valueAtAudit": "203.5g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年09月01日",
+        "valueAtAudit": "2022年09月01日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1415/1414643/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年09月01日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -59511,6 +61677,15 @@
         "evidenceText": "第三方参数页列出：210g。",
         "valueAtAudit": "210g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年08月23日",
+        "valueAtAudit": "2023年08月23日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1509/1508911/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年08月23日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -59911,6 +62086,15 @@
         "evidenceText": "第三方参数页列出：212g / 207g。",
         "valueAtAudit": "212g / 207g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年07月03日",
+        "valueAtAudit": "2024年07月03日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2031/2030190/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年07月03日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -60286,6 +62470,15 @@
         "evidenceText": "第三方参数页列出：195g。",
         "valueAtAudit": "195g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年03月04日",
+        "valueAtAudit": "2022年03月04日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1399/1398124/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年03月04日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -60687,6 +62880,15 @@
         "evidenceText": "第三方参数页列出：195g。",
         "valueAtAudit": "195g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年02月24日",
+        "valueAtAudit": "2023年02月24日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1404/1403118/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年02月24日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -61055,6 +63257,15 @@
         "evidenceText": "第三方参数页列出：85g。",
         "valueAtAudit": "85g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年12月06日",
+        "valueAtAudit": "2022年12月06日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1435/1434232/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年12月06日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -61487,6 +63698,15 @@
         "evidenceText": "第三方参数页列出：206g。",
         "valueAtAudit": "206g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年07月26日",
+        "valueAtAudit": "2022年07月26日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1413/1412273/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年07月26日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -61919,6 +64139,15 @@
         "evidenceText": "第三方参数页列出：216.2g。",
         "valueAtAudit": "216.2g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年07月26日",
+        "valueAtAudit": "2022年07月26日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1421/1420662/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年07月26日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -62367,6 +64596,15 @@
         "evidenceText": "第三方参数页列出：208g / 205g。",
         "valueAtAudit": "208g / 205g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年12月12日",
+        "valueAtAudit": "2022年12月12日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1436/1435912/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年12月12日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -62804,6 +65042,15 @@
         "evidenceText": "第三方参数页列出：196g。",
         "valueAtAudit": "196g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年12月30日",
+        "valueAtAudit": "2023年12月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1611/1610857/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年12月30日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -63241,6 +65488,15 @@
         "evidenceText": "第三方参数页列出：189g。",
         "valueAtAudit": "189g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年01月07日",
+        "valueAtAudit": "2022年01月07日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1397/1396428/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年01月07日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -64125,6 +66381,15 @@
         "evidenceText": "第三方参数页列出：205g。",
         "valueAtAudit": "205g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年09月04日",
+        "valueAtAudit": "2023年09月04日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1857/1856215/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年09月04日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -64554,6 +66819,15 @@
         "evidenceText": "第三方参数页列出：199g。",
         "valueAtAudit": "199g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年02月15日",
+        "valueAtAudit": "2023年02月15日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1458/1457605/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年02月15日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -65435,6 +67709,15 @@
         "evidenceText": "第三方参数页列出：191g。",
         "valueAtAudit": "191g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年12月30日",
+        "valueAtAudit": "2022年12月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1438/1437089/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年12月30日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -65811,6 +68094,15 @@
         "evidenceText": "第三方参数页列出：228g。",
         "valueAtAudit": "228g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年03月14日",
+        "valueAtAudit": "2023年03月14日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1465/1464807/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年03月14日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -66256,6 +68548,15 @@
         "evidenceText": "第三方参数页列出：246g。",
         "valueAtAudit": "246g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2023年12月26日",
+        "valueAtAudit": "2023年12月26日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1961/1960082/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2023年12月26日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -66697,6 +68998,15 @@
         "evidenceText": "第三方参数页列出：228g。",
         "valueAtAudit": "228g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2022年12月28日",
+        "valueAtAudit": "2022年12月28日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1434/1433615/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2022年12月28日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
@@ -67088,6 +69398,15 @@
         "evidenceText": "第三方参数页列出：199g。",
         "valueAtAudit": "199g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2024年09月20日",
+        "valueAtAudit": "2024年09月20日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2105/2104329/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2024年09月20日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
       }
     ],
     "specs": [
