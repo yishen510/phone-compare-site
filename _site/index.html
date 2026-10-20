@@ -767,6 +767,7 @@ html[data-theme="light"] .compare-table th{background:rgba(255,255,255,.96)}
 .compare-table tr:last-child td,.compare-table tr:last-child th{border-bottom:0}
 .compare-table tr.is-different td{background:rgba(110,168,255,.07)}
 .compare-table tr.is-different th{background:rgba(110,168,255,.12)}
+.compare-table tr.compare-group-row th{position:static;background:rgba(110,168,255,.10);border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-family:var(--font-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);padding:9px 14px;min-width:0}
 .difference-tag,.same-tag{display:inline-block;margin-top:5px;font-size:9px;font-weight:700;border-radius:999px;padding:3px 7px;white-space:nowrap}
 .difference-tag{background:rgba(110,168,255,.2);color:var(--accent)}
 .same-tag{background:rgba(255,255,255,.06);color:var(--faint)}
@@ -1189,6 +1190,12 @@ function compare(){
  const normalize=v=>String(v??'').trim().replace(/\s+/g,' ').toLowerCase();
  const differs=key=>new Set(items.map(p=>normalize(value(p,key)))).size>1;
  const shown=rows.filter(([label,key])=>!state.compareDiffOnly||differs(key));
+ const specSections=(()=>{const map=new Map();items.forEach(p=>(p.specs||[]).forEach(g=>{if(!map.has(g.group))map.set(g.group,new Set());(g.items||[]).forEach(it=>map.get(g.group).add(it[0]));}));return [...map.entries()].map(([group,set])=>({group,labels:[...set]}));})();
+ const specVal=(p,g,l)=>{const grp=(p.specs||[]).find(x=>x.group===g);const it=grp&&(grp.items||[]).find(x=>x[0]===l);return it?it[1]:'—';};
+ const specDiffers=(g,l)=>{const vals=items.map(p=>specVal(p,g,l)).filter(v=>v&&v!=='—');return new Set(vals.map(normalize)).size>1;};
+ const specRowsHtml=specSections.map(sec=>{const labels=state.compareDiffOnly?sec.labels.filter(l=>specDiffers(sec.group,l)):sec.labels;if(!labels.length)return '';return `<tr class="compare-group-row"><th colspan="${items.length+1}">${esc(sec.group)}</th></tr>`+labels.map(l=>`<tr class="${specDiffers(sec.group,l)?'is-different':'is-same'}"><th>${esc(l)}${specDiffers(sec.group,l)?'<span class="difference-tag">有差异</span>':'<span class="same-tag">相同/一致</span>'}</th>${items.map(p=>`<td>${esc(specVal(p,sec.group,l))}<small class="compare-evidence secondary">第三方参数站</small></td>`).join('')}</tr>`).join('');}).join('');
+ const specCount=specSections.reduce((n,s)=>n+s.labels.length,0);
+ const diffTotal=rows.filter(([l,k])=>differs(k)).length+specSections.reduce((n,s)=>n+s.labels.filter(l=>specDiffers(s.group,l)).length,0);
  const bestFor=p=>Array.isArray(p.bestFor)&&p.bestFor.length?p.bestFor.join('、'):'暂无经过审核的用途标签';
  const fitText=p=>p.selling||'请结合预算、尺寸、影像、续航等实际需求判断；当前数据不自动生成胜负结论。';
  openModal('compareModal',`
@@ -1196,9 +1203,10 @@ function compare(){
  <p class="eyebrow">SIDE-BY-SIDE · 差异优先</p>
  <h2 id="compareTitle">选机对比</h2>
  <p class="compare-lead">先看不同点，再按自己的使用场景做决定。绿色标记表示数值/描述存在差异，不代表哪款更强。</p>
- <div class="compare-toolbar"><span class="compare-summary">已选 ${items.length} 款 · ${rows.filter(([l,k])=>differs(k)).length} 项存在差异</span><button class="button button-light button-small" data-diff-only="true">${state.compareDiffOnly?'显示全部参数':'仅看差异'}</button></div>
+ <div class="compare-toolbar"><span class="compare-summary">已选 ${items.length} 款 · ${diffTotal} 项存在差异${specCount?'（含 '+specCount+' 项完整参数）':''}</span><button class="button button-light button-small" data-diff-only="true">${state.compareDiffOnly?'显示全部参数':'仅看差异'}</button></div>
  <div class="compare-product-grid">${items.map(p=>`<article class="compare-product"><span class="compare-brand">${esc(p.brand)}</span><h3>${esc(p.name)}</h3><p>${esc(p.type||'旗舰手机')} · ${esc(validDate(p))}</p><strong class="compare-price">${esc(value(p,'priceCN'))}</strong><small>官方首发参考价，非实时售价</small><button class="text-button" data-remove="${esc(p.id)}">从对比中移除 ×</button></article>`).join('')}</div>
- <div class="table-wrap compare-table-wrap"><table class="compare-table"><thead><tr><th>对比项目</th>${items.map(p=>`<th>${esc(p.name)}</th>`).join('')}</tr></thead><tbody>${shown.map(([label,key])=>`<tr class="${differs(key)?'is-different':'is-same'}"><th>${label}${differs(key)?'<span class="difference-tag">有差异</span>':'<span class="same-tag">相同/一致</span>'}</th>${items.map(p=>`<td>${esc(value(p,key))}${field(p,key==='priceCN'?'price':key)==='已核验'?'<small class="compare-evidence">字段已核验</small>':(field(p,key==='priceCN'?'price':key)==='第三方核验'?'<small class="compare-evidence secondary">第三方核验 · 仅供参考</small>':'<small class="compare-evidence pending">待核验 · 仅供参考</small>')}</td>`).join('')}</tr>`).join('')}${shown.length?'':'<tr><td colspan="'+(items.length+1)+'" class="compare-empty">这几款手机在当前展示字段上没有可见差异。</td></tr>'}</tbody></table></div>
+ <div class="table-wrap compare-table-wrap"><table class="compare-table"><thead><tr><th>对比项目</th>${items.map(p=>`<th>${esc(p.name)}</th>`).join('')}</tr></thead><tbody><tr class="compare-group-row"><th colspan="${items.length+1}">核心参数</th></tr>${shown.map(([label,key])=>`<tr class="${differs(key)?'is-different':'is-same'}"><th>${label}${differs(key)?'<span class="difference-tag">有差异</span>':'<span class="same-tag">相同/一致</span>'}</th>${items.map(p=>`<td>${esc(value(p,key))}${field(p,key==='priceCN'?'price':key)==='已核验'?'<small class="compare-evidence">字段已核验</small>':(field(p,key==='priceCN'?'price':key)==='第三方核验'?'<small class="compare-evidence secondary">第三方核验 · 仅供参考</small>':'<small class="compare-evidence pending">待核验 · 仅供参考</small>')}</td>`).join('')}</tr>`).join('')}${specRowsHtml}${(shown.length||specRowsHtml)?'':'<tr><td colspan="'+(items.length+1)+'" class="compare-empty">这几款手机在当前展示字段上没有可见差异。</td></tr>'}</tbody></table></div>
+ <p class="spec-note">「—」表示该机型尚未收录该项；完整参数来自中关村在线参数页，仅供交叉参考。</p>
  <div class="fit-guide"><div><span class="fit-kicker">HOW TO CHOOSE</span><h3>哪款更适合你？</h3><p>不凭单一参数判定“赢家”。根据你最在意的需求，优先核对下列用途说明和已核验字段。</p></div>${items.map(p=>`<article class="fit-card"><h4>${esc(p.name)}</h4><p>${esc(fitText(p))}</p><div class="fit-tags">${(Array.isArray(p.bestFor)?p.bestFor:[]).slice(0,4).map(x=>`<span>${esc(x)}</span>`).join('')||'<span>用途标签待核验</span>'}</div><p class="fit-caution">${pass(p)?'整机审核已通过':'整机审核未通过：不生成排名或自动推荐'}</p></article>`).join('')}</div>
  <p class="modal-warning">价格为官方首发参考价，不代表当前渠道价。差异高亮仅提示字段不同，不代表优劣；未通过审核的机型不会被授予排名或推荐资格。</p>`);
 }
