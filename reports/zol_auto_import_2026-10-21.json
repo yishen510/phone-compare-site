@@ -1,66 +1,554 @@
 {
   "matched": [
     {
-      "id": "redmi-k90pm",
-      "name": "REDMI K90 Pro Max",
-      "title": "【红米Redmi K90 Pro Max 12GB/256GB参数】Redmi Redmi K90 Pro Max 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2146/2145334/param.shtml",
+      "id": "xia-15",
+      "name": "小米 15",
+      "title": "【小米15 16GB/1TB参数】小米 15 16GB/1TB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2113/2112056/param.shtml",
+      "groups": 8,
+      "items": 56
+    },
+    {
+      "id": "oppo-n5",
+      "name": "OPPO Find N5",
+      "title": "【OPPO Find N5 16GB/512GB 参数】OPPO Find N5 16GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2122/2121089/param.shtml",
+      "groups": 9,
+      "items": 64
+    },
+    {
+      "id": "oppo-find-x10-promax",
+      "name": "OPPO Find X10 Pro Max",
+      "title": "【OPPO Find X10 Pro Max 16GB/512GB 参数】OPPO Find X10 Pro Max 16GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2179/2178474/param.shtml",
+      "groups": 9,
+      "items": 65
+    },
+    {
+      "id": "vivo-x300u",
+      "name": "vivo X300 Ultra",
+      "title": "【vivo X300 Ultra 12GB/512GB 参数】vivo X300 Ultra 12GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2162/2161769/param.shtml",
+      "groups": 9,
+      "items": 73
+    },
+    {
+      "id": "vivo-x500p",
+      "name": "vivo X500 Pro",
+      "title": "【vivo X500 Pro 12GB/256GB 参数】vivo X500 Pro 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2179/2178476/param.shtml",
+      "groups": 9,
+      "items": 73
+    },
+    {
+      "id": "xia-15u",
+      "name": "小米 15 Ultra",
+      "title": "【小米15 Ultra 12GB/256GB参数】小米 15 Ultra 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2122/2121272/param.shtml",
+      "groups": 10,
+      "items": 81
+    },
+    {
+      "id": "op-15",
+      "name": "一加 15",
+      "title": "【一加15 12GB/256GB参数】OnePlus 15 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2146/2145479/param.shtml",
+      "groups": 10,
+      "items": 81
+    },
+    {
+      "id": "vivo-x300p",
+      "name": "vivo X300 Pro",
+      "title": "【vivo X300 Pro 12GB+256GB 参数】vivo X300 Pro 12GB+256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2143/2142394/param.shtml",
       "groups": 9,
       "items": 77
     },
     {
-      "id": "redmi-k80p",
-      "name": "REDMI K80 Pro",
-      "title": "【红米Redmi K80 Pro 12GB/256GB参数】Redmi Redmi K80 Pro 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2115/2114605/param.shtml",
-      "groups": 9,
-      "items": 52
+      "id": "hua-mate80p",
+      "name": "HUAWEI Mate 80 Pro",
+      "title": "【华为HUAWEI Mate 80 Pro 12GB/512GB参数】华为 HUAWEI Mate 80 Pro 12GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2150/2149091/param.shtml",
+      "groups": 10,
+      "items": 63
     },
     {
-      "id": "redmi-k80",
-      "name": "REDMI K80",
-      "title": "【红米Redmi K80 12GB/256GB参数】Redmi Redmi K80 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2103/2102664/param.shtml",
-      "groups": 9,
-      "items": 57
+      "id": "xia-17u",
+      "name": "小米 17 Ultra",
+      "title": "【小米17 Ultra 16GB/1TB参数】小米 17 Ultra 16GB/1TB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2153/2152335/param.shtml",
+      "groups": 10,
+      "items": 82
     },
     {
-      "id": "redmi-k70-pro",
-      "name": "REDMI K70 Pro",
-      "title": "【红米Redmi K70 Pro 12GB/256GB参数】Redmi Redmi K70 Pro 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1611/1610864/param.shtml",
-      "groups": 9,
-      "items": 60
+      "id": "op-13",
+      "name": "一加 13",
+      "title": "【一加13 16GB/512GB参数】OnePlus 13 16GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2113/2112234/param.shtml",
+      "groups": 10,
+      "items": 75
     },
     {
-      "id": "redmi-k70",
-      "name": "REDMI K70",
-      "title": "【红米Redmi K70 12GB/256GB参数】Redmi Redmi K70 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1611/1610863/param.shtml",
-      "groups": 9,
-      "items": 61
+      "id": "op-11",
+      "name": "一加 11",
+      "title": "【一加11 12GB/256GB参数】OnePlus 11 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1426/1425511/param.shtml",
+      "groups": 10,
+      "items": 76
     },
     {
-      "id": "redmi-k60-pro",
-      "name": "REDMI K60 Pro",
-      "title": "【红米Redmi K60 Pro 8GB/128GB参数】Redmi Redmi K60 Pro 8GB/128GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1433/1432138/param.shtml",
-      "groups": 9,
-      "items": 67
+      "id": "xia-13u",
+      "name": "小米 13 Ultra",
+      "title": "【小米13 Ultra 16GB/1TB参数】小米 13 Ultra 16GB/1TB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1428/1427191/param.shtml",
+      "groups": 10,
+      "items": 81
+    },
+    {
+      "id": "honor-magic9-ultra",
+      "name": "荣耀 Magic9 超能版",
+      "title": "【荣耀Magic9 超能版 16GB/512GB参数】荣耀 Magic9 超能版 16GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2179/2178514/param.shtml",
+      "groups": 10,
+      "items": 75
+    },
+    {
+      "id": "oppo-x7",
+      "name": "OPPO Find X7",
+      "title": "【OPPO Find X7 12GB/256GB 参数】OPPO Find X7 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1956/1955910/param.shtml",
+      "groups": 10,
+      "items": 73
+    },
+    {
+      "id": "apple-15plus",
+      "name": "iPhone 15 Plus",
+      "title": "【苹果iPhone 15 Plus 128GB参数】Apple iPhone 15 Plus 128GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1428/1427367/param.shtml",
+      "groups": 10,
+      "items": 79
     }
   ],
   "rejected": [
     {
-      "id": "redmi-k90pm",
-      "name": "REDMI K90 Pro Max",
-      "title": "【红米Redmi K90 12GB/256GB参数】Redmi Redmi K90 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2146/2145333/param.shtml"
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "title": "【VAIO Z Flip参数】VAIO Z Flip超极本参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1139/1138579/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "title": "【影驰GeForce RTX 5050 FIRE Lite参数】GALAXY GeForce RTX 5050 FIRE Lite显卡参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2163/2162868/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "title": "【影驰GeForce RTX 5080 HOF OC LAB Deluxe-X参数】GALAXY GeForce RTX 5080 HOF OC LAB Deluxe-X显卡参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2145/2144020/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "title": "【影驰GeForce RTX 5060 FIRE参数】GALAXY GeForce RTX 5060 FIRE显卡参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2132/2131636/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "title": "【影驰星曜Z890曜夜 Wi-Fi参数】GALAXY 星曜Z890曜夜 Wi-Fi主板参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2125/2124347/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "title": "【影驰B760M-H D5参数】GALAXY B760M-H D5主板参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1987/1986207/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-26p",
+      "name": "Galaxy S26+",
+      "title": "【三星Galaxy S26 12GB/256GB参数】Samsung Galaxy S26 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2159/2158490/param.shtml"
+    },
+    {
+      "id": "xia-mixflip2",
+      "name": "MIX Flip 2",
+      "title": "【小米MIX Flip 12GB/256GB参数】小米 MIX Flip 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2031/2030412/param.shtml"
+    },
+    {
+      "id": "hua-mate80rs",
+      "name": "HUAWEI Mate 80 RS 非凡大师",
+      "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1428/1427336/param.shtml"
+    },
+    {
+      "id": "hua-mate80rs",
+      "name": "HUAWEI Mate 80 RS 非凡大师",
+      "title": "【华为HUAWEI Mate 80 12GB/256GB参数】华为 HUAWEI Mate 80 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2146/2145478/param.shtml"
+    },
+    {
+      "id": "hua-mate90p",
+      "name": "HUAWEI Mate 90 Pro",
+      "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1428/1427336/param.shtml"
+    },
+    {
+      "id": "hua-mate90p",
+      "name": "HUAWEI Mate 90 Pro",
+      "title": "【华为HUAWEI Mate 90 12GB/256GB参数】华为 HUAWEI Mate 90 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2180/2179096/param.shtml"
+    },
+    {
+      "id": "hua-mate90pm",
+      "name": "HUAWEI Mate 90 Pro Max",
+      "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1428/1427336/param.shtml"
+    },
+    {
+      "id": "hua-mate90pm",
+      "name": "HUAWEI Mate 90 Pro Max",
+      "title": "【华为HUAWEI Mate 90 12GB/256GB参数】华为 HUAWEI Mate 90 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2180/2179096/param.shtml"
+    },
+    {
+      "id": "honor-magic9pm",
+      "name": "荣耀 Magic9 Pro Max",
+      "title": "【荣耀Magic9 12GB/256GB参数】荣耀 Magic9 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2179/2178347/param.shtml"
+    },
+    {
+      "id": "oppo-n5",
+      "name": "OPPO Find N5",
+      "title": "【OPPO Find N6 12GB/256GB 参数】OPPO Find N6 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2159/2158778/param.shtml"
+    },
+    {
+      "id": "oppo-x8s",
+      "name": "OPPO Find X8s",
+      "title": "【OPPO Find X8 12GB/256GB 参数】OPPO Find X8 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2103/2102661/param.shtml"
+    },
+    {
+      "id": "oppo-x8sp",
+      "name": "OPPO Find X8s+",
+      "title": "【OPPO Find X8 12GB/256GB 参数】OPPO Find X8 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2103/2102661/param.shtml"
+    },
+    {
+      "id": "oppo-find-x10-promax",
+      "name": "OPPO Find X10 Pro Max",
+      "title": "【OPPO Find X10 12GB/256GB 参数】OPPO Find X10 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2179/2178430/param.shtml"
+    },
+    {
+      "id": "redmagic-10p",
+      "name": "红魔 10 Pro",
+      "title": "【佳维若10Pro参数】佳维若 10Pro移动电源(充电宝)参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1468/1467643/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "vivo-x300u",
+      "name": "vivo X300 Ultra",
+      "title": "【vivo X300 12GB/256GB 参数】vivo X300 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2143/2142760/param.shtml"
+    },
+    {
+      "id": "vivo-x500p",
+      "name": "vivo X500 Pro",
+      "title": "【vivo X500 12GB/256GB 参数】vivo X500 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2179/2178469/param.shtml"
+    },
+    {
+      "id": "hua-pura80u",
+      "name": "HUAWEI Pura 80 Ultra",
+      "title": "【华为Pura 80 12GB/256GB参数】华为 Pura 80 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2130/2129355/param.shtml"
+    },
+    {
+      "id": "xia-17p",
+      "name": "Xiaomi 17 Pro",
+      "title": "【小米17 12GB/256GB参数】小米 17 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2143/2142373/param.shtml"
+    },
+    {
+      "id": "xia-17pm",
+      "name": "Xiaomi 17 Pro Max",
+      "title": "【小米17 12GB/256GB参数】小米 17 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2143/2142373/param.shtml"
+    },
+    {
+      "id": "xia-17pm",
+      "name": "Xiaomi 17 Pro Max",
+      "title": "【promax双面潮流女生双肩包几何印花纹背包休闲多功能手提两用书包MD1039B-61 深蓝色参数】PROMAX promax双面潮流女生双肩包几何印花纹背包休闲多功能手提两用书包MD1039B-61 深蓝色户外背包参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/797/796531/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "xia-17pm",
+      "name": "Xiaomi 17 Pro Max",
+      "title": "【Promax新款旅行双肩包大容量户外休闲背包女男士学院风多功能书包MD1038B-40 绿色参数】PROMAX Promax新款旅行双肩包大容量户外休闲背包女男士学院风多功能书包MD1038B-40 绿色户外背包参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/797/796530/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "xia-17pm",
+      "name": "Xiaomi 17 Pro Max",
+      "title": "【promax时尚英伦韩版双肩包男士潮款背包女学院风旅行休闲学生书包MD1033A-50 蓝色参数】PROMAX promax时尚英伦韩版双肩包男士潮款背包女学院风旅行休闲学生书包MD1033A-50 蓝色户外背包参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/797/796529/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "xia-17pm",
+      "name": "Xiaomi 17 Pro Max",
+      "title": "【promax新款英伦水桶双肩包男女韩版潮学院风翻盖背包撞色学生书包MD1013B-10 红色参数】PROMAX promax新款英伦水桶双肩包男女韩版潮学院风翻盖背包撞色学生书包MD1013B-10 红色户外背包参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/797/796528/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "xia-17pm",
+      "name": "Xiaomi 17 Pro Max",
+      "title": "【promax户外旅行背包女帆布大容量双单肩包运动手提包多功能背包MD1059B-20 橙/灰色参数】PROMAX promax户外旅行背包女帆布大容量双单肩包运动手提包多功能背包MD1059B-20 橙/灰色户外背包参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/797/796527/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "honor-magic8-pro",
+      "name": "荣耀 Magic8 Pro",
+      "title": "【荣耀Magic8 12GB/256GB参数】荣耀 Magic8 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2145/2144212/param.shtml"
+    },
+    {
+      "id": "vivo-x300p",
+      "name": "vivo X300 Pro",
+      "title": "【vivo X300 12GB/256GB 参数】vivo X300 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2143/2142760/param.shtml"
+    },
+    {
+      "id": "hua-mate80p",
+      "name": "HUAWEI Mate 80 Pro",
+      "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1428/1427336/param.shtml"
+    },
+    {
+      "id": "hua-mate80p",
+      "name": "HUAWEI Mate 80 Pro",
+      "title": "【华为HUAWEI Mate 80 12GB/256GB参数】华为 HUAWEI Mate 80 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2146/2145478/param.shtml"
+    },
+    {
+      "id": "hua-m80pm",
+      "name": "HUAWEI Mate 80 Pro Max",
+      "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1428/1427336/param.shtml"
+    },
+    {
+      "id": "hua-m80pm",
+      "name": "HUAWEI Mate 80 Pro Max",
+      "title": "【华为HUAWEI Mate 80 12GB/256GB参数】华为 HUAWEI Mate 80 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2146/2145478/param.shtml"
+    },
+    {
+      "id": "honor-magic6-pro",
+      "name": "荣耀 Magic6 Pro",
+      "title": "【荣耀Magic6 12GB/256GB参数】荣耀 Magic6 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1960/1959987/param.shtml"
+    },
+    {
+      "id": "hua-mate70p",
+      "name": "HUAWEI Mate 70 Pro",
+      "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1428/1427336/param.shtml"
+    },
+    {
+      "id": "hua-mate70p",
+      "name": "HUAWEI Mate 70 Pro",
+      "title": "【华为HUAWEI Mate 70 12GB/512GB参数】华为 HUAWEI Mate 70 12GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1952/1951375/param.shtml"
+    },
+    {
+      "id": "honor-magic5-pro",
+      "name": "荣耀 Magic5 Pro",
+      "title": "【米家空气净化器5 Pro参数】mijia 空气净化器5 Pro空气净化器参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2118/2117847/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "apple-15pm",
+      "name": "iPhone 15 Pro Max",
+      "title": "【BOOX MAX参数】BOOX MAX电子书参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1144/1143402/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "op-10pro",
+      "name": "一加 10 Pro",
+      "title": "【佳维若10Pro参数】佳维若 10Pro移动电源(充电宝)参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1468/1467643/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "honor-magic4-pro",
+      "name": "荣耀 Magic4 Pro",
+      "title": "【米家空气净化器4Pro参数】mijia 空气净化器4Pro空气净化器参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1391/1390725/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "xia-12su",
+      "name": "小米 12S Ultra",
+      "title": "【鱼宿IDR210参数】鱼宿 IDR210扫描仪参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2111/2110547/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-21u",
+      "name": "Galaxy S21 Ultra",
+      "title": "【三星Galaxy S21 8GB/256GB/全网通/5G版参数】Samsung Galaxy S21 8GB/256GB/全网通/5G版手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1327/1326800/param.shtml"
+    },
+    {
+      "id": "honor-magic3-pro",
+      "name": "荣耀 Magic3 Pro",
+      "title": "【Haiyi 3p参数】Haiyi 3p热泵烘干参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1147/1146405/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "honor-magic9-ultra",
+      "name": "荣耀 Magic9 超能版",
+      "title": "【荣耀Magic9 16GB/1TB参数】荣耀 Magic9 16GB/1TB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2179/2178511/param.shtml"
+    },
+    {
+      "id": "vivo-x500pm",
+      "name": "vivo X500 Pro Max",
+      "title": "【vivo X500 12GB/256GB 参数】vivo X500 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2179/2178469/param.shtml"
+    },
+    {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "title": "【VAIO Z Flip参数】VAIO Z Flip超极本参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1139/1138579/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "title": "【影驰GeForce RTX 5050 FIRE Lite参数】GALAXY GeForce RTX 5050 FIRE Lite显卡参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2163/2162868/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "title": "【影驰GeForce RTX 5080 HOF OC LAB Deluxe-X参数】GALAXY GeForce RTX 5080 HOF OC LAB Deluxe-X显卡参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2145/2144020/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "title": "【影驰GeForce RTX 5060 FIRE参数】GALAXY GeForce RTX 5060 FIRE显卡参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2132/2131636/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "title": "【影驰星曜Z890曜夜 Wi-Fi参数】GALAXY 星曜Z890曜夜 Wi-Fi主板参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2125/2124347/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "title": "【影驰B760M-H D5参数】GALAXY B760M-H D5主板参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1987/1986207/param.shtml",
+      "reason": "non_phone"
     },
     {
       "id": "xia-14p",
       "name": "小米 14 Pro",
       "title": "【苹果iPhone 14 Pro 128GB参数】Apple iPhone 14 Pro 128GB手机参数_规格_性能_功能-ZOL中关村在线",
       "url": "https://detail.zol.com.cn/1389/1388430/param.shtml"
+    },
+    {
+      "id": "hua-mate70pp",
+      "name": "HUAWEI Mate 70 Pro+",
+      "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1428/1427336/param.shtml"
+    },
+    {
+      "id": "hua-mate70pp",
+      "name": "HUAWEI Mate 70 Pro+",
+      "title": "【华为HUAWEI Mate 70 12GB/512GB参数】华为 HUAWEI Mate 70 12GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1952/1951375/param.shtml"
+    },
+    {
+      "id": "honor-v2",
+      "name": "荣耀 Magic V2",
+      "title": "【硕美科V2参数】SOMIC V2耳机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/404/403548/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "honor-v2",
+      "name": "荣耀 Magic V2",
+      "title": "【华美HM-A网络型 36U参数】magic HM-A网络型 36U机柜参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/158/157946/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "honor-v2",
+      "name": "荣耀 Magic V2",
+      "title": "【华美HM-A网络型 40U参数】magic HM-A网络型 40U机柜参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/158/157945/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "honor-v2",
+      "name": "荣耀 Magic V2",
+      "title": "【华美HM-A网络型 28U参数】magic HM-A网络型 28U机柜参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/158/157940/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "honor-v2",
+      "name": "荣耀 Magic V2",
+      "title": "【华美HM-A网络型 32U参数】magic HM-A网络型 32U机柜参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/158/157939/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "honor-v2",
+      "name": "荣耀 Magic V2",
+      "title": "【华美HM-A网络型 20U参数】magic HM-A网络型 20U机柜参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/158/157934/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "oppo-x7",
+      "name": "OPPO Find X7",
+      "title": "【OPPO Find X 标准版/全网通 参数】OPPO Find X 标准版/全网通手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1214/1213467/param.shtml"
+    },
+    {
+      "id": "vivo-xfold5",
+      "name": "vivo X Fold5",
+      "title": "【vivo X Fold 12GB/256GB 参数】vivo X Fold 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1378/1377260/param.shtml"
     },
     {
       "id": "xiaomi-z20992098425",
@@ -71,11 +559,268 @@
   ],
   "not_found": [
     {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "links": [
+        "https://detail.zol.com.cn/1139/1138579/param.shtml",
+        "https://detail.zol.com.cn/2163/2162868/param.shtml",
+        "https://detail.zol.com.cn/2145/2144020/param.shtml"
+      ]
+    },
+    {
+      "id": "sam-26p",
+      "name": "Galaxy S26+",
+      "links": [
+        "https://detail.zol.com.cn/2159/2158490/param.shtml"
+      ]
+    },
+    {
+      "id": "xia-mixflip2",
+      "name": "MIX Flip 2",
+      "links": [
+        "https://detail.zol.com.cn/2031/2030412/param.shtml"
+      ]
+    },
+    {
+      "id": "hua-mate80rs",
+      "name": "HUAWEI Mate 80 RS 非凡大师",
+      "links": [
+        "https://detail.zol.com.cn/1428/1427336/param.shtml",
+        "https://detail.zol.com.cn/2146/2145478/param.shtml"
+      ]
+    },
+    {
+      "id": "hua-mate90p",
+      "name": "HUAWEI Mate 90 Pro",
+      "links": [
+        "https://detail.zol.com.cn/1428/1427336/param.shtml",
+        "https://detail.zol.com.cn/2180/2179096/param.shtml"
+      ]
+    },
+    {
+      "id": "hua-mate90pm",
+      "name": "HUAWEI Mate 90 Pro Max",
+      "links": [
+        "https://detail.zol.com.cn/1428/1427336/param.shtml",
+        "https://detail.zol.com.cn/2180/2179096/param.shtml"
+      ]
+    },
+    {
+      "id": "honor-magic9pm",
+      "name": "荣耀 Magic9 Pro Max",
+      "links": [
+        "https://detail.zol.com.cn/2179/2178347/param.shtml"
+      ]
+    },
+    {
+      "id": "oppo-x8s",
+      "name": "OPPO Find X8s",
+      "links": [
+        "https://detail.zol.com.cn/2103/2102661/param.shtml"
+      ]
+    },
+    {
+      "id": "oppo-x8sp",
+      "name": "OPPO Find X8s+",
+      "links": [
+        "https://detail.zol.com.cn/2103/2102661/param.shtml"
+      ]
+    },
+    {
+      "id": "redmagic-10p",
+      "name": "红魔 10 Pro",
+      "links": [
+        "https://detail.zol.com.cn/1468/1467643/param.shtml"
+      ]
+    },
+    {
+      "id": "hua-pura80u",
+      "name": "HUAWEI Pura 80 Ultra",
+      "links": [
+        "https://detail.zol.com.cn/2130/2129355/param.shtml"
+      ]
+    },
+    {
+      "id": "xia-17p",
+      "name": "Xiaomi 17 Pro",
+      "links": [
+        "https://detail.zol.com.cn/2143/2142373/param.shtml"
+      ]
+    },
+    {
+      "id": "xia-17pm",
+      "name": "Xiaomi 17 Pro Max",
+      "links": [
+        "https://detail.zol.com.cn/2143/2142373/param.shtml",
+        "https://detail.zol.com.cn/797/796531/param.shtml",
+        "https://detail.zol.com.cn/797/796530/param.shtml"
+      ]
+    },
+    {
+      "id": "xia-17",
+      "name": "小米 17",
+      "links": []
+    },
+    {
+      "id": "honor-magic8-pro",
+      "name": "荣耀 Magic8 Pro",
+      "links": [
+        "https://detail.zol.com.cn/2145/2144212/param.shtml"
+      ]
+    },
+    {
+      "id": "hua-m80pm",
+      "name": "HUAWEI Mate 80 Pro Max",
+      "links": [
+        "https://detail.zol.com.cn/1428/1427336/param.shtml",
+        "https://detail.zol.com.cn/2146/2145478/param.shtml"
+      ]
+    },
+    {
+      "id": "honor-magic6-pro",
+      "name": "荣耀 Magic6 Pro",
+      "links": [
+        "https://detail.zol.com.cn/1960/1959987/param.shtml"
+      ]
+    },
+    {
+      "id": "xia-14u",
+      "name": "小米 14 Ultra",
+      "links": []
+    },
+    {
+      "id": "hua-mate70p",
+      "name": "HUAWEI Mate 70 Pro",
+      "links": [
+        "https://detail.zol.com.cn/1428/1427336/param.shtml",
+        "https://detail.zol.com.cn/1952/1951375/param.shtml"
+      ]
+    },
+    {
+      "id": "honor-magic5-pro",
+      "name": "荣耀 Magic5 Pro",
+      "links": [
+        "https://detail.zol.com.cn/2118/2117847/param.shtml"
+      ]
+    },
+    {
+      "id": "apple-15pm",
+      "name": "iPhone 15 Pro Max",
+      "links": [
+        "https://detail.zol.com.cn/1144/1143402/param.shtml"
+      ]
+    },
+    {
+      "id": "op-12",
+      "name": "一加 12",
+      "links": []
+    },
+    {
+      "id": "op-10pro",
+      "name": "一加 10 Pro",
+      "links": [
+        "https://detail.zol.com.cn/1468/1467643/param.shtml"
+      ]
+    },
+    {
+      "id": "honor-magic4-pro",
+      "name": "荣耀 Magic4 Pro",
+      "links": [
+        "https://detail.zol.com.cn/1391/1390725/param.shtml"
+      ]
+    },
+    {
+      "id": "xia-12su",
+      "name": "小米 12S Ultra",
+      "links": [
+        "https://detail.zol.com.cn/2111/2110547/param.shtml"
+      ]
+    },
+    {
+      "id": "sam-21u",
+      "name": "Galaxy S21 Ultra",
+      "links": [
+        "https://detail.zol.com.cn/1327/1326800/param.shtml"
+      ]
+    },
+    {
+      "id": "xia-11u",
+      "name": "小米 11 Ultra",
+      "links": []
+    },
+    {
+      "id": "honor-magic3-pro",
+      "name": "荣耀 Magic3 Pro",
+      "links": [
+        "https://detail.zol.com.cn/1147/1146405/param.shtml"
+      ]
+    },
+    {
+      "id": "vivo-x500pm",
+      "name": "vivo X500 Pro Max",
+      "links": [
+        "https://detail.zol.com.cn/2179/2178469/param.shtml"
+      ]
+    },
+    {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "links": [
+        "https://detail.zol.com.cn/1139/1138579/param.shtml",
+        "https://detail.zol.com.cn/2163/2162868/param.shtml",
+        "https://detail.zol.com.cn/2145/2144020/param.shtml"
+      ]
+    },
+    {
+      "id": "xia-14",
+      "name": "小米 14",
+      "links": []
+    },
+    {
       "id": "xia-14p",
       "name": "小米 14 Pro",
       "links": [
         "https://detail.zol.com.cn/1389/1388430/param.shtml"
       ]
+    },
+    {
+      "id": "xia-13",
+      "name": "小米 13",
+      "links": []
+    },
+    {
+      "id": "xia-13p",
+      "name": "小米 13 Pro",
+      "links": []
+    },
+    {
+      "id": "hua-mate70pp",
+      "name": "HUAWEI Mate 70 Pro+",
+      "links": [
+        "https://detail.zol.com.cn/1428/1427336/param.shtml",
+        "https://detail.zol.com.cn/1952/1951375/param.shtml"
+      ]
+    },
+    {
+      "id": "honor-v2",
+      "name": "荣耀 Magic V2",
+      "links": [
+        "https://detail.zol.com.cn/404/403548/param.shtml",
+        "https://detail.zol.com.cn/158/157946/param.shtml",
+        "https://detail.zol.com.cn/158/157945/param.shtml"
+      ]
+    },
+    {
+      "id": "vivo-xfold5",
+      "name": "vivo X Fold5",
+      "links": [
+        "https://detail.zol.com.cn/1378/1377260/param.shtml"
+      ]
+    },
+    {
+      "id": "xiaomi-z13721371752",
+      "name": "小米12",
+      "links": []
     },
     {
       "id": "xiaomi-z20992098425",

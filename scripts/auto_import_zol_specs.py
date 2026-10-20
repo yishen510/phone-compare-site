@@ -134,6 +134,19 @@ def brand_ok(title: str, brand: str) -> bool:
     return any(norm(a) and norm(a) in t for a in aliases)
 
 
+def bing_links(name: str) -> list[str]:
+    """站内搜索缺失时，用 Bing 找 wap.zol.com.cn 页面，再映射成 detail 参数页。"""
+    url = "https://cn.bing.com/search?q=" + urllib.parse.quote(f"{name} 参数 site:wap.zol.com.cn")
+    try:
+        raw = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=25).read()
+    except Exception:  # noqa: BLE001
+        return []
+    h = raw.decode("utf-8", "ignore")
+    pairs = re.findall(r"(?:detail|wap)\.zol\.com\.cn[/\\\"]*(\d+)/(\d+)", h)
+    out = [f"https://detail.zol.com.cn/{a}/{b}/param.shtml" for a, b in dict.fromkeys(pairs)]
+    return out[:4]
+
+
 def search_links(kw: str) -> list[str]:
     url = "https://search.zol.com.cn/s/all.php?kword=" + urllib.parse.quote(kw)
     try:
@@ -179,6 +192,9 @@ def main() -> None:
                 if len(links) >= 6:
                     break
                 time.sleep(0.2)
+            for u in bing_links(p["name"]):
+                if u not in links:
+                    links.append(u)
         except Exception as exc:  # noqa: BLE001
             report["failed"].append({"id": p["id"], "name": p["name"], "err": str(exc)[:80]})
             print(f"[{idx}/{len(targets)}] FAIL {p['id']}")
