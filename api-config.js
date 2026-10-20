@@ -1,4 +1,4 @@
 // Configure this to the deployed backend origin when the frontend is hosted separately.
 // Example: window.PHONE_API_BASE_URL = "https://your-api.example.com";
 // Keep this file free of API keys. Leave blank when the Python server serves the site itself.
-window.PHONE_API_BASE_URL = "https://557de79968d8e4.lhr.life";
+window.PHONE_API_BASE_URL = "https://web-production-17a94.up.railway.app";
