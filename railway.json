@@ -1,0 +1,17 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS"
+  },
+  "deploy": {
+    "startCommand": "python price_server.py",
+    "healthcheckPath": "/api/health",
+    "healthcheckTimeout": 100,
+    "restartPolicyType": "ON_FAILURE",
+    "env": {
+      "HOST": "0.0.0.0",
+      "PHONE_CORS_ORIGIN": "https://yishen510.github.io",
+      "PHONE_SERVE_STATIC": "false"
+    }
+  }
+}
