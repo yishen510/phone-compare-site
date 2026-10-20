@@ -640,7 +640,7 @@ class PhoneCompareHandler(SimpleHTTPRequestHandler):
 def main() -> None:
     load_env_file()
     port = int(os.getenv("PORT", "8000"))
-    host = os.getenv("HOST", "127.0.0.1")
+    host = os.getenv("HOST", "0.0.0.0")
     server = ThreadingHTTPServer((host, port), PhoneCompareHandler)
     print(f"机选网站已启动: http://{host}:{port}")
     if os.getenv("HAINAN_API_KEY", "").strip():
