@@ -6338,13 +6338,13 @@
     "year": 2025,
     "type": "全能旗舰",
     "market": "中国大陆正式销售",
-    "display": "高端 OLED 屏幕；详细参数待复核",
+    "display": "6.9 英寸 · 全面屏 · 120Hz",
     "chip": "麒麟 9030 系列（以官方型号页为准）",
     "camera": "第二代红枫影像；详细参数待复核",
-    "battery": "官方规格待复核",
-    "charging": "官方规格待复核",
-    "weight": "官方规格待复核",
-    "storage": "官方容量组合待复核",
+    "battery": "6000mAh",
+    "charging": "100W 有线 / 80W 无线",
+    "weight": "249g",
+    "storage": "20GB+512GB",
     "os": "HarmonyOS 6",
     "priceCN": 11999,
     "priceText": "官方首发起售价（非当前售价）",
@@ -6700,7 +6700,63 @@
     "specSource": "https://detail.zol.com.cn/2149/2148017/param.shtml",
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 66,
-    "specCollectedAt": "2026-10-21"
+    "specCollectedAt": "2026-10-21",
+    "fieldAudit": [
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年11月25日",
+        "valueAtAudit": "2025年11月25日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148017/param.shtml",
+        "evidenceText": "中关村在线参数页：上市日期 2025年11月25日",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "屏幕",
+        "value": "6.9 英寸 · 全面屏 · 120Hz",
+        "valueAtAudit": "6.9 英寸 · 全面屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148017/param.shtml",
+        "evidenceText": "中关村在线参数页：屏幕 6.9 英寸 · 全面屏 · 120Hz",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "电池",
+        "value": "6000mAh",
+        "valueAtAudit": "6000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148017/param.shtml",
+        "evidenceText": "中关村在线参数页：电池 6000mAh",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 80W 无线",
+        "valueAtAudit": "100W 有线 / 80W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148017/param.shtml",
+        "evidenceText": "中关村在线参数页：充电 100W 有线 / 80W 无线",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "重量",
+        "value": "249g",
+        "valueAtAudit": "249g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148017/param.shtml",
+        "evidenceText": "中关村在线参数页：重量 249g",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "容量组合",
+        "value": "20GB+512GB",
+        "valueAtAudit": "20GB+512GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2149/2148017/param.shtml",
+        "evidenceText": "中关村在线参数页：容量组合 20GB+512GB",
+        "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      }
+    ]
   },
   {
     "id": "hua-matex7",
