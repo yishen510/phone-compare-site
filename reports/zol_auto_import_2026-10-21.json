@@ -1,12 +1,20 @@
 {
   "matched": [
     {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【荣耀Magic V2 16GB/256GB参数】荣耀 Magic V2 16GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1555/1554341/param.shtml",
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "title": "【三星Galaxy Z Flip7 12GB/256GB参数】Samsung Galaxy Z Flip7 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2133/2132978/param.shtml",
+      "groups": 9,
+      "items": 50
+    },
+    {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "title": "【三星Galaxy Z Flip6 12GB+256GB参数】Samsung Galaxy Z Flip6 12GB+256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2081/2080340/param.shtml",
       "groups": 8,
-      "items": 66
+      "items": 59
     }
   ],
   "rejected": [
@@ -106,6 +114,20 @@
       "name": "Galaxy Z Flip7",
       "title": "【影驰PSD01 2TB参数】GALAXY PSD01 2TB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
       "url": "https://detail.zol.com.cn/2113/2112027/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "title": "【影驰PS10 1TB参数】GALAXY PS10 1TB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1371/1370058/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip7",
+      "name": "Galaxy Z Flip7",
+      "title": "【影驰GA-T 960GB参数】GALAXY GA-T 960GB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1298/1297021/param.shtml",
       "reason": "non_phone"
     },
     {
@@ -255,99 +277,27 @@
       "reason": "non_phone"
     },
     {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "title": "【影驰PS10 1TB参数】GALAXY PS10 1TB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1371/1370058/param.shtml",
+      "reason": "non_phone"
+    },
+    {
+      "id": "sam-zflip6",
+      "name": "Galaxy Z Flip6",
+      "title": "【影驰GA-T 960GB参数】GALAXY GA-T 960GB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1298/1297021/param.shtml",
+      "reason": "non_phone"
+    },
+    {
       "id": "hua-mate70pp",
       "name": "HUAWEI Mate 70 Pro+",
       "title": "【华为HUAWEI Mate 70 Pro 12GB/512GB参数】华为 HUAWEI Mate 70 Pro 12GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
       "url": "https://detail.zol.com.cn/2115/2114265/param.shtml"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【 VEZ v2参数】VEZ v2投影机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/400/399260/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美HM-A网络型 36U参数】magic HM-A网络型 36U机柜参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/158/157946/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美HM-A网络型 40U参数】magic HM-A网络型 40U机柜参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/158/157945/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美HM-A网络型 28U参数】magic HM-A网络型 28U机柜参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/158/157940/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美HM-A网络型 32U参数】magic HM-A网络型 32U机柜参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/158/157939/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美HM-A网络型 20U参数】magic HM-A网络型 20U机柜参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/158/157934/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美magic Winmail Server 4.6 白金版 不限邮箱数许可参数】magic magic Winmail Server 4.6 白金版 不限邮箱数许可邮件服务器软件参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/213/212167/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美magic Winmail Server 4.6 白金版 2000邮箱数许可参数】magic magic Winmail Server 4.6 白金版 2000邮箱数许可邮件服务器软件参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/213/212166/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美magic Winmail Server 4.6 白金版 1000邮箱数许可参数】magic magic Winmail Server 4.6 白金版 1000邮箱数许可邮件服务器软件参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/213/212165/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美magic Winmail Server 4.6 标准版 不限邮箱数许可参数】magic magic Winmail Server 4.6 标准版 不限邮箱数许可邮件服务器软件参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/213/212161/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "honor-v2",
-      "name": "荣耀 Magic V2",
-      "title": "【华美magic Winmail Server 4.6 标准版 2000邮箱数许可参数】magic magic Winmail Server 4.6 标准版 2000邮箱数许可邮件服务器软件参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/213/212160/param.shtml",
-      "reason": "non_phone"
     }
   ],
   "not_found": [
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "links": [
-        "https://detail.zol.com.cn/1139/1138579/param.shtml",
-        "https://detail.zol.com.cn/2163/2162868/param.shtml",
-        "https://detail.zol.com.cn/2145/2144020/param.shtml"
-      ]
-    },
     {
       "id": "sam-26p",
       "name": "Galaxy S26+",
@@ -384,15 +334,6 @@
       "name": "vivo X500 Pro Max",
       "links": [
         "https://detail.zol.com.cn/2179/2178469/param.shtml"
-      ]
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "links": [
-        "https://detail.zol.com.cn/1139/1138579/param.shtml",
-        "https://detail.zol.com.cn/2163/2162868/param.shtml",
-        "https://detail.zol.com.cn/2145/2144020/param.shtml"
       ]
     },
     {
