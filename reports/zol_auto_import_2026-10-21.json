@@ -1,135 +1,31 @@
 {
   "matched": [
     {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【三星Galaxy Z Flip7 12GB/256GB参数】Samsung Galaxy Z Flip7 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2133/2132978/param.shtml",
+      "id": "oppo-x8sp",
+      "name": "OPPO Find X8s+",
+      "title": "【OPPO Find X8s+ 16GB/1TB 参数】OPPO Find X8s+ 16GB/1TB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2125/2124999/param.shtml",
       "groups": 9,
-      "items": 50
+      "items": 65
     },
     {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【三星Galaxy Z Flip6 12GB+256GB参数】Samsung Galaxy Z Flip6 12GB+256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2081/2080340/param.shtml",
-      "groups": 8,
-      "items": 59
+      "id": "vivo-x500pm",
+      "name": "vivo X500 Pro Max",
+      "title": "【vivo X500 Pro Max 12GB/256GB 参数】vivo X500 Pro Max 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2179/2178313/param.shtml",
+      "groups": 9,
+      "items": 73
+    },
+    {
+      "id": "hua-mate70pp",
+      "name": "HUAWEI Mate 70 Pro+",
+      "title": "【华为HUAWEI Mate 70 Pro+ 16GB/512GB参数】华为 HUAWEI Mate 70 Pro+ 16GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2115/2114268/param.shtml",
+      "groups": 10,
+      "items": 55
     }
   ],
   "rejected": [
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【VAIO Z Flip参数】VAIO Z Flip超极本参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1139/1138579/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰GeForce RTX 5050 FIRE Lite参数】GALAXY GeForce RTX 5050 FIRE Lite显卡参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2163/2162868/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰GeForce RTX 5080 HOF OC LAB Deluxe-X参数】GALAXY GeForce RTX 5080 HOF OC LAB Deluxe-X显卡参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2145/2144020/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰GeForce RTX 5060 FIRE参数】GALAXY GeForce RTX 5060 FIRE显卡参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2132/2131636/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰星曜Z890曜夜 Wi-Fi参数】GALAXY 星曜Z890曜夜 Wi-Fi主板参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2125/2124347/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰B760M-H D5参数】GALAXY B760M-H D5主板参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1987/1986207/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰B550M-H参数】GALAXY B550M-H主板参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1924/1923434/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰HOF OC Lab 幻迹S DDR5 6800 32GB 16GBx2参数】GALAXY HOF OC Lab 幻迹S DDR5 6800 32GB 16GBx2内存参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1985/1984377/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰星曜 DDR5 6800 64GB 32GBx2参数】GALAXY 星曜 DDR5 6800 64GB 32GBx2内存参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1985/1984371/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰HOF EXTREME 50S参数】GALAXY HOF EXTREME 50S固态硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2084/2083531/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰GALAXY 星曜 X4 Plus M.2 1TB参数】GALAXY GALAXY 星曜 X4 Plus M.2 1TB固态硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2084/2083495/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰星曜20周年纪念版 2TB参数】GALAXY 星曜20周年纪念版 2TB固态硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2084/2083493/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰星曜X4 PRO 2TB参数】GALAXY 星曜X4 PRO 2TB固态硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1490/1489163/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰PSD01 2TB参数】GALAXY PSD01 2TB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2113/2112027/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰PS10 1TB参数】GALAXY PS10 1TB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1371/1370058/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip7",
-      "name": "Galaxy Z Flip7",
-      "title": "【影驰GA-T 960GB参数】GALAXY GA-T 960GB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1298/1297021/param.shtml",
-      "reason": "non_phone"
-    },
     {
       "id": "sam-26p",
       "name": "Galaxy S26+",
@@ -155,12 +51,6 @@
       "url": "https://detail.zol.com.cn/2103/2102661/param.shtml"
     },
     {
-      "id": "oppo-x8sp",
-      "name": "OPPO Find X8s+",
-      "title": "【OPPO Find X8s 12GB/256GB 参数】OPPO Find X8s 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2125/2124969/param.shtml"
-    },
-    {
       "id": "hua-m80pm",
       "name": "HUAWEI Mate 80 Pro Max",
       "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
@@ -177,124 +67,6 @@
       "name": "vivo X500 Pro Max",
       "title": "【vivo X500 12GB/256GB 参数】vivo X500 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
       "url": "https://detail.zol.com.cn/2179/2178469/param.shtml"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【VAIO Z Flip参数】VAIO Z Flip超极本参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1139/1138579/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰GeForce RTX 5050 FIRE Lite参数】GALAXY GeForce RTX 5050 FIRE Lite显卡参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2163/2162868/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰GeForce RTX 5080 HOF OC LAB Deluxe-X参数】GALAXY GeForce RTX 5080 HOF OC LAB Deluxe-X显卡参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2145/2144020/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰GeForce RTX 5060 FIRE参数】GALAXY GeForce RTX 5060 FIRE显卡参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2132/2131636/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰星曜Z890曜夜 Wi-Fi参数】GALAXY 星曜Z890曜夜 Wi-Fi主板参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2125/2124347/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰B760M-H D5参数】GALAXY B760M-H D5主板参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1987/1986207/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰B550M-H参数】GALAXY B550M-H主板参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1924/1923434/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰HOF OC Lab 幻迹S DDR5 6800 32GB 16GBx2参数】GALAXY HOF OC Lab 幻迹S DDR5 6800 32GB 16GBx2内存参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1985/1984377/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰星曜 DDR5 6800 64GB 32GBx2参数】GALAXY 星曜 DDR5 6800 64GB 32GBx2内存参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1985/1984371/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰HOF EXTREME 50S参数】GALAXY HOF EXTREME 50S固态硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2084/2083531/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰GALAXY 星曜 X4 Plus M.2 1TB参数】GALAXY GALAXY 星曜 X4 Plus M.2 1TB固态硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2084/2083495/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰星曜20周年纪念版 2TB参数】GALAXY 星曜20周年纪念版 2TB固态硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2084/2083493/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰星曜X4 PRO 2TB参数】GALAXY 星曜X4 PRO 2TB固态硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1490/1489163/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰PSD01 2TB参数】GALAXY PSD01 2TB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2113/2112027/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰PS10 1TB参数】GALAXY PS10 1TB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1371/1370058/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "sam-zflip6",
-      "name": "Galaxy Z Flip6",
-      "title": "【影驰GA-T 960GB参数】GALAXY GA-T 960GB移动硬盘参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1298/1297021/param.shtml",
-      "reason": "non_phone"
-    },
-    {
-      "id": "hua-mate70pp",
-      "name": "HUAWEI Mate 70 Pro+",
-      "title": "【华为HUAWEI Mate 70 Pro 12GB/512GB参数】华为 HUAWEI Mate 70 Pro 12GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2115/2114265/param.shtml"
     }
   ],
   "not_found": [
@@ -314,33 +86,11 @@
       ]
     },
     {
-      "id": "oppo-x8sp",
-      "name": "OPPO Find X8s+",
-      "links": [
-        "https://detail.zol.com.cn/2103/2102661/param.shtml",
-        "https://detail.zol.com.cn/2125/2124969/param.shtml"
-      ]
-    },
-    {
       "id": "hua-m80pm",
       "name": "HUAWEI Mate 80 Pro Max",
       "links": [
         "https://detail.zol.com.cn/1428/1427336/param.shtml",
         "https://detail.zol.com.cn/2146/2145478/param.shtml"
-      ]
-    },
-    {
-      "id": "vivo-x500pm",
-      "name": "vivo X500 Pro Max",
-      "links": [
-        "https://detail.zol.com.cn/2179/2178469/param.shtml"
-      ]
-    },
-    {
-      "id": "hua-mate70pp",
-      "name": "HUAWEI Mate 70 Pro+",
-      "links": [
-        "https://detail.zol.com.cn/2115/2114265/param.shtml"
       ]
     }
   ],

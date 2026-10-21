@@ -123,6 +123,11 @@ def queries(p: dict) -> list[str]:
         out.append(f"{nospace} 参数")
     if cn and bare_ns:
         out.append(f"{cn}{bare_ns} 参数")
+    # 带容量能区分 Pro / Pro+ / Max 等同系列变体
+    storage = re.sub(r"\s+", " ", str(p.get("quoteTargetStorage") or "").replace("+", " ")).strip()
+    if storage:
+        out.append(f"{name} {storage} 参数")
+        out.append(f"{name} {storage}")
     out += [name, nospace]
     return list(dict.fromkeys(out))
 
@@ -147,17 +152,25 @@ def bing_links(name: str) -> list[str]:
     return out[:4]
 
 
-def so360_links(name: str) -> list[str]:
-    """360 搜索兜底：中文机型命中率高于 Bing。"""
-    url = "https://www.so.com/s?q=" + urllib.parse.quote(f"{name} 参数 中关村在线")
-    try:
-        raw = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=25).read()
-    except Exception:  # noqa: BLE001
-        return []
-    h = raw.decode("utf-8", "ignore")
-    pairs = re.findall(r"detail\.zol\.com\.cn[/\\\"]*(\d+)/(\d+)", h)
-    pairs += re.findall(r"wap\.zol\.com\.cn[/\\\"]*(\d+)/(\d+)", h)
-    return [f"https://detail.zol.com.cn/{a}/{b}/param.shtml" for a, b in dict.fromkeys(pairs)][:5]
+def so360_links(name: str, storage: str = "") -> list[str]:
+    """360 搜索兜底：中文机型命中率高于 Bing；带容量可区分同系列变体。"""
+    qs = []
+    if storage:
+        qs.append(f"{name} {storage} 参数 中关村在线")
+    qs.append(f"{name} 参数 中关村在线")
+    pairs: list[tuple[str, str]] = []
+    for q in qs:
+        url = "https://www.so.com/s?q=" + urllib.parse.quote(q)
+        try:
+            raw = urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=25).read()
+        except Exception:  # noqa: BLE001
+            continue
+        h = raw.decode("utf-8", "ignore")
+        pairs += re.findall(r"detail\.zol\.com\.cn[/\\\"]*(\d+)/(\d+)", h)
+        pairs += re.findall(r"wap\.zol\.com\.cn[/\\\"]*(\d+)/(\d+)", h)
+        if len(dict.fromkeys(pairs)) >= 4:
+            break
+    return [f"https://detail.zol.com.cn/{a}/{b}/param.shtml" for a, b in dict.fromkeys(pairs)][:6]
 
 
 def search_links(kw: str) -> list[str]:
@@ -208,7 +221,7 @@ def main() -> None:
             for u in bing_links(p["name"]):
                 if u not in links:
                     links.append(u)
-            for u in so360_links(p["name"]):
+            for u in so360_links(p["name"], str(p.get("quoteTargetStorage") or "")):
                 if u not in links:
                     links.append(u)
         except Exception as exc:  # noqa: BLE001
