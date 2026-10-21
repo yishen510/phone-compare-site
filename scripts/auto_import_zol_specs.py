@@ -216,7 +216,7 @@ def main() -> None:
             print(f"[{idx}/{len(targets)}] FAIL {p['id']}")
             continue
         hit = None
-        for link in links[:8]:
+        for link in links[:14]:
             try:
                 h = fetch(link)
             except Exception:  # noqa: BLE001
