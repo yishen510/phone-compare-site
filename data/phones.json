@@ -83410,7 +83410,7 @@
     "camera": "第三方参数页未逐项整理镜头组合，待核验",
     "battery": "4870 mAh",
     "charging": "120W 有线",
-    "weight": "85g",
+    "weight": "214.85g",
     "storage": "256GB>",
     "os": "以官方页面为准",
     "priceCN": 5499,
@@ -83443,7 +83443,8 @@
       "由中关村在线参数页补录，第三方来源",
       "参数与首发价未经厂商官方页核对",
       "整机准入保持关闭",
-      "2026-10-20 补录完整参数表：9 组 / 71 项（中关村在线参数页（第三方核验））"
+      "2026-10-20 补录完整参数表：9 组 / 71 项（中关村在线参数页（第三方核验））",
+      "2026-10-24 修正：重量正则截断导致 214.85g 被记成 85g"
     ],
     "priceAuditStatus": "secondary_source_reference",
     "parameterAuditStatus": "partial_secondary_source",
@@ -83486,11 +83487,11 @@
       },
       {
         "field": "重量",
-        "value": "85g",
+        "value": "214.85g",
         "status": "cross_checked_secondary_source",
         "sourceUrl": "https://detail.zol.com.cn/1435/1434232/param.shtml",
-        "evidenceText": "第三方参数页列出：85g。",
-        "valueAtAudit": "85g",
+        "evidenceText": "中关村在线参数页：重量 214.85g",
+        "valueAtAudit": "214.85g",
         "note": "第三方参数站（中关村在线）核对，非厂商官方页面；仅供交叉参考，不构成整机准入依据。"
       },
       {

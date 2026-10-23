@@ -78,7 +78,8 @@ def derive(specs: list[dict]) -> dict[str, str]:
     if parts:
         out["charging"] = " / ".join(parts)
 
-    gram = num(r"(\d{2,3}(?:\.\d)?)\s*g", pick(specs, "重量"))
+    wt_all = [float(x) for x in re.findall(r"(\d{2,3}(?:\.\d{1,2})?)\s*(?:g|克)", pick(specs, "重量") or "")]
+    gram = max(wt_all) if wt_all else None
     if gram:
         out["weight"] = f"{gram}g"
 
