@@ -17,6 +17,13 @@ from import_zol_params import fetch, patch_html  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "phones.json"
+# 型号之外的"版本后缀"：标题里出现、但目标机型名里没有 → 判为串号
+VARIANT_WORDS = ["view"]  # 仅"另一款机型"的标记；典藏版/冠军版等属于同一机型的版本
+
+
+def variant_mismatch(name: str, title: str) -> bool:
+    t, n = str(title).lower(), str(name).lower()
+    return any(w in t and w not in n for w in VARIANT_WORDS)
 
 
 def main() -> None:
@@ -33,7 +40,7 @@ def main() -> None:
             continue
         base, quals = key_of(p["name"], p["brand"])
         cbase, cquals = key_of(t, p["brand"])
-        ok = is_phone_page(t) and brand_ok(t, p["brand"]) and in_base(base, cbase) and cquals == quals
+        ok = is_phone_page(t) and brand_ok(t, p["brand"]) and in_base(base, cbase) and cquals == quals and not variant_mismatch(p["name"], t)
         if not ok:
             dropped.append({"id": p["id"], "name": p["name"], "url": url, "title": t})
             print(f"[{idx}] DROP {p['name']} <- {t[:44]}")

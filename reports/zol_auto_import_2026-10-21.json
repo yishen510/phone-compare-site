@@ -1,98 +1,42 @@
 {
   "matched": [
     {
-      "id": "oppo-x8sp",
-      "name": "OPPO Find X8s+",
-      "title": "【OPPO Find X8s+ 16GB/1TB 参数】OPPO Find X8s+ 16GB/1TB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2125/2124999/param.shtml",
-      "groups": 9,
-      "items": 65
-    },
-    {
-      "id": "vivo-x500pm",
-      "name": "vivo X500 Pro Max",
-      "title": "【vivo X500 Pro Max 12GB/256GB 参数】vivo X500 Pro Max 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2179/2178313/param.shtml",
-      "groups": 9,
-      "items": 73
-    },
-    {
-      "id": "hua-mate70pp",
-      "name": "HUAWEI Mate 70 Pro+",
-      "title": "【华为HUAWEI Mate 70 Pro+ 16GB/512GB参数】华为 HUAWEI Mate 70 Pro+ 16GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2115/2114268/param.shtml",
+      "id": "hua-mate90pm",
+      "name": "HUAWEI Mate 90 Pro Max",
+      "title": "【华为Mate 90 Pro Max 12GB/512GB参数】华为 Mate 90 Pro Max 12GB/512GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2180/2179098/param.shtml",
       "groups": 10,
-      "items": 55
+      "items": 71
+    },
+    {
+      "id": "xiaomi-z20992098425",
+      "name": "红米Redmi K70至尊版",
+      "title": "【红米Redmi K70至尊版 12GB/256GB参数】Redmi Redmi K70至尊版 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2082/2081390/param.shtml",
+      "groups": 9,
+      "items": 57
     }
   ],
   "rejected": [
     {
-      "id": "sam-26p",
-      "name": "Galaxy S26+",
-      "title": "【三星Galaxy S26 12GB/256GB参数】Samsung Galaxy S26 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2159/2158490/param.shtml"
-    },
-    {
-      "id": "hua-mate80rs",
-      "name": "HUAWEI Mate 80 RS 非凡大师",
+      "id": "hua-mate90pm",
+      "name": "HUAWEI Mate 90 Pro Max",
       "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
       "url": "https://detail.zol.com.cn/1428/1427336/param.shtml"
     },
     {
-      "id": "hua-mate80rs",
-      "name": "HUAWEI Mate 80 RS 非凡大师",
-      "title": "【华为HUAWEI Mate 80 12GB/256GB参数】华为 HUAWEI Mate 80 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2146/2145478/param.shtml"
+      "id": "hua-mate90pm",
+      "name": "HUAWEI Mate 90 Pro Max",
+      "title": "【华为HUAWEI Mate 90 12GB/256GB参数】华为 HUAWEI Mate 90 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/2180/2179096/param.shtml"
     },
     {
-      "id": "oppo-x8sp",
-      "name": "OPPO Find X8s+",
-      "title": "【OPPO Find X8 12GB/256GB 参数】OPPO Find X8 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2103/2102661/param.shtml"
-    },
-    {
-      "id": "hua-m80pm",
-      "name": "HUAWEI Mate 80 Pro Max",
-      "title": "【华为HUAWEI Mate 60 12GB/256GB参数】华为 HUAWEI Mate 60 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/1428/1427336/param.shtml"
-    },
-    {
-      "id": "hua-m80pm",
-      "name": "HUAWEI Mate 80 Pro Max",
-      "title": "【华为HUAWEI Mate 80 12GB/256GB参数】华为 HUAWEI Mate 80 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2146/2145478/param.shtml"
-    },
-    {
-      "id": "vivo-x500pm",
-      "name": "vivo X500 Pro Max",
-      "title": "【vivo X500 12GB/256GB 参数】vivo X500 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
-      "url": "https://detail.zol.com.cn/2179/2178469/param.shtml"
+      "id": "xiaomi-z20992098425",
+      "name": "红米Redmi K70至尊版",
+      "title": "【红米Redmi K70 12GB/256GB参数】Redmi Redmi K70 12GB/256GB手机参数_规格_性能_功能-ZOL中关村在线",
+      "url": "https://detail.zol.com.cn/1611/1610863/param.shtml"
     }
   ],
-  "not_found": [
-    {
-      "id": "sam-26p",
-      "name": "Galaxy S26+",
-      "links": [
-        "https://detail.zol.com.cn/2159/2158490/param.shtml"
-      ]
-    },
-    {
-      "id": "hua-mate80rs",
-      "name": "HUAWEI Mate 80 RS 非凡大师",
-      "links": [
-        "https://detail.zol.com.cn/1428/1427336/param.shtml",
-        "https://detail.zol.com.cn/2146/2145478/param.shtml"
-      ]
-    },
-    {
-      "id": "hua-m80pm",
-      "name": "HUAWEI Mate 80 Pro Max",
-      "links": [
-        "https://detail.zol.com.cn/1428/1427336/param.shtml",
-        "https://detail.zol.com.cn/2146/2145478/param.shtml"
-      ]
-    }
-  ],
+  "not_found": [],
   "failed": []
 }
