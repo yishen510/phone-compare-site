@@ -78,7 +78,7 @@ def find_zol_url(p: dict) -> str | None:
     return None
 
 
-def patch_html(path: Path, catalog: list[dict]) -> None:
+def patch_html(path: Path, catalog: list[dict], strict: bool = True) -> None:
     """用 raw_decode 精确定位内嵌数组边界，整体替换后再回读校验。"""
     if not path.is_file():
         return
@@ -90,7 +90,7 @@ def patch_html(path: Path, catalog: list[dict]) -> None:
         return
     j = i + len(marker)
     old, end = json.JSONDecoder().raw_decode(html[j:])
-    if len(old) != len(catalog):
+    if strict and len(old) != len(catalog):
         raise SystemExit(f"FAIL {path.name}: embedded {len(old)} != catalog {len(catalog)}")
     body = json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
     new_html = html[:j] + body + html[j + end:]

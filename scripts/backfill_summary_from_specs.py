@@ -49,6 +49,89 @@ def num(pattern: str, value: str | None) -> str | None:
     return m.group(1) if m else None
 
 
+def _slots(txt: str | None) -> dict[tuple[str, int], str]:
+    """把「后置摄像头1：xxx 后置摄像头2：yyy」拆成 {(位置, 序号): 名称}。"""
+    out: dict[tuple[str, int], str] = {}
+    if not txt:
+        return out
+    pat = r"(后置|前置)摄像头\s*(\d+)?\s*[：:]\s*(.*?)(?=\s*[前后]置摄像头\s*\d*\s*[：:]|$)"
+    for m in re.finditer(pat, txt):
+        pos, idx = m.group(1), int(m.group(2) or 1)
+        val = m.group(3).strip(" ;；,，")
+        if val and (pos, idx) not in out:
+            out[(pos, idx)] = val
+    return out
+
+
+def _pix(value: str | None) -> str:
+    p = re.sub(r"像素$", "", (value or "").strip())
+    m = re.fullmatch(r"(\d+(?:\.\d+)?)万", p)
+    if m and float(m.group(1)) >= 10000:
+        return f"{float(m.group(1)) / 10000:g}亿"
+    return p
+
+
+def _spaced(pix: str) -> str:
+    """「5000万」→「5000 万」，和站点里已有的写法保持一致。"""
+    return re.sub(r"(\d)(万|亿)$", r"\1 \2", pix)
+
+
+def _lens(name: str | None, pix: str | None) -> str:
+    n = re.sub(r"\s+", " ", name or "").strip()
+    n = re.sub(r"(摄像头|镜头)$", "", n).strip()
+    p = _pix(pix)
+    if p and n:
+        if re.search(r"\d+(?:\.\d+)?\s*(?:亿|万)", n):
+            return n
+        head = f"{_spaced(p)}像素{n}" if ("万" in p or "亿" in p) else n
+        return re.sub(r"像素(?=[0-9A-Za-z])", "像素 ", head)
+    return n or (re.sub(r"像素(?=[0-9A-Za-z])", "像素 ", f"{_spaced(p)}像素") if p else "")
+
+
+def _rear_count(specs: list[dict], rear: list) -> int:
+    total = pick(specs, "摄像头总数") or ""
+    m = re.search(r"后\s*([二三四五六七])", total)
+    if m:
+        return "二三四五六七".index(m.group(1)) + 2
+    return len(rear)
+
+
+def camera_text(specs: list[dict]) -> str | None:
+    """从「摄像头名称 / 像素」拼一句可读的影像摘要，避免“后置 后置摄像头1：”这种机器味儿。"""
+    name_map = _slots(pick(specs, "摄像头名称"))
+    pix_map = _slots(pick(specs, "像素"))
+    rear = sorted({k for k in list(name_map) + list(pix_map) if k[0] == "后置"}, key=lambda k: k[1])
+    front = sorted({k for k in list(name_map) + list(pix_map) if k[0] == "前置"}, key=lambda k: k[1])
+    simple = pick(specs, "后置摄像头") or pick(specs, "后置摄像头1")
+    if not rear and simple:
+        txt = "后置 " + naive_clean(simple)
+        f0 = pick(specs, "前置摄像头") or pick(specs, "前置摄像头1")
+        return txt + (f"；前置 {naive_clean(f0)[:18]}" if f0 else "")
+    parts = [x for x in (_lens(name_map.get(k), pix_map.get(k)) for k in rear[:3]) if x]
+    if not parts:
+        return None
+    head = f"{'双三四五六七'[_rear_count(specs, rear) - 2]}摄：" if _rear_count(specs, rear) > 3 else ""
+    txt = head + " + ".join(parts)
+    if front:
+        f0 = front[0]
+        p = _pix(pix_map.get(f0))
+        txt += f"；前置 {_spaced(p)}像素" if ("万" in p or "亿" in p) else f"；前置 {_lens(name_map.get(f0), None) or '单摄'}"
+    if len(txt) > 72:
+        txt = txt[:72].rsplit(" + ", 1)[0]
+    return txt
+
+
+def watts(value: str | None) -> str | None:
+    """「100w」「100」都按 100W 处理；「支持> ，50w」取第一个数字。"""
+    if not value:
+        return None
+    m = re.search(r"(\d{2,3})\s*[wW]", str(value))
+    if m:
+        return m.group(1)
+    m = re.fullmatch(r"\s*(\d{2,3})\s*", str(value))
+    return m.group(1) if m else None
+
+
 def derive(specs: list[dict]) -> dict[str, str]:
     out: dict[str, str] = {}
     size = num(r"(\d+(?:\.\d+)?)\s*英寸", pick(specs, "屏幕尺寸"))
@@ -56,20 +139,26 @@ def derive(specs: list[dict]) -> dict[str, str]:
     stype = pick(specs, "屏幕类型") or ""
     stype = naive_clean(re.split(r"[，,]", stype)[0])
     stype = re.sub(r"[（(].*?[)）]", "", stype).strip()
+    mat = naive_clean(pick(specs, "屏幕材质") or "")
+    if re.search(r"OLED|AMOLED|LCD|IPS|LTPS", mat, re.I):
+        stype = mat
+    elif re.search(r"^(全面屏|直面屏|曲面屏|折叠屏)$", stype):
+        stype = ""
     if size:
         out["display"] = " · ".join(x for x in [f"{size} 英寸", stype or "OLED", f"{refresh}Hz" if refresh else ""] if x)
 
-    chip = pick(specs, "CPU型号")
+    chip = pick(specs, "CPU型号") or pick(specs, "处理器") or pick(specs, "芯片型号")
     if chip:
-        out["chip"] = naive_clean(chip)[:40]
+        chip = naive_clean(chip)
+        chip = re.sub(r"^(高通|苹果|华为|联发科|三星)\s*", "", chip)
+        out["chip"] = chip[:40]
 
     mah = num(r"(\d{3,5})\s*mAh", pick(specs, "电池容量"))
     if mah:
         out["battery"] = f"{mah}mAh"
 
-    wired = num(r"(\d{2,3})\s*[wW]", pick(specs, "有线充电") or pick(specs, "充电功率"))
-    wl_raw = pick(specs, "无线充电")
-    wireless = num(r"(\d{2,3})\s*[wW]", wl_raw)
+    wired = watts(pick(specs, "有线充电") or pick(specs, "充电功率"))
+    wireless = watts(pick(specs, "无线充电"))
     parts = []
     if wired:
         parts.append(f"{wired}W 有线")
@@ -81,20 +170,16 @@ def derive(specs: list[dict]) -> dict[str, str]:
     wt_all = [float(x) for x in re.findall(r"(\d{2,3}(?:\.\d{1,2})?)\s*(?:g|克)", pick(specs, "重量") or "")]
     gram = max(wt_all) if wt_all else None
     if gram:
-        out["weight"] = f"{gram}g"
+        out["weight"] = f"{gram:g}g"
 
     ram = num(r"(\d{1,2}\s*GB)", pick(specs, "RAM容量"))
     rom = num(r"(\d{1,3}\s*(?:GB|TB))", pick(specs, "ROM容量"))
     if ram and rom:
         out["storage"] = f"{ram.replace(' ', '')}+{rom.replace(' ', '')}"
 
-    rear = pick(specs, "后置摄像头")
-    front = pick(specs, "前置摄像头")
-    if rear:
-        txt = f"后置 {naive_clean(rear)[:46]}"
-        if front:
-            txt += f"；前置 {naive_clean(front)[:22]}"
-        out["camera"] = txt
+    cam = camera_text(specs)
+    if cam:
+        out["camera"] = cam
 
     osv = pick(specs, "操作系统")
     if osv:
