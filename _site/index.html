@@ -481,6 +481,13 @@ html[data-theme="light"] .art-grid{background-image:linear-gradient(rgba(11,16,3
 .hw-grid input{width:100%;min-width:0;padding:8px 10px;border-radius:10px;font-size:12px;color:var(--ink);background:rgba(255,255,255,.05);border:1px solid var(--line);outline:none}
 .hw-grid input:focus{border-color:rgba(110,168,255,.55);background:rgba(110,168,255,.07)}
 .hw-grid input::-webkit-outer-spin-button,.hw-grid input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}
+.detail-nav{display:flex;align-items:center;gap:10px;margin:10px 0 2px;flex-wrap:wrap}
+.detail-nav-btn{padding:6px 12px;border-radius:999px;border:1px solid var(--line-strong);background:transparent;color:var(--ink);font-size:11.5px;cursor:pointer}
+.detail-nav-btn:disabled{opacity:.35;cursor:default}
+.detail-nav-pos{font-family:var(--font-mono);font-size:10.5px;color:var(--faint);letter-spacing:.08em}
+.detail-nav-hint{font-size:10px;color:var(--faint)}
+.compare-highlights{margin:0 0 14px;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:rgba(110,168,255,.06);list-style:none;display:grid;gap:4px}
+.compare-highlights li{font-size:11.5px;color:var(--muted);line-height:1.6}
 .active-filters{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}
 .active-filters[hidden]{display:none}
 .af-chip{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;border:1px solid var(--line-strong);background:rgba(110,168,255,.10);color:var(--ink);font-size:11px}
@@ -1028,7 +1035,7 @@ html[data-theme="light"] .toast{background:rgba(255,255,255,.95)}
       <div class="catalog-layout">
         <aside class="filters" id="filtersPanel" aria-label="筛选条件">
           <div class="filter-head"><h3>筛选条件</h3><button id="filtersToggle" class="filters-toggle" type="button" aria-expanded="false" aria-controls="filtersPanel">展开 ▾</button><button id="resetFilters" class="text-button">重置 ↺</button></div>
-          <label class="search-field"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="搜索机型、芯片、品牌…" autocomplete="off"><kbd>/</kbd></label>
+          <label class="search-field"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="搜索机型、芯片、参数关键词…" autocomplete="off"><kbd>/</kbd></label>
           <div class="filter-block"><div class="filter-title">品牌 <span id="brandCount">全部</span></div><div id="brandFilters" class="brand-filters"></div></div>
           <div class="filter-block"><div class="filter-title">首发价区间 <span id="priceRangeLabel">不限</span></div><div class="price-range"><input id="priceMin" type="number" min="0" step="200" placeholder="最低" aria-label="最低首发价"><span>—</span><input id="priceMax" type="number" min="0" step="200" placeholder="最高" aria-label="最高首发价"></div><div class="price-chips"><button class="year-chip" type="button" data-price="0-3000">3000 以下</button><button class="year-chip" type="button" data-price="3000-5000">3000–5000</button><button class="year-chip" type="button" data-price="5000-8000">5000–8000</button><button class="year-chip" type="button" data-price="8000-999999">8000 以上</button></div></div>
           <div class="filter-block"><div class="filter-title">硬件参数 <span id="hwFilterLabel">不限</span></div><div class="hw-grid"><label>电池 ≥<input id="hwBattery" type="number" min="0" step="100" inputmode="numeric" placeholder="mAh" aria-label="电池容量至少"></label><label>重量 ≤<input id="hwWeight" type="number" min="0" step="5" inputmode="numeric" placeholder="g" aria-label="重量不超过"></label><label>刷新率 ≥<input id="hwHz" type="number" min="0" step="30" inputmode="numeric" placeholder="Hz" aria-label="刷新率至少"></label><label>存储 ≥<input id="hwStorage" type="number" min="0" step="64" inputmode="numeric" placeholder="GB" aria-label="存储容量至少"></label></div></div>
@@ -1120,7 +1127,7 @@ html[data-theme="light"] .toast{background:rgba(255,255,255,.95)}
 'use strict';
 const phones=Array.isArray(window.PHONE_DATA)?window.PHONE_DATA:[];
 const $=id=>document.getElementById(id);
-const state={brands:new Set(),types:new Set(),compare:[],view:'cards',priorities:new Set(),onlyIds:null,recommendIds:null,compareDiffOnly:false,detailId:null,favs:new Set(),favOnly:false,priceMin:null,priceMax:null,hw:{batteryMin:null,weightMax:null,hzMin:null,storageMin:null},density:'roomy'};
+const state={brands:new Set(),types:new Set(),compare:[],view:'cards',priorities:new Set(),onlyIds:null,recommendIds:null,detailList:null,detailPos:0,compareDiffOnly:false,detailId:null,favs:new Set(),favOnly:false,priceMin:null,priceMax:null,hw:{batteryMin:null,weightMax:null,hzMin:null,storageMin:null},density:'roomy'};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=n=>n!==null&&n!==undefined&&n!==''&&Number.isFinite(Number(n))?'¥'+Number(n).toLocaleString('zh-CN'):'待核实';
 const hasQuote=p=>!!p&&["verified","api_candidate"].includes(p.livePriceStatus)&&Number.isFinite(Number(p.livePrice));
@@ -1195,7 +1202,7 @@ function pass(p){return !!(window.PhoneEligibility&&window.PhoneEligibility.mode
 function scoreLabel(p){return pass(p)&&Number.isFinite(p.score)?p.score:'未开放排名';}
 function filtered(){const q=($('searchInput')?.value||'').trim().toLowerCase();let arr=phones.filter(p=>{
  const text=[p.name,p.brand,p.chip,p.camera,p.type].join(' ').toLowerCase();
- if(q&&!text.includes(q))return false;
+ if(q&&!text.includes(q)&&!specHay(p).includes(q))return false;
  if(state.brands.size&&!state.brands.has(p.brand))return false;
  if(state.types.size&&!state.types.has(p.type))return false;
  const from=Number($('yearFrom')?.value||2021),to=Number($('yearTo')?.value||2026);if(p.year<Math.min(from,to)||p.year>Math.max(from,to))return false;
@@ -1228,6 +1235,7 @@ function filtered(){const q=($('searchInput')?.value||'').trim().toLowerCase();l
    default:return (b.year-a.year)||String(b.launchMonth||'').localeCompare(String(a.launchMonth||''))||a.name.localeCompare(b.name);
   }
  });
+ if(q)arr.sort((a,b)=>relScore(a,q)-relScore(b,q));
  return arr;}
 function renderBrands(){const root=$('brandFilters');if(!root)return;const brands=[...new Set(phones.map(p=>p.brand))].sort();root.innerHTML=brands.map(b=>`<label class="brand-option"><input type="checkbox" value="${esc(b)}" ${state.brands.has(b)?'checked':''}><span>${esc(b)}</span></label>`).join('');root.querySelectorAll('input').forEach(i=>i.addEventListener('change',()=>{i.checked?state.brands.add(i.value):state.brands.delete(i.value);render();}));setText('brandCount',state.brands.size?`${state.brands.size} 已选`:'全部');}
 function card(p){const chosen=state.compare.includes(p.id);return `<article class="phone-card"><div class="card-top"><span class="card-brand">${esc(p.brand)}</span><div class="card-top-right"><span class="card-year">${esc(validDate(p))}</span><button class="fav-btn${state.favs.has(p.id)?' is-on':''}" type="button" data-fav="${esc(p.id)}" aria-pressed="${state.favs.has(p.id)}" aria-label="收藏 ${esc(p.name)}">${state.favs.has(p.id)?'♥':'♡'}</button></div></div><h3>${esc(p.name)}</h3><p class="card-type">${esc(p.type||'旗舰手机')} · ${esc(p.market||'市场版本待核')}</p><div class="card-specs"><div><small>屏幕</small><strong>${esc((p.display||'—').split('；')[0])}</strong></div><div><small>处理器</small><strong>${esc(p.chip||'—')}</strong></div><div><small>电池</small><strong>${esc(p.battery||'—')}</strong></div><div><small>重量</small><strong>${esc(p.weight||'—')}</strong></div></div><div class="card-price"><div><small class="price-label">${p.priceType==='third_party_reference'?'参考价（第三方）':(p.priceType==='official_starting_price'?'官方起售价（容量待核）':'官方首发参考价')}</small><strong>${money(p.priceCN)}</strong>${quoteBlock(p)}</div><span class="audit-pill ${pass(p)?'audit-ok':'audit-pending'}">${pass(p)?'审核通过':'排名/推荐未开放'}</span></div><div class="card-actions"><button class="button button-dark button-small" data-detail="${esc(p.id)}">查看详情</button><button class="button button-light button-small" data-compare="${esc(p.id)}">${chosen?'已加入对比':'加入对比'}</button></div><p class="card-source"><a href="${esc(p.source||'#')}" target="_blank" rel="noopener">查看厂商来源 ↗</a></p></article>`;}
@@ -1274,7 +1282,7 @@ function clearActiveFilter(key){
 }
 function render(){renderBrands();const arr=filtered();setText('statModels',phones.length);setText('statBrands',new Set(phones.map(p=>p.brand)).size);setText('resultCount',arr.length);setText('currentFilterLabel',(state.onlyIds&&state.onlyIds.size)?('推荐候选 '+state.onlyIds.size+' 款'):'全部代表机型');if($('phoneGrid'))$('phoneGrid').innerHTML=state.view==='table'?renderTable(arr):arr.map(card).join('');if($('emptyState')){ $('emptyState').hidden=arr.length!==0;const h=$('emptyState').querySelector('h3'),p=$('emptyState').querySelector('p');if(h)h.textContent='没有找到符合条件的机型';if(p)p.textContent='试着移除一项筛选，或扩大年份范围。';}if($('phoneGrid'))$('phoneGrid').hidden=arr.length===0;if($('phoneGrid'))$('phoneGrid').classList.toggle('is-compact',state.density==='compact');updateCompare();renderActiveFilters();syncUrlState();}
 function openModal(id,html){const m=$(id);if(!m)return;m.innerHTML=html;m.hidden=false;if($('modalBackdrop'))$('modalBackdrop').hidden=false;document.body.classList.add('modal-open');}
-function closeModal(){['detailModal','compareModal','modalBackdrop'].forEach(id=>{if($(id))$(id).hidden=true;});document.body.classList.remove('modal-open');state.detailId=null;}
+function closeModal(){['detailModal','compareModal','modalBackdrop'].forEach(id=>{if($(id))$(id).hidden=true;});document.body.classList.remove('modal-open');state.detailId=null;state.detailList=null;state.detailPos=0;}
 /* ===== 参数工具层（详情 / 对比 / 筛选共用，消除重复实现） ===== */
 function specList(p){return Array.isArray(p&&p.specs)?p.specs.filter(g=>g&&Array.isArray(g.items)):[];}
 function specValueOf(p,group,label){const g=specList(p).find(x=>x.group===group);if(!g)return '—';const it=g.items.find(x=>Array.isArray(x)&&x[0]===label);return it?String(it[1]??''):'—';}
@@ -1369,21 +1377,77 @@ function recommendForNeeds(){
  el.innerHTML=`<div class="rec-head"><b>${priorities.join(' · ')}</b><span>${relaxed?'预算内无匹配，已改为不限预算':(budget?'按首发价 ≤ ¥'+budget.toLocaleString('zh-CN'):'不限预算')} · 参数匹配参考，非正式推荐</span></div>`+ranked.map(({p,s},i)=>`<article class="rec-card"><div class="rec-rank">${String(i+1).padStart(2,'0')}</div><div class="rec-main"><h4>${esc(p.name)}</h4><p>${esc(p.display||'—')} · ${esc(p.battery||'—')} · ${esc(p.weight||'—')}</p><div class="rec-tags">${priorities.map(t=>`<span>${esc(t)} ${s.scores[t]}</span>`).join('')}</div></div><div class="rec-price"><strong>${money(p.priceCN)}</strong><small>官方首发价</small></div><div class="rec-actions"><button class="text-button" data-compare="${esc(p.id)}">加入对比</button><button class="text-button" data-detail="${esc(p.id)}">详情</button></div></article>`).join('')+`<div class="rec-foot"><button class="button button-light button-small" id="recOnlyBtn">在列表中只看这 ${ranked.length} 款</button><span>分数仅用于同一需求下的横向比较，不代表整机优劣，也不构成购买推荐。</span></div>`;
  el.scrollIntoView({behavior:'smooth',block:'start'});
 }
+/* ===== 规格搜索索引（支持按参数关键词检索） ===== */
+const SPEC_HAY=new Map();
+function specHay(p){
+ const k=p&&p.id;if(!k)return '';
+ if(SPEC_HAY.has(k))return SPEC_HAY.get(k);
+ let t='';
+ specList(p).forEach(g=>{t+=g.group+' ';g.items.forEach(it=>{t+=String(it[0])+' '+String(it[1])+' ';});});
+ t=t.toLowerCase();SPEC_HAY.set(k,t);return t;
+}
+function relScore(p,q){
+ const name=String(p.name||'').toLowerCase();
+ if(name.startsWith(q))return 0;
+ if(name.includes(q))return 1;
+ if(String(p.brand||'').toLowerCase().includes(q))return 2;
+ if(String(p.chip||'').toLowerCase().includes(q))return 3;
+ return 4;
+}
+/* ===== 详情：在「当前筛选结果」中前后翻页 ===== */
+function ensureDetailList(id){
+ if(!Array.isArray(state.detailList)||!state.detailList.length||!state.detailList.includes(id)){
+  const ids=filtered().map(p=>p.id);
+  if(!ids.includes(id))ids.unshift(id);
+  state.detailList=ids;
+ }
+ const pos=state.detailList.indexOf(id);
+ state.detailPos=pos<0?0:pos;
+}
+function detailStep(delta){
+ const list=state.detailList||[];
+ if(!list.length)return;
+ const next=(state.detailPos||0)+delta;
+ if(next<0||next>=list.length)return;
+ state.detailPos=next;
+ detail(list[next]);
+ const m=$('detailModal');if(m)m.scrollTop=0;
+}
+/* ===== 对比：客观差异摘要（只陈述差值，不做优劣判断） ===== */
+function compareHighlights(items){
+ const defs=[['电池',p=>hwOf(p).bat,'mAh',100],['重量',p=>hwOf(p).wt,'g',5],['屏幕',p=>recScreen(p),'英寸',0.2],['有线充电',p=>recCharge(p),'W',10]];
+ const out=[];
+ defs.forEach(([label,get,unit,minDiff])=>{
+  const rows=(items||[]).map(p=>[p,get(p)]).filter(x=>x[1]!=null&&Number.isFinite(x[1]));
+  if(rows.length<2)return;
+  const max=rows.reduce((a,b)=>b[1]>a[1]?b:a),min=rows.reduce((a,b)=>b[1]<a[1]?b:a);
+  if(max[0].id===min[0].id)return;
+  const diff=Math.round((max[1]-min[1])*10)/10;
+  if(diff<minDiff)return;
+  out.push(`${label}：${max[0].name} ${max[1]}${unit} 为最高，与 ${min[0].name} 相差 ${diff}${unit}`);
+ });
+ return out;
+}
 function detail(id){
  const p=phones.find(x=>x.id===id);if(!p)return;
  state.detailId=id;
+ ensureDetailList(id);
  const labels={display:'屏幕',chip:'处理器',camera:'影像',battery:'电池',charging:'充电',weight:'重量',storage:'存储',launchDate:'发布日期/开售日期'};
  const keys=Object.keys(labels);
  const official=Number.isFinite(Number(p.priceCN))?money(p.priceCN):'待核验';
  const channel=quoteDetailCard(p);
  const specBlock=buildSpecBlockHtml(p);
- openModal('detailModal',`<button class="modal-close" data-close aria-label="关闭">×</button><p class="eyebrow">MODEL DETAILS</p><h2 id="detailTitle">${esc(p.name)}</h2><p>${esc(p.selling||'')}</p><div class="price-pair"><div class="price-card official"><span class="price-tag">官方首发价 · 非当前售价</span><strong class="price-number">${official}</strong><span class="price-sub">${esc(p.priceText||'官方首发起售价，不代表当前渠道成交价')}</span><span class="price-sub ${field(p,'price')==='已核验'?'verified':'pending'}">价格字段：${field(p,'price')}</span>${p.priceSource?`<a class="quote-link" href="${esc(p.priceSource)}" target="_blank" rel="noopener">价格来源 ↗</a>`:''}</div>${channel}</div><div class="detail-grid">${keys.map(k=>{const a=auditEntry(p,k);return `<div class="detail-row"><span>${labels[k]}</span><b>${esc(a?.valueAtAudit??(k==='launchDate'?(p.launchDateDisplay||p.launchMonth||'待核验'):(p[k]||'待核验')))}</b><small class="${field(p,k)==='已核验'?'verified':(field(p,k)==='第三方核验'?'secondary':'pending')}">${field(p,k)}${a?.evidenceText?' · '+esc(a.evidenceText):''}</small>${a?.sourceUrl?`<a href="${esc(a.sourceUrl)}" target="_blank" rel="noopener">字段来源 ↗</a>`:''}</div>`}).join('')}</div>${specBlock}<p class="modal-warning">${pass(p)?'该机型已通过准入审核。':'该机型尚未通过整机审核，不能参与排名或自动推荐。字段来源链接不等于整机审核通过。'} 渠道报价仅作参考，不会改变该机型的审核、排名或推荐状态。</p><p><a href="${esc(p.source||'#')}" target="_blank" rel="noopener">打开厂商页面 ↗</a></p>`);
+ const totalNav=Array.isArray(state.detailList)?state.detailList.length:0;
+ const navPos=state.detailPos||0;
+ const nav=totalNav>1?`<div class="detail-nav"><button class="detail-nav-btn" type="button" data-nav="-1" ${navPos<=0?'disabled':''} aria-label="上一台机型">← 上一台</button><span class="detail-nav-pos">${navPos+1} / ${totalNav}</span><button class="detail-nav-btn" type="button" data-nav="1" ${navPos>=totalNav-1?'disabled':''} aria-label="下一台机型">下一台 →</button><span class="detail-nav-hint">← → 切换</span></div>`:'';
+ openModal('detailModal',`<button class="modal-close" data-close aria-label="关闭">×</button><p class="eyebrow">MODEL DETAILS</p><h2 id="detailTitle">${esc(p.name)}</h2><p>${esc(p.selling||'')}</p>${nav}<div class="price-pair"><div class="price-card official"><span class="price-tag">官方首发价 · 非当前售价</span><strong class="price-number">${official}</strong><span class="price-sub">${esc(p.priceText||'官方首发起售价，不代表当前渠道成交价')}</span><span class="price-sub ${field(p,'price')==='已核验'?'verified':'pending'}">价格字段：${field(p,'price')}</span>${p.priceSource?`<a class="quote-link" href="${esc(p.priceSource)}" target="_blank" rel="noopener">价格来源 ↗</a>`:''}</div>${channel}</div><div class="detail-grid">${keys.map(k=>{const a=auditEntry(p,k);return `<div class="detail-row"><span>${labels[k]}</span><b>${esc(a?.valueAtAudit??(k==='launchDate'?(p.launchDateDisplay||p.launchMonth||'待核验'):(p[k]||'待核验')))}</b><small class="${field(p,k)==='已核验'?'verified':(field(p,k)==='第三方核验'?'secondary':'pending')}">${field(p,k)}${a?.evidenceText?' · '+esc(a.evidenceText):''}</small>${a?.sourceUrl?`<a href="${esc(a.sourceUrl)}" target="_blank" rel="noopener">字段来源 ↗</a>`:''}</div>`}).join('')}</div>${specBlock}<p class="modal-warning">${pass(p)?'该机型已通过准入审核。':'该机型尚未通过整机审核，不能参与排名或自动推荐。字段来源链接不等于整机审核通过。'} 渠道报价仅作参考，不会改变该机型的审核、排名或推荐状态。</p><p><a href="${esc(p.source||'#')}" target="_blank" rel="noopener">打开厂商页面 ↗</a></p>`);
 }
 function updateCompare(){const items=state.compare.map(id=>phones.find(p=>p.id===id)).filter(Boolean);setText('headerCompareCount',items.length);setText('dockCount',items.length);const dock=$('compareDock');if(dock)dock.hidden=!items.length;if($('dockItems'))$('dockItems').innerHTML=items.map(p=>`<span class="dock-item">${esc(p.name)} <button data-remove="${esc(p.id)}" aria-label="移除">×</button></span>`).join('');}
 function toggleCompare(id){if(state.compare.includes(id)){state.compare=state.compare.filter(x=>x!==id);}else if(state.compare.length>=4){toast('最多同时对比 4 款手机');return;}else state.compare.push(id);render();}
 function compare(){
  const items=state.compare.map(id=>phones.find(p=>p.id===id)).filter(Boolean);
  if(items.length<2){toast('至少加入 2 款手机再开始对比');return;}
+ const highlights=compareHighlights(items);
  const rows=[['屏幕','display'],['处理器','chip'],['影像','camera'],['电池','battery'],['充电','charging'],['重量','weight'],['存储','storage'],['首发参考价','priceCN']];
  const value=(p,key)=>key==='priceCN'?(Number.isFinite(Number(p[key]))?money(p[key]):'待核验'):(p[key]||'待核验');
  const normalize=v=>String(v??'').trim().replace(/\s+/g,' ').toLowerCase();
@@ -1401,7 +1465,7 @@ function compare(){
  <button class="modal-close" data-close aria-label="关闭">×</button>
  <p class="eyebrow">SIDE-BY-SIDE · 差异优先</p>
  <h2 id="compareTitle">选机对比</h2>
- <p class="compare-lead">先看不同点，再按自己的使用场景做决定。绿色标记表示数值/描述存在差异，不代表哪款更强。</p>
+ <p class="compare-lead">先看不同点，再按自己的使用场景做决定。绿色标记表示数值/描述存在差异，不代表哪款更强。</p>${highlights.length?`<ul class="compare-highlights">${highlights.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}
  <div class="compare-toolbar"><span class="compare-summary">已选 ${items.length} 款 · ${diffTotal} 项存在差异${specCount?'（含 '+specCount+' 项完整参数）':''}</span><button class="button button-light button-small" data-export="csv">导出 CSV</button><button class="button button-light button-small" data-diff-only="true">${state.compareDiffOnly?'显示全部参数':'仅看差异'}</button></div>
  <div class="compare-product-grid">${items.map(p=>`<article class="compare-product"><span class="compare-brand">${esc(p.brand)}</span><h3>${esc(p.name)}</h3><p>${esc(p.type||'旗舰手机')} · ${esc(validDate(p))}</p><strong class="compare-price">${esc(value(p,'priceCN'))}</strong><small>官方首发参考价，非实时售价</small><button class="text-button" data-remove="${esc(p.id)}">从对比中移除 ×</button></article>`).join('')}</div>
  <div class="table-wrap compare-table-wrap"><table class="compare-table"><thead><tr><th>对比项目</th>${items.map(p=>`<th>${esc(p.name)}</th>`).join('')}</tr></thead><tbody><tr class="compare-group-row"><th colspan="${items.length+1}">核心参数</th></tr>${shown.map(([label,key])=>`<tr class="${differs(key)?'is-different':'is-same'}"><th>${label}${differs(key)?'<span class="difference-tag">有差异</span>':'<span class="same-tag">相同/一致</span>'}</th>${items.map(p=>`<td>${esc(value(p,key))}${field(p,key==='priceCN'?'price':key)==='已核验'?'<small class="compare-evidence">字段已核验</small>':(field(p,key==='priceCN'?'price':key)==='第三方核验'?'<small class="compare-evidence secondary">第三方核验 · 仅供参考</small>':'<small class="compare-evidence pending">待核验 · 仅供参考</small>')}</td>`).join('')}</tr>`).join('')}${specRowsHtml}${(shown.length||specRowsHtml)?'':'<tr><td colspan="'+(items.length+1)+'" class="compare-empty">这几款手机在当前展示字段上没有可见差异。</td></tr>'}</tbody></table></div>
@@ -1566,8 +1630,8 @@ async function initQuoteApi(){
  }
 }
 function reset(){state.brands.clear();state.types.clear();state.priorities.clear();state.favOnly=false;state.priceMin=null;state.priceMax=null;state.hw={batteryMin:null,weightMax:null,hzMin:null,storageMin:null};state.onlyIds=null;state.recommendIds=null;if($('favOnly'))$('favOnly').checked=false;if($('priceMin'))$('priceMin').value='';if($('priceMax'))$('priceMax').value='';['hwBattery','hwWeight','hwHz','hwStorage'].forEach(id=>{if($(id))$(id).value='';});if(typeof updateHwLabel==='function')updateHwLabel();document.querySelectorAll('[data-price]').forEach(x=>x.classList.remove('active'));if(typeof updatePriceLabel==='function')updatePriceLabel();if($('searchInput'))$('searchInput').value='';if($('yearFrom'))$('yearFrom').value='2021';if($('yearTo'))$('yearTo').value='2026';if($('domesticOnly'))$('domesticOnly').checked=false;document.querySelectorAll('input[name="type"]').forEach(i=>i.checked=false);document.querySelectorAll('[data-years]').forEach(i=>i.classList.toggle('active',i.dataset.years==='all'));document.querySelectorAll('[data-priority]').forEach(i=>i.classList.remove('selected'));render();}
-document.addEventListener('click',e=>{const t=e.target.closest('button');if(!t)return;if(t.dataset.af){clearActiveFilter(t.dataset.af);return;}if(t.id==='quoteQueryBtn'){if(quoteRunning){quoteRunToken++;setQuoteRunning(false);toast('已停止本轮报价查询');}else{const ids=filtered().map(p=>p.id);if(!ids.length)toast('当前筛选没有机型');else{setApiStatus('报价 API 状态：批量查询中','正在按 5 款一批查询当前筛选结果；精确匹配型号与容量后才显示渠道报价。','is-neutral');queryQuotes(ids,{continueOnError:true}).then(r=>{if(!r||!r.total)return;if(r.stopped){setApiStatus('报价 API 状态：查询中断',String(r.stopped)+`（已查 ${r.done}/${r.total} 款）`,'is-warn');return;}setApiStatus('报价 API 状态：批量查询完成',`本轮查询 ${r.done} 款：有精确报价 ${r.ok} 款，暂无报价 ${r.none} 款${r.fail?`，失败 ${r.fail} 款`:''}。渠道报价均需人工核验。`,'is-ok');});}}return;}if(t.dataset.quoteOne){if(quoteRunning){toast('请先等待当前查询结束');return;}const p=phones.find(x=>x.id===t.dataset.quoteOne);if(p)queryQuotes([p.id],{continueOnError:false});return;}if(t.dataset.detail)detail(t.dataset.detail);if(t.dataset.compare)toggleCompare(t.dataset.compare);if(t.dataset.remove){toggleCompare(t.dataset.remove);if(!$('compareModal')?.hidden){if(state.compare.length>=2)compare();else closeModal();}}if(t.dataset.export==='csv'){const items=state.compare.map(id=>phones.find(p=>p.id===id)).filter(Boolean);if(items.length<2){toast('至少加入 2 款手机再导出');return;}const d=new Date();const stamp=`${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;downloadText(`compare-${stamp}.csv`,buildCompareCsv(items));toast('已导出对比 CSV');return;}if(t.dataset.diffOnly){state.compareDiffOnly=!state.compareDiffOnly;compare();}if(t.hasAttribute('data-close')||t.id==='modalBackdrop')closeModal();if(t.dataset.view){state.view=t.dataset.view;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b===t));render();}if(t.dataset.years){const y=t.dataset.years;const now=2026;if(y==='all'){if($('yearFrom'))$('yearFrom').value='2021';if($('yearTo'))$('yearTo').value='2026';}else{if($('yearFrom'))$('yearFrom').value=String(now-Number(y)+1);if($('yearTo'))$('yearTo').value='2026';}document.querySelectorAll('[data-years]').forEach(b=>b.classList.toggle('active',b===t));render();}if(t.dataset.priority){const p=t.dataset.priority;if(state.priorities.has(p))state.priorities.delete(p);else if(state.priorities.size<3)state.priorities.add(p);else toast('最多选择 3 项优先需求');t.classList.toggle('selected',state.priorities.has(p));}if(t.id==='resetFilters'||t.id==='emptyReset')reset();if(t.id==='heroRecommend'){if($('recommendPanel'))$('recommendPanel').hidden=false;$('recommendPanel')?.scrollIntoView({behavior:'smooth',block:'center'});}if(t.id==='closeRecommend'){if($('recommendPanel'))$('recommendPanel').hidden=true;}if(t.id==='applyRecommend'){recommendForNeeds();}if(t.id==='recOnlyBtn'){state.onlyIds=new Set(state.recommendIds||[]);render();toast('已只显示候选机型');}if(t.id==='headerCompare'||t.id==='openCompare')compare();if(t.id==='clearCompare'){state.compare=[];render();}});
-['yearFrom','yearTo','sortSelect','domesticOnly','budgetSelect'].forEach(id=>$(id)?.addEventListener('input',render));document.querySelectorAll('input[name="type"]').forEach(i=>i.addEventListener('change',()=>{i.checked?state.types.add(i.value):state.types.delete(i.value);render();}));$('modalBackdrop')?.addEventListener('click',closeModal);document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();if(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();$('searchInput')?.focus();}});
+document.addEventListener('click',e=>{const t=e.target.closest('button');if(!t)return;if(t.dataset.af){clearActiveFilter(t.dataset.af);return;}if(t.dataset.nav){detailStep(Number(t.dataset.nav));return;}if(t.id==='quoteQueryBtn'){if(quoteRunning){quoteRunToken++;setQuoteRunning(false);toast('已停止本轮报价查询');}else{const ids=filtered().map(p=>p.id);if(!ids.length)toast('当前筛选没有机型');else{setApiStatus('报价 API 状态：批量查询中','正在按 5 款一批查询当前筛选结果；精确匹配型号与容量后才显示渠道报价。','is-neutral');queryQuotes(ids,{continueOnError:true}).then(r=>{if(!r||!r.total)return;if(r.stopped){setApiStatus('报价 API 状态：查询中断',String(r.stopped)+`（已查 ${r.done}/${r.total} 款）`,'is-warn');return;}setApiStatus('报价 API 状态：批量查询完成',`本轮查询 ${r.done} 款：有精确报价 ${r.ok} 款，暂无报价 ${r.none} 款${r.fail?`，失败 ${r.fail} 款`:''}。渠道报价均需人工核验。`,'is-ok');});}}return;}if(t.dataset.quoteOne){if(quoteRunning){toast('请先等待当前查询结束');return;}const p=phones.find(x=>x.id===t.dataset.quoteOne);if(p)queryQuotes([p.id],{continueOnError:false});return;}if(t.dataset.detail)detail(t.dataset.detail);if(t.dataset.compare)toggleCompare(t.dataset.compare);if(t.dataset.remove){toggleCompare(t.dataset.remove);if(!$('compareModal')?.hidden){if(state.compare.length>=2)compare();else closeModal();}}if(t.dataset.export==='csv'){const items=state.compare.map(id=>phones.find(p=>p.id===id)).filter(Boolean);if(items.length<2){toast('至少加入 2 款手机再导出');return;}const d=new Date();const stamp=`${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;downloadText(`compare-${stamp}.csv`,buildCompareCsv(items));toast('已导出对比 CSV');return;}if(t.dataset.diffOnly){state.compareDiffOnly=!state.compareDiffOnly;compare();}if(t.hasAttribute('data-close')||t.id==='modalBackdrop')closeModal();if(t.dataset.view){state.view=t.dataset.view;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b===t));render();}if(t.dataset.years){const y=t.dataset.years;const now=2026;if(y==='all'){if($('yearFrom'))$('yearFrom').value='2021';if($('yearTo'))$('yearTo').value='2026';}else{if($('yearFrom'))$('yearFrom').value=String(now-Number(y)+1);if($('yearTo'))$('yearTo').value='2026';}document.querySelectorAll('[data-years]').forEach(b=>b.classList.toggle('active',b===t));render();}if(t.dataset.priority){const p=t.dataset.priority;if(state.priorities.has(p))state.priorities.delete(p);else if(state.priorities.size<3)state.priorities.add(p);else toast('最多选择 3 项优先需求');t.classList.toggle('selected',state.priorities.has(p));}if(t.id==='resetFilters'||t.id==='emptyReset')reset();if(t.id==='heroRecommend'){if($('recommendPanel'))$('recommendPanel').hidden=false;$('recommendPanel')?.scrollIntoView({behavior:'smooth',block:'center'});}if(t.id==='closeRecommend'){if($('recommendPanel'))$('recommendPanel').hidden=true;}if(t.id==='applyRecommend'){recommendForNeeds();}if(t.id==='recOnlyBtn'){state.onlyIds=new Set(state.recommendIds||[]);render();toast('已只显示候选机型');}if(t.id==='headerCompare'||t.id==='openCompare')compare();if(t.id==='clearCompare'){state.compare=[];render();}});
+['yearFrom','yearTo','sortSelect','domesticOnly','budgetSelect'].forEach(id=>$(id)?.addEventListener('input',render));document.querySelectorAll('input[name="type"]').forEach(i=>i.addEventListener('change',()=>{i.checked?state.types.add(i.value):state.types.delete(i.value);render();}));$('modalBackdrop')?.addEventListener('click',closeModal);document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();const _dm=$('detailModal');if(_dm&&!_dm.hidden&&(e.key==='ArrowLeft'||e.key==='ArrowRight')){e.preventDefault();detailStep(e.key==='ArrowLeft'?-1:1);}if(e.key==='/'&&!['INPUT','TEXTAREA'].includes(document.activeElement.tagName)){e.preventDefault();$('searchInput')?.focus();}});
 
 /* ================= 新增交互层（收藏 / 价格区间 / 密度 / 主题 / URL / 指针光斑） ================= */
 const FAV_KEY='phoneindex.favs.v1',THEME_KEY='phoneindex.theme.v1',DENSITY_KEY='phoneindex.density.v1';
