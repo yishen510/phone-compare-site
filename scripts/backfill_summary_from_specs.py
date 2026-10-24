@@ -64,7 +64,8 @@ def _slots(txt: str | None) -> dict[tuple[str, int], str]:
 
 
 def _pix(value: str | None) -> str:
-    p = re.sub(r"像素$", "", (value or "").strip())
+    p = re.sub(r"[>＞\s]+$", "", (value or "").strip())
+    p = re.sub(r"像素$", "", p).strip()
     m = re.fullmatch(r"(\d+(?:\.\d+)?)万", p)
     if m and float(m.group(1)) >= 10000:
         return f"{float(m.group(1)) / 10000:g}亿"
@@ -96,10 +97,24 @@ def _rear_count(specs: list[dict], rear: list) -> int:
     return len(rear)
 
 
+def _slot_pairs(specs: list[dict], suffix: str) -> dict[tuple[str, int], str]:
+    """处理把位置写进标签的页面：「后置摄像头1 摄像头名称 / 后置摄像头1 后置摄像头」。"""
+    out: dict[tuple[str, int], str] = {}
+    pat = re.compile(r"^(后置|前置)摄像头\s*(\d+)\s+" + suffix + "$")
+    for g in specs:
+        for k, v in g.get("items", []):
+            m = pat.match(str(k))
+            if m:
+                out[(m.group(1), int(m.group(2)))] = str(v).strip()
+    return out
+
+
 def camera_text(specs: list[dict]) -> str | None:
     """从「摄像头名称 / 像素」拼一句可读的影像摘要，避免“后置 后置摄像头1：”这种机器味儿。"""
-    name_map = _slots(pick(specs, "摄像头名称"))
-    pix_map = _slots(pick(specs, "像素"))
+    name_map = _slots(pick(specs, "摄像头名称")) or _slot_pairs(specs, "摄像头名称")
+    pix_map = (_slots(pick(specs, "像素"))
+               or _slot_pairs(specs, "摄像头")
+               or _slot_pairs(specs, "后置摄像头"))
     rear = sorted({k for k in list(name_map) + list(pix_map) if k[0] == "后置"}, key=lambda k: k[1])
     front = sorted({k for k in list(name_map) + list(pix_map) if k[0] == "前置"}, key=lambda k: k[1])
     simple = pick(specs, "后置摄像头") or pick(specs, "后置摄像头1")
@@ -134,23 +149,28 @@ def watts(value: str | None) -> str | None:
 
 def derive(specs: list[dict]) -> dict[str, str]:
     out: dict[str, str] = {}
-    size = num(r"(\d+(?:\.\d+)?)\s*英寸", pick(specs, "屏幕尺寸"))
+    size_raw = pick(specs, "屏幕尺寸") or ""
+    duo = re.search(r"主\s*[：:]\s*(\d+(?:\.\d+)?)\s*英寸.*?副\s*[：:]\s*(\d+(?:\.\d+)?)\s*英寸", size_raw)
+    size = f"主 {duo.group(1)} 英寸 + 副 {duo.group(2)} 英寸" if duo else num(r"(\d+(?:\.\d+)?)\s*英寸", size_raw)
     refresh = num(r"(\d{2,3})\s*Hz", pick(specs, "屏幕刷新率"))
     stype = pick(specs, "屏幕类型") or ""
     stype = naive_clean(re.split(r"[，,]", stype)[0])
     stype = re.sub(r"[（(].*?[)）]", "", stype).strip()
     mat = naive_clean(pick(specs, "屏幕材质") or "")
+    if "主：" in mat or "主:" in mat:
+        mat = re.split(r"\s+副", re.sub(r"^主\s*[：:]\s*", "", mat))[0].strip()
     if re.search(r"OLED|AMOLED|LCD|IPS|LTPS", mat, re.I):
         stype = mat
     elif re.search(r"^(全面屏|直面屏|曲面屏|折叠屏)$", stype):
         stype = ""
     if size:
-        out["display"] = " · ".join(x for x in [f"{size} 英寸", stype or "OLED", f"{refresh}Hz" if refresh else ""] if x)
+        size_txt = size if size.startswith("主") else f"{size} 英寸"
+        out["display"] = " · ".join(x for x in [size_txt, stype or "OLED", f"{refresh}Hz" if refresh else ""] if x)
 
     chip = pick(specs, "CPU型号") or pick(specs, "处理器") or pick(specs, "芯片型号")
     if chip:
         chip = naive_clean(chip)
-        chip = re.sub(r"^(高通|苹果|华为|联发科|三星)\s*", "", chip)
+        chip = re.sub(r"^(高通|海思|苹果|华为|联发科|三星)\s*", "", chip)
         out["chip"] = chip[:40]
 
     mah = num(r"(\d{3,5})\s*mAh", pick(specs, "电池容量"))

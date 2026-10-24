@@ -8,7 +8,7 @@
     "market": "中国大陆正式销售",
     "display": "6.2 英寸 Dynamic AMOLED 2X · 1–120Hz",
     "chip": "骁龙 8 Elite for Galaxy",
-    "camera": "三摄系统；具体焦段以官方规格页为准",
+    "camera": "5000 万像素广角 + 1200 万像素超广角 + 1000 万像素光学变焦；前置 1200 万像素",
     "battery": "4000 mAh",
     "charging": "有线快充 / 无线充电",
     "weight": "约 162 g",
@@ -251,7 +251,17 @@
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 38,
     "specCollectedAt": "2026-10-20",
-    "fieldAudit": []
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/news/product/galaxy-s25-ai/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
   },
   {
     "id": "sam-25p",
@@ -262,7 +272,7 @@
     "market": "中国大陆正式销售",
     "display": "6.7 英寸 Dynamic AMOLED 2X · 1–120Hz",
     "chip": "骁龙 8 Elite for Galaxy",
-    "camera": "三摄系统；具体焦段以官方规格页为准",
+    "camera": "5000 万像素广角 + 1200 万像素超广角 + 1000 万像素光学变焦；前置 1200 万像素",
     "battery": "4900 mAh",
     "charging": "有线快充 / 无线充电",
     "weight": "约 190 g",
@@ -505,7 +515,17 @@
     "specSourceName": "中关村在线参数页（第三方核验）",
     "specFieldCount": 38,
     "specCollectedAt": "2026-10-20",
-    "fieldAudit": []
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/news/product/galaxy-s25-ai/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
   },
   {
     "id": "sam-zf7",
@@ -874,6 +894,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2133/2132972/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 2亿像素主摄 + 1200万像素超广角 + 1000万像素长焦；前置 1000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 13999,
+        "valueAtAudit": 13999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/news/product/z-fold7/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -1617,6 +1646,15 @@
         "sourceUrl": "https://www.samsung.com.cn/news/product/galaxy-s26/",
         "evidenceText": "ZOL 参数页无「有线/无线充电」条目（2026-10-24 复核）",
         "note": "厂商未公开该字段，不用估算值填充。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/news/product/galaxy-s26/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -2440,6 +2478,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2140/2139583/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年09月19日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -2863,6 +2910,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2140/2139686/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年09月19日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7999,
+        "valueAtAudit": 7999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/newsroom/2025/10/iphone-air-will-be-available-in-china-beginning-october-22/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -2875,7 +2931,7 @@
     "market": "中国大陆正式销售",
     "display": "6.36 英寸 · 全面屏 · 120Hz",
     "chip": "骁龙 8 Elite",
-    "camera": "徕卡三摄（具体焦段以官方规格页为准）",
+    "camera": "5000 万像素高动态主摄 + 5000 万像素徕卡浮动长焦 + 5000 万像素徕卡超广角；前置 3200 万像素",
     "battery": "5400mAh",
     "charging": "90W 有线 / 50W 无线",
     "weight": "191g",
@@ -5582,6 +5638,15 @@
         "sourceUrl": "https://consumer.huawei.com/cn/phones/pura80-pro/",
         "evidenceText": "华为官网与 ZOL 参数页均无「处理器/CPU 型号」条目（2026-10-24 复核）",
         "note": "厂商未公开该字段，不用估算值填充。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/pura80-pro/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -6478,6 +6543,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2146/2145478/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年11月25日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5499,
+        "valueAtAudit": 5499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -6914,6 +6988,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2149/2148017/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 五摄：5000万像素超高动态 + 4000万像素超广角 + 5000万像素超聚光微距长焦；前置 1300万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 11999,
+        "valueAtAudit": 11999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/press/events/2025/huawei-mate-80-series-mate-x7-and-all-scenario-new-product-launch-event/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -7350,6 +7433,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2149/2148339/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年12月05日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 12999,
+        "valueAtAudit": 12999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x7/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -7774,6 +7866,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2180/2179096/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2026年10月01日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16119533/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -8198,6 +8299,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2180/2179097/param.shtml",
         "evidenceText": "中关村在线参数页：重量 222g",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16119533/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -8310,6 +8420,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2180/2179254/param.shtml",
         "evidenceText": "中关村在线参数页：重量 235g",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9499,
+        "valueAtAudit": 9499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16119533/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -9058,6 +9177,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2132/2131995/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年07月02日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-magic-v5-launch/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -9502,6 +9630,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2159/2158917/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素广角 + 5000万像素超广角 + 6400万像素潜望式长焦；前置 2000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-magic-v6-launch/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -9992,6 +10129,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 2亿像素主摄 + 2亿像素潜望式长焦 + 5000万像素超广角；前置 5500万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4499,
+        "valueAtAudit": 4499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -14071,6 +14217,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2156/2155142/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素索尼超防抖大底主摄 + 5000万像素索尼超级潜望长焦 + 5000万像素超广角；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6199,
+        "valueAtAudit": 6199,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/iqoo15ultra",
+        "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -15548,6 +15703,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2162/2161769/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2026年03月30日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x300ultra",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -16336,6 +16500,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2178/2177308/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2026年09月18日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+        "evidenceText": "首发价来源：厂商官方发布稿（首发价/容量/开售日期）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -16754,6 +16927,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2178/2177461/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2026年09月18日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 10999,
+        "valueAtAudit": 10999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/newsroom/2026/09/apple-debuts-iphone-18-pro-and-iphone-18-pro-max/",
+        "evidenceText": "首发价来源：厂商官方发布稿（首发价/容量/开售日期）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -17217,6 +17399,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2179/2178429/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2026年09月23日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://m.ithome.com/html/1006426.htm",
+        "evidenceText": "首发价来源：IT之家发布会现场报道（首发起售价）；后续补官方商城首发存档",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -17229,7 +17420,7 @@
     "market": "中国大陆正式销售",
     "display": "旗舰 OLED；详细参数以官方规格页为准",
     "chip": "天玑 9600 系列；以官方规格页为准",
-    "camera": "蔡司影像系统；详细镜头参数以官方规格页为准",
+    "camera": "5000 万像素蔡司高动态主摄 + 5000 万像素蔡司超视野超广角 + 6400 万像素蔡司APO超级长焦；前置 5000 万像素",
     "battery": "7500mAh",
     "charging": "90W 有线 / 40W 无线",
     "weight": "211g",
@@ -17761,7 +17952,7 @@
     "market": "中国大陆正式销售",
     "display": "旗舰 OLED；详细参数以官方规格页为准",
     "chip": "天玑 9600 Pro",
-    "camera": "专业蔡司影像系统；详细镜头参数以官方规格页为准",
+    "camera": "5000 万像素蔡司超动态主摄 + 6400 万像素蔡司APO超级长焦 + 5000 万像素蔡司超视野超广角；前置 5000 万像素",
     "battery": "6510mAh",
     "charging": "90W 有线 / 40W 无线",
     "weight": "约 192–197 g",
@@ -18175,6 +18366,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2179/2178476/param.shtml",
         "evidenceText": "中关村在线参数页：充电 90W 有线 / 40W 无线",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x500pro",
+        "evidenceText": "首发价来源：厂商官方发布信息",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -18513,6 +18713,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2100/2099705/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年01月23日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9699,
+        "valueAtAudit": 9699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/news/product/galaxy-s25-ai/",
+        "evidenceText": "首发价来源：三星中国官方发布稿（S25 Ultra 9699 元起）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -18977,6 +19186,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2122/2121272/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年03月03日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://m.ithome.com/html/834153.htm",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -19371,6 +19589,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2118/2117401/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年04月10日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x8-ultra/specs/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -19798,6 +20025,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2126/2125333/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年04月21日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200ultra",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -20210,6 +20446,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2131/2130293/param.shtml",
         "evidenceText": "中关村在线参数页：充电 100W 有线 / 80W 无线",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/pura80-ultra/specs/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -20558,6 +20803,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2140/2139685/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年09月19日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/newsroom/2025/09/apple-debuts-iphone-17-pro-and-iphone-17-pro-max/",
+        "evidenceText": "首发价来源：厂商官方发布稿（首发价/容量/开售日期）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -20570,7 +20824,7 @@
     "market": "中国大陆正式销售",
     "display": "6.3 英寸 OLED · 后置动态副屏",
     "chip": "第五代骁龙 8 至尊版",
-    "camera": "徕卡三摄；具体组合以官方规格页为准",
+    "camera": "5000 万像素徕卡超高动态主摄 + 5000 万像素徕卡浮动潜望长焦 + 5000 万像素徕卡超广角；前置 5000 万像素",
     "battery": "6300mAh",
     "charging": "100W 有线 / 50W 无线",
     "weight": "192g",
@@ -21009,6 +21263,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2143/2142374/param.shtml",
         "evidenceText": "中关村在线参数页：重量 192g",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4999,
+        "valueAtAudit": 4999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://ir.mi.com/static-files/e4830480-8ce9-45f8-a09d-64e40b2bdfac",
+        "evidenceText": "首发价来源：厂商官方发布信息",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -21021,7 +21284,7 @@
     "market": "中国大陆正式销售",
     "display": "大屏 OLED · 后置动态副屏",
     "chip": "第五代骁龙 8 至尊版",
-    "camera": "徕卡三摄；具体组合以官方规格页为准",
+    "camera": "5000 万像素徕卡超高动态主摄 + 5000 万像素徕卡浮动潜望长焦 + 5000 万像素徕卡超广角；前置 5000 万像素",
     "battery": "7500mAh",
     "charging": "100W 有线 / 50W 无线",
     "weight": "219g",
@@ -21459,6 +21722,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2143/2142375/param.shtml",
         "evidenceText": "中关村在线参数页：重量 219g",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://ir.mi.com/static-files/e4830480-8ce9-45f8-a09d-64e40b2bdfac",
+        "evidenceText": "首发价来源：厂商官方发布信息",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -21862,6 +22134,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2144/2143191/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年09月27日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4499,
+        "valueAtAudit": 4499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/xiaomi-17/specs",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -21874,7 +22155,7 @@
     "market": "中国大陆正式销售",
     "display": "直屏旗舰；具体尺寸与刷新率以官方规格页为准",
     "chip": "第五代骁龙 8 至尊版",
-    "camera": "旗舰多摄系统；详细镜头参数以官方规格页为准",
+    "camera": "5000 万像素广角 + 5000 万像素超广角 + 6400 万像素超夜神长焦；前置 5000 万像素",
     "battery": "7000mAh 以上（系列官方描述）",
     "charging": "最高 120W 有线 / 80W 无线（系列官方描述）",
     "weight": "205g",
@@ -22288,6 +22569,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2145/2144212/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年10月15日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4499,
+        "valueAtAudit": 4499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-magic8-launch/",
+        "evidenceText": "首发价来源：厂商官方发布信息",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -22759,7 +23049,7 @@
     "market": "中国大陆正式销售",
     "display": "6.59 英寸 AMOLED 直屏 · 最高 120Hz",
     "chip": "天玑 9500",
-    "camera": "哈苏影像系统；主摄/超广角/长焦以官方规格页为准",
+    "camera": "四摄：5000 万像素广角 + 5000 万像素超广角 + 5000 万像素长焦；前置 3200 万像素",
     "battery": "7025mAh（典型值）",
     "charging": "80W 有线 / 50W 无线",
     "weight": "203g",
@@ -23128,6 +23418,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2145/2144018/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年10月16日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4399,
+        "valueAtAudit": 4399,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/en/newsroom/press/oppo-find-x9-series-coloros-16-global-launch-upcoming/",
+        "evidenceText": "首发价来源：厂商官方发布信息",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -23566,6 +23865,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2145/2144019/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年10月22日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5299,
+        "valueAtAudit": 5299,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/en/newsroom/press/oppo-find-x9-series-coloros-16-global-launch-upcoming/",
+        "evidenceText": "首发价来源：厂商官方发布信息",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -24054,7 +24362,7 @@
     "market": "中国大陆正式销售",
     "display": "旗舰 OLED 屏；详细参数以官方规格页为准",
     "chip": "旗舰级移动平台；型号以官方规格页为准",
-    "camera": "旗舰多摄系统；详细镜头参数以官方规格页为准",
+    "camera": "5000 万像素高动态大底主摄 + 5000 万像素潜望长焦 + 5000 万像素旗舰超广角；前置 3200 万像素",
     "battery": "7560mAh",
     "charging": "100W 有线 / 50W 无线",
     "weight": "218g",
@@ -24135,6 +24443,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2146/2145334/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年10月23日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://ir.mi.com/static-files/e4830480-8ce9-45f8-a09d-64e40b2bdfac",
+        "evidenceText": "首发价来源：厂商官方发布信息",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -24506,7 +24823,7 @@
     "market": "中国大陆正式销售",
     "display": "2K OLED · 高刷新率",
     "chip": "第五代骁龙 8 至尊版",
-    "camera": "5000 万主摄 + 5000 万 3× 潜望长焦；完整组合以官方规格页为准",
+    "camera": "5000 万像素索尼超防抖大底主摄 + 5000 万像素索尼超级潜望长焦 + 5000 万像素超广角；前置 3200 万像素",
     "battery": "7000mAh",
     "charging": "100W 有线 / 40W 无线",
     "weight": "215g",
@@ -25377,7 +25694,7 @@
     "market": "中国大陆正式销售",
     "display": "6.31 英寸 OLED；刷新率以官方规格页为准",
     "chip": "天玑 9500",
-    "camera": "蔡司 2 亿像素主摄；完整镜头组合以官方规格页为准",
+    "camera": "2 亿像素主摄 + 5000 万像素广角 + 5000 万像素潜望式长焦；前置 5000 万像素",
     "battery": "6040mAh",
     "charging": "90W 有线 / 40W 无线",
     "weight": "190g",
@@ -25818,6 +26135,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2143/2142760/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年10月13日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4399,
+        "valueAtAudit": 4399,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/brand/news/detail?id=1336",
+        "evidenceText": "首发价来源：厂商官方发布信息",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -25830,7 +26156,7 @@
     "market": "中国大陆正式销售",
     "display": "6.78 英寸 OLED；刷新率以官方规格页为准",
     "chip": "天玑 9500",
-    "camera": "蔡司 APO 2 亿像素超级长焦；完整镜头组合以官方规格页为准",
+    "camera": "5000 万像素云台级主摄 + 5000 万像素超视野超广角 + 2 亿像素 APO超级长焦；前置 5000 万像素",
     "battery": "6510mAh",
     "charging": "90W 有线 / 40W 无线",
     "weight": "约 226 g",
@@ -26260,6 +26586,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2143/2142394/param.shtml",
         "evidenceText": "中关村在线参数页：充电 90W 有线 / 40W 无线",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5299,
+        "valueAtAudit": 5299,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/brand/news/detail?id=1336",
+        "evidenceText": "首发价来源：厂商官方发布信息",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -26806,6 +27141,15 @@
         "sourceUrl": "https://consumer.huawei.com/cn/phones/mate80-pro-max/specs/",
         "evidenceText": "华为官网规格页：16GB+512GB / 16GB+1TB",
         "note": "2026-10-23 厂商官方规格页录入"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate80-pro-max/specs/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -27420,6 +27764,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2153/2152335/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年12月25日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/global/discover/article?id=5825",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -27821,6 +28174,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1975/1974001/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年01月18日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5699,
+        "valueAtAudit": 5699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic6-pro/spec/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -28218,6 +28580,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1972/1971108/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年01月12日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x7-ultra/specs/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -28585,6 +28956,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1466/1465383/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年01月25日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9699,
+        "valueAtAudit": 9699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s24-ultra/buy/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -29029,6 +29409,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1815/1814425/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年02月27日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.autohome.com.cn/news/202402/1293605.html",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -29406,6 +29795,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2000/1999701/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年04月18日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/support/content/zh-cn16021601/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -29783,6 +30181,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2003/2002105/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年05月28日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x100ultra",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -30055,6 +30462,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1951/1950441/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年09月10日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/newsroom/2024/09/apple-introduces-iphone-16-pro-and-iphone-16-pro-max/",
+        "evidenceText": "首发价来源：厂商官方发布稿（首发价/容量/开售日期）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -30477,6 +30893,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2112/2111294/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年11月08日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5699,
+        "valueAtAudit": 5699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/phones/honor-magic7-pro/spec/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -30896,6 +31321,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2113/2112234/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年11月01日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4499,
+        "valueAtAudit": 4499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oneplus.com/cn/13/specs",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -31229,6 +31663,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2115/2114265/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年12月04日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70-pro/spec/",
+        "evidenceText": "首发价来源：官方来源待核验",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -31610,6 +32053,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2103/2102663/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年11月04日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3699,
+        "valueAtAudit": 3699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.ithome.com/0/807/768.htm",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -32051,6 +32503,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1426/1425511/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年01月09日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oneplus.com/cn/11",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -32419,6 +32880,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1404/1403116/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年02月24日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9499,
+        "valueAtAudit": 9499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s23-ultra/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -32856,6 +33326,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1428/1427939/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年03月10日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5199,
+        "valueAtAudit": 5199,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-magic-5-product-launch/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -33237,6 +33716,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1356/1355563/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年03月30日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6988,
+        "valueAtAudit": 6988,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/phones/p60-pro/specs/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -33653,6 +34141,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1426/1425497/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年03月24日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/smartphones/series-find-x/find-x6-pro/specs/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -34114,6 +34611,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1428/1427191/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年04月21日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.ithome.com/0/687/322.htm",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -34482,7 +34988,17 @@
       "2026-10-21 自动补录完整参数：10 组 / 60 项（中关村在线，标题比对通过）",
       "2026-10-20 补录完整参数表：10 组 / 60 项（中关村在线参数页（第三方核验））"
     ],
-    "fieldAudit": []
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/press/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
   },
   {
     "id": "apple-15pm",
@@ -34930,6 +35446,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1428/1427369/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年09月22日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/newsroom/2023/09/apple-unveils-iphone-15-pro-and-iphone-15-pro-max/",
+        "evidenceText": "首发价来源：厂商官方发布稿（首发价/容量/开售日期）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -35348,6 +35873,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1509/1508912/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年12月11日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4299,
+        "valueAtAudit": 4299,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oneplus.com/cn/12/specs",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -35775,6 +36309,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1936/1935239/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年12月14日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3298,
+        "valueAtAudit": 3298,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.realme.com/cn/realme-gt-5-pro",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -36182,6 +36725,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1384/1383992/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年01月13日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4699,
+        "valueAtAudit": 4699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oneplus.com/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -36599,6 +37151,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1384/1383817/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年03月03日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5799,
+        "valueAtAudit": 5799,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -36993,6 +37554,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1367/1366619/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年03月04日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9699,
+        "valueAtAudit": 9699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/smartphones/galaxy-s22-ultra/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -37385,7 +37955,17 @@
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 66 项（中关村在线，标题比对通过）"
     ],
-    "fieldAudit": []
+    "fieldAudit": [
+      {
+        "field": "官方首发起售价",
+        "value": 5499,
+        "valueAtAudit": 5499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/news/honor-announces-magic4-series/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
   },
   {
     "id": "xia-12su",
@@ -37804,6 +38384,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1372/1371748/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年07月08日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/event",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -38259,6 +38848,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1389/1388433/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年09月16日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/newsroom/2022/09/apple-debuts-iphone-14-pro-and-iphone-14-pro-max/",
+        "evidenceText": "首发价来源：厂商官方发布稿（首发价/容量/开售日期）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -38635,6 +39233,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1345/1344847/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年09月06日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6799,
+        "valueAtAudit": 6799,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/press/events/2022/huawei-mate50-series-and-all-scenario-new-product-autumn-launch-event/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -39083,6 +39690,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1429/1428480/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年12月06日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/x90proplus",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -39496,6 +40112,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1346/1345628/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2021年01月29日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9699,
+        "valueAtAudit": 9699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://shop.10086.cn/goods/891_891_1084371_1070915.html",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -39960,6 +40585,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1360/1359446/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2021年04月02日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -40374,6 +41008,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1350/1349131/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2021年08月12日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5988,
+        "valueAtAudit": 5988,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/hk/press/news/2021/p50_series_global/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -40815,6 +41458,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1380/1379249/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2021年08月20日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/news/magic/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -41121,6 +41773,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1343/1342492/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2021年09月24日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/newsroom/2021/09/apple-unveils-iphone-13-pro-and-iphone-13-pro-max-more-pro-than-ever-before/",
+        "evidenceText": "首发价来源：厂商官方发布稿（首发价/容量/开售日期）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -41534,6 +42195,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1372/1371908/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2021年09月17日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5499,
+        "valueAtAudit": 5499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -42651,6 +43321,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2140/2139584/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年09月19日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -43066,6 +43745,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1951/1950438/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年09月10日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7999,
+        "valueAtAudit": 7999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -43411,6 +44099,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1951/1950439/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年09月20日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -43891,6 +44588,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1428/1427368/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年09月22日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7999,
+        "valueAtAudit": 7999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -44381,6 +45087,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1428/1427365/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年09月22日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -44885,6 +45600,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1389/1388430/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年09月16日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7999,
+        "valueAtAudit": 7999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -45365,6 +46089,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1466/1465382/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年01月25日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -45681,6 +46414,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1976/1975492/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年01月25日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -45999,6 +46741,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1985/1984415/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年07月24日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 13999,
+        "valueAtAudit": 13999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -46384,6 +47135,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2081/2080340/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年07月20日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7999,
+        "valueAtAudit": 7999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.samsung.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -47901,6 +48661,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1442/1441059/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年10月31日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -48368,6 +49137,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1442/1441061/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年10月31日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4999,
+        "valueAtAudit": 4999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -48833,6 +49611,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1428/1427190/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年12月14日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -49306,6 +50093,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1430/1429270/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年12月14日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4999,
+        "valueAtAudit": 4999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -49818,6 +50614,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2087/2086684/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年07月19日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -50286,6 +51091,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1461/1460897/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年08月16日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -50726,6 +51540,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2031/2030412/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年07月23日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -51143,6 +51966,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2115/2114605/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年11月27日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3699,
+        "valueAtAudit": 3699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -51516,6 +52348,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2103/2102664/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年11月27日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2499,
+        "valueAtAudit": 2499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.mi.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -51917,6 +52758,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1952/1951375/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年12月04日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5499,
+        "valueAtAudit": 5499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -52349,6 +53199,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2115/2114268/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年12月04日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8499,
+        "valueAtAudit": 8499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -52748,6 +53607,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2114/2113955/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年11月26日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 12999,
+        "valueAtAudit": 12999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -53526,6 +54394,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1987/1986304/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年04月22日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5499,
+        "valueAtAudit": 5499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -53917,6 +54794,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2000/1999703/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年04月18日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6499,
+        "valueAtAudit": 6499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -54346,6 +55232,15 @@
         "sourceUrl": "https://consumer.huawei.com/cn/",
         "evidenceText": "华为官网与 ZOL 参数页均无「处理器/CPU 型号」条目（2026-10-24 复核）",
         "note": "厂商未公开该字段，不用估算值填充。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7499,
+        "valueAtAudit": 7499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -54771,6 +55666,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2106/2105342/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年10月30日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4499,
+        "valueAtAudit": 4499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -55198,6 +56102,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1960/1959987/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年01月18日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4399,
+        "valueAtAudit": 4399,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -55655,6 +56568,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2035/2034383/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年07月19日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -56016,6 +56938,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1555/1554341/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年07月20日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8999,
+        "valueAtAudit": 8999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.honor.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -56440,6 +57371,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2103/2102661/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年10月24日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4199,
+        "valueAtAudit": 4199,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -56815,6 +57755,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2107/2106121/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年10月30日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5299,
+        "valueAtAudit": 5299,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -57246,6 +58195,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1956/1955910/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年01月12日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -57697,6 +58655,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1495/1494542/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年10月27日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -58124,6 +59091,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1850/1849601/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年09月08日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6799,
+        "valueAtAudit": 6799,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -58523,6 +59499,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1428/1427932/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2022年12月23日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7999,
+        "valueAtAudit": 7999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oppo.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -58931,6 +59916,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2110/2109733/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年10月19日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4299,
+        "valueAtAudit": 4299,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -59314,6 +60308,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2035/2034339/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年10月19日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5299,
+        "valueAtAudit": 5299,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -59713,6 +60716,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2109/2108866/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年10月25日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4699,
+        "valueAtAudit": 4699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -60180,6 +61192,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1773/1772535/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年11月21日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -60607,6 +61628,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1773/1772537/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年11月21日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4999,
+        "valueAtAudit": 4999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -61057,6 +62087,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2131/2130358/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年07月02日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -61540,6 +62579,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1993/1992906/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年04月03日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -61999,6 +63047,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2116/2115776/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年12月31日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3399,
+        "valueAtAudit": 3399,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oneplus.com/cn",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -62363,6 +63420,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2114/2113677/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年12月26日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2299,
+        "valueAtAudit": 2299,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.oneplus.com/cn",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -62753,6 +63819,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1545/1544390/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年12月14日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -63179,6 +64254,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1545/1544392/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年12月14日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4999,
+        "valueAtAudit": 4999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -63614,6 +64698,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2114/2113956/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年11月29日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3199,
+        "valueAtAudit": 3199,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -64083,6 +65176,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2031/2030596/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2024年07月15日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2799,
+        "valueAtAudit": 2799,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.realme.com/cn/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -64857,6 +65959,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1949/1948879/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2023年11月28日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4399,
+        "valueAtAudit": 4399,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.nubia.com/",
+        "evidenceText": "首发价来源：厂商官方站点；首发价仍需官方发布稿二次核对",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -70947,6 +72058,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1425/1424046/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 1200万像素超广角 + 1200万像素广角；前置 1000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7499,
+        "valueAtAudit": 7499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1425/1424046/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -71300,6 +72420,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1365/1364781/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素广角 + 1200万像素超广角 + 1000万像素长焦；前置 1000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3550,
+        "valueAtAudit": 3550,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1365/1364781/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -71723,6 +72852,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1449/1448934/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素广角 + 1200万像素超广角 + 1000万像素3倍光学变焦长焦；前置 1200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4899,
+        "valueAtAudit": 4899,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1449/1448934/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -72117,6 +73255,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1348/1347064/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 1200万像素主摄 + 1200万像素超广角 + 1200万像素长焦；前置 1000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9500,
+        "valueAtAudit": 9500,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1348/1347064/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -72527,6 +73674,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1408/1407687/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 1200万像素超广角 + 5000万像素广角 + 1000万像素3倍光学变焦长焦；前置 1000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 11700,
+        "valueAtAudit": 11700,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1408/1407687/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -72884,6 +74040,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1383/1382507/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 1200万像素主摄 + 1200万像素超广角；前置 1000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5150,
+        "valueAtAudit": 5150,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1383/1382507/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -73314,6 +74479,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1372/1371752/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 1300万像素超广角 + 500万像素微距；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1372/1371752/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -73781,6 +74955,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1372/1371912/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素广角 + 5000万像素人像 + 5000万像素超广角；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4799,
+        "valueAtAudit": 4799,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1372/1371912/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -74272,6 +75455,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1412/1411925/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素广角 + 5000万像素人像 + 5000万像素超广角；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5899,
+        "valueAtAudit": 5899,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1412/1411925/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -74735,6 +75927,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1425/1424177/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 800万像素长焦 + 1300万像素超广角；前置 2000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 11999,
+        "valueAtAudit": 11999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1425/1424177/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -75177,6 +76378,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2082/2081390/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素超清主摄 + 800万像素超广角 + 200万像素微距；前置 2000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2599,
+        "valueAtAudit": 2599,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2099/2098425/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -75562,6 +76772,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1428/1427336/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主 + 1200万像素超广角 + 1200万像素潜望式长焦；前置 1300万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5499,
+        "valueAtAudit": 5499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1428/1427336/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -75983,6 +77202,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1479/1478249/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素超感知 + 1300万像素超广角 + 1200万像素潜望式长焦；前置 800万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 12999,
+        "valueAtAudit": 12999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1479/1478249/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -76403,6 +77631,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2116/2115265/param.shtml",
         "evidenceText": "华为官网与 ZOL 参数页均无「处理器/CPU 型号」条目（2026-10-24 复核）",
         "note": "厂商未公开该字段，不用估算值填充。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 11999,
+        "valueAtAudit": 11999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2116/2115265/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -76815,6 +78052,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2000/1999708/param.shtml",
         "evidenceText": "华为官网与 ZOL 参数页均无「处理器/CPU 型号」条目（2026-10-24 复核）",
         "note": "厂商未公开该字段，不用估算值填充。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7999,
+        "valueAtAudit": 7999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2000/1999708/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -77219,6 +78465,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2129/2128093/param.shtml",
         "evidenceText": "华为官网与 ZOL 参数页均无「处理器/CPU 型号」条目（2026-10-24 复核）",
         "note": "厂商未公开该字段，不用估算值填充。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2749,
+        "valueAtAudit": 2749,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2129/2128093/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -77641,6 +78896,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1393/1392791/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 1200万像素超广角 + 1200万像素人像；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4399,
+        "valueAtAudit": 4399,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1393/1392791/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -78104,6 +79368,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1406/1405721/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 四摄：5000万像素主摄 + 4800万像素超广角 + 1200万像素人像；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1406/1405721/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -78571,6 +79844,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1393/1392798/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 四摄：5000万像素主摄 + 4800万像素超广角 + 1200万像素人像；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1393/1392798/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -79042,6 +80324,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1378/1377260/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 四摄：5000万像素主摄 + 4800万像素超广角 + 1200万像素人像；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1378/1377260/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -79525,6 +80816,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1383/1382712/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素广角 + 6400万像素黑白 + 1300万像素超广角；前置 1300万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4499,
+        "valueAtAudit": 4499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1383/1382712/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -79979,6 +81279,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1395/1394399/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素广角 + 5000万像素超广角 + 800万像素50倍潜望式长焦；前置 1200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 1788,
+        "valueAtAudit": 1788,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1395/1394399/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -80414,6 +81723,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1427/1426635/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5400万像素广角 + 3200万像素长焦 + 5000万像素超广角；前置 1200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1427/1426635/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -80861,6 +82179,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2019/2018979/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主 + 1200万像素超广角微距；前置 5000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4999,
+        "valueAtAudit": 4999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2019/2018979/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -81226,6 +82553,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1365/1364201/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 4800万像素主摄 + 5000万像素超广角 + 200万像素黑白风格；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3599,
+        "valueAtAudit": 3599,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1365/1364201/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -81705,6 +83041,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1327/1326868/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 四摄：4800万像素主摄 + 5000万像素超广角 + 800万像素长焦；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5499,
+        "valueAtAudit": 5499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1327/1326868/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -82168,6 +83513,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1415/1414643/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 800万像素超广角 + 200万像素微距；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4999,
+        "valueAtAudit": 4999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1415/1414643/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -82536,6 +83890,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1509/1508911/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 800万像素广角 + 200万像素微距；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2999,
+        "valueAtAudit": 2999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1509/1508911/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -82963,6 +84326,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2031/2030190/param.shtml",
         "evidenceText": "中关村在线参数页：充电 100W 有线",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3199,
+        "valueAtAudit": 3199,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2031/2030190/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -83356,6 +84728,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1399/1398124/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素广角 + 1200万像素超广角 + 1000万像素长焦；前置 1000万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5550,
+        "valueAtAudit": 5550,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1399/1398124/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -83775,6 +85156,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1404/1403118/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素广角 + 1200万像素超广角 + 1000万像素3倍光学变焦长焦；前置 1200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1404/1403118/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -84162,6 +85552,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1435/1434232/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 5000万像素定焦大师 + 1200万像素超低畸变超广角；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5499,
+        "valueAtAudit": 5499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1435/1434232/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -84612,6 +86011,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1413/1412273/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 1300万像素超广角 + 1200万像素人像；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3699,
+        "valueAtAudit": 3699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1413/1412273/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -85062,6 +86470,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1421/1420662/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素微云台 + 5000万像素广角鱼眼 + 1460万像素长焦人像；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5299,
+        "valueAtAudit": 5299,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1421/1420662/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -85528,6 +86945,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1436/1435912/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素超感光主摄 + 1300万像素人像 + 800万像素超广角；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3799,
+        "valueAtAudit": 3799,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1436/1435912/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -85983,6 +87409,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1611/1610857/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素超感光主摄 + 5000万像素超广角；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2999,
+        "valueAtAudit": 2999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1611/1610857/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -86438,6 +87873,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1397/1396428/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 5000万像素超广角 + 40倍显微镜；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2799,
+        "valueAtAudit": 2799,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1397/1396428/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -86904,6 +88348,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1433/1432133/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 800万像素超广角 + 200万像素微距；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 8240,
+        "valueAtAudit": 8240,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1433/1432133/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -87349,6 +88802,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1857/1856215/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 800万像素超广角 + 200万像素微距；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2999,
+        "valueAtAudit": 2999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1857/1856215/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -87796,6 +89258,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1458/1457605/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 800万像素超广角 + 200万像素5.5mm显微镜；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2499,
+        "valueAtAudit": 2499,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1458/1457605/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -88274,6 +89745,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1384/1383816/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 5000万像素超广角 + 1300万像素长焦；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4399,
+        "valueAtAudit": 4399,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1384/1383816/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -88704,6 +90184,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1438/1437089/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 800万像素超广角；前置 3200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1438/1437089/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -89098,6 +90587,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1465/1464807/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 6400万像素35mm人文主摄 + 6400万像素85mm人像主摄 + 5000万像素超广角超微距二合一；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4799,
+        "valueAtAudit": 4799,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1465/1464807/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -89561,6 +91059,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1961/1960082/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素35mm人文主摄 + 6400万像素85mm人像主摄 + 5000万像素超广角超微距二合一；前置 1200万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4299,
+        "valueAtAudit": 4299,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1961/1960082/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -90020,6 +91527,15 @@
         "sourceUrl": "https://detail.zol.com.cn/1434/1433615/param.shtml",
         "evidenceText": "中关村在线参数页：摄像头名称/像素 → 5000万像素主摄 + 800万像素超广角 + 200万像素微距；前置 1600万像素",
         "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/1434/1433615/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -90448,6 +91964,15 @@
         "sourceUrl": "https://detail.zol.com.cn/2105/2104329/param.shtml",
         "evidenceText": "Apple 仅公布续航时长，不公布 mAh（2026-10-24 复核）",
         "note": "厂商未公开该字段，不用估算值填充。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 9999,
+        "valueAtAudit": 9999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2105/2104329/param.shtml",
+        "evidenceText": "首发价来源：中关村在线商品页参考价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "specs": [
@@ -91260,6 +92785,15 @@
         "sourceUrl": "https://www.cnr.cn/tech/techph/20261001/t20261001_527831564.shtml",
         "evidenceText": "发布会/官网信息：2026年10月01日",
         "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 12999,
+        "valueAtAudit": 12999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.cnr.cn/tech/techph/20261001/t20261001_527831564.shtml",
+        "evidenceText": "首发价来源：央广网·华为 Mate 90 系列发布会报道",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -91754,6 +93288,15 @@
         "sourceUrl": "https://news.qq.com/rain/a/20261023A08TVX00",
         "evidenceText": "发布会/官网信息：2026年10月12日",
         "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://it.sohu.com/a/1091255588_114838",
+        "evidenceText": "首发价来源：搜狐科技·一加 16 发布报道（含四档价格表）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   },
@@ -92203,6 +93746,15 @@
         "sourceUrl": "https://www.apple.com.cn/shop/iphone",
         "evidenceText": "发布会/官网信息：2026年10月23日",
         "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 15999,
+        "valueAtAudit": 15999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.apple.com.cn/cn_kiosk_800773/shop/buy-iphone/iphone-duo/iphoneduo_gsm",
+        "evidenceText": "首发价来源：Apple 中国大陆官网·iPhone Duo 购买页",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ],
     "officialSpecSource": "https://www.apple.com.cn/iphone-duo/specs/"
@@ -92681,6 +94233,3422 @@
         "sourceUrl": "https://www.antutu.com/doc/137466.htm",
         "evidenceText": "发布会/官网信息：2026年08月11日",
         "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 3999,
+        "valueAtAudit": 3999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://m.ithome.com/html/988472.htm",
+        "evidenceText": "首发价来源：IT之家·REDMI K100 Pro 系列发布（含全系价目表）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
+  },
+  {
+    "id": "hua-matext2",
+    "brand": "Huawei",
+    "name": "HUAWEI Mate XT 2 非凡大师",
+    "year": 2026,
+    "type": "折叠屏旗舰",
+    "market": "中国大陆正式销售",
+    "display": "10.2 英寸三折叠 LTPO · 1–120Hz",
+    "chip": "麒麟 9050 Pro",
+    "camera": "四摄：5000 万像素超高动态范围 + 4000 万像素超广角 + 5000 万像素超大光圈潜望式长焦；前置 内屏前置",
+    "battery": "5600mAh",
+    "charging": "66W 有线 / 50W 无线",
+    "weight": "299g",
+    "storage": "16GB+256GB / 16GB+512GB / 16GB+1TB",
+    "os": "HarmonyOS（版本以官方为准）",
+    "priceCN": 19999,
+    "priceText": "官方起售价（16GB+256GB）；512GB 21999 / 1TB 23999",
+    "selling": "华为第二代三折叠，10.2 英寸内屏 + 麒麟 9050 Pro",
+    "bestFor": [
+      "大屏办公",
+      "拍照视频",
+      "日常全能"
+    ],
+    "source": "https://detail.zol.com.cn/2177/2176798/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-09",
+    "launchDateDisplay": "2026年09月07日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "16GB+256GB",
+      "16GB+512GB",
+      "16GB+1TB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://www.vmall.com/",
+    "priceSource": "https://www.toutiao.com/article/7684546614664413732",
+    "priceSourceName": "湖南日报转财联社·Mate XT 2 首销报道（含各版本价目）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "16GB+512GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-24 新增机型：96 项参数（中关村在线，标题比对通过）",
+      "定价 19999 元起、9 月 12 日 10:08 首销，来自湖南日报转财联社报道；华为商城同期标价与之一致。",
+      "ZOL 参数页未列屏幕尺寸与系统版本：屏幕尺寸取华为商城商品页（10.2 英寸），系统版本未标注具体号，按“以官方为准”填写。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2177/2176798/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 96,
+    "specCollectedAt": "2026-10-24",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2026年9月7日"
+          ],
+          [
+            "电商报价",
+            "￥21999"
+          ],
+          [
+            "上市日期",
+            "2026年9月7日"
+          ],
+          [
+            "产品型号",
+            "HUAWEI Mate XT 2 | ULTIMATE DESIGN"
+          ],
+          [
+            "使用场景",
+            "商务手机> ， 拍照手机> ， 智能手机> ， 5G手机> ， 折叠屏手机> ， 新品手机>"
+          ],
+          [
+            "机身材质",
+            "铝合金边框，织金云锦后盖 查看外观图>"
+          ],
+          [
+            "机身颜色",
+            "玄黑，皓白，锦紫"
+          ],
+          [
+            "指纹识别",
+            "侧面指纹识别>"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "产品尺寸 长度",
+            "157.2mm"
+          ],
+          [
+            "产品尺寸 宽度",
+            "219.2mm"
+          ],
+          [
+            "产品尺寸 厚度",
+            "3.5mm"
+          ],
+          [
+            "折叠尺寸 长度",
+            "157.2mm"
+          ],
+          [
+            "折叠尺寸 宽度",
+            "77mm"
+          ],
+          [
+            "折叠尺寸 厚度",
+            "12.3mm"
+          ],
+          [
+            "重量",
+            "299g"
+          ],
+          [
+            "其他外观参数",
+            "展开态厚度：4.0/3.69/3.5mm"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "麒麟 9050 Pro 更多麒麟 9050 Pro手机> ，"
+          ],
+          [
+            "RAM容量",
+            "16GB>"
+          ],
+          [
+            "ROM容量",
+            "512GB>"
+          ],
+          [
+            "出厂系统内核",
+            "HarmonyOS 7.0"
+          ],
+          [
+            "扬声器",
+            "立体声双扬声器"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "主 屏幕尺寸",
+            "10.2英寸"
+          ],
+          [
+            "主 屏幕类型",
+            "全面屏（左上挖孔屏）， 折叠屏> ， 直面屏>"
+          ],
+          [
+            "主 分辨率",
+            "2232x3184像素>"
+          ],
+          [
+            "主 屏幕材质",
+            "OLED>"
+          ],
+          [
+            "主 屏幕刷新率",
+            "90Hz>"
+          ],
+          [
+            "主 像素密度",
+            "382ppi"
+          ],
+          [
+            "主 触摸屏类型",
+            "多点触控，最多支持10点触控"
+          ],
+          [
+            "主 触控采样率",
+            "240Hz"
+          ],
+          [
+            "主 屏幕色彩",
+            "10.7亿色，P3广色域"
+          ],
+          [
+            "主 其他屏幕参数",
+            "1440Hz高频PWM调光"
+          ],
+          [
+            "副 屏幕尺寸",
+            "6.5英寸"
+          ],
+          [
+            "副 屏幕类型",
+            "全面屏（中置挖孔屏），直面屏"
+          ],
+          [
+            "副 分辨率",
+            "2442x1140px"
+          ],
+          [
+            "副 屏幕材质",
+            "OLED"
+          ],
+          [
+            "副 其他屏幕参数",
+            "像素密度：412PPI，1-120Hz LTPO自适应刷新率，1440Hz高频PWM调光，300Hz触控采样率，10.7亿色，P3广色域"
+          ],
+          [
+            "屏幕盖板",
+            "内屏：可折叠柔性屏，UTG 玻璃；外屏：玄武昆仑玻璃"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "六摄像头（前双+后四）>"
+          ],
+          [
+            "后置摄像头1 摄像头名称",
+            "超高动态范围摄像头"
+          ],
+          [
+            "后置摄像头1 后置摄像头",
+            "5000万像素>"
+          ],
+          [
+            "后置摄像头1 光圈",
+            "f/1.49-f/4.0"
+          ],
+          [
+            "后置摄像头1 传感器尺寸",
+            "1/1.28“"
+          ],
+          [
+            "后置摄像头1 防抖功能",
+            "OIS光学防抖> ， AIS电子防抖>"
+          ],
+          [
+            "后置摄像头2 摄像头名称",
+            "超广角摄像头"
+          ],
+          [
+            "后置摄像头2 后置摄像头",
+            "4000万像素"
+          ],
+          [
+            "后置摄像头2 光圈",
+            "f/2.2"
+          ],
+          [
+            "后置摄像头2 防抖功能",
+            "AIS电子防抖"
+          ],
+          [
+            "后置摄像头3 摄像头名称",
+            "超大光圈潜望式长焦摄像头"
+          ],
+          [
+            "后置摄像头3 后置摄像头",
+            "5000万像素"
+          ],
+          [
+            "后置摄像头3 光圈",
+            "f/2.2"
+          ],
+          [
+            "后置摄像头3 防抖功能",
+            "OIS光学防抖，AIS电子防抖"
+          ],
+          [
+            "后置摄像头4 摄像头名称",
+            "第三代红枫原色摄像头"
+          ],
+          [
+            "后置拍照功能",
+            "最大可支持8192×6144像素，XMAGE 风格、XMAGE 智拍、AI 姿势推荐、AI 辅助构图、星芒、电影效果、希区柯克、舞台模式、长焦增距模式、超清全景、AI 超清增强、超级夜景、寰宇追月、绚丽烟花、绚丽星空、星空人像、AI 动态照片、视频 HDR Vivid、视频 Log、拍照 RAW 格式、闪拍、运动防抖、高画质模式、超级微距、微距视频、微距画中画、长焦画中画、高像素模式、延时摄影、超大广角、大光圈虚化、人像模式、专业模式、慢动作、流光快门、水印、AI 摄影大师、笑脸抓拍、声控拍照、定时拍照、连拍、后置自拍"
+          ],
+          [
+            "后置视频拍摄",
+            "最大可支持4K（3840×2160）视频录制，支持AIS防抖；支持1080p@960fps超级慢动作视频"
+          ],
+          [
+            "前置摄像头1 摄像头名称",
+            "内屏前置摄像头"
+          ],
+          [
+            "前置摄像头1 前置摄像头",
+            "800万像素"
+          ],
+          [
+            "前置摄像头1 光圈",
+            "f/2.4"
+          ],
+          [
+            "前置摄像头1 防抖功能",
+            "AIS电子防抖"
+          ],
+          [
+            "前置摄像头2 摄像头名称",
+            "外屏前置摄像头"
+          ],
+          [
+            "前置摄像头2 前置摄像头",
+            "800万像素"
+          ],
+          [
+            "前置摄像头2 光圈",
+            "f/2.4"
+          ],
+          [
+            "前置摄像头2 防抖功能",
+            "AIS电子防抖"
+          ],
+          [
+            "前置拍照功能",
+            "最大可支持3264×2448像素，自拍慢动作、智能广角切换、眼部追焦、人像模式、全景模式、趣 AR、延时摄影、动态照片、智能滤镜、水印、笑脸抓拍、自拍镜像、声控拍照、定时拍照"
+          ],
+          [
+            "前置视频拍摄",
+            "最大可支持4K（3840×2160）视频录制，支持AIS防抖"
+          ],
+          [
+            "传感器类型",
+            "RYYB传感器"
+          ],
+          [
+            "闪光灯",
+            "后置：LED 闪光灯>"
+          ],
+          [
+            "变焦倍数",
+            "后置摄像头：支持3.5倍光学变焦（3.5倍变焦为近似值，镜头焦段分别为23mm，13mm，81mm），支持7倍光学品质变焦、100倍数字变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G> ，2G"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "IEEE 802.11 a/b/g/n/ac/ax/be，2x2 MIMO，EHT160，8 Spatial-stream Sounding MU-MIMO，2.4GHz和5GHz，WLAN热点，WLAN直连"
+          ],
+          [
+            "定位导航",
+            "支持GPS（L1 + L5 双频）/AGPS/GLONASS/北斗（B1I + B1C + B2a + B2b 四频）/GALILEO（E1 + E5a + E5b 三频）/QZSS（L1 + L5 双频）/NavIC"
+          ],
+          [
+            "蓝牙",
+            "蓝牙6.0，支持低功耗蓝牙，支持 SBC、AAC，支持 LDAC 和 L2HC 高清音频"
+          ],
+          [
+            "NFC",
+            "支持NFC：读卡器模式、点对点模式、卡模拟模式（华为钱包支付，SIM 卡支付，HCE 支付）"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "连接与共享",
+            "OTG"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ],
+          [
+            "其他网络参数",
+            "天通卫星通话、卫星寻呼、双向北斗卫星消息，支持星闪E2.0，支持天际通"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸式电池（双电芯）"
+          ],
+          [
+            "电池容量",
+            "5600mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "66w"
+          ],
+          [
+            "无线充电",
+            "50w"
+          ],
+          [
+            "无线反向充电",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP58、IP59"
+          ],
+          [
+            "感应器",
+            "环境光传感器，红外传感器，指纹传感器，霍尔传感器，陀螺仪，指南针，气压计，接近光传感器，重力传感器，姿态感应器、Camera激光对焦传感器、色温传感器"
+          ],
+          [
+            "音频支持",
+            "mp3、mp4、ogg、amr、wav、flac、aac"
+          ],
+          [
+            "视频支持",
+            "mp4"
+          ],
+          [
+            "多媒体技术",
+            "Huawei Histen音效"
+          ],
+          [
+            "其他功能",
+            "ECG 心电分析功能、录屏批注、音悦家、天生会画、小艺离线图库整理*、3D 空间壁纸*、亲密圈、沉浸光感、星盾防诈、数字身份、AI 灵感妙创、XMAGE 智拍、AI 辅助构图、AI 姿势推荐、3D 动态照片、分屏问小艺、分屏翻译、分屏导航、小艺慧记、文档对比、AI 动态图书、大屏批注、AI 降噪通话、户外探索模式、极限续航配置、电影效果、AI 动态照片、动感摇拍、AI 一键成片、小艺简报、舞林萌主、互动萌宠、小艺帮帮忙、AI 智感握姿、AI 隔空传送、AI 智控键、AI 通话摘要、AI 通话翻译、AI 消息随身、天通卫星通话、卫星寻呼、双向北斗卫星消息、智能可变光圈、物理光圈 10 档可调、超级夜景、超级微距、微距视频、后置自拍、视频 HDR Vivid、小艺智慧语音、灵动熄屏显示、中转站、智感支付、智感扫码、低电量应急模式、超级终端、小艺字幕、跨设备剪贴板、超级隐私模式、隐私空间、畅连通话、多屏协同、智能截屏、小艺视觉、华为分享、无线投屏、应用分身、密码保险箱"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "手机（内置电池） x1 华为SuperCharge充电器 x1 USB Type-C 数据线 x1 旋转支架保护壳 x1 快速指南 x1 取卡针 x1"
+          ]
+        ]
+      },
+      {
+        "group": "保修信息",
+        "items": [
+          [
+            "保修政策",
+            "全国联保，享受三包服务"
+          ],
+          [
+            "质保时间",
+            "1年"
+          ],
+          [
+            "质保备注",
+            "主机1年，电池1年，充电器1年"
+          ],
+          [
+            "客服电话",
+            "华为消费者服务热线：950800 华为消费者VIP热线：950801 华为商城热线：950805"
+          ],
+          [
+            "电话备注",
+            "周一至周日：8:00-20:00"
+          ],
+          [
+            "详细内容",
+            "自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受7日内退货，15日内换货，15日以上在质保期内享受免费保修等三包服务！注：单独购买手机配件产品的用户，请完好保存配件外包装以及发票原件，如无法提供上述凭证的，将无法进行正常的配件保修或更换。 进入官网>>>"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "10.2 英寸三折叠 LTPO · 1–120Hz",
+        "valueAtAudit": "10.2 英寸三折叠 LTPO · 1–120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2177/2176798/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 10.2 英寸三折叠 LTPO · 1–120Hz",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "麒麟 9050 Pro",
+        "valueAtAudit": "麒麟 9050 Pro",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2177/2176798/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 麒麟 9050 Pro",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "5600mAh",
+        "valueAtAudit": "5600mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2177/2176798/param.shtml",
+        "evidenceText": "参数表/官方页：电池 5600mAh",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线 / 50W 无线",
+        "valueAtAudit": "66W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2177/2176798/param.shtml",
+        "evidenceText": "参数表/官方页：充电 66W 有线 / 50W 无线",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "299g",
+        "valueAtAudit": "299g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2177/2176798/param.shtml",
+        "evidenceText": "参数表/官方页：重量 299g",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "16GB+512GB",
+        "valueAtAudit": "16GB+512GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2177/2176798/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 16GB+512GB",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年09月07日",
+        "valueAtAudit": "2026年09月07日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vmall.com/",
+        "evidenceText": "发布会/官网信息：2026年09月07日",
+        "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 19999,
+        "valueAtAudit": 19999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.toutiao.com/article/7684546614664413732",
+        "evidenceText": "首发价来源：湖南日报转财联社·Mate XT 2 首销报道（含各版本价目）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
+  },
+  {
+    "id": "xia-18pm",
+    "brand": "Xiaomi",
+    "name": "Xiaomi 18 Pro Max",
+    "year": 2026,
+    "type": "影像旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.9 英寸 2K 主屏 + 2.9 英寸背屏 · 120Hz",
+    "chip": "骁龙 8 Elite Gen6",
+    "camera": "徕卡2亿超清大底主摄 + 徕卡2亿超大底潜望长焦 + 5000 万像素徕卡超广角；前置 5000 万像素",
+    "battery": "8500mAh",
+    "charging": "100W 有线 / 50W 无线",
+    "weight": "235g",
+    "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+    "os": "Xiaomi HyperOS 4",
+    "priceCN": 6999,
+    "priceText": "官方起售价（12GB+256GB）；16GB+1TB 9999 元，透明特别版 10999 元",
+    "selling": "双 2 亿像素 + 2.9 英寸 AI 背屏，8500mAh",
+    "bestFor": [
+      "拍照视频",
+      "大屏办公",
+      "日常全能"
+    ],
+    "source": "https://detail.zol.com.cn/2179/2178755/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-09",
+    "launchDateDisplay": "2026年09月23日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB",
+      "16GB+1TB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://cn.chinadaily.com.cn/a/202609/24/WS6ab4d214e4b09a165c78c885.html",
+    "priceSource": "https://www3.xinhuanet.com/tech/20260924/1dcd469b76984a5b946abcb6f92508bf/c.html",
+    "priceSourceName": "新华网·小米 2026 秋季发布会报道",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-24 新增机型：79 项参数（中关村在线，标题比对通过）",
+      "价格 6999 元起，新华网、北京日报、中国日报三处口径一致；四档价目 6999/7999/8999/9999。",
+      "ZOL 参数页把背屏算作「副屏」，本站按官方叫法写成「主屏 + 背屏」。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2179/2178755/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 79,
+    "specCollectedAt": "2026-10-24",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2026年09月23日"
+          ],
+          [
+            "电商报价",
+            "￥9999"
+          ],
+          [
+            "上市日期",
+            "2026年09月23日"
+          ],
+          [
+            "产品型号",
+            "Xiaomi 18 Pro Max"
+          ],
+          [
+            "使用场景",
+            "三防手机> ， 拍照手机> ， 智能手机> ， 音乐手机> ， 4G手机> ， 快充手机> ， 5G手机> ， 3G手机> ， 新品手机> ， 热门手机> ， 自拍手机> ， AI手机>"
+          ],
+          [
+            "机身颜色",
+            "黑色，白色，冰桃粉，星河蓝,透明版"
+          ],
+          [
+            "指纹识别",
+            "屏幕指纹识别（3D超声波指纹）>"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "163.39mm"
+          ],
+          [
+            "宽度",
+            "77.6mm"
+          ],
+          [
+            "厚度",
+            "8.39mm"
+          ],
+          [
+            "重量",
+            "235g"
+          ],
+          [
+            "其他外观参数",
+            "厚度:玻纤(黑白粉)8.39mm;玻璃(蓝/透明)8.47mm,重量：玻纤(黑白粉)235g;玻璃(蓝/透明)240g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "高通 骁龙 8 Elite Gen6 更多高通 骁龙 8 Elite Gen6手机> ，"
+          ],
+          [
+            "CPU频率",
+            "最高主频5GHz"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "高通 Adreno"
+          ],
+          [
+            "RAM容量",
+            "16GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR5X>"
+          ],
+          [
+            "ROM容量",
+            "1TB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 4.1>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "Android 17"
+          ],
+          [
+            "操作系统",
+            "Xiaomi HyperOS 4"
+          ],
+          [
+            "散热",
+            "立体环形冷泵散热系统,4637mm大散热面积"
+          ],
+          [
+            "振动马达",
+            "X轴线性马达"
+          ],
+          [
+            "扬声器",
+            "立体声双扬声器"
+          ],
+          [
+            "其他硬件参数",
+            "高动态4-MIC阵列"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "主：6.9英寸 副：2.9英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "屏幕比例",
+            "19.6：9"
+          ],
+          [
+            "分辨率",
+            "主：2624x1208px 副：976x596px"
+          ],
+          [
+            "屏幕材质",
+            "主：AMOLED 副：AMOLED"
+          ],
+          [
+            "屏幕刷新率",
+            "120Hz>"
+          ],
+          [
+            "触控采样率",
+            "300Hz"
+          ],
+          [
+            "屏幕色彩",
+            "主：支持BT.2020超广色域 副：支持BT.2020超广色域"
+          ],
+          [
+            "其他屏幕参数",
+            "主：全亮度DC调光,正屏显示认证：HDR10+ | HDR Vivid| Dolby Vision 硬件防窥屏，专业原色屏，全屏息屏显示，超动态显示，湿手触控，多屏同色 副：屏幕刷新率120Hz,触控采样率：最高120Hz,全亮度DC调光"
+          ],
+          [
+            "HDR技术",
+            "HDR 10+>"
+          ],
+          [
+            "屏幕亮度",
+            "4000nits多场景峰值亮度 1nits最低亮度"
+          ],
+          [
+            "屏幕盖板",
+            "小米龙晶玻璃3.0"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "四摄像头（后三）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：徕卡2亿超清大底主摄 后置摄像头2：徕卡2亿超大底潜望长焦 后置摄像头3：徕卡超广角 前置摄像头1：高清相机"
+          ],
+          [
+            "像素",
+            "后置摄像头1：2亿像素 后置摄像头2：2亿像素 后置摄像头3：5000万像素 前置摄像头1：5000万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.67 后置摄像头2：f/2.4 后置摄像头3：f/2.4 前置摄像头1：f/2.2"
+          ],
+          [
+            "传感器型号",
+            "后置摄像头1：光影猎人 960L 后置摄像头2：1/1.56″超大底"
+          ],
+          [
+            "传感器尺寸",
+            "1/1.28″超大底"
+          ],
+          [
+            "对焦方式",
+            "后置摄像头1：QPD 后置摄像头3：AF 前置摄像头1：AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：23mm 后置摄像头3：17mm"
+          ],
+          [
+            "防抖功能",
+            "后置摄像头1：OIS光学防抖 后置摄像头2：OIS光学防抖"
+          ],
+          [
+            "镜头片数",
+            "1G+6P"
+          ],
+          [
+            "微距",
+            "后置摄像头2：12cm 后置摄像头3：5cm"
+          ],
+          [
+            "广角",
+            "102°"
+          ],
+          [
+            "后置拍照功能",
+            "AI帮拍，2亿超清，传奇一瞬，原色风格，徕卡原生双画质，背屏自拍，背屏预览，背屏大头贴，动态照片，实况运镜，证件照，自动超级月亮，照片水印，视频水印，杜比视界，运动抓拍，滤镜配方，超级夜景，万物追焦，音源追焦，人像虚化，大师镜头包，人脸补光，智能美颜，视频美颜，街拍，专业模式，延时摄影，文档模式，慢动作，长曝光，全景，倒计时拍照，声控拍照，触屏拍照，定时连拍，参考线，水平仪"
+          ],
+          [
+            "后置视频拍摄",
+            "后置视频拍摄帧率： 8K视频拍摄：30fps 4K视频拍摄：30/60/120fps 1080P视频拍摄：30/60fps 720P视频拍摄：30fps 慢动作视频拍摄： 1080P120fps/240fps/960fps 720P120fps/240fps/480fps/960fps/1920fps"
+          ],
+          [
+            "前置拍照功能",
+            "动态照片，智能美颜，人像虚化，人脸补光，照片水印，视频水印，视频美颜，延时摄影，慢动作，视频提词器，倒计时拍照，手势拍照，声控拍照，触屏拍照，参考线"
+          ],
+          [
+            "前置视频拍摄",
+            "4K视频拍摄：30/60fps 1080P视频拍摄：30/60fps 720P视频拍摄：30fps"
+          ],
+          [
+            "联名品牌",
+            "徕卡"
+          ],
+          [
+            "闪光灯",
+            "LED闪光灯"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G> ，2G"
+          ],
+          [
+            "5G网络",
+            "移动5G（NR），联通5G（NR），电信5G（NR），广电5G（NR） 更多5G手机＞"
+          ],
+          [
+            "网络频段",
+            "5G： n1/n2/n3/n5/n7/n8/n12/n13/n14/ n18/n20/n25/n26/n28/n29/ n38/n40/ n41/n48/n66/n70/n71/n77/n78/n79 /n80/n81/n83/n84/n89 4G： FDD-LTE: B1/B2/B3/B4/B5/B7/B8/B12/B13/B14/B17/B18/B19/ B20/ B25/ B26/ B28/B29/B66/B71 (B28上行:703MHz-748MHz,下行:758MHz-803MHz) TDD-LTE: B34/B38/B39/B40/B41/B42/B43/B48 3G：WCDMA:B1/B2/B4/B5/B6/B8/B19 2G:GSM:B2/ B3/B5/B8 支持4x4MIMO天线技术/HPUE/HORxD"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "支持WLAN协议：Wi-Fi 7，Wi-Fi 6增强版，Wi-Fi 5，Wi-Fi 4以及802.11a/b/g，WLAN 频率：2.4G Wi-Fi，5G Wi-Fi，支持MLO，支持2x2 MIMO，8x8 Sounding for MU-MIMO，Wi-Fi Direct，Miracast，2.4G、5G双路并发"
+          ],
+          [
+            "定位导航",
+            "北斗（B1I+B1C+B2a），GPS（L1+L5），Galileo（E1+E5a），GLONASS（G1），QZSS（L1+L5），NavIC（L5），AGNSS ，数据网络定位，Wi-Fi 网络定位，Sensor 辅助定位"
+          ],
+          [
+            "蓝牙",
+            "蓝牙6.0，支持 SBC/AAC/AptX/AptX HD/AptX Adaptive/LDAC/LHDC 5.0/LC3/MIHC"
+          ],
+          [
+            "NFC",
+            "支持NFC（多功能）>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "小米金沙江电池"
+          ],
+          [
+            "电池容量",
+            "8500mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "100w"
+          ],
+          [
+            "无线充电",
+            "50w"
+          ],
+          [
+            "无线反向充电",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP68防尘防水"
+          ],
+          [
+            "感应器",
+            "距离感应器，屏下环境光（色温）传感器，后置环境光（色温）传感器，加速度传感器，陀螺仪，电子罗盘，X轴线性马达，红外线遥控器，flicker传感器，激光对焦传感器，气压计，霍尔传感器"
+          ],
+          [
+            "音频支持",
+            "MP3，FLAC，APE，AAC，OGG，WAV，AMR，AWB"
+          ],
+          [
+            "视频支持",
+            "MP4，MKV，WEBM，3GP，TS播放"
+          ],
+          [
+            "多媒体技术",
+            "Hi-Res & Hi-Res Audio Wireless 认证，杜比全景声，空间音频，音频分享，实时耳返，微信/QQ通话录音，高清录音2.0"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "手机主机 x1 电源适配器 x1 USB Type-C 数据线 x1 手机保护壳 x1 屏幕保护膜（出厂贴在手机上） x1 说明书（含三包凭证） x1 取卡针 x1"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.9 英寸 2K 主屏 + 2.9 英寸背屏 · 120Hz",
+        "valueAtAudit": "6.9 英寸 2K 主屏 + 2.9 英寸背屏 · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178755/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.9 英寸 2K 主屏 + 2.9 英寸背屏 · 120Hz",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 Elite Gen6",
+        "valueAtAudit": "骁龙 8 Elite Gen6",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178755/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 骁龙 8 Elite Gen6",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "徕卡2亿超清大底主摄 + 徕卡2亿超大底潜望长焦 + 5000 万像素徕卡超广角；前置 5000 万像素",
+        "valueAtAudit": "徕卡2亿超清大底主摄 + 徕卡2亿超大底潜望长焦 + 5000 万像素徕卡超广角；前置 5000 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178755/param.shtml",
+        "evidenceText": "参数表/官方页：影像 徕卡2亿超清大底主摄 + 徕卡2亿超大底潜望长焦 + 5000 万像素徕卡超广角；前置 5000 万像素",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "8500mAh",
+        "valueAtAudit": "8500mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178755/param.shtml",
+        "evidenceText": "参数表/官方页：电池 8500mAh",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 50W 无线",
+        "valueAtAudit": "100W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178755/param.shtml",
+        "evidenceText": "参数表/官方页：充电 100W 有线 / 50W 无线",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "235g",
+        "valueAtAudit": "235g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178755/param.shtml",
+        "evidenceText": "参数表/官方页：重量 235g",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "16GB+1TB",
+        "valueAtAudit": "16GB+1TB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178755/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 16GB+1TB",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年09月23日",
+        "valueAtAudit": "2026年09月23日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://cn.chinadaily.com.cn/a/202609/24/WS6ab4d214e4b09a165c78c885.html",
+        "evidenceText": "发布会/官网信息：2026年09月23日",
+        "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 6999,
+        "valueAtAudit": 6999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www3.xinhuanet.com/tech/20260924/1dcd469b76984a5b946abcb6f92508bf/c.html",
+        "evidenceText": "首发价来源：新华网·小米 2026 秋季发布会报道",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
+  },
+  {
+    "id": "iqoo-16",
+    "brand": "iQOO",
+    "name": "iQOO 16",
+    "year": 2026,
+    "type": "游戏性能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.85 英寸 2K AMOLED · 165Hz",
+    "chip": "骁龙 8 Elite Gen6",
+    "camera": "5000 万像素大底主摄 + 5000 万像素索尼超级潜望长焦 + 5000 万像素超广角；前置 3200 万像素",
+    "battery": "8400mAh",
+    "charging": "100W 有线 / 40W 无线",
+    "weight": "222.5g",
+    "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+    "os": "OriginOS 7",
+    "priceCN": 5999,
+    "priceText": "官方零售价（12GB+256GB）；国补到手 5499 元起",
+    "selling": "2K 165Hz 珠峰屏 + 8400mAh，电竞芯片 Q4",
+    "bestFor": [
+      "游戏性能",
+      "续航",
+      "日常全能"
+    ],
+    "source": "https://detail.zol.com.cn/2179/2178849/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-09",
+    "launchDateDisplay": "2026年09月29日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB",
+      "16GB+1TB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://www.toutiao.com/article/7690936297904538153/",
+    "priceSource": "http://scitech.ce.cn/sy/zx/202609/t20260929_3242409.shtml",
+    "priceSourceName": "中国经济网·iQOO 16 发布报道（含四档价格）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-24 新增机型：72 项参数（中关村在线，标题比对通过）",
+      "5999/6799/7499/8499 四档零售价，中国经济网、IT之家、中关村在线报道一致；国补后 5499 元起。",
+      "首发第六代骁龙 8 超级至尊版 + 自研 Q4 电竞芯片，定位游戏向旗舰。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2179/2178849/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 72,
+    "specCollectedAt": "2026-10-24",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2026年9月29日"
+          ],
+          [
+            "电商报价",
+            "￥5999"
+          ],
+          [
+            "上市日期",
+            "2026年9月29日"
+          ],
+          [
+            "产品型号",
+            "iQOO 16"
+          ],
+          [
+            "使用场景",
+            "三防手机> ， 游戏手机> ， 拍照手机> ， 智能手机> ， 4G手机> ， 5G手机> ， 3G手机> ， 新品手机> ， 热门手机>"
+          ],
+          [
+            "机身材质",
+            "中框材质：铝合金 后盖材质：赛道：玻纤；传奇、逐光：玻璃 查看外观图>"
+          ],
+          [
+            "机身颜色",
+            "逐光，传奇，赛道"
+          ],
+          [
+            "指纹识别",
+            "屏幕指纹识别（3D超声波指纹）>"
+          ],
+          [
+            "面部识别",
+            "支持> ，Face Wake面部识别"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "163.65mm"
+          ],
+          [
+            "宽度",
+            "76.9mm"
+          ],
+          [
+            "厚度",
+            "8.3mm"
+          ],
+          [
+            "重量",
+            "222.5g"
+          ],
+          [
+            "其他外观参数",
+            "机身尺寸：163.75mm×76.90mm×8.30mm(赛道)、163.75mm×76.90mm×8.40mm(传奇)、163.75mm×76.90mm×8.55mm(逐光),机身重量： 赛道：约222.5g；传奇：约227.9g；逐光：约229.8g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "高通 骁龙 8 Elite Gen6 更多高通 骁龙 8 Elite Gen6手机> ，"
+          ],
+          [
+            "CPU频率",
+            "2×Prime 5.01GHz+3×Performance 4.03G+3×Performance 3.74GHz"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "高通 Adreno"
+          ],
+          [
+            "RAM容量",
+            "12GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR5X Ultra 四通道>"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 4.1>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "Android 17"
+          ],
+          [
+            "操作系统",
+            "OriginOS 7"
+          ],
+          [
+            "振动马达",
+            "X+Z双轴线性马达"
+          ],
+          [
+            "扬声器",
+            "立体声双扬声器"
+          ],
+          [
+            "其他硬件参数",
+            "独立显示芯片：自研电竞芯片 Q4,内存融合：支持24GB"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.85英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "屏幕比例",
+            "19.8:9"
+          ],
+          [
+            "分辨率",
+            "3168x1440px"
+          ],
+          [
+            "屏幕材质",
+            "AMOLED（三星M16）>"
+          ],
+          [
+            "屏幕刷新率",
+            "165Hz>"
+          ],
+          [
+            "像素密度",
+            "508ppi"
+          ],
+          [
+            "屏占比",
+            "94.37%"
+          ],
+          [
+            "触控采样率",
+            "非游戏场景120Hz，130Hz，144Hz，165Hz，跟显示刷新率相关；游戏场景还支持180Hz，240Hz，300Hz，360Hz和500Hz，根据具体游戏和设置来配置；瞬时触控采样率最高为5000Hz。"
+          ],
+          [
+            "屏幕色彩",
+            "支持P3色域,10.7亿色"
+          ],
+          [
+            "HDR技术",
+            "支持"
+          ],
+          [
+            "对比度",
+            "8000000:1"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "四摄像头（后三）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：大底主摄 后置摄像头2：索尼超级潜望长焦镜头 后置摄像头3：超广角镜头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：5000万像素 后置摄像头3：5000万像素 前置摄像头1：3200万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.68 后置摄像头2：f/2.65 后置摄像头3：f/2.05 前置摄像头1：f/2.2"
+          ],
+          [
+            "传感器尺寸",
+            "1/1.3”"
+          ],
+          [
+            "对焦方式",
+            "后置摄像头1：AF 后置摄像头2：AF 后置摄像头3：AF 前置摄像头1：FF"
+          ],
+          [
+            "防抖功能",
+            "后置摄像头1：OIS光学防抖,视频防抖 后置摄像头2：OIS光学防抖,视频防抖 后置摄像头3：视频防抖"
+          ],
+          [
+            "后置拍照功能",
+            "抓拍、风光与夜景、人像、拍照、录像、超清文档、全景、慢动作、延时摄影、专业模式、微电影、人文街拍相机、Jovi扫描、鱼眼"
+          ],
+          [
+            "后置视频拍摄",
+            "最高支持8K视频拍摄，后置慢镜头最高支持1080P"
+          ],
+          [
+            "前置拍照功能",
+            "拍照、人像、录像、AI次元创作"
+          ],
+          [
+            "前置视频拍摄",
+            "最高支持4K视频拍摄"
+          ],
+          [
+            "传感器类型",
+            "CMOS"
+          ],
+          [
+            "闪光灯",
+            "后置：闪光灯>"
+          ],
+          [
+            "变焦倍数",
+            "后置最大支持100x数字变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G>"
+          ],
+          [
+            "5G网络",
+            "移动5G（NR），联通5G（NR），电信5G（NR），广电5G（NR） 更多5G手机＞"
+          ],
+          [
+            "网络频段",
+            "2G网络 GSM：850/900/1800/1900MHz 3G网络 WCDMA：B1/B2/B4/B5/B6/B8/B19 4G网络 TD-LTE：B34/B38/B39/B40/B41/B42/B43/B48 4G网络 FDD-LTE：B1/B2/B3/B4/B5/B7/B8/B18/B19/B20/B25/B26/B28A/B32/B66 5G网络：n1/n2/n3/n5/n7/n8/n18/n20/n25/n26/n28A/n34/n38/n39/n40/n41/n48/n66/n75/n77/n78/n79/n80/n81/n83/n84/n89/n91/n92/n93/n94"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "支持WLAN 2.4G、WLAN 5G频率；支持Wi-Fi Display、2*2 MIMO、MU-MIMO、Wi-Fi 6、Wi-Fi 7、2.4G&5G双路并发"
+          ],
+          [
+            "定位导航",
+            "GPS（L1+L5），北斗（B1C+B1I+B2a），GLONASS（G1），Galileo（E1+E5a），QZSS（L1+L5），支持AGPS、蜂窝网络定位、无线局域网定位、地理围栏"
+          ],
+          [
+            "蓝牙",
+            "蓝牙5.4，支持SBC;AAC;aptX;aptX HD;aptX Adaptive;aptX Lossless;LDAC;LHDC 5.0蓝牙音频格式"
+          ],
+          [
+            "NFC",
+            "支持NFC>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "双电芯串联"
+          ],
+          [
+            "电池容量",
+            "8400mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "100w"
+          ],
+          [
+            "无线充电",
+            "40w"
+          ],
+          [
+            "无线反向充电",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "感应器",
+            "重力感应器，光敏感应器，接近感应器，陀螺仪，电子罗盘，前置色温传感器、后置色温传感器、3D超声波单点指纹传感器、霍尔传感器、红外遥控、Flicker传感器"
+          ],
+          [
+            "音频支持",
+            "AAC、WAV、MP3、MIDI、VORBIS、APE、FLAC"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "手机 x1 充电头 x1 Type-C to Type-C数据线 x1 保护壳 x1 原装膜（出厂已贴好） x1 取卡针 x1 快速入门指南 x1 手机包装盒 x1"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.85 英寸 2K AMOLED · 165Hz",
+        "valueAtAudit": "6.85 英寸 2K AMOLED · 165Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178849/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.85 英寸 2K AMOLED · 165Hz",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 Elite Gen6",
+        "valueAtAudit": "骁龙 8 Elite Gen6",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178849/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 骁龙 8 Elite Gen6",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素大底主摄 + 5000 万像素索尼超级潜望长焦 + 5000 万像素超广角；前置 3200 万像素",
+        "valueAtAudit": "5000 万像素大底主摄 + 5000 万像素索尼超级潜望长焦 + 5000 万像素超广角；前置 3200 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178849/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素大底主摄 + 5000 万像素索尼超级潜望长焦 + 5000 万像素超广角；前置 3200 万像素",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "8400mAh",
+        "valueAtAudit": "8400mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178849/param.shtml",
+        "evidenceText": "参数表/官方页：电池 8400mAh",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 40W 无线",
+        "valueAtAudit": "100W 有线 / 40W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178849/param.shtml",
+        "evidenceText": "参数表/官方页：充电 100W 有线 / 40W 无线",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "222.5g",
+        "valueAtAudit": "222.5g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178849/param.shtml",
+        "evidenceText": "参数表/官方页：重量 222.5g",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "valueAtAudit": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2179/2178849/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 12GB+256GB",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年09月29日",
+        "valueAtAudit": "2026年09月29日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.toutiao.com/article/7690936297904538153/",
+        "evidenceText": "发布会/官网信息：2026年09月29日",
+        "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 5999,
+        "valueAtAudit": 5999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "http://scitech.ce.cn/sy/zx/202609/t20260929_3242409.shtml",
+        "evidenceText": "首发价来源：中国经济网·iQOO 16 发布报道（含四档价格）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
+  },
+  {
+    "id": "vivo-xfold6",
+    "brand": "vivo",
+    "name": "vivo X Fold6",
+    "year": 2026,
+    "type": "折叠屏旗舰",
+    "market": "中国大陆正式销售",
+    "display": "主 8.02 英寸 + 副 6.51 英寸 · AMOLED · 120Hz",
+    "chip": "天玑 9500超能版",
+    "camera": "2 亿像素主摄 + 5000 万像素广角 + 5000 万像素潜望；前置 2000 万像素",
+    "battery": "7000mAh",
+    "charging": "80W 有线 / 40W 无线",
+    "weight": "228g",
+    "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+    "os": "OriginOS 6 Fold",
+    "priceCN": 7999,
+    "priceText": "官方建议零售价（12GB+256GB）；16GB+1TB 10999 元",
+    "selling": "8.02 英寸内屏 + 天玑 9500 超能版，7000mAh",
+    "bestFor": [
+      "大屏办公",
+      "拍照视频",
+      "续航"
+    ],
+    "source": "https://www.vivo.com.cn/vivo/param/xfold6",
+    "sourceName": "厂商官方规格页",
+    "verified": true,
+    "launchMonth": "2026-06",
+    "launchDateDisplay": "2026年06月26日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB",
+      "16GB+1TB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://m.vivo.com.cn/brand/news/detail?id=1369",
+    "priceSource": "https://www.vivo.com.cn/vivo/param/xfold6",
+    "priceSourceName": "vivo 官网·X Fold6 参数与建议零售价",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-24 新增机型：80 项参数（中关村在线，标题比对通过）",
+      "四档价格 7999/8999/9999/10999 来自 vivo 官网参数页（建议零售价），与发布会报道一致。",
+      "6 月 26 日发布、7 月 1 日开售；ZOL 参数页发布时间一致。"
+    ],
+    "priceAuditStatus": "official_source_present",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2171/2170555/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 80,
+    "specCollectedAt": "2026-10-24",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "电商报价",
+            "￥8999"
+          ],
+          [
+            "国内发布时间",
+            "2026年06月26日"
+          ],
+          [
+            "产品型号",
+            "vivo X Fold6"
+          ],
+          [
+            "使用场景",
+            "游戏手机> ， 拍照手机> ， 快充手机> ， 5G手机> ， 折叠屏手机> ， 新品手机> ， 热门手机> ， 自拍手机>"
+          ],
+          [
+            "机身材质",
+            "玻纤(极夜、盐湖、黑金版)、玻璃(蓝洞) 查看外观图>"
+          ],
+          [
+            "机身颜色",
+            "蓝洞，盐湖，极夜，黑金版"
+          ],
+          [
+            "指纹识别",
+            "侧面指纹识别>"
+          ],
+          [
+            "面部识别",
+            "支持> ，Face Wake面部识别"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "产品尺寸：157.16mm 折叠尺寸：157.16mm"
+          ],
+          [
+            "宽度",
+            "产品尺寸：145.66mm 折叠尺寸：145.66mm"
+          ],
+          [
+            "厚度",
+            "产品尺寸：4.4mm 折叠尺寸：4.8mm"
+          ],
+          [
+            "重量",
+            "228g"
+          ],
+          [
+            "其他外观参数",
+            "尺寸：展开: 157.16mm*145.66mm*4.40mm(极夜、盐湖、黑金版)、157.16mm*145.66mm*4.80mm(蓝洞); 折叠: 157.16mm*74.26mm*9.40mm(极夜、盐湖、黑金版)、157.16mm*74.26mm*9.90mm(蓝洞),重量：228g(极夜、盐湖、黑金版)、235g(蓝洞)"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "联发科 天玑 9500超能版 更多联发科 天玑 9500超能版手机> ，"
+          ],
+          [
+            "CPU频率",
+            "4.21GHz*1+3.5GHz*3+2.7GHz*4"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "Mali G1-Ultra"
+          ],
+          [
+            "RAM容量",
+            "12GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR5X Ultra 四通道>"
+          ],
+          [
+            "ROM容量",
+            "512GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 4.1>"
+          ],
+          [
+            "出厂系统内核",
+            "Android 16"
+          ],
+          [
+            "操作系统",
+            "OriginOS 6 Fold"
+          ],
+          [
+            "振动马达",
+            "X轴线性马达"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "主：8.02英寸 副：6.51英寸"
+          ],
+          [
+            "屏幕类型",
+            "主：全面屏（中置挖孔屏），折叠屏，曲面屏 副：全面屏（中置挖孔屏），折叠屏，曲面屏"
+          ],
+          [
+            "分辨率",
+            "2504x2312px"
+          ],
+          [
+            "屏幕材质",
+            "主：AMOLED 副：AMOLED"
+          ],
+          [
+            "屏幕刷新率",
+            "120Hz>"
+          ],
+          [
+            "像素密度",
+            "424ppi"
+          ],
+          [
+            "屏占比",
+            "91.99%"
+          ],
+          [
+            "触摸屏类型",
+            "电容屏，多点触控"
+          ],
+          [
+            "触控采样率",
+            "正常130Hz，游戏240Hz"
+          ],
+          [
+            "屏幕色彩",
+            "主：10.7亿色,105%NTSC,支持P3广色域 副：105%NTSC"
+          ],
+          [
+            "其他屏幕参数",
+            "主：TUV莱茵全局护眼认证3.0 副：屏占比：92.65%,屏幕采样率：正常130Hz，游戏300Hz"
+          ],
+          [
+            "HDR技术",
+            "支持"
+          ],
+          [
+            "对比度",
+            "8000000:1"
+          ],
+          [
+            "屏幕技术",
+            "铠甲玻璃外屏>"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "五摄像头（后三前双）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：主摄 后置摄像头2：广角摄像头 后置摄像头3：潜望摄像头 前置摄像头1：主摄 前置摄像头2：副摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：2亿像素 后置摄像头2：5000万像素 后置摄像头3：5000万像素 前置摄像头1：2000万像素 前置摄像头2：2000万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1： f/1.68 后置摄像头2：f/2.05 后置摄像头3：f/2.55 前置摄像头1：f/2.4 前置摄像头2： f/2.4"
+          ],
+          [
+            "传感器型号",
+            "后置摄像头1：IMX921 后置摄像头2：JN1 后置摄像头3：IMX882"
+          ],
+          [
+            "传感器尺寸",
+            "后置摄像头1：1/1.56\" 后置摄像头2：1/2.76\" 后置摄像头3：1/1.95\""
+          ],
+          [
+            "对焦方式",
+            "后置摄像头1：AF 后置摄像头2：AF 后置摄像头3：AF 前置摄像头1：FF 前置摄像头2：FF"
+          ],
+          [
+            "防抖功能",
+            "后置摄像头1：OIS光学防抖 后置摄像头3：OIS光学防抖"
+          ],
+          [
+            "焦距",
+            "15mm"
+          ],
+          [
+            "后置拍照功能",
+            "拍照、人像、风光与夜景、抓拍、录像、超清文档、全景、慢动作、舞台、延时摄影、人像录像、专业、美食、扫描"
+          ],
+          [
+            "后置视频拍摄",
+            "后置主摄最高支持8K；后置广角、后置潜望最高支持4K"
+          ],
+          [
+            "前置拍照功能",
+            "拍照、人像、录像、人像录像"
+          ],
+          [
+            "前置视频拍摄",
+            "前置最高支持1080P"
+          ],
+          [
+            "联名品牌",
+            "卡尔.蔡司认证"
+          ],
+          [
+            "传感器类型",
+            "CMOS"
+          ],
+          [
+            "变焦倍数",
+            "最大支持100x数字变焦；前后置摄像头均支持数字变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G> ，2G"
+          ],
+          [
+            "5G网络",
+            "移动5G（NR），联通5G（NR），电信5G（NR），广电5G（NR） 更多5G手机＞"
+          ],
+          [
+            "4G网络",
+            "移动TD-LTE，移动LTE FDD，联通LTE FDD，电信LTE FDD，广电TD-LTE，广电LTE FDD"
+          ],
+          [
+            "3G网络",
+            "联通3G（WCDMA），联通2G/移动2G（GSM）"
+          ],
+          [
+            "网络频段",
+            "2G GSM频段：850/900/1800/1900MHz 3G WCDMA频段：B1/B2/B4/B5/B6/B8/B19 4G TD-LTE频段：B34/B38/B39/B40/B41/B42/B43/B48 4G FDD-LTE频段：B1/B2/B3/B4/B5/B7/B8/B12/B17/B18/B19/B20/B25/B26/B28/B66 5G频段：n1/n2/n3/n5/n7/n8/n12/n18/n20/n25/n26/n28/n34/n38/n39/n40/n41/n48/n66/n77/n78/n79"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "Wi-Fi Display;2*2 MIMO;MU-MIMO;Wi-Fi 6;Wi-Fi 7;2.4G&5G双路并发"
+          ],
+          [
+            "定位导航",
+            "GPS：L1;L5，北斗：B1C;B1I;B2a;B2b，GLONASS：G1，Galileo：E1;E5a;E5b，QZSS：L1;L5， NavIC：L1;L5"
+          ],
+          [
+            "蓝牙",
+            "蓝牙5.4，支持SBC;AAC;aptX;aptX HD;aptX Adaptive;aptX Lossless;LDAC;LHDC 5.0"
+          ],
+          [
+            "NFC",
+            "支持NFC>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "连接与共享",
+            "OTG"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸式电池（双电芯）"
+          ],
+          [
+            "电池容量",
+            "7000mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "80w"
+          ],
+          [
+            "无线充电",
+            "40w"
+          ],
+          [
+            "无线反向充电",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IPX8&IPX9级抗水"
+          ],
+          [
+            "感应器",
+            "重力感应器，光敏感应器，接近感应器，陀螺仪，电子罗盘，其他传感器：激光对焦传感器，气压传感器，霍尔传感器，红外遥控，Flicker传感器，前置色温传感器，后置色温传感器"
+          ],
+          [
+            "音频支持",
+            "AAC、WAV、MP3、MIDI、VORBIS、APE、FLAC,AAC、WAV、M4A、MP3、MIDI、OGG、APE、FLAC"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "手机 x1 蔡司长焦增距镜G2 x1（含预装前后盖 x1） 增距镜前盖 x1 增距镜后盖 x1 影像保护壳 x1（含预装影像保护壳装饰环 x1） 增距镜转接环 x1 充电头 x1 Type-C数据线 x1 原装膜（内外屏出厂已贴好） x2 保护壳 x1 取卡针 x1 快速入门指南 x1"
+          ]
+        ]
+      },
+      {
+        "group": "保修信息",
+        "items": [
+          [
+            "保修政策",
+            "全国联保，享受三包服务"
+          ],
+          [
+            "质保时间",
+            "1年"
+          ],
+          [
+            "质保备注",
+            "主机1年，充电器1年"
+          ],
+          [
+            "详细内容",
+            "自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受15日内退货或更换一部享有重新计算1年保修期的设备，15日以上在质保期内根据具体情况更换相关部件或提供一台部分重新装配的设备，仅保留消费者现有设备后盖。更换的部件和"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "主 8.02 英寸 + 副 6.51 英寸 · AMOLED · 120Hz",
+        "valueAtAudit": "主 8.02 英寸 + 副 6.51 英寸 · AMOLED · 120Hz",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold6",
+        "evidenceText": "参数表/官方页：屏幕 主 8.02 英寸 + 副 6.51 英寸 · AMOLED · 120Hz",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "天玑 9500超能版",
+        "valueAtAudit": "天玑 9500超能版",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2171/2170555/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 天玑 9500超能版",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "2 亿像素主摄 + 5000 万像素广角 + 5000 万像素潜望；前置 2000 万像素",
+        "valueAtAudit": "2 亿像素主摄 + 5000 万像素广角 + 5000 万像素潜望；前置 2000 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2171/2170555/param.shtml",
+        "evidenceText": "参数表/官方页：影像 2 亿像素主摄 + 5000 万像素广角 + 5000 万像素潜望；前置 2000 万像素",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "7000mAh",
+        "valueAtAudit": "7000mAh",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold6",
+        "evidenceText": "参数表/官方页：电池 7000mAh",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线 / 40W 无线",
+        "valueAtAudit": "80W 有线 / 40W 无线",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold6",
+        "evidenceText": "参数表/官方页：充电 80W 有线 / 40W 无线",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "228g",
+        "valueAtAudit": "228g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2171/2170555/param.shtml",
+        "evidenceText": "参数表/官方页：重量 228g",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+512GB",
+        "valueAtAudit": "12GB+512GB",
+        "status": "verified_official_page_reviewed",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold6",
+        "evidenceText": "参数表/官方页：容量组合 12GB+512GB",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年06月26日",
+        "valueAtAudit": "2026年06月26日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://m.vivo.com.cn/brand/news/detail?id=1369",
+        "evidenceText": "发布会/官网信息：2026年06月26日",
+        "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 7999,
+        "valueAtAudit": 7999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.vivo.com.cn/vivo/param/xfold6",
+        "evidenceText": "首发价来源：vivo 官网·X Fold6 参数与建议零售价",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ],
+    "officialSpecSource": "https://www.vivo.com.cn/vivo/param/xfold6"
+  },
+  {
+    "id": "hua-nova16",
+    "brand": "Huawei",
+    "name": "HUAWEI nova 16",
+    "year": 2026,
+    "type": "标准旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.68 英寸 OLED · 120Hz",
+    "chip": "麒麟 9010S",
+    "camera": "5000 万像素超高清 + 5000 万像素 RYYB潜望长焦 + 150 万像素多光谱通道红枫原色；前置 5000 万像素",
+    "battery": "7000mAh",
+    "charging": "100W 有线",
+    "weight": "199g",
+    "storage": "256GB / 512GB",
+    "os": "HarmonyOS 6.1",
+    "priceCN": 2999,
+    "priceText": "官方首发起售价（256GB）；512GB 3499 元（2026-10 调价后 3399 元起）",
+    "selling": "麒麟 9010S + 7000mAh，同档少见的 5000 万潜望长焦",
+    "bestFor": [
+      "拍照视频",
+      "日常全能",
+      "性价比"
+    ],
+    "source": "https://detail.zol.com.cn/2168/2167426/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-06",
+    "launchDateDisplay": "2026年06月05日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "256GB",
+      "512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://dzrb.dzng.com/general/0/NEWS3426420ZQXVSYBBIHKCK",
+    "priceSource": "https://consumer.huawei.com/cn/press/events/2026/nova-16-series-and-all-scenario-new-product-launch-event",
+    "priceSourceName": "华为官网·nova 16 系列发布会页",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-24 新增机型：64 项参数（中关村在线，标题比对通过）",
+      "首发 2999/3499 元（256GB/512GB），华为官网发布会页与齐鲁晚报、中国基金报一致。",
+      "2026-10-09 华为上调在售机型指导价，nova 16 现为 3399 元起；本站记录的是首发价。",
+      "ZOL 参数页未列运行内存，容量组合按 ROM 记录。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2168/2167426/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 64,
+    "specCollectedAt": "2026-10-24",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2026年6月1日"
+          ],
+          [
+            "电商报价",
+            "￥2919"
+          ],
+          [
+            "上市日期",
+            "2026年6月5日"
+          ],
+          [
+            "产品型号",
+            "华为 nova 16"
+          ],
+          [
+            "使用场景",
+            "时尚手机> ， 拍照手机> ， 智能手机> ， 4G手机> ， 快充手机> ， 5G手机> ， 新品手机> ， 热门手机> ， 自拍手机>"
+          ],
+          [
+            "机身材质",
+            "后盖：板材 边框：高分子与金属复合材料 查看外观图>"
+          ],
+          [
+            "机身颜色",
+            "晴空蓝，天际白，幻彩贝母，星空黑"
+          ],
+          [
+            "指纹识别",
+            "侧面指纹识别>"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "159.6mm"
+          ],
+          [
+            "宽度",
+            "75.5mm"
+          ],
+          [
+            "厚度",
+            "7.3mm"
+          ],
+          [
+            "重量",
+            "199g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "海思 麒麟 9010S 更多海思 麒麟 9010S手机> ，"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "操作系统",
+            "HarmonyOS 6.1"
+          ],
+          [
+            "扬声器",
+            "立体声双扬声器"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.68英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2800x1280px"
+          ],
+          [
+            "屏幕材质",
+            "OLED>"
+          ],
+          [
+            "屏幕刷新率",
+            "120Hz>"
+          ],
+          [
+            "像素密度",
+            "461ppi"
+          ],
+          [
+            "触摸屏类型",
+            "多点触控，最多支持10点触控"
+          ],
+          [
+            "触控采样率",
+            "300Hz触控采样率"
+          ],
+          [
+            "屏幕色彩",
+            "10.7亿色，P3广色域"
+          ],
+          [
+            "其他屏幕参数",
+            "2160Hz高频PWM调光"
+          ],
+          [
+            "HDR技术",
+            "支持"
+          ],
+          [
+            "屏幕盖板",
+            "铝硅玻璃"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "四摄像头（后三）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：超高清镜头 后置摄像头2：RYYB潜望长焦镜头 后置摄像头3：多光谱通道红枫原色镜头 前置摄像头1：超清人像镜头"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：5000万像素 后置摄像头3：150万像素 前置摄像头1：5000万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.9 后置摄像头2：f/2.6 后置摄像头3：f/2.2 前置摄像头1：f/2.4"
+          ],
+          [
+            "传感器尺寸",
+            "1/1.56\"大底"
+          ],
+          [
+            "防抖功能",
+            "后置摄像头1：AIS电子防抖 后置摄像头2：OIS光学防抖,AIS电子防抖 后置摄像头3：AIS电子防抖 前置摄像头1：AIS电子防抖"
+          ],
+          [
+            "后置拍照功能",
+            "最大可支持8192 × 6144像素,寰宇追月、录中闪拍、人像模式(原生、质感、妆感)、端侧AI长焦增强*、个性色卡、AI辅助构图、舞台模式、AI云增强、AI动态照片、视频 HDR Vivid、风驰闪拍、夜景模式、长焦画中画、高像素模式、延时摄影、专业模式、慢动作、全景模式、AI摄影大师、笑脸抓拍、声控拍照、连拍、定时拍摄、自动添加水印、短视频、人像追焦、人像留色、人像虚化、风噪抑制"
+          ],
+          [
+            "后置视频拍摄",
+            "最大可支持4K（3840 × 2160）视频录制，支持AIS防抖；支持1080p@480fps超级慢动作视频"
+          ],
+          [
+            "前置拍照功能",
+            "最大可支持8192 × 6144像素,录中闪拍、个性色卡、AI云增强、AI动态照片、视频 HDR Vivid、慢动作、人像模式(原生、质感、妆感)、延时摄影、笑脸抓拍、自拍镜像、声控拍照、夜景模式、高像素、自动添加水印、定时拍摄、风噪抑制"
+          ],
+          [
+            "前置视频拍摄",
+            "最大可支持4K（3840 × 2160）视频录制，支持AIS防抖；支持1080p@120fps慢动作视频"
+          ],
+          [
+            "闪光灯",
+            "后置：LED 闪光灯>"
+          ],
+          [
+            "变焦倍数",
+            "后置摄像头：支持3.3倍光学变焦（3.3倍变焦为近似值，镜头焦段分别为23 mm，88 mm） 支持100倍数字变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G> ，2G"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "IEEE 802.11 a/b/g/n/ac/ax/be，2x2 MIMO，EHT80，2.4GHz和5GHz，WLAN热点，WLAN直连"
+          ],
+          [
+            "定位导航",
+            "支持 GPS（L1 + L5 双频）/AGPS/GLONASS/北斗（B1I + B1C + B2a 三频）/GALILEO（E1 + E5a 双频）/QZSS（L1 + L5 双频）/NavIC"
+          ],
+          [
+            "蓝牙",
+            "蓝牙6.0，支持低功耗蓝牙，支持SBC、AAC，支持LDAC和L2HC高清音频"
+          ],
+          [
+            "NFC",
+            "支持NFC>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "连接与共享",
+            "OTG"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ],
+          [
+            "其他网络参数",
+            "支持天际通,星闪E2.0"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸电池"
+          ],
+          [
+            "电池容量",
+            "7000mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "100w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "支持防尘抗水（IP65）"
+          ],
+          [
+            "感应器",
+            "环境光传感器，红外传感器，指纹传感器：（侧边指纹），陀螺仪，指南针，NFC，接近光传感器，重力传感器，其他传感器：Flicker传感器"
+          ],
+          [
+            "音频支持",
+            "mp3、mp4、ogg、amr、wav、flac、aac"
+          ],
+          [
+            "视频支持",
+            "mp4"
+          ],
+          [
+            "多媒体技术",
+            "Huawei Histen"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "手机（内置电池） x1 华为冰糖全能充电器（Max 100W） x 1 USB Type-C 数据线 x1 保护膜（出厂已贴在手机上） x1 快速指南 x1 取卡针 x1 TPU保护壳 x1"
+          ]
+        ]
+      },
+      {
+        "group": "保修信息",
+        "items": [
+          [
+            "保修政策",
+            "全国联保，享受三包服务"
+          ],
+          [
+            "质保时间",
+            "1年"
+          ],
+          [
+            "质保备注",
+            "主机1年，充电器1年"
+          ],
+          [
+            "详细内容",
+            "自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受15日内退货或更换一部享有重新计算1年保修期的设备，15日以上在质保期内根据具体情况更换相关部件或提供一台部分重新装配的设备，仅保留消费者现有设备后盖。更换的部件和"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.68 英寸 OLED · 120Hz",
+        "valueAtAudit": "6.68 英寸 OLED · 120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2168/2167426/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.68 英寸 OLED · 120Hz",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "麒麟 9010S",
+        "valueAtAudit": "麒麟 9010S",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2168/2167426/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 麒麟 9010S",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素超高清 + 5000 万像素 RYYB潜望长焦 + 150 万像素多光谱通道红枫原色；前置 5000 万像素",
+        "valueAtAudit": "5000 万像素超高清 + 5000 万像素 RYYB潜望长焦 + 150 万像素多光谱通道红枫原色；前置 5000 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2168/2167426/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素超高清 + 5000 万像素 RYYB潜望长焦 + 150 万像素多光谱通道红枫原色；前置 5000 万像素",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "7000mAh",
+        "valueAtAudit": "7000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2168/2167426/param.shtml",
+        "evidenceText": "参数表/官方页：电池 7000mAh",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线",
+        "valueAtAudit": "100W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2168/2167426/param.shtml",
+        "evidenceText": "参数表/官方页：充电 100W 有线",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "199g",
+        "valueAtAudit": "199g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2168/2167426/param.shtml",
+        "evidenceText": "参数表/官方页：重量 199g",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年06月05日",
+        "valueAtAudit": "2026年06月05日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://dzrb.dzng.com/general/0/NEWS3426420ZQXVSYBBIHKCK",
+        "evidenceText": "发布会/官网信息：2026年06月05日",
+        "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2999,
+        "valueAtAudit": 2999,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/press/events/2026/nova-16-series-and-all-scenario-new-product-launch-event",
+        "evidenceText": "首发价来源：华为官网·nova 16 系列发布会页",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
+  },
+  {
+    "id": "realme-gt8",
+    "brand": "realme",
+    "name": "真我 GT8",
+    "year": 2025,
+    "type": "性能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.79 英寸 AMOLED · 144Hz",
+    "chip": "骁龙 8 Elite",
+    "camera": "5000 万像素理光GR防眩光主摄 + 800 万像素超广角 + 5000 万像素长焦；前置 1600 万像素",
+    "battery": "7000mAh",
+    "charging": "100W 有线",
+    "weight": "214g",
+    "storage": "12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+    "os": "realme UI 6.0",
+    "priceCN": 2899,
+    "priceText": "官方首发起售价（12GB+256GB）；16GB+1TB 4099 元",
+    "selling": "理光 GR 影像 + 骁龙 8 Elite，7000mAh",
+    "bestFor": [
+      "性价比",
+      "游戏性能",
+      "日常全能"
+    ],
+    "source": "https://detail.zol.com.cn/2146/2145216/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2025-10",
+    "launchDateDisplay": "2025年10月21日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "16GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB",
+      "16GB+1TB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://www.toutiao.com/article/7563929910687875636",
+    "priceSource": "https://tech.ifeng.com/c/8ndO0euK7HM",
+    "priceSourceName": "凤凰网科技·真我 GT8 系列发布（含五档价目）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-24 新增机型：64 项参数（中关村在线，标题比对通过）",
+      "2899 元起（12GB+256GB），凤凰网、网易、真我社区三处价目一致。",
+      "该机 2025 年 10 月发布，此前库里只有 GT8 Pro，本次补齐标准版。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2146/2145216/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 64,
+    "specCollectedAt": "2026-10-24",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2025年10月21日"
+          ],
+          [
+            "上市日期",
+            "2025年10月21日"
+          ],
+          [
+            "产品型号",
+            "真我 GT8"
+          ],
+          [
+            "使用场景",
+            "三防手机> ， 游戏手机> ， 拍照手机> ， 智能手机> ， 4G手机> ， 5G手机> ， 3G手机> ， 新品手机> ， 热门手机> ， AI手机>"
+          ],
+          [
+            "机身颜色",
+            "怀特，纳维，格林"
+          ],
+          [
+            "指纹识别",
+            "超声波屏幕指纹识别>"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "161.8mm"
+          ],
+          [
+            "宽度",
+            "76.87mm"
+          ],
+          [
+            "厚度",
+            "8.2mm"
+          ],
+          [
+            "重量",
+            "214g"
+          ],
+          [
+            "其他外观参数",
+            "厚：约8.2毫米（怀特，纳维），约8.3毫米（格林）,重量：约214克（怀特，纳维），约209克（格林）"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "高通 骁龙 8 Elite 更多高通 骁龙 8 Elite手机> ，"
+          ],
+          [
+            "CPU频率",
+            "最高主频4.32GHz"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "高通 Adreno 830"
+          ],
+          [
+            "RAM容量",
+            "12GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR5X>"
+          ],
+          [
+            "ROM容量",
+            "512GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 4.0>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "Android 15"
+          ],
+          [
+            "操作系统",
+            "realme UI 6.0"
+          ],
+          [
+            "散热",
+            "石墨烯冰感双层散热"
+          ],
+          [
+            "振动马达",
+            "X轴线性马达"
+          ],
+          [
+            "扬声器",
+            "超线性双扬声器,OReality Audio,双mic降噪"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.79英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "3136x1440px"
+          ],
+          [
+            "屏幕刷新率",
+            "144Hz>"
+          ],
+          [
+            "像素密度",
+            "508ppi"
+          ],
+          [
+            "触控采样率",
+            "最高支持3200Hz瞬时触控采样率"
+          ],
+          [
+            "屏幕色彩",
+            "自然模式：100% DCI -P3 100%sRGB 专业模式：100% DCI -P3 100%sRGB 鲜明模式：100% DCI -P3 100%sRGB"
+          ],
+          [
+            "对比度",
+            "静态对比度最高5000000:1(典型值)"
+          ],
+          [
+            "屏幕亮度",
+            "全局默认最高亮度：1000 尼特典型值 全局激发最高亮度：2000 尼特典型值 屏幕最高峰值亮度：7000 尼特典型值"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "四摄像头（后三）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：理光GR防眩光主摄 后置摄像头2：超广角镜头 后置摄像头3：长焦摄像头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：800万像素 后置摄像头3：5000万像素 前置摄像头1：1600万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头3：f/2.8 前置摄像头1：f/2.4"
+          ],
+          [
+            "广角",
+            "后置摄像头1：84° 后置摄像头2：112°"
+          ],
+          [
+            "传感器型号",
+            "索尼IMX896"
+          ],
+          [
+            "传感器尺寸",
+            "1/1.56\""
+          ],
+          [
+            "对焦方式",
+            "后置摄像头1：AF 后置摄像头3：AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：24mm 后置摄像头2：16mm 后置摄像头3：80mm 前置摄像头1：23mm"
+          ],
+          [
+            "防抖功能",
+            "后置摄像头1：两轴OIS防抖 后置摄像头2：EIS电子防抖 后置摄像头3：两轴OIS防抖"
+          ],
+          [
+            "镜头片数",
+            "后置摄像头1：7P 后置摄像头2：5P 后置摄像头3：4P 前置摄像头1：4P"
+          ],
+          [
+            "后置拍照功能",
+            "风光，视频，照片，人像，理光GR，夜景，专业，高像素，全景，美食，专业视频，慢动作，延时摄影，长曝光，多景录像，水下相机，AI证件照，超级文本，扫一扫，星空，移轴"
+          ],
+          [
+            "后置视频拍摄",
+            "8K 基础拍摄：30 fps 4K 基础拍摄：120 fps，60 fps，30 fps 1080P 基础拍摄：120 fps，60 fps，30 fps 720P 基础拍摄：60 fps，30 fps 4K 视频防抖拍摄：120 fps，60 fps，30 fps 1080P 视频防抖拍摄：120 fps，60 fps，30 fps 720P 视频防抖拍摄：60 fps，30 fps 4K 慢动作视频拍摄：120fps 1080P 慢动作视频拍摄：240 fps，120 fps 720P 慢动作视频拍摄：480 fps，240 fps 4K 延时摄影拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持专业视频模式视频拍摄 支持多景录像视频拍摄 支持HDR 视频拍摄"
+          ],
+          [
+            "前置拍照功能",
+            "照片，视频，人像，夜景，全景，多景录像，延时摄影，水下摄影，AI证件照"
+          ],
+          [
+            "变焦倍数",
+            "后置照片拍摄最高支持 3.5 倍光学变焦，最高支持 120 倍数码变焦,后置支持视频变焦拍摄：最高支持 3.5 倍光学变焦，最高支持 30 倍数码变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G>"
+          ],
+          [
+            "5G网络",
+            "移动5G（NR），联通5G（NR），电信5G（NR），广电5G（NR） 更多5G手机＞"
+          ],
+          [
+            "网络频段",
+            "G GSM：850/900/1800 2G CDMA：/ 3G WCDMA：频段 1/4/5/6/8/19 4G LTE FDD：频段 1/3/4/5/8/18/19/20/26/28A/66 4G LTE TDD：频段 34/38/39/40/41/42/48 5G NR：n1/n3/n5/n8/n18/n20/n26/n28A/n38/n40/n41/n48/n66/n77/n78"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "支持WiFi 7（802.11be），支持WiFi 6（802.11ax），支持WiFi 5（802.11ac），支持802.11a/b/g/n，支持WiFi Display 支持WLAN 网络分享，支持网络叠加：WiFi 2.4GHz 2×2+WiFi 5GHz 2×2 并发，支持WiFi 5GHz 160MHz，支持2×2 MIMO"
+          ],
+          [
+            "定位导航",
+            "双频支持：北斗（B1I+B1C+B2a），GPS（L1+L5），GLONASS（G1），Galileo（E1+E5a），QZSS（L1+L5）"
+          ],
+          [
+            "蓝牙",
+            "蓝牙 6.0，低功耗蓝牙，SBC，AAC，LDAC，aptX，aptX HD，LHDC 5.0，LC3"
+          ],
+          [
+            "NFC",
+            "支持NFC>"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸式电池"
+          ],
+          [
+            "电池容量",
+            "7000mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "100w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "感应器",
+            "接近感应器，环境光传感器，色温传感器，电子罗盘，加速度传感器，陀螺仪，红外遥控"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "主机 x1 充电器 x1 数据线 x1 取卡针 x1 保护壳 x1 快速入门指南 x1"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.79 英寸 AMOLED · 144Hz",
+        "valueAtAudit": "6.79 英寸 AMOLED · 144Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145216/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.79 英寸 AMOLED · 144Hz",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 Elite",
+        "valueAtAudit": "骁龙 8 Elite",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145216/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 骁龙 8 Elite",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素理光GR防眩光主摄 + 800 万像素超广角 + 5000 万像素长焦；前置 1600 万像素",
+        "valueAtAudit": "5000 万像素理光GR防眩光主摄 + 800 万像素超广角 + 5000 万像素长焦；前置 1600 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145216/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素理光GR防眩光主摄 + 800 万像素超广角 + 5000 万像素长焦；前置 1600 万像素",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "7000mAh",
+        "valueAtAudit": "7000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145216/param.shtml",
+        "evidenceText": "参数表/官方页：电池 7000mAh",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线",
+        "valueAtAudit": "100W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145216/param.shtml",
+        "evidenceText": "参数表/官方页：充电 100W 有线",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "214g",
+        "valueAtAudit": "214g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145216/param.shtml",
+        "evidenceText": "参数表/官方页：重量 214g",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+512GB",
+        "valueAtAudit": "12GB+512GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145216/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 12GB+512GB",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年10月21日",
+        "valueAtAudit": "2025年10月21日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.toutiao.com/article/7563929910687875636",
+        "evidenceText": "发布会/官网信息：2025年10月21日",
+        "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 2899,
+        "valueAtAudit": 2899,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://tech.ifeng.com/c/8ndO0euK7HM",
+        "evidenceText": "首发价来源：凤凰网科技·真我 GT8 系列发布（含五档价目）",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      }
+    ]
+  },
+  {
+    "id": "hua-pura90",
+    "brand": "Huawei",
+    "name": "HUAWEI Pura 90",
+    "year": 2026,
+    "type": "影像旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.8 英寸 OLED · 1–120Hz",
+    "chip": "麒麟 9010S",
+    "camera": "四摄：5000 万像素超聚光 + 1250 万像素超广角 + 5000 万像素超聚光微距长焦摄像；前置 5000 万像素",
+    "battery": "6500mAh",
+    "charging": "100W 有线 / 50W 无线",
+    "weight": "210g",
+    "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+    "os": "HarmonyOS 6.1",
+    "priceCN": 4699,
+    "priceText": "官方起售价（12GB+256GB）；16GB+512GB 5699 元",
+    "selling": "麒麟 9010S + 红枫影像，6500mAh 大电池",
+    "bestFor": [
+      "拍照视频",
+      "日常全能",
+      "续航"
+    ],
+    "source": "https://detail.zol.com.cn/2163/2162693/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-04",
+    "launchDateDisplay": "2026年04月29日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://www.cnii.com.cn/rmydb/202604/t20260420_731175.html",
+    "priceSource": "https://consumer.huawei.com/cn/press/events/2026/huawei-pura-90-series-and-new-product-launch-event",
+    "priceSourceName": "华为官网·Pura 90 系列发布会页",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-24 新增机型：64 项参数（中关村在线，标题比对通过）",
+      "4 月 20 日发布、4 月 29 日 10:08 开售；4699 元起，华为官网发布会页与科技日报、中国工信新闻网一致。",
+      "ZOL 参数页未列「上市日期」，只有「国内发布时间」，开售日取发布会口径。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2163/2162693/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 64,
+    "specCollectedAt": "2026-10-24",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "电商报价",
+            "￥4699"
+          ],
+          [
+            "国内发布时间",
+            "2026年4月20日"
+          ],
+          [
+            "国外发布时间",
+            "2026年4月20日"
+          ],
+          [
+            "产品型号",
+            "HUAWEI Pura 90"
+          ],
+          [
+            "使用场景",
+            "拍照手机> ， 智能手机> ， 新品手机> ， 热门手机> ， 自拍手机> ， 5G手机> ， 4G手机> ， 3G手机> ， 智能手机> ， 快充手机> ， AI手机>"
+          ],
+          [
+            "机身材质",
+            "后盖：锦纤 边框：铝合金 查看外观图>"
+          ],
+          [
+            "机身颜色",
+            "丝绒黑，雪域白，罗兰紫"
+          ],
+          [
+            "指纹识别",
+            "侧面指纹识别>"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "163.1mm"
+          ],
+          [
+            "宽度",
+            "78.1mm"
+          ],
+          [
+            "厚度",
+            "7mm"
+          ],
+          [
+            "重量",
+            "210g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "海思 麒麟 9010S 更多海思 麒麟 9010S手机> ，"
+          ],
+          [
+            "RAM容量",
+            "12GB>"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "操作系统",
+            "HarmonyOS 6.1"
+          ],
+          [
+            "扬声器",
+            "立体声扬声器"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.8英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2856x1320px"
+          ],
+          [
+            "屏幕材质",
+            "OLED>"
+          ],
+          [
+            "屏幕刷新率",
+            "120Hz（1-120）>"
+          ],
+          [
+            "像素密度",
+            "460ppi"
+          ],
+          [
+            "触摸屏类型",
+            "多点触控，最多支持10点触控"
+          ],
+          [
+            "触控采样率",
+            "300Hz"
+          ],
+          [
+            "屏幕色彩",
+            "10.7亿色，P3广色域"
+          ],
+          [
+            "屏幕技术",
+            "昆仑玻璃>"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "六摄像头（前双+后四）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：超聚光摄像头 后置摄像头2：超广角摄像头 后置摄像头3：超聚光微距长焦摄像 后置摄像头4：红枫原色摄像头 前置摄像头1：超聚光人像摄像头 前置摄像头2：红枫原色摄像头"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：1250万像素 后置摄像头3：5000万像素 前置摄像头1：5000万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头2：f/2.2 后置摄像头3：f/2.2 前置摄像头1：f/2.0"
+          ],
+          [
+            "防抖功能",
+            "后置摄像头1：OIS光学防抖,AIS电子防抖 后置摄像头2：AIS电子防抖 后置摄像头3：OIS光学防抖,AIS电子防抖 前置摄像头1：AIS电子防抖"
+          ],
+          [
+            "后置拍照功能",
+            "后置摄像头：最大可支持8192 × 6144像素,AI 智拍*、AI 辅助构图*、AI 姿态推荐*、个性色卡*、AI 动态照片、视频 HDR Vivid、闪拍、高画质模式、夜景模式、超级微距、微距视频、微距画中画、长焦画中画、高像素模式、延时摄影、超大广角、大光圈虚化、人像模式、专业模式、慢动作、全景模式、流光快门、水印、AI 摄影大师、笑脸抓拍、声控拍照、定时拍照、连拍"
+          ],
+          [
+            "后置视频拍摄",
+            "最大可支持4K（3840 × 2160）视频录制，支持AIS防抖；支持1080p@480fps超级慢动作视频"
+          ],
+          [
+            "前置拍照功能",
+            "最大可支持8192 × 6144像素,AI 姿态推荐*、个性色卡*、AI 动态照片、视频 HDR Vivid、慢动作、人像模式、延时摄影、笑脸抓拍、自拍镜像、声控拍照、定时拍照 *需HOTA升级支持"
+          ],
+          [
+            "前置视频拍摄",
+            "最大可支持4K（3840 × 2160）视频录制，支持AIS防抖；支持1080p@120fps超级慢动作视频"
+          ],
+          [
+            "闪光灯",
+            "后置：闪光灯>"
+          ],
+          [
+            "变焦倍数",
+            "后置摄像头：支持3.7倍光学变焦（3.7倍变焦为近似值，镜头焦段分别为 24 mm，13 mm，88 mm） 支持 100 倍数字变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G>"
+          ],
+          [
+            "5G网络",
+            "移动5G（NR），联通5G（NR），电信5G（NR），广电5G（NR） 更多5G手机＞"
+          ],
+          [
+            "4G网络",
+            "全网通：移动TD-LTE，联通TD-LTE，联通FDD-LTE，电信TD-LTE，电信FDD-LTE"
+          ],
+          [
+            "3G网络",
+            "移动3G（TD-SCDMA），联通3G（WCDMA），电信3G（CDMA2000）"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "2.4GHz和5GHz，IEEE 802.11 a/b/g/n/ac/ax/be，2x2 MIMO，EHT160，8 Spatial-stream Sounding MU-MIMO"
+          ],
+          [
+            "定位导航",
+            "支持 GPS（L1 + L5 双频）/AGPS/GLONASS/北斗（B1I + B1C + B2a + B2b 四频）/GALILEO（E1 + E5a + E5b 三频）/QZSS（L1 + L5 双频）/NavIC"
+          ],
+          [
+            "蓝牙",
+            "蓝牙6.0，支持低功耗蓝牙，支持SBC、AAC，支持LDAC和L2HC高清音频"
+          ],
+          [
+            "NFC",
+            "支持NFC>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "连接与共享",
+            "OTG"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ],
+          [
+            "其他网络参数",
+            "支持，星闪E2.0,天际通"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸式电池"
+          ],
+          [
+            "电池容量",
+            "6500mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "100w"
+          ],
+          [
+            "无线充电",
+            "50w"
+          ],
+          [
+            "无线反向充电",
+            "支持，5w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "支持防尘抗水（IP68，IP69）"
+          ],
+          [
+            "感应器",
+            "环境光传感器，红外传感器，指纹传感器：支持（侧边指纹），霍尔传感器，陀螺仪，指南针，NFC，接近光传感器，重力传感器，其他传感器：姿态感应器、Camera激光对焦传感器"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "手机（含内置电池） x1 华为SuperCharge充电器 x1 USB Type-C 数据线 x1 透明保护壳 x1 保护膜（出厂贴在手机上） x1 快速指南 x1 取卡针 x1"
+          ]
+        ]
+      },
+      {
+        "group": "保修信息",
+        "items": [
+          [
+            "保修政策",
+            "全国联保，享受三包服务"
+          ],
+          [
+            "质保时间",
+            "1年"
+          ],
+          [
+            "质保备注",
+            "主机1年，充电器1年"
+          ],
+          [
+            "详细内容",
+            "自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受15日内退货或更换一部享有重新计算1年保修期的设备，15日以上在质保期内根据具体情况更换相关部件或提供一台部分重新装配的设备，仅保留消费者现有设备后盖。更换的部件和"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.8 英寸 OLED · 1–120Hz",
+        "valueAtAudit": "6.8 英寸 OLED · 1–120Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2163/2162693/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.8 英寸 OLED · 1–120Hz",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "麒麟 9010S",
+        "valueAtAudit": "麒麟 9010S",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2163/2162693/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 麒麟 9010S",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "四摄：5000 万像素超聚光 + 1250 万像素超广角 + 5000 万像素超聚光微距长焦摄像；前置 5000 万像素",
+        "valueAtAudit": "四摄：5000 万像素超聚光 + 1250 万像素超广角 + 5000 万像素超聚光微距长焦摄像；前置 5000 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2163/2162693/param.shtml",
+        "evidenceText": "参数表/官方页：影像 四摄：5000 万像素超聚光 + 1250 万像素超广角 + 5000 万像素超聚光微距长焦摄像；前置 5000 万像素",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "6500mAh",
+        "valueAtAudit": "6500mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2163/2162693/param.shtml",
+        "evidenceText": "参数表/官方页：电池 6500mAh",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 50W 无线",
+        "valueAtAudit": "100W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2163/2162693/param.shtml",
+        "evidenceText": "参数表/官方页：充电 100W 有线 / 50W 无线",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "210g",
+        "valueAtAudit": "210g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2163/2162693/param.shtml",
+        "evidenceText": "参数表/官方页：重量 210g",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "valueAtAudit": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2163/2162693/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 12GB+256GB",
+        "note": "2026-10-24 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年04月29日",
+        "valueAtAudit": "2026年04月29日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://www.cnii.com.cn/rmydb/202604/t20260420_731175.html",
+        "evidenceText": "发布会/官网信息：2026年04月29日",
+        "note": "2026-10-24 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "官方首发起售价",
+        "value": 4699,
+        "valueAtAudit": 4699,
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/cn/press/events/2026/huawei-pura-90-series-and-new-product-launch-event",
+        "evidenceText": "首发价来源：华为官网·Pura 90 系列发布会页",
+        "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
       }
     ]
   }
