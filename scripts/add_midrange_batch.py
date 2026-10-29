@@ -25,12 +25,14 @@ CATALOG = ROOT / "data" / "phones.json"
 ROWS = ROOT / "_jst" / "mid_rows.json"
 
 BRAND_MAP = {"OPPO": "OPPO", "vivo": "vivo", "华为": "Huawei", "小米": "Xiaomi",
-             "红米": "Xiaomi", "荣耀": "Honor"}
-BRAND_PREFIX = {"OPPO": "OPPO ", "vivo": "vivo ", "华为": "HUAWEI ", "小米": "Xiaomi ", "红米": "REDMI ", "荣耀": "荣耀"}
+             "红米": "Xiaomi", "荣耀": "Honor", "iQOO": "iQOO", "真我": "realme",
+             "三星": "Samsung", "努比亚": "nubia", "魅族": "MEIZU"}
+BRAND_PREFIX = {"OPPO": "OPPO ", "vivo": "vivo ", "华为": "HUAWEI ", "小米": "Xiaomi ", "红米": "REDMI ",
+                "荣耀": "荣耀", "iQOO": "iQOO ", "真我": "真我 ", "三星": "三星", "努比亚": "努比亚", "魅族": "魅族"}
 
 # 机型线 → 定位
-IMAGE_LINES = ("S60", "Civi", "Reno", "nova")
-BATTERY_LINES = ("Y600", "Y6", "Y60", "畅享", "Play", "畅玩", "A7", "A6s", "Note")
+IMAGE_LINES = ("S60", "Civi", "Reno", "nova", "Neo7")
+BATTERY_LINES = ("Y600", "Y6", "Y60", "畅享", "Play", "畅玩", "A7", "A6s", "Note", "Z11", "Z10", "Power", "X70")
 BEST_FOR = {
     "中端影像": ["拍照视频", "日常全能"],
     "中端续航": ["续航", "日常全能"],
@@ -39,19 +41,21 @@ BEST_FOR = {
 
 
 def classify(name: str) -> str:
-    if any(k in name for k in IMAGE_LINES):
+    """按机型线归类：S/Reno/Civi/nova 走影像，Y/A/Z/Note/畅享/畅玩/Play/Power/X 走续航，其余算全能。"""
+    n = name
+    if re.search(r"(S\d{2}\b|Reno|Civi|nova)", n):
         return "中端影像"
-    if any(k in name for k in BATTERY_LINES):
+    if re.search(r"(Y\d|A\d|Z\d|X\d{2}|\d{2}C\b|Note|畅享|畅玩|Play|Power)", n):
         return "中端续航"
     return "中端全能"
 
 
 def clean_name(raw: str, brand_cn: str) -> str:
     n = raw.strip()
-    for pref in (brand_cn, brand_cn + " ", "Redmi（红米）", "Redmi "):
+    for pref in (brand_cn, brand_cn + " ", "Redmi（红米）", "Redmi ", "iQOO", "真我", "realme"):
         if n.startswith(pref):
             n = n[len(pref):].strip()
-    n = re.sub(r"^(OPPO|vivo|HUAWEI|Xiaomi|REDMI|荣耀|华为|小米|红米)\s*", "", n)
+    n = re.sub(r"^(OPPO|vivo|HUAWEI|Xiaomi|REDMI|荣耀|华为|小米|红米|iQOO|realme|真我)\s*", "", n)
     n = re.sub(r"\s+", " ", n)
     # 型号里的数字前后补空格：Note17 → Note 17，畅享100 → 畅享 100
     n = re.sub(r"(Note|畅享|Turbo)(\d)", r"\1 \2", n)
@@ -72,8 +76,15 @@ def main() -> None:
     index = {p["id"]: i for i, p in enumerate(catalog)}
 
     added = 0
+    seen_names: set[tuple[str, str]] = set()
+    rows.sort(key=lambda x: x["min"])
     for r in rows:
         name = clean_name(r["name"], r["brand"])
+        name_key = (BRAND_MAP[r["brand"]], name)
+        if name_key in seen_names:
+            print(f"skip duplicate name: {name}")
+            continue
+        seen_names.add(name_key)
         t = classify(name)
         skus = [norm_sku(s) for s in r.get("skus") or []]
         skus = [s for s in skus if re.match(r"^\d+GB\+\d+(GB|TB)$", s)]
@@ -86,7 +97,13 @@ def main() -> None:
         month = int(m.group(2) or 1) if m else 1
         day = int(m.group(3) or 1) if m else 1
 
-        slug = re.sub(r"[^a-z0-9]+", "-", f"{BRAND_MAP[r['brand']]}-{name}".lower()).strip("-")
+        # id：品牌前缀 + 去掉品牌名后的型号；中文词做简单转写，避免出现 non-ascii 或空 slug
+        base_name = re.sub(r"^(HUAWEI|Xiaomi|REDMI|OPPO|vivo|iQOO|realme|荣耀|华为|小米|红米|真我)\s*", "", name)
+        for cn, en in (("畅享", "changxiang"), ("畅玩", "changwan"), ("超级版", "super"),
+                       ("至尊版", "ultra"), ("元气版", "yuanqi"), ("活力版", "huoli")):
+            base_name = base_name.replace(cn, en)
+        slug_body = re.sub(r"[^a-z0-9]+", "-", base_name.lower()).strip("-") or r["pid"]
+        slug = f"{BRAND_MAP[r['brand']].lower()}-{slug_body}"
         meta = {
             "id": slug,
             "brand": BRAND_MAP[r["brand"]],
