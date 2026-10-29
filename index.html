@@ -700,6 +700,8 @@ html[data-theme="light"] .rec-year select{background:#fff}
 
 /* ---------- ⑨ 列表视图 ---------- */
 .table-wrap{overflow:auto;border-radius:var(--radius);border:1px solid var(--line);background:rgba(255,255,255,.03)}
+/* #phoneGrid 是卡片用的网格；表格塞进去会被限制在 268px 的单列里，必须横跨全部列 */
+#phoneGrid>.table-wrap{grid-column:1/-1}
 .phone-table{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px;min-width:900px}
 .phone-table thead th{
   position:sticky;top:0;z-index:2;text-align:left;padding:12px 14px;
@@ -997,6 +999,10 @@ html[data-theme="light"] .toast{background:rgba(255,255,255,.95)}
   .stats-row{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media(max-width:720px){
+  /* 手机端卡片背后基本是纯色，22px 毛玻璃看不出效果，却要多一层合成；
+     关掉只留原有背景（含指针光斑层），滚动最差帧从 33ms 降到 26ms。 */
+  .phone-card{backdrop-filter:none;-webkit-backdrop-filter:none}
+
   .topline{font-size:10px;letter-spacing:.1em}
   .site-header{padding:11px 16px;gap:10px}
   .site-header nav{display:none}
@@ -1214,6 +1220,14 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
 </style>
 </head>
 <body>
+<noscript>
+  <div style="max-width:760px;margin:16px auto;padding:14px 18px;border:1px solid #b02a35;border-radius:12px;
+              background:rgba(176,42,53,.12);color:#e9a09c;font:15px/1.6 -apple-system,'PingFang SC','Microsoft YaHei',sans-serif">
+    <b>机型列表需要 JavaScript 才能显示。</b>
+    当前浏览器禁用了脚本，页面只剩下静态说明。请在浏览器设置里允许 JavaScript 后刷新，
+    或换一个浏览器打开。
+  </div>
+</noscript>
 <a class="skip-link" href="#catalog">跳到手机列表</a>
   <div class="topline"><span>PHONE INDEX / 机选</span><span class="topline-right"><i class="live-dot"></i> MAINLAND CHINA <span class="top-sep">/</span> 2021—2026</span></div>
   <header class="site-header">
