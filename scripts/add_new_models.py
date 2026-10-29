@@ -428,8 +428,122 @@ NEW = [
             "10 月 21 日发布、10 月 30 日正式首销；首销限时 3199 元起，见中国财富网报道与百度百科词条。",
         ],
     },
+    # ---------------- 2026-10-29 一加 Ace 7 系列（发布当日补录） ----------------
+    {
+        "id": "oneplus-ace7", "brand": "OnePlus", "name": "一加 Ace 7",
+        "type": "性能旗舰", "launchMonth": "2026-10", "launchDateDisplay": "2026年10月29日",
+        "priceCN": 4399, "priceType": "official_launch_msrp",
+        "priceText": "官方价（12GB+256GB）；16+256 4899 / 12+512 5199 / 16+512 5699",
+        "priceSource": "https://m.ithome.com/html/1019744.htm",
+        "priceSourceName": "IT之家·一加 Ace 7/Pro 系列发布（含全系价目表）",
+        "announcementSource": "https://www.oneplus.com/cn/ace-7",
+        "selling": "9000mAh + 185Hz 东方屏 + 双路冰河风冷，Ace 系列首次上主动散热",
+        "bestFor": ["游戏性能", "续航", "日常全能"],
+        "storageOptions": ["12GB+256GB", "16GB+256GB", "12GB+512GB", "16GB+512GB"],
+        "quoteTargetStorage": "12GB+256GB",
+        "official": "https://www.oneplus.com/cn/ace-7",
+        "officialFields": ["display", "battery", "charging", "os"],
+        "sourceName": "发布会报道 + 厂商官网（人工整理）",
+        "manualSpecsSource": "https://antutu.com/doc/138197",
+        "manualSpecs": [
+            {"group": "基本参数", "items": [
+                ["国内发布时间", "2026年10月29日"], ["上市日期", "2026年10月29日"],
+                ["产品型号", "一加 Ace 7"], ["机身颜色", "淬火、极夜黑、流光白"]]},
+            {"group": "外形", "items": [
+                ["长度", "162.30mm"], ["宽度", "77.37mm"],
+                ["厚度", "8.59mm（淬火）/ 8.50mm（黑白）"],
+                ["重量", "约 223g（淬火）/ 约 217g（黑白）"], ["中框材质", "金属中框"]]},
+            {"group": "屏幕", "items": [
+                ["屏幕尺寸", "6.78 英寸 1.5K（2772 × 1272）"],
+                ["屏幕类型", "第四代东方屏，京东方 X4 发光材料，LTPO 直屏"],
+                ["屏幕刷新率", "1–165Hz 自适应（全局 165Hz），适配游戏中最高 185Hz"],
+                ["屏幕亮度", "峰值 3600nit"], ["其他", "10.7 亿色、100% DCI-P3、3840Hz 高频 PWM 调光"]]},
+            {"group": "硬件", "items": [
+                ["CPU型号", "第五代骁龙8至尊版 V Series（3nm，最高 4.6GHz）"],
+                ["RAM容量", "12GB / 16GB（LPDDR5X Ultra）"],
+                ["ROM容量", "256GB / 512GB（UFS 4.1）"],
+                ["操作系统", "ColorOS 17"],
+                ["散热", "双路冰河风冷（主动风扇）+ 6350mm² VC + 14 层塔式鳍片"]]},
+            {"group": "摄像头", "items": [
+                ["后置摄像头1", "2 亿像素三星 HP5 主摄（1/1.56\"，F1.8，OIS）"],
+                ["前置摄像头", "1600 万像素"],
+                ["变焦", "无长焦镜头，支持数码变焦"]]},
+            {"group": "电池与续航", "items": [
+                ["电池容量", "9000mAh 冰川电池"], ["有线充电", "100W 超级闪充"],
+                ["其他", "支持旁路供电"]]},
+            {"group": "功能与服务", "items": [
+                ["三防功能", "IP66 / IP68 / IP69 / IP69K"],
+                ["生物识别", "3D 超声波屏下指纹"], ["其他", "金属中框、X 轴线性马达、立体声双扬、NFC、红外"]]},
+        ],
+        "overrides": {
+            "display": "6.78 英寸 1.5K LTPO 直屏 · 全局 165Hz / 游戏最高 185Hz",
+            "chip": "第五代骁龙8至尊版 V Series", "battery": "9000mAh",
+            "charging": "100W 有线（无线充电未公布）",
+            "weight": "约 217g（黑白）/ 223g（淬火）", "os": "ColorOS 17",
+            "camera": "2 亿像素三星 HP5 主摄（1/1.56\"，F1.8，OIS），前置 1600 万"},
+        "notes": [
+            "10 月 29 日 19:00 发布并开售；4399 / 4899 / 5199 / 5699 四档价目见 IT之家，与 CNMO、安兔兔口径一致。",
+            "ZOL 参数页仍是上代 Ace 6 的模板（7800mAh、165Hz、ColorOS 16、120W），与官网「9000mAh + 100W + 全局 165Hz + ColorOS 17」冲突，本站按官网与发布会报道填写，参数表按多方报道整理。",
+        ],
+    },
+    {
+        "id": "oneplus-ace7-pro", "brand": "OnePlus", "name": "一加 Ace 7 Pro",
+        "type": "性能旗舰", "launchMonth": "2026-10", "launchDateDisplay": "2026年10月29日",
+        "priceCN": 4799, "priceType": "official_launch_msrp",
+        "priceText": "官方价（12GB+256GB）；16+256 5299 / 12+512 5599 / 16+512 5999 / 16+1TB 7299",
+        "priceSource": "https://m.ithome.com/html/1019744.htm",
+        "priceSourceName": "IT之家·一加 Ace 7/Pro 系列发布（含全系价目表）",
+        "announcementSource": "https://www.oneplus.com/cn/ace-7-pro",
+        "selling": "9000mAh + 满血第五代骁龙8至尊版 + 3.5 倍潜望长焦",
+        "bestFor": ["游戏性能", "拍照视频", "续航"],
+        "storageOptions": ["12GB+256GB", "16GB+256GB", "12GB+512GB", "16GB+512GB", "16GB+1TB"],
+        "quoteTargetStorage": "12GB+256GB",
+        "official": "https://www.oneplus.com/cn/ace-7-pro",
+        "officialFields": ["display", "battery", "charging", "os"],
+        "sourceName": "发布会报道 + 厂商官网（人工整理）",
+        "manualSpecsSource": "https://antutu.com/doc/138197",
+        "manualSpecs": [
+            {"group": "基本参数", "items": [
+                ["国内发布时间", "2026年10月29日"], ["上市日期", "2026年10月29日"],
+                ["产品型号", "一加 Ace 7 Pro"], ["机身颜色", "破风、极夜黑、流光白"]]},
+            {"group": "外形", "items": [
+                ["长度", "162.30mm"], ["宽度", "77.37mm"],
+                ["厚度", "8.59mm（破风）/ 8.50mm（黑白）"],
+                ["重量", "约 225g（破风）/ 约 218g（黑白）"], ["中框材质", "金属中框"]]},
+            {"group": "屏幕", "items": [
+                ["屏幕尺寸", "6.78 英寸 1.5K（2772 × 1272）"],
+                ["屏幕类型", "第四代东方屏，京东方 X4 发光材料，LTPO 直屏"],
+                ["屏幕刷新率", "1–165Hz 自适应（全局 165Hz），适配游戏中最高 185Hz"],
+                ["屏幕亮度", "峰值 3600nit"], ["其他", "10.7 亿色、100% DCI-P3、3840Hz 高频 PWM 调光"]]},
+            {"group": "硬件", "items": [
+                ["CPU型号", "第五代骁龙8至尊版（3nm，最高 4.6GHz，满血版）"],
+                ["RAM容量", "12GB / 16GB（LPDDR5X Ultra）"],
+                ["ROM容量", "256GB / 512GB / 1TB（UFS 4.1）"],
+                ["操作系统", "ColorOS 17"],
+                ["散热", "双路冰河风冷（主动风扇）+ 6350mm² VC + 14 层塔式鳍片"]]},
+            {"group": "摄像头", "items": [
+                ["后置摄像头1", "2 亿像素三星 HP5 主摄（1/1.56\"，F1.8，OIS）"],
+                ["后置摄像头2", "5000 万像素潜望长焦（3.5 倍光学，80mm 人像焦段）"],
+                ["前置摄像头", "1600 万像素"]]},
+            {"group": "电池与续航", "items": [
+                ["电池容量", "9000mAh 冰川电池"], ["有线充电", "100W 超级闪充"],
+                ["其他", "支持旁路供电"]]},
+            {"group": "功能与服务", "items": [
+                ["三防功能", "IP66 / IP68 / IP69 / IP69K"],
+                ["生物识别", "3D 超声波屏下指纹"], ["其他", "风暴岛进风口、星际光效呼吸灯、X 轴线性马达、NFC、红外"]]},
+        ],
+        "overrides": {
+            "display": "6.78 英寸 1.5K LTPO 直屏 · 全局 165Hz / 游戏最高 185Hz",
+            "chip": "第五代骁龙8至尊版", "battery": "9000mAh",
+            "charging": "100W 有线（无线充电未公布）",
+            "weight": "约 218g（黑白）/ 225g（破风）", "os": "ColorOS 17",
+            "camera": "2 亿像素三星 HP5 主摄（OIS）+ 5000 万 3.5 倍潜望长焦，前置 1600 万"},
+        "notes": [
+            "10 月 29 日 19:00 发布并开售；4799 / 5299 / 5599 / 5999 / 7299 五档价目见 IT之家。",
+            "同标准版一样，ZOL 参数页仍套用 Ace 6 模板（7800mAh、120W、ColorOS 16），与官网「9000mAh + 100W + ColorOS 17」冲突，按官网填写。",
+        ],
+    },
 ]
-
 
 def clean_text(x: str) -> str:
     import html as _h
