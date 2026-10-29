@@ -78,6 +78,39 @@ def find_zol_url(p: dict) -> str | None:
     return None
 
 
+# 写进 HTML 的字段：去掉前端从未读取的长文案，以及可推导的冗余子字段
+DROP_FIELDS = ("auditNotes", "quoteTargetStorageReason", "dataNote", "sourceAudit")
+
+
+def slim_record(p: dict) -> dict:
+    """压缩单条记录后再内嵌。
+
+    只删「前端从未读取」的字段，凡是被 auditOf / auditEntry 读到的
+    （value、valueAtAudit、evidenceText、status、sourceUrl）一律保留：
+    详情页的日期精度和「依据」悬浮提示都依赖它们，删了会静默降级。
+    """
+    q = {k: v for k, v in p.items() if k not in DROP_FIELDS}
+    fa = q.get("fieldAudit")
+    if isinstance(fa, list):
+        out = []
+        for x in fa:
+            if not isinstance(x, dict):
+                continue
+            row = {k: v for k, v in x.items() if k != "note"}   # note 只给人看审计日志，前端不读
+            out.append(row)
+        q["fieldAudit"] = out
+    elif isinstance(fa, dict):
+        q["fieldAudit"] = {
+            k: ({kk: vv for kk, vv in v.items() if kk != "note"} if isinstance(v, dict) else v)
+            for k, v in fa.items()
+        }
+    # 没有渠道报价的记录，livePrice* 四个字段全空，写进去只是噪音
+    if q.get("livePrice") is None:
+        for k in ("livePrice", "livePriceStatus", "livePriceCheckedAt", "livePriceNote"):
+            q.pop(k, None)
+    return q
+
+
 def patch_html(path: Path, catalog: list[dict], strict: bool = True) -> None:
     """用 raw_decode 精确定位内嵌数组边界，整体替换后再回读校验。"""
     if not path.is_file():
@@ -92,13 +125,24 @@ def patch_html(path: Path, catalog: list[dict], strict: bool = True) -> None:
     old, end = json.JSONDecoder().raw_decode(html[j:])
     if strict and len(old) != len(catalog):
         raise SystemExit(f"FAIL {path.name}: embedded {len(old)} != catalog {len(catalog)}")
-    body = json.dumps(catalog, ensure_ascii=False, separators=(",", ":"))
+    body = json.dumps([slim_record(p) for p in catalog], ensure_ascii=False, separators=(",", ":"))
     new_html = html[:j] + body + html[j + end:]
     check, _ = json.JSONDecoder().raw_decode(new_html[j:])
     if len(check) != len(catalog):
         raise SystemExit(f"FAIL {path.name}: rewrite count mismatch")
+    # 压缩后必须逐条核对关键字段没被削掉
+    by_id = {x.get("id"): x for x in check}
+    for src in catalog:
+        got = by_id.get(src.get("id"))
+        if got is None:
+            raise SystemExit(f"FAIL {path.name}: lost record {src.get('id')}")
+        if got.get("name") != src.get("name") or got.get("priceType") != src.get("priceType"):
+            raise SystemExit(f"FAIL {path.name}: field drift on {src.get('id')}")
+        if bool(src.get("specs")) != bool(got.get("specs")):
+            raise SystemExit(f"FAIL {path.name}: specs lost on {src.get('id')}")
     path.write_text(new_html, encoding="utf-8")
-    print(f"PATCH {path.name}: {len(check)} records, {sum(1 for x in check if x.get('specs'))} with specs")
+    print(f"PATCH {path.name}: {len(check)} records, {sum(1 for x in check if x.get('specs'))} with specs, "
+          f"{len(new_html)/1048576:.2f} MB")
 
 
 def main() -> None:
