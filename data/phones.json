@@ -100714,5 +100714,3752 @@
       }
     ],
     "officialSpecSource": "https://www.oneplus.com/cn/ace-7-pro"
+  },
+  {
+    "id": "oneplus-15t",
+    "brand": "OnePlus",
+    "name": "一加 15T",
+    "year": 2026,
+    "type": "全能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.32 英寸 AMOLED 直屏 · 165Hz",
+    "chip": "骁龙 8 Elite Gen5",
+    "camera": "5000 万像素主摄 + 5000 万像素长焦；前置 1600 万像素",
+    "battery": "7500mAh",
+    "charging": "100W 有线 / 50W 无线",
+    "weight": "194g",
+    "storage": "12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+    "os": "ColorOS 16",
+    "priceCN": 4299,
+    "priceText": "首发价（12GB+256GB）；16+256 4898 / 12+512 5198 / 16+512 5498 / 16+1TB 5999",
+    "selling": "6.32 英寸小屏 + 7500mAh 大电池，骁龙 8 Elite Gen5",
+    "bestFor": [
+      "日常全能",
+      "续航",
+      "拍照视频"
+    ],
+    "source": "https://detail.zol.com.cn/2161/2160119/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-03",
+    "launchDateDisplay": "2026年03月25日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "16GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB",
+      "16GB+1TB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://wap.zol.com.cn/2161/2160119/index.html",
+    "priceSource": "https://www.toutiao.com/article/7670186300208890370",
+    "priceSourceName": "一加 2026 全系定位解析（含 15T 首发价与国补价）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-29 新增机型：67 项参数（中关村在线，标题比对通过）",
+      "3 月 24 日发布、3 月 25 日上市；首发 4299 元起，国补后 3799 元起，与 ZOL 版本价目表一致。",
+      "小屏线补充机型：6.32 英寸、194g，是 2026 年少数把 7500mAh 塞进小机身的机型。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2161/2160119/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 67,
+    "specCollectedAt": "2026-10-29",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2026年3月24日"
+          ],
+          [
+            "电商报价",
+            "￥4299"
+          ],
+          [
+            "上市日期",
+            "2026年3月24日"
+          ],
+          [
+            "产品型号",
+            "一加 15T"
+          ],
+          [
+            "使用场景",
+            "新品手机> ， 热门手机> ， 自拍手机> ， 5G手机> ， 4G手机> ， 3G手机> ， 智能手机> ， 快充手机> ， AI手机>"
+          ],
+          [
+            "机身颜色",
+            "治愈白巧，纯粹可可，松弛抹茶"
+          ],
+          [
+            "指纹识别",
+            "超声波屏幕指纹识别>"
+          ],
+          [
+            "指纹识别工艺",
+            "屏下超声波指纹"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "150.56mm"
+          ],
+          [
+            "宽度",
+            "71.82mm"
+          ],
+          [
+            "厚度",
+            "8.35mm"
+          ],
+          [
+            "重量",
+            "194g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "骁龙 8 Elite Gen5 更多骁龙 8 Elite Gen5手机> ，"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "高通 Adreno 840"
+          ],
+          [
+            "RAM容量",
+            "12GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR5X Ultra Pro>"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 4.1>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "Android 16"
+          ],
+          [
+            "操作系统",
+            "ColorOS 16"
+          ],
+          [
+            "扬声器",
+            "超线性立体声双扬声器"
+          ],
+          [
+            "其他硬件参数",
+            "四麦克风 AI 降噪"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.32英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2640x1216px"
+          ],
+          [
+            "屏幕材质",
+            "柔性AMOLED>"
+          ],
+          [
+            "屏幕刷新率",
+            "165Hz>"
+          ],
+          [
+            "像素密度",
+            "460ppi"
+          ],
+          [
+            "屏占比",
+            "95.4%"
+          ],
+          [
+            "触控采样率",
+            "最高330Hz，默认120Hz"
+          ],
+          [
+            "屏幕色彩",
+            "标准模式：100% DCI-P3 自然模式：100% DCI-P3 鲜明模式：100% DCI-P3,10.7 亿色（10-bit）"
+          ],
+          [
+            "屏幕亮度",
+            "全局默认最高亮度：800nits典型值 全局激发最高亮度：1800nits典型值"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "三摄像头（后双）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：主摄 后置摄像头2：长焦摄像头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：5000万像素 前置摄像头1：1600万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头2：f/2.8 前置摄像头1：f/2.4"
+          ],
+          [
+            "对焦方式",
+            "后置摄像头1：AF 后置摄像头2：AF 前置摄像头1：AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：24mm 后置摄像头2：85mm 前置摄像头1：24mm"
+          ],
+          [
+            "防抖功能",
+            "后置摄像头1：两轴OIS防抖 后置摄像头2：两轴OIS防抖"
+          ],
+          [
+            "镜头片数",
+            "后置摄像头1：6P 后置摄像头2：4P 前置摄像头1：5P"
+          ],
+          [
+            "后置拍照功能",
+            "照片，视频，人像，夜景，全景，慢动作，长曝光，多景录像，延时摄影，萌拍，高像素，水下相机，大师，AI 证件照，超级文本，移轴，专业视频"
+          ],
+          [
+            "后置视频拍摄",
+            "8K 基础拍摄：30fps；4K 基础拍摄：120fps，60fps，30fps；1080P 基础拍摄：120fps，60fps，30fps；720P 基础拍摄：30fps；4K 视频防抖拍摄：60fps，30fps；1080P 视频防抖拍摄：60fps，30fps；720P 视频防抖拍摄：30fps；4K 慢动作视频拍摄：120fps；1080P 慢动作视频拍摄：240fps，120fps；720P 慢动作视频拍摄：480fps，240fps；4K 延时摄影拍摄：30fps 1080P 延时摄影拍摄：30fps；4K 杜比视界拍摄：120fps，60fps，30fps；1080P 杜比视界拍摄：120fps，60fps，30fps；支持专业模式视频拍摄；支持多景录像视频拍摄；支持 HDR 视频拍摄；支持视频变焦拍摄：最高支持 3.5 倍光学变焦，最高支持 18 倍数码变焦"
+          ],
+          [
+            "前置拍照功能",
+            "照片，视频，人像，夜景，全景，多景录像，延时摄影，萌拍，AI 证件照"
+          ],
+          [
+            "前置视频拍摄",
+            "1080P 基础拍摄：30 fps；720P 基础拍摄：30 fps；1080P 视频防抖拍摄：30 fps；720P 视频防抖拍摄：30 fps；1080P 延时摄影拍摄：30 fps；支持多景录像视频拍摄；支持 HDR 视频拍摄"
+          ],
+          [
+            "变焦倍数",
+            "后置：照片拍摄最高支持 3.5 倍光学变焦，最高支持 120 倍数码变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G>"
+          ],
+          [
+            "网络频段",
+            "2G GSM：850/900/1800MHz 3G WCDMA：频段 1/2/4/5/8 4G LTE FDD：频段 1/2/3/4/5/7/8/18/19/26/28/66 4G LTE TDD：频段 34/38/39/40/41/42/43/48 5G NR：n1/n2/n3/n5/n7/n8/n18/n26/n28/n38/n40/n41/n66/n48/n77/n78"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "支持 WiFi 7（802.11be），支持 WiFi 6（802.11ax），支持 WiFi 5（802.11 ac），支持 802.11 a/b/g/n，支持 WiFi Display，支持 WLAN 网络分享，支持网络叠加：Wi-Fi 2.4GHz 2×2+Wi-Fi 5GHz 2×2 并发，支持 Wi-Fi 5GHz 160MHz，支持 2×2 MIMO"
+          ],
+          [
+            "定位导航",
+            "北斗（B1I+B1C+B2a），GPS（L1+L5），GLONASS（G1），Galileo（E1+E5a），QZSS（L1+L5），NavIC（L5），支持：A-GNSS 辅助定位，无线局域网定位，蜂窝网络定位"
+          ],
+          [
+            "蓝牙",
+            "蓝牙5.4，SBC、AAC、aptx、aptx-HD、LDAC、 LHDC(5.0)"
+          ],
+          [
+            "NFC",
+            "支持NFC>"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸式电池(双电芯）"
+          ],
+          [
+            "电池容量",
+            "7500mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "100w"
+          ],
+          [
+            "无线充电",
+            "支持> ，50w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP69 IP69K IP68 IP66"
+          ],
+          [
+            "感应器",
+            "接近感应器，环境光传感器，色温传感器，电子罗盘，加速度传感器，陀螺仪，屏下超声指纹，霍尔传感器，红外遥控"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "一加 15T x1 充电器 x1 数据线 x1 SIM 卡通针 x1 快速入门指南 x1 保护壳 x1"
+          ]
+        ]
+      },
+      {
+        "group": "保修信息",
+        "items": [
+          [
+            "保修政策",
+            "全国联保，享受三包服务"
+          ],
+          [
+            "质保时间",
+            "1年"
+          ],
+          [
+            "质保备注",
+            "主机1年，充电器1年"
+          ],
+          [
+            "详细内容",
+            "自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受15日内退货或更换一部享有重新计算1年保修期的设备，15日以上在质保期内根据具体情况更换相关部件或提供一台部分重新装配的设备，仅保留消费者现有设备后盖。更换的部件和"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.32 英寸 AMOLED 直屏 · 165Hz",
+        "valueAtAudit": "6.32 英寸 AMOLED 直屏 · 165Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2161/2160119/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.32 英寸 AMOLED 直屏 · 165Hz",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 Elite Gen5",
+        "valueAtAudit": "骁龙 8 Elite Gen5",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2161/2160119/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 骁龙 8 Elite Gen5",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素主摄 + 5000 万像素长焦；前置 1600 万像素",
+        "valueAtAudit": "5000 万像素主摄 + 5000 万像素长焦；前置 1600 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2161/2160119/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素主摄 + 5000 万像素长焦；前置 1600 万像素",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "7500mAh",
+        "valueAtAudit": "7500mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2161/2160119/param.shtml",
+        "evidenceText": "参数表/官方页：电池 7500mAh",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 50W 无线",
+        "valueAtAudit": "100W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2161/2160119/param.shtml",
+        "evidenceText": "参数表/官方页：充电 100W 有线 / 50W 无线",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "194g",
+        "valueAtAudit": "194g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2161/2160119/param.shtml",
+        "evidenceText": "参数表/官方页：重量 194g",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "valueAtAudit": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2161/2160119/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 12GB+256GB",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年03月25日",
+        "valueAtAudit": "2026年03月25日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/2161/2160119/index.html",
+        "evidenceText": "发布会/官网信息：2026年03月25日",
+        "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-ace6-ultra",
+    "brand": "OnePlus",
+    "name": "一加 Ace 6 至尊版",
+    "year": 2026,
+    "type": "游戏性能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.78 英寸 1.5K 直屏 · 165Hz",
+    "chip": "天玑 9500",
+    "camera": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+    "battery": "8600mAh",
+    "charging": "120W 有线",
+    "weight": "217g",
+    "storage": "12GB+256GB / 16GB+512GB",
+    "os": "ColorOS 15",
+    "priceCN": 3499,
+    "priceText": "首销价（12GB+256GB）；国补后 2999 元起，现渠道价约 3999 元",
+    "selling": "天玑 9500 + 8600mAh + 120W，165Hz 东方屏",
+    "bestFor": [
+      "游戏性能",
+      "续航",
+      "日常全能"
+    ],
+    "source": "https://detail.zol.com.cn/2165/2164490/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-04",
+    "launchDateDisplay": "2026年04月28日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "16GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://wap.zol.com.cn/2165/2164490/index.html",
+    "priceSource": "https://k.sina.com.cn/article_7880068406_1d5b04d3606801j99m.html",
+    "priceSourceName": "新浪·2026 大电池机型对比（含 Ace 6 至尊版首销价）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-29 新增机型：72 项参数（中关村在线，标题比对通过）",
+      "4 月 28 日发布；首销 3499 元起、国补后 2999 元起，见新浪报道；ZOL 版本表 3999 元为当前渠道价，未作为首发价。",
+      "8600mAh 双电芯 + 120W，是 2026 年上半年电池容量最大的性能机之一。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2165/2164490/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 72,
+    "specCollectedAt": "2026-10-29",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2026年04月28日"
+          ],
+          [
+            "电商报价",
+            "￥3999"
+          ],
+          [
+            "上市日期",
+            "2026年04月28日"
+          ],
+          [
+            "产品型号",
+            "一加 Ace 6 至尊版"
+          ],
+          [
+            "使用场景",
+            "三防手机> ， 游戏手机> ， 拍照手机> ， 智能手机> ， 4G手机> ， 快充手机> ， 5G手机> ， 3G手机> ， 新品手机> ， 热门手机>"
+          ],
+          [
+            "机身颜色",
+            "王牌觉醒，金属风暴"
+          ],
+          [
+            "指纹识别",
+            "超声波屏幕指纹识别>"
+          ],
+          [
+            "指纹识别工艺",
+            "超声波指纹"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "162.45mm"
+          ],
+          [
+            "宽度",
+            "77.47mm"
+          ],
+          [
+            "厚度",
+            "8.45mm"
+          ],
+          [
+            "重量",
+            "217g"
+          ],
+          [
+            "其他外观参数",
+            "重量：约217g（王牌觉醒），约219g（金属风暴）"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "联发科 天玑 9500 更多联发科 天玑 9500手机> ，"
+          ],
+          [
+            "CPU频率",
+            "最高主频4.21GHz"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "Arm@Mali Drage MC12"
+          ],
+          [
+            "RAM容量",
+            "12GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR5X>"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 4.1>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "Android 15"
+          ],
+          [
+            "操作系统",
+            "ColorOS 15"
+          ],
+          [
+            "散热",
+            "冰河散热系统"
+          ],
+          [
+            "振动马达",
+            "X轴线性马达"
+          ],
+          [
+            "扬声器",
+            "立体声双扬声器"
+          ],
+          [
+            "其他硬件参数",
+            "触控芯灵犀触控芯；网络芯电竞Wi-Fi芯片G1"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.78英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2772x1272px"
+          ],
+          [
+            "屏幕材质",
+            "柔性AMOLED>"
+          ],
+          [
+            "屏幕刷新率",
+            "165Hz>"
+          ],
+          [
+            "像素密度",
+            "450ppi"
+          ],
+          [
+            "屏占比",
+            "93.6%"
+          ],
+          [
+            "触控采样率",
+            "最高480Hz，默认120Hz"
+          ],
+          [
+            "屏幕色彩",
+            "10.7亿色（10-bit）,生动模式：100% DCI-P3 自然模式：100% DCI-P3 影院模式：100% DCI-P3 鲜艳模式：100% DCI-P3"
+          ],
+          [
+            "HDR技术",
+            "HDR 10+>"
+          ],
+          [
+            "屏幕亮度",
+            "800nits全局默认最高亮度，1800nits全局激发最高亮度"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "三摄像头（后双）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：广角摄像头 后置摄像头2：超广角摄像头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：800万像素 前置摄像头1：1600万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头2：f/2.2 前置摄像头1：f/2.4"
+          ],
+          [
+            "对焦方式",
+            "AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：23mm 后置摄像头2：16mm 前置摄像头1：23mm"
+          ],
+          [
+            "防抖功能",
+            "两轴OIS防抖>"
+          ],
+          [
+            "镜头片数",
+            "后置摄像头1：6P 后置摄像头2：5P 前置摄像头1：4P"
+          ],
+          [
+            "广角",
+            "112°"
+          ],
+          [
+            "后置拍照功能",
+            "照片，视频，人像，夜景，全景，慢动作，长曝光，多景录像，延时摄影，萌拍，高像素，AI 证件照，专业模式，超级文本，扫一扫，移轴，专业视频"
+          ],
+          [
+            "后置视频拍摄",
+            "4K 基础拍摄：60 fps，30 fps 1080P 基础拍摄：60 fps，30 fps 720P 基础拍摄：30 fps 4K 视频防抖拍摄：60 fps，30 fps 1080P 视频防抖拍摄：60 fps，30 fps 1080P 慢动作视频拍摄：240 fps 720P 慢动作视频拍摄：240 fps 4K 延时摄影拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持专业视频拍摄 支持多景录像视频拍摄 支持视频变焦拍摄：不支持光学变焦，最高支持 10 倍数码变焦"
+          ],
+          [
+            "前置拍照功能",
+            "照片，视频，人像，夜景，全景，多景录像，延时摄影，萌拍，AI 证件照，美颜自拍，屏幕补光"
+          ],
+          [
+            "前置视频拍摄",
+            "1080P 基础拍摄：30 fps 720P 基础拍摄：30 fps 1080P 视频防抖拍摄：30 fps 720P 视频防抖拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持多景录像视频拍摄"
+          ],
+          [
+            "闪光灯",
+            "LED闪光灯"
+          ],
+          [
+            "变焦倍数",
+            "后置：照片拍摄不支持光学变焦，最高支持 20 倍数码变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G>"
+          ],
+          [
+            "5G网络",
+            "移动5G（NR），联通5G（NR），电信5G（NR），广电5G（NR） 更多5G手机＞"
+          ],
+          [
+            "3G网络",
+            "联通3G（WCDMA），联通2G/移动2G（GSM）"
+          ],
+          [
+            "网络频段",
+            "2G GSM：850/900/1800MHz 3G WCDMA：频段 1/5/6/8/19 4G LTE FDD：频段 1/3/4/5/8/18/19/26/28A/66 4G LTE TDD：频段 34/38/39/40/41/42/43/48 5G NR：n1/n3/n5/n8/n18/n26/n28A/n34/n38/n39/n40/n41/n48/n66/n77/n78"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano-SIM卡，Nano-USIM卡）"
+          ],
+          [
+            "WLAN功能",
+            "支持 Wi-Fi 7（802.11be） 支持 Wi-Fi 6（802.11ax） 支持 Wi-Fi 5（802.11ac） 支持 802.11a/b/g/n 支持 Wi-Fi Display 支持 WLAN 网络分享 支持网络叠加 Wi-Fi 2.4GHz 2×2+Wi-Fi 5GHz 2×2 并发 支持 Wi-Fi 5GHz 160MHz 支持 2×2 MIMO"
+          ],
+          [
+            "定位导航",
+            "北斗（B1I+B1C+B2a+B2b），GPS（L1+L5），GLONASS（G1），Galileo（E1+E5a+E5b），QZSS（L1+L5），NavIC（L5），支持：A-GNSS 辅助定位，无线局域网定位，蜂窝网络定位"
+          ],
+          [
+            "蓝牙",
+            "支持SBC，AAC，LDAC，aptX，aptX HD，LHDC 5.0"
+          ],
+          [
+            "NFC",
+            "支持NFC（多功能）>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸电池（2×4300 mAh/32.43Wh双电池）"
+          ],
+          [
+            "电池容量",
+            "8600mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "120w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP66 &IP68&IP69&IP69K防水等级"
+          ],
+          [
+            "感应器",
+            "接近感应器，环境光传感器，色温传感器，电子罗盘，加速度传感器，陀螺仪，红外遥控"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "主机 x1 保护壳 x1 充电器 x1 数据线 x1 取卡针 x1 快速入门指南 x1"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸 1.5K 直屏 · 165Hz",
+        "valueAtAudit": "6.78 英寸 1.5K 直屏 · 165Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2165/2164490/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.78 英寸 1.5K 直屏 · 165Hz",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "天玑 9500",
+        "valueAtAudit": "天玑 9500",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2165/2164490/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 天玑 9500",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "valueAtAudit": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2165/2164490/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "8600mAh",
+        "valueAtAudit": "8600mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2165/2164490/param.shtml",
+        "evidenceText": "参数表/官方页：电池 8600mAh",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线",
+        "valueAtAudit": "120W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2165/2164490/param.shtml",
+        "evidenceText": "参数表/官方页：充电 120W 有线",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "217g",
+        "valueAtAudit": "217g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2165/2164490/param.shtml",
+        "evidenceText": "参数表/官方页：重量 217g",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "valueAtAudit": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2165/2164490/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 12GB+256GB",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年04月28日",
+        "valueAtAudit": "2026年04月28日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/2165/2164490/index.html",
+        "evidenceText": "发布会/官网信息：2026年04月28日",
+        "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-turbo6",
+    "brand": "OnePlus",
+    "name": "一加 Turbo 6",
+    "year": 2026,
+    "type": "性能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.78 英寸 1.5K 直屏 · 165Hz",
+    "chip": "骁龙 8s Gen4 风驰版",
+    "camera": "5000 万像素广角 + 200 万像素黑白；前置 1600 万像素",
+    "battery": "9000mAh",
+    "charging": "80W 有线 / 27W 有线反向",
+    "weight": "217g",
+    "storage": "12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB",
+    "os": "ColorOS 16",
+    "priceCN": 2099,
+    "priceText": "首销优惠价（12GB+256GB，零售 2299）；16+256 2399 / 12+512 2599 / 16+512 2899",
+    "selling": "9000mAh + 165Hz 电竞屏，第四代骁龙 8s 风驰版",
+    "bestFor": [
+      "续航",
+      "游戏性能",
+      "性价比"
+    ],
+    "source": "https://detail.zol.com.cn/2153/2152523/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-01",
+    "launchDateDisplay": "2026年01月09日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "16GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://wap.zol.com.cn/2153/2152523/index.html",
+    "priceSource": "https://tech.ifeng.com/c/8pkpK7MjPQp",
+    "priceSourceName": "凤凰网科技·一加 Turbo 6 系列发布（含零售价与首销价）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-29 新增机型：76 项参数（中关村在线，标题比对通过）",
+      "1 月 8 日发布、1 月 9 日 10:00 开售；首销优惠价 2099 元起（零售 2299），见凤凰网科技与 IT之家转载。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2153/2152523/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 76,
+    "specCollectedAt": "2026-10-29",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "电商报价",
+            "￥2499"
+          ],
+          [
+            "国内发布时间",
+            "2026年1月8日"
+          ],
+          [
+            "产品型号",
+            "一加 Turbo 6"
+          ],
+          [
+            "使用场景",
+            "新品手机> ， 热门手机> ， 自拍手机> ， 5G手机> ， 4G手机> ， 3G手机> ， 智能手机> ， 快充手机> ， AI手机>"
+          ],
+          [
+            "机身材质",
+            "铝合金金属中框， 玻璃后壳> 查看外观图>"
+          ],
+          [
+            "机身颜色",
+            "追光银，独行黑，旷野青"
+          ],
+          [
+            "指纹识别",
+            "屏幕指纹识别>"
+          ],
+          [
+            "指纹识别工艺",
+            "屏下超声波指纹"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "162.46mm"
+          ],
+          [
+            "宽度",
+            "77.45mm"
+          ],
+          [
+            "厚度",
+            "8.5mm"
+          ],
+          [
+            "重量",
+            "217g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "高通 骁龙 8s Gen4 风驰版 更多高通 骁龙 8s Gen4 风驰版手机> ，"
+          ],
+          [
+            "GPU型号",
+            "高通 Adreno 825"
+          ],
+          [
+            "RAM容量",
+            "12GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR5X>"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 4.1>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "基于 Android 16"
+          ],
+          [
+            "操作系统",
+            "ColorOS 16"
+          ],
+          [
+            "散热",
+            "冰河散热系统"
+          ],
+          [
+            "振动马达",
+            "X轴线性马达"
+          ],
+          [
+            "扬声器",
+            "对称式双立体声扬声器"
+          ],
+          [
+            "其他硬件参数",
+            "3麦克风"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.78英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2772x1272px"
+          ],
+          [
+            "屏幕材质",
+            "柔性AMOLED>"
+          ],
+          [
+            "屏幕刷新率",
+            "165Hz>"
+          ],
+          [
+            "屏幕厂商",
+            "京东方"
+          ],
+          [
+            "像素密度",
+            "450ppi"
+          ],
+          [
+            "屏占比",
+            "93.5%"
+          ],
+          [
+            "触摸屏类型",
+            "多点触控，最多支持10点触控"
+          ],
+          [
+            "触控采样率",
+            "最高330Hz，默认120Hz"
+          ],
+          [
+            "屏幕色彩",
+            "10.7 亿色（10bit）,生动模式：100% DCI-P3 自然模式：100% DCI-P3 影院模式：100% DCI-P3 鲜艳模式：100% DCI-P3"
+          ],
+          [
+            "其他屏幕参数",
+            "全亮度低频闪，太阳显示，降低白点值，智能护眼，晕车舒缓，最低1nit，游戏暗光护眼，游戏色彩增强，全亮度色貌模型,息屏显示（AOD）"
+          ],
+          [
+            "屏幕亮度",
+            "全局默认最高亮度：800nits典型值 全局激发最高亮度：1800nits典型值"
+          ],
+          [
+            "屏幕技术",
+            "康宁大猩猩玻璃>"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "三摄像头（后双）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：广角摄像头 后置摄像头2：黑白摄像头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：200万像素 前置摄像头1：1600万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头2：f/2.4 前置摄像头1：f/2.4"
+          ],
+          [
+            "对焦方式",
+            "AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：26mm 后置摄像头2：22mm 前置摄像头1：23mm"
+          ],
+          [
+            "防抖功能",
+            "两轴OIS防抖>"
+          ],
+          [
+            "镜头片数",
+            "后置摄像头1：5P 后置摄像头2：3P 前置摄像头1：4P"
+          ],
+          [
+            "后置拍照功能",
+            "照片，视频，人像，夜景，全景，电影，慢动作，长曝光，多景录像，延时摄影，萌拍，高像素，AI 证件照，专业模式，超级文本，扫一扫，移轴"
+          ],
+          [
+            "后置视频拍摄",
+            "4K 基础拍摄：60 fps，30 fps 1080P 基础拍摄：60 fps，30 fps 720P 基础拍摄：30 fps 4K 视频防抖拍摄：60 fps，30 fps 1080P 视频防抖拍摄：60 fps，30 fps 720P 视频防抖拍摄：30 fps 1080P 慢动作视频拍摄：240 fps 720P 慢动作视频拍摄：240 fps 4K 延时摄影拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持电影模式视频拍摄 支持多景录像视频拍摄 支持视频变焦拍摄：最高支持 10 倍数码变焦"
+          ],
+          [
+            "前置拍照功能",
+            "照片，视频，人像，夜景，全景，多景录像，萌拍，AI 证件照，美颜自拍，屏幕补光"
+          ],
+          [
+            "前置视频拍摄",
+            "1080P 基础拍摄：30 fps 720P 基础拍摄：30 fps 1080P 视频防抖拍摄：30 fps 720P 视频防抖拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持多景录像视频拍摄"
+          ],
+          [
+            "闪光灯",
+            "后置：LED 闪光灯>"
+          ],
+          [
+            "变焦倍数",
+            "后置：最高支持3.5倍光学变焦，最高支持120倍数码变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G> ，2G"
+          ],
+          [
+            "3G网络",
+            "联通3G（WCDMA），联通2G/移动2G（GSM）"
+          ],
+          [
+            "网络频段",
+            "2G GSM：850/900/1800MHz 3G WCDMA：频段 1/5/8 4G LTE FDD：频段 1/3/5/8/19/28A 4G LTE TDD：频段 34/38/39/40/41/42/48 5G NR：n1/n3/n5/n8/n28A/n38/n40/n41/n48/n77/n78"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "支持 Wi-Fi 7（802.11be），支持 Wi-Fi 6（802.11ax），支持 Wi-Fi 5（802.11ac），支持 802.11a/b/g/n，支持 Wi-Fi Display，支持 WLAN 网络分享，支持 Wi-Fi 5GHz 160MHz，支持 2×2 MIMO"
+          ],
+          [
+            "定位导航",
+            "北斗（B1I+B1C+B2a），GPS（L1+L5），GLONASS（G1），Galileo（E1+E5a），QZSS（L1+L5），支持 A-GNSS 辅助定位，支持无线局域网定位，支持蜂窝网络定位"
+          ],
+          [
+            "蓝牙",
+            "蓝牙6.0，支持SBC，AAC，LDAC，aptX，aptX HD，aptX Adaptive，LHDC 5.0"
+          ],
+          [
+            "NFC",
+            "支持NFC（多功能）>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ],
+          [
+            "其他网络参数",
+            "AI 通信芯片 R100,电竞网络芯片G2"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸式电池"
+          ],
+          [
+            "电池容量",
+            "9000mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "80w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP66/IP68/IP69/IP69K满级防尘防水"
+          ],
+          [
+            "感应器",
+            "接近感应器，环境光传感器，色温传感器，电子罗盘，加速度传感器，陀螺仪，屏下光学指纹传感器，红外遥控"
+          ],
+          [
+            "多媒体技术",
+            "OReality Audio 音效"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "一加 15 x1 充电器 x1 数据线 x1 取卡针 x1 快速入门指南 x1 保护壳 x1 一加服务卡 x1"
+          ]
+        ]
+      },
+      {
+        "group": "保修信息",
+        "items": [
+          [
+            "保修政策",
+            "全国联保，享受三包服务"
+          ],
+          [
+            "质保时间",
+            "1年"
+          ],
+          [
+            "质保备注",
+            "主机1年，充电器1年"
+          ],
+          [
+            "详细内容",
+            "自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受15日内退货或更换一部享有重新计算1年保修期的设备，15日以上在质保期内根据具体情况更换相关部件或提供一台部分重新装配的设备，仅保留消费者现有设备后盖。更换的部件和"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸 1.5K 直屏 · 165Hz",
+        "valueAtAudit": "6.78 英寸 1.5K 直屏 · 165Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152523/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.78 英寸 1.5K 直屏 · 165Hz",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8s Gen4 风驰版",
+        "valueAtAudit": "骁龙 8s Gen4 风驰版",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152523/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 骁龙 8s Gen4 风驰版",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素广角 + 200 万像素黑白；前置 1600 万像素",
+        "valueAtAudit": "5000 万像素广角 + 200 万像素黑白；前置 1600 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152523/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素广角 + 200 万像素黑白；前置 1600 万像素",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "9000mAh",
+        "valueAtAudit": "9000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152523/param.shtml",
+        "evidenceText": "参数表/官方页：电池 9000mAh",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线 / 27W 有线反向",
+        "valueAtAudit": "80W 有线 / 27W 有线反向",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152523/param.shtml",
+        "evidenceText": "参数表/官方页：充电 80W 有线 / 27W 有线反向",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "217g",
+        "valueAtAudit": "217g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152523/param.shtml",
+        "evidenceText": "参数表/官方页：重量 217g",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "valueAtAudit": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152523/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 12GB+256GB",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年01月09日",
+        "valueAtAudit": "2026年01月09日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/2153/2152523/index.html",
+        "evidenceText": "发布会/官网信息：2026年01月09日",
+        "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-turbo6v",
+    "brand": "OnePlus",
+    "name": "一加 Turbo 6V",
+    "year": 2026,
+    "type": "性能续航旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.78 英寸 1.5K 直屏 · 144Hz",
+    "chip": "骁龙7S Gen4",
+    "camera": "5000 万像素广角 + 200 万像素黑白；前置 1600 万像素",
+    "battery": "9000mAh",
+    "charging": "80W 有线 / 27W 有线反向",
+    "weight": "215g",
+    "storage": "8GB+256GB / 12GB+256GB / 12GB+512GB",
+    "os": "ColorOS 16",
+    "priceCN": 1699,
+    "priceText": "首销优惠价（8GB+256GB，零售 1899）；12+256 1899 / 12+512 2199",
+    "selling": "9000mAh 大电池 + 144Hz 护眼屏，第四代骁龙 7s",
+    "bestFor": [
+      "续航",
+      "性价比",
+      "日常全能"
+    ],
+    "source": "https://detail.zol.com.cn/2153/2152524/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-01",
+    "launchDateDisplay": "2026年01月09日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "8GB+256GB",
+      "12GB+256GB",
+      "12GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://wap.zol.com.cn/2153/2152524/index.html",
+    "priceSource": "https://tech.ifeng.com/c/8pkpK7MjPQp",
+    "priceSourceName": "凤凰网科技·一加 Turbo 6 系列发布（含零售价与首销价）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "8GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-29 新增机型：78 项参数（中关村在线，标题比对通过）",
+      "与 Turbo 6 同场发布；首销优惠价 1699 元起（零售 1899），国补后 1444.15 元起。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2153/2152524/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 78,
+    "specCollectedAt": "2026-10-29",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2026年1月8日"
+          ],
+          [
+            "电商报价",
+            "￥2099"
+          ],
+          [
+            "上市日期",
+            "2026年1月8日"
+          ],
+          [
+            "产品型号",
+            "一加 Turbo 6V"
+          ],
+          [
+            "使用场景",
+            "新品手机> ， 热门手机> ， 自拍手机> ， 5G手机> ， 4G手机> ， 3G手机> ， 智能手机> ， 快充手机> ， AI手机>"
+          ],
+          [
+            "机身材质",
+            "铝合金金属中框， 玻璃后壳> 查看外观图>"
+          ],
+          [
+            "机身颜色",
+            "无畏蓝，新星白，独行黑"
+          ],
+          [
+            "指纹识别",
+            "屏下光学指纹>"
+          ],
+          [
+            "指纹识别工艺",
+            "短焦指纹"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "162.46mm"
+          ],
+          [
+            "宽度",
+            "77.45mm"
+          ],
+          [
+            "厚度",
+            "8.5mm"
+          ],
+          [
+            "重量",
+            "215g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "高通 骁龙7S Gen4 更多高通 骁龙7S Gen4手机> ，"
+          ],
+          [
+            "CPU频率",
+            "最高主频2.7GHz"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "高通 Adreno 810"
+          ],
+          [
+            "RAM容量",
+            "8GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR4X>"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 3.1>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "基于 Android 16"
+          ],
+          [
+            "操作系统",
+            "ColorOS 16"
+          ],
+          [
+            "散热",
+            "冰河散热系统"
+          ],
+          [
+            "振动马达",
+            "X轴线性马达"
+          ],
+          [
+            "扬声器",
+            "超线性立体声双扬声器"
+          ],
+          [
+            "其他硬件参数",
+            "2个麦克风"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.78英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2772x1272px"
+          ],
+          [
+            "屏幕材质",
+            "柔性AMOLED>"
+          ],
+          [
+            "屏幕刷新率",
+            "144Hz>"
+          ],
+          [
+            "像素密度",
+            "450ppi"
+          ],
+          [
+            "屏占比",
+            "93.5%"
+          ],
+          [
+            "触控采样率",
+            "最高300Hz，默认120Hz"
+          ],
+          [
+            "屏幕色彩",
+            "10 亿色（10-bit）,生动模式：100% DCI-P3 自然模式：100% DCI-P3 影院模式：100% DCI-P3 鲜艳模式：100% DCI-P3"
+          ],
+          [
+            "其他屏幕参数",
+            "息屏显示（AOD）,护眼模式,调光方式 ： PWM+DC调光（亮度≤70 尼特：PWM调光；亮度>70 尼特：DC调光）,降低白点值，护眼与舒眠，游戏色彩增强"
+          ],
+          [
+            "屏幕亮度",
+            "全局默认最高亮度：800nits典型值 全局激发最高亮度：1800nits典型值"
+          ],
+          [
+            "屏幕盖板",
+            "晶盾玻璃"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "三摄像头（后双）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：广角摄像头 后置摄像头2：黑白摄像头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：200万像素 前置摄像头1：1600万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头2：f/2.4 前置摄像头1：f/2.4"
+          ],
+          [
+            "对焦方式",
+            "后置摄像头1：AF 后置摄像头2：AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：27mm 后置摄像头2：22mm 前置摄像头1：23mm"
+          ],
+          [
+            "防抖功能",
+            "三轴OIS防抖>"
+          ],
+          [
+            "镜头片数",
+            "后置摄像头1：5P 后置摄像头2：3P 前置摄像头1：4P"
+          ],
+          [
+            "后置拍照功能",
+            "照片，视频，人像，夜景，全景，电影，慢动作，长曝光，多景录像，延时摄影，萌拍，高像素，AI 证件照，专业模式，超级文本，扫一扫，移轴"
+          ],
+          [
+            "后置视频拍摄",
+            "4K 基础拍摄：30 fps 1080P 基础拍摄：60 fps，30 fps 720P 基础拍摄：60 fps，30 fps 1080P 视频防抖拍摄：60 fps，30 fps 720P 视频防抖拍摄：60 fps，30 fps 1080P 慢动作视频拍摄：120 fps 720P 慢动作视频拍摄：240 fps，120 fps 1080P 延时摄影拍摄：1920 fps，960 fps，480 fps，240 fps，120 fps，60 fps，30 fps，15 fps 支持电影模式视频拍摄 支持多景录像视频拍摄 支持视频变焦拍摄，最高支持 10 倍数码变焦"
+          ],
+          [
+            "前置拍照功能",
+            "照片，视频，人像，夜景，全景，多景录像，延时摄影，萌拍，AI 证件照，美颜自拍，屏幕补光"
+          ],
+          [
+            "前置视频拍摄",
+            "1080P 基础拍摄：30 fps 720P 基础拍摄：30 fps 1080P 视频防抖拍摄：30 fps 720P 视频防抖拍摄：30 fps 1080P 延时摄影拍摄：1920 fps，960 fps，480 fps，240 fps，120 fps，60 fps，30 fps，15 fps 支持多景录像视频拍摄"
+          ],
+          [
+            "闪光灯",
+            "后置：单色温闪光灯>"
+          ],
+          [
+            "变焦倍数",
+            "后置：照片拍摄最高支持 10 倍数码变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G> ，2G"
+          ],
+          [
+            "3G网络",
+            "联通3G（WCDMA），联通2G/移动2G（GSM）"
+          ],
+          [
+            "网络频段",
+            "5G NR：n1/n3/n5/n8/n28A/n38/n40/n41/n48/n77/n78,4G LTE TDD：频段 34/38/39/40/41/42/48,4G LTE FDD：频段 1/3/5/8/19/28A,3G WCDMA：频段 1/5/8,2G GSM：850/900/1800MHz"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano-SIM卡，Nano-USIM卡）"
+          ],
+          [
+            "WLAN功能",
+            "支持 Wi-Fi 6（802.11ax） 支持 Wi-Fi 5（802.11ac） 支持 802.11a/b/g/n 支持 Wi-Fi Display 支持 WLAN 网络分享 支持 Wi-Fi 5GHz 80MHz"
+          ],
+          [
+            "定位导航",
+            "北斗（B1I+B1C+B2a），GPS（L1+L5），GLONASS（G1），Galileo（E1+E5a），QZSS（L1+L5），支持 A-GNSS 辅助定位，支持无线局域网定位，支持蜂窝网络定位"
+          ],
+          [
+            "蓝牙",
+            "蓝牙5.2，支持SBC，AAC，LDAC，aptX，aptX HD，aptX Adaptive，LHDC 5.0"
+          ],
+          [
+            "NFC",
+            "支持NFC（多功能）>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "连接与共享",
+            "VoLTE"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ],
+          [
+            "其他网络参数",
+            "360° 环绕式 电竞天线系统,灵犀触控芯"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "单电芯电池"
+          ],
+          [
+            "电池容量",
+            "9000mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "80w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP66，IP68，IP69，IP69K"
+          ],
+          [
+            "感应器",
+            "接近感应器，环境光传感器，色温传感器，电子罗盘，加速度传感器，陀螺仪，屏下光学指纹传感器，红外遥控"
+          ],
+          [
+            "多媒体技术",
+            "OReality Audio 音效"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "主机 x1 充电器 x1 数据线 x1 取卡针 x1 快速入门指南 x1 保护壳 x1"
+          ]
+        ]
+      },
+      {
+        "group": "保修信息",
+        "items": [
+          [
+            "保修政策",
+            "全国联保，享受三包服务"
+          ],
+          [
+            "质保时间",
+            "1年"
+          ],
+          [
+            "质保备注",
+            "主机1年，充电器1年"
+          ],
+          [
+            "详细内容",
+            "自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受15日内退货或更换一部享有重新计算1年保修期的设备，15日以上在质保期内根据具体情况更换相关部件或提供一台部分重新装配的设备，仅保留消费者现有设备后盖。更换的部件和"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸 1.5K 直屏 · 144Hz",
+        "valueAtAudit": "6.78 英寸 1.5K 直屏 · 144Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152524/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.78 英寸 1.5K 直屏 · 144Hz",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙7S Gen4",
+        "valueAtAudit": "骁龙7S Gen4",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152524/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 骁龙7S Gen4",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素广角 + 200 万像素黑白；前置 1600 万像素",
+        "valueAtAudit": "5000 万像素广角 + 200 万像素黑白；前置 1600 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152524/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素广角 + 200 万像素黑白；前置 1600 万像素",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "9000mAh",
+        "valueAtAudit": "9000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152524/param.shtml",
+        "evidenceText": "参数表/官方页：电池 9000mAh",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线 / 27W 有线反向",
+        "valueAtAudit": "80W 有线 / 27W 有线反向",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152524/param.shtml",
+        "evidenceText": "参数表/官方页：充电 80W 有线 / 27W 有线反向",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "215g",
+        "valueAtAudit": "215g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152524/param.shtml",
+        "evidenceText": "参数表/官方页：重量 215g",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "8GB+256GB",
+        "valueAtAudit": "8GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2153/2152524/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 8GB+256GB",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年01月09日",
+        "valueAtAudit": "2026年01月09日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/2153/2152524/index.html",
+        "evidenceText": "发布会/官网信息：2026年01月09日",
+        "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-turbo6x",
+    "brand": "OnePlus",
+    "name": "一加 Turbo 6X",
+    "year": 2026,
+    "type": "性能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.72 英寸 LCD 直屏 · 144Hz",
+    "chip": "天玑 7360 SUPER",
+    "camera": "5000 万像素广角 + 200 万像素黑白；前置 800 万像素",
+    "battery": "7000mAh",
+    "charging": "45W 有线",
+    "weight": "208g",
+    "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB",
+    "os": "ColorOS 16",
+    "priceCN": 1499,
+    "priceText": "首销优惠价（8GB+128GB）；8+256 1699 / 12+256 1999，国补后 1274.15 元起",
+    "selling": "144Hz LCD 护眼屏 + 7000mAh，天玑 7360 SUPER",
+    "bestFor": [
+      "性价比",
+      "续航",
+      "日常全能"
+    ],
+    "source": "https://detail.zol.com.cn/2169/2168782/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-06",
+    "launchDateDisplay": "2026年06月15日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "8GB+128GB",
+      "8GB+256GB",
+      "12GB+256GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://news.qq.com/rain/a/20260610A0ARYK00",
+    "priceSource": "https://m.tech.china.com/digi/digi/20260615/202606151893729.html",
+    "priceSourceName": "中华网科技·一加 Turbo 6X 系列首销（含全档价目）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "8GB+128GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-29 新增机型：68 项参数（中关村在线，标题比对通过）",
+      "6 月 10 日发布、6 月 15 日 10:00 首销；首销优惠价 1499 元起，国补后 1274.15 元起。",
+      "2026 年少数仍用 LCD 的机型，主打护眼与千元档续航。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2169/2168782/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 68,
+    "specCollectedAt": "2026-10-29",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "电商报价",
+            "￥1999"
+          ],
+          [
+            "国内发布时间",
+            "2026年6月10日"
+          ],
+          [
+            "产品型号",
+            "一加 Turbo 6X"
+          ],
+          [
+            "使用场景",
+            "新品手机> ， 热门手机> ， 自拍手机> ， 5G手机> ， 4G手机> ， 3G手机> ， 智能手机> ， 快充手机>"
+          ],
+          [
+            "机身颜色",
+            "白里挑一，星耀黑，踏青云"
+          ],
+          [
+            "指纹识别",
+            "侧面指纹识别>"
+          ],
+          [
+            "指纹识别工艺",
+            "电容指纹"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "165.85mm"
+          ],
+          [
+            "宽度",
+            "76mm"
+          ],
+          [
+            "厚度",
+            "8.55mm"
+          ],
+          [
+            "重量",
+            "208g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "联发科 天玑 7360 SUPER 更多联发科 天玑 7360 SUPER手机> ，"
+          ],
+          [
+            "CPU频率",
+            "最高主频2.5GHz"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "Mali-G615"
+          ],
+          [
+            "RAM容量",
+            "8GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR4X>"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 3.1>"
+          ],
+          [
+            "存储卡",
+            "支持"
+          ],
+          [
+            "出厂系统内核",
+            "基于 Android 16"
+          ],
+          [
+            "操作系统",
+            "ColorOS 16"
+          ],
+          [
+            "振动马达",
+            "X轴线性马达"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.72英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2400x1080px"
+          ],
+          [
+            "屏幕材质",
+            "LCD>"
+          ],
+          [
+            "屏幕刷新率",
+            "144Hz>"
+          ],
+          [
+            "像素密度",
+            "391ppi"
+          ],
+          [
+            "屏占比",
+            "91.4%"
+          ],
+          [
+            "触控采样率",
+            "最高 240Hz，默认 120Hz"
+          ],
+          [
+            "屏幕色彩",
+            "生动模式：86% DCI-P3，自然模式：100% sRGB,1670 万色（8-bit）"
+          ],
+          [
+            "屏幕亮度",
+            "全局默认最高亮度：800nits典型值 全局激发最高亮度：1000nits典型值"
+          ],
+          [
+            "屏幕盖板",
+            "晶盾玻璃"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "三摄像头（后双）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：广角摄像头 后置摄像头2：黑白摄像头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：200万像素 前置摄像头1：800万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头2：f/2.4 前置摄像头1：f/2.0"
+          ],
+          [
+            "对焦方式",
+            "后置摄像头1：AF 后置摄像头2：AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：27mm 后置摄像头2：22mm 前置摄像头1：25mm"
+          ],
+          [
+            "防抖功能",
+            "三轴OIS防抖>"
+          ],
+          [
+            "镜头片数",
+            "后置摄像头1：5P 后置摄像头2：3P 前置摄像头1：4P"
+          ],
+          [
+            "后置拍照功能",
+            "照片，视频，人像，夜景，全景，电影，慢动作，长曝光，多景录像，延时摄影，萌拍，高像素，AI 证件照，专业模式，超级文本，移轴"
+          ],
+          [
+            "后置视频拍摄",
+            "4K 基础拍摄：30 fps 1080P 基础拍摄：60 fps，30 fps 720P 基础拍摄：60 fps，30 fps 4K 视频防抖拍摄：30 fps 1080P 视频防抖拍摄：60 fps，30 fps 720P 视频防抖拍摄：60 fps，30 fps 1080P 慢动作视频拍摄：120 fps 720P 慢动作视频拍摄：240 fps，120 fps 1080P 延时摄影拍摄：30 fps 支持电影模式视频拍摄 支持多景录像视频拍摄 支持视频变焦拍摄：最高支持 10 倍数码变焦"
+          ],
+          [
+            "前置拍照功能",
+            "照片，视频，人像，夜景，全景，多景录像，延时摄影，萌拍，AI 证件照"
+          ],
+          [
+            "前置视频拍摄",
+            "1080P 基础拍摄：30 fps 720P 基础拍摄：30 fps 1080P 视频防抖拍摄：30 fps 720P 视频防抖拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持多景录像视频拍摄"
+          ],
+          [
+            "变焦倍数",
+            "后置：照片拍摄最高支持 10 倍数码变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G> ，2G"
+          ],
+          [
+            "3G网络",
+            "联通3G（WCDMA），联通2G/移动2G（GSM）"
+          ],
+          [
+            "网络频段",
+            "2G GSM：850/900/1800MHz 3G WCDMA：频段 1/5/8 4G LTE FDD：频段 1/3/5/8/28A 4G LTE TDD：频段 34/38/39/40/41 5G NR：n1/n5/n8/n28A/n41/n77/n78"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "支持WiFi 5（802.11ac），支持802.11a/b/g/n，支持 Wi-Fi Display，支持WLAN网络分享"
+          ],
+          [
+            "定位导航",
+            "北斗，GPS，GLONASS，Galileo，QZSS，支持：A-GNSS 辅助定位，无线局域网定位，蜂窝网络定位"
+          ],
+          [
+            "蓝牙",
+            "支持，SBC，AAC，LDAC，aptX，aptX HD，LHDC 5.0"
+          ],
+          [
+            "NFC",
+            "支持NFC（多功能）>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸式电池"
+          ],
+          [
+            "电池容量",
+            "7000mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "45w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP66，IP68，IP69，IP69K"
+          ],
+          [
+            "感应器",
+            "接近感应器，环境光传感器，电子罗盘，加速度传感器，陀螺仪"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "主机 x1 充电器 x1 数据线 x1 取卡针 x1 快速入门指南 x1 保护壳 x1"
+          ]
+        ]
+      },
+      {
+        "group": "保修信息",
+        "items": [
+          [
+            "保修政策",
+            "全国联保，享受三包服务"
+          ],
+          [
+            "质保时间",
+            "1年"
+          ],
+          [
+            "质保备注",
+            "主机1年，充电器1年"
+          ],
+          [
+            "详细内容",
+            "自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受15日内退货或更换一部享有重新计算1年保修期的设备，15日以上在质保期内根据具体情况更换相关部件或提供一台部分重新装配的设备，仅保留消费者现有设备后盖。更换的部件和"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.72 英寸 LCD 直屏 · 144Hz",
+        "valueAtAudit": "6.72 英寸 LCD 直屏 · 144Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168782/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.72 英寸 LCD 直屏 · 144Hz",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "天玑 7360 SUPER",
+        "valueAtAudit": "天玑 7360 SUPER",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168782/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 天玑 7360 SUPER",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素广角 + 200 万像素黑白；前置 800 万像素",
+        "valueAtAudit": "5000 万像素广角 + 200 万像素黑白；前置 800 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168782/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素广角 + 200 万像素黑白；前置 800 万像素",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "7000mAh",
+        "valueAtAudit": "7000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168782/param.shtml",
+        "evidenceText": "参数表/官方页：电池 7000mAh",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "45W 有线",
+        "valueAtAudit": "45W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168782/param.shtml",
+        "evidenceText": "参数表/官方页：充电 45W 有线",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "208g",
+        "valueAtAudit": "208g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168782/param.shtml",
+        "evidenceText": "参数表/官方页：重量 208g",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "8GB+256GB",
+        "valueAtAudit": "8GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168782/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 8GB+256GB",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年06月15日",
+        "valueAtAudit": "2026年06月15日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://news.qq.com/rain/a/20260610A0ARYK00",
+        "evidenceText": "发布会/官网信息：2026年06月15日",
+        "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-turbo6x-pro",
+    "brand": "OnePlus",
+    "name": "一加 Turbo 6X Pro",
+    "year": 2026,
+    "type": "性能续航旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.78 英寸 1.5K 三星屏 · 144Hz",
+    "chip": "天玑 7400 SUPER",
+    "camera": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+    "battery": "8000mAh",
+    "charging": "80W 有线 / 支持有线反向充电",
+    "weight": "213g",
+    "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB",
+    "os": "ColorOS 16",
+    "priceCN": 1699,
+    "priceText": "首销优惠价（8GB+128GB）；8+256 1899 / 12+256 2199，国补后 1444.15 元起",
+    "selling": "8000mAh + 80W，1.5K 三星护眼屏，天玑 7400 SUPER",
+    "bestFor": [
+      "续航",
+      "性价比",
+      "日常全能"
+    ],
+    "source": "https://detail.zol.com.cn/2169/2168621/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2026-06",
+    "launchDateDisplay": "2026年06月15日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "8GB+128GB",
+      "8GB+256GB",
+      "12GB+256GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://news.qq.com/rain/a/20260610A0ARYK00",
+    "priceSource": "https://m.tech.china.com/digi/digi/20260615/202606151893729.html",
+    "priceSourceName": "中华网科技·一加 Turbo 6X 系列首销（含全档价目）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "8GB+128GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-29 新增机型：74 项参数（中关村在线，标题比对通过）",
+      "与 Turbo 6X 同场发布、同日首销；首销优惠价 1699 元起，国补后 1444.15 元起。",
+      "ZOL 参数页标称峰值亮度 1400nits，官方口径 6500nits（局部峰值），本站按 ZOL 参数表展示、此处记录差异。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2169/2168621/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 74,
+    "specCollectedAt": "2026-10-29",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2026年6月10日"
+          ],
+          [
+            "电商报价",
+            "￥1999"
+          ],
+          [
+            "上市日期",
+            "2026年6月10日"
+          ],
+          [
+            "产品型号",
+            "一加 Turbo 6X Pro"
+          ],
+          [
+            "使用场景",
+            "新品手机> ， 热门手机> ， 自拍手机> ， 5G手机> ， 4G手机> ， 3G手机> ， 智能手机> ， 快充手机> ， AI手机>"
+          ],
+          [
+            "机身颜色",
+            "心想事橙，跃马黑"
+          ],
+          [
+            "指纹识别",
+            "屏下光学指纹>"
+          ],
+          [
+            "指纹识别工艺",
+            "短焦指纹"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "162.6mm"
+          ],
+          [
+            "宽度",
+            "77.6mm"
+          ],
+          [
+            "厚度",
+            "8.8mm"
+          ],
+          [
+            "重量",
+            "213g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "联发科 天玑 7400 SUPER 更多联发科 天玑 7400 SUPER手机> ，"
+          ],
+          [
+            "CPU频率",
+            "最高主频2.6GHz"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "Mali-G615"
+          ],
+          [
+            "RAM容量",
+            "8GB>"
+          ],
+          [
+            "ROM容量",
+            "128GB>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "基于 Android 16"
+          ],
+          [
+            "操作系统",
+            "ColorOS 16"
+          ],
+          [
+            "扬声器",
+            "立体声双扬声器"
+          ],
+          [
+            "其他硬件参数",
+            "2个麦克风"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.78英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2772x1272px"
+          ],
+          [
+            "屏幕材质",
+            "柔性AMOLED>"
+          ],
+          [
+            "屏幕刷新率",
+            "144Hz>"
+          ],
+          [
+            "屏幕厂商",
+            "三星"
+          ],
+          [
+            "像素密度",
+            "450ppi"
+          ],
+          [
+            "屏占比",
+            "93.6%"
+          ],
+          [
+            "触摸屏类型",
+            "多点触控，最多支持10点触控"
+          ],
+          [
+            "触控采样率",
+            "最高288Hz，默认120Hz"
+          ],
+          [
+            "屏幕色彩",
+            "10.7亿色 (10-bit),生动模式：100% DCI-P3 自然模式：100% sRGB"
+          ],
+          [
+            "其他屏幕参数",
+            "护眼模式，舒眠模式，屏幕分辨率切换，屏幕刷新率切换，自定义应用刷新率，屏幕色温调节，暗色模式，屏幕色彩模式，自动亮度调节，手动亮度调节，全亮度类DC调光,息屏显示（AOD）,手套触控"
+          ],
+          [
+            "屏幕亮度",
+            "全局默认最高亮度：800nits典型值 全局激发最高亮度：1400nits典型值"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "三摄像头（后双）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：广角摄像头 后置摄像头2：超广角摄像头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：800万像素 前置摄像头1：1600万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头2：f/2.2 前置摄像头1：f/2.4"
+          ],
+          [
+            "对焦方式",
+            "AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：27mm 后置摄像头2：16mm 前置摄像头1：23mm"
+          ],
+          [
+            "防抖功能",
+            "两轴OIS防抖>"
+          ],
+          [
+            "镜头片数",
+            "后置摄像头1：5P 后置摄像头2：5P 前置摄像头1：4P"
+          ],
+          [
+            "广角",
+            "112°"
+          ],
+          [
+            "后置拍照功能",
+            "照片，视频，人像，夜景，全景，慢动作，长曝光，多景录像，延时摄影，萌拍，高像素，水下相机，AI 证件照，专业模式，超级文本，扫一扫，移轴，专业视频"
+          ],
+          [
+            "后置视频拍摄",
+            "4K 基础拍摄：30 fps 1080P 基础拍摄：60 fps，30 fps 720P 基础拍摄：60 fps，30 fps 4K 视频防抖拍摄：30 fps 1080P 视频防抖拍摄：60 fps，30 fps 1080P 慢动作视频拍摄：120 fps 720P 慢动作视频拍摄：240 fps，120 fps 1080P 延时摄影拍摄：30 fps 支持多景录像视频拍摄 支持视频变焦拍摄：不支持光学变焦，最高支持 10 倍数码变焦"
+          ],
+          [
+            "前置拍照功能",
+            "照片，视频，人像，夜景，全景，多景录像，延时摄影，萌拍，AI 证件照，水下相机"
+          ],
+          [
+            "前置视频拍摄",
+            "1080P 基础拍摄：30 fps 720P 基础拍摄：30 fps 1080P 视频防抖拍摄：30 fps 720P 视频防抖拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持多景录像视频拍摄"
+          ],
+          [
+            "闪光灯",
+            "后置：单色温闪光灯>"
+          ],
+          [
+            "变焦倍数",
+            "后置：最高支持10倍数码变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G> ，2G"
+          ],
+          [
+            "3G网络",
+            "联通3G（WCDMA），联通2G/移动2G（GSM）"
+          ],
+          [
+            "网络频段",
+            "5G NR：n1/n3/n5/n8/n28A/n38/n40/n41/n77/n78,4G LTE TDD：频段 34/38/39/40/41,4G LTE FDD：频段 1/3/5/8/19/28A,3G WCDMA：频段 1/5/6/8/19,2G GSM：850/900/1800MHz"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "支持 Wi-Fi 5（802.11ac） 支持 802.11a/b/g/n 支持 Wi-Fi Display 支持 WLAN 网络分享"
+          ],
+          [
+            "定位导航",
+            "北斗，GPS，GLONASS，Galileo，QZSS，支持：A-GNSS 辅助定位，无线局域网定位，蜂窝网络定位"
+          ],
+          [
+            "蓝牙",
+            "蓝牙5.4，支持SBC，AAC，LDAC，aptX，aptX HD，LHDC 5.0"
+          ],
+          [
+            "NFC",
+            "支持NFC（多功能）>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "连接与共享",
+            "VoLTE"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸式电池"
+          ],
+          [
+            "电池容量",
+            "8000mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "80w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP66，IP68，IP69，IP69K防水等级"
+          ],
+          [
+            "感应器",
+            "接近感应器，环境光传感器，色温传感器，电子罗盘，加速度传感器，陀螺仪，屏下光学指纹传感器，红外遥控"
+          ],
+          [
+            "多媒体技术",
+            "OReality Audio"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "主机 x1 充电器 x1 数据线 x1 取卡针 x1 保护壳 x1 快速入门指南 x1"
+          ]
+        ]
+      },
+      {
+        "group": "保修信息",
+        "items": [
+          [
+            "保修政策",
+            "全国联保，享受三包服务"
+          ],
+          [
+            "质保时间",
+            "1年"
+          ],
+          [
+            "质保备注",
+            "主机1年，充电器1年"
+          ],
+          [
+            "详细内容",
+            "自购机日起（以购机发票为准），如因质量问题或故障，凭厂商维修中心或特约维修点的质量检测证明，享受15日内退货或更换一部享有重新计算1年保修期的设备，15日以上在质保期内根据具体情况更换相关部件或提供一台部分重新装配的设备，仅保留消费者现有设备后盖。更换的部件和"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.78 英寸 1.5K 三星屏 · 144Hz",
+        "valueAtAudit": "6.78 英寸 1.5K 三星屏 · 144Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168621/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.78 英寸 1.5K 三星屏 · 144Hz",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "天玑 7400 SUPER",
+        "valueAtAudit": "天玑 7400 SUPER",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168621/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 天玑 7400 SUPER",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "valueAtAudit": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168621/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "8000mAh",
+        "valueAtAudit": "8000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168621/param.shtml",
+        "evidenceText": "参数表/官方页：电池 8000mAh",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "80W 有线 / 支持有线反向充电",
+        "valueAtAudit": "80W 有线 / 支持有线反向充电",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168621/param.shtml",
+        "evidenceText": "参数表/官方页：充电 80W 有线 / 支持有线反向充电",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "213g",
+        "valueAtAudit": "213g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168621/param.shtml",
+        "evidenceText": "参数表/官方页：重量 213g",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "8GB+128GB",
+        "valueAtAudit": "8GB+128GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2169/2168621/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 8GB+128GB",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2026年06月15日",
+        "valueAtAudit": "2026年06月15日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://news.qq.com/rain/a/20260610A0ARYK00",
+        "evidenceText": "发布会/官网信息：2026年06月15日",
+        "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-ace6t",
+    "brand": "OnePlus",
+    "name": "一加 Ace 6T",
+    "year": 2025,
+    "type": "性能续航旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.83 英寸 1.5K 直屏 · 165Hz",
+    "chip": "骁龙8 Gen5",
+    "camera": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+    "battery": "8300mAh",
+    "charging": "100W 有线",
+    "weight": "217g",
+    "storage": "12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB",
+    "os": "ColorOS 16",
+    "priceCN": 2799,
+    "priceText": "首发起售价（12GB+256GB）；16+256 3099 / 12+512 3299 / 16+512 3599",
+    "selling": "8300mAh + 100W，全球首发第五代骁龙 8",
+    "bestFor": [
+      "续航",
+      "游戏性能",
+      "性价比"
+    ],
+    "source": "https://detail.zol.com.cn/2150/2149372/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2025-12",
+    "launchDateDisplay": "2025年12月05日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "16GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://wap.zol.com.cn/2150/2149372/index.html",
+    "priceSource": "https://m.toutiao.com/article/7672663601399742999",
+    "priceSourceName": "一加 Ace 6 / 6T 参数与成本测算（含起售价对照）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-29 新增机型：68 项参数（中关村在线，标题比对通过）",
+      "2025 年 12 月 3 日发布、12 月 5 日开售；2799 元起，与 ZOL 版本表一致。",
+      "首发第五代骁龙 8（骁龙 8 Gen5），8300mAh 是当时一加最大电池。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2150/2149372/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 68,
+    "specCollectedAt": "2026-10-29",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "电商报价",
+            "￥2799"
+          ],
+          [
+            "国内发布时间",
+            "2025年12月03日"
+          ],
+          [
+            "产品型号",
+            "一加 Ace 6T"
+          ],
+          [
+            "使用场景",
+            "三防手机> ， 游戏手机> ， 拍照手机> ， 智能手机> ， 4G手机> ， 快充手机> ， 5G手机> ， 3G手机> ， 新品手机> ， 热门手机>"
+          ],
+          [
+            "机身材质",
+            "金属中框 查看外观图>"
+          ],
+          [
+            "机身颜色",
+            "掠影绿，闪速黑，电光紫,雪霁蓝"
+          ],
+          [
+            "指纹识别",
+            "超声波屏幕指纹识别>"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "163.41mm"
+          ],
+          [
+            "宽度",
+            "77.04mm"
+          ],
+          [
+            "厚度",
+            "8.3mm"
+          ],
+          [
+            "重量",
+            "217g"
+          ],
+          [
+            "其他外观参数",
+            "厚度：8.30mm（掠影绿，闪速黑，雪霁蓝）；8.10mm（电光紫）,重量：约217g（掠影绿），约211g（电光紫），约216g（闪速黑，雪霁蓝"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "高通 骁龙8 Gen5 更多高通 骁龙8 Gen5手机> ，"
+          ],
+          [
+            "CPU频率",
+            "最高主频4.32GHz"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "RAM容量",
+            "12GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR5X>"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 4.1>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "Android"
+          ],
+          [
+            "操作系统",
+            "ColorOS 16"
+          ],
+          [
+            "振动马达",
+            "X轴线性马达"
+          ],
+          [
+            "扬声器",
+            "立体声双扬声器"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.83英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2800x1272px"
+          ],
+          [
+            "屏幕材质",
+            "柔性AMOLED>"
+          ],
+          [
+            "屏幕刷新率",
+            "165Hz>"
+          ],
+          [
+            "像素密度",
+            "450ppi"
+          ],
+          [
+            "屏占比",
+            "93.6%"
+          ],
+          [
+            "触控采样率",
+            "最高330Hz，默认120Hz"
+          ],
+          [
+            "屏幕色彩",
+            "自然模式：100% DCI-P3 专业模式：100% DCI-P3 鲜艳模式：100% DCI-P3,10.7 亿色（10-bit）"
+          ],
+          [
+            "其他屏幕参数",
+            "支持低亮低频闪护眼功能，无低亮低频闪护眼开关"
+          ],
+          [
+            "屏幕亮度",
+            "800nits全局默认最高亮度，1800nits全局激发最高亮度"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "三摄像头（后双）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：广角摄像头 后置摄像头2：超广角摄像头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：800万像素 前置摄像头1：1600万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头2：f/2.2 前置摄像头1：f/2.4"
+          ],
+          [
+            "传感器型号",
+            "索尼 IMX 906"
+          ],
+          [
+            "对焦方式",
+            "AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：24mm 后置摄像头2：16mm 前置摄像头1：23mm"
+          ],
+          [
+            "防抖功能",
+            "两轴OIS防抖>"
+          ],
+          [
+            "镜头片数",
+            "后置摄像头1：6P 后置摄像头2：5P 前置摄像头1：4P"
+          ],
+          [
+            "广角",
+            "112°"
+          ],
+          [
+            "后置拍照功能",
+            "照片，视频，人像，夜景，全景，电影，慢动作，长曝光，多景录像，延时摄影，萌拍，高像素，AI 证件照，专业模式，超级文本，扫一扫，移轴"
+          ],
+          [
+            "后置视频拍摄",
+            "4K 基础拍摄：120 fps，60 fps，30 fps 1080P 基础拍摄：120 fps，60 fps，30 fps 720P 基础拍摄：30 fps 4K 视频防抖拍摄：120 fps，60 fps，30 fps 1080P 视频防抖拍摄：120 fps，60 fps，30 fps 720P 视频防抖拍摄：30 fps 4K 慢动作视频拍摄：120 fps 1080P 慢动作视频拍摄：240 fps，120 fps 720P 慢动作视频拍摄：480 fps，240 fps 4K 延时摄影拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持电影模式视频拍摄 支持多景录像视频拍摄"
+          ],
+          [
+            "前置拍照功能",
+            "照片，视频，人像，夜景，全景，多景录像，延时摄影，萌拍，AI 证件照"
+          ],
+          [
+            "前置视频拍摄",
+            "1080P 基础拍摄：30 fps 720P 基础拍摄：30 fps 1080P 视频防抖拍摄：30 fps 720P 视频防抖拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持多景录像视频拍摄"
+          ],
+          [
+            "闪光灯",
+            "后置：闪光灯>"
+          ],
+          [
+            "变焦倍数",
+            "最高支持 1 倍光学变焦，最高支持 10 倍数码变焦"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G>"
+          ],
+          [
+            "5G网络",
+            "移动5G（NR），联通5G（NR），电信5G（NR），广电5G（NR） 更多5G手机＞"
+          ],
+          [
+            "网络频段",
+            "2G GSM：850/900/1800MHz 3G WCDMA：频段 1/4/5/6/8/19 4G LTE FDD：频段 1/3/4/5/8/18/19/26/28A/66 4G LTE TDD：频段 34/38/39/40/41/42/43/48 5G NR：n1/n3/n5/n8/n18/n26/n28A/n38/n40/n41/n48/n66/n77/n78"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "支持WiFi 7（802.11be），支持WiFi 6（802.11ax），支持WiFi 5（802.11ac），支持802.11a/b/g/n，支持WiFi Display，支持WLAN 网络分享，支持WiFi 5GHz 160MHz， 支持2×2 MIMO"
+          ],
+          [
+            "定位导航",
+            "北斗（B1I+B1C+B2a），GPS（L1+L5），GLONASS（G1），Galileo（E1+E5a），QZSS（L1+L5），支持A-GNSS辅助定位，支持无线局域网定位，支持蜂窝网络定位"
+          ],
+          [
+            "蓝牙",
+            "SBC，AAC，LDAC，aptX，aptX HD，aptX Adaptive，LHDC 5.0"
+          ],
+          [
+            "NFC",
+            "支持NFC>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池类型",
+            "不可拆卸式电池"
+          ],
+          [
+            "电池容量",
+            "8300mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "100w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP66/68/69/69K满级防尘防水"
+          ],
+          [
+            "感应器",
+            "接近感应器，环境光传感器，色温传感器，电子罗盘，加速度传感器，陀螺仪，红外遥控"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "手机 x1 保护壳 x1 快速入门指南 x1 取卡针 x1 充电器 x1 数据线 x1 包装盒 x1"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.83 英寸 1.5K 直屏 · 165Hz",
+        "valueAtAudit": "6.83 英寸 1.5K 直屏 · 165Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2150/2149372/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.83 英寸 1.5K 直屏 · 165Hz",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙8 Gen5",
+        "valueAtAudit": "骁龙8 Gen5",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2150/2149372/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 骁龙8 Gen5",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "valueAtAudit": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2150/2149372/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "8300mAh",
+        "valueAtAudit": "8300mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2150/2149372/param.shtml",
+        "evidenceText": "参数表/官方页：电池 8300mAh",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线",
+        "valueAtAudit": "100W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2150/2149372/param.shtml",
+        "evidenceText": "参数表/官方页：充电 100W 有线",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "217g",
+        "valueAtAudit": "217g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2150/2149372/param.shtml",
+        "evidenceText": "参数表/官方页：重量 217g",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "valueAtAudit": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2150/2149372/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 12GB+256GB",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年12月05日",
+        "valueAtAudit": "2025年12月05日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/2150/2149372/index.html",
+        "evidenceText": "发布会/官网信息：2025年12月05日",
+        "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      }
+    ]
+  },
+  {
+    "id": "oneplus-ace6",
+    "brand": "OnePlus",
+    "name": "一加 Ace 6",
+    "year": 2025,
+    "type": "性能旗舰",
+    "market": "中国大陆正式销售",
+    "display": "6.83 英寸 1.5K 直屏 · 165Hz",
+    "chip": "骁龙 8 Elite",
+    "camera": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+    "battery": "7800mAh",
+    "charging": "120W 有线",
+    "weight": "213g",
+    "storage": "12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB",
+    "os": "ColorOS 16",
+    "priceCN": 2599,
+    "priceText": "首发起售价（12GB+256GB）；国补后 1999 元起",
+    "selling": "7800mAh + 120W，骁龙 8 至尊版的性价比性能机",
+    "bestFor": [
+      "游戏性能",
+      "续航",
+      "性价比"
+    ],
+    "source": "https://detail.zol.com.cn/2146/2145480/param.shtml",
+    "sourceName": "中关村在线参数页（第三方核验）",
+    "verified": false,
+    "launchMonth": "2025-10",
+    "launchDateDisplay": "2025年10月30日",
+    "priceType": "official_launch_msrp",
+    "livePrice": null,
+    "livePriceStatus": "not_connected",
+    "livePriceCheckedAt": null,
+    "storageOptions": [
+      "12GB+256GB",
+      "16GB+256GB",
+      "12GB+512GB",
+      "16GB+512GB"
+    ],
+    "chinaOfficial": true,
+    "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
+    "announcementSource": "https://wap.zol.com.cn/2146/2145480/index.html",
+    "priceSource": "https://m.toutiao.com/article/7672663601399742999",
+    "priceSourceName": "一加 Ace 6 / 6T 参数与成本测算（含起售价对照）",
+    "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+    "scoreMethod": "heuristic_preliminary",
+    "quoteTargetStorage": "12GB+256GB",
+    "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
+    "auditStatus": "needs_parameter_price_audit",
+    "auditNotes": [
+      "2026-10-29 新增机型：67 项参数（中关村在线，标题比对通过）",
+      "2025 年 10 月 27 日发布、10 月 30 日开售；2599 元起，与一加 15 同场发布。",
+      "ZOL 版本表现价 3099 元高于首发价，本站记首发价。"
+    ],
+    "priceAuditStatus": "source_present_needs_crosscheck",
+    "parameterAuditStatus": "partial",
+    "specSource": "https://detail.zol.com.cn/2146/2145480/param.shtml",
+    "specSourceName": "中关村在线参数页（第三方核验）",
+    "specFieldCount": 67,
+    "specCollectedAt": "2026-10-29",
+    "specs": [
+      {
+        "group": "基本参数",
+        "items": [
+          [
+            "国内发布时间",
+            "2025年10月27日"
+          ],
+          [
+            "电商报价",
+            "￥3099"
+          ],
+          [
+            "上市日期",
+            "2025年10月27日"
+          ],
+          [
+            "产品型号",
+            "一加 Ace 6"
+          ],
+          [
+            "使用场景",
+            "三防手机> ， 游戏手机> ， 拍照手机> ， 智能手机> ， 4G手机> ， 快充手机> ， 5G手机> ， 3G手机> ， 新品手机> ， 热门手机>"
+          ],
+          [
+            "机身材质",
+            "屏幕保护玻璃：晶盾玻璃 中框材质：铝合金金属中框 电池盖材质背部：玻璃材质 查看外观图>"
+          ],
+          [
+            "机身颜色",
+            "快银，闪白，竟黑"
+          ],
+          [
+            "指纹识别",
+            "超声波屏幕指纹识别>"
+          ],
+          [
+            "面部识别",
+            "支持"
+          ]
+        ]
+      },
+      {
+        "group": "外形",
+        "items": [
+          [
+            "长度",
+            "163.41mm"
+          ],
+          [
+            "宽度",
+            "77.04mm"
+          ],
+          [
+            "厚度",
+            "8.3mm"
+          ],
+          [
+            "重量",
+            "213g"
+          ]
+        ]
+      },
+      {
+        "group": "硬件",
+        "items": [
+          [
+            "CPU型号",
+            "高通 骁龙 8 Elite 更多高通 骁龙 8 Elite手机> ，"
+          ],
+          [
+            "CPU频率",
+            "最高主频4.32GHz"
+          ],
+          [
+            "CPU核心数",
+            "八核>"
+          ],
+          [
+            "GPU型号",
+            "高通 Adreno 830"
+          ],
+          [
+            "RAM容量",
+            "12GB>"
+          ],
+          [
+            "RAM存储类型",
+            "LPDDR5X>"
+          ],
+          [
+            "ROM容量",
+            "256GB>"
+          ],
+          [
+            "ROM存储类型",
+            "UFS 4.1>"
+          ],
+          [
+            "存储卡",
+            "不支持容量扩展>"
+          ],
+          [
+            "出厂系统内核",
+            "Android"
+          ],
+          [
+            "操作系统",
+            "ColorOS 16"
+          ],
+          [
+            "振动马达",
+            "X轴线性马达"
+          ],
+          [
+            "扬声器",
+            "立体声双扬声器"
+          ]
+        ]
+      },
+      {
+        "group": "屏幕",
+        "items": [
+          [
+            "屏幕尺寸",
+            "6.83英寸"
+          ],
+          [
+            "屏幕类型",
+            "全面屏（中置挖孔屏）， 直面屏>"
+          ],
+          [
+            "分辨率",
+            "2800x1272px"
+          ],
+          [
+            "屏幕材质",
+            "柔性AMOLED>"
+          ],
+          [
+            "屏幕刷新率",
+            "165Hz>"
+          ],
+          [
+            "像素密度",
+            "450ppi"
+          ],
+          [
+            "屏占比",
+            "93.6%"
+          ],
+          [
+            "触控采样率",
+            "最高330Hz，默认120Hz"
+          ],
+          [
+            "屏幕色彩",
+            "自然模式：100% DCI-P3 专业模式：100% DCI-P3 鲜艳模式：100% DCI-P3,10.7 亿色（10-bit）"
+          ],
+          [
+            "其他屏幕参数",
+            "支持低亮低频闪护眼功能，无低亮低频闪护眼开关"
+          ],
+          [
+            "屏幕亮度",
+            "800nits全局默认最高亮度，1800nits全局激发最高亮度"
+          ]
+        ]
+      },
+      {
+        "group": "摄像头",
+        "items": [
+          [
+            "摄像头总数",
+            "三摄像头（后双）>"
+          ],
+          [
+            "摄像头名称",
+            "后置摄像头1：广角摄像头 后置摄像头2：超广角摄像头 前置摄像头1：主摄"
+          ],
+          [
+            "像素",
+            "后置摄像头1：5000万像素 后置摄像头2：800万像素 前置摄像头1：1600万像素"
+          ],
+          [
+            "光圈",
+            "后置摄像头1：f/1.8 后置摄像头2：f/2.2 前置摄像头1：f/2.4"
+          ],
+          [
+            "传感器型号",
+            "索尼 IMX 906"
+          ],
+          [
+            "对焦方式",
+            "AF"
+          ],
+          [
+            "焦距",
+            "后置摄像头1：24mm 后置摄像头2：16mm 前置摄像头1：23mm"
+          ],
+          [
+            "防抖功能",
+            "OIS光学防抖>"
+          ],
+          [
+            "镜头片数",
+            "后置摄像头1：6P 后置摄像头2：5P 前置摄像头1：4P"
+          ],
+          [
+            "广角",
+            "112°"
+          ],
+          [
+            "后置拍照功能",
+            "照片，视频，人像，夜景，全景，电影，慢动作，长曝光，多景录像，延时摄影，萌拍，高像素，AI 证件照，专业模式，超级文本，扫一扫，移轴"
+          ],
+          [
+            "后置视频拍摄",
+            "4K 基础拍摄：120 fps，60 fps，30 fps 1080P 基础拍摄：120 fps，60 fps，30 fps 720P 基础拍摄：30 fps 4K 视频防抖拍摄：60 fps，30 fps 1080P 视频防抖拍摄：60 fps，30 fps 720P 视频防抖拍摄：30 fps 4K 慢动作视频拍摄：120 fps 1080P 慢动作视频拍摄：240 fps，120 fps 720P 慢动作视频拍摄：480 fps，240 fps 4K 延时摄影拍摄：30 fps 1080P 延时摄影拍摄：30 fps 支持电影模式视频拍摄 支持多景录像视频拍摄 支持视频变焦拍摄：最高支持 20 倍数码变焦"
+          ],
+          [
+            "前置拍照功能",
+            "照片，视频，人像，夜景，全景，多景录像，延时摄影，萌拍，AI 证件照"
+          ],
+          [
+            "前置视频拍摄",
+            "1080P 基础拍摄：30 fps 720P 基础拍摄：30 fps 1080P 视频防抖拍摄：30 fps 720P 视频防抖拍摄：30 fps 支持多景录像视频拍摄"
+          ],
+          [
+            "闪光灯",
+            "后置：闪光灯>"
+          ]
+        ]
+      },
+      {
+        "group": "网络与连接",
+        "items": [
+          [
+            "网络类型",
+            "5G> ， 4G> ， 3G>"
+          ],
+          [
+            "5G网络",
+            "移动5G（NR），联通5G（NR），电信5G（NR），广电5G（NR） 更多5G手机＞"
+          ],
+          [
+            "网络频段",
+            "2G GSM：850/900/1800MHz 3G WCDMA：频段 1/4/5/6/8/19 4G LTE FDD：频段 1/3/4/5/8/18/19/26/28A/66 4G LTE TDD：频段 34/38/39/40/41/42/43/48 5G NR：n1/n3/n5/n8/n18/n26/n28A/n38/n40/n41/n48/n66/n77/n7"
+          ],
+          [
+            "SIM卡类型",
+            "双卡（Nano SIM卡）>"
+          ],
+          [
+            "WLAN功能",
+            "支持WiFi 7（802.11be），支持WiFi 6（802.11ax），支持WiFi 5（802.11ac），支持802.11a/b/g/n，支持WiFi Display，支持WLAN 网络分享，支持网络叠加：WiFi 2.4GHz 2×2+WiFi 5GHz 2×2 并发，支持 WiFi 5GHz 160MHz 支持 2×2 MIMO"
+          ],
+          [
+            "定位导航",
+            "双频支持：北斗（B1I+B1C+B2a），GPS（L1+L5），GLONASS（G1），Galileo（E1+E5a），QZSS（L1+L5），NavIC（L5），支持A-GPS辅助定位，支持无线局域网定位，支持蜂窝网络定位"
+          ],
+          [
+            "蓝牙",
+            "支持SBC，AAC，aptX，aptX HD，LDAC，LHDC 5.0"
+          ],
+          [
+            "NFC",
+            "支持NFC>"
+          ],
+          [
+            "红外功能",
+            "支持"
+          ],
+          [
+            "机身接口",
+            "USB Type-C接口"
+          ]
+        ]
+      },
+      {
+        "group": "电池与续航",
+        "items": [
+          [
+            "电池容量",
+            "7800mAh 大电池"
+          ],
+          [
+            "有线充电",
+            "120w"
+          ]
+        ]
+      },
+      {
+        "group": "功能与服务",
+        "items": [
+          [
+            "三防功能",
+            "IP66/68/69/69K满级防尘防水"
+          ],
+          [
+            "感应器",
+            "接近感应器，环境光传感器，色温传感器，电子罗盘，加速度传感器，陀螺仪，屏下超声指纹，红外遥控"
+          ]
+        ]
+      },
+      {
+        "group": "手机附件",
+        "items": [
+          [
+            "包装清单",
+            "手机 x1 保护壳 x1 快速入门指南 x1 取卡针 x1 充电器 x1 数据线 x1 包装盒 x1"
+          ]
+        ]
+      }
+    ],
+    "fieldAudit": [
+      {
+        "field": "屏幕",
+        "value": "6.83 英寸 1.5K 直屏 · 165Hz",
+        "valueAtAudit": "6.83 英寸 1.5K 直屏 · 165Hz",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145480/param.shtml",
+        "evidenceText": "参数表/官方页：屏幕 6.83 英寸 1.5K 直屏 · 165Hz",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "处理器",
+        "value": "骁龙 8 Elite",
+        "valueAtAudit": "骁龙 8 Elite",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145480/param.shtml",
+        "evidenceText": "参数表/官方页：处理器 骁龙 8 Elite",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "影像",
+        "value": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "valueAtAudit": "5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145480/param.shtml",
+        "evidenceText": "参数表/官方页：影像 5000 万像素广角 + 800 万像素超广角；前置 1600 万像素",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "电池",
+        "value": "7800mAh",
+        "valueAtAudit": "7800mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145480/param.shtml",
+        "evidenceText": "参数表/官方页：电池 7800mAh",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线",
+        "valueAtAudit": "120W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145480/param.shtml",
+        "evidenceText": "参数表/官方页：充电 120W 有线",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "重量",
+        "value": "213g",
+        "valueAtAudit": "213g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145480/param.shtml",
+        "evidenceText": "参数表/官方页：重量 213g",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "容量组合",
+        "value": "12GB+256GB",
+        "valueAtAudit": "12GB+256GB",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://detail.zol.com.cn/2146/2145480/param.shtml",
+        "evidenceText": "参数表/官方页：容量组合 12GB+256GB",
+        "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+      },
+      {
+        "field": "正式发布/开售日期",
+        "value": "2025年10月30日",
+        "valueAtAudit": "2025年10月30日",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://wap.zol.com.cn/2146/2145480/index.html",
+        "evidenceText": "发布会/官网信息：2025年10月30日",
+        "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      }
+    ]
   }
 ]
