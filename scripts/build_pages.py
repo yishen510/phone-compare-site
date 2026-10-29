@@ -23,8 +23,12 @@ def main() -> None:
         source = path.read_text(encoding="utf-8")
         if "<html" not in source.lower() or "</html>" not in source.lower():
             raise SystemExit(f"FAIL: {name} does not look like a complete HTML document")
-        if "PHONE_DATA" not in source:
+        # index.html 必须内嵌数据；demo 页已改为跳转页，只要有跳转目标即可
+        if name == "index.html" and "PHONE_DATA" not in source:
             raise SystemExit(f"FAIL: {name} does not contain embedded PHONE_DATA")
+        if name == "phone-compare-demo.html" and "PHONE_DATA" not in source:
+            if "location.replace" not in source and "http-equiv=\"refresh\"" not in source:
+                raise SystemExit(f"FAIL: {name} 既没有数据，也不是跳转页")
     # Keep private QA data, scripts, API notes and source JSON out of the public artifact.
     if OUT.exists():
         shutil.rmtree(OUT)

@@ -140,10 +140,11 @@ def watts(value: str | None) -> str | None:
     """「100w」「100」都按 100W 处理；「支持> ，50w」取第一个数字。"""
     if not value:
         return None
-    m = re.search(r"(\d{2,3})\s*[wW]", str(value))
+    # 22.5w / 35.2w 这类带小数的功率以前匹配不到（正则只认整数），会静默丢字段
+    m = re.search(r"(\d{1,3}(?:\.\d+)?)\s*[wW瓦]", str(value))
     if m:
         return m.group(1)
-    m = re.fullmatch(r"\s*(\d{2,3})\s*", str(value))
+    m = re.fullmatch(r"\s*(\d{1,3}(?:\.\d+)?)\s*", str(value))
     return m.group(1) if m else None
 
 
@@ -196,14 +197,23 @@ def derive(specs: list[dict]) -> dict[str, str]:
     rom = num(r"(\d{1,3}\s*(?:GB|TB))", pick(specs, "ROM容量"))
     if ram and rom:
         out["storage"] = f"{ram.replace(' ', '')}+{rom.replace(' ', '')}"
+    elif rom:
+        # 华为等机型参数页只写 ROM，不写运存；只写一半也比整列空着有用
+        out["storage"] = f"{rom.replace(' ', '')}（运存未收录）"
 
     cam = camera_text(specs)
     if cam:
         out["camera"] = cam
 
-    osv = pick(specs, "操作系统")
-    if osv:
-        out["os"] = naive_clean(osv)[:30]
+    # 参数页有时只给「出厂系统内核」（Android 13），有时两个都给；缺哪个补哪个
+    osv = naive_clean(pick(specs, "操作系统") or "")
+    kernel = naive_clean(pick(specs, "出厂系统内核") or "")
+    if osv and kernel and kernel.lower() not in osv.lower():
+        out["os"] = f"{kernel} / {osv}"[:30]
+    elif osv:
+        out["os"] = osv[:30]
+    elif kernel:
+        out["os"] = kernel[:30]
     return out
 
 
