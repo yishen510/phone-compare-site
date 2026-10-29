@@ -23,9 +23,11 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from backfill_summary_from_specs import derive  # noqa: E402
 from import_zol_params import fetch, parse_specs, patch_html  # noqa: E402
 
+HUAWEI_UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/126",
+             "Accept-Language": "zh-CN"}
 ROOT = Path(__file__).resolve().parents[1]
 CATALOG = ROOT / "data" / "phones.json"
-TODAY = "2026-10-24"
+TODAY = "2026-10-29"
 ZOL_SRC = "https://detail.zol.com.cn/{}/{}/param.shtml"
 
 NEW = [
@@ -264,13 +266,220 @@ NEW = [
             "该机 8 月发布、此前未入库，本次作为补齐机型加入。",
         ],
     },
-    # ---------------- 2024 及更早的补齐机型可继续往下列 ----------------
+    # ---------------- 2026-09/10 追加：本轮补齐的漏收机型 ----------------
+    {
+        "id": "hua-puraxview", "brand": "Huawei", "name": "HUAWEI Pura X View",
+        "type": "影像旗舰", "launchMonth": "2026-09", "launchDateDisplay": "2026年09月09日",
+        "priceCN": 5999, "priceType": "official_launch_msrp",
+        "priceText": "官方起售价（12GB+256GB）；512GB 6999 / 1TB 8499",
+        "priceSource": "https://consumer.huawei.com/cn/phones/pura-x-view/",
+        "priceSourceName": "华为官网·Pura X View 产品页（¥5999 起）",
+        "announcementSource": "https://consumer.huawei.com/cn/phones/pura-x-view/specs/",
+        "selling": "6.68mm / 201g 的 6.39 英寸阔直板，2 亿像素红枫影像 + 7000mAh",
+        "bestFor": ["拍照视频", "日常全能", "续航"],
+        "storageOptions": ["12GB+256GB", "12GB+512GB", "12GB+1TB"],
+        "quoteTargetStorage": "12GB+256GB",
+        "official": "https://consumer.huawei.com/cn/phones/pura-x-view/specs/",
+        "officialFields": ["display", "chip", "battery", "charging", "weight", "camera"],
+        "manualSpecsFrom": "https://consumer.huawei.com/cn/phones/pura-x-view/specs/",
+        "overrides": {"display": "6.39 英寸 OLED · 120Hz（16:10 阔直板）",
+                      "chip": "麒麟 9030S", "battery": "7000mAh（典型值；额定 6815mAh）",
+                      "charging": "66W 有线 / 40W 无线", "weight": "201g",
+                      "os": "HarmonyOS 7.0",
+                      "camera": "2 亿像素超聚光主摄（F1.8，OIS）+ 3.7 倍光学潜望长焦，前置 5000 万"},
+        "notes": [
+            "9 月 7 日发布、9 月 9 日 10:08 开售；5999 / 6999 / 8499 对应 256GB / 512GB / 1TB，取自华为官网产品页与发布会报道。",
+            "ZOL 参数页把该机误标为折叠屏（列出「折叠尺寸」与 3.5 英寸副屏，疑似沿用上代 Pura X 模板），且系统写成 HarmonyOS 5.0.1、上市日期写成 8 月 28 日；本站按华为官网规格页取单屏 6.39 英寸、HarmonyOS 7.0、9 月 9 日开售。",
+            "参数表整组来自华为官网规格页（非 ZOL），因此参数条目数以官网列项为准。",
+        ],
+    },
+    {
+        "id": "xiaomi-18-fold", "brand": "Xiaomi", "name": "Xiaomi 18 Fold",
+        "type": "折叠屏旗舰", "launchMonth": "2026-09", "launchDateDisplay": "2026年09月10日",
+        "priceCN": 10999, "priceType": "official_launch_msrp",
+        "priceText": "官方起售价（12GB+256GB）；12+512 11999 / 16+512 12999 / 16+1TB 14999 / 陶瓷特别版 15999",
+        "priceSource": "https://www.toutiao.com/article/7683742104514609674",
+        "priceSourceName": "华商网转 IT之家·小米 18 Fold 首销报道（含五档价目）",
+        "announcementSource": "https://www.zgcsb.com/news/shouYe/2026-09/08/ma_689574.html",
+        "selling": "5.38 英寸外屏 + 7.58 英寸内屏的「中折叠」，玄戒 O3 + 徕卡三摄",
+        "bestFor": ["大屏办公", "拍照视频", "日常全能"],
+        "storageOptions": ["12GB+256GB", "12GB+512GB", "16GB+512GB", "16GB+1TB", "16GB+1TB 陶瓷特别版"],
+        "quoteTargetStorage": "12GB+256GB",
+        "sourceName": "厂商规格（多方转载）+ 发布会报道",
+        "manualSpecsSource": "https://g.pconline.com.cn/x/2183/21831111.html",
+        "manualSpecs": [
+            {"group": "基本参数", "items": [
+                ["国内发布时间", "2026年09月07日"], ["上市日期", "2026年09月10日"],
+                ["产品型号", "小米18 Fold"], ["机身颜色", "西野红等"]]},
+            {"group": "外形", "items": [
+                ["展开尺寸", "163.8 × 117.8 × 5.02mm"], ["折叠尺寸", "117.8 × 83.6 × 10.68mm"],
+                ["重量", "219g"], ["中框材质", "7 系铝合金"]]},
+            {"group": "屏幕", "items": [
+                ["外屏", "5.38 英寸，1712 × 1168，龙晶玻璃 3.0"],
+                ["内屏", "7.58 英寸，2364 × 1672，双层 UTG（50μm + 30μm）"],
+                ["屏幕刷新率", "1–120Hz LTPO 自适应（内外屏）"],
+                ["屏幕亮度", "峰值 4000nits"]]},
+            {"group": "硬件", "items": [
+                ["CPU型号", "玄戒 O3（3nm，10 核全大核）"],
+                ["RAM容量", "12GB / 16GB（长鑫 LPDDR6）"],
+                ["ROM容量", "256GB / 512GB / 1TB"],
+                ["操作系统", "小米澎湃 OS 4"], ["扬声器", "立体声双扬声器"]]},
+            {"group": "摄像头", "items": [
+                ["后置摄像头1", "2 亿像素 HP5 主摄（1/1.56\"，F1.7，23mm，OIS）"],
+                ["后置摄像头2", "5000 万像素 JN5 潜望长焦（F2.8，80mm，3.5 倍光学变焦）"],
+                ["后置摄像头3", "5000 万像素 OV50M 超广角（F2.4，17mm，102°）"],
+                ["前置摄像头", "1600 万像素"]]},
+            {"group": "电池与续航", "items": [
+                ["电池容量", "6000mAh 小米金沙江电池"],
+                ["有线充电", "67W"], ["无线充电", "50W"]]},
+            {"group": "功能与服务", "items": [
+                ["三防功能", "IP58 / IP59"], ["其他", "UWB、Wi-Fi 7、23 个 5G 频段、至高六分屏"]]},
+        ],
+        "overrides": {"display": "7.58 英寸内屏 + 5.38 英寸外屏 · 1–120Hz",
+                      "chip": "玄戒 O3", "battery": "6000mAh",
+                      "charging": "67W 有线 / 50W 无线", "weight": "219g",
+                      "os": "小米澎湃 OS 4",
+                      "camera": "徕卡三摄：2 亿主摄 + 5000 万潜望长焦（3.5 倍）+ 5000 万超广角，前置 1600 万"},
+        "notes": [
+            "9 月 7 日发布、9 月 10 日 10:00 首销；10999 元起，五档价目见华商网转 IT之家报道，与中国城市网、太平洋科技口径一致。",
+            "ZOL 尚未为小米 18 Fold 建立参数页，参数按发布会与多家媒体规格整理（太平洋科技逐项列出屏幕分辨率、机身尺寸、传感器型号），整组标注为「厂商规格（多方转载）+ 发布会报道」，未冒充 ZOL 来源。",
+            "该机为小米首款「中折叠」，本站按折叠屏旗舰归类。",
+        ],
+    },
+    {
+        "id": "nubia-redmagic12-proplus", "brand": "nubia", "name": "红魔 12 Pro+",
+        "type": "游戏性能旗舰", "launchMonth": "2026-10", "launchDateDisplay": "2026年10月15日",
+        "priceCN": 6999, "priceType": "official_launch_msrp",
+        "priceText": "官方价（12GB+256GB）；16+512 7999 / 16+1TB 8999，国补后 6499 / 7499 / 8499",
+        "priceSource": "https://www.sctv.com/news/2111083901061894146",
+        "priceSourceName": "四川网络广播电视台·红魔 12 Pro+ 发布会报道",
+        "announcementSource": "https://www.toutiao.com/article/7696815248037003791",
+        "selling": "第九代屏下前摄 185Hz 全面屏 + RGB 脉动水冷，8400mAh / 120W",
+        "bestFor": ["游戏性能", "续航", "日常全能"],
+        "storageOptions": ["12GB+256GB", "16GB+512GB", "16GB+1TB"],
+        "quoteTargetStorage": "12GB+256GB",
+        "zol": ("2181", "2180635"),
+        "overrides": {"display": "6.85 英寸 1.5K 屏下前摄全面屏 · 185Hz",
+                      "charging": "120W 有线 / 80W 无线", "os": "REDMAGIC OS 12",
+                      "weight": "223g"},
+        "notes": [
+            "10 月 15 日 14:30 发布、当日 18:00 开售；6999 / 7999 / 8999 三档价目见四川网络广播电视台与华商网报道。",
+            "无线充电口径：ZOL 与中国深圳网均写 80W，华商网写 50W，本站按多数来源取 80W。",
+        ],
+    },
+    {
+        "id": "honor-win2", "brand": "Honor", "name": "荣耀 WIN2",
+        "type": "游戏性能旗舰", "launchMonth": "2026-10", "launchDateDisplay": "2026年10月21日",
+        "priceCN": 5499, "priceType": "official_launch_msrp",
+        "priceText": "首销价（12GB+256GB）；16+256 5799 / 12+512 首销 5999 / 16+512 6999 / 16+1TB 7999",
+        "priceSource": "https://www.cfbond.com/ejy/qyzxpd/4896228675.shtml",
+        "priceSourceName": "中国财富网·荣耀 WIN2 系列开售报道（含三机起售价）",
+        "announcementSource": "https://baike.baidu.com/item/%E8%8D%A3%E8%80%80WIN2%E7%B3%BB%E5%88%97/67803436",
+        "selling": "双风扇主动散热 + 10100mAh 青海湖电池，2K 185Hz 电竞屏",
+        "bestFor": ["游戏性能", "续航", "日常全能"],
+        "storageOptions": ["12GB+256GB", "16GB+256GB", "12GB+512GB", "16GB+512GB", "16GB+1TB"],
+        "quoteTargetStorage": "12GB+256GB",
+        "zol": ("2182", "2181338"),
+        "overrides": {"display": "6.89 英寸 2K 直屏 · 185Hz",
+                      "charging": "100W 有线 / 80W 无线", "os": "MagicOS 11",
+                      "weight": "237g"},
+        "notes": [
+            "10 月 21 日发布并当日开售；WIN2 / WIN RT2 / WIN Turbo2 起售价分别为 5499 / 4199 / 3199 元，见中国财富网报道，与荣耀官方开售页一致。",
+            "国补与首销优惠后的到手价另计（5499 → 4999），本站只记官方标价。",
+        ],
+    },
+    {
+        "id": "honor-win-rt2", "brand": "Honor", "name": "荣耀 WIN RT2",
+        "type": "性能续航旗舰", "launchMonth": "2026-10", "launchDateDisplay": "2026年10月21日",
+        "priceCN": 4199, "priceType": "official_launch_msrp",
+        "priceText": "首销限时价起（12GB+256GB）；国补后 3149 元起",
+        "priceSource": "https://www.cfbond.com/ejy/qyzxpd/4896228675.shtml",
+        "priceSourceName": "中国财富网·荣耀 WIN2 系列开售报道",
+        "announcementSource": "https://baike.baidu.com/item/%E8%8D%A3%E8%80%80WIN2%E7%B3%BB%E5%88%97/67803436",
+        "selling": "12070mAh 青海湖电池 + 第五代骁龙 8 至尊版，2K 185Hz 直屏",
+        "bestFor": ["续航", "游戏性能", "日常全能"],
+        "storageOptions": ["12GB+256GB", "16GB+256GB", "12GB+512GB", "16GB+512GB"],
+        "quoteTargetStorage": "12GB+256GB",
+        "zol": ("2182", "2181347"),
+        "overrides": {"display": "6.89 英寸 2K 直屏 · 185Hz",
+                      "charging": "90W 有线 / 27W 有线反向", "os": "MagicOS 11"},
+        "notes": [
+            "与 WIN2 同场发布，首销限时 4199 元起，国补后 3149 元起，见中国财富网报道。",
+            "电池 12070mAh、90W 有线充电取自 ZOL 参数页，与荣耀官方口径一致。",
+        ],
+    },
+    {
+        "id": "honor-win-turbo2", "brand": "Honor", "name": "荣耀 WIN Turbo2",
+        "type": "性能旗舰", "launchMonth": "2026-10", "launchDateDisplay": "2026年10月21日",
+        "priceCN": 3199, "priceType": "official_launch_msrp",
+        "priceText": "首销限时价起（12GB+256GB）；国补后 2251 元起，10 月 30 日首销",
+        "priceSource": "https://www.cfbond.com/ejy/qyzxpd/4896228675.shtml",
+        "priceSourceName": "中国财富网·荣耀 WIN2 系列开售报道",
+        "announcementSource": "https://baike.baidu.com/item/%E8%8D%A3%E8%80%80WIN2%E7%B3%BB%E5%88%97/67803436",
+        "selling": "12070mAh 大电池 + 第四代骁龙 8s，2K 185Hz 直屏的电竞性价比款",
+        "bestFor": ["续航", "游戏性能", "性价比"],
+        "storageOptions": ["12GB+256GB", "16GB+256GB", "12GB+512GB", "16GB+512GB"],
+        "quoteTargetStorage": "12GB+256GB",
+        "zol": ("2182", "2181343"),
+        "overrides": {"display": "6.89 英寸 2K 直屏 · 185Hz",
+                      "charging": "90W 有线 / 27W 有线反向", "os": "MagicOS 11",
+                      "weight": "235g"},
+        "notes": [
+            "10 月 21 日发布、10 月 30 日正式首销；首销限时 3199 元起，见中国财富网报道与百度百科词条。",
+        ],
+    },
 ]
 
 
+def clean_text(x: str) -> str:
+    import html as _h
+    import re as _re
+    x = _re.sub(r"<[^>]+>", " ", x)
+    return _re.sub(r"\s+", " ", _h.unescape(x).replace("\xa0", " ")).strip()
+
+
+def parse_huawei_specs(url: str) -> list[dict]:
+    """华为官网规格页（consumer.huawei.com）转成与 ZOL 相同的 groups/items 结构。
+
+    小节标题在 .large-accordion__title；成对字段是 .large-accordion-subtitle + <p>；
+    电池/充电这类只有 <p> 的小节，用小节名当键、正文合并当值。
+    """
+    import re as _re
+    import urllib.request as _u
+    raw = _u.urlopen(_u.Request(url, headers=HUAWEI_UA), timeout=40).read().decode("utf-8", "ignore")
+    groups: list[dict] = []
+    for block in _re.split(r'<li class="large-accordion__item">', raw)[1:]:
+        t = _re.search(r"large-accordion__title[^>]*>(.*?)</span>", block, _re.S)
+        if not t:
+            continue
+        name = clean_text(t.group(1))
+        pairs = _re.findall(r"large-accordion-subtitle[^>]*>(.*?)</div>\s*<p[^>]*>(.*?)</p>", block, _re.S)
+        items = [(clean_text(k), clean_text(v)) for k, v in pairs]
+        items = [(k, v) for k, v in items if k and v]
+        if not items:
+            body = block.split("large-accordion__content", 1)[-1]
+            ps = [clean_text(x) for x in _re.findall(r"<p(?![^>]*subtext)[^>]*>(.*?)</p>", body, _re.S)]
+            ps = [x for x in ps if x and not x.startswith("*")]
+            if ps:
+                items = [(name, "；".join(ps))]
+        if items:
+            groups.append({"group": name, "items": items})
+    return groups
+
+
 def build(meta: dict) -> dict:
-    url = ZOL_SRC.format(*meta["zol"])
-    specs = parse_specs(fetch(url))
+    if meta.get("manualSpecs"):
+        specs = meta["manualSpecs"]
+        url = meta["manualSpecsSource"]
+        src_name = meta.get("sourceName", "官方规格（人工整理）")
+    elif meta.get("manualSpecsFrom"):
+        specs = parse_huawei_specs(meta["manualSpecsFrom"])
+        url = meta["manualSpecsFrom"]
+        src_name = meta.get("sourceName", "厂商官方规格页")
+    else:
+        url = ZOL_SRC.format(*meta["zol"])
+        specs = parse_specs(fetch(url))
+        src_name = "中关村在线参数页（第三方核验）"
     d = derive(specs)
     field_count = sum(len(g["items"]) for g in specs)
     overrides = meta.get("overrides", {})
@@ -318,7 +527,7 @@ def build(meta: dict) -> dict:
         "priceCN": meta["priceCN"], "priceText": meta["priceText"],
         "selling": meta["selling"], "bestFor": meta["bestFor"],
         "source": meta.get("official") or url,
-        "sourceName": "厂商官方规格页" if meta.get("official") else "中关村在线参数页（第三方核验）",
+        "sourceName": meta.get("sourceName") or ("厂商官方规格页" if meta.get("official") else src_name),
         "verified": bool(meta.get("official")),
         "launchMonth": meta["launchMonth"], "launchDateDisplay": meta["launchDateDisplay"],
         "priceType": meta["priceType"],
@@ -335,7 +544,7 @@ def build(meta: dict) -> dict:
         "auditNotes": [f"{TODAY} 新增机型：{field_count} 项参数（中关村在线，标题比对通过）"] + meta["notes"],
         "priceAuditStatus": "official_source_present" if meta.get("official") else "source_present_needs_crosscheck",
         "parameterAuditStatus": "partial",
-        "specSource": url, "specSourceName": "中关村在线参数页（第三方核验）",
+        "specSource": url, "specSourceName": src_name,
         "specFieldCount": field_count, "specCollectedAt": TODAY,
         "specs": specs, "fieldAudit": audit,
     }
