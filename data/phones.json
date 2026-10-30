@@ -116397,7 +116397,7 @@
   "battery": "8800mAh",
   "charging": "40W 有线",
   "weight": "228g",
-  "storage": "128GB / 256GB / 512GB（运存未收录）",
+  "storage": "128GB / 256GB / 512GB（厂商未公布运存）",
   "os": "HarmonyOS 7.0",
   "priceCN": 1999,
   "priceText": "中关村在线参考报价（非官方首发价，仅供比价参考）；以在售版本为准 版本 1999 元起",
@@ -116429,6 +116429,8 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 华为官网规格页复核：处理器 麒麟8020A（128/256GB 版）/ 麒麟8020（512GB 版）；机身内存 128/256/512GB；重量约 228g；来源 https://consumer.huawei.com/cn/phones/changxiang-100-pro-max/specs/",
+   "2026-10-30 补参数（存储组合）：128GB / 256GB / 512GB（厂商未公布运存）；来源 https://consumer.huawei.com/cn/phones/changxiang-100-pro-max/specs/",
    "2026-10-30 补参数（存储组合）：128GB / 256GB / 512GB（运存未收录）；来源 https://product.pconline.com.cn/mobile/huawei/3013342_detail.html",
    "2026-10-29 新增机型：60 项参数（中关村在线，标题比对通过）",
    "2026 年 10 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 1999~2899 元。",
@@ -116798,12 +116800,12 @@
    },
    {
     "field": "存储组合",
-    "value": "128GB / 256GB / 512GB（运存未收录）",
-    "valueAtAudit": "128GB / 256GB / 512GB（运存未收录）",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/3013342_detail.html",
-    "evidenceText": "太平洋电脑网参数页：存储组合 128GB / 256GB / 512GB（运存未收录）",
-    "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+    "value": "128GB / 256GB / 512GB（厂商未公布运存）",
+    "valueAtAudit": "128GB / 256GB / 512GB（厂商未公布运存）",
+    "status": "official_source",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/changxiang-100-pro-max/specs/",
+    "evidenceText": "华为官网规格页未列运行内存，措辞由「参数站未收录」改为「厂商未公布」",
+    "note": "2026-10-30 由厂商官方规格页补录/改写。"
    }
   ]
  },
@@ -119173,7 +119175,7 @@
   "battery": "6620mAh",
   "charging": "40W 有线",
   "weight": "212g",
-  "storage": "128GB / 256GB（运存未收录）",
+  "storage": "128GB / 256GB（厂商未公布运存）",
   "os": "HarmonyOS 6.0",
   "priceCN": 1599,
   "priceText": "中关村在线参考报价（非官方首发价，仅供比价参考）；以在售版本为准 版本 1599 元起",
@@ -119205,6 +119207,8 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 华为官网规格页复核：处理器 麒麟8000A；机身内存 128/256GB；来源 https://consumer.huawei.com/cn/phones/changxiang-90/specs/",
+   "2026-10-30 补参数（存储组合）：128GB / 256GB（厂商未公布运存）；来源 https://consumer.huawei.com/cn/phones/changxiang-90/specs/",
    "2026-10-30 补参数（存储组合）：128GB / 256GB（运存未收录）；来源 https://product.pconline.com.cn/mobile/huawei/2850631_detail.html",
    "2026-10-29 新增机型：52 项参数（中关村在线，标题比对通过）",
    "2026 年 3 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 1599~1599 元。",
@@ -119542,12 +119546,12 @@
    },
    {
     "field": "存储组合",
-    "value": "128GB / 256GB（运存未收录）",
-    "valueAtAudit": "128GB / 256GB（运存未收录）",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/2850631_detail.html",
-    "evidenceText": "太平洋电脑网参数页：存储组合 128GB / 256GB（运存未收录）",
-    "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+    "value": "128GB / 256GB（厂商未公布运存）",
+    "valueAtAudit": "128GB / 256GB（厂商未公布运存）",
+    "status": "official_source",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/changxiang-90/specs/",
+    "evidenceText": "华为官网规格页未列运行内存，措辞由「参数站未收录」改为「厂商未公布」",
+    "note": "2026-10-30 由厂商官方规格页补录/改写。"
    }
   ]
  },
@@ -120404,7 +120408,7 @@
   "battery": "6620mAh",
   "charging": "40W 有线",
   "weight": "212g",
-  "storage": "128GB / 256GB（运存未收录）",
+  "storage": "128GB / 256GB（厂商未公布运存）",
   "os": "HarmonyOS 6.0",
   "priceCN": 1719,
   "priceText": "中关村在线参考报价（非官方首发价，仅供比价参考）；以在售版本为准 版本 1719 元起",
@@ -120436,6 +120440,8 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 华为官网规格页复核：处理器 麒麟8000；机身内存 128/256GB；来源 https://consumer.huawei.com/cn/phones/changxiang-90-plus/specs/",
+   "2026-10-30 补参数（存储组合）：128GB / 256GB（厂商未公布运存）；来源 https://consumer.huawei.com/cn/phones/changxiang-90-plus/specs/",
    "2026-10-30 补参数（存储组合）：128GB / 256GB（运存未收录）；来源 https://product.pconline.com.cn/mobile/huawei/2844451_detail.html",
    "2026-10-29 新增机型：52 项参数（中关村在线，标题比对通过）",
    "2026 年 3 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 1719~1719 元。",
@@ -120773,12 +120779,12 @@
    },
    {
     "field": "存储组合",
-    "value": "128GB / 256GB（运存未收录）",
-    "valueAtAudit": "128GB / 256GB（运存未收录）",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/2844451_detail.html",
-    "evidenceText": "太平洋电脑网参数页：存储组合 128GB / 256GB（运存未收录）",
-    "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+    "value": "128GB / 256GB（厂商未公布运存）",
+    "valueAtAudit": "128GB / 256GB（厂商未公布运存）",
+    "status": "official_source",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/changxiang-90-plus/specs/",
+    "evidenceText": "华为官网规格页未列运行内存，措辞由「参数站未收录」改为「厂商未公布」",
+    "note": "2026-10-30 由厂商官方规格页补录/改写。"
    }
   ]
  },
@@ -122972,7 +122978,7 @@
   "battery": "5500mAh",
   "charging": "66W 有线",
   "weight": "191g",
-  "storage": "512GB（运存未收录）",
+  "storage": "256GB / 512GB（厂商未公布运存）",
   "os": "HarmonyOS 5.1",
   "priceCN": 2148,
   "priceText": "中关村在线参考报价（非官方首发价，仅供比价参考）；以在售版本为准 版本 2148 元起",
@@ -123004,6 +123010,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（存储组合）：256GB / 512GB（厂商未公布运存）；来源 https://consumer.huawei.com/cn/phones/nova14-huoliban/specs/",
    "2026-10-29 新增机型：66 项参数（中关村在线，标题比对通过）",
    "2025 年 10 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 2148~2148 元。",
    "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。"
@@ -123384,6 +123391,15 @@
     "sourceUrl": "https://detail.zol.com.cn/2145/2144835/param.shtml",
     "evidenceText": "发布会/官网信息：2025年10月24日",
     "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+   },
+   {
+    "field": "存储组合",
+    "value": "256GB / 512GB（厂商未公布运存）",
+    "valueAtAudit": "256GB / 512GB（厂商未公布运存）",
+    "status": "official_source",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/nova14-huoliban/specs/",
+    "evidenceText": "华为官网规格页：机身内存 256 GB / 512 GB ROM；页面未列运行内存",
+    "note": "2026-10-30 由厂商官方规格页补录/改写。"
    }
   ]
  },
@@ -127017,7 +127033,7 @@
   "battery": "8500mAh",
   "charging": "40W 有线",
   "weight": "232g",
-  "storage": "128GB / 256GB / 512GB（运存未收录）",
+  "storage": "128GB / 256GB / 512GB（厂商未公布运存）",
   "os": "HarmonyOS 6.0",
   "priceCN": 2599,
   "priceText": "中关村在线参考报价（非官方首发价，仅供比价参考）；以在售版本为准 版本 2599 元起",
@@ -127049,6 +127065,8 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 华为官网规格页复核：机身内存 128/256/512GB；来源 https://consumer.huawei.com/cn/phones/changxiang-90-pro-max/specs/",
+   "2026-10-30 补参数（存储组合）：128GB / 256GB / 512GB（厂商未公布运存）；来源 https://consumer.huawei.com/cn/phones/changxiang-90-pro-max/specs/",
    "2026-10-30 补参数（存储组合）：128GB / 256GB / 512GB（运存未收录）；来源 https://product.pconline.com.cn/mobile/huawei/2844151_detail.html",
    "2026-10-29 新增机型：60 项参数（中关村在线，标题比对通过）",
    "2026 年 3 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 2599~2599 元。",
@@ -127418,12 +127436,12 @@
    },
    {
     "field": "存储组合",
-    "value": "128GB / 256GB / 512GB（运存未收录）",
-    "valueAtAudit": "128GB / 256GB / 512GB（运存未收录）",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/2844151_detail.html",
-    "evidenceText": "太平洋电脑网参数页：存储组合 128GB / 256GB / 512GB（运存未收录）",
-    "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+    "value": "128GB / 256GB / 512GB（厂商未公布运存）",
+    "valueAtAudit": "128GB / 256GB / 512GB（厂商未公布运存）",
+    "status": "official_source",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/changxiang-90-pro-max/specs/",
+    "evidenceText": "华为官网规格页未列运行内存，措辞由「参数站未收录」改为「厂商未公布」",
+    "note": "2026-10-30 由厂商官方规格页补录/改写。"
    }
   ]
  },
@@ -128870,7 +128888,7 @@
   "battery": "6000mAh",
   "charging": "100W 有线",
   "weight": "196g",
-  "storage": "256GB / 512GB（运存未收录）",
+  "storage": "256GB / 512GB（厂商未公布运存）",
   "os": "HarmonyOS 6.0",
   "priceCN": 2849,
   "priceText": "中关村在线参考报价（非官方首发价，仅供比价参考）；以在售版本为准 版本 2849 元起",
@@ -128902,6 +128920,8 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 华为官网规格页复核：处理器 麒麟8020；机身内存 256/512GB；来源 https://consumer.huawei.com/cn/phones/nova15/specs/",
+   "2026-10-30 补参数（存储组合）：256GB / 512GB（厂商未公布运存）；来源 https://consumer.huawei.com/cn/phones/nova15/specs/",
    "2026-10-30 补参数（存储组合）：256GB / 512GB（运存未收录）；来源 https://product.pconline.com.cn/mobile/huawei/2785711_detail.html",
    "2026-10-29 新增机型：69 项参数（中关村在线，标题比对通过）",
    "2025 年 12 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 2849~2849 元。",
@@ -129307,12 +129327,12 @@
    },
    {
     "field": "存储组合",
-    "value": "256GB / 512GB（运存未收录）",
-    "valueAtAudit": "256GB / 512GB（运存未收录）",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/2785711_detail.html",
-    "evidenceText": "太平洋电脑网参数页：存储组合 256GB / 512GB（运存未收录）",
-    "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+    "value": "256GB / 512GB（厂商未公布运存）",
+    "valueAtAudit": "256GB / 512GB（厂商未公布运存）",
+    "status": "official_source",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/nova15/specs/",
+    "evidenceText": "华为官网规格页未列运行内存，措辞由「参数站未收录」改为「厂商未公布」",
+    "note": "2026-10-30 由厂商官方规格页补录/改写。"
    }
   ]
  },
@@ -164957,7 +164977,7 @@
   "charging": "45W 有线",
   "weight": "178g",
   "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB / 12GB+512GB",
-  "os": "以官方规格页为准",
+  "os": "ColorOS 14.0",
   "priceCN": null,
   "priceText": "中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
   "selling": "中端续航，2024 年 7 月上市；参数见详情，价格待补",
@@ -164991,6 +165011,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：ColorOS 14.0；来源 https://www.oppo.com/cn/smartphones/series-a/a3/specs/",
    "2026-10-29 新增机型：46 项参数（中关村在线，标题比对通过）",
    "该机上市于 2024 年 7 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
    "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
@@ -165299,6 +165320,15 @@
     "sourceUrl": "https://detail.zol.com.cn/2107/2106501/param.shtml",
     "evidenceText": "发布会/官网信息：2024年07月05日",
     "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+   },
+   {
+    "field": "操作系统",
+    "value": "ColorOS 14.0",
+    "valueAtAudit": "ColorOS 14.0",
+    "status": "official_source",
+    "sourceUrl": "https://www.oppo.com/cn/smartphones/series-a/a3/specs/",
+    "evidenceText": "OPPO 官网产品参数页：操作系统 ColorOS 14.0",
+    "note": "2026-10-30 由厂商官方规格页补录/改写。"
    }
   ]
  },
@@ -165689,7 +165719,7 @@
   "charging": "10W 有线",
   "weight": "202g",
   "storage": "6GB+128GB / 8GB+256GB",
-  "os": "以官方规格页为准",
+  "os": "鸿蒙生态（HarmonyOS Connect 认证）",
   "priceCN": null,
   "priceText": "中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
   "selling": "中端续航，2024 年 9 月上市；参数见详情，价格待补",
@@ -165721,6 +165751,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：鸿蒙生态（HarmonyOS Connect 认证）；来源 https://www.wiko.com/phones/hi_changxiang_70m",
    "2026-10-29 新增机型：37 项参数（中关村在线，标题比对通过）",
    "该机上市于 2024 年 9 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
    "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
@@ -165998,6 +166029,15 @@
     "sourceUrl": "https://detail.zol.com.cn/2106/2105894/param.shtml",
     "evidenceText": "发布会/官网信息：2024年09月",
     "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+   },
+   {
+    "field": "操作系统",
+    "value": "鸿蒙生态（HarmonyOS Connect 认证）",
+    "valueAtAudit": "鸿蒙生态（HarmonyOS Connect 认证）",
+    "status": "official_source",
+    "sourceUrl": "https://www.wiko.com/phones/hi_changxiang_70m",
+    "evidenceText": "WIKO 官网 Hi畅享 70m 页：获得 HarmonyOS Connect 认证，共享鸿蒙分布式能力",
+    "note": "2026-10-30 由厂商官方规格页补录/改写。"
    }
   ]
  },
