@@ -15308,8 +15308,8 @@
     "display": "6.82 英寸 OLED · 分辨率与刷新率以官方页为准",
     "chip": "第五代骁龙 8 至尊版移动平台",
     "camera": "专业影像系统；主摄/超广角/长焦配置以官网规格页为准",
-    "battery": "官方规格页需进一步录入",
-    "charging": "官方规格页需进一步录入",
+    "battery": "",
+    "charging": "",
     "weight": "约 232–237 g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB 卫星通信版",
     "os": "OriginOS 6 / Android 16（地区版本不同）",
@@ -15347,7 +15347,9 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：9 组 / 73 项（中关村在线，标题比对通过）",
-      "2026-10-20 补录完整参数表：9 组 / 73 项（中关村在线参数页（第三方核验））"
+      "2026-10-20 补录完整参数表：9 组 / 73 项（中关村在线参数页（第三方核验））",
+      "2026-10-30 清空 battery 的「待录入」占位文案，改由页面显示「参数站未收录」。",
+      "2026-10-30 清空 charging 的「待录入」占位文案，改由页面显示「参数站未收录」。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -15725,8 +15727,8 @@
     "display": "6.82 英寸 QHD+ OLED · 最高 144Hz（部分游戏场景）",
     "chip": "第五代骁龙 8 至尊版移动平台",
     "camera": "2 亿主摄 + 5000 万超广角 + 2 亿长焦 + 5000 万超长焦 + 第二代丹霞色彩还原镜头",
-    "battery": "官方规格页待完整录入",
-    "charging": "官方规格页待完整录入",
+    "battery": "7050mAh",
+    "charging": "100W 有线 / 50W 无线",
     "weight": "约 235–236 g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
     "os": "ColorOS",
@@ -15766,7 +15768,11 @@
       "2026-10-20 回填官方首发价：7499元（12GB+256GB）（交叉核对）",
       "2026-10-21 自动补录完整参数：10 组 / 74 项（中关村在线，标题比对通过）",
       "2026-10-20 补录完整参数表：10 组 / 74 项（中关村在线参数页（第三方核验））",
-      "2026-10-29 外链体检：priceSource 原地址已失效（404 或无法访问），已替换为当前可达的官方页面，取证结论未变。"
+      "2026-10-29 外链体检：priceSource 原地址已失效（404 或无法访问），已替换为当前可达的官方页面，取证结论未变。",
+      "2026-10-30 清空 battery 的「待录入」占位文案，改由页面显示「参数站未收录」。",
+      "2026-10-30 清空 charging 的「待录入」占位文案，改由页面显示「参数站未收录」。",
+      "2026-10-30 补录 battery：原为待录入占位，改由太平洋电脑网补齐。",
+      "2026-10-30 补录 charging：原为待录入占位，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "cross_checked_secondary",
     "parameterAuditStatus": "needs_source_crosscheck",
@@ -15787,6 +15793,22 @@
         "sourceUrl": "https://detail.zol.com.cn/2164/2163011/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2026年04月21日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "电池",
+        "value": "7050mAh",
+        "valueAtAudit": "7050mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/oppo/",
+        "evidenceText": "太平洋电脑网 OPPO Find X9 Ultra 参数页：7050mAh"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 50W 无线",
+        "valueAtAudit": "100W 有线 / 50W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/oppo/",
+        "evidenceText": "太平洋电脑网 OPPO Find X9 Ultra 参数页：100W有线 + 50W无线"
       }
     ],
     "specs": [
@@ -19612,8 +19634,8 @@
     "display": "6.82 英寸 OLED · QHD+ 级别",
     "chip": "骁龙 8 至尊版移动平台",
     "camera": "专业影像系统，包含主摄/超广角/多焦段长焦",
-    "battery": "官方详情页待进一步录入",
-    "charging": "官方详情页待进一步录入",
+    "battery": "",
+    "charging": "",
     "weight": "约 229–232 g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB 卫星通信版",
     "os": "OriginOS",
@@ -19650,7 +19672,9 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：9 组 / 78 项（中关村在线，标题比对通过）",
-      "2026-10-20 补录完整参数表：9 组 / 78 项（中关村在线参数页（第三方核验））"
+      "2026-10-20 补录完整参数表：9 组 / 78 项（中关村在线参数页（第三方核验））",
+      "2026-10-30 清空 battery 的「待录入」占位文案，改由页面显示「参数站未收录」。",
+      "2026-10-30 清空 charging 的「待录入」占位文案，改由页面显示「参数站未收录」。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "needs_source_crosscheck",
@@ -20046,7 +20070,7 @@
     "type": "影像旗舰",
     "market": "中国大陆正式销售",
     "display": "6.78 英寸 OLED · 1–120Hz LTPO",
-    "chip": "官方规格页未在本批次录入芯片名称",
+    "chip": "",
     "camera": "5000 万像素一英寸超高动态主摄 + 5000 万长焦 + 1250 万超长焦 + 4000 万超广角 + 红枫原色",
     "battery": "5700mAh",
     "charging": "100W 有线 / 80W 无线",
@@ -22593,9 +22617,9 @@
     "display": "6.7 英寸级 OLED · 高刷（以规格页为准）",
     "chip": "新一代骁龙旗舰平台（按中国版规格核验）",
     "camera": "高像素主摄 + 超广角 + 潜望长焦（以官网为准）",
-    "battery": "官方规格页待进一步核对",
-    "charging": "官方规格页待进一步核对",
-    "weight": "官方规格页待进一步核对",
+    "battery": "7200mAh",
+    "charging": "120W 有线 / 80W 无线",
+    "weight": "约 219 g",
     "storage": "12GB+512GB / 16GB+512GB / 16GB+1TB",
     "storageOptions": [
       "12GB+512GB",
@@ -22634,7 +22658,10 @@
     "auditStatus": "needs_parameter_price_audit",
     "auditNotes": [
       "2026-10-20 补记价格审计：5699元起；对应容量组合未公布（起售价）",
-      "2026-10-21 自动补录完整参数：10 组 / 82 项（中关村在线，标题比对通过）"
+      "2026-10-21 自动补录完整参数：10 组 / 82 项（中关村在线，标题比对通过）",
+      "2026-10-30 补录 battery：原为待录入占位，改由太平洋电脑网补齐。",
+      "2026-10-30 补录 charging：原为待录入占位，改由太平洋电脑网补齐。",
+      "2026-10-30 补录 weight：原为待录入占位，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "starting_price_only",
     "parameterAuditStatus": "needs_source_crosscheck",
@@ -22655,6 +22682,30 @@
         "sourceUrl": "https://detail.zol.com.cn/2145/2144217/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年10月15日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "电池",
+        "value": "7200mAh",
+        "valueAtAudit": "7200mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/honor/",
+        "evidenceText": "太平洋电脑网 荣耀Magic8 Pro 参数页：7200mAh"
+      },
+      {
+        "field": "充电",
+        "value": "120W 有线 / 80W 无线",
+        "valueAtAudit": "120W 有线 / 80W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/honor/",
+        "evidenceText": "太平洋电脑网 荣耀Magic8 Pro 参数页：120W有线 + 80W无线"
+      },
+      {
+        "field": "重量",
+        "value": "约 219 g",
+        "valueAtAudit": "约 219 g",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/honor/",
+        "evidenceText": "太平洋电脑网 荣耀Magic8 Pro 参数页：约219g"
       }
     ],
     "specs": [
@@ -26610,8 +26661,8 @@
     "display": "6.75 英寸 OLED · 1–120Hz LTPO",
     "chip": "麒麟 9030 / 9030 Pro（依版本）",
     "camera": "5000 万超聚光主摄 + 4000 万超广角 + 4800 万超聚光微距长焦 + 红枫原色",
-    "battery": "官方规格页待进一步录入",
-    "charging": "官方规格页待进一步录入",
+    "battery": "5750mAh",
+    "charging": "100W 有线 / 80W 无线（18W 有线反向）",
     "weight": "约 219 g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+1TB",
     "storageOptions": [
@@ -26650,7 +26701,11 @@
     "auditNotes": [
       "2026-10-20 回填官方首发价：5999元（12GB+256GB）（交叉核对）",
       "2026-10-21 自动补录完整参数：10 组 / 63 项（中关村在线，标题比对通过）",
-      "2026-10-20 补录完整参数表：10 组 / 63 项（中关村在线参数页（第三方核验））"
+      "2026-10-20 补录完整参数表：10 组 / 63 项（中关村在线参数页（第三方核验））",
+      "2026-10-30 清空 battery 的「待录入」占位文案，改由页面显示「参数站未收录」。",
+      "2026-10-30 清空 charging 的「待录入」占位文案，改由页面显示「参数站未收录」。",
+      "2026-10-30 补录 battery：原为待录入占位，改由太平洋电脑网补齐。",
+      "2026-10-30 补录 charging：原为待录入占位，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "cross_checked_secondary",
     "parameterAuditStatus": "needs_source_crosscheck",
@@ -26671,6 +26726,22 @@
         "sourceUrl": "https://detail.zol.com.cn/2150/2149091/param.shtml",
         "evidenceText": "中关村在线参数页：上市日期 2025年11月25日",
         "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+      },
+      {
+        "field": "电池",
+        "value": "5750mAh",
+        "valueAtAudit": "5750mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/",
+        "evidenceText": "太平洋电脑网 HUAWEI Mate 80 Pro 参数页：5750mAh"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 80W 无线（18W 有线反向）",
+        "valueAtAudit": "100W 有线 / 80W 无线（18W 有线反向）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/",
+        "evidenceText": "太平洋电脑网 HUAWEI Mate 80 Pro 参数页：100W + 80W 无线，18W 反向"
       }
     ],
     "specs": [
@@ -31346,8 +31417,8 @@
     "display": "6.9 英寸 OLED · 1–120Hz LTPO",
     "chip": "麒麟 9020 系列（以具体内存版本为准）",
     "camera": "5000 万超聚光主摄 + 4000 万超广角 + 4800 万微距长焦 + 红枫原色",
-    "battery": "官方规格页未在本批次录入完整容量",
-    "charging": "官方规格页待进一步录入",
+    "battery": "5500mAh",
+    "charging": "100W 有线 / 80W 无线（20W 无线反向）",
     "weight": "约 221 g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+1TB",
     "storageOptions": [
@@ -31656,7 +31727,10 @@
     "specCollectedAt": "2026-10-21",
     "auditNotes": [
       "2026-10-21 自动补录完整参数：10 组 / 54 项（中关村在线，标题比对通过）",
-      "2026-10-29 外链体检：priceSource、source 原地址已失效（404 或无法访问），已替换为当前可达的官方页面，取证结论未变。"
+      "2026-10-29 外链体检：priceSource、source 原地址已失效（404 或无法访问），已替换为当前可达的官方页面，取证结论未变。",
+      "2026-10-30 清空 charging 的「待录入」占位文案，改由页面显示「参数站未收录」。",
+      "2026-10-30 补录 charging：原为待录入占位，改由太平洋电脑网补齐。",
+      "2026-10-30 补录 battery：原为待录入占位，改由太平洋电脑网补齐。"
     ],
     "fieldAudit": [
       {
@@ -31676,6 +31750,22 @@
         "sourceUrl": "https://consumer.huawei.com/cn/phones/mate70-pro/spec/",
         "evidenceText": "首发价来源：官方来源待核验",
         "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 80W 无线（20W 无线反向）",
+        "valueAtAudit": "100W 有线 / 80W 无线（20W 无线反向）",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/",
+        "evidenceText": "太平洋电脑网 HUAWEI Mate 70 Pro 参数页：100W + 80W 无线，20W 反向"
+      },
+      {
+        "field": "电池",
+        "value": "5500mAh",
+        "valueAtAudit": "5500mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/",
+        "evidenceText": "太平洋电脑网 HUAWEI Mate 70 Pro 参数页：5500mAh"
       }
     ]
   },
@@ -108960,7 +109050,7 @@
     "chip": "Helio G81-Ultra",
     "camera": "1300 万像素高清主；前置 500 万像素",
     "battery": "5300mAh",
-    "charging": "以官方规格页为准",
+    "charging": "15W 有线",
     "weight": "186g",
     "storage": "4GB+128GB / 6GB+128GB",
     "os": "MagicOS 9.0",
@@ -108997,7 +109087,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：59 项参数（中关村在线，标题比对通过）",
       "2026 年 5 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 889~989 元。",
-      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。"
+      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。",
+      "2026-10-30 补录 charging：原参数站未收录，改由太平洋电脑网 荣耀畅玩70C 参数页补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -109351,6 +109442,14 @@
         "sourceUrl": "https://detail.zol.com.cn/2167/2166015/param.shtml",
         "evidenceText": "发布会/官网信息：2026年05月01日",
         "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "充电",
+        "value": "15W 有线",
+        "valueAtAudit": "15W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/honor/",
+        "evidenceText": "太平洋电脑网 荣耀畅玩70C 参数页：充电 15W有线快充"
       }
     ]
   },
@@ -133234,7 +133333,7 @@
     "chip": "骁龙8 Gen2",
     "camera": "5000 万像素广角 + 1300 万像素超广角微距；前置 1600 万像素",
     "battery": "5500mAh",
-    "charging": "以官方规格页为准",
+    "charging": "66W 有线",
     "weight": "205g",
     "storage": "16GB+512GB",
     "os": "Flyme AIOS",
@@ -133271,7 +133370,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：57 项参数（中关村在线，标题比对通过）",
       "2024 年 5 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 2799~2799 元。",
-      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。"
+      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。",
+      "2026-10-30 补录 charging：原参数站未收录，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -133612,6 +133712,14 @@
         "sourceUrl": "https://detail.zol.com.cn/2010/2009847/param.shtml",
         "evidenceText": "发布会/官网信息：2024年05月16日",
         "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线",
+        "valueAtAudit": "66W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/meizu/",
+        "evidenceText": "太平洋电脑网 魅族21 Note 参数页：66W有线快充"
       }
     ]
   },
@@ -133998,7 +134106,7 @@
     "chip": "骁龙8S Gen4",
     "camera": "5000 万像素广角 + 5000 万像素超广角 + 5000 万像素 3倍潜望长焦；前置 5000 万像素",
     "battery": "5510mAh",
-    "charging": "66W 无线",
+    "charging": "80W 有线 / 66W 无线",
     "weight": "190g",
     "storage": "16GB+1TB",
     "os": "Flyme AIOS 2",
@@ -134034,7 +134142,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：77 项参数（中关村在线，标题比对通过）",
       "2025 年 9 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 4199~4199 元。",
-      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。"
+      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。",
+      "2026-10-30 补录 charging：原值只有无线功率（有线字段是电压描述，解析不出），改由太平洋电脑网补全。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -134441,11 +134550,11 @@
       },
       {
         "field": "充电",
-        "value": "66W 无线",
-        "valueAtAudit": "66W 无线",
+        "value": "80W 有线 / 66W 无线",
+        "valueAtAudit": "80W 有线 / 66W 无线",
         "status": "cross_checked_secondary_source",
-        "sourceUrl": "https://detail.zol.com.cn/2142/2141991/param.shtml",
-        "evidenceText": "参数表/官方页：充电 66W 无线",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/meizu/",
+        "evidenceText": "太平洋电脑网 魅族22 参数页：80W有线快充，66W无线快充",
         "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
       },
       {
@@ -137708,7 +137817,7 @@
     "charging": "45W 有线",
     "weight": "198g",
     "storage": "12GB+256GB",
-    "os": "以官方规格页为准",
+    "os": "Android / One UI",
     "priceCN": null,
     "priceText": "厂商与参数站均未公布参考价，价格待核；以在售版本为准 版本待补",
     "selling": "中端价位机型，参数与参考报价见详情",
@@ -137741,7 +137850,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：46 项参数（中关村在线，标题比对通过）",
       "2025 年 4 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 None~None 元。",
-      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。"
+      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。",
+      "2026-10-30 补录 os：原参数站未收录，改由太平洋电脑网 三星Galaxy A56 5G 参数页补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -138064,7 +138174,7 @@
     "charging": "25W 有线",
     "weight": "255g",
     "storage": "16GB+1TB",
-    "os": "以官方规格页为准",
+    "os": "Android / One UI",
     "priceCN": null,
     "priceText": "厂商与参数站均未公布参考价，价格待核；以在售版本为准 版本待补",
     "selling": "中端价位机型，参数与参考报价见详情",
@@ -138098,7 +138208,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：43 项参数（中关村在线，标题比对通过）",
       "2024 年 11 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 None~None 元。",
-      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。"
+      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。",
+      "2026-10-30 补录 os：原参数站未收录，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -138745,7 +138856,7 @@
     "charging": "25W 有线",
     "weight": "198g",
     "storage": "12GB+512GB",
-    "os": "以官方规格页为准",
+    "os": "Android / One UI",
     "priceCN": null,
     "priceText": "厂商与参数站均未公布参考价，价格待核；以在售版本为准 版本待补",
     "selling": "中端价位机型，参数与参考报价见详情",
@@ -138779,7 +138890,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：42 项参数（中关村在线，标题比对通过）",
       "2024 年 11 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 None~None 元。",
-      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。"
+      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。",
+      "2026-10-30 补录 os：原参数站（中关村在线）未收录该字段，改由太平洋电脑网 三星W25 Flip 参数页补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -141095,7 +141207,7 @@
     "chip": "展讯 T760",
     "camera": "1.08 亿像素 AI主摄 + 200 万像素微距；前置 500 万像素",
     "battery": "5000mAh",
-    "charging": "以官方规格页为准",
+    "charging": "10W 有线",
     "weight": "205.5g",
     "storage": "12GB+256GB",
     "os": "MyOS 13",
@@ -141131,7 +141243,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：40 项参数（中关村在线，标题比对通过）",
       "2024 年 4 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 None~None 元。",
-      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。"
+      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。",
+      "2026-10-30 补录 charging：原参数站未收录，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -141404,6 +141517,14 @@
         "sourceUrl": "https://detail.zol.com.cn/1995/1994765/param.shtml",
         "evidenceText": "发布会/官网信息：2024年04月12日",
         "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "充电",
+        "value": "10W 有线",
+        "valueAtAudit": "10W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/nubia/",
+        "evidenceText": "太平洋电脑网 努比亚小牛 参数页：10W有线充电"
       }
     ]
   },
@@ -142186,10 +142307,10 @@
     "chip": "骁龙8 Gen3",
     "camera": "5000 万像素广角 + 1300 万像素超广角/微距 + 1000 万像素长焦；前置 3200 万像素",
     "battery": "5050mAh",
-    "charging": "50W 无线",
+    "charging": "80W 有线 / 50W 无线",
     "weight": "214g",
     "storage": "16GB+1TB",
-    "os": "以官方规格页为准",
+    "os": "Flyme AIOS",
     "priceCN": null,
     "priceText": "厂商与参数站均未公布参考价，价格待核；以在售版本为准 版本待补",
     "selling": "中端价位机型，参数与参考报价见详情",
@@ -142222,7 +142343,9 @@
     "auditNotes": [
       "2026-10-29 新增机型：64 项参数（中关村在线，标题比对通过）",
       "2024 年 3 月上市；参考报价取自 ZOL 商品页（当前渠道价，非首发价），价格区间 None~None 元。",
-      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。"
+      "该机为此轮中端补录机型，价格口径为第三方参考价，未做首发价核验。",
+      "2026-10-30 补录 os：原参数站（中关村在线）未收录该字段，改由太平洋电脑网 魅族21 Pro 参数页补齐。",
+      "2026-10-30 补录 charging：原值只有无线功率（有线字段是电压描述，解析不出），改由太平洋电脑网补全。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -142577,11 +142700,11 @@
       },
       {
         "field": "充电",
-        "value": "50W 无线",
-        "valueAtAudit": "50W 无线",
+        "value": "80W 有线 / 50W 无线",
+        "valueAtAudit": "80W 有线 / 50W 无线",
         "status": "cross_checked_secondary_source",
-        "sourceUrl": "https://detail.zol.com.cn/1985/1984865/param.shtml",
-        "evidenceText": "参数表/官方页：充电 50W 无线",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/meizu/",
+        "evidenceText": "太平洋电脑网 魅族21 Pro 参数页：80W有线快充，50W无线快充",
         "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
       },
       {
@@ -143039,8 +143162,8 @@
     "display": "6.84 英寸 · OLED · 120Hz",
     "chip": "麒麟 8020",
     "camera": "5000 万像素 RYYB超感知 + 150 万像素光谱通道红枫原色；前置 3200 万像素",
-    "battery": "以官方规格页为准",
-    "charging": "以官方规格页为准",
+    "battery": "8500mAh",
+    "charging": "66W 有线",
     "weight": "229g",
     "storage": "128GB / 256GB / 512GB",
     "os": "HarmonyOS 6.1",
@@ -143078,7 +143201,9 @@
     "auditNotes": [
       "2026-10-29 新增机型：35 项参数（中关村在线，标题比对通过）",
       "该机上市于 2026 年 8 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：厂商与参数站均未公布参考价，价格待核（该机上市不足一年，可能尚未开售）"
+      "价格口径说明：厂商与参数站均未公布参考价，价格待核（该机上市不足一年，可能尚未开售）",
+      "2026-10-30 补录 battery：原参数站（中关村在线）未收录该字段，改由太平洋电脑网 HUAWEI nova 16 SE 参数页补齐。",
+      "2026-10-30 补录 charging：原参数站（中关村在线）未收录该字段，改由太平洋电脑网 HUAWEI nova 16 SE 参数页补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -143303,6 +143428,22 @@
         "sourceUrl": "https://detail.zol.com.cn/2174/2173976/param.shtml",
         "evidenceText": "发布会/官网信息：2026年08月05日",
         "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "电池",
+        "value": "8500mAh",
+        "valueAtAudit": "8500mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/",
+        "evidenceText": "太平洋电脑网 HUAWEI nova 16 SE 参数页：电池容量 8500mAh"
+      },
+      {
+        "field": "充电",
+        "value": "66W 有线",
+        "valueAtAudit": "66W 有线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/",
+        "evidenceText": "太平洋电脑网 HUAWEI nova 16 SE 参数页：充电 66W有线快充"
       }
     ]
   },
@@ -150405,7 +150546,7 @@
     "charging": "45W 有线 / 15W 无线",
     "weight": "189g",
     "storage": "12GB+512GB",
-    "os": "以官方规格页为准",
+    "os": "Android",
     "priceCN": null,
     "priceText": "中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
     "selling": "折叠屏旗舰，2025 年 5 月上市；参数见详情，价格待补",
@@ -150439,7 +150580,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：41 项参数（中关村在线，标题比对通过）",
       "该机上市于 2025 年 5 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
+      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
+      "2026-10-30 补录 os：原参数站未收录，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -150747,7 +150889,7 @@
     "charging": "68W 有线 / 30W 无线",
     "weight": "199g",
     "storage": "16GB+1TB / 16GB+512GB",
-    "os": "以官方规格页为准",
+    "os": "Android",
     "priceCN": null,
     "priceText": "中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
     "selling": "折叠屏旗舰，2025 年 5 月上市；参数见详情，价格待补",
@@ -150782,7 +150924,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：43 项参数（中关村在线，标题比对通过）",
       "该机上市于 2025 年 5 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
+      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
+      "2026-10-30 补录 os：原参数站未收录，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -155510,7 +155653,7 @@
     "type": "中端续航",
     "market": "中国大陆正式销售",
     "display": "6.78 英寸 · AMOLED",
-    "chip": "以官方规格页为准",
+    "chip": "麒麟 8000A",
     "camera": "5000 万像素主摄 + 200 万像素景深；前置 800 万像素",
     "battery": "6100mAh",
     "charging": "40W 有线",
@@ -155550,7 +155693,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：52 项参数（中关村在线，标题比对通过）",
       "该机上市于 2025 年 1 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
+      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
+      "2026-10-30 补录 chip：原参数站（中关村在线）未收录该字段，改由太平洋电脑网 华为畅享70X 参数页补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -155872,6 +156016,14 @@
         "sourceUrl": "https://detail.zol.com.cn/2118/2117830/param.shtml",
         "evidenceText": "发布会/官网信息：2025年01月03日",
         "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "处理器",
+        "value": "麒麟 8000A",
+        "valueAtAudit": "麒麟 8000A",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/",
+        "evidenceText": "太平洋电脑网 华为畅享70X 参数页：CPU 麒麟8000A"
       }
     ]
   },
@@ -159971,7 +160123,7 @@
     "type": "折叠屏旗舰",
     "market": "中国大陆正式销售",
     "display": "主 7.93 英寸 + 副 6.45 英寸 · OLED（LTPO） · 120Hz",
-    "chip": "以官方规格页为准",
+    "chip": "麒麟 9020",
     "camera": "四摄：5000 万像素超光变 + 4000 万像素超广角 + 4800 万像素长焦微距；前置 800 万像素",
     "battery": "5200mAh",
     "charging": "66W 有线 / 50W 无线",
@@ -160012,7 +160164,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：45 项参数（中关村在线，标题比对通过）",
       "该机上市于 2024 年 11 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
+      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
+      "2026-10-30 补录 chip：原参数站（中关村在线）未收录该字段，改由华为（香港）官网 Mate X6 规格页补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -160310,6 +160463,14 @@
         "sourceUrl": "https://detail.zol.com.cn/2116/2115270/param.shtml",
         "evidenceText": "发布会/官网信息：2024年11月26日",
         "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "处理器",
+        "value": "麒麟 9020",
+        "valueAtAudit": "麒麟 9020",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://consumer.huawei.com/hk/phones/mate-x6/specs",
+        "evidenceText": "华为（香港）官网 Mate X6 规格页：處理器 Kirin 9020"
       }
     ]
   },
@@ -171444,7 +171605,7 @@
     "charging": "30W 有线",
     "weight": "188.4g",
     "storage": "12GB+512GB",
-    "os": "以官方规格页为准",
+    "os": "Android",
     "priceCN": null,
     "priceText": "中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
     "selling": "折叠屏旗舰，2024 年 6 月上市；参数见详情，价格待补",
@@ -171478,7 +171639,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：47 项参数（中关村在线，标题比对通过）",
       "该机上市于 2024 年 6 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
+      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
+      "2026-10-30 补录 os：原参数站未收录，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -174075,7 +174237,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：29 项参数（中关村在线，标题比对通过）",
       "该机上市于 2024 年 5 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
+      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
+      "2026-10-30 补录 os：原参数站未收录，改由太平洋电脑网补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -185105,7 +185268,7 @@
     "type": "中端影像",
     "market": "中国大陆正式销售",
     "display": "6.7 英寸 · OLED",
-    "chip": "以官方规格页为准",
+    "chip": "麒麟 8000",
     "camera": "5000 万像素超感知 + 800 万像素超广角微距；前置 6000 万像素",
     "battery": "4600mAh",
     "charging": "100W 有线",
@@ -185145,7 +185308,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：48 项参数（中关村在线，标题比对通过）",
       "该机上市于 2024 年 1 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
+      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
+      "2026-10-30 补录 chip：原参数站（中关村在线）未收录该字段，改由太平洋电脑网 HUAWEI nova 12 参数页补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -185451,6 +185615,14 @@
         "sourceUrl": "https://detail.zol.com.cn/1970/1969406/param.shtml",
         "evidenceText": "发布会/官网信息：2024年01月05日",
         "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "处理器",
+        "value": "麒麟 8000",
+        "valueAtAudit": "麒麟 8000",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/1996507_detail.html",
+        "evidenceText": "太平洋电脑网 HUAWEI nova 12 参数页：CPU 麒麟8000（与百度百科、中关村在线摘要一致）"
       }
     ]
   },
@@ -185462,7 +185634,7 @@
     "type": "中端影像",
     "market": "中国大陆正式销售",
     "display": "6.76 英寸 · OLED",
-    "chip": "以官方规格页为准",
+    "chip": "麒麟 8000",
     "camera": "5000 万像素超光变 + 800 万像素超广角微距；前置 6000 万像素",
     "battery": "4600mAh",
     "charging": "100W 有线",
@@ -185502,7 +185674,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：53 项参数（中关村在线，标题比对通过）",
       "该机上市于 2024 年 1 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
+      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
+      "2026-10-30 补录 chip：原参数站（中关村在线）未收录该字段，改由太平洋电脑网 HUAWEI nova 12 Pro 参数页补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -185828,6 +186001,14 @@
         "sourceUrl": "https://detail.zol.com.cn/1970/1969405/param.shtml",
         "evidenceText": "发布会/官网信息：2024年01月05日",
         "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "处理器",
+        "value": "麒麟 8000",
+        "valueAtAudit": "麒麟 8000",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/2029628_detail.html",
+        "evidenceText": "太平洋电脑网 HUAWEI nova 12 Pro 参数页：CPU 麒麟8000"
       }
     ]
   },
@@ -185839,7 +186020,7 @@
     "type": "中端影像",
     "market": "中国大陆正式销售",
     "display": "6.76 英寸 · OLED · 120Hz",
-    "chip": "以官方规格页为准",
+    "chip": "麒麟 9000SL",
     "camera": "5000 万像素超光变 + 800 万像素超广角微距；前置 6000 万像素",
     "battery": "4600mAh",
     "charging": "100W 有线",
@@ -185878,7 +186059,8 @@
     "auditNotes": [
       "2026-10-29 新增机型：55 项参数（中关村在线，标题比对通过）",
       "该机上市于 2024 年 1 月，参数取自中关村在线参数页；参数站未提供电商报价，本站不臆造价格，价格列为「待补」。",
-      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失"
+      "价格口径说明：中关村在线未提供该机参考价，本站不臆造价格，标注为参考价缺失",
+      "2026-10-30 补录 chip：原参数站（中关村在线）未收录该字段，改由太平洋电脑网 HUAWEI nova 12 Ultra 参数页补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -186212,6 +186394,14 @@
         "sourceUrl": "https://detail.zol.com.cn/1970/1969403/param.shtml",
         "evidenceText": "发布会/官网信息：2024年01月12日",
         "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+      },
+      {
+        "field": "处理器",
+        "value": "麒麟 9000SL",
+        "valueAtAudit": "麒麟 9000SL",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/2049247_detail.html",
+        "evidenceText": "太平洋电脑网 HUAWEI nova 12 Ultra 参数页：CPU 麒麟9000SL"
       }
     ]
   },
