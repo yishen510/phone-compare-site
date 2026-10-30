@@ -1453,14 +1453,35 @@ function scoreLabel(p){return pass(p)&&Number.isFinite(p.score)?p.score:'未开�
 /* 过滤上下文：每次渲染只读一次 DOM，不在 225 条的循环里反复取元素 */
 function filterContext(){
  const fromRaw=Number($('yearFrom')?.value||2021),toRaw=Number($('yearTo')?.value||2026);
+ const raw=String($('searchInput')?.value||'');
  return {
-  q:String($('searchInput')?.value||'').trim().toLowerCase(),
+  q:raw.trim().toLowerCase(),
+  qt:tighten(raw),
   yFrom:Math.min(fromRaw,toRaw),yTo:Math.max(fromRaw,toRaw),
   domesticOnly:!!$('domesticOnly')?.checked,
   sort:$('sortSelect')?.value||'newest'
  };
 }
-const CARD_TEXT=new Map();
+const CARD_TEXT=new Map(),TIGHT_CARD=new Map(),TIGHT_SPEC=new Map();
+/* 全角转半角 + 去掉所有空白。
+   用户打字基本不带空格（搜「小米15」「荣耀Magic8」），而库里写作「小米 15」「荣耀 Magic8」，
+   不做归一化会直接搜不到——这是最常见的一类「明明有这台机却搜不出来」。 */
+function tighten(s){
+ return String(s||'')
+  .replace(/[\uFF01-\uFF5E]/g,ch=>String.fromCharCode(ch.charCodeAt(0)-0xFEE0))
+  .replace(/[\s\u3000]+/g,'').toLowerCase();
+}
+function tightCard(p){
+ const k=p&&p.id;if(!k)return '';
+ if(TIGHT_CARD.has(k))return TIGHT_CARD.get(k);
+ const t=tighten([p.name,p.brand,p.chip,p.camera,p.type].join(' '));
+ TIGHT_CARD.set(k,t);return t;
+}
+function tightSpec(p){
+ const k=p&&p.id;if(!k)return '';
+ if(TIGHT_SPEC.has(k))return TIGHT_SPEC.get(k);
+ const t=tighten(specHay(p));TIGHT_SPEC.set(k,t);return t;
+}
 function cardText(p){
  const k=p&&p.id;if(!k)return '';
  if(CARD_TEXT.has(k))return CARD_TEXT.get(k);
@@ -1469,7 +1490,9 @@ function cardText(p){
 }
 function matchQuery(p,c){
  if(!c.q)return true;
- return cardText(p).includes(c.q)||specHay(p).includes(c.q);
+ if(cardText(p).includes(c.q)||specHay(p).includes(c.q))return true;
+ /* 常规匹配不上时，再用「去空格/全角」的版本试一次 */
+ return !!c.qt&&c.qt.length>1&&(tightCard(p).includes(c.qt)||tightSpec(p).includes(c.qt));
 }
 function matchFilters(p,c){
  if(state.brands.size&&!state.brands.has(p.brand))return false;
@@ -1526,7 +1549,14 @@ function filtered(){
    default:return (b.year-a.year)||String(b.launchMonth||'').localeCompare(String(a.launchMonth||''))||a.name.localeCompare(b.name);
   }
  });
- if(c.q)arr.sort((a,b)=>relScore(a,c.q)-relScore(b,c.q));
+ if(c.q)arr.sort((a,b)=>{
+  const ra=relScore(a,c.q,c.qt),rb=relScore(b,c.q,c.qt);
+  if(ra!==rb)return ra-rb;
+  /* 同名前缀命中时，「小米 15」应排在「小米 15S Pro」前面：短名更接近查询词。
+     外围命中（只在参数里出现）保持原排序，别把年份顺序搅乱。 */
+  if(ra<=1)return String(a.name).length-String(b.name).length||String(a.name).localeCompare(String(b.name));
+  return 0;
+ });
  return arr;
 }
 /* 首屏之后用空闲时间把 225 条参数索引建好，避免第一次输入时才集中构建 */
@@ -1894,12 +1924,16 @@ function specHay(p){
  specList(p).forEach(g=>{t+=g.group+' ';g.items.forEach(it=>{t+=String(it[0])+' '+String(it[1])+' ';});});
  t=t.toLowerCase();SPEC_HAY.set(k,t);return t;
 }
-function relScore(p,q){
+function relScore(p,q,qt){
+ /* 同时用原始串和「去空格/全角」串比对，保证搜「小米15」能把「小米 15」排到最前 */
+ const hit=(s)=>(q&&s.includes(q))||(qt&&tighten(s).includes(qt));
  const name=String(p.name||'').toLowerCase();
- if(name.startsWith(q))return 0;
- if(name.includes(q))return 1;
- if(String(p.brand||'').toLowerCase().includes(q))return 2;
- if(String(p.chip||'').toLowerCase().includes(q))return 3;
+ const tn=tighten(name);
+ if((q&&name===q)||(qt&&tn===qt))return -1;              // 完全一致，压过所有近似
+ if((q&&name.startsWith(q))||(qt&&tn.startsWith(qt)))return 0;
+ if(hit(name))return 1;
+ if(hit(String(p.brand||'').toLowerCase()))return 2;
+ if(hit(String(p.chip||'').toLowerCase()))return 3;
  return 4;
 }
 /* ===== 详情：在「当前筛选结果」中前后翻页 ===== */
