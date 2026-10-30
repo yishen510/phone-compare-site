@@ -15308,8 +15308,8 @@
     "display": "6.82 英寸 OLED · 分辨率与刷新率以官方页为准",
     "chip": "第五代骁龙 8 至尊版移动平台",
     "camera": "专业影像系统；主摄/超广角/长焦配置以官网规格页为准",
-    "battery": "",
-    "charging": "",
+    "battery": "6600mAh",
+    "charging": "100W 有线 / 40W 无线",
     "weight": "约 232–237 g",
     "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB 卫星通信版",
     "os": "OriginOS 6 / Android 16（地区版本不同）",
@@ -15349,7 +15349,9 @@
       "2026-10-21 自动补录完整参数：9 组 / 73 项（中关村在线，标题比对通过）",
       "2026-10-20 补录完整参数表：9 组 / 73 项（中关村在线参数页（第三方核验））",
       "2026-10-30 清空 battery 的「待录入」占位文案，改由页面显示「参数站未收录」。",
-      "2026-10-30 清空 charging 的「待录入」占位文案，改由页面显示「参数站未收录」。"
+      "2026-10-30 清空 charging 的「待录入」占位文案，改由页面显示「参数站未收录」。",
+      "2026-10-30 补录 battery：原为待录入占位，改由太平洋电脑网（品牌名 bubugao）补齐。",
+      "2026-10-30 补录 charging：原为待录入占位，改由太平洋电脑网（品牌名 bubugao）补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "partial",
@@ -15714,6 +15716,22 @@
         "sourceUrl": "https://www.vivo.com.cn/vivo/param/x300ultra",
         "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
         "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      },
+      {
+        "field": "电池",
+        "value": "6600mAh",
+        "valueAtAudit": "6600mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/bubugao/2720919_detail.html",
+        "evidenceText": "太平洋电脑网 vivo X300 Ultra 参数页：6600mAh"
+      },
+      {
+        "field": "充电",
+        "value": "100W 有线 / 40W 无线",
+        "valueAtAudit": "100W 有线 / 40W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/bubugao/2720919_detail.html",
+        "evidenceText": "太平洋电脑网 vivo X300 Ultra 参数页：100W有线 + 40W无线"
       }
     ]
   },
@@ -19634,8 +19652,8 @@
     "display": "6.82 英寸 OLED · QHD+ 级别",
     "chip": "骁龙 8 至尊版移动平台",
     "camera": "专业影像系统，包含主摄/超广角/多焦段长焦",
-    "battery": "",
-    "charging": "",
+    "battery": "6000mAh",
+    "charging": "90W 有线 / 40W 无线",
     "weight": "约 229–232 g",
     "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB 卫星通信版",
     "os": "OriginOS",
@@ -19674,7 +19692,9 @@
       "2026-10-21 自动补录完整参数：9 组 / 78 项（中关村在线，标题比对通过）",
       "2026-10-20 补录完整参数表：9 组 / 78 项（中关村在线参数页（第三方核验））",
       "2026-10-30 清空 battery 的「待录入」占位文案，改由页面显示「参数站未收录」。",
-      "2026-10-30 清空 charging 的「待录入」占位文案，改由页面显示「参数站未收录」。"
+      "2026-10-30 清空 charging 的「待录入」占位文案，改由页面显示「参数站未收录」。",
+      "2026-10-30 补录 battery：原为待录入占位，改由太平洋电脑网（品牌名 bubugao）补齐。",
+      "2026-10-30 补录 charging：原为待录入占位，改由太平洋电脑网（品牌名 bubugao）补齐。"
     ],
     "priceAuditStatus": "source_present_needs_crosscheck",
     "parameterAuditStatus": "needs_source_crosscheck",
@@ -20059,6 +20079,22 @@
         "sourceUrl": "https://www.vivo.com.cn/vivo/param/x200ultra",
         "evidenceText": "首发价来源：官方产品页；历史首发价尚需交叉核对",
         "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+      },
+      {
+        "field": "电池",
+        "value": "6000mAh",
+        "valueAtAudit": "6000mAh",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/bubugao/2589639_detail.html",
+        "evidenceText": "太平洋电脑网 vivo X200 Ultra 参数页：6000mAh"
+      },
+      {
+        "field": "充电",
+        "value": "90W 有线 / 40W 无线",
+        "valueAtAudit": "90W 有线 / 40W 无线",
+        "status": "cross_checked_secondary_source",
+        "sourceUrl": "https://product.pconline.com.cn/mobile/bubugao/2589639_detail.html",
+        "evidenceText": "太平洋电脑网 vivo X200 Ultra 参数页：90W有线 + 40W无线"
       }
     ]
   },
