@@ -17525,7 +17525,7 @@
   "charging": "90W 有线 / 40W 无线",
   "weight": "211g",
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
-  "os": "以官方大陆版页面为准",
+  "os": "Android 17 / OriginOS 7",
   "priceCN": 5499,
   "priceText": "官方首发起售价（非当前售价）",
   "selling": "新一代旗舰平台与蔡司影像体验",
@@ -17558,6 +17558,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 17 / OriginOS 7；来源 https://product.pconline.com.cn/mobile/vivo/2890851_detail.html",
    "2026-10-30 补参数（屏幕）：6.59 英寸 · AMOLED · 144Hz；来源 https://product.pconline.com.cn/mobile/vivo/2890851_detail.html",
    "2026-10-30 补参数（处理器）：天玑 9600M；来源 https://product.pconline.com.cn/mobile/vivo/2890851_detail.html",
    "2026-10-20 回填官方首发价：5499元（12GB+256GB）（官网核验）",
@@ -17628,6 +17629,15 @@
     "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/2890851_detail.html",
     "evidenceText": "太平洋电脑网参数页：屏幕 6.59 英寸 · AMOLED · 144Hz",
     "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 17 / OriginOS 7",
+    "valueAtAudit": "Android 17 / OriginOS 7",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/2890851_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 17 / OriginOS 7",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -18077,7 +18087,7 @@
   "charging": "90W 有线 / 40W 无线",
   "weight": "约 192–197 g",
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
-  "os": "以官方大陆版页面为准",
+  "os": "Android 17 / OriginOS 7",
   "priceCN": 6499,
   "priceText": "官方首发起售价（非当前售价）",
   "selling": "轻量化机身、专业影像与新一代平台",
@@ -18111,6 +18121,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 17 / OriginOS 7；来源 https://product.pconline.com.cn/mobile/vivo/2890871_detail.html",
    "2026-10-30 补参数（屏幕）：6.36 英寸 · AMOLED · 144Hz；来源 https://product.pconline.com.cn/mobile/vivo/2890871_detail.html",
    "2026-10-21 自动补录完整参数：9 组 / 73 项（中关村在线，标题比对通过）",
    "2026-10-20 补录完整参数表：9 组 / 73 项（中关村在线参数页（第三方核验））"
@@ -18505,6 +18516,15 @@
     "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/2890871_detail.html",
     "evidenceText": "太平洋电脑网参数页：屏幕 6.36 英寸 · AMOLED · 144Hz",
     "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 17 / OriginOS 7",
+    "valueAtAudit": "Android 17 / OriginOS 7",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/2890871_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 17 / OriginOS 7",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ]
  },
@@ -22321,7 +22341,7 @@
   "charging": "最高 120W 有线 / 80W 无线（系列官方描述）",
   "weight": "205g",
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
-  "os": "以官方大陆版页面为准",
+  "os": "Android 16 / MagicOS 10.0",
   "priceCN": 4499,
   "priceText": "官方首发起售价（非当前售价）",
   "selling": "自进化 AI、护眼直屏与大电池",
@@ -22355,6 +22375,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 16 / MagicOS 10.0；来源 https://product.pconline.com.cn/mobile/honor/2706679_detail.html",
    "2026-10-30 补参数（屏幕）：6.58 英寸 · OLED · 120Hz；来源 https://product.pconline.com.cn/mobile/honor/2706679_detail.html",
    "2026-10-21 自动补录完整参数：10 组 / 74 项（中关村在线，标题比对通过）",
    "2026-10-20 补录完整参数表：10 组 / 74 项（中关村在线参数页（第三方核验））"
@@ -22749,6 +22770,15 @@
     "sourceUrl": "https://product.pconline.com.cn/mobile/honor/2706679_detail.html",
     "evidenceText": "太平洋电脑网参数页：屏幕 6.58 英寸 · OLED · 120Hz",
     "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 16 / MagicOS 10.0",
+    "valueAtAudit": "Android 16 / MagicOS 10.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/honor/2706679_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 16 / MagicOS 10.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ]
  },
@@ -23252,7 +23282,7 @@
   "charging": "80W 有线 / 50W 无线",
   "weight": "203g",
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
-  "os": "以官方大陆版页面为准",
+  "os": "Android / ColorOS 16",
   "priceCN": 4399,
   "priceText": "官方首发起售价（非当前售价）",
   "selling": "哈苏色彩、长续航与全能旗舰体验",
@@ -23286,6 +23316,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android / ColorOS 16；来源 https://product.pconline.com.cn/mobile/oppo/2706759_detail.html",
    "2026-10-21 自动补录完整参数：9 组 / 64 项（中关村在线，标题比对通过）",
    "2026-10-20 补录完整参数表：9 组 / 64 项（中关村在线参数页（第三方核验））"
   ],
@@ -23625,6 +23656,15 @@
     "sourceUrl": "https://www.oppo.com/en/newsroom/press/oppo-find-x9-series-coloros-16-global-launch-upcoming/",
     "evidenceText": "首发价来源：厂商官方发布信息",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android / ColorOS 16",
+    "valueAtAudit": "Android / ColorOS 16",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/oppo/2706759_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android / ColorOS 16",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ]
  },
@@ -23642,7 +23682,7 @@
   "charging": "80W 有线 / 50W 无线",
   "weight": "约 224 g",
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
-  "os": "以官方大陆版页面为准",
+  "os": "Android / ColorOS 16",
   "priceCN": 5299,
   "priceText": "官方首发起售价（非当前售价）",
   "selling": "哈苏影像、2 亿像素长焦与大电池",
@@ -23677,6 +23717,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android / ColorOS 16；来源 https://product.pconline.com.cn/mobile/oppo/2706760_detail.html",
    "2026-10-21 自动补录完整参数：10 组 / 79 项（中关村在线，标题比对通过）",
    "2026-10-20 补录完整参数表：10 组 / 79 项（中关村在线参数页（第三方核验））"
   ],
@@ -24072,6 +24113,15 @@
     "sourceUrl": "https://www.oppo.com/en/newsroom/press/oppo-find-x9-series-coloros-16-global-launch-upcoming/",
     "evidenceText": "首发价来源：厂商官方发布信息",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android / ColorOS 16",
+    "valueAtAudit": "Android / ColorOS 16",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/oppo/2706760_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android / ColorOS 16",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ]
  },
@@ -25046,7 +25096,7 @@
   "charging": "100W 有线 / 40W 无线",
   "weight": "215g",
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
-  "os": "以官方大陆版页面为准",
+  "os": "Android 16 / OriginOS 6",
   "priceCN": 4199,
   "priceText": "官方首发起售价（非当前售价）",
   "selling": "独立电竞芯片、散热与高刷新屏，偏重游戏体验",
@@ -25080,6 +25130,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 16 / OriginOS 6；来源 https://product.pconline.com.cn/mobile/iqoo/2706659_detail.html",
    "2026-10-20 回填官方首发价：4199元（12GB+256GB）（交叉核对）",
    "2026-10-21 自动补录完整参数：9 组 / 71 项（中关村在线，标题比对通过）",
    "2026-10-20 补录完整参数表：9 组 / 71 项（中关村在线参数页（第三方核验））"
@@ -25121,6 +25172,15 @@
     "sourceUrl": "https://detail.zol.com.cn/2145/2144224/param.shtml",
     "evidenceText": "中关村在线参数页：上市日期 2025年10月20日",
     "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 16 / OriginOS 6",
+    "valueAtAudit": "Android 16 / OriginOS 6",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/iqoo/2706659_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 16 / OriginOS 6",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -25917,7 +25977,7 @@
   "charging": "90W 有线 / 40W 无线",
   "weight": "190g",
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
-  "os": "以官方大陆版页面为准",
+  "os": "Android 16 / OriginOS 6",
   "priceCN": 4399,
   "priceText": "官方首发起售价（非当前售价）",
   "selling": "蔡司影像、轻巧旗舰与新一代旗舰平台",
@@ -25952,6 +26012,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 16 / OriginOS 6；来源 https://product.pconline.com.cn/mobile/vivo/2720859_detail.html",
    "2026-10-30 补参数（屏幕）：6.31 英寸 · AMOLED · 120Hz；来源 https://product.pconline.com.cn/mobile/vivo/2720859_detail.html",
    "2026-10-21 自动补录完整参数：10 组 / 76 项（中关村在线，标题比对通过）",
    "2026-10-20 补录完整参数表：10 组 / 76 项（中关村在线参数页（第三方核验））"
@@ -26372,6 +26433,15 @@
     "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/2720859_detail.html",
     "evidenceText": "太平洋电脑网参数页：屏幕 6.31 英寸 · AMOLED · 120Hz",
     "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 16 / OriginOS 6",
+    "valueAtAudit": "Android 16 / OriginOS 6",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/2720859_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 16 / OriginOS 6",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ]
  },
@@ -26389,7 +26459,7 @@
   "charging": "90W 有线 / 40W 无线",
   "weight": "约 226 g",
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
-  "os": "以官方大陆版页面为准",
+  "os": "Android 16 / OriginOS 6",
   "priceCN": 5299,
   "priceText": "官方首发起售价（非当前售价）",
   "selling": "蔡司长焦、专业影像与视频创作",
@@ -26423,6 +26493,7 @@
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 16 / OriginOS 6；来源 https://product.pconline.com.cn/mobile/vivo/2720899_detail.html",
    "2026-10-30 补参数（屏幕）：6.78 英寸 · AMOLED · 120Hz；来源 https://product.pconline.com.cn/mobile/vivo/2720899_detail.html",
    "2026-10-21 自动补录完整参数：9 组 / 77 项（中关村在线，标题比对通过）",
    "2026-10-20 补录完整参数表：9 组 / 77 项（中关村在线参数页（第三方核验））"
@@ -26833,6 +26904,15 @@
     "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/2720899_detail.html",
     "evidenceText": "太平洋电脑网参数页：屏幕 6.78 英寸 · AMOLED · 120Hz",
     "note": "2026-10-30 补录缺失参数；来源：product.pconline.com.cn。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 16 / OriginOS 6",
+    "valueAtAudit": "Android 16 / OriginOS 6",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/2720899_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 16 / OriginOS 6",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ]
  },
@@ -43001,7 +43081,7 @@
   "charging": "最高 90W 有线充电；40W 无线闪充",
   "weight": "摄夜配色约 225g；大地回声、晴天、览霞约 229g",
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 12GB+1TB 卫星通信版 / 16GB+1TB 卫星通信版 / 16GB+1TB 创作者套装版",
-  "os": "以官方大陆版页面为准",
+  "os": "Android 17 / OriginOS 7",
   "priceCN": 6999,
   "priceText": "官方首发价：12GB+256GB 版本 6999 元（2026-09-21 官方发布稿）",
   "selling": "2亿像素蔡司 APO 长焦、2K级高刷屏与8000mAh电池，定位影像与长续航旗舰",
@@ -43038,6 +43118,7 @@
   "quoteTargetStorageReason": "官方发布稿明确给出12GB+256GB首发价6999元；其他容量版本价格也按发布稿单独列出。",
   "auditStatus": "pending_review",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 17 / OriginOS 7；来源 https://product.pconline.com.cn/mobile/vivo/2912951_detail.html",
    "vivo 中国大陆官方规格页确认主要硬件规格、上市月份、容量组合及建议零售价。",
    "vivo 2026-09-21 官方发布稿逐项列出 X500 Pro Max 容量版本首发价：12GB+256GB 6999元、12GB+512GB 7999元、16GB+512GB 8499元、12GB+1TB卫星通信版8999元、16GB+1TB卫星通信版9499元、16GB+1TB创作者套装12999元。",
    "priceCN采用12GB+256GB官方首发价6999元；不代表当前实时售价。",
@@ -43128,6 +43209,15 @@
     "sourceUrl": "https://www.vivo.com.cn/brand/news/detail?id=1392",
     "evidenceText": "vivo中国官方2026年9月21日发布稿逐项列出X500 Pro Max各容量版本首发价；其中12GB+256GB为6999元。",
     "note": "官方首发价按具体SKU核验；priceCN采用12GB+256GB版本6999元，非实时成交价。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 17 / OriginOS 7",
+    "valueAtAudit": "Android 17 / OriginOS 7",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/2912951_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 17 / OriginOS 7",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -72241,7 +72331,7 @@
   "charging": "25W 有线",
   "weight": "187g",
   "storage": "512GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12",
   "priceCN": 7499,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -72269,6 +72359,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12；来源 https://product.pconline.com.cn/mobile/samsung/1612707_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -72348,6 +72439,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1425/1424046/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12",
+    "valueAtAudit": "Android 12",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/samsung/1612707_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -72603,7 +72703,7 @@
   "charging": "25W 有线",
   "weight": "167g",
   "storage": "128GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / One UI 4.1",
   "priceCN": 3550,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -72631,6 +72731,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / One UI 4.1；来源 https://product.pconline.com.cn/mobile/samsung/1162208_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -72710,6 +72811,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1365/1364781/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / One UI 4.1",
+    "valueAtAudit": "Android 12 / One UI 4.1",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/samsung/1162208_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / One UI 4.1",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -73035,7 +73145,7 @@
   "charging": "25W 有线",
   "weight": "168g",
   "storage": "512GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / One UI 5",
   "priceCN": 4899,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -73063,6 +73173,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / One UI 5；来源 https://product.pconline.com.cn/mobile/samsung/1095129_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -73142,6 +73253,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1449/1448934/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / One UI 5",
+    "valueAtAudit": "Android 13 / One UI 5",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/samsung/1095129_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / One UI 5",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -73438,7 +73558,7 @@
   "charging": "25W 有线",
   "weight": "271g",
   "storage": "512GB>",
-  "os": "以官方页面为准",
+  "os": "Android 11",
   "priceCN": 9500,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -73466,6 +73586,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 11；来源 https://product.pconline.com.cn/mobile/samsung/1408527_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -73545,6 +73666,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1348/1347064/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 11",
+    "valueAtAudit": "Android 11",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/samsung/1408527_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 11",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -73857,7 +73987,7 @@
   "charging": "25W 有线",
   "weight": "263g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12",
   "priceCN": 11700,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -73885,6 +74015,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12；来源 https://product.pconline.com.cn/mobile/samsung/1612687_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -73964,6 +74095,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1408/1407687/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12",
+    "valueAtAudit": "Android 12",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/samsung/1612687_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -76963,7 +77103,7 @@
   "charging": "66W 有线",
   "weight": "209g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "HarmonyOS 4.0",
   "priceCN": 5499,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -76991,6 +77131,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：HarmonyOS 4.0；来源 https://product.pconline.com.cn/mobile/huawei/1074393_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -77061,6 +77202,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1428/1427336/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "HarmonyOS 4.0",
+    "valueAtAudit": "HarmonyOS 4.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/1074393_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 HarmonyOS 4.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -77382,7 +77532,7 @@
   "charging": "66W 有线",
   "weight": "239g",
   "storage": "512GB>",
-  "os": "以官方页面为准",
+  "os": "HarmonyOS 3.1",
   "priceCN": 12999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -77410,6 +77560,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：HarmonyOS 3.1；来源 https://product.pconline.com.cn/mobile/huawei/1509287_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -77491,6 +77642,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1479/1478249/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "HarmonyOS 3.1",
+    "valueAtAudit": "HarmonyOS 3.1",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/1509287_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 HarmonyOS 3.1",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -78233,7 +78393,7 @@
   "charging": "100W 有线",
   "weight": "220g",
   "storage": "512GB>",
-  "os": "以官方页面为准",
+  "os": "HarmonyOS 4.2",
   "priceCN": 7999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -78261,6 +78421,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：HarmonyOS 4.2；来源 https://product.pconline.com.cn/mobile/huawei/2191899_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -78341,6 +78502,15 @@
     "sourceUrl": "https://detail.zol.com.cn/2000/1999708/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "HarmonyOS 4.2",
+    "valueAtAudit": "HarmonyOS 4.2",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/2191899_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 HarmonyOS 4.2",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -78646,7 +78816,7 @@
   "charging": "100W 有线",
   "weight": "204g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "HarmonyOS 5.0",
   "priceCN": 2749,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -78674,6 +78844,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：HarmonyOS 5.0；来源 https://product.pconline.com.cn/mobile/huawei/2642339_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -78754,6 +78925,15 @@
     "sourceUrl": "https://detail.zol.com.cn/2129/2128093/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "HarmonyOS 5.0",
+    "valueAtAudit": "HarmonyOS 5.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/huawei/2642339_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 HarmonyOS 5.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -79087,7 +79267,7 @@
   "charging": "80W 有线",
   "weight": "206g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / OriginOS Ocean",
   "priceCN": 4399,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -79115,6 +79295,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / OriginOS Ocean；来源 https://product.pconline.com.cn/mobile/vivo/1074548_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -79185,6 +79366,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1393/1392791/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / OriginOS Ocean",
+    "valueAtAudit": "Android 12 / OriginOS Ocean",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/1074548_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / OriginOS Ocean",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -79550,7 +79740,7 @@
   "charging": "80W 有线",
   "weight": "219g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / OriginOS Ocean",
   "priceCN": 5999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -79578,6 +79768,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / OriginOS Ocean；来源 https://product.pconline.com.cn/mobile/vivo/1480687_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -79657,6 +79848,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1406/1405721/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / OriginOS Ocean",
+    "valueAtAudit": "Android 12 / OriginOS Ocean",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/1480687_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / OriginOS Ocean",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -80506,7 +80706,7 @@
   "charging": "66W 有线",
   "weight": "311g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / OriginOS Ocean",
   "priceCN": 9999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -80534,6 +80734,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / OriginOS Ocean；来源 https://product.pconline.com.cn/mobile/vivo/1474347_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -80613,6 +80814,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1378/1377260/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / OriginOS Ocean",
+    "valueAtAudit": "Android 12 / OriginOS Ocean",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/1474347_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / OriginOS Ocean",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -80998,7 +81208,7 @@
   "charging": "66W 有线",
   "weight": "203g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 11 / Magic UI 5.0",
   "priceCN": 4499,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -81026,6 +81236,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 11 / Magic UI 5.0；来源 https://product.pconline.com.cn/mobile/honor/1397100_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -81105,6 +81316,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1383/1382712/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 11 / Magic UI 5.0",
+    "valueAtAudit": "Android 11 / Magic UI 5.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/honor/1397100_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 11 / Magic UI 5.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -81470,7 +81690,7 @@
   "charging": "66W 有线",
   "weight": "199g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / Magic UI 6.0",
   "priceCN": 1788,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -81498,6 +81718,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / Magic UI 6.0；来源 https://product.pconline.com.cn/mobile/honor/1457748_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -81568,6 +81789,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1395/1394399/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / Magic UI 6.0",
+    "valueAtAudit": "Android 12 / Magic UI 6.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/honor/1457748_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / Magic UI 6.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -81905,7 +82135,7 @@
   "charging": "66W 有线",
   "weight": "191g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / MagicOS 7.1",
   "priceCN": 3999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -81933,6 +82163,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / MagicOS 7.1；来源 https://product.pconline.com.cn/mobile/honor/1742307_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -82012,6 +82243,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1427/1426635/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / MagicOS 7.1",
+    "valueAtAudit": "Android 13 / MagicOS 7.1",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/honor/1742307_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / MagicOS 7.1",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -82361,7 +82601,7 @@
   "charging": "66W 有线",
   "weight": "193g",
   "storage": "512GB>",
-  "os": "以官方页面为准",
+  "os": "Android 14 / MagicOS 8.0",
   "priceCN": 4999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -82389,6 +82629,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 14 / MagicOS 8.0；来源 https://product.pconline.com.cn/mobile/honor/2248719_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -82468,6 +82709,15 @@
     "sourceUrl": "https://detail.zol.com.cn/2019/2018979/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 14 / MagicOS 8.0",
+    "valueAtAudit": "Android 14 / MagicOS 8.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/honor/2248719_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 14 / MagicOS 8.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -82735,7 +82985,7 @@
   "charging": "65W 有线",
   "weight": "183g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 11 / Color OS",
   "priceCN": 3599,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -82763,6 +83013,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 11 / Color OS；来源 https://product.pconline.com.cn/mobile/oneplus/1200962_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -82842,6 +83093,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1365/1364201/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 11 / Color OS",
+    "valueAtAudit": "Android 11 / Color OS",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/oneplus/1200962_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 11 / Color OS",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -83223,7 +83483,7 @@
   "charging": "65W 有线",
   "weight": "197g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 11 / ColorOS 11",
   "priceCN": 5499,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -83251,6 +83511,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 11 / ColorOS 11；来源 https://product.pconline.com.cn/mobile/oneplus/1370547_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -83330,6 +83591,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1327/1326868/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 11 / ColorOS 11",
+    "valueAtAudit": "Android 11 / ColorOS 11",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/oneplus/1370547_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 11 / ColorOS 11",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -84072,7 +84342,7 @@
   "charging": "150W 有线",
   "weight": "210g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / ColorOS 13.1",
   "priceCN": 2999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -84100,6 +84370,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / ColorOS 13.1；来源 https://product.pconline.com.cn/mobile/oneplus/1871967_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -84179,6 +84450,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1509/1508911/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / ColorOS 13.1",
+    "valueAtAudit": "Android 13 / ColorOS 13.1",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/oneplus/1871967_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / ColorOS 13.1",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -84508,7 +84788,7 @@
   "charging": "100W 有线",
   "weight": "212g / 207g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 14 / ColorOS 14.1",
   "priceCN": 3199,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -84536,6 +84816,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 14 / ColorOS 14.1；来源 https://product.pconline.com.cn/mobile/oneplus/2267679_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -84615,6 +84896,15 @@
     "sourceUrl": "https://detail.zol.com.cn/2031/2030190/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 14 / ColorOS 14.1",
+    "valueAtAudit": "Android 14 / ColorOS 14.1",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/oneplus/2267679_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 14 / ColorOS 14.1",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -84910,7 +85200,7 @@
   "charging": "45W 有线",
   "weight": "195g",
   "storage": "128GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / One UI 4.1",
   "priceCN": 5550,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -84938,6 +85228,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / One UI 4.1；来源 https://product.pconline.com.cn/mobile/samsung/1237405_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -85017,6 +85308,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1399/1398124/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / One UI 4.1",
+    "valueAtAudit": "Android 12 / One UI 4.1",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/samsung/1237405_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / One UI 4.1",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -85338,7 +85638,7 @@
   "charging": "45W 有线",
   "weight": "195g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / One UI 5",
   "priceCN": 6999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -85366,6 +85666,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / One UI 5；来源 https://product.pconline.com.cn/mobile/samsung/1722187_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -85445,6 +85746,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1404/1403118/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / One UI 5",
+    "valueAtAudit": "Android 13 / One UI 5",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/samsung/1722187_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / One UI 5",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -85733,7 +86043,7 @@
   "charging": "120W 有线",
   "weight": "214.85g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / OriginOS 3",
   "priceCN": 5499,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -85761,6 +86071,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / OriginOS 3；来源 https://product.pconline.com.cn/mobile/vivo/1680667_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -85841,6 +86152,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1435/1434232/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / OriginOS 3",
+    "valueAtAudit": "Android 13 / OriginOS 3",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/vivo/1680667_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / OriginOS 3",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -86193,7 +86513,7 @@
   "charging": "120W 有线",
   "weight": "206g",
   "storage": "128GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / OriginOS Ocean",
   "priceCN": 3699,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -86221,6 +86541,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / OriginOS Ocean；来源 https://product.pconline.com.cn/mobile/iqoo/1567487_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -86300,6 +86621,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1413/1412273/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / OriginOS Ocean",
+    "valueAtAudit": "Android 12 / OriginOS Ocean",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/iqoo/1567487_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / OriginOS Ocean",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -86652,7 +86982,7 @@
   "charging": "200W 有线",
   "weight": "216.2g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / OriginOS Ocean",
   "priceCN": 5299,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -86680,6 +87010,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / OriginOS Ocean；来源 https://product.pconline.com.cn/mobile/iqoo/1567488_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -86759,6 +87090,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1421/1420662/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / OriginOS Ocean",
+    "valueAtAudit": "Android 12 / OriginOS Ocean",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/iqoo/1567488_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / OriginOS Ocean",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -87127,7 +87467,7 @@
   "charging": "120W 有线",
   "weight": "208g / 205g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / OriginOS 3",
   "priceCN": 3799,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -87155,6 +87495,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / OriginOS 3；来源 https://product.pconline.com.cn/mobile/iqoo/1655427_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -87234,6 +87575,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1436/1435912/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / OriginOS 3",
+    "valueAtAudit": "Android 13 / OriginOS 3",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/iqoo/1655427_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / OriginOS 3",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -87591,7 +87941,7 @@
   "charging": "120W 有线",
   "weight": "196g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 14 / OriginOS 4",
   "priceCN": 2999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -87619,6 +87969,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 14 / OriginOS 4；来源 https://product.pconline.com.cn/mobile/iqoo/2023387_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -87698,6 +88049,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1611/1610857/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 14 / OriginOS 4",
+    "valueAtAudit": "Android 14 / OriginOS 4",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/iqoo/2023387_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 14 / OriginOS 4",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -88055,7 +88415,7 @@
   "charging": "65W 有线",
   "weight": "189g",
   "storage": "128GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / realme UI 3.0",
   "priceCN": 2799,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -88083,6 +88443,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / realme UI 3.0；来源 https://product.pconline.com.cn/mobile/realme/1457468_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -88162,6 +88523,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1397/1396428/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / realme UI 3.0",
+    "valueAtAudit": "Android 12 / realme UI 3.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/realme/1457468_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / realme UI 3.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -88982,7 +89352,7 @@
   "charging": "150W 有线",
   "weight": "205g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / realme UI 4.0",
   "priceCN": 2999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -89010,6 +89380,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / realme UI 4.0；来源 https://product.pconline.com.cn/mobile/realme/1892067_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -89091,6 +89462,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1857/1856215/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / realme UI 4.0",
+    "valueAtAudit": "Android 13 / realme UI 4.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/realme/1892067_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / realme UI 4.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -89440,7 +89820,7 @@
   "charging": "150W 有线",
   "weight": "199g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / realme UI 4.0",
   "priceCN": 2499,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -89468,6 +89848,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / realme UI 4.0；来源 https://product.pconline.com.cn/mobile/realme/1712387_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -89547,6 +89928,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1458/1457605/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / realme UI 4.0",
+    "valueAtAudit": "Android 13 / realme UI 4.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/realme/1712387_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / realme UI 4.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -89936,7 +90326,7 @@
   "charging": "80W 有线",
   "weight": "196g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 12 / ColorOS 12.1",
   "priceCN": 4399,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -89964,6 +90354,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 12 / ColorOS 12.1；来源 https://product.pconline.com.cn/mobile/oppo/1457747_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -90034,6 +90425,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1384/1383816/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 12 / ColorOS 12.1",
+    "valueAtAudit": "Android 12 / ColorOS 12.1",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/oppo/1457747_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 12 / ColorOS 12.1",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -90366,7 +90766,7 @@
   "charging": "44W 有线",
   "weight": "191g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / ColorOS 13.0",
   "priceCN": 5999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -90394,6 +90794,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / ColorOS 13.0；来源 https://product.pconline.com.cn/mobile/oppo/1687487_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -90473,6 +90874,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1438/1437089/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / ColorOS 13.0",
+    "valueAtAudit": "Android 13 / ColorOS 13.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/oppo/1687487_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / ColorOS 13.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -90769,7 +91179,7 @@
   "charging": "80W 有线",
   "weight": "228g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / MyOS13",
   "priceCN": 4799,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -90797,6 +91207,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / MyOS13；来源 https://product.pconline.com.cn/mobile/nubia/1750587_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -90876,6 +91287,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1465/1464807/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / MyOS13",
+    "valueAtAudit": "Android 13 / MyOS13",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/nubia/1750587_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / MyOS13",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -91241,7 +91661,7 @@
   "charging": "80W 有线",
   "weight": "246g",
   "storage": "256GB>",
-  "os": "以官方页面为准",
+  "os": "Android 14 / MyOS 14",
   "priceCN": 4299,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -91269,6 +91689,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 14 / MyOS 14；来源 https://product.pconline.com.cn/mobile/nubia/2029609_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -91348,6 +91769,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1961/1960082/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 14 / MyOS 14",
+    "valueAtAudit": "Android 14 / MyOS 14",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/nubia/2029609_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 14 / MyOS 14",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
@@ -91709,7 +92139,7 @@
   "charging": "80W 有线",
   "weight": "228g",
   "storage": "128GB>",
-  "os": "以官方页面为准",
+  "os": "Android 13 / REDMAGIC OS 6.0",
   "priceCN": 3999,
   "priceText": "中关村在线参考价（非官方首发价，仅供比价参考）",
   "selling": "第三方参数页补录",
@@ -91737,6 +92167,7 @@
   "quoteTargetStorageReason": "未确认官方容量组合与型号写法，不触发报价检索。",
   "auditStatus": "needs_parameter_price_audit",
   "auditNotes": [
+   "2026-10-30 补参数（操作系统）：Android 13 / REDMAGIC OS 6.0；来源 https://product.pconline.com.cn/mobile/nubia/1091429_detail.html",
    "由中关村在线参数页补录，第三方来源",
    "参数与首发价未经厂商官方页核对",
    "整机准入保持关闭",
@@ -91816,6 +92247,15 @@
     "sourceUrl": "https://detail.zol.com.cn/1434/1433615/param.shtml",
     "evidenceText": "首发价来源：中关村在线商品页参考价",
     "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+   },
+   {
+    "field": "操作系统",
+    "value": "Android 13 / REDMAGIC OS 6.0",
+    "valueAtAudit": "Android 13 / REDMAGIC OS 6.0",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://product.pconline.com.cn/mobile/nubia/1091429_detail.html",
+    "evidenceText": "太平洋电脑网参数页：操作系统 Android 13 / REDMAGIC OS 6.0",
+    "note": "2026-10-30 补录占位字段；第三方参数站，非厂商官方页。"
    }
   ],
   "specs": [
