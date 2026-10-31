@@ -1463,7 +1463,10 @@ const phones=Array.isArray(window.PHONE_DATA)?window.PHONE_DATA:[];
 const BRAND_COUNT=new Set(phones.map(p=>p.brand)).size;
 const $=id=>document.getElementById(id);
 const state={brands:new Set(),types:new Set(),compare:[],view:'cards',priorities:new Set(),onlyIds:null,recommendIds:null,detailList:null,detailPos:0,recent:[],pendingCompare:false,compareQuery:'',compareSort:'default',compareDiffOnly:false,detailId:null,favs:new Set(),favOnly:false,priceMin:null,priceMax:null,hw:{batteryMin:null,weightMax:null,hzMin:null,storageMin:null},density:'roomy',selected:new Set()};
+/* 实测（_jst/bench_micro.js）：改成「先 test 再 replace」反而慢 10.8%。
+   V8 下无匹配的 replace 已足够快，且回调只在命中时才创建映射对象。保持原实现，别再"优化"。 */
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+/* 实测（_jst/bench_micro.js）：Map 缓存比直接 toLocaleString 慢 6.5%（V8 已缓存 Intl 格式器）。保持原实现。 */
 const money=n=>n!==null&&n!==undefined&&n!==''&&Number.isFinite(Number(n))?'¥'+Number(n).toLocaleString('zh-CN'):'待核实';
 const hasQuote=p=>!!p&&["verified","api_candidate"].includes(p.livePriceStatus)&&Number.isFinite(Number(p.livePrice));
 function fmtCheckedAt(v){if(!v)return '时间待核验';const d=new Date(v);return Number.isNaN(d.getTime())?String(v):d.toLocaleString('zh-CN',{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'});}
@@ -1724,7 +1727,7 @@ function renderBrands(){
    漏掉的被当成正常值显示；这里统一按「以…为准 / 待核验·待录入·暂缺」的模式识别。 */
 const PLACEHOLDER_RE=/^(以.{0,12}为准|.{0,6}(待核验|待录入|暂缺|未公布|未收录).{0,8}|.{0,4}待复核.{0,6})$/;
 function realText(v){const t=v==null?'':String(v).trim();return (t&&!PLACEHOLDER_RE.test(t))?t:'';}
-function card(p){const chosen=state.compare.includes(p.id);return `<article class="phone-card"><div class="card-top"><span class="card-brand">${esc(p.brand)}</span><div class="card-top-right"><span class="card-year">${esc(validDate(p))}</span><button class="fav-btn${state.favs.has(p.id)?' is-on':''}" type="button" data-fav="${esc(p.id)}" aria-pressed="${state.favs.has(p.id)}" aria-label="收藏 ${esc(p.name)}">${state.favs.has(p.id)?'♥':'♡'}</button></div></div><h3>${esc(p.name)}</h3><p class="card-type">${esc(p.type||'旗舰手机')} · ${esc(p.market||'市场版本待核')}</p><div class="card-specs"><div><small>屏幕</small><strong>${esc((realText(p.display)||'—').split('；')[0])}</strong></div><div><small>处理器</small><strong>${esc(realText(p.chip)||'—')}</strong></div><div><small>电池</small><strong>${esc(realText(p.battery)||'—')}</strong></div><div><small>重量</small><strong>${esc(realText(p.weight)||'—')}</strong></div><div><small>充电</small><strong>${esc(realText(p.charging)||'—')}</strong></div></div><div class="card-price"><div><small class="price-label">${p.priceType==='third_party_reference'?'参考价（第三方）':(p.priceType==='price_pending'?'价格待核（厂商未公布）':(p.priceType==='price_unavailable'?'参考价缺失（参数站未收录）':(p.priceType==='official_starting_price'?'官方起售价（容量待核）':'官方首发参考价')))}</small><strong>${money(p.priceCN)}</strong>${quoteBlock(p)}</div><span class="audit-pill ${pass(p)?'audit-ok':'audit-pending'}">${pass(p)?'审核通过':'未通过整机审核，仅供参考'}</span></div><div class="card-actions"><button class="button button-dark button-small" data-detail="${esc(p.id)}">查看详情</button><button class="button button-light button-small" data-compare="${esc(p.id)}">${chosen?'已加入对比':'加入对比'}</button></div><p class="card-source"><a href="${esc(p.source||'#')}" target="_blank" rel="noopener">查看厂商来源 ↗</a></p></article>`;}
+function card(p){const chosen=state.compare.includes(p.id);const fav=state.favs.has(p.id);return `<article class="phone-card"><div class="card-top"><span class="card-brand">${esc(p.brand)}</span><div class="card-top-right"><span class="card-year">${esc(validDate(p))}</span><button class="fav-btn${fav?' is-on':''}" type="button" data-fav="${esc(p.id)}" aria-pressed="${fav}" aria-label="收藏 ${esc(p.name)}">${fav?'♥':'♡'}</button></div></div><h3>${esc(p.name)}</h3><p class="card-type">${esc(p.type||'旗舰手机')} · ${esc(p.market||'市场版本待核')}</p><div class="card-specs"><div><small>屏幕</small><strong>${esc((realText(p.display)||'—').split('；')[0])}</strong></div><div><small>处理器</small><strong>${esc(realText(p.chip)||'—')}</strong></div><div><small>电池</small><strong>${esc(realText(p.battery)||'—')}</strong></div><div><small>重量</small><strong>${esc(realText(p.weight)||'—')}</strong></div><div><small>充电</small><strong>${esc(realText(p.charging)||'—')}</strong></div></div><div class="card-price"><div><small class="price-label">${p.priceType==='third_party_reference'?'参考价（第三方）':(p.priceType==='price_pending'?'价格待核（厂商未公布）':(p.priceType==='price_unavailable'?'参考价缺失（参数站未收录）':(p.priceType==='official_starting_price'?'官方起售价（容量待核）':'官方首发参考价')))}</small><strong>${money(p.priceCN)}</strong>${quoteBlock(p)}</div><span class="audit-pill ${pass(p)?'audit-ok':'audit-pending'}">${pass(p)?'审核通过':'未通过整机审核，仅供参考'}</span></div><div class="card-actions"><button class="button button-dark button-small" data-detail="${esc(p.id)}">查看详情</button><button class="button button-light button-small" data-compare="${esc(p.id)}">${chosen?'已加入对比':'加入对比'}</button></div><p class="card-source"><a href="${esc(p.source||'#')}" target="_blank" rel="noopener">查看厂商来源 ↗</a></p></article>`;}
 /* 表格排序时复用已存在的行：442 行重建要重新计算列宽（auto 布局），实测 285ms；
    只重排节点并改 aria-sort，列宽不变，能压到几十毫秒。 */
 let lastTableCmp='';
@@ -1828,7 +1831,7 @@ function clearActiveFilter(key){
 }
 let lastGridKey='',paintToken=0;
 /* 首屏只画一屏多一点，剩下的分片补；442 张卡一次性插入会占满主线程，首帧要等 1 秒以上 */
-const PAINT_FIRST=48,PAINT_STEP=96,PAINT_BUDGET=8;
+const PAINT_FIRST=12,PAINT_STEP=96,PAINT_BUDGET=8;
 /* 用 rAF + 每帧 8ms 预算补画：requestIdleCallback 在加载后常被推迟到 1s 以外，用户会看到半截列表 */
 const nextFrame=fn=>('requestAnimationFrame'in window)?window.requestAnimationFrame(fn):setTimeout(fn,16);
 function paintGrid(grid,arr){

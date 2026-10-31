@@ -56,10 +56,22 @@ const rpc = (ws, id, m, p) => new Promise((res, rej) => {
 
   // 1) 首屏
   const t0 = Date.now();
+  await call('Performance.enable');
   await call('Page.navigate', { url: 'file:///' + FILE.replace(/\\/g, '/') });
+  /* 首张卡片出现 = 用户真正「看到内容」的时刻，比 painting=0（全部画完）更贴近感知 */
+  await ev(`new Promise(r=>{const t=setInterval(()=>{const g=document.getElementById('phoneGrid');
+    if(g&&g.querySelector('.phone-card')){clearInterval(t);r(1);}},10)})`);
+  const tFirst = Date.now() - t0;
   await ev(`new Promise(r=>{const t=setInterval(()=>{const g=document.getElementById('phoneGrid');
     if(g&&g.dataset.painting==='0'){clearInterval(t);r(1);}},30)})`);
+  console.log(`  首屏首张卡片可见          ${String(tFirst).padStart(5)} ms`);
   console.log(`  首屏到卡片画完            ${String(Date.now() - t0).padStart(5)} ms`);
+  /* 真实渲染成本：painting=0 只代表 JS 插完 DOM，布局/样式重算才是浏览器侧大头 */
+  try {
+    const mt = (await call('Performance.getMetrics')).metrics || [];
+    const gv = n => { const x = mt.find(i => i.name === n); return x ? x.value : 0; };
+    console.log(`  首屏累计 Layout ${(gv('LayoutDuration')*1000).toFixed(0)}ms · RecalcStyle ${(gv('RecalcStyleDuration')*1000).toFixed(0)}ms · Script ${(gv('ScriptDuration')*1000).toFixed(0)}ms`);
+  } catch (e) {}
 
   // 2) 切到表格视图（442 行一次性渲染）
   const t1 = Date.now();
