@@ -1568,9 +1568,12 @@ function scoreLabel(p){return pass(p)&&Number.isFinite(p.score)?p.score:'未开�
 function filterContext(){
  const fromRaw=Number($('yearFrom')?.value||2021),toRaw=Number($('yearTo')?.value||2026);
  const raw=String($('searchInput')?.value||'');
+ const q=raw.trim().toLowerCase();
  return {
-  q:raw.trim().toLowerCase(),
+  q,
   qt:tighten(raw),
+  /* 拼音匹配条件：不含中文、≥2 字符（1 个字母会把半个库都召回） */
+  py:(!/[\u4e00-\u9fa5]/.test(q)&&q.length>=2)?q:'',
   yFrom:Math.min(fromRaw,toRaw),yTo:Math.max(fromRaw,toRaw),
   domesticOnly:!!$('domesticOnly')?.checked,
   sort:$('sortSelect')?.value||'newest'
@@ -1602,11 +1605,36 @@ function cardText(p){
  const t=[p.name,p.brand,p.chip,p.camera,p.type].join(' ').toLowerCase();
  CARD_TEXT.set(k,t);return t;
 }
+/* 拼音首字母索引：品牌中文 → 首字母 + 型号里的英文/数字（中文型号字不转，避免维护上万字表）。
+   评估见 _jst/eval_pinyin.py：前缀匹配下 xm/hw/ry/sx/pg 均为单一品牌、0 误召回；
+   ip/mi 这类中间子串也不会误命中（它们不是任何机型的 key 前缀）。 */
+const PY_RULES=[
+ [/^小米/,'xm'],[/^红米/,'hm'],[/^REDMI/i,'hm'],
+ [/^三星/,'sx'],[/^华为/,'hw'],[/^HUAWEI/i,'hw'],
+ [/^荣耀/,'ry'],[/^vivo/i,'vivo'],[/^OPPO/i,'oppo'],[/^Reno/i,'oppo'],[/^Find/i,'oppo'],
+ [/^真我/,'zw'],[/^realme/i,'zw'],[/^iQOO/i,'iqoo'],
+ [/^努比亚/,'nby'],[/^红魔/,'nby'],[/^一加/,'yj'],[/^魅族/,'mz'],
+ [/^中兴/,'zx'],[/^酷派/,'kp'],[/^华硕/,'hs'],[/^ROG/i,'hs'],[/^麦芒/,'mm'],
+ [/^iPhone/i,'pg'],[/^苹果/,'pg'],[/^Moto/i,'moto'],[/^WIKO/i,'wiko'],
+ [/^蔚来/,'wl'],[/^Polestar/i,'polestar'],
+];
+const PY_CACHE=new Map();
+function pyKey(p){
+ const k=p&&p.id;if(!k)return '';
+ if(PY_CACHE.has(k))return PY_CACHE.get(k);
+ let n=String(p.name||''),brand='';
+ for(const [re,py] of PY_RULES){const m=n.match(re);if(m){brand=py;n=n.slice(m[0].length);break;}}
+ const rest=n.replace(/[^\x00-\x7F]/g,'').replace(/[^a-zA-Z0-9]/g,'').toLowerCase();
+ const v=(brand+rest).toLowerCase();
+ PY_CACHE.set(k,v);return v;
+}
 function matchQuery(p,c){
  if(!c.q)return true;
  if(cardText(p).includes(c.q)||specHay(p).includes(c.q))return true;
  /* 常规匹配不上时，再用「去空格/全角」的版本试一次 */
- return !!c.qt&&c.qt.length>1&&(tightCard(p).includes(c.qt)||tightSpec(p).includes(c.qt));
+ if(c.qt&&c.qt.length>1&&(tightCard(p).includes(c.qt)||tightSpec(p).includes(c.qt)))return true;
+ /* 拼音首字母：只在查询不含中文且 ≥2 字符时启用，且必须前缀匹配 */
+ return !!(c.py&&pyKey(p).startsWith(c.py));
 }
 function matchFilters(p,c){
  if(state.brands.size&&!state.brands.has(p.brand))return false;
@@ -2093,7 +2121,13 @@ function relScore(p,q,qt){
  if(hit(name))return 1;
  if(hit(String(p.brand||'').toLowerCase()))return 2;
  if(hit(String(p.chip||'').toLowerCase()))return 3;
- return 4;
+ /* 拼音命中排在外围参数命中之后；key 完全相等（xm15 ↔ 小米 15）优先于前缀命中（15S Pro） */
+ if(q&&!/[\u4e00-\u9fa5]/.test(q)&&q.length>=2){
+  const k=pyKey(p);
+  if(k===q)return 4;
+  if(k.startsWith(q))return 5;
+ }
+ return 6;
 }
 /* ===== 详情：在「当前筛选结果」中前后翻页 ===== */
 function ensureDetailList(id){
@@ -2543,6 +2577,18 @@ document.addEventListener('keydown',e=>{
  if(e.key==='/'&&!typing){e.preventDefault();(compareOpen?$('compareSearch'):$('searchInput'))?.focus();return;}
  if(typing||e.metaKey||e.ctrlKey||e.altKey)return;
  if(compareOpen&&(e.key==='d'||e.key==='D')){e.preventDefault();state.compareDiffOnly=!state.compareDiffOnly;compare();return;}
+ if(compareOpen&&(e.key==='s'||e.key==='S')){
+  e.preventDefault();
+  const sel=$('compareSort');
+  if(sel){
+   const opts=[...sel.options].map(o=>o.value);
+   const next=opts[(opts.indexOf(state.compareSort||'default')+1)%opts.length];
+   state.compareSort=next;
+   compare();
+   toast('对比顺序：'+({default:'默认顺序',battery:'电池容量高→低',weight:'重量轻→重',price:'首发价低→高'}[next]||next));
+  }
+  return;
+ }
  if(e.key==='t'||e.key==='T'){e.preventDefault();const b=document.querySelector(`[data-view="${state.view==='table'?'cards':'table'}"]`);if(b)b.click();return;}
  if((e.key==='f'||e.key==='F')&&detailOpen&&state.detailId){
   e.preventDefault();

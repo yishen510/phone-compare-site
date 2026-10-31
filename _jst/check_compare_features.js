@@ -60,6 +60,13 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  const afterRows=document.querySelectorAll('#compareModal .compare-table tbody tr').length;
  chk('按 d 切换只看差异（行数不增）', afterRows<=beforeRows, `${beforeRows} → ${afterRows}`);
 
+ /* 7. 按 s 循环切换对比排序 */
+ const sb=document.getElementById('compareSort')?document.getElementById('compareSort').value:'';
+ document.dispatchEvent(new window.KeyboardEvent('keydown',{key:'s',bubbles:true}));
+ await sleep(450);
+ const sa=document.getElementById('compareSort')?document.getElementById('compareSort').value:'';
+ chk('按 s 循环切换对比排序', sa!==sb, `${sb} → ${sa}`);
+
  console.log(`\n${ok} 通过 / ${bad} 失败；脚本错误 ${errs.length}`);
  if(errs.length)console.log('错误:',errs.slice(0,5));
  process.exit(bad||errs.length?1:0);
