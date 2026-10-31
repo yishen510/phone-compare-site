@@ -8,7 +8,10 @@ const os = require('os');
 const WebSocket = require('ws');
 
 const EDGE = 'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe';
-const [url, theme, out, hRaw, scrollSel] = process.argv.slice(2);
+/* 按「非 -- 开头」取位置参数：否则 --desktop 会被当成滚动选择器（踩过） */
+const args = process.argv.slice(2).filter(a => !a.startsWith('--'));
+const [url, theme, out, hRaw, scrollSel] = args;
+const DESKTOP = process.argv.includes('--desktop');
 const PORT = 9850 + Math.floor(Math.random() * 100);
 const prof = fs.mkdtempSync(path.join(os.tmpdir(), 'shot-'));
 const child = spawn(EDGE, ['--headless=new', '--disable-gpu', '--no-first-run',
@@ -42,7 +45,7 @@ const rpc = (ws, id, m, p) => new Promise((res, rej) => {
   };
   await call('Page.enable'); await call('Runtime.enable');
   await call('Emulation.setDeviceMetricsOverride',
-    { width: process.argv.includes("--desktop")?1280:390, height: Number(hRaw) || (process.argv.includes("--desktop")?820:844), deviceScaleFactor: process.argv.includes("--desktop")?1:2, mobile: !process.argv.includes("--desktop") });
+    { width: DESKTOP?1280:390, height: Number(hRaw) || (DESKTOP?820:844), deviceScaleFactor: DESKTOP?1:2, mobile: !DESKTOP });
   if (theme && theme !== 'auto') {
     await call('Page.addScriptToEvaluateOnNewDocument',
       { source: `try{localStorage.setItem('phoneindex.theme.v1','${theme}')}catch(e){}` });
