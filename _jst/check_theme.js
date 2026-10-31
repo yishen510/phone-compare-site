@@ -1,5 +1,6 @@
-/* 配色可读性自检：从 index.html 里读出两套主题的令牌，按 WCAG 算对比度。
-   调色时最容易犯的错是把主色提亮后按钮白字/小字看不清，这个脚本把那条线守住。
+/* 配色可读性自检：从 index.html 读出两套主题的令牌，按 WCAG 算对比度。
+   关键点：玻璃是半透明的，文字压在 blend(tint, bg) 之后的"有效面"上，
+   所以不能只对 --bg 算——那会高估对比度（透明化之后尤其危险）。
    用法：node _jst/check_theme.js */
 const fs = require('fs');
 
@@ -13,15 +14,23 @@ function block(selector) {
   const close = css.indexOf('}', open);
   return css.slice(open + 1, close);
 }
-function token(blockText, name) {
-  const m = blockText.match(new RegExp(`--${name}\\s*:\\s*(#[0-9a-fA-F]{3,8})`));
-  return m ? m[1] : null;
-}
+const rawTok = (b, name) => {
+  const m = b.match(new RegExp(`--${name}\\s*:\\s*([^;]+);`));
+  return m ? m[1].trim() : null;
+};
 function hex2rgb(h) {
   h = h.replace('#', '');
   if (h.length === 3) h = h.split('').map(c => c + c).join('');
   return [0, 2, 4].map(i => parseInt(h.slice(i, i + 2), 16));
 }
+function parseColor(v) {
+  if (v.startsWith('#')) return { rgb: hex2rgb(v), a: 1 };
+  const m = v.match(/rgba?\(\s*([\d.]+)\s*,\s*([\d.]+)\s*,\s*([\d.]+)(?:\s*,\s*([\d.]+))?\s*\)/);
+  if (!m) return null;
+  return { rgb: [+m[1], +m[2], +m[3]], a: m[4] === undefined ? 1 : +m[4] };
+}
+const toHex = t => '#' + t.map(v => Math.round(Math.max(0, Math.min(255, v))).toString(16).padStart(2, '0')).join('');
+const blend = (fg, bg) => toHex(fg.rgb.map((v, i) => fg.a * v + (1 - fg.a) * bg[i]));
 function lum(hex) {
   const [r, g, b] = hex2rgb(hex).map(v => {
     const c = v / 255;
@@ -40,49 +49,60 @@ const chk = (name, cond, extra = '') => {
   console.log(`${cond ? 'PASS' : 'FAIL'}  ${name}${extra ? '  → ' + extra : ''}`);
 };
 
-const dark = block(':root{');
-const light = block('html[data-theme="light"]{');
+for (const [label, sel] of [['暗色', ':root{'], ['浅色', 'html[data-theme="light"]{']]) {
+  const b = block(sel);
+  const bg = rawTok(b, 'bg');
+  const ink = rawTok(b, 'ink');
+  const muted = parseColor(rawTok(b, 'muted'));
+  const faint = parseColor(rawTok(b, 'faint'));
+  const aText = rawTok(b, 'accent-text');
+  const g1 = parseColor(rawTok(b, 'glass-1'));
+  const g4 = parseColor(rawTok(b, 'glass-4'));
 
-/* 两个 #fff 压在最浅的那档 accent-2 上（.button-dark 的渐变起点就是它）；
-   小字 12.5px 属正文级别，AA 要求 4.5。 */
-for (const [label, blk] of [['暗色', dark], ['浅色', light]]) {
-  const a2 = token(blk, 'accent-2');
-  const a = token(blk, 'accent');
-  const txt = token(blk, 'accent-text');
-  const bg = token(blk, 'bg');
-  const deep = token(blk, 'accent-deep');
-  chk(`${label}：按钮白字压 accent-2 ≥ 4.5`, contrast('#ffffff', a2) >= 4.5,
-    `${a2} = ${contrast('#ffffff', a2).toFixed(2)}`);
-  chk(`${label}：按钮白字压 accent ≥ 4.5`, contrast('#ffffff', a) >= 4.5,
-    `${a} = ${contrast('#ffffff', a).toFixed(2)}`);
-  chk(`${label}：按钮白字压 accent-deep ≥ 4.5`, contrast('#ffffff', deep) >= 4.5,
-    `${deep} = ${contrast('#ffffff', deep).toFixed(2)}`);
-  chk(`${label}：accent-text 在底色上 ≥ 4.5`, contrast(txt, bg) >= 4.5,
-    `${txt} on ${bg} = ${contrast(txt, bg).toFixed(2)}`);
-  chk(`${label}：正文 --ink 在底色上 ≥ 4.5`, contrast(token(blk, 'ink'), bg) >= 4.5,
-    `${contrast(token(blk, 'ink'), bg).toFixed(2)}`);
+  /* 玻璃压在底色上的"实际看到的那层颜色" */
+  const surf1 = blend(g1, hex2rgb(bg));
+  const surf4 = blend(g4, hex2rgb(bg));
+  const mutedOn1 = blend(muted, hex2rgb(surf1));
+  const faintOn1 = blend(faint, hex2rgb(surf1));
+
+  chk(`${label}：正文压卡片面 ≥ 7`, contrast(ink, surf1) >= 7,
+    `${surf1} = ${contrast(ink, surf1).toFixed(2)}`);
+  chk(`${label}：次要文字压卡片面 ≥ 4.5`, contrast(mutedOn1, surf1) >= 4.5,
+    contrast(mutedOn1, surf1).toFixed(2));
+  chk(`${label}：最淡文字压卡片面 ≥ 4.5`, contrast(faintOn1, surf1) >= 4.5,
+    contrast(faintOn1, surf1).toFixed(2));
+  chk(`${label}：强调字压卡片面 ≥ 4.5`, contrast(aText, surf1) >= 4.5,
+    contrast(aText, surf1).toFixed(2));
+  chk(`${label}：正文压弹层 ≥ 7`, contrast(ink, surf4) >= 7,
+    `${surf4} = ${contrast(ink, surf4).toFixed(2)}`);
+  chk(`${label}：玻璃真的半透明（L1 alpha ≤ 0.60）`, g1.a <= 0.60, `alpha ${g1.a}`);
+  chk(`${label}：透明但仍不糊（L1 alpha ≥ 0.50）`, g1.a >= 0.50, `alpha ${g1.a}`);
+
+  const acc = rawTok(b, 'accent'), acc2 = rawTok(b, 'accent-2'), deep = rawTok(b, 'accent-deep');
+  chk(`${label}：白字压 accent ≥ 4.5`, contrast('#ffffff', acc) >= 4.5, `${acc} = ${contrast('#ffffff', acc).toFixed(2)}`);
+  chk(`${label}：白字压 accent-2 ≥ 4.5`, contrast('#ffffff', acc2) >= 4.5, `${acc2} = ${contrast('#ffffff', acc2).toFixed(2)}`);
+  chk(`${label}：白字压 accent-deep ≥ 4.5`, contrast('#ffffff', deep) >= 4.5, contrast('#ffffff', deep).toFixed(2));
 }
 
-/* 主色必须真的"凉"下来：色相在青蓝区间，别又飘回暖色 */
-const [ar, ag, ab] = hex2rgb(token(dark, 'accent'));
+/* 主色必须留在冷色区间，别又飘回暖色 */
+const dark = block(':root{');
+const [ar, ag, ab] = hex2rgb(rawTok(dark, 'accent'));
 const hue = (() => {
-  const r = ar / 255, g = ag / 255, b = ab / 255;
-  const mx = Math.max(r, g, b), mn = Math.min(r, g, b), d = mx - mn;
+  const r = ar / 255, g = ag / 255, bl = ab / 255;
+  const mx = Math.max(r, g, bl), mn = Math.min(r, g, bl), d = mx - mn;
   if (d === 0) return 0;
   let h;
-  if (mx === r) h = ((g - b) / d) % 6;
-  else if (mx === g) h = (b - r) / d + 2;
+  if (mx === r) h = ((g - bl) / d) % 6;
+  else if (mx === g) h = (bl - r) / d + 2;
   else h = (r - g) / d + 4;
   return (h * 60 + 360) % 360;
 })();
-/* 只要求"别飘回暖色"，不强绑某个具体色相：青、蓝、紫都算冷色 */
 chk('主色色相落在冷色区间（160°–300°）', hue >= 160 && hue <= 300, `${hue.toFixed(0)}°`);
 
-/* 页面上不该再出现旧的品牌红 */
 const stale = ['#b02a35', '#c94850', '#78171f', '#9c2b33', '#96262f', '#e9a09c',
-                 '#266571', '#367f8b', '#79d5e0'];  // 含已弃用的湖青，防止回退
+               '#266571', '#367f8b', '#79d5e0', '#0f1319', '#345e95'];
 const found = stale.filter(c => html.toLowerCase().includes(c));
-chk('没有残留旧品牌红', found.length === 0, found.join(',') || '干净');
+chk('没有残留旧版本主色', found.length === 0, found.join(',') || '干净');
 
 console.log(`\n${ok} 通过 / ${bad} 失败`);
 process.exit(bad ? 1 : 0);
