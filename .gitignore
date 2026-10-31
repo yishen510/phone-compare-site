@@ -13,3 +13,13 @@ price_server.before-*.py
 _verify_*.py
 _shot*.png
 _archive/
+
+# 抓取中间产物（体积大、可重跑）
+_jst/node_modules/
+_jst/package-lock.json
+_jst/bak_*
+_jst/all_models.jsonl
+_jst/all_meta.jsonl
+_jst/all_models_grouped.json
+_jst/target_*.json
+_jst/pc_explore.json

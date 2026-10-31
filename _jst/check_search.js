@@ -59,9 +59,10 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   // 4. 无意义查询应为 0
   const r4 = await search('zzzz不存在的机型zzzz');
   check('无意义查询返回 0 条', r4.n === 0, `${r4.n} 条`);
-  // 5. 清空恢复全部
+  // 5. 清空恢复全部（条数跟着数据走，别写死，否则每次补机型都要改测试）
+  const total = (dom.window.PHONE_DATA || []).length;
   const r5 = await search('');
-  check('清空后恢复全部 442 条', r5.n === 442, `${r5.n} 条`);
+  check(`清空后恢复全部 ${total} 条`, r5.n === total, `${r5.n} 条`);
 
   console.log(`\n${ok} 通过 / ${bad} 失败`);
   process.exit(bad ? 1 : 0);

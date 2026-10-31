@@ -53,6 +53,16 @@ function rpc(ws, id, method, params) {
     try {
       await call('Page.navigate', { url: job.url });
       await sleep(job.wait || 6000);
+      // 列表页常用滚动懒加载：分批滚到底再取，否则只能拿到首屏
+      if (job.scroll) {
+        await call('Runtime.evaluate', {
+          awaitPromise: true, returnByValue: true,
+          expression: `new Promise(r=>{let i=0;const n=${job.scroll};` +
+            `const t=setInterval(()=>{i++;window.scrollTo(0,document.body.scrollHeight*i/n);` +
+            `if(i>=n){clearInterval(t);r(1);}},500)})`,
+        });
+        await sleep(2500);
+      }
       const r = await call('Runtime.evaluate', {
         returnByValue: true,
         expression: `(() => {
