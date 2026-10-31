@@ -1404,6 +1404,8 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
 (function(){
 'use strict';
 const phones=Array.isArray(window.PHONE_DATA)?window.PHONE_DATA:[];
+/* 品牌数是常量（phones 只读），别每次 render 都 map 一遍 485 条 */
+const BRAND_COUNT=new Set(phones.map(p=>p.brand)).size;
 const $=id=>document.getElementById(id);
 const state={brands:new Set(),types:new Set(),compare:[],view:'cards',priorities:new Set(),onlyIds:null,recommendIds:null,detailList:null,detailPos:0,recent:[],pendingCompare:false,compareQuery:'',compareSort:'default',compareDiffOnly:false,detailId:null,favs:new Set(),favOnly:false,priceMin:null,priceMax:null,hw:{batteryMin:null,weightMax:null,hzMin:null,storageMin:null},density:'roomy'};
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1475,7 +1477,7 @@ function quoteDetailCard(p){
  return `<div class="price-card channel ${quoteTone(st.status)}"><span class="price-tag">渠道报价 · 参考</span><strong class="price-number">${esc(label[0])}</strong><span class="price-sub">${esc(st.message||label[1])}</span><span class="quote-hint">未取得精确匹配的报价时不会显示金额，也不代表该机型没有销售；这不影响官方首发价的展示。</span><button class="quote-one-btn" type="button" data-quote-one="${esc(p.id)}" ${isBusy?'disabled':''}>${isBusy?'查询中…':'查询本机报价'}</button></div>`;
 }
 const validDate=p=>p.launchMonth||`${p.year||''}`;
-function setText(id,v){if($(id))$(id).textContent=v;}
+function setText(id,v){const el=$(id);if(el)el.textContent=v;}
 function toast(msg){const el=$('toast');if(!el)return;el.textContent=msg;el.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>el.classList.remove('show'),2300);}
 /* fieldAudit 兼容两种形态：中文名数组（历史数据）与英文键对象。 */const AUDIT_FIELD_NAMES={display:'屏幕',chip:'处理器',camera:'影像',battery:'电池',charging:'充电',weight:'重量',storage:'容量组合',launchDate:'正式发布/开售日期',price:'官方首发起售价'};function auditEntry(p,k){const fa=p&&p.fieldAudit;if(!fa)return null;if(Array.isArray(fa)){const n=AUDIT_FIELD_NAMES[k];return fa.find(x=>x&&x.field===n)||null;}return fa[k]||null;}function field(p,k){const a=auditEntry(p,k);/* 内嵌数据里 fieldAudit 只保留 field/status/sourceUrl，evidenceText 已剥离 */
 if(!a||!a.sourceUrl)return '待核验';if(a.status==='verified_official_page_reviewed')return '已核验';if(a.status==='cross_checked_secondary_source')return '第三方核验';if(a.status==='not_published_by_vendor')return '官方未公布';return '待核验';}
@@ -1565,29 +1567,38 @@ function filtered(){
  const cellNum=(text,re)=>{const m=String(text||'').match(re);return m?Number(m[1]):null;};
  const batKeyOf=p=>cellNum(p.battery,/(\d{3,5})\s*mAh/i);
  const wtKeyOf=p=>cellNum(p.weight,/(\d{2,3}(?:\.\d{1,2})?)\s*(?:g|克)/i);
+ /* 比较器每对比较都会重算 key（485 条排序约 8000 次，recScreen 还要线性扫参数表），
+    先按 id 缓存，每台只算一次；排序结果完全不变 */
+ const sortKey=new Map();
+ const kOf=(fn,p)=>{const k=p.id;if(sortKey.has(k))return sortKey.get(k);const v=fn(p);sortKey.set(k,v);return v;};
  arr.sort((a,b)=>{
   switch(sort){
    case'oldest':return (a.year-b.year)||String(a.launchMonth||'').localeCompare(String(b.launchMonth||''))||a.name.localeCompare(b.name);
-   case'priceAsc':return cmpNum(priceOf(a),priceOf(b),1,a.name,b.name);
-   case'priceDesc':return cmpNum(priceOf(a),priceOf(b),-1,a.name,b.name);
-   case'weightAsc':return cmpNum(wtKeyOf(a),wtKeyOf(b),1,a.name,b.name);
-   case'weightDesc':return cmpNum(wtKeyOf(a),wtKeyOf(b),-1,a.name,b.name);
-   case'screenAsc':return cmpNum(recScreen(a),recScreen(b),1,a.name,b.name);
-   case'screenDesc':return cmpNum(recScreen(a),recScreen(b),-1,a.name,b.name);
-   case'batteryAsc':return cmpNum(batKeyOf(a),batKeyOf(b),1,a.name,b.name);
-   case'batteryDesc':return cmpNum(batKeyOf(a),batKeyOf(b),-1,a.name,b.name);
+   case'priceAsc':return cmpNum(kOf(priceOf,a),kOf(priceOf,b),1,a.name,b.name);
+   case'priceDesc':return cmpNum(kOf(priceOf,a),kOf(priceOf,b),-1,a.name,b.name);
+   case'weightAsc':return cmpNum(kOf(wtKeyOf,a),kOf(wtKeyOf,b),1,a.name,b.name);
+   case'weightDesc':return cmpNum(kOf(wtKeyOf,a),kOf(wtKeyOf,b),-1,a.name,b.name);
+   case'screenAsc':return cmpNum(kOf(recScreen,a),kOf(recScreen,b),1,a.name,b.name);
+   case'screenDesc':return cmpNum(kOf(recScreen,a),kOf(recScreen,b),-1,a.name,b.name);
+   case'batteryAsc':return cmpNum(kOf(batKeyOf,a),kOf(batKeyOf,b),1,a.name,b.name);
+   case'batteryDesc':return cmpNum(kOf(batKeyOf,a),kOf(batKeyOf,b),-1,a.name,b.name);
    case'scoreDesc':return ((pass(b)?1:0)-(pass(a)?1:0))||a.name.localeCompare(b.name);
    default:return (b.year-a.year)||String(b.launchMonth||'').localeCompare(String(a.launchMonth||''))||a.name.localeCompare(b.name);
   }
  });
- if(c.q)arr.sort((a,b)=>{
-  const ra=relScore(a,c.q,c.qt),rb=relScore(b,c.q,c.qt);
-  if(ra!==rb)return ra-rb;
-  /* 同名前缀命中时，「小米 15」应排在「小米 15S Pro」前面：短名更接近查询词。
-     外围命中（只在参数里出现）保持原排序，别把年份顺序搅乱。 */
-  if(ra<=1)return String(a.name).length-String(b.name).length||String(a.name).localeCompare(String(b.name));
-  return 0;
- });
+ if(c.q){
+  /* 同样先算一遍再排：比较器里对每对都跑 relScore（内部含 tighten 全角转换正则） */
+  const rel=new Map();
+  arr.forEach(p=>rel.set(p.id,relScore(p,c.q,c.qt)));
+  arr.sort((a,b)=>{
+   const ra=rel.get(a.id),rb=rel.get(b.id);
+   if(ra!==rb)return ra-rb;
+   /* 同名前缀命中时，「小米 15」应排在「小米 15S Pro」前面：短名更接近查询词。
+      外围命中（只在参数里出现）保持原排序，别把年份顺序搅乱。 */
+   if(ra<=1)return String(a.name).length-String(b.name).length||String(a.name).localeCompare(String(b.name));
+   return 0;
+  });
+ }
  return arr;
 }
 /* 首屏之后用空闲时间把 225 条参数索引建好，避免第一次输入时才集中构建 */
@@ -1785,7 +1796,8 @@ function gridSignature(arr){
 function render(){
  renderBrands();
  const arr=filtered();
- setText('statModels',phones.length);setText('statBrands',new Set(phones.map(p=>p.brand)).size);setText('resultCount',arr.length);
+ state.lastArr=arr;   // 供详情页复用，避免打开详情时再全量 filtered()
+ setText('statModels',phones.length);setText('statBrands',BRAND_COUNT);setText('resultCount',arr.length);
  setText('currentFilterLabel',(state.onlyIds&&state.onlyIds.size)?('推荐候选 '+state.onlyIds.size+' 款'):'全部代表机型');
  const grid=$('phoneGrid'),key=gridSignature(arr);
  if(grid&&key!==lastGridKey){paintGrid(grid,arr);lastGridKey=key;}
@@ -1796,7 +1808,15 @@ function render(){
 function openModal(id,html,opts){const m=$(id);if(!m)return;m.innerHTML=html;m.classList.toggle('modal-wide',!!(opts&&opts.wide));m.hidden=false;if($('modalBackdrop'))$('modalBackdrop').hidden=false;document.body.classList.add('modal-open');}
 function closeModal(){['detailModal','compareModal','notesModal','modalBackdrop'].forEach(id=>{if($(id))$(id).hidden=true;});document.body.classList.remove('modal-open');state.detailId=null;state.detailList=null;state.detailPos=0;state.compareQuery='';syncUrlState();}
 /* ===== 参数工具层（详情 / 对比 / 筛选共用，消除重复实现） ===== */
-function specList(p){return Array.isArray(p&&p.specs)?p.specs.filter(g=>g&&Array.isArray(g.items)):[];}
+/* specs 是只读数据；排序时 specFind 会被调用上万次，每次都 filter 重建数组纯属浪费 */
+const SPEC_LIST_CACHE=new Map();
+function specList(p){
+ const k=p&&p.id;
+ if(k&&SPEC_LIST_CACHE.has(k))return SPEC_LIST_CACHE.get(k);
+ const v=Array.isArray(p&&p.specs)?p.specs.filter(g=>g&&Array.isArray(g.items)):[];
+ if(k)SPEC_LIST_CACHE.set(k,v);
+ return v;
+}
 function specValueOf(p,group,label){const g=specList(p).find(x=>x.group===group);if(!g)return '—';const it=g.items.find(x=>Array.isArray(x)&&x[0]===label);return it?String(it[1]??''):'—';}
 function specFind(p,label){for(const g of specList(p)){const it=g.items.find(x=>Array.isArray(x)&&x[0]===label);if(it)return String(it[1]??'');}return '';}
 function specNum(text,re){const m=String(text||'').match(re);return m?Number(m[1]):null;}
@@ -1978,7 +1998,8 @@ function relScore(p,q,qt){
 /* ===== 详情：在「当前筛选结果」中前后翻页 ===== */
 function ensureDetailList(id){
  if(!Array.isArray(state.detailList)||!state.detailList.length||!state.detailList.includes(id)){
-  const ids=filtered().map(p=>p.id);
+  /* 复用 render() 刚算过的结果，避免打开详情时再全量过滤 + 排序一次 */
+  const ids=(state.lastArr||filtered()).map(p=>p.id);
   if(!ids.includes(id))ids.unshift(id);
   state.detailList=ids;
  }
@@ -2670,16 +2691,28 @@ initQuoteApi();
 (function(){
   const reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const grid=document.getElementById('phoneGrid');
+  /* 只处理「还没设置过入场序号」的卡片：paintGrid 是分批插入（48 + 96×N 批），
+     若每次 mutation 都全量重扫 485 张，累计是 O(n²)——这是首屏的主要热点之一。 */
   function syncCardMotion(){
     if(!grid)return;
-    grid.querySelectorAll('.phone-card').forEach((card,i)=>{
-      card.style.setProperty('--card-index',String(Math.min(i,8)));
+    const fresh=grid.querySelectorAll('.phone-card:not([data-motion])');
+    if(!fresh.length)return;
+    const base=grid.querySelectorAll('.phone-card').length-fresh.length;
+    fresh.forEach((card,k)=>{
+      card.style.setProperty('--card-index',String(Math.min(base+k,8)));
       card.setAttribute('tabindex','-1');
+      card.setAttribute('data-motion','1');
     });
   }
   syncCardMotion();
   if(grid&&window.MutationObserver){
-    new MutationObserver(syncCardMotion).observe(grid,{childList:true,subtree:true});
+    /* 一帧内合并多次 mutation：分批插入会连续触发 childList，不合并就会重复重扫 */
+    let motionQueued=false;
+    new MutationObserver(()=>{
+      if(motionQueued)return;
+      motionQueued=true;
+      requestAnimationFrame(()=>{motionQueued=false;syncCardMotion();});
+    }).observe(grid,{childList:true,subtree:true});
   }
   if(!reduce&&'IntersectionObserver'in window){
     const targets=document.querySelectorAll('.guide-cards > *, .scoring-grid > *, .sources-section .source-meta');
