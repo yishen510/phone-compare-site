@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="data:," />
-  <meta name="theme-color" content="#05070d" />
+  <meta name="theme-color" content="#eef4fb" />
   <meta name="description" content="面向中国大陆市场的旗舰手机数据库：官方参数、存储版本、上市时间、透明评分与渠道查价入口。" />
   <title>机选 · 中国大陆旗舰手机选购指南</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -93,28 +93,28 @@
 }
 html[data-theme="light"]{
   color-scheme:light;
-  --ink:#1d2431;
-  --ink-strong:#0f141d;
-  --muted:rgba(29,36,49,.76);
-  --faint:rgba(29,36,49,.70);
-  --line:rgba(16,20,28,.10);
-  --line-strong:rgba(16,20,28,.16);
+  --ink:#1a2a3e;
+  --ink-strong:#0e1b2b;
+  --muted:rgba(26,42,62,.72);
+  --faint:rgba(26,42,62,.66);
+  --line:rgba(28,58,95,.11);
+  --line-strong:rgba(28,58,95,.19);
   --glass:#ffffff;
-  --glass-hi:#f7f9fc;
-  --glass-deep:#eef1f6;
+  --glass-hi:#f8fbff;
+  --glass-deep:#e0e9f5;
   --glass-1:rgba(255,255,255,.55);
   --glass-2:rgba(255,255,255,.68);
   --glass-3:rgba(255,255,255,.78);
   --glass-4:rgba(255,255,255,.87);
   --glass-edge:inset 0 1px 0 rgba(255,255,255,.85);
   --glass-sheen:linear-gradient(180deg,rgba(255,255,255,.78),rgba(255,255,255,0) 46%);
-  --scrim:rgba(18,24,34,.26);
-  --bg:#f5f7fb;
-  --bg-soft:#eef2f8;
-  --accent:#2b5789;
-  --accent-2:#3a6ea8;
-  --accent-deep:#1c3f66;
-  --accent-text:#24507f;
+  --scrim:rgba(22,38,60,.28);
+  --bg:#eef4fb;
+  --bg-soft:#e6eef9;
+  --accent:#2a6cae;
+  --accent-2:#3b78b4;
+  --accent-deep:#1d4f80;
+  --accent-text:#1f5687;
   --shadow:0 26px 60px -34px rgba(23,38,72,.42);
   --shadow-soft:0 12px 30px -20px rgba(23,38,72,.35);
 }
@@ -159,7 +159,7 @@ body::before{
     radial-gradient(60% 48% at 86% 76%,rgba(150,190,240,.09),transparent 72%);
 }
 html[data-theme="light"] body::before{
-  background:radial-gradient(72% 52% at 50% -8%,rgba(59,102,159,.07),transparent 68%);
+  background:radial-gradient(76% 54% at 50% -10%,rgba(96,150,210,.12),transparent 70%);
 }
 /* 极细噪点，压住渐变的塑料感 */
 body::after{
@@ -198,8 +198,8 @@ body::after{
 }
 html[data-theme="light"] body::after{
   background-image:
-    linear-gradient(rgba(16,20,28,.045) 1px,transparent 1px),
-    linear-gradient(90deg,rgba(16,20,28,.045) 1px,transparent 1px);
+    linear-gradient(rgba(28,58,95,.05) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(28,58,95,.05) 1px,transparent 1px);
 }
 
 /* ---------- ③ 顶栏 ---------- */
@@ -330,7 +330,7 @@ main{display:block}
   filter:drop-shadow(0 10px 34px rgba(59,102,159,.20));
 }
 html[data-theme="light"] .hero h1 em{
-  background:linear-gradient(96deg,#0d1626 4%,#2a5790 46%,#1b3f6b 94%);
+  background:linear-gradient(96deg,#0d1626 4%,#2f6fab 48%,#1d4f80 94%);
   -webkit-background-clip:text;background-clip:text;
 }
 .hero-desc{max-width:52ch;color:var(--muted);font-size:15px;line-height:1.85;margin:0 0 28px}
@@ -2842,16 +2842,17 @@ const FAV_KEY='phoneindex.favs.v1',THEME_KEY='phoneindex.theme.v1',DENSITY_KEY='
 try{const raw=JSON.parse(localStorage.getItem(FAV_KEY)||'[]');if(Array.isArray(raw))state.favs=new Set(raw.filter(x=>typeof x==='string'));}catch(e){}
 try{const d=localStorage.getItem(DENSITY_KEY);if(d==='compact'||d==='roomy')state.density=d;}catch(e){}
 try{const r=JSON.parse(localStorage.getItem(RECENT_KEY)||'[]');if(Array.isArray(r))state.recent=r.filter(x=>typeof x==='string'&&phones.some(p=>p.id===x)).slice(0,8);}catch(e){}
-let themeMode='auto';
-try{themeMode=localStorage.getItem(THEME_KEY)||'auto';}catch(e){}
+let themeMode='light';
+try{themeMode=localStorage.getItem(THEME_KEY)||'light';}catch(e){}
 function applyTheme(){
  const light=themeMode==='light'||(themeMode==='auto'&&window.matchMedia&&window.matchMedia('(prefers-color-scheme: light)').matches);
  const theme=light?'light':'dark';
  document.documentElement.setAttribute('data-theme',theme);
  const btn=$('themeToggle');
  if(btn){btn.textContent=light?'☀':'☾';btn.setAttribute('aria-label',light?'切换到深色主题':'切换到浅色主题');}
+ /* 浏览器工具栏/地址栏跟着主题走，否则深色下会顶着一条浅色边 */
  const meta=document.querySelector('meta[name="theme-color"]');
- if(meta)meta.setAttribute('content',light?'#eaeef7':'#05070d');
+ if(meta)meta.setAttribute('content',light?'#eef4fb':'#171d27');
 }
 applyTheme();
 $('themeToggle')?.addEventListener('click',()=>{
