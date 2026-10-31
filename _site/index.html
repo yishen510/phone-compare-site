@@ -702,6 +702,23 @@ html[data-theme="light"] .rec-year select{background:#fff}
 .table-wrap{overflow:auto;border-radius:var(--radius);border:1px solid var(--line);background:rgba(255,255,255,.03)}
 /* #phoneGrid 是卡片用的网格；表格塞进去会被限制在 268px 的单列里，必须横跨全部列 */
 #phoneGrid>.table-wrap{grid-column:1/-1}
+/* ---------- 首屏骨架屏 ---------- */
+/* 3.66MB 单文件解析 + 首批卡片构建期间给可见反馈；真实耗时不变，改善感知性能。
+   骨架只随首屏出现一次，首次 paintGrid/renderTable 会整体覆盖掉它。 */
+.skeleton-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(268px,1fr))}
+.skeleton-card{border:1px solid var(--line);border-radius:18px;padding:16px;background:var(--glass)}
+.sk-line{
+  border-radius:6px;
+  background:linear-gradient(90deg,var(--line-strong) 25%,var(--line) 37%,var(--line-strong) 63%);
+  background-size:400% 100%;animation:skShine 1.3s linear infinite;
+}
+.sk-title{height:18px;width:62%;margin-bottom:14px}
+.sk-sub{height:11px;width:38%;margin-bottom:20px}
+.sk-row{height:11px;margin-bottom:9px}
+.sk-row.w70{width:70%}
+.sk-row.w45{width:45%}
+@keyframes skShine{from{background-position:100% 0}to{background-position:0 0}}
+@media (prefers-reduced-motion:reduce){.sk-line{animation:none}}
 .phone-table{width:100%;border-collapse:separate;border-spacing:0;font-size:12.5px;min-width:900px}
 .phone-table thead th{
   position:sticky;top:0;z-index:2;text-align:left;padding:12px 14px;
@@ -716,6 +733,9 @@ html[data-theme="light"] .phone-table thead th{background:rgba(255,255,255,.94)}
 .phone-table td small{display:block;font-size:10.5px;color:var(--faint);margin-top:2px}
 
 /* ---------- ⑩ 对比 ---------- */
+/* 对比栏是 fixed 定位，显示时给 body 预留底部空间，否则会盖住最后几张卡片与页脚 */
+body.has-dock{padding-bottom:96px}
+@media (max-width:760px){body.has-dock{padding-bottom:120px}}
 .compare-dock{
   position:fixed;left:50%;bottom:22px;transform:translateX(-50%);z-index:70;
   width:min(1080px,calc(100vw - 32px));
@@ -1286,7 +1306,7 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
         </aside>
 
         <div class="results-area">
-          <div class="results-toolbar"><div class="result-count"><strong id="resultCount">—</strong><span> 款机型</span><span class="results-divider">/</span><span id="currentFilterLabel">全部代表机型</span></div><div class="toolbar-right"><button class="button button-light button-small quote-query-btn" id="quoteQueryBtn" type="button">批量查询报价</button><span class="quote-progress" id="quoteProgress" aria-live="polite"></span><div class="density-switch" role="group" aria-label="卡片密度"><button type="button" data-density="roomy" class="active">舒适</button><button type="button" data-density="compact">紧凑</button></div><label class="sort-select">排序 <select id="sortSelect"><option value="newest">最新发布</option><option value="oldest">最早发布</option><option value="priceAsc">首发价从低到高</option><option value="priceDesc">首发价从高到低</option><option value="weightAsc">机身较轻</option><option value="screenAsc">小屏优先</option><option value="screenDesc">大屏优先</option><option value="batteryDesc">电池容量从高到低</option><option value="batteryAsc">电池容量从低到高</option><option value="weightDesc">机身较重</option><option value="scoreDesc" disabled>综合体验评分（审核通过后开放）</option></select></label></div></div>
+          <div class="results-toolbar"><div class="result-count" aria-live="polite" aria-atomic="true"><strong id="resultCount">—</strong><span> 款机型</span><span class="results-divider">/</span><span id="currentFilterLabel">全部代表机型</span></div><div class="toolbar-right"><button class="button button-light button-small quote-query-btn" id="quoteQueryBtn" type="button">批量查询报价</button><span class="quote-progress" id="quoteProgress" aria-live="polite"></span><div class="density-switch" role="group" aria-label="卡片密度"><button type="button" data-density="roomy" class="active">舒适</button><button type="button" data-density="compact">紧凑</button></div><label class="sort-select">排序 <select id="sortSelect"><option value="newest">最新发布</option><option value="oldest">最早发布</option><option value="priceAsc">首发价从低到高</option><option value="priceDesc">首发价从高到低</option><option value="weightAsc">机身较轻</option><option value="screenAsc">小屏优先</option><option value="screenDesc">大屏优先</option><option value="batteryDesc">电池容量从高到低</option><option value="batteryAsc">电池容量从低到高</option><option value="weightDesc">机身较重</option><option value="scoreDesc" disabled>综合体验评分（审核通过后开放）</option></select></label></div></div>
           <div class="active-filters" id="activeFilters"></div>
           <div id="recommendPanel" class="recommend-panel" hidden>
             <div class="recommend-top"><div><p class="eyebrow">PERSONAL MATCH</p><h3>你最在意什么？</h3><p>选择最多 3 项，系统会结合机型标签给出一份起步候选。</p></div><button class="close-recommend" id="closeRecommend" aria-label="关闭推荐">×</button></div>
@@ -1295,7 +1315,18 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
             <div id="recommendResults" class="recommend-results" hidden></div>
             <p class="recommend-disclaimer">这里的排序按你选的需求对参数做加权匹配：续航看电池容量与充电功率，小屏看屏幕尺寸与重量，影像看像素与长焦，预算按官方首发价估算。它是参考排序，不等于整机准入推荐，也不构成购买建议；准入通过前，站内仍不输出正式排名。</p>
           </div>
-          <div id="phoneGrid" class="phone-grid" aria-live="polite"></div>
+          <div id="phoneGrid" class="phone-grid" aria-live="off">
+            <div class="skeleton-grid" aria-hidden="true">
+              <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
+              <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
+              <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
+              <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
+              <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
+              <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
+              <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
+              <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
+            </div>
+          </div>
           <div id="emptyState" class="empty-state" hidden><span>⌕</span><h3>没有找到符合条件的机型</h3><p>试着移除一项筛选，或扩大年份范围。</p><button class="button button-dark" id="emptyReset">重置筛选</button></div>
           <div class="data-note"><span class="note-symbol">＊</span><p><b>数据口径说明</b>　本页面为中国大陆市场初期数据库，包含主流直板旗舰与性能旗舰代表样本，尚未覆盖所有标准款、折叠屏、运营商定制版和每个存储 SKU。规格链接优先指向厂商大陆官网；历史条目仍需要逐项校对。首发价不是当前成交价；公开商品页人工快照仅供参考并设有效期，其他机型需跳转平台刷新核价。</p></div>
         </div>
@@ -1662,7 +1693,9 @@ function sortTableBy(col,opts){
  if(opts&&opts.announce)toast(`已按「${meta[2]}」${meta[3][next]||''}排列`);
 }
 function renderTableShell(){return `<div class="table-wrap"><table class="phone-table"><thead><tr><th scope="col">机型</th>${sortTh('year','年份','oldest','newest')}${sortTh('screen','屏幕','screenAsc','screenDesc')}<th scope="col">芯片</th>${sortTh('battery','电池','batteryAsc','batteryDesc')}${sortTh('weight','重量','weightAsc','weightDesc')}${sortTh('price','官方首发参考价','priceAsc','priceDesc')}<th scope="col">操作</th></tr></thead><tbody></tbody></table></div>`;}
-function renderTableRows(arr){return arr.map(p=>`<tr><td><b>${esc(p.name)}</b><small>${esc(p.brand)}</small></td><td>${esc(validDate(p))}</td><td>${esc(realText(p.display)||'—')}</td><td>${esc(realText(p.chip)||'—')}</td><td>${esc(realText(p.battery)||'—')}</td><td>${esc(realText(p.weight)||'—')}</td><td>${money(p.priceCN)}${quoteBlock(p,true)}</td><td><button class="text-button" data-detail="${esc(p.id)}">详情</button> <button class="text-button" data-compare="${esc(p.id)}">对比</button></td></tr>`).join('');}
+/* 单行模板单独提出来：表格分批插入与 renderTable 共用同一份模板，避免两处各写一遍 */
+function rowHTML(p){return `<tr><td><b>${esc(p.name)}</b><small>${esc(p.brand)}</small></td><td>${esc(validDate(p))}</td><td>${esc(realText(p.display)||'—')}</td><td>${esc(realText(p.chip)||'—')}</td><td>${esc(realText(p.battery)||'—')}</td><td>${esc(realText(p.weight)||'—')}</td><td>${money(p.priceCN)}${quoteBlock(p,true)}</td><td><button class="text-button" data-detail="${esc(p.id)}">详情</button> <button class="text-button" data-compare="${esc(p.id)}">对比</button></td></tr>`;}
+function renderTableRows(arr){return arr.map(rowHTML).join('');}
 function renderTable(arr){return renderTableShell().replace('<tbody></tbody>','<tbody>'+renderTableRows(arr)+'</tbody>');}
 /* ===== 已选条件标签（补全此前空置的 #activeFilters） ===== */
 function activeFilterChips(){
@@ -1714,7 +1747,13 @@ function paintGrid(grid,arr){
  grid.dataset.painting='1';
  const done=()=>{if(token!==paintToken)return;grid.dataset.painting='0';grid.dispatchEvent(new window.CustomEvent('gridpainted'));};
  if(isTable){
-  /* 表格行高固定、结构简单，一次性插入反而更稳；分批会让行数先少后多，看起来在跳 */
+  /* 表格为什么不分批（做过一版分批，实测劣化后回退，别再改回去）：
+     1) 行结构远比卡片简单，一次性 innerHTML 交给浏览器原生解析，比多次
+        insertAdjacentHTML 分片累计更快（分片每片都要解析 + 触发失效）。
+     2) 更要命的是 reorderTableRows 要求「tbody 行数 === 结果数」才走轻量行复用；
+        分批期间行数只有首屏那几十行，这个前提被打破，排序从行复用退化成整表重建，
+        移动端排序实测从 3.5s 劣化到 13.4s。
+     结论：卡片分批保留（卡片复杂、首帧收益明显），表格保持一次性插入。 */
   if(!reorderTableRows(arr)){grid.innerHTML=renderTable(arr);lastTableCmp=state.compare.join(',');}
   updateSortAria();
   done();
@@ -2040,7 +2079,7 @@ function detail(id){
  const nav=totalNav>1?`<div class="detail-nav"><button class="detail-nav-btn" type="button" data-nav="-1" ${navPos<=0?'disabled':''} aria-label="上一台机型">← 上一台</button><span class="detail-nav-pos">${navPos+1} / ${totalNav}</span><button class="detail-nav-btn" type="button" data-nav="1" ${navPos>=totalNav-1?'disabled':''} aria-label="下一台机型">下一台 →</button><span class="detail-nav-hint">← → 切换</span></div>`:'';
  openModal('detailModal',`<button class="modal-close" data-close aria-label="关闭">×</button><p class="eyebrow">MODEL DETAILS</p><h2 id="detailTitle">${esc(p.name)}</h2><p>${esc(p.selling||'')}</p>${nav}<div class="detail-share"><button class="text-button" type="button" data-copy-link>复制链接</button><button class="text-button" type="button" data-print>打印参数卡</button><span>链接含当前机型，打开直达详情</span></div><div class="price-pair"><div class="price-card official"><span class="price-tag">${p.priceType==='third_party_reference'?'参考价（第三方，非首发价）':(p.priceType==='price_pending'?'价格待核 · 厂商未公布':(p.priceType==='price_unavailable'?'参考价缺失 · 参数站未收录':'官方首发价 · 非当前售价'))}</span><strong class="price-number">${official}</strong><span class="price-sub">${esc(p.priceText||'官方首发起售价，不代表当前渠道成交价')}</span><span class="price-sub ${field(p,'price')==='已核验'?'verified':'pending'}">价格字段：${field(p,'price')}</span>${p.priceSource?`<a class="quote-link" href="${esc(p.priceSource)}" target="_blank" rel="noopener">价格来源 ↗</a>`:''}</div>${channel}</div>${peerBlockHtml(p)}<div class="detail-grid">${keys.map(k=>{const a=auditEntry(p,k);const st=field(p,k);return `<div class="detail-row"><span>${labels[k]}</span><b>${esc(a?.valueAtAudit??(k==='launchDate'?(p.launchDateDisplay||p.launchMonth||'待核验'):(realText(p[k])||missingNote(p,k)||'待核验')))}</b><div class="detail-meta"><small class="${st==='已核验'?'verified':(st==='第三方核验'?'secondary':'pending')}" title="${esc(a?.evidenceText||'')}">${st}</small>${a?.sourceUrl?`<a href="${esc(a.sourceUrl)}" target="_blank" rel="noopener" title="${esc(a?.evidenceText||'')}">来源 ↗</a>`:''}</div></div>`}).join('')}</div>${specBlock}<p class="modal-warning">${pass(p)?'该机型已通过准入审核。':'该机型尚未通过整机审核，不能参与排名或自动推荐。字段来源链接不等于整机审核通过。'} 渠道报价仅作参考，不会改变该机型的审核、排名或推荐状态。</p><p><a href="${esc(p.source||'#')}" target="_blank" rel="noopener">打开厂商页面 ↗</a></p>`);
 }
-function updateCompare(){const items=state.compare.map(id=>phones.find(p=>p.id===id)).filter(Boolean);setText('headerCompareCount',items.length);setText('dockCount',items.length);const dock=$('compareDock');if(dock)dock.hidden=!items.length;if($('dockItems'))$('dockItems').innerHTML=items.map(p=>`<span class="dock-item">${esc(p.name)} <button data-remove="${esc(p.id)}" aria-label="移除">×</button></span>`).join('');}
+function updateCompare(){const items=state.compare.map(id=>phones.find(p=>p.id===id)).filter(Boolean);setText('headerCompareCount',items.length);setText('dockCount',items.length);const dock=$('compareDock');if(dock){dock.hidden=!items.length;document.body.classList.toggle('has-dock',!!items.length);}if($('dockItems'))$('dockItems').innerHTML=items.map(p=>`<span class="dock-item">${esc(p.name)} <button data-remove="${esc(p.id)}" aria-label="移除">×</button></span>`).join('');}
 function toggleCompare(id){if(state.compare.includes(id)){state.compare=state.compare.filter(x=>x!==id);}else if(state.compare.length>=4){toast('最多同时对比 4 款手机');return;}else state.compare.push(id);render();}
 function applyCompareQuery(q){
  const modal=$('compareModal');if(!modal||modal.hidden)return;
