@@ -709,6 +709,15 @@ html[data-theme="light"] .rec-year select{background:#fff}
 .batch-bar[hidden]{display:none}
 .batch-count{color:var(--muted)}
 .batch-count b{color:var(--ink)}
+/* 搜索历史：聚焦空输入时出现，点一下直接复用上次搜过的词 */
+.search-history{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0 2px}
+.search-history[hidden]{display:none}
+.sh-label{font-size:11px;color:var(--faint)}
+.sh-chip{display:inline-flex;align-items:center;gap:4px;padding:4px 9px;border-radius:999px;border:1px solid var(--line-strong);background:rgba(255,255,255,.05);color:var(--ink);font-size:11.5px;cursor:pointer;font-family:inherit}
+html[data-theme="light"] .sh-chip{background:rgba(20,24,32,.04)}
+.sh-chip:hover{border-color:rgba(176,42,53,.5)}
+.sh-chip i{font-style:normal;color:var(--faint);font-size:11px}
+.sh-clear{margin-left:auto;font-size:11px;color:var(--faint);background:none;border:0;cursor:pointer;text-decoration:underline;font-family:inherit}
 #phoneGrid>.table-hint{grid-column:1/-1}
 @media (max-width:760px){.table-hint{display:block}}
 /* #phoneGrid 是卡片用的网格；表格塞进去会被限制在 268px 的单列里，必须横跨全部列 */
@@ -1316,8 +1325,10 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
 
       <div class="catalog-layout">
         <aside class="filters" id="filtersPanel" aria-label="筛选条件">
-          <div class="filter-head"><h3>筛选条件</h3><button id="filtersToggle" class="filters-toggle" type="button" aria-expanded="false" aria-controls="filtersPanel">展开 ▾</button><button id="resetFilters" class="text-button">重置 ↺</button></div>
+          <div class="filter-head"><h3>筛选条件</h3><button id="filtersToggle" class="filters-toggle" type="button" aria-expanded="false" aria-controls="filtersPanel">展开 ▾</button><button id="savePreset" class="text-button" type="button">存为方案</button><button id="resetFilters" class="text-button">重置 ↺</button></div>
           <label class="search-field"><span class="search-icon">⌕</span><input id="searchInput" type="search" placeholder="搜索机型、芯片、参数关键词…" autocomplete="off"><kbd>/</kbd></label>
+          <div id="searchHistory" class="search-history" hidden></div>
+          <div id="presetList" class="search-history" hidden></div>
           <div class="filter-block"><div class="filter-title">品牌 <span id="brandCount">全部</span></div><div id="brandFilters" class="brand-filters"></div></div>
           <div class="filter-block"><div class="filter-title">首发价区间 <span id="priceRangeLabel">不限</span></div><div class="price-range"><input id="priceMin" type="number" min="0" step="200" placeholder="最低" aria-label="最低首发价"><span>—</span><input id="priceMax" type="number" min="0" step="200" placeholder="最高" aria-label="最高首发价"></div><div class="price-chips"><button class="year-chip" type="button" data-price="0-3000">3000 以下</button><button class="year-chip" type="button" data-price="3000-5000">3000–5000</button><button class="year-chip" type="button" data-price="5000-8000">5000–8000</button><button class="year-chip" type="button" data-price="8000-999999">8000 以上</button></div></div>
           <div class="filter-block"><div class="filter-title">硬件参数 <span id="hwFilterLabel">不限</span></div><div class="hw-grid"><label>电池 ≥<input id="hwBattery" type="number" min="0" step="100" inputmode="numeric" placeholder="mAh" aria-label="电池容量至少"></label><label>重量 ≤<input id="hwWeight" type="number" min="0" step="5" inputmode="numeric" placeholder="g" aria-label="重量不超过"></label><label>刷新率 ≥<input id="hwHz" type="number" min="0" step="30" inputmode="numeric" placeholder="Hz" aria-label="刷新率至少"></label><label>存储 ≥<input id="hwStorage" type="number" min="0" step="64" inputmode="numeric" placeholder="GB" aria-label="存储容量至少"></label></div></div>
@@ -2779,6 +2790,127 @@ $('searchInput')?.addEventListener('input',()=>{
  clearTimeout(searchTimer);
  searchTimer=setTimeout(()=>render(),160);
 });
+
+/* —— 搜索历史：记录最近 8 条，聚焦空输入时一键复用 —— */
+const SEARCH_KEY='phoneindex.searches.v1';
+let searchHistory=[];
+try{const r=JSON.parse(localStorage.getItem(SEARCH_KEY)||'[]');if(Array.isArray(r))searchHistory=r.filter(x=>typeof x==='string'&&x.trim()).slice(0,8);}catch(e){}
+function saveSearch(q){
+ const t=String(q||'').trim();
+ if(t.length<2)return;
+ const next=[t,...searchHistory.filter(x=>x!==t)].slice(0,8);
+ if(next.join('\n')===searchHistory.join('\n'))return;
+ searchHistory=next;
+ try{localStorage.setItem(SEARCH_KEY,JSON.stringify(searchHistory));}catch(e){}
+}
+function renderSearchHistory(){
+ const box=$('searchHistory');if(!box)return;
+ const cur=String($('searchInput')?.value||'').trim();
+ if(!searchHistory.length||cur){box.hidden=true;box.innerHTML='';return;}
+ box.innerHTML=`<span class="sh-label">最近搜索</span>`+searchHistory.map(q=>`<button type="button" class="sh-chip" data-search="${esc(q)}">${esc(q)}<i aria-hidden="true">×</i></button>`).join('')+`<button type="button" class="sh-clear" data-search-clear="1">清空</button>`;
+ box.hidden=false;
+}
+$('searchInput')?.addEventListener('change',()=>saveSearch($('searchInput').value));
+$('searchInput')?.addEventListener('focus',()=>renderSearchHistory());
+$('searchInput')?.addEventListener('blur',()=>setTimeout(()=>{const b=$('searchHistory');if(b)b.hidden=true;},180));
+$('searchHistory')?.addEventListener('mousedown',e=>{
+ const b=e.target.closest('[data-search]');if(!b)return;
+ e.preventDefault();                              // 保住焦点，避免 blur 先于点击
+ const i=$('searchInput');if(!i)return;
+ i.value=b.dataset.search;
+ i.dispatchEvent(new window.Event('input',{bubbles:true}));
+ i.dispatchEvent(new window.Event('change',{bubbles:true}));
+ const box=$('searchHistory');if(box)box.hidden=true;
+});
+$('searchHistory')?.addEventListener('click',e=>{
+ if(!e.target.closest('[data-search-clear]'))return;
+ searchHistory=[];
+ try{localStorage.removeItem(SEARCH_KEY);}catch(e){}
+ renderSearchHistory();
+});
+
+/* —— 筛选方案：把当前这组条件存下来，之后一点就恢复 —— */
+const PRESET_KEY='phoneindex.presets.v1';
+let presets=[];
+try{const r=JSON.parse(localStorage.getItem(PRESET_KEY)||'[]');if(Array.isArray(r))presets=r.filter(x=>x&&typeof x==='object'&&x.name).slice(0,8);}catch(e){}
+function currentPreset(){
+ return {
+  name:'',
+  q:String($('searchInput')?.value||'').trim(),
+  brands:[...state.brands],
+  types:[...state.types],
+  from:$('yearFrom')?.value||'',
+  to:$('yearTo')?.value||'',
+  min:$('priceMin')?.value||'',
+  max:$('priceMax')?.value||'',
+  hw:{...state.hw},
+  favOnly:!!state.favOnly,
+  domestic:!!$('domesticOnly')?.checked,
+  sort:$('sortSelect')?.value||''
+ };
+}
+function presetSummary(p){
+ const bits=[];
+ if(p.q)bits.push('「'+p.q+'」');
+ if(p.brands&&p.brands.length)bits.push(p.brands.slice(0,2).join('/')+(p.brands.length>2?'…':''));
+ if(p.types&&p.types.length)bits.push(p.types.slice(0,2).join('/'));
+ if((p.from&&p.from!=='2021')||(p.to&&p.to!=='2026'))bits.push((p.from||'不限')+'–'+(p.to||'不限'));
+ if(p.min||p.max)bits.push('¥'+(p.min||'不限')+'–'+(p.max||'不限'));
+ const h=p.hw||{};
+ if(h.batteryMin)bits.push('电池≥'+h.batteryMin);
+ if(h.weightMax)bits.push('重量≤'+h.weightMax);
+ if(h.hzMin)bits.push('刷新≥'+h.hzMin);
+ if(h.storageMin)bits.push('存储≥'+h.storageMin);
+ if(p.favOnly)bits.push('仅收藏');
+ if(p.domestic)bits.push('国行');
+ return bits.join(' · ')||'全部机型';
+}
+function renderPresets(){
+ const box=$('presetList');if(!box)return;
+ if(!presets.length){box.hidden=true;box.innerHTML='';return;}
+ box.innerHTML=`<span class="sh-label">我的筛选</span>`+presets.map((p,i)=>`<button type="button" class="sh-chip" data-preset="${i}" title="${esc(presetSummary(p))}">${esc(p.name)}<i aria-hidden="true" data-preset-del="${i}">×</i></button>`).join('');
+ box.hidden=false;
+}
+function applyPreset(i){
+ const p=presets[i];if(!p)return;
+ state.brands=new Set(p.brands||[]);
+ state.types=new Set(p.types||[]);
+ state.favOnly=!!p.favOnly;
+ state.priceMin=(p.min===''||p.min==null)?null:Number(p.min);
+ state.priceMax=(p.max===''||p.max==null)?null:Number(p.max);
+ state.hw=Object.assign({batteryMin:null,weightMax:null,hzMin:null,storageMin:null},p.hw||{});
+ if($('searchInput'))$('searchInput').value=p.q||'';
+ if($('yearFrom'))$('yearFrom').value=p.from||'2021';
+ if($('yearTo'))$('yearTo').value=p.to||'2026';
+ if($('priceMin'))$('priceMin').value=p.min||'';
+ if($('priceMax'))$('priceMax').value=p.max||'';
+ if($('domesticOnly'))$('domesticOnly').checked=!!p.domestic;
+ if($('favOnly'))$('favOnly').checked=!!p.favOnly;
+ if($('sortSelect')&&p.sort)$('sortSelect').value=p.sort;
+ [['batteryMin','hwBattery'],['weightMax','hwWeight'],['hzMin','hwHz'],['storageMin','hwStorage']].forEach(([k,id])=>{
+  if($(id))$(id).value=(p.hw&&p.hw[k]!=null)?String(p.hw[k]):'';
+ });
+ document.querySelectorAll('input[name="type"]').forEach(el=>{el.checked=state.types.has(el.value);});
+ if(typeof updateHwLabel==='function')updateHwLabel();
+ if(typeof updatePriceLabel==='function')updatePriceLabel();
+ render();
+ toast('已应用筛选方案：'+p.name);
+}
+$('savePreset')?.addEventListener('click',()=>{
+ const p=currentPreset();
+ const summary=presetSummary(p);
+ p.name=summary.length>18?summary.slice(0,18)+'…':summary;
+ presets=[p,...presets.filter(x=>x.name!==p.name)].slice(0,8);
+ try{localStorage.setItem(PRESET_KEY,JSON.stringify(presets));}catch(e){}
+ renderPresets();toast('已保存筛选方案：'+p.name);
+});
+$('presetList')?.addEventListener('click',e=>{
+ const del=e.target.closest('[data-preset-del]');
+ if(del){e.stopPropagation();presets.splice(Number(del.dataset.presetDel),1);try{localStorage.setItem(PRESET_KEY,JSON.stringify(presets));}catch(err){}renderPresets();toast('已删除该方案');return;}
+ const b=e.target.closest('[data-preset]');
+ if(b)applyPreset(Number(b.dataset.preset));
+});
+renderPresets();
 
 /* —— 卡片指针光斑（华为式沉浸光感） —— */
 const gridEl=$('phoneGrid');
