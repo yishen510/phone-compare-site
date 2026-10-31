@@ -9,11 +9,26 @@
   <title>机选 · 中国大陆旗舰手机选购指南</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- 字体异步加载：Google Fonts 在国内常连接超时，阻塞式 stylesheet 会让首屏一直白着。
-       改成 preload + onload 切换，拿不到就直接走 --font-sans 里的系统中文回退栈。 -->
-  <link rel="preload" as="style"
-        href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap"
-        onload="this.onload=null;this.rel='stylesheet'">
+  <!-- 字体不进关键路径：实测 Google Fonts 的 CSS+woff2 合计 1.3MB / 50+ 请求，
+       会和 607KB 的文档抢同一条链路，还把 load 事件拖到 4s。改成 load 之后注入，
+       首屏先用系统字体（display=swap 本来也是这个效果），拿不到就一直不回退。 -->
+  <script>
+  (function(){
+    var HREF='https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap';
+    var done=false;
+    function load(){
+      if(done)return;done=true;
+      var l=document.createElement('link');
+      l.id='fontCss';l.rel='stylesheet';l.href=HREF;
+      l.media='print';                       // 先不参与渲染，拿到再切回 all
+      l.onload=function(){l.media='all';};
+      l.onerror=function(){};
+      document.head.appendChild(l);
+    }
+    if(document.readyState==='complete')load();
+    else window.addEventListener('load',load,{once:true});
+  })();
+  </script>
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;600;700;800&display=swap"></noscript>
   <style>
 /* ==========================================================================
@@ -3176,7 +3191,10 @@ render();
 warmSearchIndex();
 if(state.pendingModel){const _mid=state.pendingModel;state.pendingModel=null;if(phones.some(x=>x.id===_mid))detail(_mid);}
 else if(state.pendingCompare){state.pendingCompare=false;if(state.compare.length>=2)compare();}
-initQuoteApi();
+/* 报价 API 的健康探测不参与首屏：后端不可达时要先直连 10s 再走备用通道，
+   期间还占着一条并发连接。等浏览器空闲了再去连，页面其余功能不受影响。 */
+if('requestIdleCallback' in window)requestIdleCallback(()=>initQuoteApi(),{timeout:6000});
+else setTimeout(initQuoteApi,2500);
 })();
 
 </script>

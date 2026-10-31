@@ -25,3 +25,6 @@ _jst/target_*.json
 _jst/pc_explore.json
 _jst/_baseline_index.html
 _jst/pager*.png
+_jst/_exp_*.html
+_jst/_v*.html
+_jst/line_*.png
