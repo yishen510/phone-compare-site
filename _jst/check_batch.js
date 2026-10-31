@@ -57,7 +57,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  // 4) 容量组合修复：不再有「>」结尾
  const junk=data.filter(p=>/[>＞]\s*$/.test(String(p.storage||'')));
  chk('容量组合不再带「>」', junk.length===0, junk.map(p=>p.name).join(','));
- const k70=data.find(p=>p.name==='红米Redmi K70至尊版');
+ const k70=data.find(p=>p.id==='xiaomi-z20992098425');
  chk('K70 至尊版容量组合保留 1TB 事实', /1TB/.test(k70.storage), k70.storage);
  console.log(`\n${ok} 通过 / ${bad} 失败；脚本错误 ${errs.length}`);
  process.exit(bad||errs.length?1:0);

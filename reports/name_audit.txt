@@ -1,0 +1,48 @@
+== ASUS (5) ==
+  <无>          x 4  e.g. ['ROG 游戏手机 9 Pro', 'ROG 游戏手机 9', 'ROG 8']
+  华硕           x 1  e.g. ['华硕 Zenfone 11 Ultra']
+== Apple (25) ==
+  iPhone       x25  e.g. ['iPhone 17', 'iPhone Air', 'iPhone 18 Pro']
+== Coolpad (1) ==
+  酷派           x 1  e.g. ['酷派 COOL 60']
+== Honor (60) ==
+  荣耀           x60  e.g. ['荣耀 Magic V5', '荣耀 Magic V6', '荣耀 Magic9']
+== Huawei (62) ==
+  HUAWEI       x57  e.g. ['HUAWEI Pura 80', 'HUAWEI Pura 80 Pro', 'HUAWEI Pura 80 Pro+']
+  华为           x 5  e.g. ['华为HUAWEI Mate 60', '华为HUAWEI Mate X3', '华为Mate 70 RS 非凡大师']
+== MEIZU (6) ==
+  魅族           x 6  e.g. ['魅族Lucky 08', '魅族Note 16', '魅族Note 16 Pro']
+== Maimang (1) ==
+  麦芒           x 1  e.g. ['麦芒 30']
+== Motorola (11) ==
+  Moto         x11  e.g. ['Moto X70 Air', 'Moto razr 60 Pro', 'Moto razr 60 Ultra']
+== NIO (1) ==
+  蔚来           x 1  e.g. ['蔚来 Phone 2']
+== OPPO (51) ==
+  OPPO         x51  e.g. ['OPPO Find N5', 'OPPO Find X8s', 'OPPO Find X8s+']
+== OnePlus (26) ==
+  一加           x26  e.g. ['一加 13T', '一加 15', '一加 13']
+== Polestar (1) ==
+  Polestar     x 1  e.g. ['Polestar Phone']
+== Samsung (37) ==
+  Galaxy       x21  e.g. ['Galaxy S25', 'Galaxy S25+', 'Galaxy Z Fold7']
+  三星           x16  e.g. ['三星Galaxy Z Flip4', '三星Galaxy S22', '三星Galaxy S23']
+== WIKO (3) ==
+  WIKO         x 3  e.g. ['WIKO Hi畅享 80 Pro', 'WIKO Hi畅享 80S', 'WIKO Hi畅享 70m']
+== Xiaomi (61) ==
+  REDMI        x27  e.g. ['REDMI K90 Pro Max', 'REDMI K80 Pro', 'REDMI K80']
+  小米           x20  e.g. ['小米 15', '小米 15 Pro', '小米 15S Pro']
+  Xiaomi       x 9  e.g. ['Xiaomi 18 Pro', 'Xiaomi 17 Pro', 'Xiaomi 17 Pro Max']
+  <无>          x 4  e.g. ['MIX Flip 2', 'MIX Fold 4', 'MIX Fold 3']
+  红米           x 1  e.g. ['红米Redmi K70至尊版']
+== ZTE (3) ==
+  中兴           x 3  e.g. ['中兴 远航 41S', '中兴 Axon 60 Ultra 天通版', '中兴 Axon 60 Ultra']
+== iQOO (28) ==
+  iQOO         x28  e.g. ['iQOO 13', 'iQOO 15 Ultra', 'iQOO 15']
+== nubia (23) ==
+  努比亚          x18  e.g. ['努比亚 Z70 Ultra', '努比亚Z50 Ultra', '努比亚Z60 Ultra']
+  红魔           x 5  e.g. ['红魔 10 Pro', '红魔 9 Pro', '红魔 12 Pro+']
+== realme (26) ==
+  真我           x26  e.g. ['真我 GT8 Pro', '真我 GT7 Pro', '真我 GT5 Pro']
+== vivo (54) ==
+  vivo         x54  e.g. ['vivo X300 Ultra', 'vivo X500', 'vivo X500 Pro']

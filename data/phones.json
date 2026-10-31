@@ -2,7 +2,7 @@
  {
   "id": "sam-25",
   "brand": "Samsung",
-  "name": "Galaxy S25",
+  "name": "三星 Galaxy S25",
   "year": 2025,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -286,7 +286,7 @@
  {
   "id": "sam-25p",
   "brand": "Samsung",
-  "name": "Galaxy S25+",
+  "name": "三星 Galaxy S25+",
   "year": 2025,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -570,7 +570,7 @@
  {
   "id": "sam-zf7",
   "brand": "Samsung",
-  "name": "Galaxy Z Fold7",
+  "name": "三星 Galaxy Z Fold7",
   "year": 2025,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -959,7 +959,7 @@
  {
   "id": "sam-zflip7",
   "brand": "Samsung",
-  "name": "Galaxy Z Flip7",
+  "name": "三星 Galaxy Z Flip7",
   "year": 2025,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -1346,7 +1346,7 @@
  {
   "id": "sam-26",
   "brand": "Samsung",
-  "name": "Galaxy S26",
+  "name": "三星 Galaxy S26",
   "year": 2026,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -1731,7 +1731,7 @@
  {
   "id": "sam-26p",
   "brand": "Samsung",
-  "name": "Galaxy S26+",
+  "name": "三星 Galaxy S26+",
   "year": 2026,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -4354,7 +4354,7 @@
  {
   "id": "xia-mixflip2",
   "brand": "Xiaomi",
-  "name": "MIX Flip 2",
+  "name": "小米 MIX Flip 2",
   "year": 2025,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -15100,7 +15100,7 @@
  {
   "id": "sam-26u",
   "brand": "Samsung",
-  "name": "Galaxy S26 Ultra",
+  "name": "三星 Galaxy S26 Ultra",
   "year": 2026,
   "type": "顶级全能旗舰",
   "market": "中国大陆正式销售",
@@ -17152,7 +17152,7 @@
  {
   "id": "xia-18p",
   "brand": "Xiaomi",
-  "name": "Xiaomi 18 Pro",
+  "name": "小米 18 Pro",
   "year": 2026,
   "type": "顶级全能旗舰",
   "market": "中国大陆正式销售",
@@ -18651,7 +18651,7 @@
  {
   "id": "sam-25u",
   "brand": "Samsung",
-  "name": "Galaxy S25 Ultra",
+  "name": "三星 Galaxy S25 Ultra",
   "year": 2025,
   "type": "顶级全能旗舰",
   "market": "中国大陆正式销售",
@@ -21189,7 +21189,7 @@
  {
   "id": "xia-17p",
   "brand": "Xiaomi",
-  "name": "Xiaomi 17 Pro",
+  "name": "小米 17 Pro",
   "year": 2025,
   "type": "标准旗舰",
   "market": "中国大陆正式销售",
@@ -21649,7 +21649,7 @@
  {
   "id": "xia-17pm",
   "brand": "Xiaomi",
-  "name": "Xiaomi 17 Pro Max",
+  "name": "小米 17 Pro Max",
   "year": 2025,
   "type": "顶级全能旗舰",
   "market": "中国大陆正式销售",
@@ -29215,7 +29215,7 @@
  {
   "id": "sam-24u",
   "brand": "Samsung",
-  "name": "Galaxy S24 Ultra",
+  "name": "三星 Galaxy S24 Ultra",
   "year": 2024,
   "type": "顶级全能旗舰",
   "market": "中国大陆正式销售",
@@ -33259,7 +33259,7 @@
  {
   "id": "sam-23u",
   "brand": "Samsung",
-  "name": "Galaxy S23 Ultra",
+  "name": "三星 Galaxy S23 Ultra",
   "year": 2023,
   "type": "顶级全能旗舰",
   "market": "中国大陆正式销售",
@@ -38047,7 +38047,7 @@
  {
   "id": "sam-22u",
   "brand": "Samsung",
-  "name": "Galaxy S22 Ultra",
+  "name": "三星 Galaxy S22 Ultra",
   "year": 2022,
   "type": "顶级全能旗舰",
   "market": "中国大陆正式销售",
@@ -40646,7 +40646,7 @@
  {
   "id": "sam-21u",
   "brand": "Samsung",
-  "name": "Galaxy S21 Ultra",
+  "name": "三星 Galaxy S21 Ultra",
   "year": 2021,
   "type": "顶级全能旗舰",
   "market": "中国大陆正式销售",
@@ -47022,7 +47022,7 @@
  {
   "id": "sam-24",
   "brand": "Samsung",
-  "name": "Galaxy S24",
+  "name": "三星 Galaxy S24",
   "year": 2024,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -47351,7 +47351,7 @@
  {
   "id": "sam-24p",
   "brand": "Samsung",
-  "name": "Galaxy S24+",
+  "name": "三星 Galaxy S24+",
   "year": 2024,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -47677,7 +47677,7 @@
  {
   "id": "sam-zf6",
   "brand": "Samsung",
-  "name": "Galaxy Z Fold6",
+  "name": "三星 Galaxy Z Fold6",
   "year": 2024,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -48075,7 +48075,7 @@
  {
   "id": "sam-zflip6",
   "brand": "Samsung",
-  "name": "Galaxy Z Flip6",
+  "name": "三星 Galaxy Z Flip6",
   "year": 2024,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -48470,7 +48470,7 @@
  {
   "id": "sam-zf5",
   "brand": "Samsung",
-  "name": "Galaxy Z Fold5",
+  "name": "三星 Galaxy Z Fold5",
   "year": 2023,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -48838,7 +48838,7 @@
  {
   "id": "sam-zflip5",
   "brand": "Samsung",
-  "name": "Galaxy Z Flip5",
+  "name": "三星 Galaxy Z Flip5",
   "year": 2023,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -49185,7 +49185,7 @@
  {
   "id": "sam-25e",
   "brand": "Samsung",
-  "name": "Galaxy S25 Edge",
+  "name": "三星 Galaxy S25 Edge",
   "year": 2025,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -51558,7 +51558,7 @@
  {
   "id": "xia-mixfold4",
   "brand": "Xiaomi",
-  "name": "MIX Fold 4",
+  "name": "小米 MIX Fold 4",
   "year": 2024,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -52036,7 +52036,7 @@
  {
   "id": "xia-mixfold3",
   "brand": "Xiaomi",
-  "name": "MIX Fold 3",
+  "name": "小米 MIX Fold 3",
   "year": 2023,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -52486,7 +52486,7 @@
  {
   "id": "xia-mixflip",
   "brand": "Xiaomi",
-  "name": "MIX Flip",
+  "name": "小米 MIX Flip",
   "year": 2024,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -73107,7 +73107,7 @@
  {
   "id": "samsung-z14251424046",
   "brand": "Samsung",
-  "name": "三星Galaxy Z Flip4",
+  "name": "三星 Galaxy Z Flip4",
   "year": 2022,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -73489,7 +73489,7 @@
  {
   "id": "samsung-z13651364781",
   "brand": "Samsung",
-  "name": "三星Galaxy S22",
+  "name": "三星 Galaxy S22",
   "year": 2022,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -73941,7 +73941,7 @@
  {
   "id": "samsung-z14491448934",
   "brand": "Samsung",
-  "name": "三星Galaxy S23",
+  "name": "三星 Galaxy S23",
   "year": 2023,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -74364,7 +74364,7 @@
  {
   "id": "samsung-z13481347064",
   "brand": "Samsung",
-  "name": "三星Galaxy Z Fold3",
+  "name": "三星 Galaxy Z Fold3",
   "year": 2021,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -74803,7 +74803,7 @@
  {
   "id": "samsung-z14081407687",
   "brand": "Samsung",
-  "name": "三星Galaxy Z Fold4",
+  "name": "三星 Galaxy Z Fold4",
   "year": 2022,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -75189,7 +75189,7 @@
  {
   "id": "samsung-z13831382507",
   "brand": "Samsung",
-  "name": "三星Galaxy Z Flip3",
+  "name": "三星 Galaxy Z Flip3",
   "year": 2021,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -75638,7 +75638,7 @@
  {
   "id": "xiaomi-z13721371752",
   "brand": "Xiaomi",
-  "name": "小米12",
+  "name": "小米 12",
   "year": 2021,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -76124,7 +76124,7 @@
  {
   "id": "xiaomi-z13721371912",
   "brand": "Xiaomi",
-  "name": "小米12 Pro",
+  "name": "小米 12 Pro",
   "year": 2021,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -76634,7 +76634,7 @@
  {
   "id": "xiaomi-z14121411925",
   "brand": "Xiaomi",
-  "name": "小米12S Pro",
+  "name": "小米 12S Pro",
   "year": 2022,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -77116,7 +77116,7 @@
  {
   "id": "xiaomi-z14251424177",
   "brand": "Xiaomi",
-  "name": "小米MIX FOLD 2",
+  "name": "小米 MIX FOLD 2",
   "year": 2022,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -77574,7 +77574,7 @@
  {
   "id": "xiaomi-z20992098425",
   "brand": "Xiaomi",
-  "name": "红米Redmi K70至尊版",
+  "name": "REDMI K70至尊版",
   "year": 2024,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -77989,7 +77989,7 @@
  {
   "id": "huawei-z14281427336",
   "brand": "Huawei",
-  "name": "华为HUAWEI Mate 60",
+  "name": "HUAWEI Mate 60",
   "year": 2023,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -78428,7 +78428,7 @@
  {
   "id": "huawei-z14791478249",
   "brand": "Huawei",
-  "name": "华为HUAWEI Mate X3",
+  "name": "HUAWEI Mate X3",
   "year": 2023,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -78878,7 +78878,7 @@
  {
   "id": "huawei-z21162115265",
   "brand": "Huawei",
-  "name": "华为Mate 70 RS 非凡大师",
+  "name": "HUAWEI Mate 70 RS 非凡大师",
   "year": 2024,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -79309,7 +79309,7 @@
  {
   "id": "huawei-z20001999708",
   "brand": "Huawei",
-  "name": "华为HUAWEI Pura 70 Pro+",
+  "name": "HUAWEI Pura 70 Pro+",
   "year": 2024,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -79742,7 +79742,7 @@
  {
   "id": "huawei-z21292128093",
   "brand": "Huawei",
-  "name": "华为nova 14 Ultra",
+  "name": "HUAWEI nova 14 Ultra",
   "year": 2025,
   "type": "影像旗舰",
   "market": "中国大陆正式销售",
@@ -82184,7 +82184,7 @@
  {
   "id": "honor-z13831382712",
   "brand": "Honor",
-  "name": "荣耀Magic3",
+  "name": "荣耀 Magic3",
   "year": 2021,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -82676,7 +82676,7 @@
  {
   "id": "honor-z13951394399",
   "brand": "Honor",
-  "name": "荣耀Magic4",
+  "name": "荣耀 Magic4",
   "year": 2022,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -83131,7 +83131,7 @@
  {
   "id": "honor-z14271426635",
   "brand": "Honor",
-  "name": "荣耀Magic5",
+  "name": "荣耀 Magic5",
   "year": 2023,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -83607,7 +83607,7 @@
  {
   "id": "honor-z20192018979",
   "brand": "Honor",
-  "name": "荣耀Magic V Flip",
+  "name": "荣耀 Magic V Flip",
   "year": 2024,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -84001,7 +84001,7 @@
  {
   "id": "oneplus-z13651364201",
   "brand": "OnePlus",
-  "name": "一加9",
+  "name": "一加 9",
   "year": 2021,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -84509,7 +84509,7 @@
  {
   "id": "oneplus-z13271326868",
   "brand": "OnePlus",
-  "name": "一加9 Pro",
+  "name": "一加 9 Pro",
   "year": 2021,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -85001,7 +85001,7 @@
  {
   "id": "oneplus-z14151414643",
   "brand": "OnePlus",
-  "name": "一加10T",
+  "name": "一加 10T",
   "year": 2022,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -85388,7 +85388,7 @@
  {
   "id": "oneplus-z15091508911",
   "brand": "OnePlus",
-  "name": "一加Ace 2 Pro",
+  "name": "一加 Ace 2 Pro",
   "year": 2023,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -85844,7 +85844,7 @@
  {
   "id": "oneplus-z20312030190",
   "brand": "OnePlus",
-  "name": "一加Ace 3 Pro",
+  "name": "一加 Ace 3 Pro",
   "year": 2024,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -86266,7 +86266,7 @@
  {
   "id": "samsung-z13991398124",
   "brand": "Samsung",
-  "name": "三星Galaxy S22+",
+  "name": "三星 Galaxy S22+",
   "year": 2022,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -86714,7 +86714,7 @@
  {
   "id": "samsung-z14041403118",
   "brand": "Samsung",
-  "name": "三星Galaxy S23+",
+  "name": "三星 Galaxy S23+",
   "year": 2023,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -89551,7 +89551,7 @@
  {
   "id": "realme-z13971396428",
   "brand": "realme",
-  "name": "真我GT2 Pro",
+  "name": "真我 GT2 Pro",
   "year": 2022,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -90055,7 +90055,7 @@
  {
   "id": "realme-z14331432133",
   "brand": "realme",
-  "name": "真我GT3",
+  "name": "真我 GT3",
   "year": 2023,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -90508,7 +90508,7 @@
  {
   "id": "realme-z18571856215",
   "brand": "realme",
-  "name": "真我GT5",
+  "name": "真我 GT5",
   "year": 2023,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -90986,7 +90986,7 @@
  {
   "id": "realme-z14581457605",
   "brand": "realme",
-  "name": "真我GT Neo5",
+  "name": "真我 GT Neo5",
   "year": 2023,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -92375,7 +92375,7 @@
  {
   "id": "nubia-z14651464807",
   "brand": "nubia",
-  "name": "努比亚Z50 Ultra",
+  "name": "努比亚 Z50 Ultra",
   "year": 2023,
   "type": "影像旗舰",
   "market": "中国大陆正式销售",
@@ -92867,7 +92867,7 @@
  {
   "id": "nubia-z19611960082",
   "brand": "nubia",
-  "name": "努比亚Z60 Ultra",
+  "name": "努比亚 Z60 Ultra",
   "year": 2023,
   "type": "影像旗舰",
   "market": "中国大陆正式销售",
@@ -93355,7 +93355,7 @@
  {
   "id": "nubia-z14341433615",
   "brand": "nubia",
-  "name": "努比亚红魔8 PRO",
+  "name": "努比亚红魔 8 PRO",
   "year": 2022,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -96783,7 +96783,7 @@
  {
   "id": "xia-18pm",
   "brand": "Xiaomi",
-  "name": "Xiaomi 18 Pro Max",
+  "name": "小米 18 Pro Max",
   "year": 2026,
   "type": "影像旗舰",
   "market": "中国大陆正式销售",
@@ -100024,7 +100024,7 @@
  {
   "id": "xiaomi-18-fold",
   "brand": "Xiaomi",
-  "name": "Xiaomi 18 Fold",
+  "name": "小米 18 Fold",
   "year": 2026,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -108630,7 +108630,7 @@
  {
   "id": "xiaomi-17t",
   "brand": "Xiaomi",
-  "name": "Xiaomi 17T",
+  "name": "小米 17T",
   "year": 2026,
   "type": "中端全能",
   "market": "中国大陆正式销售",
@@ -109108,7 +109108,7 @@
  {
   "id": "xiaomi-civi-5-pro",
   "brand": "Xiaomi",
-  "name": "Xiaomi Civi 5 Pro",
+  "name": "小米 Civi 5 Pro",
   "year": 2025,
   "type": "中端影像",
   "market": "中国大陆正式销售",
@@ -109563,7 +109563,7 @@
  {
   "id": "honor-x80-pro-max",
   "brand": "Honor",
-  "name": "荣耀X80 Pro Max",
+  "name": "荣耀 X80 Pro Max",
   "year": 2026,
   "type": "中端全能",
   "market": "中国大陆正式销售",
@@ -110000,7 +110000,7 @@
  {
   "id": "honor-600-super",
   "brand": "Honor",
-  "name": "荣耀600 超级版",
+  "name": "荣耀 600 超级版",
   "year": 2025,
   "type": "中端全能",
   "market": "中国大陆正式销售",
@@ -110467,7 +110467,7 @@
  {
   "id": "honor-play11-plus",
   "brand": "Honor",
-  "name": "荣耀Play11 Plus",
+  "name": "荣耀 Play11 Plus",
   "year": 2026,
   "type": "中端续航",
   "market": "中国大陆正式销售",
@@ -126069,7 +126069,7 @@
  {
   "id": "honor-x70",
   "brand": "Honor",
-  "name": "荣耀X70",
+  "name": "荣耀 X70",
   "year": 2025,
   "type": "中端续航",
   "market": "中国大陆正式销售",
@@ -126514,7 +126514,7 @@
  {
   "id": "honor-x70i",
   "brand": "Honor",
-  "name": "荣耀X70i",
+  "name": "荣耀 X70i",
   "year": 2025,
   "type": "中端续航",
   "market": "中国大陆正式销售",
@@ -127374,7 +127374,7 @@
  {
   "id": "honor-300",
   "brand": "Honor",
-  "name": "荣耀300",
+  "name": "荣耀 300",
   "year": 2024,
   "type": "中端全能",
   "market": "中国大陆正式销售",
@@ -131530,7 +131530,7 @@
  {
   "id": "honor-power2",
   "brand": "Honor",
-  "name": "荣耀Power2",
+  "name": "荣耀 Power2",
   "year": 2026,
   "type": "中端续航",
   "market": "中国大陆正式销售",
@@ -133837,7 +133837,7 @@
  {
   "id": "meizu-lucky-08",
   "brand": "MEIZU",
-  "name": "魅族Lucky 08",
+  "name": "魅族 Lucky 08",
   "year": 2024,
   "type": "中端续航",
   "market": "中国大陆正式销售",
@@ -134168,7 +134168,7 @@
  {
   "id": "meizu-note-16",
   "brand": "MEIZU",
-  "name": "魅族Note 16",
+  "name": "魅族 Note 16",
   "year": 2025,
   "type": "中端续航",
   "market": "中国大陆正式销售",
@@ -134557,7 +134557,7 @@
  {
   "id": "meizu-note-16-pro",
   "brand": "MEIZU",
-  "name": "魅族Note 16 Pro",
+  "name": "魅族 Note 16 Pro",
   "year": 2025,
   "type": "中端续航",
   "market": "中国大陆正式销售",
@@ -134970,7 +134970,7 @@
  {
   "id": "nubia-flip-2",
   "brand": "nubia",
-  "name": "努比亚Flip 2",
+  "name": "努比亚 Flip 2",
   "year": 2025,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -135323,7 +135323,7 @@
  {
   "id": "meizu-21-note",
   "brand": "MEIZU",
-  "name": "魅族21 Note",
+  "name": "魅族 21 Note",
   "year": 2024,
   "type": "中端全能",
   "market": "中国大陆正式销售",
@@ -135724,7 +135724,7 @@
  {
   "id": "nubia-10-air",
   "brand": "nubia",
-  "name": "努比亚红魔10 Air",
+  "name": "努比亚红魔 10 Air",
   "year": 2025,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -136096,7 +136096,7 @@
  {
   "id": "meizu-22",
   "brand": "MEIZU",
-  "name": "魅族22",
+  "name": "魅族 22",
   "year": 2025,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -136587,7 +136587,7 @@
  {
   "id": "nubia-9s-pro",
   "brand": "nubia",
-  "name": "努比亚红魔9S Pro+",
+  "name": "努比亚红魔 9S Pro+",
   "year": 2024,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -136958,7 +136958,7 @@
  {
   "id": "nubia-navix-ultra",
   "brand": "nubia",
-  "name": "努比亚NaviX Ultra",
+  "name": "努比亚 NaviX Ultra",
   "year": 2026,
   "type": "顶级全能旗舰",
   "market": "中国大陆正式销售",
@@ -137359,7 +137359,7 @@
  {
   "id": "nubia-10s-pro",
   "brand": "nubia",
-  "name": "努比亚红魔10S Pro+",
+  "name": "努比亚红魔 10S Pro+",
   "year": 2025,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -137784,7 +137784,7 @@
  {
   "id": "nubia-11pro",
   "brand": "nubia",
-  "name": "努比亚红魔11Pro+",
+  "name": "努比亚红魔 11Pro+",
   "year": 2025,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -138184,7 +138184,7 @@
  {
   "id": "samsung-w27",
   "brand": "Samsung",
-  "name": "三星W27",
+  "name": "三星 W27",
   "year": 2026,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -138606,7 +138606,7 @@
  {
   "id": "samsung-galaxy-z-trifold",
   "brand": "Samsung",
-  "name": "三星Galaxy Z TriFold",
+  "name": "三星 Galaxy Z TriFold",
   "year": 2025,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -139041,7 +139041,7 @@
  {
   "id": "samsung-w26",
   "brand": "Samsung",
-  "name": "三星W26",
+  "name": "三星 W26",
   "year": 2025,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -139435,7 +139435,7 @@
  {
   "id": "samsung-galaxy-z-flip7-fe",
   "brand": "Samsung",
-  "name": "三星Galaxy Z Flip7 FE",
+  "name": "三星 Galaxy Z Flip7 FE",
   "year": 2025,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -139813,7 +139813,7 @@
  {
   "id": "samsung-galaxy-a56",
   "brand": "Samsung",
-  "name": "三星Galaxy A56",
+  "name": "三星 Galaxy A56",
   "year": 2025,
   "type": "中端续航",
   "market": "中国大陆正式销售",
@@ -140170,7 +140170,7 @@
  {
   "id": "samsung-w25",
   "brand": "Samsung",
-  "name": "三星W25",
+  "name": "三星 W25",
   "year": 2024,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -140521,7 +140521,7 @@
  {
   "id": "samsung-galaxy-c55",
   "brand": "Samsung",
-  "name": "三星Galaxy C55",
+  "name": "三星 Galaxy C55",
   "year": 2024,
   "type": "中端影像",
   "market": "中国大陆正式销售",
@@ -140861,7 +140861,7 @@
  {
   "id": "samsung-w25-flip",
   "brand": "Samsung",
-  "name": "三星W25 Flip",
+  "name": "三星 W25 Flip",
   "year": 2024,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -141208,7 +141208,7 @@
  {
   "id": "nubia-11s-pro",
   "brand": "nubia",
-  "name": "努比亚红魔11S Pro+",
+  "name": "努比亚红魔 11S Pro+",
   "year": 2026,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -141608,7 +141608,7 @@
  {
   "id": "nubia-11-air",
   "brand": "nubia",
-  "name": "努比亚红魔11 Air",
+  "name": "努比亚红魔 11 Air",
   "year": 2026,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -141972,7 +141972,7 @@
  {
   "id": "nubia-z80-ultra",
   "brand": "nubia",
-  "name": "努比亚Z80 Ultra",
+  "name": "努比亚 Z80 Ultra",
   "year": 2025,
   "type": "影像旗舰",
   "market": "中国大陆正式销售",
@@ -142352,7 +142352,7 @@
  {
   "id": "nubia-z70s-ultra",
   "brand": "nubia",
-  "name": "努比亚Z70S Ultra 摄影师版",
+  "name": "努比亚 Z70S Ultra 摄影师版",
   "year": 2025,
   "type": "专业影像旗舰",
   "market": "中国大陆正式销售",
@@ -142767,7 +142767,7 @@
  {
   "id": "nubia-z60s-pro",
   "brand": "nubia",
-  "name": "努比亚Z60S Pro",
+  "name": "努比亚 Z60S Pro",
   "year": 2024,
   "type": "影像旗舰",
   "market": "中国大陆正式销售",
@@ -143547,7 +143547,7 @@
  {
   "id": "nubia-flip",
   "brand": "nubia",
-  "name": "努比亚Flip",
+  "name": "努比亚 Flip",
   "year": 2024,
   "type": "折叠屏旗舰",
   "market": "中国大陆正式销售",
@@ -143897,7 +143897,7 @@
  {
   "id": "nubia-9-pro",
   "brand": "nubia",
-  "name": "努比亚红魔9 Pro+ 大黄蜂 限量典藏版",
+  "name": "努比亚红魔 9 Pro+ 大黄蜂 限量典藏版",
   "year": 2024,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -144315,7 +144315,7 @@
  {
   "id": "meizu-21-pro",
   "brand": "MEIZU",
-  "name": "魅族21 Pro",
+  "name": "魅族 21 Pro",
   "year": 2024,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -149159,7 +149159,7 @@
  {
   "id": "samsung-galaxy-s25-fe",
   "brand": "Samsung",
-  "name": "Galaxy S25 FE",
+  "name": "三星 Galaxy S25 FE",
   "year": 2025,
   "type": "中端影像",
   "market": "中国大陆正式销售",
@@ -162971,7 +162971,7 @@
  {
   "id": "asus-rog-9-pro",
   "brand": "ASUS",
-  "name": "ROG 游戏手机 9 Pro",
+  "name": "华硕 ROG 游戏手机 9 Pro",
   "year": 2024,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -163328,7 +163328,7 @@
  {
   "id": "asus-rog-9",
   "brand": "ASUS",
-  "name": "ROG 游戏手机 9",
+  "name": "华硕 ROG 游戏手机 9",
   "year": 2024,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -171508,7 +171508,7 @@
  {
   "id": "asus-rog-8",
   "brand": "ASUS",
-  "name": "ROG 8",
+  "name": "华硕 ROG 8",
   "year": 2024,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -177406,7 +177406,7 @@
  {
   "id": "samsung-galaxy-a55",
   "brand": "Samsung",
-  "name": "Galaxy A55",
+  "name": "三星 Galaxy A55",
   "year": 2024,
   "type": "中端续航",
   "market": "中国大陆正式销售",
@@ -186116,7 +186116,7 @@
  {
   "id": "asus-rog-8-pro",
   "brand": "ASUS",
-  "name": "ROG 8 Pro",
+  "name": "华硕 ROG 8 Pro",
   "year": 2024,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
@@ -196033,7 +196033,7 @@
  {
   "id": "xia-17max",
   "brand": "Xiaomi",
-  "name": "Xiaomi 17 Max",
+  "name": "小米 17 Max",
   "year": 2026,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
@@ -196498,7 +196498,7 @@
  {
   "id": "xia-17tp",
   "brand": "Xiaomi",
-  "name": "Xiaomi 17T Pro",
+  "name": "小米 17T Pro",
   "year": 2026,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
