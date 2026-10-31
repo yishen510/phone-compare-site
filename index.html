@@ -52,6 +52,23 @@
   --glass:#1a2028;
   --glass-hi:#20262f;
   --glass-deep:#0f1319;
+  /* ——— 玻璃四层：alpha 随"离用户多近"递增 ———
+     L1 内容卡 / L2 工具条 / L3 浮层 / L4 模态。
+     模糊半径按层固定（不随元素尺寸变化），这样同一层在不同尺寸下观感一致；
+     alpha 是"可读性地板"：再花哨的背景，透过 L1 也必须能看清 12px 正文。 */
+  --glass-1:rgba(24,30,38,.62);
+  --glass-2:rgba(17,22,29,.76);
+  --glass-3:rgba(14,19,25,.84);
+  --glass-4:rgba(12,16,22,.90);
+  --glass-blur-1:12px;
+  --glass-blur-2:20px;
+  --glass-blur-3:24px;
+  --glass-blur-4:30px;
+  --glass-sat:1.4;
+  --glass-edge:inset 0 1px 0 rgba(255,255,255,.09);
+  /* 顶部受光：玻璃"有厚度"的关键——光从边缘进来、向下衰减 */
+  --glass-sheen:linear-gradient(180deg,rgba(255,255,255,.055),rgba(255,255,255,0) 44%);
+  --scrim:rgba(4,6,10,.58);
   --bg:#0f1319;
   --bg-soft:#141922;
   --accent:#345e95;
@@ -85,6 +102,13 @@ html[data-theme="light"]{
   --glass:#ffffff;
   --glass-hi:#f7f9fc;
   --glass-deep:#eef1f6;
+  --glass-1:rgba(255,255,255,.70);
+  --glass-2:rgba(255,255,255,.82);
+  --glass-3:rgba(255,255,255,.88);
+  --glass-4:rgba(255,255,255,.94);
+  --glass-edge:inset 0 1px 0 rgba(255,255,255,.85);
+  --glass-sheen:linear-gradient(180deg,rgba(255,255,255,.92),rgba(255,255,255,0) 46%);
+  --scrim:rgba(16,20,28,.32);
   --bg:#eceef2;
   --bg-soft:#f4f6f9;
   --accent:#254671;
@@ -93,6 +117,28 @@ html[data-theme="light"]{
   --accent-text:#22416a;
   --shadow:0 26px 60px -34px rgba(23,38,72,.42);
   --shadow-soft:0 12px 30px -20px rgba(23,38,72,.35);
+}
+
+/* 兜底：不支持 backdrop-filter、或系统开了"降低透明度"时，退回接近实色的底。
+   玻璃是表现，可读性是底线——这两种情况下宁可丢掉质感，也不能让文字糊在背景里。 */
+@supports not ((backdrop-filter:blur(2px)) or (-webkit-backdrop-filter:blur(2px))){
+  :root{--glass-1:#1a2028;--glass-2:#151a21;--glass-3:#12161c;--glass-4:#0f1319}
+  html[data-theme="light"]{--glass-1:#fff;--glass-2:#fff;--glass-3:#fff;--glass-4:#fff}
+}
+@media (prefers-reduced-transparency:reduce){
+  :root{--glass-1:#1a2028;--glass-2:#151a21;--glass-3:#12161c;--glass-4:#0f1319;--scrim:rgba(4,6,10,.82)}
+  html[data-theme="light"]{--glass-1:#fff;--glass-2:#fff;--glass-3:#fff;--glass-4:#fff;--scrim:rgba(16,20,28,.55)}
+  .topline,.site-header,.filters,.phone-card,.stat,.guide-cards article,.recommend-panel,
+  .dock-inner,.modal,.toast,.back-to-top,.compare-add-list,.art-sticker{
+    backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+  }
+}
+
+/* 玻璃族统一受光：一处定义、全族共用，保证不同组件看起来是同一种材料。
+   新增玻璃面时把它加进这个选择器，而不是各处手写渐变。 */
+.topline,.site-header,.filters,.phone-card,.stat,.guide-cards article,.recommend-panel,
+.dock-inner,.modal,.toast,.back-to-top,.compare-add-list,.art-sticker{
+  background-image:var(--glass-sheen);
 }
 
 /* ---------- ② 基底与背景光 ---------- */
@@ -106,9 +152,11 @@ body{
 /* 极光底：三团缓慢漂移的光，模拟华为发布会页面的沉浸光感 */
 body::before{
   content:"";position:fixed;inset:-20vh -20vw;z-index:-2;pointer-events:none;
-  /* 只在顶部留一层极淡的冷光；不再做四团漂移 + 模糊 + 动画——
-     动画既抢 CPU，也是"炫"的主要来源 */
-  background:radial-gradient(72% 52% at 50% -8%,rgba(52,94,149,.11),transparent 68%);
+  /* 两团静态渐变（不做动画）：作用不是"好看"，而是给毛玻璃提供可被模糊的层次——
+     背景若是纯色，backdrop-filter 等于白做，看不出磨砂质感 */
+  background:
+    radial-gradient(76% 54% at 50% -10%,rgba(52,94,149,.13),transparent 70%),
+    radial-gradient(58% 46% at 88% 78%,rgba(120,170,255,.06),transparent 72%);
 }
 html[data-theme="light"] body::before{
   background:radial-gradient(72% 52% at 50% -8%,rgba(52,94,149,.07),transparent 68%);
@@ -137,6 +185,23 @@ img,svg{max-width:100%}
 ::-webkit-scrollbar-track{background:transparent}
 html[data-theme="light"] ::-webkit-scrollbar-thumb{background:rgba(11,16,32,.16);background-clip:content-box}
 
+/* 极淡网格：正常看是背景肌理，被玻璃压住时会糊成雾状——磨砂质感的"证据"。
+   对比度刻意压到几乎看不见（2% 白），只服务于玻璃层，不抢内容。 */
+body::after{
+  content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);
+  background-size:64px 64px;
+  mask-image:radial-gradient(82% 72% at 50% 28%,#000,transparent 86%);
+  -webkit-mask-image:radial-gradient(82% 72% at 50% 28%,#000,transparent 86%);
+}
+html[data-theme="light"] body::after{
+  background-image:
+    linear-gradient(rgba(16,20,28,.055) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(16,20,28,.055) 1px,transparent 1px);
+}
+
 /* ---------- ③ 顶栏 ---------- */
 .topline{
   display:flex;justify-content:space-between;align-items:center;gap:12px;
@@ -144,9 +209,11 @@ html[data-theme="light"] ::-webkit-scrollbar-thumb{background:rgba(11,16,32,.16)
   font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;
   color:var(--faint);text-transform:uppercase;
   border-bottom:1px solid var(--line);
-  background:var(--bg);
+  background:var(--glass-2);
+  backdrop-filter:blur(var(--glass-blur-2)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-2)) saturate(var(--glass-sat));
 }
-html[data-theme="light"] .topline{background:var(--bg-soft)}
+
 .topline-right{display:inline-flex;align-items:center;gap:10px;white-space:nowrap}
 .top-sep{opacity:.4}
 .live-dot{
@@ -160,10 +227,13 @@ html[data-theme="light"] .topline{background:var(--bg-soft)}
   display:flex;align-items:center;gap:clamp(16px,3vw,40px);
   padding:14px clamp(18px,4vw,56px);
   border-bottom:1px solid var(--line);
-  background:var(--bg);
+  background:var(--glass-2);
+  backdrop-filter:blur(var(--glass-blur-2)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-2)) saturate(var(--glass-sat));
+  box-shadow:var(--glass-edge);
   transition:background .3s var(--ease),box-shadow .3s var(--ease),padding .3s var(--ease);
 }
-.site-header.is-stuck{padding-top:10px;padding-bottom:10px}
+.site-header.is-stuck{padding-top:10px;padding-bottom:10px;background:var(--glass-3)}
 .brandmark{display:inline-flex;align-items:center;gap:11px;font-weight:800;font-size:16px;letter-spacing:-.01em}
 .brand-icon{
   display:grid;place-items:center;width:32px;height:32px;border-radius:11px;font-size:15px;font-weight:800;
@@ -337,7 +407,9 @@ html[data-theme="light"] .art-grid{background-image:linear-gradient(rgba(11,16,3
 .art-sticker{
   position:absolute;right:clamp(2px,3vw,26px);bottom:clamp(8px,4vw,38px);
   padding:11px 14px;border-radius:9px;font-size:11.5px;line-height:1.7;color:var(--ink);
-  background:var(--glass);border:1px solid var(--line-strong);
+  background:var(--glass-3);border:1px solid var(--line-strong);
+  backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));
 }
 .art-sticker b{display:block;font-size:13px;letter-spacing:-.01em}
 
@@ -348,8 +420,11 @@ html[data-theme="light"] .art-grid{background-image:linear-gradient(rgba(11,16,3
 }
 .stat{
   position:relative;padding:22px 22px 20px;border-radius:var(--radius);
-  background:var(--glass);
+  background:var(--glass-1);
   border:1px solid var(--line);
+  backdrop-filter:blur(var(--glass-blur-1)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-1)) saturate(var(--glass-sat));
+  box-shadow:var(--glass-edge);
   overflow:hidden;transition:transform .3s var(--ease),border-color .3s var(--ease);
 }
 .stat:hover{transform:translateY(-3px);border-color:rgba(52,94,149,.34)}
@@ -383,8 +458,11 @@ html[data-theme="light"] .art-grid{background-image:linear-gradient(rgba(11,16,3
 .filters{
   position:sticky;top:88px;
   padding:20px;border-radius:var(--radius);
-  background:var(--glass);
+  background:var(--glass-2);
+  backdrop-filter:blur(var(--glass-blur-2)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-2)) saturate(var(--glass-sat));
   border:1px solid var(--line);
+  box-shadow:var(--glass-edge);
   max-height:calc(100vh - 108px);overflow-y:auto;overscroll-behavior:contain;
 }
 .filter-head{display:flex;align-items:center;gap:10px;margin-bottom:16px}
@@ -574,7 +652,9 @@ html[data-theme="light"] .alt-card{background:rgba(20,24,32,.03)}
 /* 推荐面板 */
 .recommend-panel{
   position:relative;margin-bottom:18px;padding:22px;border-radius:var(--radius);
-  background:var(--glass);
+  background:var(--glass-2);
+  backdrop-filter:blur(var(--glass-blur-2)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-2)) saturate(var(--glass-sat));
   border:1px solid var(--line);
   border-left:2px solid var(--accent);
   animation:panelIn .4s var(--ease) both;
@@ -611,8 +691,11 @@ html[data-theme="light"] .rec-year select{background:#fff}
 .phone-card{
   position:relative;display:flex;flex-direction:column;
   padding:22px;border-radius:var(--radius);
-  background:var(--glass);
+  background:var(--glass-1);
   border:1px solid var(--line);
+  backdrop-filter:blur(var(--glass-blur-1)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-1)) saturate(var(--glass-sat));
+  box-shadow:var(--glass-edge);
   transition:transform .22s var(--ease),border-color .22s var(--ease);
   overflow:hidden;isolation:isolate;
   content-visibility:auto;contain-intrinsic-size:auto 420px;
@@ -769,9 +852,10 @@ body.has-dock{padding-bottom:96px}
 @keyframes dockIn{from{opacity:0;transform:translate(-50%,16px)}to{opacity:1;transform:translate(-50%,0)}}
 .dock-inner{
   display:flex;align-items:center;gap:16px;padding:12px 16px;border-radius:20px;
-  background:rgba(10,14,24,.72);border:1px solid var(--line-strong);
-  backdrop-filter:blur(30px) saturate(180%);-webkit-backdrop-filter:blur(30px) saturate(180%);
-  box-shadow:0 30px 70px -30px rgba(0,0,0,.95),inset 0 1px 0 rgba(255,255,255,.18);
+  background:var(--glass-3);border:1px solid var(--line-strong);
+  backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));
+  box-shadow:0 30px 70px -30px rgba(0,0,0,.95),var(--glass-edge);
 }
 html[data-theme="light"] .dock-inner{background:rgba(255,255,255,.82)}
 .dock-label{flex:none}
@@ -789,7 +873,7 @@ html[data-theme="light"] .dock-inner{background:rgba(255,255,255,.82)}
 /* ---------- ⑪ 弹层 ---------- */
 .modal-backdrop{
   position:fixed;inset:0;z-index:80;
-  background:rgba(3,5,10,.62);backdrop-filter:blur(8px);
+  background:var(--scrim);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   animation:fadeIn .25s var(--ease) both;
 }
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
@@ -797,9 +881,11 @@ html[data-theme="light"] .dock-inner{background:rgba(255,255,255,.82)}
   position:fixed;z-index:90;left:50%;top:50%;transform:translate(-50%,-50%);
   width:min(980px,calc(100vw - 32px));max-height:86vh;overflow-y:auto;
   padding:clamp(22px,3vw,36px);border-radius:26px;
-  background:linear-gradient(172deg,rgba(18,24,38,.96),rgba(8,11,18,.98));
+  background:var(--glass-4);
+  backdrop-filter:blur(var(--glass-blur-4)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-4)) saturate(var(--glass-sat));
   border:1px solid var(--line-strong);
-  box-shadow:0 50px 120px -40px rgba(0,0,0,.95),inset 0 1px 0 rgba(255,255,255,.16);
+  box-shadow:0 50px 120px -40px rgba(0,0,0,.95),var(--glass-edge);
   animation:modalIn .35s var(--ease) both;overscroll-behavior:contain;
 }
 html[data-theme="light"] .modal{background:linear-gradient(172deg,#fff,#f4f7fe)}
@@ -887,7 +973,7 @@ tr[hidden]{display:none!important}
 .compare-add{position:relative;margin:0 0 16px;max-width:420px}
 .compare-add input{width:100%;padding:9px 12px;border-radius:10px;border:1px solid var(--line-strong);background:rgba(255,255,255,.04);color:var(--ink);font-family:inherit;font-size:12.5px}
 html[data-theme="light"] .compare-add input{background:rgba(20,24,32,.03)}
-.compare-add-list{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:5;max-height:260px;overflow:auto;border-radius:10px;border:1px solid var(--line-strong);background:var(--glass);backdrop-filter:blur(18px);box-shadow:0 18px 40px -24px rgba(0,0,0,.9)}
+.compare-add-list{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:5;max-height:260px;overflow:auto;border-radius:10px;border:1px solid var(--line-strong);background:var(--glass-3);backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));-webkit-backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));box-shadow:0 18px 40px -24px rgba(0,0,0,.9)}
 .compare-add-list[hidden]{display:none}
 .compare-add-item{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:9px 12px;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink);font-family:inherit;font-size:12.5px;cursor:pointer;text-align:left}
 .compare-add-item:last-child{border-bottom:0}
@@ -940,8 +1026,11 @@ html[data-theme="light"] .compare-evidence.secondary{color:#a30009}
 .guide-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .guide-cards article{
   position:relative;padding:24px;border-radius:var(--radius);
-  background:var(--glass);
+  background:var(--glass-1);
   border:1px solid var(--line);
+  backdrop-filter:blur(var(--glass-blur-1)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-1)) saturate(var(--glass-sat));
+  box-shadow:var(--glass-edge);
   transition:border-color .3s var(--ease);
 }
 .guide-cards article:hover{border-color:rgba(82,120,176,.45)}
@@ -1012,7 +1101,9 @@ footer p{margin:0;font-size:11.5px;color:var(--faint);flex:1;min-width:200px}
   position:fixed;right:22px;bottom:22px;z-index:65;
   width:40px;height:40px;border-radius:9px;display:grid;place-items:center;
   color:var(--ink);font-size:15px;
-  background:var(--glass);border:1px solid var(--line-strong);
+  background:var(--glass-3);border:1px solid var(--line-strong);
+  backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));
   opacity:0;transform:translateY(10px);pointer-events:none;
   transition:opacity .28s var(--ease),transform .28s var(--ease),background .2s var(--ease);
 }
@@ -1032,7 +1123,9 @@ footer p{margin:0;font-size:11.5px;color:var(--faint);flex:1;min-width:200px}
 .toast{
   position:fixed;left:50%;bottom:96px;transform:translate(-50%,14px);z-index:120;
   padding:10px 16px;border-radius:9px;font-size:12.5px;
-  background:var(--glass-hi);color:var(--ink);border:1px solid var(--line-strong);
+  background:var(--glass-3);color:var(--ink);border:1px solid var(--line-strong);
+  backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));
+  -webkit-backdrop-filter:blur(var(--glass-blur-3)) saturate(var(--glass-sat));
   box-shadow:0 14px 30px -20px rgba(0,0,0,.8);
   opacity:0;pointer-events:none;transition:opacity .28s var(--ease),transform .28s var(--ease);
 }
@@ -1145,6 +1238,8 @@ input:focus-visible,select:focus-visible,button:focus-visible,[tabindex]:focus-v
 .table-wrap{border-radius:16px}
 body{overflow-x:hidden}
 @media (max-width:720px){
+  /* 手机上可见卡片少、滚动更长，模糊半径降一档换帧率；层级与配色不变 */
+  :root{--glass-blur-1:8px;--glass-blur-2:16px}
   .hero h1{font-size:clamp(26px,7.4vw,34px);line-height:1.16}
   .modal.modal-wide{width:calc(100vw - 12px)}
   .hero{grid-template-columns:minmax(0,1fr)}
