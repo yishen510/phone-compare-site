@@ -75,10 +75,12 @@ const hue = (() => {
   else h = (r - g) / d + 4;
   return (h * 60 + 360) % 360;
 })();
-chk('主色色相在青蓝区间（160°–220°）', hue >= 160 && hue <= 220, `${hue.toFixed(0)}°`);
+/* 只要求"别飘回暖色"，不强绑某个具体色相：青、蓝、紫都算冷色 */
+chk('主色色相落在冷色区间（160°–300°）', hue >= 160 && hue <= 300, `${hue.toFixed(0)}°`);
 
 /* 页面上不该再出现旧的品牌红 */
-const stale = ['#b02a35', '#c94850', '#78171f', '#9c2b33', '#96262f', '#e9a09c'];
+const stale = ['#b02a35', '#c94850', '#78171f', '#9c2b33', '#96262f', '#e9a09c',
+                 '#266571', '#367f8b', '#79d5e0'];  // 含已弃用的湖青，防止回退
 const found = stale.filter(c => html.toLowerCase().includes(c));
 chk('没有残留旧品牌红', found.length === 0, found.join(',') || '干净');
 
