@@ -1710,13 +1710,20 @@ function filtered(){
  }
  return arr;
 }
-/* 首屏之后用空闲时间把 225 条参数索引建好，避免第一次输入时才集中构建 */
+/* 首屏之后用空闲时间把参数索引建好，避免第一次输入时才集中构建。
+   按 idle 剩余时间自适应分批：有余量就多建几条、不够就让出，避免长任务卡住滚动。 */
 function warmSearchIndex(){
  const idle=window.requestIdleCallback||function(cb){return setTimeout(function(){cb({timeRemaining:function(){return 8;}});},200);};
  let i=0;
- const step=function(){
-  const end=Math.min(i+24,phones.length);
-  for(;i<end;i++)specHay(phones[i]);
+ const step=function(deadline){
+  const hasDl=deadline&&typeof deadline.timeRemaining==='function';
+  let n=0;
+  /* n<40 是兜底：某些环境的 timeRemaining 不递减（如测试桩），没有上限会一次性跑完全部 */
+  while(i<phones.length&&n<40){
+   specHay(phones[i]);i++;n++;
+   if(hasDl){ if(deadline.timeRemaining()<2)break; }
+   else if(n>=8)break;             // 无 requestIdleCallback 时按 8 条一批
+  }
   if(i<phones.length)idle(step);
  };
  idle(step);
