@@ -887,6 +887,16 @@ tr[hidden]{display:none!important}
 .compare-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
 .compare-summary{font-size:12px;color:var(--faint)}
 .compare-product-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-bottom:18px}
+/* 对比页内添加机型 */
+.compare-add{position:relative;margin:0 0 16px;max-width:420px}
+.compare-add input{width:100%;padding:9px 12px;border-radius:10px;border:1px solid var(--line-strong);background:rgba(255,255,255,.04);color:var(--ink);font-family:inherit;font-size:12.5px}
+html[data-theme="light"] .compare-add input{background:rgba(20,24,32,.03)}
+.compare-add-list{position:absolute;left:0;right:0;top:calc(100% + 6px);z-index:5;max-height:260px;overflow:auto;border-radius:10px;border:1px solid var(--line-strong);background:var(--glass);backdrop-filter:blur(18px);box-shadow:0 18px 40px -24px rgba(0,0,0,.9)}
+.compare-add-list[hidden]{display:none}
+.compare-add-item{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;padding:9px 12px;border:0;border-bottom:1px solid var(--line);background:none;color:var(--ink);font-family:inherit;font-size:12.5px;cursor:pointer;text-align:left}
+.compare-add-item:last-child{border-bottom:0}
+.compare-add-item:hover{background:rgba(176,42,53,.10)}
+.compare-add-item small{color:var(--faint);font-size:11px}
 .compare-product{padding:16px;border-radius:16px;background:rgba(255,255,255,.04);border:1px solid var(--line)}
 .compare-brand{font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-text)}
 .compare-product h3{margin:6px 0 4px;font-size:16px;letter-spacing:-.02em}
@@ -2239,7 +2249,18 @@ function compare(){
  const value=(p,key)=>key==='priceCN'?(Number.isFinite(Number(p[key]))?money(p[key]):'待核验'):(p[key]||'待核验');
  const normalize=v=>String(v??'').trim().replace(/\s+/g,' ').toLowerCase();
  const differs=key=>new Set(items.map(p=>normalize(value(p,key)))).size>1;
- const bestMap={};['priceCN','battery','weight'].forEach(k=>{const get=k==='priceCN'?(p=>Number.isFinite(Number(p.priceCN))?Number(p.priceCN):null):k==='battery'?(p=>hwOf(p).bat):(p=>hwOf(p).wt);const vals=items.map(get).filter(v=>Number.isFinite(v));if(vals.length<2||new Set(vals).size<2)return;const target=(k==='weight'||k==='priceCN')?Math.min(...vals):Math.max(...vals);bestMap[k]={get,target,label:k==='weight'?'最轻':k==='priceCN'?'最低价':'最大电池'};});
+ /* 最优值标记：价格最低、电池最大、重量最轻、充电最快；少于两款有值或全部相同就不标 */
+ const chargeW=p=>{const m=String((p&&p.charging)||'').match(/(\d{2,3})\s*[wW]/);return m?Number(m[1]):null;};
+ const bestMap={};['priceCN','battery','weight','charging'].forEach(k=>{
+  const get=k==='priceCN'?(p=>Number.isFinite(Number(p.priceCN))?Number(p.priceCN):null)
+   :k==='battery'?(p=>hwOf(p).bat)
+   :k==='weight'?(p=>hwOf(p).wt)
+   :chargeW;
+  const vals=items.map(get).filter(v=>Number.isFinite(v));
+  if(vals.length<2||new Set(vals).size<2)return;
+  const target=(k==='weight'||k==='priceCN')?Math.min(...vals):Math.max(...vals);
+  bestMap[k]={get,target,label:k==='weight'?'最轻':k==='priceCN'?'最低价':(k==='charging'?'充电最快':'最大电池')};
+ });
  const bestTag=(p,key)=>{const b=bestMap[key];return b&&b.get(p)===b.target?`<span class="best-tag">${b.label}</span>`:'';};
  const shown=rows.filter(([label,key])=>!state.compareDiffOnly||differs(key));
  const specSections=specUnion(items);
@@ -2255,12 +2276,37 @@ function compare(){
  <p class="compare-lead">先看不同点，再按自己的使用场景做决定。高亮标记表示数值/描述存在差异，不代表哪款更强。</p>${highlights.length?`<ul class="compare-highlights">${highlights.map(t=>`<li>${esc(t)}</li>`).join('')}</ul>`:''}
  <div class="compare-toolbar"><span class="compare-summary">已选 ${items.length} 款 · ${diffTotal} 项存在差异${specCount?'（含 '+specCount+' 项完整参数）':''}</span><label class="compare-search"><input id="compareSearch" type="search" placeholder="搜索对比项，如 电池 / 重量" value="${esc(state.compareQuery||'')}" aria-label="搜索对比项"></label><select id="compareSort" class="compare-sort" aria-label="对比顺序"><option value="default"${state.compareSort==='default'?' selected':''}>默认顺序</option><option value="battery"${state.compareSort==='battery'?' selected':''}>电池容量高→低</option><option value="weight"${state.compareSort==='weight'?' selected':''}>重量轻→重</option><option value="price"${state.compareSort==='price'?' selected':''}>首发价低→高</option></select><button class="button button-light button-small" data-copy-compare>复制对比链接</button><button class="button button-light button-small" data-export="csv">导出 CSV</button><button class="button button-light button-small" data-diff-only="true">${state.compareDiffOnly?'显示全部参数':'仅看差异'}</button></div>
  <div class="compare-product-grid">${items.map(p=>`<article class="compare-product"><span class="compare-brand">${esc(p.brand)}</span><h3>${esc(p.name)}</h3><p>${esc(p.type||'旗舰手机')} · ${esc(validDate(p))}</p><strong class="compare-price">${esc(value(p,'priceCN'))}</strong><small>官方首发参考价，非实时售价</small><button class="text-button" data-remove="${esc(p.id)}">从对比中移除 ×</button></article>`).join('')}</div>
+ <div class="compare-add"><input id="compareAdd" type="search" placeholder="添加机型到对比…（输入名称或品牌）" aria-label="添加机型到对比" autocomplete="off"><div id="compareAddList" class="compare-add-list" hidden></div></div>
  <div class="table-wrap compare-table-wrap"><table class="compare-table"><thead><tr><th>对比项目</th>${items.map(p=>`<th>${esc(p.name)}</th>`).join('')}</tr></thead><tbody><tr class="compare-group-row"><th colspan="${items.length+1}">核心参数</th></tr>${shown.map(([label,key])=>`<tr class="${differs(key)?'is-different':'is-same'}"><th>${label}${differs(key)?'<span class="difference-tag">有差异</span>':''}</th>${items.map(p=>`<td>${esc(value(p,key))}${bestTag(p,key)}${field(p,key==='priceCN'?'price':key)==='已核验'?'<small class="compare-evidence">字段已核验</small>':(field(p,key==='priceCN'?'price':key)==='第三方核验'?'<small class="compare-evidence secondary">第三方核验</small>':'<small class="compare-evidence pending">待核验</small>')}</td>`).join('')}</tr>`).join('')}${specRowsHtml}${(shown.length||specRowsHtml)?'':'<tr><td colspan="'+(items.length+1)+'" class="compare-empty">这几款手机在当前展示字段上没有可见差异。</td></tr>'}</tbody></table></div>
  <p class="spec-note">「—」表示该机型尚未收录该项；完整参数来自中关村在线参数页，仅供交叉参考。</p>
  <div class="fit-guide"><div><span class="fit-kicker">HOW TO CHOOSE</span><h3>哪款更适合你？</h3><p>不凭单一参数判定“赢家”。根据你最在意的需求，优先核对下列用途说明和已核验字段。</p></div>${items.map(p=>`<article class="fit-card"><h4>${esc(p.name)}</h4><p>${esc(fitText(p))}</p><div class="fit-tags">${(Array.isArray(p.bestFor)?p.bestFor:[]).slice(0,4).map(x=>`<span>${esc(x)}</span>`).join('')||'<span>用途标签待核验</span>'}</div><p class="fit-caution">${pass(p)?'整机审核已通过':'整机审核未通过：不生成排名或自动推荐'}</p></article>`).join('')}</div>
  <p class="modal-warning">价格为官方首发参考价，不代表当前渠道价。差异高亮仅提示字段不同，不代表优劣；未通过审核的机型不会被授予排名或推荐资格。</p>`,{wide:true});
  if(state.compareQuery)applyCompareQuery(state.compareQuery);
 }
+/* 对比页内直接添加机型：输入即搜，点一下加入并重渲染对比 */
+function renderCompareAdd(q){
+ const list=$('compareAddList');if(!list)return;
+ const term=String(q||'').trim().toLowerCase();
+ if(!term){list.hidden=true;list.innerHTML='';return;}
+ const hits=phones.filter(p=>!state.compare.includes(p.id)&&(String(p.name).toLowerCase().includes(term)||String(p.brand).toLowerCase().includes(term))).slice(0,6);
+ if(!hits.length){list.innerHTML='<div class="compare-add-item" aria-disabled="true"><span>没有匹配的机型</span></div>';list.hidden=false;return;}
+ list.innerHTML=hits.map(p=>`<button type="button" class="compare-add-item" data-cmp-add="${esc(p.id)}"><span>${esc(p.name)}</span><small>${esc(money(p.priceCN))}</small></button>`).join('');
+ list.hidden=false;
+}
+document.addEventListener('input',e=>{
+ if(e.target.id!=='compareAdd')return;
+ renderCompareAdd(e.target.value);
+});
+document.addEventListener('click',e=>{
+ const b=e.target.closest&&e.target.closest('[data-cmp-add]');
+ if(!b)return;
+ const id=b.dataset.cmpAdd;
+ if(state.compare.includes(id))return;
+ if(state.compare.length>=4){toast('最多同时对比 4 款手机');return;}
+ state.compare.push(id);
+ compare();
+ toast('已加入对比');
+});
 function setApiStatus(headline,message,tone,opts){
  const el=$('priceApiStatus');if(!el)return;
  el.className='price-api-status '+(tone||'is-neutral');
@@ -2489,9 +2535,11 @@ document.addEventListener('keydown',e=>{
  const typing=tag==='INPUT'||tag==='TEXTAREA'||tag==='SELECT';
  if(e.key==='Escape'){closeModal();return;}
  const dm=$('detailModal');const detailOpen=!!dm&&!dm.hidden;
+ const cm=$('compareModal');const compareOpen=!!cm&&!cm.hidden;
  if(detailOpen&&(e.key==='ArrowLeft'||e.key==='ArrowRight')){e.preventDefault();detailStep(e.key==='ArrowLeft'?-1:1);return;}
- if(e.key==='/'&&!typing){e.preventDefault();$('searchInput')?.focus();return;}
+ if(e.key==='/'&&!typing){e.preventDefault();(compareOpen?$('compareSearch'):$('searchInput'))?.focus();return;}
  if(typing||e.metaKey||e.ctrlKey||e.altKey)return;
+ if(compareOpen&&(e.key==='d'||e.key==='D')){e.preventDefault();state.compareDiffOnly=!state.compareDiffOnly;compare();return;}
  if(e.key==='t'||e.key==='T'){e.preventDefault();const b=document.querySelector(`[data-view="${state.view==='table'?'cards':'table'}"]`);if(b)b.click();return;}
  if((e.key==='f'||e.key==='F')&&detailOpen&&state.detailId){
   e.preventDefault();
