@@ -56,9 +56,11 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  chk('中文「小米15」仍 5 条', names.length===5, names.length+' 条');
  chk('中文「小米15」首条仍为「小米 15」', names[0]==='小米 15', names[0]||'—');
 
- /* 5. 清空恢复全量 */
- names=await search('');
- chk('清空后恢复 485', names.length===485, names.length+' 条');
+/* 5. 清空恢复全量（列表默认逐页展示，卡片只画第一页，全量条数看结果计数） */
+names=await search('');
+const total=Number(document.getElementById('resultCount').textContent);
+chk('清空后恢复 485', total===485, total+' 条');
+chk('清空后卡片按页展示（不再一次性铺满）', names.length>0&&names.length<total, names.length+' / '+total+' 张');
 
  console.log(`\n${ok} 通过 / ${bad} 失败；脚本错误 ${errs.length}`);
  if(errs.length)console.log('错误:',errs.slice(0,5));

@@ -28,14 +28,19 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  key('t'); await sleep(450); await waitPaint();
  chk('再按 t 切回卡片视图', !!document.querySelector('#phoneGrid .phone-card'));
 
- /* 2. 表格全选 → 批量栏 */
- document.querySelector('[data-view="table"]').click();
- await sleep(450); await waitPaint();
- const all=document.getElementById('selectAllRows');
- chk('表格有全选复选框', !!all);
- all.checked=true; all.dispatchEvent(new window.Event('change',{bubbles:true}));
- await sleep(120);
- chk('全选后批量栏显示 485', document.getElementById('batchCount').textContent==='485'&&!document.getElementById('batchBar').hidden, document.getElementById('batchCount').textContent);
+/* 2. 表格全选 → 批量栏（列表默认逐页，先确认标签写明范围，再展开全部验证全量语义） */
+document.querySelector('[data-view="table"]').click();
+await sleep(450); await waitPaint();
+let all=document.getElementById('selectAllRows');
+chk('表格有全选复选框', !!all);
+chk('逐页时全选标签写明范围', /全选已显示/.test(all.getAttribute('aria-label')||''), all.getAttribute('aria-label'));
+const expAll=document.querySelector('[data-pager="all"]');
+if(expAll&&!expAll.hidden){expAll.click();await sleep(450);await waitPaint();}
+all=document.getElementById('selectAllRows');   /* 展开全部会重建表格，旧引用已失效 */
+chk('展开后全选标签改为全部', /全选全部/.test(all.getAttribute('aria-label')||''), all.getAttribute('aria-label'));
+all.checked=true; all.dispatchEvent(new window.Event('change',{bubbles:true}));
+await sleep(120);
+chk('全选后批量栏显示 485', document.getElementById('batchCount').textContent==='485'&&!document.getElementById('batchBar').hidden, document.getElementById('batchCount').textContent);
 
  /* 3. 批量对比超 4 款：提示且不加入 */
  document.querySelector('[data-batch="compare"]').click(); await sleep(120);

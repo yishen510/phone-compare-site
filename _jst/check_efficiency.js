@@ -21,6 +21,10 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  async function waitPaint(){for(let i=0;i<400;i++){const g=document.getElementById('phoneGrid');if(g&&g.dataset.painting==='0')break;await sleep(20);}}
  const q=document.getElementById('searchInput');
  const cardCount=()=>document.querySelectorAll('#phoneGrid .phone-card').length;
+ /* 列表默认逐页展示（只画第一页）。本文件按「用户可见结果」断言，先切到全部展开，
+    否则 cardCount() 只会得到一页的条数，断言失去意义。 */
+ const allBtn=document.querySelector('[data-pager="all"]');
+ if(allBtn&&!allBtn.hidden){allBtn.click();await sleep(200);await waitPaint();}
 
  /* 1. 搜索历史：记录 */
  q.value='小米15'; q.dispatchEvent(new window.Event('input',{bubbles:true}));

@@ -27,6 +27,10 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  const byName=new Map(data.map(p=>[p.name,p]));
  const priceNum=p=>{const v=p&&p.priceCN;return (v===null||v===undefined||v===''||!Number.isFinite(Number(v)))?null:Number(v);};
  const cardNames=()=>[...document.querySelectorAll('#phoneGrid .phone-card h3')].map(h=>h.textContent);
+ /* 列表已改为可逐页展示（默认只画一页）。本文件验证的是「性能改动前后行为不变」，
+    所有断言都必须在全量数据上跑，所以先点「全部展开」。 */
+ const expandAll=async()=>{const b=document.querySelector('[data-pager="all"]');if(b&&!b.hidden){b.click();await sleep(200);await waitPaint();}};
+ await expandAll();
 
  /* 1. 品牌统计 = 数据实际品牌数（BRAND_COUNT） */
  const brandText=document.getElementById('statBrands').textContent;

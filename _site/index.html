@@ -718,6 +718,11 @@ html[data-theme="light"] .rec-year select{background:#fff}
 .batch-bar[hidden]{display:none}
 .batch-count{color:var(--muted)}
 .batch-count b{color:var(--ink)}
+/* 逐页展示控制条 */
+.pager-bar{display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin:16px 0 4px;padding:14px 12px;border-top:1px solid var(--line)}
+.pager-bar[hidden]{display:none}
+.pager-bar span{font-size:12px;color:var(--muted)}
+.pager-bar button[hidden]{display:none}
 /* 搜索历史：聚焦空输入时出现，点一下直接复用上次搜过的词 */
 .search-history{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:8px 0 2px}
 .search-history[hidden]{display:none}
@@ -1382,6 +1387,7 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
               <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
             </div>
           </div>
+          <div id="pagerBar" class="pager-bar" hidden><span id="pagerInfo" aria-live="polite"></span><button type="button" class="button button-dark button-small" data-pager="more">加载更多</button><button type="button" class="text-button" data-pager="all">全部展开</button><button type="button" class="text-button" data-pager="paged" hidden>改为逐页加载</button></div>
           <div id="emptyState" class="empty-state" hidden><span>⌕</span><h3>没有找到符合条件的机型</h3><p>试着移除一项筛选，或扩大年份范围。</p><div id="emptyChips" class="empty-chips" hidden></div><button class="button button-dark" id="emptyReset">重置筛选</button></div>
           <div class="data-note"><span class="note-symbol">＊</span><p><b>数据口径说明</b>　本页面为中国大陆市场初期数据库，包含主流直板旗舰与性能旗舰代表样本，尚未覆盖所有标准款、折叠屏、运营商定制版和每个存储 SKU。规格链接优先指向厂商大陆官网；历史条目仍需要逐项校对。首发价不是当前成交价；公开商品页人工快照仅供参考并设有效期，其他机型需跳转平台刷新核价。</p></div>
         </div>
@@ -1462,7 +1468,7 @@ const phones=Array.isArray(window.PHONE_DATA)?window.PHONE_DATA:[];
 /* 品牌数是常量（phones 只读），别每次 render 都 map 一遍 485 条 */
 const BRAND_COUNT=new Set(phones.map(p=>p.brand)).size;
 const $=id=>document.getElementById(id);
-const state={brands:new Set(),types:new Set(),compare:[],view:'cards',priorities:new Set(),onlyIds:null,recommendIds:null,detailList:null,detailPos:0,recent:[],pendingCompare:false,compareQuery:'',compareSort:'default',compareDiffOnly:false,detailId:null,favs:new Set(),favOnly:false,priceMin:null,priceMax:null,hw:{batteryMin:null,weightMax:null,hzMin:null,storageMin:null},density:'roomy',selected:new Set()};
+const state={brands:new Set(),types:new Set(),compare:[],view:'cards',priorities:new Set(),onlyIds:null,recommendIds:null,detailList:null,detailPos:0,recent:[],pendingCompare:false,compareQuery:'',compareSort:'default',compareDiffOnly:false,detailId:null,favs:new Set(),favOnly:false,priceMin:null,priceMax:null,hw:{batteryMin:null,weightMax:null,hzMin:null,storageMin:null},density:'roomy',selected:new Set(),pageMode:'auto',visibleCount:0};
 /* 实测（_jst/bench_micro.js）：改成「先 test 再 replace」反而慢 10.8%。
    V8 下无匹配的 replace 已足够快，且回调只在命中时才创建映射对象。保持原实现，别再"优化"。 */
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1867,6 +1873,13 @@ function clearActiveFilter(key){
 let lastGridKey='',paintToken=0;
 /* 首屏只画一屏多一点，剩下的分片补；442 张卡一次性插入会占满主线程，首帧要等 1 秒以上 */
 const PAINT_FIRST=12,PAINT_STEP=96,PAINT_BUDGET=8;
+/* 逐页展示：485 条一次性渲染时布局成本占首屏 50% 以上，默认先只画一页。
+   结果不超过阈值时不分页（搜索出 5 条没必要再点一次「加载更多」）。 */
+const PAGE_SIZE=24,AUTO_PAGE_THRESHOLD=80;
+const PAGE_MODE_KEY='phoneindex.pagemode.v1';
+let lastFilterKey='';
+/* 记住用户上次的选择；没选过则走 auto（结果超阈值才逐页） */
+try{const pm=localStorage.getItem(PAGE_MODE_KEY);if(pm==='paged'||pm==='all')state.pageMode=pm;}catch(e){}
 /* 用 rAF + 每帧 8ms 预算补画：requestIdleCallback 在加载后常被推迟到 1s 以外，用户会看到半截列表 */
 const nextFrame=fn=>('requestAnimationFrame'in window)?window.requestAnimationFrame(fn):setTimeout(fn,16);
 function paintGrid(grid,arr){
@@ -1903,20 +1916,73 @@ function paintGrid(grid,arr){
   if(i<arr.length)nextFrame(step);else done();
  }
 }
-function gridSignature(arr){
+function gridSignature(arr,shownCount){
  /* 排序方式参与签名：否则两个方向恰好排出同样顺序时不会重建，表头箭头会停在旧状态 */
  /* 用「长度 + 首尾 id」代替全量 join：442 条每次都拼 8KB 字符串纯属浪费 */
- if(!arr.length)return state.view+'|'+(($('sortSelect')?.value)||'')+'|empty|'+state.compare.join(',')+'|'+[...state.favs].join(',');
- return state.view+'|'+(($('sortSelect')?.value)||'')+'|'+arr.length+'|'+arr[0].id+'|'+arr[arr.length-1].id+'|'+state.compare.join(',')+'|'+[...state.favs].join(',');
+ /* arr.length + 可见条数都要进签名：点「全部展开」时 arr 没变、只有可见条数变了，
+    不含它就判定「无变化」而不重绘，点了按钮没反应。 */
+ const n=arr.length,v=(shownCount===undefined?n:shownCount);
+ if(!n)return state.view+'|'+(($('sortSelect')?.value)||'')+'|empty|'+state.compare.join(',')+'|'+[...state.favs].join(',');
+ return state.view+'|'+(($('sortSelect')?.value)||'')+'|'+n+'/'+v+'|'+arr[0].id+'|'+arr[arr.length-1].id+'|'+state.compare.join(',')+'|'+[...state.favs].join(',');
+}
+/* 是否逐页：用户显式选择优先，否则结果超过阈值才分页 */
+function wantsPaged(total){
+ if(state.pageMode==='all')return false;
+ if(state.pageMode==='paged')return true;
+ return total>AUTO_PAGE_THRESHOLD;
+}
+function updatePager(total,shown,paged){
+ /* 表头「全选」只勾得到 DOM 里已渲染的行，逐页时把标签改成「已显示」以免被误解为全量 */
+ const sa=$('selectAllRows');
+ if(sa)sa.setAttribute('aria-label',paged?`全选已显示的 ${shown} 款（共 ${total} 款）`:`全选全部 ${total} 款`);
+ const bar=$('pagerBar');if(!bar)return;
+ if(total<=PAGE_SIZE){bar.hidden=true;return;}
+ bar.hidden=false;
+ const info=$('pagerInfo');
+ const more=bar.querySelector('[data-pager="more"]');
+ const allBtn=bar.querySelector('[data-pager="all"]');
+ const pagedBtn=bar.querySelector('[data-pager="paged"]');
+ if(info)info.textContent=paged?`已显示 ${shown} / ${total} 款`:`已展开全部 ${total} 款`;
+ if(more)more.hidden=!paged||shown>=total;
+ if(allBtn)allBtn.hidden=!paged;
+ if(pagedBtn)pagedBtn.hidden=paged;
+}
+/* 「加载更多」用追加而不是重建：已加载的卡片不必重新解析，滚动位置也不跳 */
+function loadMore(){
+ const arr=state.lastArr||[];
+ const start=state.visibleCount||0;
+ if(start>=arr.length)return;
+ const next=arr.slice(start,start+PAGE_SIZE);
+ if(!next.length)return;
+ state.visibleCount=start+next.length;
+ const grid=$('phoneGrid');
+ if(!grid){render();return;}
+ if(state.view==='table'){
+  const tb=grid.querySelector('tbody');
+  if(!tb){render();return;}
+  tb.insertAdjacentHTML('beforeend',next.map(rowHTML).join(''));
+  lastTableCmp=state.compare.join(',');
+ }else{
+  grid.insertAdjacentHTML('beforeend',next.map(card).join(''));
+ }
+ updatePager(arr.length,state.visibleCount,true);
+ syncBatchBar();
 }
 function render(){
  renderBrands();
  const arr=filtered();
- state.lastArr=arr;   // 供详情页复用，避免打开详情时再全量 filtered()
+ state.lastArr=arr;   // 供详情页复用 + 「加载更多」追加时取数据
  setText('statModels',phones.length);setText('statBrands',BRAND_COUNT);setText('resultCount',arr.length);
  setText('currentFilterLabel',(state.onlyIds&&state.onlyIds.size)?('推荐候选 '+state.onlyIds.size+' 款'):'全部代表机型');
- const grid=$('phoneGrid'),key=gridSignature(arr);
- if(grid&&key!==lastGridKey){paintGrid(grid,arr);lastGridKey=key;}
+ /* 逐页展示：筛选/排序/视图变化时重置回第一页；收藏/对比变化不重置（否则点个收藏就跳回顶部） */
+ const paged=wantsPaged(arr.length);
+ const fkey=state.view+'|'+(($('sortSelect')?.value)||'')+'|'+arr.length+'|'+(arr[0]?arr[0].id:'')+'|'+(arr.length?arr[arr.length-1].id:'');
+ if(fkey!==lastFilterKey){state.visibleCount=paged?Math.min(PAGE_SIZE,arr.length):arr.length;lastFilterKey=fkey;}
+ else if(!paged){state.visibleCount=arr.length;}
+ const shown=paged?arr.slice(0,Math.min(state.visibleCount,arr.length)):arr;
+ const grid=$('phoneGrid'),key=gridSignature(arr,shown.length);
+ if(grid&&key!==lastGridKey){paintGrid(grid,shown);lastGridKey=key;}
+ updatePager(arr.length,shown.length,paged);
  syncBatchBar();  // 勾选可能因筛选变化而失效，渲染后同步一次
  const es=$('emptyState');
  if(es){
@@ -2665,6 +2731,24 @@ document.addEventListener('click',e=>{
   downloadText(`phone-selected-${stamp}-${arr.length}.csv`,buildCatalogCsv(arr));
   toast(`已导出勾选的 ${arr.length} 款（CSV）`);return;
  }
+});
+/* 逐页展示：加载更多 / 全部展开 / 改回逐页 */
+document.addEventListener('click',e=>{
+ const b=e.target.closest&&e.target.closest('[data-pager]');
+ if(!b)return;
+ const act=b.dataset.pager;
+ if(act==='more'){loadMore();return;}
+ state.pageMode=act==='all'?'all':'paged';
+ try{localStorage.setItem(PAGE_MODE_KEY,state.pageMode);}catch(err){}
+ state.visibleCount=0;lastFilterKey='';      // 强制按新模式重算可见数量
+ render();
+ /* 刚点的按钮会被隐藏（「全部展开」→ 隐藏、「改为逐页加载」→ 隐藏），
+    键盘用户按完回车焦点会掉到 body，这里把焦点交给当前可见的那个按钮 */
+ if(b.hidden){
+  const bar=$('pagerBar'),fb=bar&&bar.querySelector('button:not([hidden])');
+  if(fb&&document.activeElement!==fb)fb.focus();
+ }
+ toast(act==='all'?`已展开全部 ${(state.lastArr||[]).length} 款`:'已切换为逐页展示');
 });
 
 /* ================= 新增交互层（收藏 / 价格区间 / 密度 / 主题 / URL / 指针光斑） ================= */

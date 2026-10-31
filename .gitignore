@@ -23,3 +23,5 @@ _jst/all_meta.jsonl
 _jst/all_models_grouped.json
 _jst/target_*.json
 _jst/pc_explore.json
+_jst/_baseline_index.html
+_jst/pager*.png
