@@ -38,6 +38,10 @@ def main() -> None:
         if not path.is_file():
             raise SystemExit(f"FAIL: {name} missing")
         shutil.copy2(path, OUT / name)
+    # 详情数据按台拆分后放在 data/detail/ 下，运行时按需拉取，必须一起进产物
+    detail_src = ROOT / "data" / "detail"
+    if detail_src.is_dir():
+        shutil.copytree(detail_src, OUT / "data" / "detail")
     # Pages serves index.html at the project root; no API keys or raw audit files are copied.
     print(f"PASS: catalog={len(catalog)}; artifact files={sorted(p.name for p in OUT.iterdir())}")
 

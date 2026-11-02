@@ -1,8 +1,10 @@
-const fs=require('fs');const {JSDOM}=require('jsdom');
+const fs=require('fs');const installFetchShim = require('./fetch_shim');
+const {JSDOM}=require('jsdom');
 const html=fs.readFileSync('index.html','utf8');
 const errs=[];
 const dom=new JSDOM(html,{runScripts:'dangerously',url:'https://x.test/',pretendToBeVisual:true,
- beforeParse(w){w.matchMedia=w.matchMedia||(q=>({matches:false,media:q,addEventListener(){},removeEventListener(){}}));
+ beforeParse(w){
+    installFetchShim(w);w.matchMedia=w.matchMedia||(q=>({matches:false,media:q,addEventListener(){},removeEventListener(){}}));
  w.requestIdleCallback=cb=>setTimeout(()=>cb({timeRemaining:()=>8}),0);w.scrollTo=()=>{};
  w.HTMLElement.prototype.scrollIntoView=function(){};w.URL.revokeObjectURL=()=>{};
  w.addEventListener('error',e=>errs.push(String(e.message)));}});

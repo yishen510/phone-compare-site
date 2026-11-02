@@ -3,6 +3,7 @@
  * 用法：node _jst/smoke_func.js [file]
  */
 const fs = require('fs');
+const installFetchShim = require('./fetch_shim');
 const { JSDOM } = require('jsdom');
 
 const file = process.argv[2] || 'D:/Codex/_deploy_phone/index.html';
@@ -13,6 +14,7 @@ const dom = new JSDOM(html, {
   url: 'https://yishen510.github.io/phone-compare-site/',
   pretendToBeVisual: true,
   beforeParse(w) {
+    installFetchShim(w);
     w.matchMedia = w.matchMedia || (q => ({ matches: false, media: q, addEventListener() {}, removeEventListener() {}, addListener() {}, removeListener() {} }));
     w.requestIdleCallback = cb => setTimeout(() => cb({ timeRemaining: () => 8 }), 0);
     w.scrollTo = () => {};
