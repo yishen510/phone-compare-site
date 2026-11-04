@@ -38,7 +38,17 @@ def main() -> None:
         if not path.is_file():
             raise SystemExit(f"FAIL: {name} missing")
         shutil.copy2(path, OUT / name)
-    # 详情数据按台拆分后放在 data/detail/ 下，运行时按需拉取，必须一起进产物
+    # PWA：manifest / service worker / 图标，缺一个就不能"装到主屏"
+    for name in ("manifest.webmanifest", "sw.js"):
+        path = ROOT / name
+        if not path.is_file():
+            raise SystemExit(f"FAIL: {name} missing")
+        shutil.copy2(path, OUT / name)
+    icons_src = ROOT / "icons"
+    if icons_src.is_dir():
+        shutil.copytree(icons_src, OUT / "icons")
+
+    # 详情数据按台拆分成 data/detail/，运行时按需拉取，必须一起进产物
     detail_src = ROOT / "data" / "detail"
     if detail_src.is_dir():
         shutil.copytree(detail_src, OUT / "data" / "detail")

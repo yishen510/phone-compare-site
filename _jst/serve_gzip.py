@@ -46,7 +46,17 @@ class Handler(http.server.BaseHTTPRequestHandler):
         if self.headers.get("If-None-Match") == etag:
             self._send(304, [("ETag", etag), ("Cache-Control", "max-age=600")])
             return
-        ctype = "text/html; charset=utf-8" if path.endswith(".html") else "application/octet-stream"
+        # 类型必须给对：service worker 只接受 JS 类型，manifest 要 JSON 类型，
+        # 否则 Chrome 直接拒绝注册（线上 GitHub Pages 的类型是对的，只有本地会踩）
+        TYPES = {
+            ".html": "text/html; charset=utf-8",
+            ".js": "text/javascript; charset=utf-8",
+            ".webmanifest": "application/manifest+json",
+            ".png": "image/png",
+            ".json": "application/json",
+            ".svg": "image/svg+xml",
+        }
+        ctype = TYPES.get(os.path.splitext(path)[1].lower(), "application/octet-stream")
         self._send(200, [
             ("Content-Type", ctype),
             ("Content-Encoding", "gzip"),
