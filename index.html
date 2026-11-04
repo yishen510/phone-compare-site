@@ -78,9 +78,9 @@
   --ok:#46e39b;
   --warn:#ffc65c;
   --danger:#ef8b8b;
-  --radius:12px;
-  --radius-sm:9px;
-  --radius-xs:7px;
+  --radius:18px;
+  --radius-sm:12px;
+  --radius-xs:10px;
   --shadow:0 20px 48px -34px rgba(0,0,0,.75);
   --shadow-soft:0 6px 18px -14px rgba(0,0,0,.60);
   --font-sans:"Manrope","Noto Sans SC","HarmonyOS Sans SC","PingFang SC",system-ui,-apple-system,sans-serif;
@@ -93,12 +93,12 @@
 }
 html[data-theme="light"]{
   color-scheme:light;
-  --ink:#1a2a3e;
+  --ink:#141f33;
   --ink-strong:#0e1b2b;
   --muted:rgba(26,42,62,.72);
   --faint:rgba(26,42,62,.66);
-  --line:rgba(28,58,95,.11);
-  --line-strong:rgba(28,58,95,.19);
+  --line:rgba(28,64,140,.10);
+  --line-strong:rgba(28,64,140,.18);
   --glass:#ffffff;
   --glass-hi:#f8fbff;
   --glass-deep:#e0e9f5;
@@ -109,12 +109,12 @@ html[data-theme="light"]{
   --glass-edge:inset 0 1px 0 rgba(255,255,255,.85);
   --glass-sheen:linear-gradient(180deg,rgba(255,255,255,.78),rgba(255,255,255,0) 46%);
   --scrim:rgba(22,38,60,.28);
-  --bg:#eef4fb;
-  --bg-soft:#e6eef9;
-  --accent:#2a6cae;
-  --accent-2:#3b78b4;
-  --accent-deep:#1d4f80;
-  --accent-text:#1f5687;
+  --bg:#f7faff;
+  --bg-soft:#eef4ff;
+  --accent:#2563eb;
+  --accent-2:#3670dc;
+  --accent-deep:#1a4bc4;
+  --accent-text:#1d4ed8;
   --shadow:0 26px 60px -34px rgba(23,38,72,.42);
   --shadow-soft:0 12px 30px -20px rgba(23,38,72,.35);
 }
@@ -206,8 +206,8 @@ html[data-theme="light"] body::after{
 .topline{
   display:flex;justify-content:space-between;align-items:center;gap:12px;
   padding:9px clamp(18px,4vw,56px);
-  font-family:var(--font-mono);font-size:11px;letter-spacing:.16em;
-  color:var(--faint);text-transform:uppercase;
+  font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;
+  color:var(--faint);
   border-bottom:1px solid var(--line);
   background:var(--glass-2);
   backdrop-filter:blur(var(--glass-blur-2)) saturate(var(--glass-sat));
@@ -258,7 +258,7 @@ html[data-theme="light"] body::after{
 .site-header nav a:hover::after,.site-header nav a.nav-active::after{transform:scaleX(1)}
 .header-compare{
   display:inline-flex;align-items:center;gap:8px;margin-left:8px;
-  padding:9px 14px;border-radius:8px;font-size:12.5px;font-weight:600;
+  padding:9px 15px;border-radius:999px;font-size:12.5px;font-weight:600;
   color:var(--ink);border:1px solid var(--line-strong);background:transparent;
   transition:transform .22s var(--ease),background .22s var(--ease),border-color .22s var(--ease);
 }
@@ -281,22 +281,22 @@ html[data-theme="light"] body::after{
 /* ---------- ④ 按钮 ---------- */
 .button{
   display:inline-flex;align-items:center;gap:8px;justify-content:center;
-  padding:12px 20px;border-radius:8px;font-size:13.5px;font-weight:600;letter-spacing:.01em;
+  padding:13px 22px;border-radius:999px;font-size:14px;font-weight:650;letter-spacing:.01em;
   border:1px solid transparent;transition:transform .22s var(--ease),box-shadow .22s var(--ease),background .22s var(--ease),border-color .22s var(--ease);
   will-change:transform;
 }
 .button span{font-size:12px;opacity:.75}
 .button-dark{
-  color:#fff;background:var(--accent);
-  box-shadow:inset 0 1px 0 rgba(255,255,255,.16);
+  color:#fff;background:linear-gradient(135deg,var(--accent-2),var(--accent));
+  box-shadow:0 10px 22px -12px rgba(37,99,235,.75),inset 0 1px 0 rgba(255,255,255,.28);
 }
-.button-dark:hover{background:var(--accent-2);box-shadow:inset 0 1px 0 rgba(255,255,255,.22)}
+.button-dark:hover{transform:translateY(-1px);box-shadow:0 16px 30px -14px rgba(37,99,235,.85),inset 0 1px 0 rgba(255,255,255,.34)}
 .button-dark:active{transform:translateY(0) scale(.985)}
 .button-light{
   color:var(--ink);background:transparent;border-color:var(--line-strong);
 }
 .button-light:hover{background:var(--glass-hi);border-color:rgba(82,120,176,.55)}
-.button-small{padding:8px 14px;font-size:12.5px;border-radius:7px}
+.button-small{padding:9px 16px;font-size:12.5px;border-radius:999px}
 .text-button{
   padding:0;font-size:12.5px;color:var(--muted);border-radius:6px;
   border-bottom:1px solid transparent;transition:color .2s var(--ease),border-color .2s var(--ease);
@@ -313,10 +313,12 @@ main{display:block}
   max-width:1440px;margin:0 auto;
 }
 .hero-copy{max-width:640px}
+/* 原来是 11px 全大写等宽字 + .22em 字距，像规格书编号；
+   改成正文字体的短句 + 主色，读起来才是"在跟人说话" */
 .eyebrow{
   display:inline-flex;align-items:center;gap:9px;
-  font-family:var(--font-mono);font-size:11px;letter-spacing:.22em;text-transform:uppercase;
-  color:var(--accent-text);margin:0 0 18px;
+  font-size:13px;font-weight:600;letter-spacing:0;
+  color:var(--accent);margin:0 0 16px;
 }
 .eyebrow-line{display:inline-block;width:26px;height:1px;background:linear-gradient(90deg,transparent,var(--accent))}
 .hero h1{
@@ -330,7 +332,7 @@ main{display:block}
   filter:drop-shadow(0 10px 34px rgba(59,102,159,.20));
 }
 html[data-theme="light"] .hero h1 em{
-  background:linear-gradient(96deg,#0d1626 4%,#2f6fab 48%,#1d4f80 94%);
+  background:linear-gradient(96deg,#1e40af 2%,#2563eb 52%,#3b82f6 98%);
   -webkit-background-clip:text;background-clip:text;
 }
 .hero-desc{max-width:52ch;color:var(--muted);font-size:15px;line-height:1.85;margin:0 0 28px}
@@ -338,6 +340,10 @@ html[data-theme="light"] .hero h1 em{
 .hero-note{
   display:inline-flex;align-items:flex-start;gap:9px;font-size:11.5px;color:var(--faint);
   padding:9px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.03);
+  /* 手机上这行会换行，避免最后一行只剩一个"示。" */
+  text-wrap:pretty;
+  /* 手机上这行会换行，避免最后一行只剩一个"示。" */
+  text-wrap:pretty;
 }
 .tiny-mark{color:var(--accent-text);font-size:11px}
 
@@ -435,7 +441,7 @@ html[data-theme="light"] .phone-back{
 }
 .stat:hover{transform:translateY(-3px);border-color:rgba(59,102,159,.34)}
 .stat-label{display:block;font-family:var(--font-mono);font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin-bottom:10px}
-.stat strong{display:block;font-size:clamp(26px,3vw,36px);font-weight:700;letter-spacing:-.02em;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat strong{display:block;font-size:clamp(30px,3.4vw,42px);font-weight:800;letter-spacing:-.03em;line-height:1.05;color:var(--accent);font-variant-numeric:tabular-nums}
 .stat strong small{font-size:11px;font-weight:600;letter-spacing:.14em;color:var(--faint);margin-left:4px}
 .stat small{display:block;margin-top:8px;font-size:11.5px;color:var(--muted)}
 .stat-note strong{display:flex;align-items:center;gap:8px;font-size:16px;letter-spacing:-.01em}
@@ -504,8 +510,8 @@ html[data-theme="light"] .phone-back{
 .brand-option input:checked+span .chip-count{color:var(--accent-text)}
 .brand-option input{position:absolute;opacity:0;pointer-events:none}
 .brand-option span{
-  display:inline-flex;align-items:center;padding:5px 9px;border-radius:7px;
-  font-size:12px;color:var(--muted);border:1px solid var(--line);background:transparent;
+  display:inline-flex;align-items:center;padding:6px 12px;border-radius:999px;
+  font-size:12.5px;color:var(--muted);border:1px solid var(--line);background:#fff;
   transition:all .2s var(--ease);cursor:pointer;white-space:nowrap;
 }
 .brand-option span::before{content:"";width:0;height:0;border-radius:50%;background:var(--accent);transition:all .2s var(--ease);margin-right:0}
@@ -698,11 +704,11 @@ html[data-theme="light"] .rec-year select{background:#fff}
   position:relative;display:flex;flex-direction:column;
   padding:22px;border-radius:var(--radius);
   background:var(--glass-1);
-  border:1px solid var(--line);
+  border:1px solid rgba(37,99,235,.07);
   backdrop-filter:blur(var(--glass-blur-1)) saturate(var(--glass-sat));
   -webkit-backdrop-filter:blur(var(--glass-blur-1)) saturate(var(--glass-sat));
-  box-shadow:var(--glass-edge);
-  transition:transform .22s var(--ease),border-color .22s var(--ease);
+  box-shadow:0 12px 26px -20px rgba(23,58,120,.45);
+  transition:transform .22s var(--ease),border-color .22s var(--ease),box-shadow .22s var(--ease);
   overflow:hidden;isolation:isolate;
   content-visibility:auto;contain-intrinsic-size:auto 420px;
   animation:cardIn .45s var(--ease) both;animation-delay:calc(var(--card-index,0)*32ms);
@@ -717,8 +723,10 @@ html[data-theme="light"] .rec-year select{background:#fff}
 .phone-grid.is-compact .phone-card h3{font-size:15px}
 .card-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}
 .card-brand{
-  font-family:var(--font-mono);font-size:10px;letter-spacing:.16em;text-transform:uppercase;
-  color:var(--accent-text);
+  display:inline-flex;align-items:center;
+  padding:3px 9px;border-radius:999px;
+  font-family:var(--font-sans);font-size:11px;font-weight:650;letter-spacing:.02em;
+  color:var(--accent);background:var(--accent-soft);
 }
 .card-top-right{display:inline-flex;align-items:center;gap:8px}
 .card-year{font-family:var(--font-mono);font-size:10.5px;color:var(--faint);letter-spacing:.06em}
@@ -1231,7 +1239,7 @@ html[data-theme="light"] .toast-undo:hover{background:rgba(0,0,0,.06)}
 .hero-desc{font-size:15px;line-height:var(--lh-body)}
 .eyebrow{color:var(--accent-text);letter-spacing:.2em}
 .section-title,.section-head h2{font-size:var(--fs-h2);letter-spacing:-.03em}
-.phone-card:hover{border-color:var(--accent-line)}
+.phone-card:hover{transform:translateY(-3px);border-color:rgba(37,99,235,.25);box-shadow:0 22px 38px -24px rgba(23,58,120,.5)}
 .button{transition:transform .18s var(--ease),background .18s var(--ease),border-color .18s var(--ease),box-shadow .18s var(--ease),color .18s var(--ease)}
 .button:hover{transform:translateY(-1px)}
 .button:active{transform:translateY(0)}
@@ -1400,7 +1408,7 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
   </div>
 </noscript>
 <a class="skip-link" href="#catalog">跳到手机列表</a>
-  <div class="topline"><span>PHONE INDEX / 机选</span><span class="topline-right"><i class="live-dot"></i> MAINLAND CHINA <span class="top-sep">/</span> 2021—2026</span></div>
+  <div class="topline"><span>机选 · 中国大陆行货</span><span class="topline-right"><i class="live-dot"></i> 数据截至 2026</span></div>
   <header class="site-header">
     <a class="brandmark" href="#top" aria-label="机选首页"><span class="brand-icon">机</span><span>机选<span class="brand-sub">PHONE INDEX</span></span></a>
     <nav><a class="nav-active" href="#catalog">选手机</a><a href="#scoring">评分规则</a><a href="#sources">数据与价格</a></nav>
@@ -1411,7 +1419,7 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
   <main id="top">
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-line"></span> THE SMARTER WAY TO CHOOSE</p>
+        <p class="eyebrow"><span class="eyebrow-line"></span> 帮你挑到对的那一台</p>
         <h1>别只看参数。<br><em>选一台适合你的手机。</em></h1>
         <p class="hero-desc">聚焦中国大陆正式销售的主流旗舰系列。查规格、看存储组合、比上市代际，再跳转主流电商核对当下报价。</p>
         <div class="hero-actions"><a class="button button-dark" href="#catalog">开始挑选 <span>↓</span></a><button class="button button-light" id="heroRecommend">按需求帮我选 <span>✳</span></button></div>
@@ -1419,19 +1427,17 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
       </div>
       <div class="hero-art" aria-label="手机产品示意图">
         <div class="art-grid"></div>
-        <div class="art-caption art-caption-top">COMPARE / 01</div>
         <div class="phone phone-back phone-a"><div class="phone-camera camera-a"><i></i><i></i><i></i></div><span class="phone-logo">X</span></div>
         <div class="phone phone-back phone-b"><div class="camera-strip"><i></i><i></i><i></i></div></div>
         <div class="phone phone-front"><div class="screen-island"></div><div class="screen-glow"></div><div class="screen-word">PRO<br><b>VISION.</b></div><div class="screen-bottomline"></div></div>
         <div class="art-sticker">参数 × 场景<br><b>找到你的最优解</b></div>
-        <div class="art-caption art-caption-bottom">SPEC SHEET / 2026</div>
       </div>
     </section>
 
     <section class="stats-row" aria-label="数据库统计">
       <div class="stat"><span class="stat-label">机型样本</span><strong id="statModels">—</strong><small>大陆主流旗舰样本</small></div>
       <div class="stat"><span class="stat-label">品牌覆盖</span><strong id="statBrands">—</strong><small>大陆主流品牌</small></div>
-      <div class="stat"><span class="stat-label">时间范围</span><strong>6 <small>YEARS</small></strong><small>2021 — 2026</small></div>
+      <div class="stat"><span class="stat-label">时间范围</span><strong>6 <small>年</small></strong><small>2021 — 2026</small></div>
       <div class="stat stat-note"><span class="stat-label">数据库状态</span><strong><i class="status-dot"></i> 大陆版 v2</strong><small>官方规格链接 · 渠道价接口预留</small></div>
     </section>
 
