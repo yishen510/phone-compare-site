@@ -56,8 +56,19 @@ const chk = (name, cond, extra = '') => {
   await call('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
 
   await call('Page.navigate', { url: URL_ });
-  await ev(`new Promise(r=>{const t=setInterval(()=>{const g=document.getElementById('phoneGrid');
-    if(g&&g.dataset.painting==='0'&&g.querySelector('.phone-card')){clearInterval(t);r(1);}},40)})`);
+  /* 等卡片就绪，但必须设上限：线上网络慢时死等会把整个检查拖挂 */
+  await ev(`new Promise(r=>{const t0=performance.now();
+    const t=setInterval(()=>{const g=document.getElementById('phoneGrid');
+      const done=g&&g.dataset.painting==='0'&&g.querySelector('.phone-card');
+      if(done||performance.now()-t0>20000){clearInterval(t);r(1);}},40)})`);
+  const diag = JSON.parse(await ev(`JSON.stringify({
+    state: document.readyState,
+    url: location.href,
+    cards: document.querySelectorAll('#phoneGrid .phone-card').length,
+    hasSW: !!navigator.serviceWorker,
+    ctrl: !!navigator.serviceWorker.controller
+  })`) || '{}');
+  console.log('  [诊断]', JSON.stringify(diag));
 
   /* ready 在注册失败时永远不会 resolve，必须自己加超时，否则整个检查挂死 */
   const reg = await ev(`Promise.race([
