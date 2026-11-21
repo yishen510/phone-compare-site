@@ -40,7 +40,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 
  /* 2. 品牌缩写（这些查询现有搜索 0 命中，结果全部来自拼音） */
  names=await search('hw');
- chk('hw 命中华为 62 条', names.length===62, names.length+' 条');
+ chk('hw 命中华为（数量随目录变化）', names.length>60, names.length+' 条');
  chk('hw 结果全部是 Huawei', names.every(n=>byName.get(n)&&byName.get(n).brand==='Huawei'));
  names=await search('hwmate70');
  chk('hwmate70 命中 Mate 70 系列', names.length>0&&names.every(n=>/Mate 70/.test(n)), names.join(' / '));
@@ -59,7 +59,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 /* 5. 清空恢复全量（列表默认逐页展示，卡片只画第一页，全量条数看结果计数） */
 names=await search('');
 const total=Number(document.getElementById('resultCount').textContent);
-chk('清空后恢复 485', total===485, total+' 条');
+chk('清空后恢复全量', total===window.PHONE_DATA.length, total+' 条');
 chk('清空后卡片按页展示（不再一次性铺满）', names.length>0&&names.length<total, names.length+' / '+total+' 张');
 
  console.log(`\n${ok} 通过 / ${bad} 失败；脚本错误 ${errs.length}`);

@@ -44,7 +44,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
   chip.dispatchEvent(new window.MouseEvent('mousedown',{bubbles:true}));
   await sleep(420); await waitPaint();
   chk('点历史 chip 填入搜索框', q.value==='小米15', q.value);
-  chk('点历史 chip 后结果生效（非全量）', cardCount()>0&&cardCount()<485, cardCount()+' 张');
+  chk('点历史 chip 后结果生效（非全量）', cardCount()>0&&cardCount()<window.PHONE_DATA.length, cardCount()+' 张');
  }
 
  /* 3. 清空搜索历史 */
@@ -62,7 +62,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  brandInput.checked=true; brandInput.dispatchEvent(new window.Event('change',{bubbles:true}));
  await sleep(350); await waitPaint();
  const narrowed=cardCount();
- chk('勾选品牌后结果收窄', narrowed>0&&narrowed<485, narrowed+' 张');
+ chk('勾选品牌后结果收窄', narrowed>0&&narrowed<window.PHONE_DATA.length, narrowed+' 张');
 
  document.getElementById('savePreset').click();
  await sleep(150);
@@ -72,7 +72,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
  /* 5. 重置后应用方案 */
  document.getElementById('resetFilters').click();
  await sleep(350); await waitPaint();
- chk('重置后恢复全量 485', cardCount()===485, cardCount()+' 张');
+ chk('重置后恢复全量', cardCount()===window.PHONE_DATA.length, cardCount()+' 张');
  const pchip=document.querySelector('#presetList [data-preset]');
  chk('方案 chip 仍在（重置不清方案）', !!pchip);
  if(pchip){pchip.click();await sleep(420);await waitPaint();}

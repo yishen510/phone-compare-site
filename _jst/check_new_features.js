@@ -40,7 +40,7 @@ all=document.getElementById('selectAllRows');   /* 展开全部会重建表格�
 chk('展开后全选标签改为全部', /全选全部/.test(all.getAttribute('aria-label')||''), all.getAttribute('aria-label'));
 all.checked=true; all.dispatchEvent(new window.Event('change',{bubbles:true}));
 await sleep(120);
-chk('全选后批量栏显示 485', document.getElementById('batchCount').textContent==='485'&&!document.getElementById('batchBar').hidden, document.getElementById('batchCount').textContent);
+chk('全选后批量栏显示全量', document.getElementById('batchCount').textContent===String(window.PHONE_DATA.length)&&!document.getElementById('batchBar').hidden, document.getElementById('batchCount').textContent);
 
  /* 3. 批量对比超 4 款：提示且不加入 */
  document.querySelector('[data-batch="compare"]').click(); await sleep(120);
