@@ -2,7 +2,7 @@
   "generatedAt": "2026-11-21",
   "scope": "仅 Reno17 系列与 OSTA O1 Pro 的九字段取证，不修改主库",
   "policy": "AUDIT_POLICY.md：九字段全 verified_official_page_reviewed 才允许 verified/排名/推荐",
-  "conclusion": "补全后：Reno17 7/9、Reno17 Pro 8/9、O1 Pro 8/9 官方核验；全部仍不满足整机准入（缺官方发布稿确认的日期/首发价）",
+  "conclusion": "Reno17 双机 8/9 官方核验，O1 Pro 7/9；OPPO 价格虽为官网原文但只到\"起\"，SKU映射未核；三款均不满足整机准入",
   "models": {
     "oppo-reno17": {
       "name": "OPPO Reno17",
@@ -76,10 +76,11 @@
           "field": "官方首发起售价",
           "value": 3599,
           "valueAtAudit": 3599,
-          "status": "cross_checked_secondary_source",
-          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
-          "evidenceText": "北京商报：3599/3799/3999/4899 四档；国补后 3099 起（国补非首发价，不录入）",
-          "note": "四档来自权威媒体，需补 OPPO 官方商城页确认"
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/product-compare",
+          "evidenceText": "OPPO 官网机型对比页原文：上市官方价 ¥3599起",
+          "note": "2026-11-21 厂商官网定价原文；但页面只写\"XX元起\"未给该价位对应容量SKU，按 priceType 规则应记 official_starting_price 且容量待核",
+          "priceType": "official_starting_price"
         },
         {
           "field": "容量组合",
@@ -91,7 +92,7 @@
           "note": "2026-11-21 官方规格页取证"
         }
       ],
-      "verifiedCount": 7,
+      "verifiedCount": 8,
       "required": 9
     },
     "oppo-reno17-pro": {
@@ -166,10 +167,11 @@
           "field": "官方首发起售价",
           "value": 4199,
           "valueAtAudit": 4199,
-          "status": "cross_checked_secondary_source",
-          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
-          "evidenceText": "北京商报：4199/4599/4999 三档",
-          "note": "待官方商城确认"
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/product-compare",
+          "evidenceText": "OPPO 官网机型对比页原文：上市官方价 ¥4199起",
+          "note": "2026-11-21 厂商官网定价原文；但页面只写\"XX元起\"未给该价位对应容量SKU，按 priceType 规则应记 official_starting_price 且容量待核",
+          "priceType": "official_starting_price"
         },
         {
           "field": "容量组合",
@@ -181,7 +183,7 @@
           "note": "2026-11-21 官方规格页取证"
         }
       ],
-      "verifiedCount": 7,
+      "verifiedCount": 8,
       "required": 9
     },
     "osta-o1-pro": {
@@ -275,5 +277,5 @@
       "required": 9
     }
   },
-  "updatedAt": "2026-11-21 第二轮官方取证"
+  "updatedAt": "2026-11-21 第三轮：OPPO 官网上市官方价"
 }
