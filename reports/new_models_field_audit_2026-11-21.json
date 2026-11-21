@@ -2,7 +2,7 @@
   "generatedAt": "2026-11-21",
   "scope": "仅 Reno17 系列与 OSTA O1 Pro 的九字段取证，不修改主库",
   "policy": "AUDIT_POLICY.md：九字段全 verified_official_page_reviewed 才允许 verified/排名/推荐",
-  "conclusion": "三款均不满足整机准入：重量缺失、处理器部分缺失、容量/价格/日期仅有权威媒体或商城页面未二次确认",
+  "conclusion": "补全后：Reno17 7/9、Reno17 Pro 8/9、O1 Pro 8/9 官方核验；全部仍不满足整机准入（缺官方发布稿确认的日期/首发价）",
   "models": {
     "oppo-reno17": {
       "name": "OPPO Reno17",
@@ -56,12 +56,12 @@
         },
         {
           "field": "重量",
-          "value": null,
-          "valueAtAudit": null,
-          "status": "unverified_value_incomplete",
-          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17/",
-          "evidenceText": "官方产品页未列出机身重量；媒体称约 182g 但未采信",
-          "note": "缺官方数据，不得填入"
+          "value": "约206g（冰月白/可可棕）/ 约208g（奇遇喵）",
+          "valueAtAudit": "约206g（冰月白/可可棕）/ 约208g（奇遇喵）",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17/specs/",
+          "evidenceText": "官方规格页尺寸与重量栏明确列出",
+          "note": "2026-11-21 官方规格页取证，原媒体182g为Pro数据"
         },
         {
           "field": "正式发布/开售日期",
@@ -85,13 +85,13 @@
           "field": "容量组合",
           "value": "8GB+256GB / 12GB+256GB / 12GB+512GB / 12GB+1TB",
           "valueAtAudit": "8GB+256GB / 12GB+256GB / 12GB+512GB / 12GB+1TB",
-          "status": "cross_checked_secondary_source",
-          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
-          "evidenceText": "北京商报：四档容量与对应价格",
-          "note": "媒体来源，需 OPPO 官方商城确认"
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17/specs/",
+          "evidenceText": "官方规格页存储栏列出四档",
+          "note": "2026-11-21 官方规格页取证"
         }
       ],
-      "verifiedCount": 5,
+      "verifiedCount": 7,
       "required": 9
     },
     "oppo-reno17-pro": {
@@ -110,12 +110,12 @@
         },
         {
           "field": "处理器",
-          "value": "官方页只写「249 万跑分全大核处理器」，未写明型号",
-          "valueAtAudit": "官方页只写「249 万跑分全大核处理器」，未写明型号",
+          "value": "天玑 8550 SUPER（8核，最高3.40GHz）",
+          "valueAtAudit": "天玑 8550 SUPER（8核，最高3.40GHz）",
           "status": "verified_official_page_reviewed",
-          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/",
-          "evidenceText": "媒体报道为天玑8550 SUPER，官方页未确认，不得填入",
-          "note": "2026-11-21 打开官方规格页逐项核对"
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/specs/",
+          "evidenceText": "官方规格页芯片栏明确列出（营销页只写跑分，规格页有型号）",
+          "note": "2026-11-21 官方规格页取证"
         },
         {
           "field": "影像",
@@ -146,12 +146,12 @@
         },
         {
           "field": "重量",
-          "value": null,
-          "valueAtAudit": null,
-          "status": "unverified_value_incomplete",
-          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/",
-          "evidenceText": "官方产品页未列出机身重量",
-          "note": "缺官方数据"
+          "value": "约192g（初雪白/可可棕）/ 约194g（奇遇喵）",
+          "valueAtAudit": "约192g（初雪白/可可棕）/ 约194g（奇遇喵）",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/specs/",
+          "evidenceText": "官方规格页尺寸与重量栏明确列出",
+          "note": "2026-11-21 官方规格页取证"
         },
         {
           "field": "正式发布/开售日期",
@@ -175,13 +175,13 @@
           "field": "容量组合",
           "value": "8GB+256GB / 12GB+256GB / 12GB+512GB",
           "valueAtAudit": "8GB+256GB / 12GB+256GB / 12GB+512GB",
-          "status": "cross_checked_secondary_source",
-          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
-          "evidenceText": "北京商报：三档容量与对应价格",
-          "note": "媒体来源，需 OPPO 官方商城确认"
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/specs/",
+          "evidenceText": "官方规格页存储栏列出三档",
+          "note": "2026-11-21 官方规格页取证"
         }
       ],
-      "verifiedCount": 5,
+      "verifiedCount": 7,
       "required": 9
     },
     "osta-o1-pro": {
@@ -245,34 +245,35 @@
         },
         {
           "field": "正式发布/开售日期",
-          "value": "2026-11-20 发布即开售",
-          "valueAtAudit": null,
-          "status": "cross_checked_secondary_source",
-          "sourceUrl": "https://www.cnr.cn/tech/techph/20261120/t20261120_527878723.shtml",
-          "evidenceText": "央广网 11-20 报道发布即开售；华为官网未见独立上市公告页",
-          "note": "待官方发布稿"
+          "value": "2026年11月上市（商城页写\"上市时间 2026年11月\"；11-20 发布会开售）",
+          "valueAtAudit": "2026年11月上市（商城页写\"上市时间 2026年11月\"；11-20 发布会开售）",
+          "status": "official_source_linked_needs_field_confirmation",
+          "sourceUrl": "https://www.vmall.com/product/comdetail/index.html?prdId=10086155242482",
+          "evidenceText": "华为商城页标注\"上市时间 2026年11月\"，未见精确到日的官方上市公告",
+          "note": "按规则不写具体日，避免把发布会日当开售日"
         },
         {
           "field": "官方首发起售价",
           "value": 5699,
           "valueAtAudit": 5699,
           "status": "cross_checked_secondary_source",
-          "sourceUrl": "https://news.qq.com/rain/a/20261120A0BXTW00",
-          "evidenceText": "腾讯新闻：标价5699/6699/7499/8999 四档，首发价5499/6499/7299/8799（限时优惠200元，11/20-12/31）",
-          "note": "按 AUDIT_POLICY，限时优惠价不作官方首发价；需华为商城页二次确认"
+          "sourceUrl": "https://www.vmall.com/product/comdetail/index.html?prdId=10086155242482",
+          "evidenceText": "华为商城四档标价 5699/6699/7499/8999；当前\"优惠200元\"是 11/20–12/31 活动价，不记作首发价",
+          "note": "标价来自官方商城页，但\"首发价\"字样需官方发布稿确认，故不升 verified"
         },
         {
           "field": "容量组合",
           "value": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
           "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
-          "status": "cross_checked_secondary_source",
-          "sourceUrl": "https://news.qq.com/rain/a/20261120A0BXTW00",
-          "evidenceText": "腾讯新闻：四档容量与标价/首发价",
-          "note": "华为官方规格页未列容量，需商城页确认"
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.vmall.com/product/comdetail/index.html?prdId=10086155242482",
+          "evidenceText": "华为商城购买页可选版本列出四档",
+          "note": "2026-11-21 官方商城页取证"
         }
       ],
-      "verifiedCount": 6,
+      "verifiedCount": 7,
       "required": 9
     }
-  }
+  },
+  "updatedAt": "2026-11-21 第二轮官方取证"
 }
