@@ -208268,7 +208268,7 @@
   ],
   "chinaOfficial": true,
   "dataNote": "2026-11-21 新增待审核目录记录。硬件字段按厂商官方规格页录入；首发价/日期按来源口径标注，不得视为已核验。整机待审核，不进入正式排名或推荐。",
-  "announcementSource": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
+  "announcementSource": "https://www.news.cn/tech/20261117/e62bab127e554976ada13abfdc31dea2/c.html",
   "priceSource": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
   "priceSourceName": "北京商报（11月16日发布会报道，含四档价格）",
   "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
@@ -208351,12 +208351,12 @@
    },
    {
     "field": "正式发布/开售日期",
-    "value": "2026-11-16发布/11-20开售",
-    "valueAtAudit": "2026-11-16发布/11-20开售",
+    "value": "2026-11-16 发布 / 2026-11-20 开售",
+    "valueAtAudit": "2026-11-16 / 2026-11-20",
     "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
-    "evidenceText": "北京商报报道",
-    "note": "缺厂商发布稿，不升verified"
+    "sourceUrl": "https://www.news.cn/tech/20261117/e62bab127e554976ada13abfdc31dea2/c.html",
+    "evidenceText": "新华网 2026-11-17 原文：\"11月16日，OPPO举办OPPO Reno17系列暨移动智能生态新品发布会，正式推出\"；北京商报详列四档价格；多源与OPPO官网规格一致",
+    "note": "2026-11-21 多平台交叉核验：新华网/北京商报/深圳新闻网/腾讯新闻一致；按规则仍记 cross_checked_secondary_source，不冒充厂商官方页"
    },
    {
     "field": "官方首发起售价",
@@ -208451,7 +208451,7 @@
   ],
   "chinaOfficial": true,
   "dataNote": "2026-11-21 新增待审核目录记录。硬件字段按厂商官方规格页录入；首发价/日期按来源口径标注，不得视为已核验。整机待审核，不进入正式排名或推荐。",
-  "announcementSource": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
+  "announcementSource": "https://www.news.cn/tech/20261117/e62bab127e554976ada13abfdc31dea2/c.html",
   "priceSource": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
   "priceSourceName": "北京商报（11月16日发布会报道，含三档价格）",
   "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
@@ -208534,12 +208534,12 @@
    },
    {
     "field": "正式发布/开售日期",
-    "value": "2026-11-16发布/11-20开售",
-    "valueAtAudit": "2026-11-16发布/11-20开售",
+    "value": "2026-11-16 发布 / 2026-11-20 开售",
+    "valueAtAudit": "2026-11-16 / 2026-11-20",
     "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
-    "evidenceText": "北京商报报道",
-    "note": "缺厂商发布稿"
+    "sourceUrl": "https://www.news.cn/tech/20261117/e62bab127e554976ada13abfdc31dea2/c.html",
+    "evidenceText": "新华网 2026-11-17 原文：\"11月16日，OPPO举办OPPO Reno17系列暨移动智能生态新品发布会，正式推出\"；北京商报详列四档价格；多源与OPPO官网规格一致",
+    "note": "2026-11-21 多平台交叉核验：新华网/北京商报/深圳新闻网/腾讯新闻一致；按规则仍记 cross_checked_secondary_source，不冒充厂商官方页"
    },
    {
     "field": "官方首发起售价",
@@ -208635,9 +208635,9 @@
   ],
   "chinaOfficial": true,
   "dataNote": "2026-11-21 新增待审核目录记录。硬件字段按厂商官方规格页录入；首发价/日期按来源口径标注，不得视为已核验。整机待审核，不进入正式排名或推荐。",
-  "announcementSource": "https://www.vmall.com/product/comdetail/index.html?prdId=10086155242482",
-  "priceSource": "https://www.cnr.cn/tech/techph/20261120/t20261120_527878723.shtml",
-  "priceSourceName": "华为商城页（标价）+ 央广网（发布会当日报道）",
+  "announcementSource": "https://www.cnii.com.cn/rmydb/202611/t20261121_770725.html",
+  "priceSource": "https://www.stcn.com/article/detail/4346761.html",
+  "priceSourceName": "证券时报网（发布会报道）+ 华为商城标价",
   "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
   "scoreMethod": "heuristic_preliminary",
   "quoteTargetStorage": null,
@@ -208718,12 +208718,12 @@
    },
    {
     "field": "正式发布/开售日期",
-    "value": "2026年11月",
-    "valueAtAudit": "2026年11月",
+    "value": "2026-11-20 发布并开售",
+    "valueAtAudit": "2026-11-20",
     "status": "official_source_linked_needs_field_confirmation",
-    "sourceUrl": "https://www.vmall.com/product/comdetail/index.html?prdId=10086155242482",
-    "evidenceText": "商城页写\"上市时间2026年11月\"",
-    "note": "按规则不写具体日，避免把发布会日当开售日"
+    "sourceUrl": "https://www.cnii.com.cn/rmydb/202611/t20261121_770725.html",
+    "evidenceText": "中国工信新闻网 2026-11-21 原文：\"O1 Pro于2026年11月20日发布会正式开售\"；央广网11-20 18:01原文\"11月20日...发布并开启销售\"；证券时报同日佐证",
+    "note": "2026-11-21 多平台交叉核验：工信新闻网(工信部主管)/央广网/证券时报/科技日报一致；按规则仍记 cross_checked_secondary_source"
    },
    {
     "field": "官方首发起售价",
@@ -208731,8 +208731,8 @@
     "valueAtAudit": 5699,
     "status": "cross_checked_secondary_source",
     "sourceUrl": "https://www.vmall.com/product/comdetail/index.html?prdId=10086155242482",
-    "evidenceText": "商城四档标价；限时优惠200元不记首发价",
-    "note": "缺\"首发价\"字样官方发布稿"
+    "evidenceText": "华为商城四档标价5699/6699/7499/8999；证券时报原文\"售价5699元起，限时优惠5499元起\"；优惠200元不记作首发价",
+    "note": "2026-11-21 增补证券时报权威来源；按规则仍记 cross_checked_secondary_source"
    }
   ],
   "specs": [
