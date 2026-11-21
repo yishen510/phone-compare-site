@@ -1,0 +1,278 @@
+{
+  "generatedAt": "2026-11-21",
+  "scope": "仅 Reno17 系列与 OSTA O1 Pro 的九字段取证，不修改主库",
+  "policy": "AUDIT_POLICY.md：九字段全 verified_official_page_reviewed 才允许 verified/排名/推荐",
+  "conclusion": "三款均不满足整机准入：重量缺失、处理器部分缺失、容量/价格/日期仅有权威媒体或商城页面未二次确认",
+  "models": {
+    "oppo-reno17": {
+      "name": "OPPO Reno17",
+      "market": "中国大陆正式销售",
+      "source": "https://www.oppo.com/cn/smartphones/series-reno/reno17/",
+      "fieldAudit": [
+        {
+          "field": "屏幕",
+          "value": "6.56 英寸 1.5K 120Hz（局部峰值 6000nits）",
+          "valueAtAudit": "6.56 英寸 1.5K 120Hz（局部峰值 6000nits）",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17/",
+          "evidenceText": "官方规格页原文确认：屏幕=6.56 英寸 1.5K 120Hz（局部峰值 6000nits）",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "处理器",
+          "value": "高通第四代骁龙 7",
+          "valueAtAudit": "高通第四代骁龙 7",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17/",
+          "evidenceText": "官方规格页原文确认：处理器=高通第四代骁龙 7",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "影像",
+          "value": "后置四摄：5000万主摄(f/1.8,OIS)+5000万超广角(116°)+5000万潜望长焦(3.5x,OIS)+前置5000万超广角",
+          "valueAtAudit": "后置四摄：5000万主摄(f/1.8,OIS)+5000万超广角(116°)+5000万潜望长焦(3.5x,OIS)+前置5000万超广角",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17/",
+          "evidenceText": "官方规格页原文确认：影像=后置四摄：5000万主摄(f/1.8,OIS)+5000万超广角(116°)+5000万潜望长焦(3.5x,OIS)+前置5000万超广角",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "电池",
+          "value": "8000mAh 典型 / 7765mAh 额定",
+          "valueAtAudit": "8000mAh 典型 / 7765mAh 额定",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17/",
+          "evidenceText": "官方脚注20明确给出典型与额定双值",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "充电",
+          "value": "80W 有线（官方页未列出无线充电）",
+          "valueAtAudit": "80W 有线（官方页未列出无线充电）",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17/",
+          "evidenceText": "官方规格页原文确认：充电=80W 有线（官方页未列出无线充电）",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "重量",
+          "value": null,
+          "valueAtAudit": null,
+          "status": "unverified_value_incomplete",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17/",
+          "evidenceText": "官方产品页未列出机身重量；媒体称约 182g 但未采信",
+          "note": "缺官方数据，不得填入"
+        },
+        {
+          "field": "正式发布/开售日期",
+          "value": "2026-11-16 发布 / 2026-11-20 开售",
+          "valueAtAudit": "2026-11-16 / 2026-11-20",
+          "status": "cross_checked_secondary_source",
+          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
+          "evidenceText": "北京商报 2026-11-17 报道发布会时间与开售日；华为/OPPO官方未见独立上市公告页",
+          "note": "需补厂商官方发布稿链接才能升为 verified"
+        },
+        {
+          "field": "官方首发起售价",
+          "value": 3599,
+          "valueAtAudit": 3599,
+          "status": "cross_checked_secondary_source",
+          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
+          "evidenceText": "北京商报：3599/3799/3999/4899 四档；国补后 3099 起（国补非首发价，不录入）",
+          "note": "四档来自权威媒体，需补 OPPO 官方商城页确认"
+        },
+        {
+          "field": "容量组合",
+          "value": "8GB+256GB / 12GB+256GB / 12GB+512GB / 12GB+1TB",
+          "valueAtAudit": "8GB+256GB / 12GB+256GB / 12GB+512GB / 12GB+1TB",
+          "status": "cross_checked_secondary_source",
+          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
+          "evidenceText": "北京商报：四档容量与对应价格",
+          "note": "媒体来源，需 OPPO 官方商城确认"
+        }
+      ],
+      "verifiedCount": 5,
+      "required": 9
+    },
+    "oppo-reno17-pro": {
+      "name": "OPPO Reno17 Pro",
+      "market": "中国大陆正式销售",
+      "source": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/",
+      "fieldAudit": [
+        {
+          "field": "屏幕",
+          "value": "6.32 英寸 1.5K 120Hz（局部峰值 3600nits，3840Hz 调光）",
+          "valueAtAudit": "6.32 英寸 1.5K 120Hz（局部峰值 3600nits，3840Hz 调光）",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/",
+          "evidenceText": "官方规格页原文确认：屏幕=6.32 英寸 1.5K 120Hz（局部峰值 3600nits，3840Hz 调光）",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "处理器",
+          "value": "官方页只写「249 万跑分全大核处理器」，未写明型号",
+          "valueAtAudit": "官方页只写「249 万跑分全大核处理器」，未写明型号",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/",
+          "evidenceText": "媒体报道为天玑8550 SUPER，官方页未确认，不得填入",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "影像",
+          "value": "2亿主摄(1/1.56,f/1.8,OIS)+5000万超广角(116°)+5000万潜望长焦(3.5x,OIS)+前置5000万",
+          "valueAtAudit": "2亿主摄(1/1.56,f/1.8,OIS)+5000万超广角(116°)+5000万潜望长焦(3.5x,OIS)+前置5000万",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/",
+          "evidenceText": "官方规格页原文确认：影像=2亿主摄(1/1.56,f/1.8,OIS)+5000万超广角(116°)+5000万潜望长焦(3.5x,OIS)+前置5000万",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "电池",
+          "value": "7250mAh 典型 / 7020mAh 额定",
+          "valueAtAudit": "7250mAh 典型 / 7020mAh 额定",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/",
+          "evidenceText": "官方脚注21；媒体写 7200mAh 为误",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "充电",
+          "value": "80W 有线（官方页未列出无线充电）",
+          "valueAtAudit": "80W 有线（官方页未列出无线充电）",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/",
+          "evidenceText": "官方规格页原文确认：充电=80W 有线（官方页未列出无线充电）",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "重量",
+          "value": null,
+          "valueAtAudit": null,
+          "status": "unverified_value_incomplete",
+          "sourceUrl": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/",
+          "evidenceText": "官方产品页未列出机身重量",
+          "note": "缺官方数据"
+        },
+        {
+          "field": "正式发布/开售日期",
+          "value": "2026-11-16 发布 / 2026-11-20 开售",
+          "valueAtAudit": null,
+          "status": "cross_checked_secondary_source",
+          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
+          "evidenceText": "同 Reno17",
+          "note": "待官方发布稿"
+        },
+        {
+          "field": "官方首发起售价",
+          "value": 4199,
+          "valueAtAudit": 4199,
+          "status": "cross_checked_secondary_source",
+          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
+          "evidenceText": "北京商报：4199/4599/4999 三档",
+          "note": "待官方商城确认"
+        },
+        {
+          "field": "容量组合",
+          "value": "8GB+256GB / 12GB+256GB / 12GB+512GB",
+          "valueAtAudit": "8GB+256GB / 12GB+256GB / 12GB+512GB",
+          "status": "cross_checked_secondary_source",
+          "sourceUrl": "https://www.bbtnews.com.cn/2026/1117/611479.shtml",
+          "evidenceText": "北京商报：三档容量与对应价格",
+          "note": "媒体来源，需 OPPO 官方商城确认"
+        }
+      ],
+      "verifiedCount": 5,
+      "required": 9
+    },
+    "osta-o1-pro": {
+      "name": "华为 OSTA 星芒 O1 Pro",
+      "market": "中国大陆正式销售",
+      "source": "https://consumer.huawei.com/cn/osta/phones/o1-pro/specs/",
+      "fieldAudit": [
+        {
+          "field": "屏幕",
+          "value": "6.39 英寸 OLED FHD+ 2232×1320 120Hz（16:9.5 阔直板，昆仑玻璃）",
+          "valueAtAudit": "6.39 英寸 OLED FHD+ 2232×1320 120Hz（16:9.5 阔直板，昆仑玻璃）",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://consumer.huawei.com/cn/osta/phones/o1-pro/specs/",
+          "evidenceText": "官方规格页原文确认：屏幕=6.39 英寸 OLED FHD+ 2232×1320 120Hz（16:9.5 阔直板，昆仑玻璃）",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "处理器",
+          "value": "麒麟9030S",
+          "valueAtAudit": "麒麟9030S",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://consumer.huawei.com/cn/osta/phones/o1-pro/specs/",
+          "evidenceText": "官方规格页原文确认：处理器=麒麟9030S",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "影像",
+          "value": "后置2亿超聚光(F1.8,OIS)+5000万潜望长焦(F2.6,OIS,3.7x)+第二代红枫原色；前置5000万(F2.4)",
+          "valueAtAudit": "后置2亿超聚光(F1.8,OIS)+5000万潜望长焦(F2.6,OIS,3.7x)+第二代红枫原色；前置5000万(F2.4)",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://consumer.huawei.com/cn/osta/phones/o1-pro/specs/",
+          "evidenceText": "官方规格页原文确认：影像=后置2亿超聚光(F1.8,OIS)+5000万潜望长焦(F2.6,OIS,3.7x)+第二代红枫原色；前置5000万(F2.4)",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "电池",
+          "value": "7000mAh 典型 / 6815mAh 额定",
+          "valueAtAudit": "7000mAh 典型 / 6815mAh 额定",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://consumer.huawei.com/cn/osta/phones/o1-pro/specs/",
+          "evidenceText": "官方规格页明确给出双值",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "充电",
+          "value": "66W 有线 / 50W 无线",
+          "valueAtAudit": "66W 有线 / 50W 无线",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://consumer.huawei.com/cn/osta/phones/o1-pro/specs/",
+          "evidenceText": "官方规格页原文确认：充电=66W 有线 / 50W 无线",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "重量",
+          "value": "约 200g（含电池）；144.1×87.0×6.68mm",
+          "valueAtAudit": "约 200g（含电池）；144.1×87.0×6.68mm",
+          "status": "verified_official_page_reviewed",
+          "sourceUrl": "https://consumer.huawei.com/cn/osta/phones/o1-pro/specs/",
+          "evidenceText": "官方规格页原文确认：重量=约 200g（含电池）；144.1×87.0×6.68mm",
+          "note": "2026-11-21 打开官方规格页逐项核对"
+        },
+        {
+          "field": "正式发布/开售日期",
+          "value": "2026-11-20 发布即开售",
+          "valueAtAudit": null,
+          "status": "cross_checked_secondary_source",
+          "sourceUrl": "https://www.cnr.cn/tech/techph/20261120/t20261120_527878723.shtml",
+          "evidenceText": "央广网 11-20 报道发布即开售；华为官网未见独立上市公告页",
+          "note": "待官方发布稿"
+        },
+        {
+          "field": "官方首发起售价",
+          "value": 5699,
+          "valueAtAudit": 5699,
+          "status": "cross_checked_secondary_source",
+          "sourceUrl": "https://news.qq.com/rain/a/20261120A0BXTW00",
+          "evidenceText": "腾讯新闻：标价5699/6699/7499/8999 四档，首发价5499/6499/7299/8799（限时优惠200元，11/20-12/31）",
+          "note": "按 AUDIT_POLICY，限时优惠价不作官方首发价；需华为商城页二次确认"
+        },
+        {
+          "field": "容量组合",
+          "value": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+          "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+          "status": "cross_checked_secondary_source",
+          "sourceUrl": "https://news.qq.com/rain/a/20261120A0BXTW00",
+          "evidenceText": "腾讯新闻：四档容量与标价/首发价",
+          "note": "华为官方规格页未列容量，需商城页确认"
+        }
+      ],
+      "verifiedCount": 6,
+      "required": 9
+    }
+  }
+}
