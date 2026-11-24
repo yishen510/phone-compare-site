@@ -1,0 +1,273 @@
+{
+ "generatedAt": "2026-11-24",
+ "scope": "荣耀700 / 700 Pro / 700S 九字段取证（官方规格页 + 官方发布稿）",
+ "policy": "AUDIT_POLICY.md：九字段全 verified_official_page_reviewed 才允许 verified/排名/推荐",
+ "conclusion": "三款均为 8/9 官方核验：屏幕/处理器/影像/电池/充电/重量/容量组合/发布日期已核，官方首发价未公布（只有国补后到手价），故一律 pending_review、双重资格 false",
+ "models": {
+  "honor-700": {
+   "name": "荣耀700",
+   "market": "中国大陆正式销售",
+   "source": "https://www.honor.com/cn/phones/honor-700/spec/",
+   "fieldAudit": [
+    {
+     "field": "屏幕",
+     "value": "6.57 英寸 AMOLED，FHD+ 2728×1264，峰值 8000nits",
+     "valueAtAudit": "6.57 英寸 AMOLED，FHD+ 2728×1264，峰值 8000nits",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700/spec/",
+     "evidenceText": "官方规格页「屏幕」分组：屏幕尺寸 6.57英寸、分辨率 FHD+ 2728x1264、类型 AMOLED、峰值亮度 8000nits",
+     "note": "官方规格页未列出刷新率，故只写分辨率与亮度"
+    },
+    {
+     "field": "处理器",
+     "value": "第四代骁龙 8s 移动平台（八核，最高 3.2GHz，Adreno 825）",
+     "valueAtAudit": "第四代骁龙 8s 移动平台（八核，最高 3.2GHz，Adreno 825）",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700/spec/",
+     "evidenceText": "官方规格页「处理器-CPU型号」原文：第四代骁龙 8s 移动平台（八核，最高 3.2GHz，Adreno 825）",
+     "note": ""
+    },
+    {
+     "field": "影像",
+     "value": "后置 2 亿像素广角(f/1.9,OIS)+5000 万潜望长焦(f/2.85,OIS,3.5x)+1200 万超广角微距(f/2.2)；前置 5000 万(f/2.0)",
+     "valueAtAudit": "后置 2 亿像素广角(f/1.9,OIS)+5000 万潜望长焦(f/2.85,OIS,3.5x)+1200 万超广角微距(f/2.2)；前置 5000 万(f/2.0)",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700/spec/",
+     "evidenceText": "官方规格页「后置摄像头/前置摄像头」原文逐项抄录；3.5 倍光学变焦见官方发布稿",
+     "note": ""
+    },
+    {
+     "field": "电池",
+     "value": "9000mAh（典型）/ 8760mAh（额定）",
+     "valueAtAudit": "9000mAh（典型）/ 8760mAh（额定）",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700/spec/",
+     "evidenceText": "官方规格页电池容量 9000mAh（典型值），备注原文「电池额定容量为 8760mAh」",
+     "note": ""
+    },
+    {
+     "field": "充电",
+     "value": "80W 有线超级快充",
+     "valueAtAudit": "80W 有线超级快充",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700/spec/",
+     "evidenceText": "官方规格页「有线快充」原文 80W 荣耀超级快充；Pro 另有「无线充电」项备注最大 50W",
+     "note": ""
+    },
+    {
+     "field": "重量",
+     "value": "约 211g",
+     "valueAtAudit": "约 211g",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700/spec/",
+     "evidenceText": "官方规格页「尺寸与重量-重量」原文：约 211g",
+     "note": ""
+    },
+    {
+     "field": "容量组合",
+     "value": "12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB",
+     "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700/spec/",
+     "evidenceText": "官方规格页「存储」分组原文：12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB",
+     "note": ""
+    },
+    {
+     "field": "正式发布/开售日期",
+     "value": "2026-11-23 发布 / 2026-11-27 首销",
+     "valueAtAudit": "2026-11-23 发布 / 2026-11-27 首销",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/news/honor-700-launch/",
+     "evidenceText": "荣耀官网发布稿标注「2026年11月23日，荣耀在武汉举办新品发布会」，并写明首销期为 11月27日至12月31日",
+     "note": ""
+    },
+    {
+     "field": "官方首发起售价",
+     "value": null,
+     "valueAtAudit": null,
+     "status": "unverified_missing_or_insufficient_official_evidence",
+     "sourceUrl": "https://www.honor.com/cn/news/honor-700-launch/",
+     "evidenceText": "官方发布稿只给「首销国补到手价」：700 Pro 4099 元起、700 3199 元起、700S 2899 元起；未公布建议零售价。按 AUDIT_POLICY 国补/促销价不得写作官方首发价，故首发价留空待核",
+     "note": "官网商城当前为订金预售，价格显示「暂无报价」"
+    }
+   ]
+  },
+  "honor-700-pro": {
+   "name": "荣耀700 Pro",
+   "market": "中国大陆正式销售",
+   "source": "https://www.honor.com/cn/phones/honor-700-pro/spec/",
+   "fieldAudit": [
+    {
+     "field": "屏幕",
+     "value": "6.57 英寸 AMOLED，FHD+ 2728×1264，峰值 8000nits",
+     "valueAtAudit": "6.57 英寸 AMOLED，FHD+ 2728×1264，峰值 8000nits",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700-pro/spec/",
+     "evidenceText": "官方规格页「屏幕」分组：屏幕尺寸 6.57英寸、分辨率 FHD+ 2728x1264、类型 AMOLED、峰值亮度 8000nits",
+     "note": "官方规格页未列出刷新率，故只写分辨率与亮度"
+    },
+    {
+     "field": "处理器",
+     "value": "第五代骁龙 8 移动平台（八核，最高 3.8GHz，Adreno 829）",
+     "valueAtAudit": "第五代骁龙 8 移动平台（八核，最高 3.8GHz，Adreno 829）",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700-pro/spec/",
+     "evidenceText": "官方规格页「处理器-CPU型号」原文：第五代骁龙 8 移动平台（八核，最高 3.8GHz，Adreno 829）",
+     "note": ""
+    },
+    {
+     "field": "影像",
+     "value": "后置 2 亿像素广角(f/1.9,OIS)+5000 万潜望长焦(f/2.85,OIS,3.5x)+1200 万超广角微距(f/2.2)；前置 5000 万(f/2.0)",
+     "valueAtAudit": "后置 2 亿像素广角(f/1.9,OIS)+5000 万潜望长焦(f/2.85,OIS,3.5x)+1200 万超广角微距(f/2.2)；前置 5000 万(f/2.0)",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700-pro/spec/",
+     "evidenceText": "官方规格页「后置摄像头/前置摄像头」原文逐项抄录；3.5 倍光学变焦见官方发布稿",
+     "note": ""
+    },
+    {
+     "field": "电池",
+     "value": "9000mAh（典型）/ 8760mAh（额定）",
+     "valueAtAudit": "9000mAh（典型）/ 8760mAh（额定）",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700-pro/spec/",
+     "evidenceText": "官方规格页电池容量 9000mAh（典型值），备注原文「电池额定容量为 8760mAh」",
+     "note": ""
+    },
+    {
+     "field": "充电",
+     "value": "80W 有线超级快充 / 50W 无线超级快充",
+     "valueAtAudit": "80W 有线超级快充 / 50W 无线超级快充",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700-pro/spec/",
+     "evidenceText": "官方规格页「有线快充」原文 80W 荣耀超级快充；Pro 另有「无线充电」项备注最大 50W",
+     "note": ""
+    },
+    {
+     "field": "重量",
+     "value": "约 213g",
+     "valueAtAudit": "约 213g",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700-pro/spec/",
+     "evidenceText": "官方规格页「尺寸与重量-重量」原文：约 213g",
+     "note": ""
+    },
+    {
+     "field": "容量组合",
+     "value": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+     "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700-pro/spec/",
+     "evidenceText": "官方规格页「存储」分组原文：12GB+256GB / 12GB+512GB / 16GB+512GB",
+     "note": ""
+    },
+    {
+     "field": "正式发布/开售日期",
+     "value": "2026-11-23 发布 / 2026-11-27 首销",
+     "valueAtAudit": "2026-11-23 发布 / 2026-11-27 首销",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/news/honor-700-launch/",
+     "evidenceText": "荣耀官网发布稿标注「2026年11月23日，荣耀在武汉举办新品发布会」，并写明首销期为 11月27日至12月31日",
+     "note": ""
+    },
+    {
+     "field": "官方首发起售价",
+     "value": null,
+     "valueAtAudit": null,
+     "status": "unverified_missing_or_insufficient_official_evidence",
+     "sourceUrl": "https://www.honor.com/cn/news/honor-700-launch/",
+     "evidenceText": "官方发布稿只给「首销国补到手价」：700 Pro 4099 元起、700 3199 元起、700S 2899 元起；未公布建议零售价。按 AUDIT_POLICY 国补/促销价不得写作官方首发价，故首发价留空待核",
+     "note": "官网商城当前为订金预售，价格显示「暂无报价」"
+    }
+   ]
+  },
+  "honor-700s": {
+   "name": "荣耀700S",
+   "market": "中国大陆正式销售",
+   "source": "https://www.honor.com/cn/phones/honor-700s/spec/",
+   "fieldAudit": [
+    {
+     "field": "屏幕",
+     "value": "6.57 英寸 AMOLED，FHD+ 2728×1264，峰值 8000nits",
+     "valueAtAudit": "6.57 英寸 AMOLED，FHD+ 2728×1264，峰值 8000nits",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700s/spec/",
+     "evidenceText": "官方规格页「屏幕」分组：屏幕尺寸 6.57英寸、分辨率 FHD+ 2728x1264、类型 AMOLED、峰值亮度 8000nits",
+     "note": "官方规格页未列出刷新率，故只写分辨率与亮度"
+    },
+    {
+     "field": "处理器",
+     "value": "第四代骁龙 7 移动平台（八核，最高 2.8GHz，Adreno 722）",
+     "valueAtAudit": "第四代骁龙 7 移动平台（八核，最高 2.8GHz，Adreno 722）",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700s/spec/",
+     "evidenceText": "官方规格页「处理器-CPU型号」原文：第四代骁龙 7 移动平台（八核，最高 2.8GHz，Adreno 722）",
+     "note": ""
+    },
+    {
+     "field": "影像",
+     "value": "后置 2 亿像素广角(f/1.9,OIS)+1200 万超广角微距(f/2.2)；前置 5000 万(f/2.0)；后置双摄，无独立远摄模组",
+     "valueAtAudit": "后置 2 亿像素广角(f/1.9,OIS)+1200 万超广角微距(f/2.2)；前置 5000 万(f/2.0)；后置双摄，无独立远摄模组",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700s/spec/",
+     "evidenceText": "官方规格页「后置摄像头/前置摄像头」原文逐项抄录；3.5 倍光学变焦见官方发布稿",
+     "note": ""
+    },
+    {
+     "field": "电池",
+     "value": "9000mAh（典型）/ 8760mAh（额定）",
+     "valueAtAudit": "9000mAh（典型）/ 8760mAh（额定）",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700s/spec/",
+     "evidenceText": "官方规格页电池容量 9000mAh（典型值），备注原文「电池额定容量为 8760mAh」",
+     "note": ""
+    },
+    {
+     "field": "充电",
+     "value": "80W 有线超级快充",
+     "valueAtAudit": "80W 有线超级快充",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700s/spec/",
+     "evidenceText": "官方规格页「有线快充」原文 80W 荣耀超级快充；Pro 另有「无线充电」项备注最大 50W",
+     "note": ""
+    },
+    {
+     "field": "重量",
+     "value": "约 208g",
+     "valueAtAudit": "约 208g",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700s/spec/",
+     "evidenceText": "官方规格页「尺寸与重量-重量」原文：约 208g",
+     "note": ""
+    },
+    {
+     "field": "容量组合",
+     "value": "12GB+256GB / 12GB+512GB",
+     "valueAtAudit": "12GB+256GB / 12GB+512GB",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/phones/honor-700s/spec/",
+     "evidenceText": "官方规格页「存储」分组原文：12GB+256GB / 12GB+512GB",
+     "note": ""
+    },
+    {
+     "field": "正式发布/开售日期",
+     "value": "2026-11-23 发布 / 2026-11-27 首销",
+     "valueAtAudit": "2026-11-23 发布 / 2026-11-27 首销",
+     "status": "verified_official_page_reviewed",
+     "sourceUrl": "https://www.honor.com/cn/news/honor-700-launch/",
+     "evidenceText": "荣耀官网发布稿标注「2026年11月23日，荣耀在武汉举办新品发布会」，并写明首销期为 11月27日至12月31日",
+     "note": ""
+    },
+    {
+     "field": "官方首发起售价",
+     "value": null,
+     "valueAtAudit": null,
+     "status": "unverified_missing_or_insufficient_official_evidence",
+     "sourceUrl": "https://www.honor.com/cn/news/honor-700-launch/",
+     "evidenceText": "官方发布稿只给「首销国补到手价」：700 Pro 4099 元起、700 3199 元起、700S 2899 元起；未公布建议零售价。按 AUDIT_POLICY 国补/促销价不得写作官方首发价，故首发价留空待核",
+     "note": "官网商城当前为订金预售，价格显示「暂无报价」"
+    }
+   ]
+  }
+ },
+ "updatedAt": "2026-11-24 首轮：荣耀官网规格页与发布稿"
+}
