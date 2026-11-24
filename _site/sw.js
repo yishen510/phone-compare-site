@@ -12,7 +12,7 @@
  *
  * 版本号变了才会重建 shell 缓存；改代码时请一起改 VERSION。
  */
-const VERSION = 'v1';
+const VERSION = 'v2';
 const SHELL = `shell-${VERSION}`;
 const RUNTIME = `runtime-${VERSION}`;
 
