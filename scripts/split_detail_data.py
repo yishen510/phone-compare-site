@@ -58,6 +58,8 @@ INLINE_DROP = {
     "sourceAudit",
     "officialSpecSource",
     "livePriceUrl",
+    # 报价层已关闭：这条提示在 493 条记录里逐字重复，页面不再渲染占位卡片，留着纯属体积
+    "livePriceNote",
     "launchPromoPrice",
     "launchPromoPriceText",
     "launchPromoPriceSource",

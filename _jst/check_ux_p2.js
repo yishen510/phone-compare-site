@@ -32,7 +32,9 @@ function makeDom(opts = {}) {
       w.scrollTo = () => {};
       w.HTMLElement.prototype.scrollIntoView = function () {};
       /* 详情请求可控：failDetail=true 时一律失败，用来模拟弱网 */
+      w.__apiHits = [];
       w.fetch = function (url) {
+        if (String(url).includes('/api/')) w.__apiHits.push(String(url));
         const m = String(url).match(/data\/detail\/([^/?#]+)\.json/);
         if (!m) return Promise.resolve({ ok: false, status: 404, json: () => Promise.resolve(null) });
         if (w.__failDetail) return Promise.reject(new Error('offline'));
@@ -202,6 +204,32 @@ function makeDom(opts = {}) {
     const msrpLabel = await labelOf('Mate X8', 'hua-matex8');
     ok(/官方首发价/.test(msrpLabel) && !/容量待核/.test(msrpLabel),
       'official_launch_msrp 显示「官方首发价」', msrpLabel);
+    dom.window.close();
+  }
+
+  /* ================= ⑦ 报价层收缩 ================= */
+  console.log('\n⑦ 报价层收缩');
+  {
+    const dom = makeDom();
+    await sleep(2400);
+    const { window } = dom, doc = window.document;
+
+    const btn = doc.getElementById('quoteQueryBtn');
+    ok(btn && btn.style.display === 'none', '批量查询报价按钮已隐藏', btn ? btn.style.display : '无节点');
+    ok(!doc.getElementById('phoneGrid').textContent.includes('未查询'), '卡片不再出现「未查询」占位');
+
+    const st = doc.getElementById('priceApiStatus');
+    const stText = st ? st.textContent.replace(/\s+/g, '') : '';
+    ok(/当前不提供渠道报价/.test(stText), '状态块改为实话实说', stText.slice(0, 24));
+    ok(!/等待服务器响应|连不上服务/.test(stText), '状态块不再显示「等待/连不上」');
+
+    await sleep(200);
+    ok(window.__apiHits.length === 0, '首屏后不再探测报价后端', `${window.__apiHits.length} 次请求`);
+
+    /* 透明度区不能还写着「会显示人工快照」——库里唯一的快照缺 SKU 和来源，达不到展示标准 */
+    const src = doc.getElementById('sources');
+    const srcText = src ? src.textContent.replace(/\s+/g, '') : '';
+    ok(!/会显示少量限期的公开商品页人工快照/.test(srcText), '透明度段落不再承诺展示人工快照');
     dom.window.close();
   }
 
