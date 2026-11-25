@@ -209420,5 +209420,420 @@
   "specSourceName": "荣耀官方产品规格页（仅含已核验字段）",
   "specFieldCount": 9,
   "specCollectedAt": "2026-11-24"
+ },
+ {
+  "id": "hua-matex8",
+  "brand": "Huawei",
+  "name": "HUAWEI Mate X8",
+  "year": 2026,
+  "type": "折叠屏旗舰",
+  "market": "中国大陆正式销售",
+  "display": "内屏 8.2 英寸 2424×2340 / 外屏 6.54 英寸 2444×1132 · 双 1–120Hz LTPO · 1440Hz PWM",
+  "chip": "麒麟 9050 Pro",
+  "camera": "后置 5000 万超动态范围(F1.4–F4.0 可变光圈,OIS,1/1.56\")+4000 万超广角(F2.2)+5000 万潜望长焦(F2.2,OIS)+第三代红枫原色；前置 800 万×2（内外屏，F2.4）；3.5x 光学 / 100x 数字",
+  "battery": "6200mAh（典型）/ 6025mAh（额定）",
+  "charging": "66W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电",
+  "weight": "约 237g（标准版）/ 约 239g（典藏版）",
+  "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB / 16GB+2TB（后三档为典藏版）",
+  "os": "HarmonyOS 7.0",
+  "priceCN": 12999,
+  "priceText": "官方首发起售价（12GB+256GB，非当前售价）",
+  "selling": "8.2 英寸内屏 + 4.2mm 展开厚度 + 麒麟 9050 Pro + 双 5000 万潜望影像",
+  "bestFor": [
+   "大屏办公",
+   "拍照视频",
+   "日常全能"
+  ],
+  "source": "https://consumer.huawei.com/cn/phones/mate-x8/specs/",
+  "sourceName": "华为官方产品规格页",
+  "verified": false,
+  "launchMonth": "2026-11",
+  "launchDateDisplay": "2026年11月24日发布，12月4日10:08开售",
+  "priceType": "official_launch_msrp",
+  "livePrice": null,
+  "livePriceStatus": "not_connected",
+  "livePriceCheckedAt": null,
+  "storageOptions": [
+   "12GB+256GB",
+   "12GB+512GB",
+   "16GB+512GB",
+   "16GB+1TB",
+   "16GB+2TB（后三档为典藏版）"
+  ],
+  "chinaOfficial": true,
+  "dataNote": "2026-11-25 新增待审核目录记录。硬件按华为官方规格页录入；日期与逐档价格厂商官网未完整公开，按权威媒体口径记账并标注。整机待审核，不进入正式排名或推荐。",
+  "announcementSource": "https://www.xinhuanet.com/tech/20261125/183b44374e6c40c6844c9bcaa8877f66/c.html",
+  "priceSource": "https://consumer.huawei.com/cn/phones/mate-x8/",
+  "priceSourceName": "华为官方产品页（起售价）",
+  "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+  "scoreMethod": "heuristic_preliminary",
+  "quoteTargetStorage": null,
+  "quoteTargetStorageReason": "需官方公布容量档位与价格对应关系后再触发报价检索。",
+  "auditStatus": "pending_review",
+  "auditNotes": [
+   "2026-11-25 新增待审核记录；九字段按华为官方规格页/产品页与权威媒体逐项核对",
+   "发布日期与开售时间厂商官网未标注，按新华网/深圳新闻网记为 cross_checked_secondary_source",
+   "X8 官方原文防尘抗水为 IP58、IP59（不是媒体常写的 IP68），按原文录入",
+   "90 Air 官方规格页全文无刷新率字样，不填；媒体口径未采信",
+   "两款官网商城为预售页，逐档价格需以发布稿/权威媒体口径为准"
+  ],
+  "priceAuditStatus": "cross_checked_sku_mapping",
+  "parameterAuditStatus": "partial",
+  "eligibleForRanking": false,
+  "eligibleForRecommendation": false,
+  "fieldAudit": [
+   {
+    "field": "屏幕",
+    "value": "内屏 8.2 英寸 2424×2340 / 外屏 6.54 英寸 2444×1132 · 双 1–120Hz LTPO · 1440Hz PWM",
+    "valueAtAudit": "内屏 8.2 英寸 2424×2340 / 外屏 6.54 英寸 2444×1132 · 双 1–120Hz LTPO · 1440Hz PWM",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x8/specs/",
+    "evidenceText": "官方规格页「屏幕」分组逐项抄录（尺寸/分辨率/类型/刷新率与调光）",
+    "note": ""
+   },
+   {
+    "field": "处理器",
+    "value": "麒麟 9050 Pro",
+    "valueAtAudit": "麒麟 9050 Pro",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x8/specs/",
+    "evidenceText": "官方规格页「处理器」原文：麒麟 9050 Pro",
+    "note": ""
+   },
+   {
+    "field": "影像",
+    "value": "后置 5000 万超动态范围(F1.4–F4.0 可变光圈,OIS,1/1.56\")+4000 万超广角(F2.2)+5000 万潜望长焦(F2.2,OIS)+第三代红枫原色；前置 800 万×2（内外屏，F2.4）；3.5x 光学 / 100x 数字",
+    "valueAtAudit": "后置 5000 万超动态范围(F1.4–F4.0 可变光圈,OIS,1/1.56\")+4000 万超广角(F2.2)+5000 万潜望长焦(F2.2,OIS)+第三代红枫原色；前置 800 万×2（内外屏，F2.4）；3.5x 光学 / 100x 数字",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x8/specs/",
+    "evidenceText": "官方规格页「后置摄像头 / 前置摄像头」原文；变焦倍数见「后置摄像头变焦模式」",
+    "note": ""
+   },
+   {
+    "field": "电池",
+    "value": "6200mAh（典型）/ 6025mAh（额定）",
+    "valueAtAudit": "6200mAh（典型）/ 6025mAh（额定）",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x8/specs/",
+    "evidenceText": "官方规格页电池容量与额定容量备注原文",
+    "note": ""
+   },
+   {
+    "field": "充电",
+    "value": "66W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电",
+    "valueAtAudit": "66W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x8/specs/",
+    "evidenceText": "官方规格页「充电」分组原文",
+    "note": "无线快充需另购对应充电器"
+   },
+   {
+    "field": "重量",
+    "value": "约 237g（标准版）/ 约 239g（典藏版）",
+    "valueAtAudit": "约 237g（标准版）/ 约 239g（典藏版）",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x8/specs/",
+    "evidenceText": "官方规格页「尺寸与重量-重量」原文",
+    "note": ""
+   },
+   {
+    "field": "容量组合",
+    "value": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB / 16GB+2TB（后三档为典藏版）",
+    "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB / 16GB+2TB（后三档为典藏版）",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x8/specs/",
+    "evidenceText": "官方规格页「存储」分组原文",
+    "note": ""
+   },
+   {
+    "field": "正式发布/开售日期",
+    "value": "2026年11月24日发布，12月4日10:08开售",
+    "valueAtAudit": "2026年11月24日发布，12月4日10:08开售",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://www.xinhuanet.com/tech/20261125/183b44374e6c40c6844c9bcaa8877f66/c.html",
+    "evidenceText": "新华网《多款新品发布，HUAWEI Mate X8 及全场景新品发布会召开》写明 11月24日发布、Mate X8 于 12月4日10:08 开售；深圳新闻网同日报道一致。厂商官网页面未标注日期，故不记官网已核",
+    "note": "厂商未在官网页面公布日期，只能按权威媒体记账"
+   },
+   {
+    "field": "官方首发起售价",
+    "value": 12999,
+    "valueAtAudit": 12999,
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate-x8/",
+    "evidenceText": "官方产品页原文「¥12999 * 起」；上证报/南方+逐档报道 12GB+256GB=12999、12+512=13999、典藏 16+512=15999、16+1TB=16999、16+2TB=20999，与起售价一致",
+    "note": "见 priceType 说明"
+   }
+  ],
+  "specs": [
+   {
+    "group": "官方规格（已核验字段）",
+    "items": [
+     [
+      "上市时间",
+      "2026年11月24日发布，12月4日10:08开售（厂商官网未标注，据新华网/深圳新闻网）"
+     ],
+     [
+      "屏幕",
+      "内屏 8.2 英寸 2424×2340 / 外屏 6.54 英寸 2444×1132 · 双 1–120Hz LTPO · 1440Hz PWM"
+     ],
+     [
+      "处理器",
+      "麒麟 9050 Pro"
+     ],
+     [
+      "后置摄像头",
+      "后置 5000 万超动态范围(F1.4–F4.0 可变光圈,OIS,1/1.56\")+4000 万超广角(F2.2)+5000 万潜望长焦(F2.2,OIS)+第三代红枫原色；前置 800 万×2（内外屏，F2.4）；3.5x 光学 / 100x 数字"
+     ],
+     [
+      "充电",
+      "66W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电"
+     ],
+     [
+      "电池",
+      "6200mAh（典型）/ 6025mAh（额定）"
+     ],
+     [
+      "尺寸与重量",
+      "约 237g（标准版）/ 约 239g（典藏版）"
+     ],
+     [
+      "存储组合",
+      "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB / 16GB+2TB（后三档为典藏版）"
+     ],
+     [
+      "操作系统",
+      "HarmonyOS 7.0"
+     ],
+     [
+      "防尘抗水",
+      "IP58、IP59（官方规格页原文）"
+     ],
+     [
+      "厚度",
+      "折叠态 8.95mm / 展开态 4.2mm"
+     ],
+     [
+      "SIM",
+      "支持 eSIM（最多存 2 个号码）；四卡三待需按运营商业务开通"
+     ],
+     [
+      "卫星通信",
+      "双向北斗卫星消息"
+     ],
+     [
+      "其他",
+      "星闪 E2.0 · USB 3.1 Gen 1 · 支持睿影 Z10 模块相机"
+     ]
+    ]
+   }
+  ],
+  "specSource": "https://consumer.huawei.com/cn/phones/mate-x8/specs/",
+  "specSourceName": "华为官方产品规格页",
+  "specFieldCount": 9,
+  "specCollectedAt": "2026-11-25"
+ },
+ {
+  "id": "hua-mate90air",
+  "brand": "Huawei",
+  "name": "HUAWEI Mate 90 Air",
+  "year": 2026,
+  "type": "全能旗舰",
+  "market": "中国大陆正式销售",
+  "display": "7 英寸 OLED · FHD+ 2760×1320 · 2160Hz PWM 调光",
+  "chip": "麒麟 9020",
+  "camera": "后置 5000 万 1/1.3\"(F1.8,OIS)+1200 万 RYYB 长焦(F2.4,OIS,3x)+800 万超广角微距(F2.2)+150 万多光谱红枫原色；前置 1070 万超广角(F2.2)",
+  "battery": "6500mAh（典型）/ 6380mAh（额定）",
+  "charging": "66W 有线超级快充（仅有线充电）",
+  "weight": "208g",
+  "storage": "12GB+256GB / 12GB+512GB",
+  "os": "HarmonyOS 7.0",
+  "priceCN": 4999,
+  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
+  "selling": "6.58mm 机身 + 7 英寸大屏 + 6500mAh 电池，华为最薄 Mate 直板机",
+  "bestFor": [
+   "大屏办公",
+   "续航",
+   "拍照视频"
+  ],
+  "source": "https://consumer.huawei.com/cn/phones/mate90-air/specs/",
+  "sourceName": "华为官方产品规格页",
+  "verified": false,
+  "launchMonth": "2026-11",
+  "launchDateDisplay": "2026年11月24日发布，12月4日10:08开售",
+  "priceType": "official_starting_price",
+  "livePrice": null,
+  "livePriceStatus": "not_connected",
+  "livePriceCheckedAt": null,
+  "storageOptions": [
+   "12GB+256GB",
+   "12GB+512GB"
+  ],
+  "chinaOfficial": true,
+  "dataNote": "2026-11-25 新增待审核目录记录。硬件按华为官方规格页录入；官方仅公布起售价，容量档位与价格对应关系未公开。整机待审核，不进入正式排名或推荐。",
+  "announcementSource": "https://www.xinhuanet.com/tech/20261125/183b44374e6c40c6844c9bcaa8877f66/c.html",
+  "priceSource": "https://consumer.huawei.com/cn/phones/mate90-air/",
+  "priceSourceName": "华为官方产品页（起售价）",
+  "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
+  "scoreMethod": "heuristic_preliminary",
+  "quoteTargetStorage": null,
+  "quoteTargetStorageReason": "需官方公布容量档位与价格对应关系后再触发报价检索。",
+  "auditStatus": "pending_review",
+  "auditNotes": [
+   "2026-11-25 新增待审核记录；九字段按华为官方规格页/产品页与权威媒体逐项核对",
+   "发布日期与开售时间厂商官网未标注，按新华网/深圳新闻网记为 cross_checked_secondary_source",
+   "X8 官方原文防尘抗水为 IP58、IP59（不是媒体常写的 IP68），按原文录入",
+   "90 Air 官方规格页全文无刷新率字样，不填；媒体口径未采信",
+   "两款官网商城为预售页，逐档价格需以发布稿/权威媒体口径为准"
+  ],
+  "priceAuditStatus": "starting_price_only",
+  "parameterAuditStatus": "partial",
+  "eligibleForRanking": false,
+  "eligibleForRecommendation": false,
+  "fieldAudit": [
+   {
+    "field": "屏幕",
+    "value": "7 英寸 OLED · FHD+ 2760×1320 · 2160Hz PWM 调光",
+    "valueAtAudit": "7 英寸 OLED · FHD+ 2760×1320 · 2160Hz PWM 调光",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate90-air/specs/",
+    "evidenceText": "官方规格页「屏幕」分组逐项抄录（尺寸/分辨率/类型/刷新率与调光）",
+    "note": ""
+   },
+   {
+    "field": "处理器",
+    "value": "麒麟 9020",
+    "valueAtAudit": "麒麟 9020",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate90-air/specs/",
+    "evidenceText": "官方规格页「处理器」原文：麒麟 9020",
+    "note": ""
+   },
+   {
+    "field": "影像",
+    "value": "后置 5000 万 1/1.3\"(F1.8,OIS)+1200 万 RYYB 长焦(F2.4,OIS,3x)+800 万超广角微距(F2.2)+150 万多光谱红枫原色；前置 1070 万超广角(F2.2)",
+    "valueAtAudit": "后置 5000 万 1/1.3\"(F1.8,OIS)+1200 万 RYYB 长焦(F2.4,OIS,3x)+800 万超广角微距(F2.2)+150 万多光谱红枫原色；前置 1070 万超广角(F2.2)",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate90-air/specs/",
+    "evidenceText": "官方规格页「后置摄像头 / 前置摄像头」原文；变焦倍数见「后置摄像头变焦模式」",
+    "note": ""
+   },
+   {
+    "field": "电池",
+    "value": "6500mAh（典型）/ 6380mAh（额定）",
+    "valueAtAudit": "6500mAh（典型）/ 6380mAh（额定）",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate90-air/specs/",
+    "evidenceText": "官方规格页电池容量与额定容量备注原文",
+    "note": ""
+   },
+   {
+    "field": "充电",
+    "value": "66W 有线超级快充（仅有线充电）",
+    "valueAtAudit": "66W 有线超级快充（仅有线充电）",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate90-air/specs/",
+    "evidenceText": "官方规格页「充电」分组原文",
+    "note": "无线快充需另购对应充电器"
+   },
+   {
+    "field": "重量",
+    "value": "208g",
+    "valueAtAudit": "208g",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate90-air/specs/",
+    "evidenceText": "官方规格页「尺寸与重量-重量」原文",
+    "note": ""
+   },
+   {
+    "field": "容量组合",
+    "value": "12GB+256GB / 12GB+512GB",
+    "valueAtAudit": "12GB+256GB / 12GB+512GB",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate90-air/specs/",
+    "evidenceText": "官方规格页「存储」分组原文",
+    "note": ""
+   },
+   {
+    "field": "正式发布/开售日期",
+    "value": "2026年11月24日发布并开启预售，12月4日10:08开售",
+    "valueAtAudit": "2026年11月24日发布并开启预售，12月4日10:08开售",
+    "status": "cross_checked_secondary_source",
+    "sourceUrl": "https://www.xinhuanet.com/tech/20261125/183b44374e6c40c6844c9bcaa8877f66/c.html",
+    "evidenceText": "新华网《多款新品发布，HUAWEI Mate X8 及全场景新品发布会召开》写明 11月24日发布、Mate X8 于 12月4日10:08 开售；深圳新闻网同日报道一致。厂商官网页面未标注日期，故不记官网已核",
+    "note": "厂商未在官网页面公布日期，只能按权威媒体记账"
+   },
+   {
+    "field": "官方首发起售价",
+    "value": 4999,
+    "valueAtAudit": 4999,
+    "status": "starting_price_only_sku_mapping_unverified",
+    "sourceUrl": "https://consumer.huawei.com/cn/phones/mate90-air/",
+    "evidenceText": "官方产品页原文「¥4999 * 起」；新华网/环球网报道「4999 元起、国补后 4499 元起」，但未把 4999 明确对应到 12GB+256GB，故按起售价记账、不写官方首发价",
+    "note": "见 priceType 说明"
+   }
+  ],
+  "specs": [
+   {
+    "group": "官方规格（已核验字段）",
+    "items": [
+     [
+      "上市时间",
+      "2026年11月24日发布，12月4日10:08开售（厂商官网未标注，据新华网/深圳新闻网）"
+     ],
+     [
+      "屏幕",
+      "7 英寸 OLED · FHD+ 2760×1320 · 2160Hz PWM 调光"
+     ],
+     [
+      "处理器",
+      "麒麟 9020"
+     ],
+     [
+      "后置摄像头",
+      "后置 5000 万 1/1.3\"(F1.8,OIS)+1200 万 RYYB 长焦(F2.4,OIS,3x)+800 万超广角微距(F2.2)+150 万多光谱红枫原色；前置 1070 万超广角(F2.2)"
+     ],
+     [
+      "充电",
+      "66W 有线超级快充（仅有线充电）"
+     ],
+     [
+      "电池",
+      "6500mAh（典型）/ 6380mAh（额定）"
+     ],
+     [
+      "尺寸与重量",
+      "208g"
+     ],
+     [
+      "存储组合",
+      "12GB+256GB / 12GB+512GB"
+     ],
+     [
+      "操作系统",
+      "HarmonyOS 7.0"
+     ],
+     [
+      "厚度",
+      "6.58mm（华为最薄 Mate 直板机）"
+     ],
+     [
+      "防尘抗水",
+      "IP68、IP69（官方规格页原文）"
+     ],
+     [
+      "卫星通信",
+      "北斗卫星消息（仅限中国大陆）"
+     ],
+     [
+      "其他",
+      "星闪 E2.0 · USB 2.0（不支持有线投屏）· 官方规格页未列刷新率"
+     ]
+    ]
+   }
+  ],
+  "specSource": "https://consumer.huawei.com/cn/phones/mate90-air/specs/",
+  "specSourceName": "华为官方产品规格页",
+  "specFieldCount": 9,
+  "specCollectedAt": "2026-11-25"
  }
 ]

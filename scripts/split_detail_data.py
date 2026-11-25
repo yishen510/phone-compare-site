@@ -74,7 +74,7 @@ FEATURE_TERMS = [
     ("ltpo8t", "8T LTPO", ("8t ltpo", "8tltpo")),
     ("periscope", "潜望长焦", ("潜望",)),
     ("ultrasonic", "超声波指纹", ("超声波",)),
-    ("wireless", "无线充电", ("无线充",)),
+    ("wireless", "无线充电", ("无线充", "无线超级快充")),
     ("reverse", "无线反向充电", ("反向充",)),
     ("satellite", "卫星通信", ("卫星",)),
     ("ir", "红外遥控", ("红外",)),

@@ -175,6 +175,36 @@ function makeDom(opts = {}) {
     dom.window.close();
   }
 
+  /* ================= ⑥ 价格口径标签 ================= */
+  console.log('\n⑥ 价格口径标签');
+  {
+    const dom = makeDom();
+    await sleep(2300);
+    const { window } = dom, doc = window.document;
+    const search = async q => {
+      const i = doc.getElementById('searchInput');
+      i.value = q; i.dispatchEvent(new window.Event('input', { bubbles: true }));
+      await sleep(450);
+    };
+    const labelOf = async (q, id) => {
+      await search(q);
+      const el = doc.querySelector(`[data-detail="${id}"]`);
+      if (!el) return '';
+      el.click(); await sleep(800);
+      const m = doc.getElementById('detailModal');
+      const tag = m.querySelector('.price-tag');
+      return tag ? tag.textContent.trim() : '';
+    };
+    /* official_starting_price 必须显式标「容量待核」，不能混进「官方首发价」 */
+    const startLabel = await labelOf('Mate 90 Air', 'hua-mate90air');
+    ok(/官方起售价/.test(startLabel) && /容量待核/.test(startLabel),
+      'official_starting_price 显示「官方起售价（容量待核）」', startLabel);
+    const msrpLabel = await labelOf('Mate X8', 'hua-matex8');
+    ok(/官方首发价/.test(msrpLabel) && !/容量待核/.test(msrpLabel),
+      'official_launch_msrp 显示「官方首发价」', msrpLabel);
+    dom.window.close();
+  }
+
   console.log(`\n${pass} 通过 / ${fail} 失败`);
   process.exit(fail ? 1 : 0);
 })();
