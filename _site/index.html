@@ -663,6 +663,17 @@ html[data-theme="light"] .alt-card{background:rgba(20,24,32,.03)}
 .results-toolbar{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:14px}
 .result-count{display:flex;align-items:baseline;gap:7px;font-size:12.5px;color:var(--muted)}
 .result-count strong{font-size:22px;font-weight:800;color:var(--ink);letter-spacing:-.03em}
+/* 未知值提示：价格/硬件筛选开启时，告诉用户有多少台因为「参数待核」没参与筛选。
+   不显示的话，26% 没有价格的机型会在用户设了价格区间后凭空消失且没有任何解释。 */
+.unknown-hint{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin:0 0 14px;padding:9px 13px;border-radius:var(--radius-sm);background:var(--glass-2);border:1px solid var(--line);font-size:12.5px;color:var(--muted);line-height:1.5}
+.unknown-hint b{color:var(--ink);font-weight:700}
+.unknown-hint .uh-btn{flex:none;margin-left:auto;padding:5px 12px;border-radius:999px;border:1px solid var(--line-strong);background:transparent;color:var(--ink);font:inherit;cursor:pointer;transition:border-color .15s,color .15s}
+.unknown-hint .uh-btn:hover{border-color:var(--accent-text);color:var(--accent-text)}
+.unknown-hint .uh-btn:focus-visible{outline:2px solid var(--accent-text);outline-offset:2px}
+/* 详情加载失败时的重试块 */
+.detail-retry{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:0 0 16px;padding:12px 14px;border-radius:var(--radius-sm);background:var(--glass-2);border:1px solid var(--line)}
+.detail-retry b{display:block;color:var(--ink);font-size:13px}
+.detail-retry span{display:block;color:var(--muted);font-size:12.5px;margin-top:2px}
 .results-divider{opacity:.35;margin:0 2px}
 .toolbar-right{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .quote-query-btn{white-space:nowrap}
@@ -1496,6 +1507,7 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
             <p class="recommend-disclaimer">这里的排序按你选的需求对参数做加权匹配：续航看电池容量与充电功率，小屏看屏幕尺寸与重量，影像看像素与长焦，预算按官方首发价估算。它是参考排序，不等于整机准入推荐，也不构成购买建议；准入通过前，站内仍不输出正式排名。</p>
           </div>
           <div id="batchBar" class="batch-bar" hidden><span class="batch-count">已选 <b id="batchCount">0</b> 项</span><button class="text-button" type="button" data-batch="compare">加入对比</button><button class="text-button" type="button" data-batch="fav">收藏</button><button class="text-button" type="button" data-batch="export">导出选中</button><button class="text-button" type="button" data-batch="clear">清空选择</button></div>
+          <div id="unknownHint" class="unknown-hint" hidden></div>
           <div id="phoneGrid" class="phone-grid" aria-live="off">
             <div class="skeleton-grid" aria-hidden="true">
               <div class="skeleton-card"><div class="sk-line sk-title"></div><div class="sk-line sk-sub"></div><div class="sk-line sk-row"></div><div class="sk-line sk-row w70"></div><div class="sk-line sk-row w45"></div></div>
@@ -1586,13 +1598,13 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
 (function(){
 'use strict';
 const phones=Array.isArray(window.PHONE_DATA)?window.PHONE_DATA:[];
-/* 品牌数是常量（phones 只读），别每次 render 都 map 一遍 485 条 */
+/* 品牌数是常量（phones 只读），别每次 render 都 map 一遍全量记录 */
 const BRAND_COUNT=new Set(phones.map(p=>p.brand)).size;
 /* 规格已经拆到 data/detail，首屏算不出「有完整参数 / 参数条目」。
    下面这行由 scripts/split_detail_data.py 在构建期写入真实值，别手改。 */
 const SPEC_STATS={"models":491,"items":30675,"avg":62.5};
 const $=id=>document.getElementById(id);
-const state={brands:new Set(),types:new Set(),compare:[],view:'cards',priorities:new Set(),onlyIds:null,recommendIds:null,detailList:null,detailPos:0,recent:[],pendingCompare:false,compareQuery:'',compareSort:'default',compareDiffOnly:false,detailId:null,favs:new Set(),favOnly:false,priceMin:null,priceMax:null,hw:{batteryMin:null,weightMax:null,hzMin:null,storageMin:null},density:'roomy',selected:new Set(),pageMode:'auto',visibleCount:0};
+const state={brands:new Set(),types:new Set(),compare:[],view:'cards',priorities:new Set(),onlyIds:null,recommendIds:null,detailList:null,detailPos:0,recent:[],pendingCompare:false,compareQuery:'',compareSort:'default',compareDiffOnly:false,detailId:null,favs:new Set(),favOnly:false,priceMin:null,priceMax:null,hw:{batteryMin:null,weightMax:null,hzMin:null,storageMin:null},density:'roomy',selected:new Set(),pageMode:'auto',visibleCount:0,allowUnknown:false,unknownGap:0,lastArr:null,pendingModel:null};
 /* 实测（_jst/bench_micro.js）：改成「先 test 再 replace」反而慢 10.8%。
    V8 下无匹配的 replace 已足够快，且回调只在命中时才创建映射对象。保持原实现，别再"优化"。 */
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -1813,29 +1825,53 @@ function matchQuery(p,c){
  /* 拼音首字母：只在查询不含中文且 ≥2 字符时启用，且必须前缀匹配 */
  return !!(c.py&&pyKey(p).startsWith(c.py));
 }
-function matchFilters(p,c){
+function matchFilters(p,c,lenient){
  if(state.brands.size&&!state.brands.has(p.brand))return false;
  if(state.types.size&&!state.types.has(p.type)&&!(p.type==='商务旗舰'&&state.types.has('标准旗舰')))return false;
  if(p.year<c.yFrom||p.year>c.yTo)return false;
  if(c.domesticOnly&&!p.chinaOfficial)return false;
  if(state.favOnly&&!state.favs.has(p.id))return false;
+ /* 「未知」不等于「不满足」。
+    lenient（用于统计有多少台被待核参数挡掉）或用户主动「纳入待核机型」时放行未知值；
+    已知值仍然照常比较，不会把不达标的说成达标。 */
+ const passUnknown=!!lenient;
  const price=(p.priceCN===null||p.priceCN===undefined||p.priceCN==='')?NaN:Number(p.priceCN);
- if(state.priceMin!=null&&(!Number.isFinite(price)||price<state.priceMin))return false;
- if(state.priceMax!=null&&(!Number.isFinite(price)||price>state.priceMax))return false;
+ if(state.priceMin!=null&&Number.isFinite(price)&&price<state.priceMin)return false;
+ if(state.priceMax!=null&&Number.isFinite(price)&&price>state.priceMax)return false;
+ if(!passUnknown){
+  if(state.priceMin!=null&&!Number.isFinite(price))return false;
+  if(state.priceMax!=null&&!Number.isFinite(price))return false;
+ }
  const hw=state.hw||{};
- if(hw.batteryMin!=null||hw.weightMax!=null||hw.hzMin!=null||hw.storageMin!=null){
+ if((hw.batteryMin!=null||hw.weightMax!=null||hw.hzMin!=null||hw.storageMin!=null)&&!passUnknown){
   const m=hwOf(p);
   if(hw.batteryMin!=null&&!(m.bat!=null&&m.bat>=hw.batteryMin))return false;
   if(hw.weightMax!=null&&!(m.wt!=null&&m.wt<=hw.weightMax))return false;
   if(hw.hzMin!=null&&!(m.hz!=null&&m.hz>=hw.hzMin))return false;
   if(hw.storageMin!=null&&!(m.storage!=null&&m.storage>=hw.storageMin))return false;
+ }else if((hw.batteryMin!=null||hw.weightMax!=null||hw.hzMin!=null||hw.storageMin!=null)&&passUnknown){
+  /* lenient / 已纳入待核：只否决「有值但不达标」，缺值放行 */
+  const m=hwOf(p);
+  if(hw.batteryMin!=null&&m.bat!=null&&m.bat<hw.batteryMin)return false;
+  if(hw.weightMax!=null&&m.wt!=null&&m.wt>hw.weightMax)return false;
+  if(hw.hzMin!=null&&m.hz!=null&&m.hz<hw.hzMin)return false;
+  if(hw.storageMin!=null&&m.storage!=null&&m.storage<hw.storageMin)return false;
  }
  if(state.onlyIds&&state.onlyIds.size&&!state.onlyIds.has(p.id))return false;
  return true;
 }
 function filtered(){
  const c=filterContext();
- const arr=phones.filter(p=>matchFilters(p,c)&&matchQuery(p,c));
+ const arr=phones.filter(p=>matchFilters(p,c,state.allowUnknown)&&matchQuery(p,c));
+ /* 被「参数待核」挡掉多少台：同时算严格版与放宽版，差值就是缺口。
+     只在真的开了价格/硬件筛选项时才有意义，否则两版结果相同、差值为 0。 */
+ const hwNow=state.hw||{};
+ const gapFilter=state.priceMin!=null||state.priceMax!=null||hwNow.batteryMin!=null||hwNow.weightMax!=null||hwNow.hzMin!=null||hwNow.storageMin!=null;
+ if(gapFilter){
+  const strictN=phones.filter(p=>matchFilters(p,c,false)&&matchQuery(p,c)).length;
+  const lenientN=phones.filter(p=>matchFilters(p,c,true)&&matchQuery(p,c)).length;
+  state.unknownGap=Math.max(0,lenientN-strictN);
+ }else state.unknownGap=0;
  const sort=c.sort;
  const numIn=(v,re)=>{const m=String(v??'').match(re);return m?Number(m[1]):null;};
  /* dir=1 升序、-1 降序；缺值（null）无论方向都排最后，避免降序把「未公布」顶到第一屏 */
@@ -1853,7 +1889,7 @@ function filtered(){
  const cellNum=(text,re)=>{const m=String(text||'').match(re);return m?Number(m[1]):null;};
  const batKeyOf=p=>cellNum(p.battery,/(\d{3,5})\s*mAh/i);
  const wtKeyOf=p=>cellNum(p.weight,/(\d{2,3}(?:\.\d{1,2})?)\s*(?:g|克)/i);
- /* 比较器每对比较都会重算 key（485 条排序约 8000 次，recScreen 还要线性扫参数表），
+ /* 比较器每对比较都会重算 key（全量排序约 8000 次，recScreen 还要线性扫参数表），
     先按 id 缓存，每台只算一次；排序结果完全不变 */
  const sortKey=new Map();
  const kOf=(fn,p)=>{const k=p.id;if(sortKey.has(k))return sortKey.get(k);const v=fn(p);sortKey.set(k,v);return v;};
@@ -2045,7 +2081,7 @@ function clearActiveFilter(key){
 let lastGridKey='',paintToken=0;
 /* 首屏只画一屏多一点，剩下的分片补；442 张卡一次性插入会占满主线程，首帧要等 1 秒以上 */
 const PAINT_FIRST=12,PAINT_STEP=96,PAINT_BUDGET=8;
-/* 逐页展示：485 条一次性渲染时布局成本占首屏 50% 以上，默认先只画一页。
+/* 逐页展示：一次性渲染全量时布局成本占首屏 50% 以上，默认先只画一页。
    结果不超过阈值时不分页（搜索出 5 条没必要再点一次「加载更多」）。 */
 const PAGE_SIZE=24,AUTO_PAGE_THRESHOLD=80;
 const PAGE_MODE_KEY='phoneindex.pagemode.v1';
@@ -2088,14 +2124,27 @@ function paintGrid(grid,arr){
   if(i<arr.length)nextFrame(step);else done();
  }
 }
+/* 32 位 FNV-1a：给结果集算一个稳定指纹。
+   原来用「长度 + 首尾 id」当签名，筛掉中间几台、又补进同样数量的其他机型时，
+   首尾和数量都没变 → 签名不变 → 不重绘，列表会停在旧数据上（点了筛选像没反应）。
+   491 条 × 10 字符约 5k 次字节运算，比一次 innerHTML 便宜两个数量级。 */
+function fingerprint(arr){
+ let h=2166136261;
+ for(let i=0;i<arr.length;i++){
+  const s=String(arr[i].id||'');
+  for(let k=0;k<s.length;k++){h^=s.charCodeAt(k);h=Math.imul(h,16777619);}
+  h^=31;h=Math.imul(h,16777619);
+ }
+ return (h>>>0).toString(36);
+}
 function gridSignature(arr,shownCount){
  /* 排序方式参与签名：否则两个方向恰好排出同样顺序时不会重建，表头箭头会停在旧状态 */
- /* 用「长度 + 首尾 id」代替全量 join：442 条每次都拼 8KB 字符串纯属浪费 */
  /* arr.length + 可见条数都要进签名：点「全部展开」时 arr 没变、只有可见条数变了，
     不含它就判定「无变化」而不重绘，点了按钮没反应。 */
  const n=arr.length,v=(shownCount===undefined?n:shownCount);
- if(!n)return state.view+'|'+(($('sortSelect')?.value)||'')+'|empty|'+state.compare.join(',')+'|'+[...state.favs].join(',');
- return state.view+'|'+(($('sortSelect')?.value)||'')+'|'+n+'/'+v+'|'+arr[0].id+'|'+arr[arr.length-1].id+'|'+state.compare.join(',')+'|'+[...state.favs].join(',');
+ const tail='|'+state.compare.join(',')+'|'+[...state.favs].join(',');
+ if(!n)return state.view+'|'+(($('sortSelect')?.value)||'')+'|empty'+tail;
+ return state.view+'|'+(($('sortSelect')?.value)||'')+'|'+n+'/'+v+'|'+fingerprint(arr)+tail;
 }
 /* 是否逐页：用户显式选择优先，否则结果超过阈值才分页 */
 function wantsPaged(total){
@@ -2140,6 +2189,17 @@ function loadMore(){
  updatePager(arr.length,state.visibleCount,true);
  syncBatchBar();
 }
+/* 未知值提示：价格/硬件筛选开启后，告诉用户有多少台因为「参数待核」没参与筛选，
+   并给一个开关把它纳入。没有这一句，设了 3000–4000 元就会静默少掉一百多台。 */
+function renderUnknownHint(){
+ const el=$('unknownHint');if(!el)return;
+ const gap=state.unknownGap||0;
+ if(!gap){el.hidden=true;el.innerHTML='';return;}
+ el.hidden=false;
+ el.innerHTML=state.allowUnknown
+  ? `<span>已纳入 <b>${gap}</b> 台参数待核机型（缺项按「未知」处理，不算不达标）</span><button class="uh-btn" type="button" data-uh="exclude">只看有数据的</button>`
+  : `<span>另有 <b>${gap}</b> 台价格或参数待核，未参与筛选</span><button class="uh-btn" type="button" data-uh="include">一并纳入</button>`;
+}
 function render(){
  renderBrands();
  const arr=filtered();
@@ -2152,9 +2212,10 @@ function render(){
  const byFeature=!!q&&q.length>1&&!arr.some(p=>cardText(p).includes(q))&&arr.some(p=>featHay(p).includes(q));
  setText('currentFilterLabel',byFeature?('含「'+qRaw+'」')
   :((state.onlyIds&&state.onlyIds.size)?('推荐候选 '+state.onlyIds.size+' 款'):'全部代表机型'));
+ renderUnknownHint();
  /* 逐页展示：筛选/排序/视图变化时重置回第一页；收藏/对比变化不重置（否则点个收藏就跳回顶部） */
  const paged=wantsPaged(arr.length);
- const fkey=state.view+'|'+(($('sortSelect')?.value)||'')+'|'+arr.length+'|'+(arr[0]?arr[0].id:'')+'|'+(arr.length?arr[arr.length-1].id:'');
+ const fkey=state.view+'|'+(($('sortSelect')?.value)||'')+'|'+arr.length+'|'+fingerprint(arr);
  if(fkey!==lastFilterKey){state.visibleCount=paged?Math.min(PAGE_SIZE,arr.length):arr.length;lastFilterKey=fkey;}
  else if(!paged){state.visibleCount=arr.length;}
  const shown=paged?arr.slice(0,Math.min(state.visibleCount,arr.length)):arr;
@@ -2184,8 +2245,36 @@ function render(){
  if(grid){grid.hidden=arr.length===0;grid.classList.toggle('is-compact',state.density==='compact');}
  updateCompare();renderActiveFilters();renderRecent();syncUrlState();syncPriorityChips();
 }
-function openModal(id,html,opts){const m=$(id);if(!m)return;m.innerHTML=html;m.classList.toggle('modal-wide',!!(opts&&opts.wide));m.hidden=false;if($('modalBackdrop'))$('modalBackdrop').hidden=false;document.body.classList.add('modal-open');}
-function closeModal(){['detailModal','compareModal','notesModal','modalBackdrop'].forEach(id=>{if($(id))$(id).hidden=true;});document.body.classList.remove('modal-open');state.detailId=null;state.detailList=null;state.detailPos=0;state.compareQuery='';syncUrlState();}
+/* 弹层焦点管理：打开时记住触发元素、把焦点移进去；关闭时还回去；Tab 在弹层内循环。
+   不做的话 Tab 会跑到遮罩后面的页面上，而 aria-modal="true" 又让读屏器跳过背景，两边打架。 */
+const FOCUS_SEL='a[href],button:not([disabled]),input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])';
+let lastFocused=null;
+function focusableIn(root){
+ return [...root.querySelectorAll(FOCUS_SEL)].filter(el=>!el.hasAttribute('hidden')&&!el.closest('[hidden]')&&el.getAttribute('aria-hidden')!=='true');
+}
+function openModal(id,html,opts){
+ const m=$(id);if(!m)return;
+ const prev=document.activeElement;
+ if(prev&&prev!==document.body)lastFocused=prev;
+ m.innerHTML=html;
+ m.classList.toggle('modal-wide',!!(opts&&opts.wide));
+ m.hidden=false;
+ if($('modalBackdrop'))$('modalBackdrop').hidden=false;
+ document.body.classList.add('modal-open');
+ if(!m.hasAttribute('tabindex'))m.setAttribute('tabindex','-1');
+ /* 优先聚焦第一个真实控件；没有控件就聚焦弹层本身，保证 Tab 从这里开始 */
+ const f=focusableIn(m);
+ (f[0]||m).focus({preventScroll:true});
+}
+function closeModal(){
+ ['detailModal','compareModal','notesModal','modalBackdrop'].forEach(id=>{if($(id))$(id).hidden=true;});
+ document.body.classList.remove('modal-open');
+ state.detailId=null;state.detailList=null;state.detailPos=0;state.compareQuery='';
+ syncUrlState();
+ /* 焦点还回触发按钮，否则键盘用户一关就被丢回页面顶部 */
+ if(lastFocused&&document.contains(lastFocused)){try{lastFocused.focus({preventScroll:true});}catch(e){}}
+ lastFocused=null;
+}
 /* ===== 参数工具层（详情 / 对比 / 筛选共用，消除重复实现） ===== */
 /* specs 是只读数据；排序时 specFind 会被调用上万次，每次都 filter 重建数组纯属浪费 */
 const SPEC_LIST_CACHE=new Map();
@@ -2391,7 +2480,7 @@ function relScore(p,q,qt){
 /* ===== 详情：在「当前筛选结果」中前后翻页 ===== */
 /* 规格/逐字段溯源已从首屏数据里拆走（各占 56% / 25% 体积），点开某一台时才拉。
    每台一个 ~8KB 的小文件：失败只影响这一台，不会连累页面。 */
-const DETAIL_BASE='data/detail/',DETAIL_LOADED=new Set(),DETAIL_TRYING=new Set();
+const DETAIL_BASE='data/detail/',DETAIL_LOADED=new Set(),DETAIL_TRYING=new Set(),DETAIL_FAILED=new Set();
 function loadDetail(ids){
  const need=(ids||[]).filter(id=>id&&!DETAIL_LOADED.has(id));
  if(!need.length)return Promise.resolve();
@@ -2404,9 +2493,13 @@ function loadDetail(ids){
    .then(r=>r.ok?r.json():null)
    .catch(()=>null)
    .then(d=>{
-    DETAIL_LOADED.add(id);DETAIL_TRYING.delete(id);
+    DETAIL_TRYING.delete(id);
     const p=phones.find(x=>x.id===id);
-    if(p&&d){
+    /* 拉不到就别标记成「已加载」：标记了这次会话就不会再试，
+       用户会永远停在「参数待补充」，连个重试的入口都没有。 */
+    if(!d){DETAIL_FAILED.add(id);return;}
+    DETAIL_LOADED.add(id);DETAIL_FAILED.delete(id);
+    if(p){
      if(Array.isArray(d.specs))p.specs=d.specs;
      if(d.fieldAudit)p.fieldAudit=d.fieldAudit;
      /* 规格变了，按 id 缓存的解析结果要作废，否则搜索/详情还读旧的空数组。
@@ -2514,7 +2607,9 @@ function alternativesFor(p){
 }
 function detail(id){
  const p=phones.find(x=>x.id===id);if(!p)return;
- if(!Array.isArray(p.specs)&&!DETAIL_LOADED.has(id)){
+ /* 失败过就别再自动重试——loadDetail 失败不再标记已加载，这里再自动调一次会死循环。
+    改为把重试的权利交给用户（详情顶部出重试按钮）。 */
+ if(!Array.isArray(p.specs)&&!DETAIL_LOADED.has(id)&&!DETAIL_FAILED.has(id)){
   /* 单台约 8KB，4G 下通常 150ms 内就回来——先别弹提示，超过 400ms 才提示，
      免得每次都闪一下"载入中"反而显得慢 */
   const hint=setTimeout(()=>toast('正在载入规格…'),400);
@@ -2543,8 +2638,12 @@ function detail(id){
  const specBlock=buildSpecBlockHtml(p);
  const totalNav=Array.isArray(state.detailList)?state.detailList.length:0;
  const navPos=state.detailPos||0;
+ /* 上次加载失败时在详情顶部给一个重试入口，而不是让用户对着「参数待补充」干瞪眼 */
+ const retryBlock=DETAIL_FAILED.has(id)
+  ? `<div class="detail-retry"><div><b>规格没能载入</b><span>多半是网络波动，参数本身是有的。点右侧重试即可，不用关掉重开。</span></div><button class="button button-light button-small" type="button" data-dl-retry="${esc(p.id)}">重新载入规格</button></div>`
+  : '';
  const nav=totalNav>1?`<div class="detail-nav"><button class="detail-nav-btn" type="button" data-nav="-1" ${navPos<=0?'disabled':''} aria-label="上一台机型">← 上一台</button><span class="detail-nav-pos">${navPos+1} / ${totalNav}</span><button class="detail-nav-btn" type="button" data-nav="1" ${navPos>=totalNav-1?'disabled':''} aria-label="下一台机型">下一台 →</button><span class="detail-nav-hint">← → 切换</span></div>`:'';
- openModal('detailModal',`<button class="modal-close" data-close aria-label="关闭">×</button><p class="eyebrow">MODEL DETAILS</p><h2 id="detailTitle">${esc(p.name)}</h2><p>${esc(p.selling||'')}</p>${nav}<div class="detail-actions"><button class="button button-light button-small" type="button" data-dfav="${esc(p.id)}" aria-pressed="${state.favs.has(p.id)}">${state.favs.has(p.id)?'♥ 已收藏':'♡ 收藏'}</button><button class="button button-light button-small" type="button" data-dcmpr="${esc(p.id)}">${state.compare.includes(p.id)?'已加入对比':'加入对比'}</button></div><div class="detail-share"><button class="text-button" type="button" data-copy-link>复制链接</button><button class="text-button" type="button" data-print>打印参数卡</button><span>链接含当前机型，打开直达详情</span></div><div class="price-pair"><div class="price-card official"><span class="price-tag">${p.priceType==='third_party_reference'?'参考价（第三方，非首发价）':(p.priceType==='price_pending'?'价格待核 · 厂商未公布':(p.priceType==='price_unavailable'?'参考价缺失 · 参数站未收录':'官方首发价 · 非当前售价'))}</span><strong class="price-number">${official}</strong><span class="price-sub">${esc(p.priceText||'官方首发起售价，不代表当前渠道成交价')}</span><span class="price-sub ${field(p,'price')==='已核验'?'verified':'pending'}">价格字段：${field(p,'price')}</span>${p.priceSource?`<a class="quote-link" href="${esc(p.priceSource)}" target="_blank" rel="noopener">价格来源 ↗</a>`:''}</div>${channel}</div>${peerBlockHtml(p)}<div class="detail-grid">${keys.map(k=>{const a=auditEntry(p,k);const st=field(p,k);return `<div class="detail-row"><span>${labels[k]}</span><b>${esc(a?.valueAtAudit??(k==='launchDate'?(p.launchDateDisplay||p.launchMonth||'待核验'):(realText(p[k])||missingNote(p,k)||'待核验')))}</b><div class="detail-meta"><small class="${st==='已核验'?'verified':(st==='第三方核验'?'secondary':'pending')}" title="${esc(a?.evidenceText||'')}">${st}</small>${a?.sourceUrl?`<a href="${esc(a.sourceUrl)}" target="_blank" rel="noopener" title="${esc(a?.evidenceText||'')}">来源 ↗</a>`:''}</div></div>`}).join('')}</div>${specBlock}${(()=>{const alts=alternativesFor(p);return alts.length?`<div class="alt-block"><p class="eyebrow">SIMILAR PRICE</p><h3>同价位还可以看</h3><div class="alt-grid">${alts.map(a=>`<button type="button" class="alt-card" data-detail="${esc(a.id)}"><strong>${esc(a.name)}</strong><small>${esc(money(a.priceCN))} · ${esc(realText(a.chip)||a.brand)}</small></button>`).join('')}</div></div>`:'';})()}<p class="modal-warning">${pass(p)?'该机型已通过准入审核。':'该机型尚未通过整机审核，不能参与排名或自动推荐。字段来源链接不等于整机审核通过。'} 渠道报价仅作参考，不会改变该机型的审核、排名或推荐状态。</p><p><a href="${esc(p.source||'#')}" target="_blank" rel="noopener">打开厂商页面 ↗</a></p>`);
+ openModal('detailModal',`<button class="modal-close" data-close aria-label="关闭">×</button><p class="eyebrow">MODEL DETAILS</p><h2 id="detailTitle">${esc(p.name)}</h2><p>${esc(p.selling||'')}</p>${nav}${retryBlock}<div class="detail-actions"><button class="button button-light button-small" type="button" data-dfav="${esc(p.id)}" aria-pressed="${state.favs.has(p.id)}">${state.favs.has(p.id)?'♥ 已收藏':'♡ 收藏'}</button><button class="button button-light button-small" type="button" data-dcmpr="${esc(p.id)}">${state.compare.includes(p.id)?'已加入对比':'加入对比'}</button></div><div class="detail-share"><button class="text-button" type="button" data-copy-link>复制链接</button><button class="text-button" type="button" data-print>打印参数卡</button><span>链接含当前机型，打开直达详情</span></div><div class="price-pair"><div class="price-card official"><span class="price-tag">${p.priceType==='third_party_reference'?'参考价（第三方，非首发价）':(p.priceType==='price_pending'?'价格待核 · 厂商未公布':(p.priceType==='price_unavailable'?'参考价缺失 · 参数站未收录':'官方首发价 · 非当前售价'))}</span><strong class="price-number">${official}</strong><span class="price-sub">${esc(p.priceText||'官方首发起售价，不代表当前渠道成交价')}</span><span class="price-sub ${field(p,'price')==='已核验'?'verified':'pending'}">价格字段：${field(p,'price')}</span>${p.priceSource?`<a class="quote-link" href="${esc(p.priceSource)}" target="_blank" rel="noopener">价格来源 ↗</a>`:''}</div>${channel}</div>${peerBlockHtml(p)}<div class="detail-grid">${keys.map(k=>{const a=auditEntry(p,k);const st=field(p,k);return `<div class="detail-row"><span>${labels[k]}</span><b>${esc(a?.valueAtAudit??(k==='launchDate'?(p.launchDateDisplay||p.launchMonth||'待核验'):(realText(p[k])||missingNote(p,k)||'待核验')))}</b><div class="detail-meta"><small class="${st==='已核验'?'verified':(st==='第三方核验'?'secondary':'pending')}" title="${esc(a?.evidenceText||'')}">${st}</small>${a?.sourceUrl?`<a href="${esc(a.sourceUrl)}" target="_blank" rel="noopener" title="${esc(a?.evidenceText||'')}">来源 ↗</a>`:''}</div></div>`}).join('')}</div>${specBlock}${(()=>{const alts=alternativesFor(p);return alts.length?`<div class="alt-block"><p class="eyebrow">SIMILAR PRICE</p><h3>同价位还可以看</h3><div class="alt-grid">${alts.map(a=>`<button type="button" class="alt-card" data-detail="${esc(a.id)}"><strong>${esc(a.name)}</strong><small>${esc(money(a.priceCN))} · ${esc(realText(a.chip)||a.brand)}</small></button>`).join('')}</div></div>`:'';})()}<p class="modal-warning">${pass(p)?'该机型已通过准入审核。':'该机型尚未通过整机审核，不能参与排名或自动推荐。字段来源链接不等于整机审核通过。'} 渠道报价仅作参考，不会改变该机型的审核、排名或推荐状态。</p><p><a href="${esc(p.source||'#')}" target="_blank" rel="noopener">打开厂商页面 ↗</a></p>`);
 }
 function updateCompare(){const items=state.compare.map(id=>phones.find(p=>p.id===id)).filter(Boolean);setText('headerCompareCount',items.length);setText('dockCount',items.length);const dock=$('compareDock');if(dock){dock.hidden=!items.length;document.body.classList.toggle('has-dock',!!items.length);}if($('dockItems'))$('dockItems').innerHTML=items.map(p=>`<span class="dock-item">${esc(p.name)} <button data-remove="${esc(p.id)}" aria-label="移除">×</button></span>`).join('');}
 function toggleCompare(id){if(state.compare.includes(id)){state.compare=state.compare.filter(x=>x!==id);}else if(state.compare.length>=4){toast('最多同时对比 4 款手机');return;}else state.compare.push(id);render();}
@@ -2861,11 +2960,21 @@ async function initQuoteApi(){
   }
  }
 }
-function reset(){state.brands.clear();state.types.clear();state.priorities.clear();state.favOnly=false;state.priceMin=null;state.priceMax=null;state.hw={batteryMin:null,weightMax:null,hzMin:null,storageMin:null};state.onlyIds=null;state.recommendIds=null;if($('favOnly'))$('favOnly').checked=false;['recYearFrom','recYearTo'].forEach(id=>{if($(id))$(id).value='';});if($('priceMin'))$('priceMin').value='';if($('priceMax'))$('priceMax').value='';['hwBattery','hwWeight','hwHz','hwStorage'].forEach(id=>{if($(id))$(id).value='';});if(typeof updateHwLabel==='function')updateHwLabel();document.querySelectorAll('[data-price]').forEach(x=>x.classList.remove('active'));if(typeof updatePriceLabel==='function')updatePriceLabel();if($('searchInput'))$('searchInput').value='';if($('yearFrom'))$('yearFrom').value='2021';if($('yearTo'))$('yearTo').value='2026';if($('domesticOnly'))$('domesticOnly').checked=false;document.querySelectorAll('input[name="type"]').forEach(i=>i.checked=false);document.querySelectorAll('[data-years]').forEach(i=>i.classList.toggle('active',i.dataset.years==='all'));document.querySelectorAll('[data-priority]').forEach(i=>i.classList.remove('selected'));render();}
-document.addEventListener('click',e=>{const t=e.target.closest('button');if(!t)return;if(t.hasAttribute('data-rec-swap-years')){const a=$('recYearFrom'),b=$('recYearTo');if(a&&b){const v=a.value;a.value=b.value;b.value=v;}recommendForNeeds();return;}if(t.hasAttribute('data-rec-clear-years')){['recYearFrom','recYearTo'].forEach(id=>{if($(id))$(id).value='';});recommendForNeeds();return;}if(t.id==='exportCatalogBtn'){exportCatalogCsv();return;}if(t.hasAttribute('data-api-retry')){initQuoteApi();return;}if(t.hasAttribute('data-api-diag')){diagnoseQuoteApi();return;}if(t.dataset.af){clearActiveFilter(t.dataset.af);return;}if(t.dataset.nav){detailStep(Number(t.dataset.nav));return;}if(t.dataset.recent){detail(t.dataset.recent);return;}if(t.hasAttribute('data-copy-link')){copyText(location.href,()=>toast('链接已复制，可直接分享'));return;}if(t.hasAttribute('data-copy-compare')){syncUrlState();copyText(location.href,()=>toast('对比链接已复制'));return;}if(t.hasAttribute('data-print')){window.print();return;}if(t.id==='quoteQueryBtn'){if(quoteRunning){quoteRunToken++;setQuoteRunning(false);toast('已停止本轮报价查询');}else{const ids=filtered().map(p=>p.id);if(!ids.length)toast('当前筛选没有机型');else{setApiStatus('报价 API 状态：批量查询中','正在按 5 款一批查询当前筛选结果；精确匹配型号与容量后才显示渠道报价。','is-neutral');queryQuotes(ids,{continueOnError:true}).then(r=>{if(!r||!r.total)return;if(r.stopped){setApiStatus('报价 API 状态：查询中断',String(r.stopped)+`（已查 ${r.done}/${r.total} 款）`,'is-warn');return;}setApiStatus('报价 API 状态：批量查询完成'+apiChannelNote(),`本轮查询 ${r.done} 款：有精确报价 ${r.ok} 款，暂无报价 ${r.none} 款${r.fail?`，失败 ${r.fail} 款`:''}。渠道报价均需人工核验。`,'is-ok');});}}return;}if(t.dataset.quoteOne){if(quoteRunning){toast('请先等待当前查询结束');return;}const p=phones.find(x=>x.id===t.dataset.quoteOne);if(p)queryQuotes([p.id],{continueOnError:false});return;}if(t.dataset.dfav){const _id=t.dataset.dfav;const _now=toggleFavById(_id);toast(_now?'已收藏':'已取消收藏');refreshDetailIfOpen(_id);return;}
+function reset(){state.brands.clear();state.types.clear();state.priorities.clear();state.favOnly=false;state.priceMin=null;state.priceMax=null;state.hw={batteryMin:null,weightMax:null,hzMin:null,storageMin:null};state.onlyIds=null;state.recommendIds=null;state.allowUnknown=false;state.unknownGap=0;if($('favOnly'))$('favOnly').checked=false;['recYearFrom','recYearTo'].forEach(id=>{if($(id))$(id).value='';});if($('priceMin'))$('priceMin').value='';if($('priceMax'))$('priceMax').value='';['hwBattery','hwWeight','hwHz','hwStorage'].forEach(id=>{if($(id))$(id).value='';});if(typeof updateHwLabel==='function')updateHwLabel();document.querySelectorAll('[data-price]').forEach(x=>x.classList.remove('active'));if(typeof updatePriceLabel==='function')updatePriceLabel();if($('searchInput'))$('searchInput').value='';if($('yearFrom'))$('yearFrom').value='2021';if($('yearTo'))$('yearTo').value='2026';if($('domesticOnly'))$('domesticOnly').checked=false;document.querySelectorAll('input[name="type"]').forEach(i=>i.checked=false);document.querySelectorAll('[data-years]').forEach(i=>i.classList.toggle('active',i.dataset.years==='all'));document.querySelectorAll('[data-priority]').forEach(i=>i.classList.remove('selected'));render();}
+document.addEventListener('click',e=>{const t=e.target.closest('button');if(!t)return;
+/* 「纳入 / 排除待核机型」开关：只影响未知值的去留，不改任何已核字段 */
+if(t.dataset.uh){state.allowUnknown=t.dataset.uh==='include';render();return;}if(t.hasAttribute('data-rec-swap-years')){const a=$('recYearFrom'),b=$('recYearTo');if(a&&b){const v=a.value;a.value=b.value;b.value=v;}recommendForNeeds();return;}if(t.hasAttribute('data-rec-clear-years')){['recYearFrom','recYearTo'].forEach(id=>{if($(id))$(id).value='';});recommendForNeeds();return;}if(t.id==='exportCatalogBtn'){exportCatalogCsv();return;}if(t.hasAttribute('data-api-retry')){initQuoteApi();return;}if(t.hasAttribute('data-api-diag')){diagnoseQuoteApi();return;}if(t.dataset.af){clearActiveFilter(t.dataset.af);return;}if(t.dataset.nav){detailStep(Number(t.dataset.nav));return;}if(t.dataset.recent){detail(t.dataset.recent);return;}if(t.hasAttribute('data-copy-link')){copyText(location.href,()=>toast('链接已复制，可直接分享'));return;}if(t.hasAttribute('data-copy-compare')){syncUrlState();copyText(location.href,()=>toast('对比链接已复制'));return;}if(t.hasAttribute('data-print')){window.print();return;}if(t.id==='quoteQueryBtn'){if(quoteRunning){quoteRunToken++;setQuoteRunning(false);toast('已停止本轮报价查询');}else{const ids=filtered().map(p=>p.id);if(!ids.length)toast('当前筛选没有机型');else{setApiStatus('报价 API 状态：批量查询中','正在按 5 款一批查询当前筛选结果；精确匹配型号与容量后才显示渠道报价。','is-neutral');queryQuotes(ids,{continueOnError:true}).then(r=>{if(!r||!r.total)return;if(r.stopped){setApiStatus('报价 API 状态：查询中断',String(r.stopped)+`（已查 ${r.done}/${r.total} 款）`,'is-warn');return;}setApiStatus('报价 API 状态：批量查询完成'+apiChannelNote(),`本轮查询 ${r.done} 款：有精确报价 ${r.ok} 款，暂无报价 ${r.none} 款${r.fail?`，失败 ${r.fail} 款`:''}。渠道报价均需人工核验。`,'is-ok');});}}return;}if(t.dataset.quoteOne){if(quoteRunning){toast('请先等待当前查询结束');return;}const p=phones.find(x=>x.id===t.dataset.quoteOne);if(p)queryQuotes([p.id],{continueOnError:false});return;}if(t.dataset.dfav){const _id=t.dataset.dfav;const _now=toggleFavById(_id);toast(_now?'已收藏':'已取消收藏');refreshDetailIfOpen(_id);return;}
 if(t.dataset.dcmpr){const _id=t.dataset.dcmpr;const _b=state.compare.includes(_id);toggleCompare(_id);const _a=state.compare.includes(_id);if(_a!==_b)toast(_a?'已加入对比':'已移出对比');refreshDetailIfOpen(_id);return;}
+/* 详情规格重试：失败记录先清掉，再拉一次；仍失败会重新亮出重试块 */
+if(t.dataset.dlRetry){const id=t.dataset.dlRetry;DETAIL_FAILED.delete(id);DETAIL_LOADED.delete(id);
+ const hint=setTimeout(()=>toast('正在重新载入规格…'),400);
+ loadDetail([id]).then(()=>{clearTimeout(hint);detail(id);});return;}
 if(t.dataset.detail)detail(t.dataset.detail);if(t.dataset.compare)toggleCompare(t.dataset.compare);if(t.dataset.remove){toggleCompare(t.dataset.remove);if(!$('compareModal')?.hidden){if(state.compare.length>=2)compare();else closeModal();}}if(t.dataset.export==='csv'){const items=state.compare.map(id=>phones.find(p=>p.id===id)).filter(Boolean);if(items.length<2){toast('至少加入 2 款手机再导出');return;}const d=new Date();const stamp=`${d.getFullYear()}${String(d.getMonth()+1).padStart(2,'0')}${String(d.getDate()).padStart(2,'0')}`;downloadText(`compare-${stamp}.csv`,buildCompareCsv(items));toast('已导出对比 CSV');return;}if(t.dataset.diffOnly){state.compareDiffOnly=!state.compareDiffOnly;compare();}if(t.hasAttribute('data-close')||t.id==='modalBackdrop')closeModal();if(t.dataset.view){state.view=t.dataset.view;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b===t));render();}if(t.dataset.years){const y=t.dataset.years;const now=2026;if(y==='all'){if($('yearFrom'))$('yearFrom').value='2021';if($('yearTo'))$('yearTo').value='2026';}else{if($('yearFrom'))$('yearFrom').value=String(now-Number(y)+1);if($('yearTo'))$('yearTo').value='2026';}document.querySelectorAll('[data-years]').forEach(b=>b.classList.toggle('active',b===t));render();}if(t.dataset.priority){const p=t.dataset.priority;if(state.priorities.has(p)){state.priorities.delete(p);}else if(state.priorities.size<3){state.priorities.add(p);}else{toast('已选满 3 项，先取消一个才能再选');syncPriorityChips();return;}syncPriorityChips();}if(t.id==='resetFilters'||t.id==='emptyReset')reset();if(t.id==='heroRecommend'){if($('recommendPanel'))$('recommendPanel').hidden=false;$('recommendPanel')?.scrollIntoView({behavior:'smooth',block:'center'});}if(t.id==='closeRecommend'){if($('recommendPanel'))$('recommendPanel').hidden=true;}if(t.id==='applyRecommend'){recommendForNeeds();}if(t.id==='recOnlyBtn'){state.onlyIds=new Set(state.recommendIds||[]);render();toast('已只显示候选机型');}if(t.id==='headerCompare'||t.id==='openCompare')compare();if(t.id==='clearCompare'){state.compare=[];render();}});
-['yearFrom','yearTo','sortSelect','domesticOnly','budgetSelect'].forEach(id=>$(id)?.addEventListener('input',render));
+/* 年份是手打数字，每敲一位就全量重排一次太浪费；排序/仅国行/预算是离散选择，立即生效才不显迟钝 */
+let yearTimer=0;
+const renderYear=()=>{clearTimeout(yearTimer);yearTimer=setTimeout(render,180);};
+['yearFrom','yearTo'].forEach(id=>$(id)?.addEventListener('input',renderYear));
+['sortSelect','domesticOnly','budgetSelect'].forEach(id=>$(id)?.addEventListener('input',render));
 ['recYearFrom','recYearTo'].forEach(id=>$(id)?.addEventListener('change',()=>{const box=$('recommendResults');if(box&&!box.hidden&&state.priorities.size)recommendForNeeds();}));document.addEventListener('change',e=>{const sel=e.target.closest&&e.target.closest('#compareSort');if(!sel)return;state.compareSort=sel.value||'default';compare();});document.querySelectorAll('input[name="type"]').forEach(i=>i.addEventListener('change',()=>{i.checked?state.types.add(i.value):state.types.delete(i.value);render();}));document.addEventListener('click',e=>{const btn=e.target.closest&&e.target.closest('.phone-table [data-sort-col]');if(!btn)return;sortTableBy(btn.dataset.sortCol,{announce:e.detail===0});});
 $('modalBackdrop')?.addEventListener('click',closeModal);
 /* 键盘效率：t 切视图 / f 收藏 / c 对比 / g 回顶 / ? 帮助；输入框与组合键内不拦截 */
@@ -2873,6 +2982,17 @@ document.addEventListener('keydown',e=>{
  const tag=(document.activeElement&&document.activeElement.tagName)||'';
  const typing=tag==='INPUT'||tag==='TEXTAREA'||tag==='SELECT';
  if(e.key==='Escape'){closeModal();return;}
+ /* Tab 在打开的弹层里循环，别让焦点跑回背景页 */
+ if(e.key==='Tab'){
+  const open=['detailModal','compareModal','notesModal'].map(id=>$(id)).filter(m=>m&&!m.hidden).pop();
+  if(open){
+   const f=focusableIn(open);
+   if(!f.length){e.preventDefault();open.focus();return;}
+   const first=f[0],last=f[f.length-1],cur=document.activeElement;
+   if(e.shiftKey&&(cur===first||cur===open)){e.preventDefault();last.focus();}
+   else if(!e.shiftKey&&cur===last){e.preventDefault();first.focus();}
+  }
+ }
  const dm=$('detailModal');const detailOpen=!!dm&&!dm.hidden;
  const cm=$('compareModal');const compareOpen=!!cm&&!cm.hidden;
  if(detailOpen&&(e.key==='ArrowLeft'||e.key==='ArrowRight')){e.preventDefault();detailStep(e.key==='ArrowLeft'?-1:1);return;}
@@ -3191,6 +3311,9 @@ function syncUrlState(){
   if(hw.storageMin!=null)p.set('hws',String(hw.storageMin));
   const qs=p.toString();
   const hash=location.hash||'';
+  /* 内容没变就别调 replaceState：翻页/收藏这类高频渲染会把 history 写爆，
+     而且相同 URL 的重复写入对用户没有任何意义。 */
+  if((qs?'?'+qs:'')+hash===location.search+hash)return;
   history.replaceState(null,'',(qs?('?'+qs):location.pathname)+hash);
  }catch(e){}
 }
@@ -3387,6 +3510,17 @@ syncFavCount();
 readPriceRange();
 
 render();
+/* 全局兜底：脚本异常不该表现成「点了没反应」。
+   只提示、不掩盖；同一窗口 6 秒内只弹一次，避免连环报错刷屏。 */
+let lastErrAt=0;
+function reportRuntimeError(){
+ const now=Date.now();
+ if(now-lastErrAt<6000)return;
+ lastErrAt=now;
+ try{toast('刚才那个操作没成功，刷新页面可以重试');}catch(e){}
+}
+window.addEventListener('error',reportRuntimeError);
+window.addEventListener('unhandledrejection',reportRuntimeError);
 warmSearchIndex();
 if(state.pendingModel){const _mid=state.pendingModel;state.pendingModel=null;if(phones.some(x=>x.id===_mid))detail(_mid);}
 else if(state.pendingCompare){state.pendingCompare=false;if(state.compare.length>=2)compare();}
