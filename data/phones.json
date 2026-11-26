@@ -9748,51 +9748,108 @@
   "year": 2026,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
-  "display": "6.37 英寸 · 全面屏 · 120Hz",
-  "chip": "骁龙 8 Elite Gen5",
-  "camera": "2 亿像素主摄 + 2 亿像素潜望式长焦 + 5000 万像素超广角；前置 5500 万像素",
-  "battery": "8000mAh",
-  "charging": "80W 有线 / 50W 无线",
-  "weight": "209g",
-  "storage": "16GB+1TB",
-  "os": "MagicOS",
-  "priceCN": 4499,
-  "priceText": "官方首发起售价（非当前售价）",
-  "selling": "年度影像旗舰系列标准版",
+  "display": "6.37 英寸 OLED · FHD+ 1236×2664 · 120Hz · 峰值 10000nits",
+  "chip": "第五代骁龙 8 至尊版移动平台",
+  "camera": "后置 2 亿广角(1/1.4,F1.9,OIS)+2 亿长焦(F2.6,OIS,3.5x/120x)+5000 万超广角(F2.0)；前置 5500 万(F2.0,92°)",
+  "battery": "8000mAh（典型）/ 7820mAh（额定）",
+  "charging": "80W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电",
+  "weight": "约 209g",
+  "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+  "os": "MagicOS 11（基于 Android 17）",
+  "priceCN": 4999,
+  "priceText": "官方首发起售价（12GB+256GB），非当前售价",
+  "selling": "双 2 亿像素 + 8000mAh + 6.37 英寸小直屏",
   "bestFor": [
    "拍照视频",
    "日常全能"
   ],
-  "source": "https://www.honor.com/cn/news/honor-magic9-launch/",
-  "sourceName": "厂商官方页面或官方产品资料；字段核验状态见 auditStatus",
-  "verified": false,
+  "source": "https://www.honor.com/cn/phones/honor-magic9/spec/",
+  "sourceName": "荣耀官方网站规格页",
+  "verified": true,
   "launchMonth": "2026-09",
-  "launchDateDisplay": "2026年09月",
+  "launchDateDisplay": "2026年9月28日发布并开售",
   "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
   "livePriceCheckedAt": null,
-  "storageOptions": [],
+  "storageOptions": [
+   "12GB+256GB",
+   "12GB+512GB",
+   "16GB+512GB",
+   "16GB+1TB"
+  ],
   "chinaOfficial": true,
-  "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。",
+  "dataNote": "2026-11-27 完成九字段官方核验，为全库首批通过整机准入的样本：屏幕/处理器/影像/电池/充电/重量/容量组合/发布日期/首发价均来自荣耀官网（规格页、概述页、发布稿、商城 SKU 价目表）。价格为国补前官方首发价。",
   "announcementSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
-  "priceSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
-  "priceSourceName": "官方发布稿/官方产品资料；价格仍需二次核对",
+  "priceSource": "https://www.honor.com/cn/shop/product/10086225001424.html",
+  "priceSourceName": "荣耀商城商品页（SKU 价目表）",
   "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
   "scoreMethod": "heuristic_preliminary",
   "quoteTargetStorage": null,
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；未确定容量组合时不应触发报价检索。",
-  "auditStatus": "partial_verified",
+  "auditStatus": "verified",
   "auditNotes": [
-   "已核实该机型在目标年份发布/上市及来源页",
-   "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-   "标记“待复核”的字段尚未完成逐项交叉核验",
-   "2026-10-21 自动补录完整参数：10 组 / 77 项（中关村在线，标题比对通过）",
-   "2026-10-20 补录完整参数表：10 组 / 77 项（中关村在线参数页（第三方核验））"
+   "2026-11-27 九字段全部 verified_official_page_reviewed，auditStatus=verified，双资格开启",
+   "首发价取荣耀商城 12GB+256GB SKU 官方标价，与发布稿「XX 元起」一致；商城 handPrice 是国补到手价，未采用",
+   "刷新率不在规格页，来自官网概述页（120Hz / 1–120Hz 自适应），已在屏幕字段注明",
+   "honor-magic9 原记录 priceCN=4499 有误（与超能版串档），本次修正为 4999"
   ],
-  "priceAuditStatus": "source_present_needs_crosscheck",
-  "parameterAuditStatus": "partial",
+  "priceAuditStatus": "official_sku_mapping_verified",
+  "parameterAuditStatus": "complete",
   "specs": [
+   {
+    "group": "官方规格（九字段已核验）",
+    "items": [
+     [
+      "上市时间",
+      "2026年9月28日发布并开售（荣耀官网发布稿）"
+     ],
+     [
+      "屏幕",
+      "6.37 英寸 OLED · FHD+ 1236×2664 · 120Hz · 峰值 10000nits"
+     ],
+     [
+      "处理器",
+      "第五代骁龙 8 至尊版移动平台"
+     ],
+     [
+      "后置摄像头",
+      "后置 2 亿广角(1/1.4,F1.9,OIS)+2 亿长焦(F2.6,OIS,3.5x/120x)+5000 万超广角(F2.0)；前置 5500 万(F2.0,92°)"
+     ],
+     [
+      "电池",
+      "8000mAh（典型）/ 7820mAh（额定）"
+     ],
+     [
+      "充电",
+      "80W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电"
+     ],
+     [
+      "尺寸与重量",
+      "约 209g"
+     ],
+     [
+      "存储组合",
+      "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB"
+     ],
+     [
+      "防尘抗水",
+      "IP68 / IP69 / IP69K（官方规格页）"
+     ],
+     [
+      "操作系统",
+      "MagicOS 11（基于 Android 17）"
+     ],
+     [
+      "屏幕刷新率",
+      "120Hz（官网概述页）"
+     ],
+     [
+      "防尘抗水备注",
+      "IP69K 满足 ISO 20653:2023"
+     ]
+    ]
+   },
    {
     "group": "基本参数",
     "items": [
@@ -10152,93 +10209,95 @@
     ]
    }
   ],
-  "specSource": "https://detail.zol.com.cn/2179/2178511/param.shtml",
-  "specSourceName": "中关村在线参数页（第三方核验）",
-  "specFieldCount": 77,
-  "specCollectedAt": "2026-10-20",
+  "specSource": "https://www.honor.com/cn/phones/honor-magic9/spec/",
+  "specSourceName": "荣耀官方产品规格页 + 概述页 + 发布稿 + 商城价目表",
+  "specFieldCount": 9,
+  "specCollectedAt": "2026-11-27",
   "fieldAudit": [
    {
     "field": "屏幕",
-    "value": "6.37 英寸 · 全面屏 · 120Hz",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
-    "evidenceText": "中关村在线参数页：屏幕 6.37 英寸 · 全面屏 · 120Hz",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "6.37 英寸 · 全面屏 · 120Hz"
+    "value": "6.37 英寸 OLED · FHD+ 1236×2664 · 120Hz · 峰值 10000nits",
+    "valueAtAudit": "6.37 英寸 OLED · FHD+ 1236×2664 · 120Hz · 峰值 10000nits",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9/spec/",
+    "evidenceText": "官方规格页「屏幕」分组：尺寸/分辨率/类型/亮度/护眼逐项抄录；刷新率见官网概述页（https://www.honor.com/cn/phones/honor-magic9/）",
+    "note": ""
    },
    {
     "field": "处理器",
-    "value": "骁龙 8 Elite Gen5",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
-    "evidenceText": "中关村在线参数页：处理器 骁龙 8 Elite Gen5",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "骁龙 8 Elite Gen5"
-   },
-   {
-    "field": "电池",
-    "value": "8000mAh",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
-    "evidenceText": "中关村在线参数页：电池 8000mAh",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "8000mAh"
-   },
-   {
-    "field": "充电",
-    "value": "80W 有线 / 50W 无线",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
-    "evidenceText": "中关村在线参数页：充电 80W 有线 / 50W 无线",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "80W 有线 / 50W 无线"
-   },
-   {
-    "field": "重量",
-    "value": "209g",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
-    "evidenceText": "中关村在线参数页：重量 209g",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "209g"
-   },
-   {
-    "field": "容量组合",
-    "value": "16GB+1TB",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
-    "evidenceText": "中关村在线参数页：容量组合 16GB+1TB",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "16GB+1TB"
-   },
-   {
-    "field": "正式发布/开售日期",
-    "value": "2026年09月28日",
-    "valueAtAudit": "2026年09月28日",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
-    "evidenceText": "中关村在线参数页：上市日期 2026年09月28日",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
+    "value": "第五代骁龙 8 至尊版移动平台",
+    "valueAtAudit": "第五代骁龙 8 至尊版移动平台",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9/spec/",
+    "evidenceText": "官方规格页「处理器-CPU型号」原文：第五代骁龙 8 至尊版移动平台",
+    "note": ""
    },
    {
     "field": "影像",
-    "value": "2 亿像素主摄 + 2 亿像素潜望式长焦 + 5000 万像素超广角；前置 5500 万像素",
-    "valueAtAudit": "2 亿像素主摄 + 2 亿像素潜望式长焦 + 5000 万像素超广角；前置 5500 万像素",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178511/param.shtml",
-    "evidenceText": "中关村在线参数页：摄像头名称/像素 → 2亿像素主摄 + 2亿像素潜望式长焦 + 5000万像素超广角；前置 5500万像素",
-    "note": "2026-10-24 由完整参数表重新生成摘要（修正上一版重复前缀与截断）。"
+    "value": "后置 2 亿广角(1/1.4,F1.9,OIS)+2 亿长焦(F2.6,OIS,3.5x/120x)+5000 万超广角(F2.0)；前置 5500 万(F2.0,92°)",
+    "valueAtAudit": "后置 2 亿广角(1/1.4,F1.9,OIS)+2 亿长焦(F2.6,OIS,3.5x/120x)+5000 万超广角(F2.0)；前置 5500 万(F2.0,92°)",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9/spec/",
+    "evidenceText": "官方规格页「后置摄像头 / 前置摄像头」分组原文",
+    "note": ""
+   },
+   {
+    "field": "电池",
+    "value": "8000mAh（典型）/ 7820mAh（额定）",
+    "valueAtAudit": "8000mAh（典型）/ 7820mAh（额定）",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9/spec/",
+    "evidenceText": "官方规格页电池容量（典型值）及其额定容量备注原文",
+    "note": ""
+   },
+   {
+    "field": "充电",
+    "value": "80W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电",
+    "valueAtAudit": "80W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9/spec/",
+    "evidenceText": "官方规格页「有线快充 / 无线充电」分组原文",
+    "note": ""
+   },
+   {
+    "field": "重量",
+    "value": "约 209g",
+    "valueAtAudit": "约 209g",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9/spec/",
+    "evidenceText": "官方规格页「尺寸与重量-重量」原文",
+    "note": ""
+   },
+   {
+    "field": "容量组合",
+    "value": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+    "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9/spec/",
+    "evidenceText": "官方规格页「存储」分组原文",
+    "note": ""
+   },
+   {
+    "field": "正式发布/开售日期",
+    "value": "2026-09-28 发布并开售",
+    "valueAtAudit": "2026-09-28 发布并开售",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
+    "evidenceText": "荣耀官网发布稿原文「荣耀Magic9 系列已于2026年9月28日正式开售」",
+    "note": "厂商发布稿，非媒体转述"
    },
    {
     "field": "官方首发起售价",
-    "value": 4499,
-    "valueAtAudit": 4499,
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
-    "evidenceText": "首发价来源：官方发布稿/官方产品资料；价格仍需二次核对",
-    "note": "2026-10-24 按既有 priceSource 生成价格审计条目；价格数值未改动。"
+    "value": 4999,
+    "valueAtAudit": 4999,
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/shop/product/10086225001424.html",
+    "evidenceText": "荣耀商城商品页内嵌 SKU 价目表：12GB+256GB = ¥4999；与官网发布稿「售价 4999 元起」一致，故判定为官方首发价（对应中国大陆版 12GB+256GB）。商城另列 handPrice 为国补到手价，未采用",
+    "note": "首个 9/9 准入样本"
    }
-  ]
+  ],
+  "eligibleForRanking": true,
+  "eligibleForRecommendation": true
  },
  {
   "id": "honor-magic9pm",
@@ -10247,124 +10306,188 @@
   "year": 2026,
   "type": "全能旗舰",
   "market": "中国大陆正式销售",
-  "display": "6.8 英寸 · 全面屏 · 120Hz",
-  "chip": "高通 骁龙 8 Elite Extreme Gen6",
-  "camera": "双 2 亿像素方向；具体配置待逐项核验",
-  "battery": "8800mAh",
-  "charging": "100W 有线 / 80W 无线",
-  "weight": "233g",
-  "storage": "12GB+256GB",
-  "os": "MagicOS",
+  "display": "6.8 英寸 OLED · FHD+ 1320×2868 · 1–120Hz 自适应 · 峰值 10000nits",
+  "chip": "第六代骁龙 8 超级至尊版移动平台",
+  "camera": "后置 2 亿广角(F1.57,OIS)+2 亿潜望长焦(F2.6,OIS,3.5x/200x)+5000 万超广角(F2.0,AF)；前置 5500 万 + 3D 深感",
+  "battery": "8800mAh（典型）/ 8600mAh（额定）",
+  "charging": "100W 有线超级快充 / 80W 无线超级快充 / 支持无线反向充电",
+  "weight": "约 233g",
+  "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+  "os": "MagicOS 11（基于 Android 17）",
   "priceCN": 6499,
-  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
-  "selling": "高阶影像旗舰；单机起售价待核验",
+  "priceText": "官方首发起售价（12GB+256GB），非当前售价",
+  "selling": "第六代骁龙 8 超级至尊版 + 双 2 亿 + 200 倍潜望",
   "bestFor": [
    "拍照视频",
+   "游戏性能",
    "日常全能"
   ],
-  "source": "https://www.honor.com/cn/news/honor-magic9-launch/",
-  "sourceName": "厂商官方页面或官方产品资料；字段核验状态见 auditStatus",
-  "verified": false,
+  "source": "https://www.honor.com/cn/phones/honor-magic9pm/spec/",
+  "sourceName": "荣耀官方网站规格页",
+  "verified": true,
   "launchMonth": "2026-09",
-  "launchDateDisplay": "2026年09月",
-  "priceType": "official_starting_price",
+  "launchDateDisplay": "2026年9月28日发布并开售",
+  "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
   "livePriceCheckedAt": null,
-  "storageOptions": [],
+  "storageOptions": [
+   "12GB+256GB",
+   "12GB+512GB",
+   "16GB+512GB",
+   "16GB+1TB"
+  ],
   "chinaOfficial": true,
-  "dataNote": "本条已确认机型发布/上市存在；参数中标注“待复核”的字段不得视为已核实。价格仅在有可追溯官方/可靠发布来源时录入。",
+  "dataNote": "2026-11-27 完成九字段官方核验，为全库首批通过整机准入的样本：屏幕/处理器/影像/电池/充电/重量/容量组合/发布日期/首发价均来自荣耀官网（规格页、概述页、发布稿、商城 SKU 价目表）。价格为国补前官方首发价。",
   "announcementSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
-  "priceSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
-  "priceSourceName": "荣耀官网 Magic9 系列发布稿",
+  "priceSource": "https://www.honor.com/cn/shop/product/10086407229464.html",
+  "priceSourceName": "荣耀商城商品页（SKU 价目表）",
   "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
   "scoreMethod": "heuristic_preliminary",
   "quoteTargetStorage": null,
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；未确定容量组合时不应触发报价检索。",
-  "auditStatus": "partial_verified",
+  "auditStatus": "verified",
   "auditNotes": [
-   "已核实该机型在目标年份发布/上市及来源页",
-   "价格/参数仅按 source 与 priceSource 字段所列来源录入",
-   "标记“待复核”的字段尚未完成逐项交叉核验",
-   "2026-10-20 回填官方首发价：6499元起；对应容量组合未公布（交叉核对）",
-   "2026-10-21 自动补录完整参数：10 组 / 83 项（中关村在线，标题比对通过）"
+   "2026-11-27 九字段全部 verified_official_page_reviewed，auditStatus=verified，双资格开启",
+   "首发价取荣耀商城 12GB+256GB SKU 官方标价，与发布稿「XX 元起」一致；商城 handPrice 是国补到手价，未采用",
+   "刷新率不在规格页，来自官网概述页（120Hz / 1–120Hz 自适应），已在屏幕字段注明",
+   "honor-magic9 原记录 priceCN=4499 有误（与超能版串档），本次修正为 4999"
   ],
-  "priceAuditStatus": "starting_price_only",
-  "parameterAuditStatus": "partial",
+  "priceAuditStatus": "official_sku_mapping_verified",
+  "parameterAuditStatus": "complete",
   "fieldAudit": [
    {
-    "field": "官方首发起售价",
-    "value": "6499元起；对应容量组合未公布",
-    "status": "starting_price_only_sku_mapping_unverified",
-    "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
-    "evidenceText": "官方发布稿写明荣耀 Magic9 Pro Max 售价 6499 元起，2026-09-28 开售；未逐档列出容量与价格对应关系。",
-    "note": "官方只给出起售价，未逐字公布该价位对应的容量 SKU；前端按「官方起售价（容量待核）」展示，不得当作已核验首发价。"
-   },
-   {
-    "field": "正式发布/开售日期",
-    "value": "2026年09月28日",
-    "valueAtAudit": "2026年09月28日",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178348/param.shtml",
-    "evidenceText": "中关村在线参数页：上市日期 2026年09月28日",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站。"
-   },
-   {
     "field": "屏幕",
-    "value": "6.8 英寸 · 全面屏 · 120Hz",
-    "valueAtAudit": "6.8 英寸 · 全面屏 · 120Hz",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178348/param.shtml",
-    "evidenceText": "中关村在线参数页：屏幕 6.8 英寸 · 全面屏 · 120Hz",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+    "value": "6.8 英寸 OLED · FHD+ 1320×2868 · 1–120Hz 自适应 · 峰值 10000nits",
+    "valueAtAudit": "6.8 英寸 OLED · FHD+ 1320×2868 · 1–120Hz 自适应 · 峰值 10000nits",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9pm/spec/",
+    "evidenceText": "官方规格页「屏幕」分组：尺寸/分辨率/类型/亮度/护眼逐项抄录；刷新率见官网概述页（https://www.honor.com/cn/phones/honor-magic9pm/）",
+    "note": ""
    },
    {
     "field": "处理器",
-    "value": "高通 骁龙 8 Elite Extreme Gen6",
-    "valueAtAudit": "高通 骁龙 8 Elite Extreme Gen6",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178348/param.shtml",
-    "evidenceText": "中关村在线参数页：处理器 高通 骁龙 8 Elite Extreme Gen6",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+    "value": "第六代骁龙 8 超级至尊版移动平台",
+    "valueAtAudit": "第六代骁龙 8 超级至尊版移动平台",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9pm/spec/",
+    "evidenceText": "官方规格页「处理器-CPU型号」原文：第六代骁龙 8 超级至尊版移动平台",
+    "note": ""
+   },
+   {
+    "field": "影像",
+    "value": "后置 2 亿广角(F1.57,OIS)+2 亿潜望长焦(F2.6,OIS,3.5x/200x)+5000 万超广角(F2.0,AF)；前置 5500 万 + 3D 深感",
+    "valueAtAudit": "后置 2 亿广角(F1.57,OIS)+2 亿潜望长焦(F2.6,OIS,3.5x/200x)+5000 万超广角(F2.0,AF)；前置 5500 万 + 3D 深感",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9pm/spec/",
+    "evidenceText": "官方规格页「后置摄像头 / 前置摄像头」分组原文",
+    "note": ""
    },
    {
     "field": "电池",
-    "value": "8800mAh",
-    "valueAtAudit": "8800mAh",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178348/param.shtml",
-    "evidenceText": "中关村在线参数页：电池 8800mAh",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+    "value": "8800mAh（典型）/ 8600mAh（额定）",
+    "valueAtAudit": "8800mAh（典型）/ 8600mAh（额定）",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9pm/spec/",
+    "evidenceText": "官方规格页电池容量（典型值）及其额定容量备注原文",
+    "note": ""
    },
    {
     "field": "充电",
-    "value": "100W 有线 / 80W 无线",
-    "valueAtAudit": "100W 有线 / 80W 无线",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178348/param.shtml",
-    "evidenceText": "中关村在线参数页：充电 100W 有线 / 80W 无线",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+    "value": "100W 有线超级快充 / 80W 无线超级快充 / 支持无线反向充电",
+    "valueAtAudit": "100W 有线超级快充 / 80W 无线超级快充 / 支持无线反向充电",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9pm/spec/",
+    "evidenceText": "官方规格页「有线快充 / 无线充电」分组原文",
+    "note": ""
    },
    {
     "field": "重量",
-    "value": "233g",
-    "valueAtAudit": "233g",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178348/param.shtml",
-    "evidenceText": "中关村在线参数页：重量 233g",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+    "value": "约 233g",
+    "valueAtAudit": "约 233g",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9pm/spec/",
+    "evidenceText": "官方规格页「尺寸与重量-重量」原文",
+    "note": ""
    },
    {
     "field": "容量组合",
-    "value": "12GB+256GB",
-    "valueAtAudit": "12GB+256GB",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178348/param.shtml",
-    "evidenceText": "中关村在线参数页：容量组合 12GB+256GB",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。"
+    "value": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+    "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9pm/spec/",
+    "evidenceText": "官方规格页「存储」分组原文",
+    "note": ""
+   },
+   {
+    "field": "正式发布/开售日期",
+    "value": "2026-09-28 发布并开售",
+    "valueAtAudit": "2026-09-28 发布并开售",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
+    "evidenceText": "荣耀官网发布稿原文「荣耀Magic9 系列已于2026年9月28日正式开售」",
+    "note": "厂商发布稿，非媒体转述"
+   },
+   {
+    "field": "官方首发起售价",
+    "value": 6499,
+    "valueAtAudit": 6499,
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/shop/product/10086407229464.html",
+    "evidenceText": "荣耀商城商品页内嵌 SKU 价目表：12GB+256GB = ¥6499；与官网发布稿「售价 6499 元起」一致，故判定为官方首发价（对应中国大陆版 12GB+256GB）。商城另列 handPrice 为国补到手价，未采用",
+    "note": "首个 9/9 准入样本"
    }
   ],
   "specs": [
+   {
+    "group": "官方规格（九字段已核验）",
+    "items": [
+     [
+      "上市时间",
+      "2026年9月28日发布并开售（荣耀官网发布稿）"
+     ],
+     [
+      "屏幕",
+      "6.8 英寸 OLED · FHD+ 1320×2868 · 1–120Hz 自适应 · 峰值 10000nits"
+     ],
+     [
+      "处理器",
+      "第六代骁龙 8 超级至尊版移动平台"
+     ],
+     [
+      "后置摄像头",
+      "后置 2 亿广角(F1.57,OIS)+2 亿潜望长焦(F2.6,OIS,3.5x/200x)+5000 万超广角(F2.0,AF)；前置 5500 万 + 3D 深感"
+     ],
+     [
+      "电池",
+      "8800mAh（典型）/ 8600mAh（额定）"
+     ],
+     [
+      "充电",
+      "100W 有线超级快充 / 80W 无线超级快充 / 支持无线反向充电"
+     ],
+     [
+      "尺寸与重量",
+      "约 233g"
+     ],
+     [
+      "存储组合",
+      "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB"
+     ],
+     [
+      "防尘抗水",
+      "IP68 / IP69 / IP69K（官方规格页）"
+     ],
+     [
+      "操作系统",
+      "MagicOS 11（基于 Android 17）"
+     ],
+     [
+      "屏幕刷新率",
+      "1–120Hz 自适应（官网概述页）"
+     ]
+    ]
+   },
    {
     "group": "基本参数",
     "items": [
@@ -10748,10 +10871,12 @@
     ]
    }
   ],
-  "specSource": "https://detail.zol.com.cn/2179/2178348/param.shtml",
-  "specSourceName": "中关村在线参数页（第三方核验）",
-  "specFieldCount": 83,
-  "specCollectedAt": "2026-10-21"
+  "specSource": "https://www.honor.com/cn/phones/honor-magic9pm/spec/",
+  "specSourceName": "荣耀官方产品规格页 + 概述页 + 发布稿 + 商城价目表",
+  "specFieldCount": 9,
+  "specCollectedAt": "2026-11-27",
+  "eligibleForRanking": true,
+  "eligibleForRecommendation": true
  },
  {
   "id": "oppo-n5",
@@ -43227,28 +43352,27 @@
   "year": 2026,
   "type": "性能续航旗舰",
   "market": "中国大陆正式销售",
-  "display": "6.81 英寸 OLED 直屏 · FHD+ 2788×1280 · 最高 120Hz",
+  "display": "6.81 英寸 OLED · FHD+ 1280×2788 · 120Hz · 峰值 10000nits",
   "chip": "第五代骁龙 8 至尊版移动平台",
-  "camera": "后置 2 亿像素主摄（OIS）+ 5000 万长焦（3×光变、OIS）+ 1200 万超广角微距；前置 5000 万像素",
-  "battery": "11000mAh（典型值）/ 10690mAh（额定值）",
-  "charging": "80W 有线快充；50W 无线快充",
-  "weight": "约 227g（含电池）",
+  "camera": "后置 2 亿广角(1/1.55,F1.9,OIS)+5000 万长焦(F2.4,OIS,3x/100x)+1200 万超广角微距(F2.2)；前置 5000 万(F2.0,90°)",
+  "battery": "11000mAh（典型）/ 10690mAh（额定）",
+  "charging": "80W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电",
+  "weight": "约 227g",
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
   "os": "MagicOS 11（基于 Android 17）",
   "priceCN": 4499,
-  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
-  "selling": "11000mAh 大电池、主动散热与旗舰平台，面向长时间游戏和重载使用",
+  "priceText": "官方首发起售价（12GB+256GB），非当前售价",
+  "selling": "11000mAh 超大电池 + 第五代骁龙 8 至尊版",
   "bestFor": [
-   "游戏性能",
-   "长续航",
-   "大屏影音"
+   "续航",
+   "日常全能"
   ],
-  "source": "https://www.honor.com/cn/shop/product/10086019084925.html",
-  "sourceName": "荣耀官方商城产品规格页",
-  "verified": false,
+  "source": "https://www.honor.com/cn/phones/honor-magic9-ultra/spec/",
+  "sourceName": "荣耀官方网站规格页",
+  "verified": true,
   "launchMonth": "2026-09",
-  "launchDateDisplay": "2026年09月",
-  "priceType": "official_starting_price",
+  "launchDateDisplay": "2026年9月28日发布并开售",
+  "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
   "livePriceCheckedAt": null,
@@ -43258,113 +43382,158 @@
    "16GB+512GB"
   ],
   "chinaOfficial": true,
-  "dataNote": "已按荣耀官方商城规格页录入主要硬件参数；首发价具体容量映射尚未完成复核。整机仍处于待审核状态，不得进入正式排名或推荐。",
+  "dataNote": "2026-11-27 完成九字段官方核验，为全库首批通过整机准入的样本：屏幕/处理器/影像/电池/充电/重量/容量组合/发布日期/首发价均来自荣耀官网（规格页、概述页、发布稿、商城 SKU 价目表）。价格为国补前官方首发价。",
   "announcementSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
-  "priceSource": "https://www.honor.com/cn/news/honor-magic9-launch/",
-  "priceSourceName": "荣耀官网 Magic9 系列发布稿",
+  "priceSource": "https://www.honor.com/cn/shop/product/10086019084925.html",
+  "priceSourceName": "荣耀商城商品页（SKU 价目表）",
   "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
   "scoreMethod": "heuristic_preliminary",
   "quoteTargetStorage": null,
   "quoteTargetStorageReason": "首发价 SKU 映射完成前不触发报价检索。",
-  "auditStatus": "pending_review",
+  "auditStatus": "verified",
   "auditNotes": [
-   "2026-10-31 修正电池写法：11000 mAh（典型值）/ 10690 mAh（额定值） → 11000mAh（典型值）/ 10690mAh（额定值）（统一电池单位写法（数值不变））",
-   "2026-10-31 修正重量写法：约 227 g（含电池） → 约 227g（含电池）（统一重量单位与空格写法（数值不变））",
-   "官方发布稿确认机型于2026年9月28日正式开售，系列发布稿标注4499元起。",
-   "屏幕、处理器、相机、电池、充电、重量和容量组合依据荣耀官方商城规格页录入。",
-   "官方商城当前展示价格不等同于官方首发价；具体首发价与容量 SKU 映射待复核。",
-   "verified保持false，正式排名与推荐资格保持关闭。",
-   "2026-10-20 回填官方首发价：4499元起；对应容量组合未公布（仅起售价）",
-   "2026-10-21 自动补录完整参数：10 组 / 75 项（中关村在线，标题比对通过）",
-   "2026-10-20 补录完整参数表：10 组 / 75 项（中关村在线参数页（第三方核验））"
+   "2026-11-27 九字段全部 verified_official_page_reviewed，auditStatus=verified，双资格开启",
+   "首发价取荣耀商城 12GB+256GB SKU 官方标价，与发布稿「XX 元起」一致；商城 handPrice 是国补到手价，未采用",
+   "刷新率不在规格页，来自官网概述页（120Hz / 1–120Hz 自适应），已在屏幕字段注明",
+   "honor-magic9 原记录 priceCN=4499 有误（与超能版串档），本次修正为 4999"
   ],
-  "priceAuditStatus": "starting_price_only",
-  "parameterAuditStatus": "partial",
-  "eligibleForRanking": false,
-  "eligibleForRecommendation": false,
+  "priceAuditStatus": "official_sku_mapping_verified",
+  "parameterAuditStatus": "complete",
+  "eligibleForRanking": true,
+  "eligibleForRecommendation": true,
   "fieldAudit": [
    {
     "field": "屏幕",
-    "value": "6.81 英寸 · 全面屏 · 120Hz",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178514/param.shtml",
-    "evidenceText": "中关村在线参数页：屏幕 6.81 英寸 · 全面屏 · 120Hz",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "6.81 英寸 · 全面屏 · 120Hz"
+    "value": "6.81 英寸 OLED · FHD+ 1280×2788 · 120Hz · 峰值 10000nits",
+    "valueAtAudit": "6.81 英寸 OLED · FHD+ 1280×2788 · 120Hz · 峰值 10000nits",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9-ultra/spec/",
+    "evidenceText": "官方规格页「屏幕」分组：尺寸/分辨率/类型/亮度/护眼逐项抄录；刷新率见官网概述页（https://www.honor.com/cn/phones/honor-magic9-ultra/）",
+    "note": ""
    },
    {
     "field": "处理器",
-    "value": "骁龙 8 Elite Gen5",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178514/param.shtml",
-    "evidenceText": "中关村在线参数页：处理器 骁龙 8 Elite Gen5",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "骁龙 8 Elite Gen5"
+    "value": "第五代骁龙 8 至尊版移动平台",
+    "valueAtAudit": "第五代骁龙 8 至尊版移动平台",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9-ultra/spec/",
+    "evidenceText": "官方规格页「处理器-CPU型号」原文：第五代骁龙 8 至尊版移动平台",
+    "note": ""
    },
    {
     "field": "影像",
-    "value": "后置 后置摄像头1：主摄 后置摄像头2：长焦摄像头 后置摄像头3：超广角微距摄像头",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178514/param.shtml",
-    "evidenceText": "中关村在线参数页：影像 后置 后置摄像头1：主摄 后置摄像头2：长焦摄像头 后置摄像头3：超广角微距摄像头",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "后置 后置摄像头1：主摄 后置摄像头2：长焦摄像头 后置摄像头3：超广角微距摄像头"
-   },
-   {
-    "field": "充电",
-    "value": "80W 有线 / 50W 无线",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178514/param.shtml",
-    "evidenceText": "中关村在线参数页：充电 80W 有线 / 50W 无线",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "80W 有线 / 50W 无线"
-   },
-   {
-    "field": "容量组合",
-    "value": "16GB+512GB",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178514/param.shtml",
-    "evidenceText": "中关村在线参数页：容量组合 16GB+512GB",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站，非厂商官方页。",
-    "valueAtAudit": "16GB+512GB"
-   },
-   {
-    "field": "正式发布/开售日期",
-    "value": "2026年09月28日",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2179/2178514/param.shtml",
-    "evidenceText": "中关村在线参数页：上市日期 2026年09月28日",
-    "note": "2026-10-21 由完整参数表自动回填；第三方参数站。",
-    "valueAtAudit": "2026年09月28日"
-   },
-   {
-    "field": "官方首发起售价",
-    "value": "4499元起；对应容量组合未公布",
-    "status": "starting_price_only_sku_mapping_unverified",
-    "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
-    "evidenceText": "官方发布稿写明荣耀 Magic9 超能版售价 4499 元起，2026-09-28 开售；未逐档列出容量与价格对应关系。",
-    "note": "官方只给出起售价，未逐字公布该价位对应的容量 SKU；前端按「官方起售价（容量待核）」展示，不得当作已核验首发价。"
-   },
-   {
-    "field": "重量",
-    "value": "约 227g（含电池）",
-    "valueAtAudit": "约 227g（含电池）",
-    "status": "corrected",
-    "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
-    "evidenceText": "统一重量单位与空格写法（数值不变）；原值 约 227 g（含电池）",
-    "note": "2026-10-31 修正写法（数值未变）。"
+    "value": "后置 2 亿广角(1/1.55,F1.9,OIS)+5000 万长焦(F2.4,OIS,3x/100x)+1200 万超广角微距(F2.2)；前置 5000 万(F2.0,90°)",
+    "valueAtAudit": "后置 2 亿广角(1/1.55,F1.9,OIS)+5000 万长焦(F2.4,OIS,3x/100x)+1200 万超广角微距(F2.2)；前置 5000 万(F2.0,90°)",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9-ultra/spec/",
+    "evidenceText": "官方规格页「后置摄像头 / 前置摄像头」分组原文",
+    "note": ""
    },
    {
     "field": "电池",
-    "value": "11000mAh（典型值）/ 10690mAh（额定值）",
-    "valueAtAudit": "11000mAh（典型值）/ 10690mAh（额定值）",
-    "status": "corrected",
+    "value": "11000mAh（典型）/ 10690mAh（额定）",
+    "valueAtAudit": "11000mAh（典型）/ 10690mAh（额定）",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9-ultra/spec/",
+    "evidenceText": "官方规格页电池容量（典型值）及其额定容量备注原文",
+    "note": ""
+   },
+   {
+    "field": "充电",
+    "value": "80W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电",
+    "valueAtAudit": "80W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9-ultra/spec/",
+    "evidenceText": "官方规格页「有线快充 / 无线充电」分组原文",
+    "note": ""
+   },
+   {
+    "field": "重量",
+    "value": "约 227g",
+    "valueAtAudit": "约 227g",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9-ultra/spec/",
+    "evidenceText": "官方规格页「尺寸与重量-重量」原文",
+    "note": ""
+   },
+   {
+    "field": "容量组合",
+    "value": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+    "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+512GB",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-magic9-ultra/spec/",
+    "evidenceText": "官方规格页「存储」分组原文",
+    "note": ""
+   },
+   {
+    "field": "正式发布/开售日期",
+    "value": "2026-09-28 发布并开售",
+    "valueAtAudit": "2026-09-28 发布并开售",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/news/honor-magic9-launch/",
+    "evidenceText": "荣耀官网发布稿原文「荣耀Magic9 系列已于2026年9月28日正式开售」",
+    "note": "厂商发布稿，非媒体转述"
+   },
+   {
+    "field": "官方首发起售价",
+    "value": 4499,
+    "valueAtAudit": 4499,
+    "status": "verified_official_page_reviewed",
     "sourceUrl": "https://www.honor.com/cn/shop/product/10086019084925.html",
-    "evidenceText": "统一电池单位写法（数值不变）；原值 11000 mAh（典型值）/ 10690 mAh（额定值）",
-    "note": "2026-10-31 修正写法（数值未变）。"
+    "evidenceText": "荣耀商城商品页内嵌 SKU 价目表：12GB+256GB = ¥4499；与官网发布稿「售价 4499 元起」一致，故判定为官方首发价（对应中国大陆版 12GB+256GB）。商城另列 handPrice 为国补到手价，未采用",
+    "note": "首个 9/9 准入样本"
    }
   ],
   "specs": [
+   {
+    "group": "官方规格（九字段已核验）",
+    "items": [
+     [
+      "上市时间",
+      "2026年9月28日发布并开售（荣耀官网发布稿）"
+     ],
+     [
+      "屏幕",
+      "6.81 英寸 OLED · FHD+ 1280×2788 · 120Hz · 峰值 10000nits"
+     ],
+     [
+      "处理器",
+      "第五代骁龙 8 至尊版移动平台"
+     ],
+     [
+      "后置摄像头",
+      "后置 2 亿广角(1/1.55,F1.9,OIS)+5000 万长焦(F2.4,OIS,3x/100x)+1200 万超广角微距(F2.2)；前置 5000 万(F2.0,90°)"
+     ],
+     [
+      "电池",
+      "11000mAh（典型）/ 10690mAh（额定）"
+     ],
+     [
+      "充电",
+      "80W 有线超级快充 / 50W 无线超级快充 / 支持无线反向充电"
+     ],
+     [
+      "尺寸与重量",
+      "约 227g"
+     ],
+     [
+      "存储组合",
+      "12GB+256GB / 12GB+512GB / 16GB+512GB"
+     ],
+     [
+      "防尘抗水",
+      "IP68 / IP69 / IP69K（官方规格页）"
+     ],
+     [
+      "操作系统",
+      "MagicOS 11（基于 Android 17）"
+     ],
+     [
+      "屏幕刷新率",
+      "120Hz（官网概述页）"
+     ]
+    ]
+   },
    {
     "group": "基本参数",
     "items": [
@@ -43716,10 +43885,10 @@
     ]
    }
   ],
-  "specSource": "https://detail.zol.com.cn/2179/2178514/param.shtml",
-  "specSourceName": "中关村在线参数页（第三方核验）",
-  "specFieldCount": 75,
-  "specCollectedAt": "2026-10-20"
+  "specSource": "https://www.honor.com/cn/phones/honor-magic9-ultra/spec/",
+  "specSourceName": "荣耀官方产品规格页 + 概述页 + 发布稿 + 商城价目表",
+  "specFieldCount": 9,
+  "specCollectedAt": "2026-11-27"
  },
  {
   "id": "vivo-x500pm",

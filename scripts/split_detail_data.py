@@ -205,7 +205,13 @@ for p in arr:
         detail["specs"] = rec.pop("specs")
         moved += 1
     if has_audit:
-        detail["fieldAudit"] = rec.pop("fieldAudit")
+        fa_keep = rec.pop("fieldAudit")
+        detail["fieldAudit"] = fa_keep
+        # 已核验的记录必须把 fieldAudit 留在内联数据里：
+        # PhoneEligibility 在首屏就要用它判准入，而详情是按需加载的——
+        # 一旦抽走，rankingCandidates() 首屏恒为 0，补再多样本也等于没接。
+        if rec.get("auditStatus") == "verified":
+            rec["fieldAudit"] = fa_keep
     detail_files[str(rec.get("id"))] = detail
     for k in INLINE_DROP:
         rec.pop(k, None)

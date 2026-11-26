@@ -233,6 +233,49 @@ function makeDom(opts = {}) {
     dom.window.close();
   }
 
+  /* ================= ⑧ 准入样本与推荐面板 ================= */
+  console.log('\n⑧ 准入样本');
+  {
+    const dom = makeDom();
+    await sleep(2400);
+    const { window } = dom, doc = window.document;
+    const ids = ['honor-magic9', 'honor-magic9pm', 'honor-magic9-ultra'];
+
+    const cands = window.PhoneEligibility.recommendationCandidates(window.PHONE_DATA || []);
+    const gotIds = cands.map(p => p.id);
+    ok(ids.every(id => gotIds.includes(id)), '三款 Magic9 通过九字段准入', `候选 ${cands.length} 台`);
+    ok(cands.every(p => p.auditStatus === 'verified' && p.eligibleForRanking && p.eligibleForRecommendation),
+      '准入记录的状态与双资格一致');
+
+    const cardPill = async id => {
+      const i = doc.getElementById('searchInput');
+      i.value = 'Magic9'; i.dispatchEvent(new window.Event('input', { bubbles: true }));
+      await sleep(450);
+      const el = doc.querySelector(`[data-detail="${id}"]`);
+      return el ? el.closest('.phone-card').querySelector('.audit-pill').textContent.trim() : '';
+    };
+    ok((await cardPill('honor-magic9')) === '审核通过', '卡片显示「审核通过」');
+
+    /* 默认年份：只有合格样本进入正式推荐；换成 2024（无样本）必须退回参考排序并改口 */
+    doc.querySelector('[data-priority="拍照视频"]').click();
+    await sleep(120);
+    doc.getElementById('applyRecommend').click();
+    await sleep(600);
+    const box = doc.getElementById('recommendResults');
+    const head1 = (box.querySelector('.rec-head') || { textContent: '' }).textContent.replace(/\s+/g, '');
+    const n1 = box.querySelectorAll('.rec-card').length;
+    ok(/正式推荐候选/.test(head1) && n1 === cands.length, '有无样本时只出准入候选', `${n1} 张`);
+    ok(!/非正式推荐/.test(head1), '此时不再写「非正式推荐」');
+
+    const yf = doc.getElementById('recYearFrom'), yt = doc.getElementById('recYearTo');
+    yf.value = '2024'; yt.value = '2024';
+    yf.dispatchEvent(new window.Event('change', { bubbles: true }));
+    await sleep(500);
+    const head2 = (box.querySelector('.rec-head') || { textContent: '' }).textContent.replace(/\s+/g, '');
+    ok(/暂无机型通过九字段核验/.test(head2) && /非正式推荐/.test(head2), '无样本年份退回参考排序并明确标注', head2.slice(0, 30));
+    dom.window.close();
+  }
+
   console.log(`\n${pass} 通过 / ${fail} 失败`);
   process.exit(fail ? 1 : 0);
 })();
