@@ -732,6 +732,12 @@ html[data-theme="light"] .alt-card{background:rgba(20,24,32,.03)}
 .rec-year select{padding:8px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);color:var(--ink);font-size:12px;outline:none}
 html[data-theme="light"] .rec-year select{background:#fff}
 .rec-year select:hover{border-color:var(--line-strong)}
+/* 两段式推荐：正式候选在上、参考排序在下。分段而不是混排，
+   是因为两者的可信度不同，混在一起用户无法分辨哪几条有官方依据。 */
+.rec-group{margin-bottom:14px}
+.rec-group h5{display:flex;align-items:baseline;gap:8px;margin:14px 0 8px;font-size:13px;font-weight:700;color:var(--ink)}
+.rec-group h5 span{font-size:11px;font-weight:500;color:var(--faint)}
+.rec-group+.rec-group h5{margin-top:20px}
 .rec-empty{padding:18px 20px;border-radius:18px;border:1px dashed var(--line-strong);background:rgba(255,255,255,.03)}
 .rec-empty b{display:block;font-size:14px;margin-bottom:6px}
 .rec-empty p{margin:0 0 12px;font-size:13px;color:var(--muted);line-height:1.7}
@@ -1521,7 +1527,7 @@ html[data-theme="light"]{scrollbar-color:rgba(20,24,32,.22) transparent}
             <div id="priorityOptions" class="priority-options"><button data-priority="拍照视频">拍照 / 视频 <span aria-hidden="true">+</span></button><button data-priority="游戏性能">游戏性能 <span aria-hidden="true">+</span></button><button data-priority="续航">续航耐用 <span aria-hidden="true">+</span></button><button data-priority="小屏手感">小屏手感 <span aria-hidden="true">+</span></button><button data-priority="大屏办公">大屏办公 <span aria-hidden="true">+</span></button><button data-priority="苹果生态">苹果生态 <span aria-hidden="true">+</span></button><button data-priority="AI功能">AI 功能 <span aria-hidden="true">+</span></button></div>
             <div class="recommend-controls"><span class="priority-count" id="priorityCount" aria-live="polite">已选 0 / 3</span><label class="rec-year">年份 <select id="recYearFrom" aria-label="推荐起始年份"><option value="">不限</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option></select><span class="rec-year-sep">—</span><select id="recYearTo" aria-label="推荐结束年份"><option value="">不限</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option></select></label><label>预算参考（单选） <select id="budgetSelect" aria-label="预算上限，单选"><option value="0">暂不限制预算</option><option value="4000">约 ¥4,000 内</option><option value="6000">约 ¥6,000 内</option><option value="8000">约 ¥8,000 内</option><option value="10000">约 ¥10,000 内</option></select></label><button class="button button-dark button-small" id="applyRecommend">生成候选 <span>↗</span></button></div>
             <div id="recommendResults" class="recommend-results" hidden></div>
-            <p class="recommend-disclaimer">这里的排序按你选的需求对参数做加权匹配：续航看电池容量与充电功率，小屏看屏幕尺寸与重量，影像看像素与长焦，预算按官方起售价估算。该年份区间若有通过九字段核验的机型，只输出这些正式候选；没有则退回参考排序并明确标注。两者都不构成购买建议。</p>
+            <p class="recommend-disclaimer">这里的排序按你选的需求对参数做加权匹配：续航看电池容量与充电功率，小屏看屏幕尺寸与重量，影像看像素与长焦，预算按官方起售价估算。通过九字段核验的机型单独列为「正式候选」，其余机型按参数匹配排在「参考排序」，两段分开标注、不混排；两者都不构成购买建议。</p>
           </div>
           <div id="batchBar" class="batch-bar" hidden><span class="batch-count">已选 <b id="batchCount">0</b> 项</span><button class="text-button" type="button" data-batch="compare">加入对比</button><button class="text-button" type="button" data-batch="fav">收藏</button><button class="text-button" type="button" data-batch="export">导出选中</button><button class="text-button" type="button" data-batch="clear">清空选择</button></div>
           <div id="unknownHint" class="unknown-hint" hidden></div>
@@ -2501,22 +2507,35 @@ function recommendForNeeds(){
  const gatedPool=budget?gatedYear.filter(p=>Number.isFinite(Number(p.priceCN))&&Number(p.priceCN)<=budget):gatedYear;
  const usingGated=gatedPool.length>0;
  const yearPool=phones.filter(p=>inRecYear(p,from,to));
- let pool=usingGated?gatedPool:(budget?yearPool.filter(p=>Number.isFinite(Number(p.priceCN))&&Number(p.priceCN)<=budget):yearPool.slice());
- let relaxedBudget=false;
- if(!usingGated&&!pool.length&&budget&&yearPool.length){pool=yearPool.slice();relaxedBudget=true;}
  const el=$('recommendResults');if(!el)return;
  const yearText=recYearText(from,to);
- if(!pool.length){
+ const gatedIds=new Set(gatedPool.map(p=>p.id));
+ /* 参考池 = 该年份区间内、未通过九字段核验的机型。
+    为什么必须把它留下来：准入样本目前只有 4 台，如果推荐池只装它们，
+    无论选「拍照」还是「续航」，出来的都是同样 4 台——选需求就失去意义了。 */
+ const restRaw=yearPool.filter(p=>!gatedIds.has(p.id));
+ const restPool=budget?restRaw.filter(p=>Number.isFinite(Number(p.priceCN))&&Number(p.priceCN)<=budget):restRaw;
+ const ranked=(list,limit)=>list.map(p=>({p,s:scoreFor(p,priorities)}))
+  .sort((a,b)=>b.s.score-a.s.score||Number(a.p.priceCN)-Number(b.p.priceCN)).slice(0,limit);
+ const gatedRanked=ranked(gatedPool,4);
+ /* 预算卡死时，参考段退回不限预算并在标题里说明，别让用户以为没结果 */
+ let relaxedBudget=false, restRanked=ranked(restPool,6);
+ if(!gatedRanked.length&&!restRanked.length&&budget&&restRaw.length){restRanked=ranked(restRaw,6);relaxedBudget=true;}
+ if(!gatedRanked.length&&!restRanked.length){
   state.recommendIds=new Set();
   el.hidden=false;
-  el.innerHTML=`<div class="rec-empty"><b>${esc(yearText)} 没有可推荐的机型</b><p>${esc(yearText)}${budget?` 且首发价 ≤ ¥${budget.toLocaleString('zh-CN')}`:''} 的样本为空。可以放宽年份区间、改预算，或清除年份限制。</p><button class="button button-light button-small" data-rec-clear-years>清除年份限制</button></div>`;
+  el.innerHTML=`<div class="rec-empty"><b>${esc(yearText)} 没有可推荐的机型</b><p>${esc(yearText)}${budget?` 且首发起售价 ≤ ¥${budget.toLocaleString('zh-CN')}`:''} 的样本为空。可以放宽年份区间、改预算，或清空筛选后重试。</p><button class="button button-light button-small" data-rec-swap-years>交换年份区间</button></div>`;
   el.scrollIntoView({behavior:'smooth',block:'start'});
   return;
  }
- const ranked=pool.map(p=>({p,s:scoreFor(p,priorities)})).sort((a,b)=>b.s.score-a.s.score||Number(a.p.priceCN)-Number(b.p.priceCN)).slice(0,8);
- state.recommendIds=new Set(ranked.map(r=>r.p.id));
+ const cardOf=({p,s},i)=>`<article class="rec-card"><div class="rec-rank">${String(i+1).padStart(2,'0')}</div><div class="rec-main"><h4>${esc(p.name)}</h4><p>${esc(p.display||'—')} · ${esc(p.battery||'—')} · ${esc(p.weight||'—')}</p><div class="rec-tags">${priorities.map(t=>`<span>${esc(t)} ${s.scores[t]}</span>`).join('')}</div></div><div class="rec-price"><strong${hasOfficialPrice(p)?'':' class="is-empty"'}>${priceNumberText(p)}</strong><small>${priceTagText(p)}</small></div><div class="rec-actions"><button class="text-button" data-compare="${esc(p.id)}">加入对比</button><button class="text-button" data-detail="${esc(p.id)}">详情</button></div></article>`;
+ const total=gatedRanked.length+restRanked.length;
+ state.recommendIds=new Set([...gatedRanked,...restRanked].map(r=>r.p.id));
  el.hidden=false;
- el.innerHTML=`<div class="rec-head"><b>${priorities.join(' · ')}</b><span>${esc(yearText)} · ${relaxedBudget?'该年份区间内预算无匹配，已改为不限预算':(budget?'按首发价 ≤ ¥'+budget.toLocaleString('zh-CN'):'不限预算')} · ${usingGated?'九字段已核验 · 正式推荐候选':'该年份区间暂无通过九字段核验的机型 · 参数匹配参考，非正式推荐'}</span></div>`+ranked.map(({p,s},i)=>`<article class="rec-card"><div class="rec-rank">${String(i+1).padStart(2,'0')}</div><div class="rec-main"><h4>${esc(p.name)}</h4><p>${esc(p.display||'—')} · ${esc(p.battery||'—')} · ${esc(p.weight||'—')}</p><div class="rec-tags">${priorities.map(t=>`<span>${esc(t)} ${s.scores[t]}</span>`).join('')}</div></div><div class="rec-price"><strong>${money(p.priceCN)}</strong><small>官方首发价</small></div><div class="rec-actions"><button class="text-button" data-compare="${esc(p.id)}">加入对比</button><button class="text-button" data-detail="${esc(p.id)}">详情</button></div></article>`).join('')+`<div class="rec-foot"><button class="button button-light button-small" id="recOnlyBtn">在列表中只看这 ${ranked.length} 款</button><span>分数仅用于同一需求下的横向比较，不代表整机优劣，也不构成购买推荐。</span></div>`;
+ el.innerHTML=`<div class="rec-head"><b>${priorities.join(' · ')}</b><span>${esc(yearText)} · ${relaxedBudget?'该年份区间内预算无匹配，参考段已改为不限预算':(budget?'首发起售价 ≤ ¥'+budget.toLocaleString('zh-CN'):'不限预算')}</span></div>`
+  +(gatedRanked.length?`<section class="rec-group"><h5>正式候选<span>九字段官方核验 · ${gatedRanked.length} 款</span></h5>${gatedRanked.map(cardOf).join('')}</section>`:'')
+  +(restRanked.length?`<section class="rec-group"><h5>参考排序<span>参数匹配 · 未通过九字段核验 · ${restRanked.length} 款</span></h5>${restRanked.map(cardOf).join('')}</section>`:'')
+  +`<div class="rec-foot"><button class="button button-light button-small" id="recOnlyBtn">在列表中只看这 ${total} 款</button><span>${gatedRanked.length?'正式候选才参与排名与推荐；参考排序只按你选的需求做参数匹配。':'该年份区间暂无通过九字段核验的机型，以下仅为参数匹配参考，不构成推荐。'}</span></div>`;
  el.scrollIntoView({behavior:'smooth',block:'start'});
 }
 /* ===== 规格搜索索引（支持按参数关键词检索） ===== */
