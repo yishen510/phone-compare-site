@@ -261,11 +261,11 @@ function makeDom(opts = {}) {
     const dom = makeDom();
     await sleep(2400);
     const { window } = dom, doc = window.document;
-    const ids = ['honor-magic9', 'honor-magic9pm', 'honor-magic9-ultra'];
+    const ids = ['honor-magic9', 'honor-magic9pm', 'honor-magic9-ultra', 'honor-win2'];
 
     const cands = window.PhoneEligibility.recommendationCandidates(window.PHONE_DATA || []);
     const gotIds = cands.map(p => p.id);
-    ok(ids.every(id => gotIds.includes(id)), '三款 Magic9 通过九字段准入', `候选 ${cands.length} 台`);
+    ok(ids.every(id => gotIds.includes(id)), '四款样本通过九字段准入', `候选 ${cands.length} 台`);
     ok(cands.every(p => p.auditStatus === 'verified' && p.eligibleForRanking && p.eligibleForRecommendation),
       '准入记录的状态与双资格一致');
 

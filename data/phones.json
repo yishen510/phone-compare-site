@@ -100877,60 +100877,106 @@
   "year": 2026,
   "type": "游戏性能旗舰",
   "market": "中国大陆正式销售",
-  "display": "6.89 英寸 2K 直屏 · 185Hz",
-  "chip": "骁龙 8 Elite Gen6",
-  "camera": "2 亿像素主摄 + 1200 万像素超广角；前置 5000 万像素",
-  "battery": "10100mAh",
-  "charging": "100W 有线 / 80W 无线",
-  "weight": "237g",
-  "storage": "12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
+  "display": "6.89 英寸 OLED · 2K 3104×1440 · 185Hz",
+  "chip": "第六代骁龙 8 超级至尊版移动平台",
+  "camera": "后置 2 亿主摄(1/1.4,F1.9,OIS)+1200 万超广角(F2.2)；前置 5000 万(F2.0,90°)",
+  "battery": "10100mAh（典型）/ 9850mAh（额定）",
+  "charging": "100W 有线超级快充 / 80W 无线超级快充 / 支持无线反向充电",
+  "weight": "约 237g",
+  "storage": "12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "MagicOS 11",
   "priceCN": 5499,
-  "priceText": "首销价（12GB+256GB）；16+256 5799 / 12+512 首销 5999 / 16+512 6999 / 16+1TB 7999",
-  "selling": "双风扇主动散热 + 10100mAh 青海湖电池，2K 185Hz 电竞屏",
+  "priceText": "官方起售价（12GB+256GB），非当前售价",
+  "selling": "10100mAh + 185Hz 2K 直屏 + 第六代骁龙 8 超级至尊版",
   "bestFor": [
    "游戏性能",
    "续航",
    "日常全能"
   ],
-  "source": "https://detail.zol.com.cn/2182/2181338/param.shtml",
-  "sourceName": "中关村在线参数页（第三方核验）",
-  "verified": false,
+  "source": "https://www.honor.com/cn/phones/honor-win2/spec/",
+  "sourceName": "荣耀官方网站规格页",
+  "verified": true,
   "launchMonth": "2026-10",
-  "launchDateDisplay": "2026年10月21日",
+  "launchDateDisplay": "2026年10月21日发布并首销",
   "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
   "livePriceCheckedAt": null,
   "storageOptions": [
    "12GB+256GB",
-   "16GB+256GB",
    "12GB+512GB",
+   "16GB+256GB",
    "16GB+512GB",
    "16GB+1TB"
   ],
   "chinaOfficial": true,
-  "dataNote": "参数来自中关村在线参数页；首发价与开售时间来自官方页/发布会报道，均标注来源",
-  "announcementSource": "https://baike.baidu.com/item/%E8%8D%A3%E8%80%80WIN2%E7%B3%BB%E5%88%97/67803436",
-  "priceSource": "https://www.cfbond.com/ejy/qyzxpd/4896228675.shtml",
-  "priceSourceName": "中国财富网·荣耀 WIN2 系列开售报道（含三机起售价）",
+  "dataNote": "2026-11-27 完成九字段官方核验并开启排名/推荐资格。首发价取自荣耀商城 12GB+256GB 的 SKU 标价（未打折），与发布稿国补价差额等于国补封顶额。",
+  "announcementSource": "https://www.honor.com/cn/news/honor-win2-series/",
+  "priceSource": "https://www.honor.com/cn/shop/product/10086249682976.html",
+  "priceSourceName": "荣耀商城商品页（SKU 价目表）",
   "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
   "scoreMethod": "heuristic_preliminary",
   "quoteTargetStorage": "12GB+256GB",
   "quoteTargetStorageReason": "报价检索只接受商品标题中可核验的型号与这一指定大陆版 RAM/ROM 组合；无法匹配就不显示价格。",
-  "auditStatus": "needs_parameter_price_audit",
+  "auditStatus": "verified",
   "auditNotes": [
-   "2026-10-29 新增机型：77 项参数（中关村在线，标题比对通过）",
-   "10 月 21 日发布并当日开售；WIN2 / WIN RT2 / WIN Turbo2 起售价分别为 5499 / 4199 / 3199 元，见中国财富网报道，与荣耀官方开售页一致。",
-   "国补与首销优惠后的到手价另计（5499 → 4999），本站只记官方标价。"
+   "2026-11-27 九字段全部 verified_official_page_reviewed，auditStatus=verified，双资格开启",
+   "首发价来源是荣耀商城 SKU 标价，不是发布稿明示（发布稿只给国补到手价）；判定条件写进 evidenceText",
+   "WIN RT2 未纳入：其发布稿国补价 3149 与商城标价 4499 差 1350，不符合「差额=国补封顶 500」的旁证条件",
+   "185Hz 不在规格页，来自官网概述页，已在屏幕字段注明"
   ],
-  "priceAuditStatus": "source_present_needs_crosscheck",
-  "parameterAuditStatus": "partial",
+  "priceAuditStatus": "official_store_sku_verified",
+  "parameterAuditStatus": "complete",
   "specSource": "https://detail.zol.com.cn/2182/2181338/param.shtml",
   "specSourceName": "中关村在线参数页（第三方核验）",
-  "specFieldCount": 77,
-  "specCollectedAt": "2026-10-29",
+  "specFieldCount": 9,
+  "specCollectedAt": "2026-11-27",
   "specs": [
+   {
+    "group": "官方规格（九字段已核验）",
+    "items": [
+     [
+      "上市时间",
+      "2026年10月21日发布并首销（荣耀官网发布稿）"
+     ],
+     [
+      "屏幕",
+      "6.89 英寸 OLED · 2K 3104×1440 · 185Hz"
+     ],
+     [
+      "处理器",
+      "第六代骁龙 8 超级至尊版移动平台"
+     ],
+     [
+      "后置摄像头",
+      "后置 2 亿主摄(1/1.4,F1.9,OIS)+1200 万超广角(F2.2)；前置 5000 万(F2.0,90°)"
+     ],
+     [
+      "电池",
+      "10100mAh（典型）/ 9850mAh（额定）"
+     ],
+     [
+      "充电",
+      "100W 有线超级快充 / 80W 无线超级快充 / 支持无线反向充电"
+     ],
+     [
+      "尺寸与重量",
+      "8.5mm · 约 237g"
+     ],
+     [
+      "存储组合",
+      "12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB / 16GB+1TB"
+     ],
+     [
+      "防尘抗水",
+      "IP68 / IP69 / IP69K（官方规格页）"
+     ],
+     [
+      "操作系统",
+      "MagicOS 11（基于 Android 17）"
+     ]
+    ]
+   },
    {
     "group": "基本参数",
     "items": [
@@ -101288,77 +101334,88 @@
   "fieldAudit": [
    {
     "field": "屏幕",
-    "value": "6.89 英寸 2K 直屏 · 185Hz",
-    "valueAtAudit": "6.89 英寸 2K 直屏 · 185Hz",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2182/2181338/param.shtml",
-    "evidenceText": "参数表/官方页：屏幕 6.89 英寸 2K 直屏 · 185Hz",
-    "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+    "value": "6.89 英寸 OLED · 2K 3104×1440 · 185Hz",
+    "valueAtAudit": "6.89 英寸 OLED · 2K 3104×1440 · 185Hz",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-win2/spec/",
+    "evidenceText": "官方规格页「屏幕」分组：6.89 英寸 / QHD+ 3104×1440 / OLED；185Hz 见官网概述页原文「2K+185Hz」",
+    "note": ""
    },
    {
     "field": "处理器",
-    "value": "骁龙 8 Elite Gen6",
-    "valueAtAudit": "骁龙 8 Elite Gen6",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2182/2181338/param.shtml",
-    "evidenceText": "参数表/官方页：处理器 骁龙 8 Elite Gen6",
-    "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+    "value": "第六代骁龙 8 超级至尊版移动平台",
+    "valueAtAudit": "第六代骁龙 8 超级至尊版移动平台",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-win2/spec/",
+    "evidenceText": "官方规格页「处理器-CPU型号」原文",
+    "note": ""
    },
    {
     "field": "影像",
-    "value": "2 亿像素主摄 + 1200 万像素超广角；前置 5000 万像素",
-    "valueAtAudit": "2 亿像素主摄 + 1200 万像素超广角；前置 5000 万像素",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2182/2181338/param.shtml",
-    "evidenceText": "参数表/官方页：影像 2 亿像素主摄 + 1200 万像素超广角；前置 5000 万像素",
-    "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+    "value": "后置 2 亿主摄(1/1.4,F1.9,OIS)+1200 万超广角(F2.2)；前置 5000 万(F2.0,90°)",
+    "valueAtAudit": "后置 2 亿主摄(1/1.4,F1.9,OIS)+1200 万超广角(F2.2)；前置 5000 万(F2.0,90°)",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-win2/spec/",
+    "evidenceText": "官方规格页「后置摄像头/前置摄像头」分组原文",
+    "note": ""
    },
    {
     "field": "电池",
-    "value": "10100mAh",
-    "valueAtAudit": "10100mAh",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2182/2181338/param.shtml",
-    "evidenceText": "参数表/官方页：电池 10100mAh",
-    "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+    "value": "10100mAh（典型）/ 9850mAh（额定）",
+    "valueAtAudit": "10100mAh（典型）/ 9850mAh（额定）",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-win2/spec/",
+    "evidenceText": "官方规格页电池容量 10100mAh（典型值），备注「额定值为 9850mAh」",
+    "note": ""
    },
    {
     "field": "充电",
-    "value": "100W 有线 / 80W 无线",
-    "valueAtAudit": "100W 有线 / 80W 无线",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2182/2181338/param.shtml",
-    "evidenceText": "参数表/官方页：充电 100W 有线 / 80W 无线",
-    "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+    "value": "100W 有线超级快充 / 80W 无线超级快充 / 支持无线反向充电",
+    "valueAtAudit": "100W 有线超级快充 / 80W 无线超级快充 / 支持无线反向充电",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-win2/spec/",
+    "evidenceText": "官方规格页「有线快充/无线充电」原文：100W 有线、80W 无线、支持无线反向",
+    "note": ""
    },
    {
     "field": "重量",
-    "value": "237g",
-    "valueAtAudit": "237g",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2182/2181338/param.shtml",
-    "evidenceText": "参数表/官方页：重量 237g",
-    "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+    "value": "约 237g",
+    "valueAtAudit": "约 237g",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-win2/spec/",
+    "evidenceText": "官方规格页「尺寸与重量-重量」原文：约 237g（含电池）",
+    "note": ""
    },
    {
     "field": "容量组合",
-    "value": "16GB+256GB",
-    "valueAtAudit": "16GB+256GB",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://detail.zol.com.cn/2182/2181338/param.shtml",
-    "evidenceText": "参数表/官方页：容量组合 16GB+256GB",
-    "note": "2026-10-29 新增机型时按来源填写；参数站与官方页有冲突时以官方页为准。"
+    "value": "12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB / 16GB+1TB",
+    "valueAtAudit": "12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB / 16GB+1TB",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/phones/honor-win2/spec/",
+    "evidenceText": "官方规格页「存储」分组原文，五档",
+    "note": ""
    },
    {
     "field": "正式发布/开售日期",
-    "value": "2026年10月21日",
-    "valueAtAudit": "2026年10月21日",
-    "status": "cross_checked_secondary_source",
-    "sourceUrl": "https://baike.baidu.com/item/%E8%8D%A3%E8%80%80WIN2%E7%B3%BB%E5%88%97/67803436",
-    "evidenceText": "发布会/官网信息：2026年10月21日",
-    "note": "2026-10-29 新增机型时按发布会报道与官网信息填写。"
+    "value": "2026-10-21 发布并首销",
+    "valueAtAudit": "2026-10-21 发布并首销",
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/news/honor-win2-series/",
+    "evidenceText": "荣耀官网发布稿原文「荣耀WIN2、荣耀WIN RT2 发布即首销」及「首销期间（10月21日到11月22日）」",
+    "note": ""
+   },
+   {
+    "field": "官方首发起售价",
+    "value": 5499,
+    "valueAtAudit": 5499,
+    "status": "verified_official_page_reviewed",
+    "sourceUrl": "https://www.honor.com/cn/shop/product/10086249682976.html",
+    "evidenceText": "荣耀商城商品页内嵌 SKU 价目表：12GB+256GB = ¥5499，且 originPrice 同为 5499（未打折）；官网发布稿只公布「首销国补到手价 4999 元起」，差额 500 元等于国补封顶额，可互为旁证。首发价以官方购买指引的 SKU 标价认定，未用国补价反推",
+    "note": "判定条件：price==originPrice 且与发布稿国补价差额=500"
    }
-  ]
+  ],
+  "eligibleForRanking": true,
+  "eligibleForRecommendation": true
  },
  {
   "id": "honor-win-rt2",
