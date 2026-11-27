@@ -272,7 +272,19 @@ function makeDom(opts = {}) {
     yf.dispatchEvent(new window.Event('change', { bubbles: true }));
     await sleep(500);
     const head2 = (box.querySelector('.rec-head') || { textContent: '' }).textContent.replace(/\s+/g, '');
-    ok(/暂无机型通过九字段核验/.test(head2) && /非正式推荐/.test(head2), '无样本年份退回参考排序并明确标注', head2.slice(0, 30));
+    ok(/该年份区间暂无通过九字段核验的机型/.test(head2) && /非正式推荐/.test(head2), '无样本年份退回参考排序并明确标注', head2.slice(0, 34));
+
+    /* 数据说明里要能直接看到是哪几台通过，否则「3 台」是个无法核对的数字 */
+    const notesBtn = [...doc.querySelectorAll('button,a')].find(b => /数据说明/.test(b.textContent));
+    notesBtn.click();
+    await sleep(400);
+    const nt = doc.getElementById('notesModal').textContent.replace(/\s+/g, '');
+    ok(new RegExp(`${cands.length}台通过九字段官方核验`).test(nt), '数据说明给出通过台数');
+    ok(ids.every(id => {
+      const p = (window.PHONE_DATA || []).find(x => x.id === id);
+      /* nt 已去掉所有空白，机型名也要同样处理再比，否则「荣耀 Magic9」永远匹配不上 */
+      return p && nt.includes(String(p.name).replace(/\s+/g, ''));
+    }), '数据说明列出通过机型名称');
     dom.window.close();
   }
 
