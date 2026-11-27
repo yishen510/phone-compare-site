@@ -60,6 +60,11 @@ INLINE_DROP = {
     "livePriceUrl",
     # 报价层已关闭：这条提示在 493 条记录里逐字重复，页面不再渲染占位卡片，留着纯属体积
     "livePriceNote",
+    # 以下字段只在 data/phones.json 里做审计留档，页面从不渲染：
+    # 实测 index.html 去掉内联数据后对它们的引用为 0（sourceName 与 specSourceName 不是一回事）
+    "dataNote", "auditNotes", "priceAuditStatus", "parameterAuditStatus",
+    "scoreMethod", "sourceName", "announcementSource", "storageOptions",
+    "quoteTargetStorageReason",
     "launchPromoPrice",
     "launchPromoPriceText",
     "launchPromoPriceSource",

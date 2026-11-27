@@ -307,6 +307,12 @@ function makeDom(opts = {}) {
       /* nt 已去掉所有空白，机型名也要同样处理再比，否则「荣耀 Magic9」永远匹配不上 */
       return p && nt.includes(String(p.name).replace(/\s+/g, ''));
     }), '数据说明列出通过机型名称');
+
+    /* 有了准入样本之后，「不输出正式排名」这类旧口径必须改口，否则和面板自相矛盾 */
+    ok(!nt.includes('不输出正式排名'), '数据说明不再声称"不输出正式排名"');
+    ok(nt.includes('正式候选仅限通过九字段核验'), '数据说明改为"正式候选仅限已核验机型"');
+    const disc = doc.querySelector('.recommend-disclaimer');
+    ok(disc && /正式候选/.test(disc.textContent), '推荐区免责声明同步改口');
     dom.window.close();
   }
 
