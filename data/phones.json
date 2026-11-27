@@ -15,7 +15,7 @@
   "storage": "12GB+256GB / 12GB+512GB",
   "os": "Android / One UI",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "标准尺寸全能旗舰，Galaxy AI",
   "bestFor": [
    "游戏性能",
@@ -299,7 +299,7 @@
   "storage": "12GB+256GB / 12GB+512GB",
   "os": "Android / One UI",
   "priceCN": 6999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大屏旗舰，性能与显示",
   "bestFor": [
    "游戏性能",
@@ -583,7 +583,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+1TB",
   "os": "Android / One UI",
   "priceCN": 13999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大屏折叠旗舰、轻薄设计",
   "bestFor": [
    "游戏性能",
@@ -972,7 +972,7 @@
   "storage": "12GB+256GB",
   "os": "Android / One UI",
   "priceCN": 7999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "小折叠旗舰；首发价需查发布稿",
   "bestFor": [
    "游戏性能",
@@ -1359,7 +1359,7 @@
   "storage": "12GB+256GB / 12GB+512GB",
   "os": "Android / One UI",
   "priceCN": 6999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "标准旗舰、Galaxy AI",
   "bestFor": [
    "游戏性能",
@@ -1744,7 +1744,7 @@
   "storage": "12GB+256GB",
   "os": "Android / One UI",
   "priceCN": 7999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大屏旗舰、Galaxy AI",
   "bestFor": [
    "游戏性能",
@@ -2134,7 +2134,7 @@
   "storage": "256GB / 512GB",
   "os": "iOS 26",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "标准旗舰、120Hz 屏幕与双摄",
   "bestFor": [
    "游戏性能",
@@ -2586,7 +2586,7 @@
   "storage": "256GB / 512GB / 1TB",
   "os": "iOS 26",
   "priceCN": 7999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "超薄旗舰、仅 eSIM",
   "bestFor": [
    "游戏性能",
@@ -3018,7 +3018,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "HyperOS",
   "priceCN": 4499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "小尺寸全能旗舰",
   "bestFor": [
    "游戏性能",
@@ -3421,7 +3421,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "HyperOS",
   "priceCN": 5299,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大屏影像全能旗舰",
   "bestFor": [
    "拍照视频",
@@ -3833,7 +3833,7 @@
   "storage": "16GB+512GB",
   "os": "HyperOS",
   "priceCN": 5499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "自研芯片旗舰",
   "bestFor": [
    "游戏性能",
@@ -4367,7 +4367,7 @@
   "storage": "12GB+512GB",
   "os": "HyperOS",
   "priceCN": 5999,
-  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
+  "priceText": "首发起售价（对应容量组合未公布，非当前售价）",
   "selling": "小折叠旗舰",
   "bestFor": [
    "游戏性能",
@@ -4872,7 +4872,7 @@
   "storage": "12GB+256GB",
   "os": "HarmonyOS",
   "priceCN": 4699,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "影像旗舰系列标准版；价格待官方首发稿交叉核验",
   "bestFor": [
    "拍照视频",
@@ -5311,7 +5311,7 @@
   "storage": "12GB+256GB",
   "os": "HarmonyOS",
   "priceCN": 6499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "影像旗舰；一英寸主摄",
   "bestFor": [
    "拍照视频",
@@ -5746,7 +5746,7 @@
   "storage": "16GB+512GB",
   "os": "HarmonyOS",
   "priceCN": 7999,
-  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
+  "priceText": "首发起售价（对应容量组合未公布，非当前售价）",
   "selling": "高阶影像旗舰；首发价需查官方发布稿",
   "bestFor": [
    "拍照视频",
@@ -6214,7 +6214,7 @@
   "storage": "12GB+256GB",
   "os": "HarmonyOS 6",
   "priceCN": 5499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "Mate 系列标准旗舰",
   "bestFor": [
    "游戏性能",
@@ -6651,7 +6651,7 @@
   "storage": "20GB+512GB",
   "os": "HarmonyOS 6",
   "priceCN": 11999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "高端设计旗舰",
   "bestFor": [
    "游戏性能",
@@ -7096,7 +7096,7 @@
   "storage": "12GB+512GB",
   "os": "HarmonyOS 6",
   "priceCN": 12999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大折叠旗舰",
   "bestFor": [
    "游戏性能",
@@ -7541,7 +7541,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "HarmonyOS 7.0",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "Mate 系列标准旗舰",
   "bestFor": [
    "游戏性能",
@@ -7974,7 +7974,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "HarmonyOS 7.0",
   "priceCN": 6999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "Mate 系列高阶旗舰",
   "bestFor": [
    "游戏性能",
@@ -8407,7 +8407,7 @@
   "storage": "12GB+512GB / 16GB+512GB",
   "os": "HarmonyOS 7.0",
   "priceCN": 9499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "顶级影像全能旗舰",
   "bestFor": [
    "拍照视频",
@@ -8867,7 +8867,7 @@
   "storage": "12GB+256GB",
   "os": "MagicOS",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "轻薄大折叠旗舰",
   "bestFor": [
    "游戏性能",
@@ -9304,7 +9304,7 @@
   "storage": "12GB+256GB",
   "os": "MagicOS",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大折叠旗舰、超大电池",
   "bestFor": [
    "游戏性能",
@@ -9757,7 +9757,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "MagicOS 11（基于 Android 17）",
   "priceCN": 4999,
-  "priceText": "官方起售价（12GB+256GB），非当前售价",
+  "priceText": "首发起售价（12GB+256GB），非当前售价",
   "selling": "双 2 亿像素 + 8000mAh + 6.37 英寸小直屏",
   "bestFor": [
    "拍照视频",
@@ -10315,7 +10315,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "MagicOS 11（基于 Android 17）",
   "priceCN": 6499,
-  "priceText": "官方起售价（12GB+256GB），非当前售价",
+  "priceText": "首发起售价（12GB+256GB），非当前售价",
   "selling": "第六代骁龙 8 超级至尊版 + 双 2 亿 + 200 倍潜望",
   "bestFor": [
    "拍照视频",
@@ -10894,7 +10894,7 @@
   "storage": "16GB+512GB",
   "os": "ColorOS",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "轻薄大折叠旗舰",
   "bestFor": [
    "游戏性能",
@@ -11318,7 +11318,7 @@
   "storage": "12GB+256GB",
   "os": "ColorOS",
   "priceCN": 4199,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "小屏旗舰；首发价需官方发布稿核验",
   "bestFor": [
    "游戏性能",
@@ -11763,7 +11763,7 @@
   "storage": "16GB+1TB",
   "os": "ColorOS",
   "priceCN": 4199,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大屏旗舰；首发价需官方发布稿核验",
   "bestFor": [
    "游戏性能",
@@ -12208,7 +12208,7 @@
   "storage": "12GB+256GB",
   "os": "ColorOS",
   "priceCN": 5499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "年度全能旗舰；起售价需官方发布稿复核",
   "bestFor": [
    "游戏性能",
@@ -12673,7 +12673,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB——OPPO 官方商城",
   "os": "ColorOS 17",
   "priceCN": 6799,
-  "priceText": "12GB+256GB 官方起售价（非当前售价）",
+  "priceText": "12GB+256GB 首发起售价（非当前售价）",
   "selling": "2026 年影像旗舰，全球首发三 2 亿像素镜头群；起售价需官方发布稿复核",
   "bestFor": [
    "影像拍照",
@@ -13097,7 +13097,7 @@
   "storage": "12GB+256GB",
   "os": "ColorOS",
   "priceCN": 3399,
-  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
+  "priceText": "首发起售价（对应容量组合未公布，非当前售价）",
   "selling": "小屏性能旗舰",
   "bestFor": [
    "游戏性能",
@@ -13563,7 +13563,7 @@
   "storage": "12GB+256GB",
   "os": "OriginOS",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "性能旗舰；2024 年底发布、2025 年仍在售",
   "bestFor": [
    "游戏性能",
@@ -13971,7 +13971,7 @@
   "storage": "16GB+256GB / 16GB+512GB / 16GB+1TB / 24GB+1TB",
   "os": "OriginOS",
   "priceCN": 6199,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "顶级游戏性能旗舰",
   "bestFor": [
    "游戏性能",
@@ -14489,7 +14489,7 @@
   "storage": "12GB+256GB",
   "os": "MyOS",
   "priceCN": 4599,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "屏下摄像头影像旗舰；2025 年仍有销售",
   "bestFor": [
    "拍照视频",
@@ -14877,7 +14877,7 @@
   "storage": "12GB+256GB",
   "os": "REDMAGIC OS",
   "priceCN": 4999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "游戏旗舰；2025 年仍在售",
   "bestFor": [
    "游戏性能",
@@ -15238,7 +15238,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+1TB",
   "os": "Android / One UI",
   "priceCN": 9999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "防窥显示、远摄、S Pen、Galaxy AI",
   "bestFor": [
    "拍照视频",
@@ -15588,7 +15588,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB 卫星通信版",
   "os": "OriginOS 6 / Android 16（地区版本不同）",
   "priceCN": 6999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "蔡司全焦段影像、视频创作、长焦外设",
   "bestFor": [
    "拍照视频",
@@ -16035,7 +16035,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "ColorOS",
   "priceCN": 7499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "多焦段影像、超长焦、哈苏色彩、视频",
   "bestFor": [
    "拍照视频",
@@ -16492,7 +16492,7 @@
   "storage": "256GB / 512GB / 1TB / 2TB",
   "os": "iOS 27",
   "priceCN": 9999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "相对紧凑的苹果 Pro 旗舰；拍摄、性能与生态",
   "bestFor": [
    "拍照视频",
@@ -16863,7 +16863,7 @@
   "storage": "256GB / 512GB / 1TB / 2TB",
   "os": "iOS 27",
   "priceCN": 10999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大屏苹果顶级旗舰；视频、长焦、性能与生态体验",
   "bestFor": [
    "拍照视频",
@@ -17290,7 +17290,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "以官方大陆版页面为准",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "防窥显示、双 2 亿影像与旗舰性能",
   "bestFor": [
    "拍照视频",
@@ -17762,7 +17762,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
   "os": "Android 17 / OriginOS 7",
   "priceCN": 5499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "新一代旗舰平台与蔡司影像体验",
   "bestFor": [
    "拍照视频",
@@ -18324,7 +18324,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "Android 17 / OriginOS 7",
   "priceCN": 6499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "轻量化机身、专业影像与新一代平台",
   "bestFor": [
    "拍照视频",
@@ -19156,7 +19156,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS",
   "priceCN": 6499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "长焦、徕卡色彩、全焦段影像",
   "bestFor": [
    "拍照视频",
@@ -19639,7 +19639,7 @@
   "storage": "12GB+256GB / 16GB+512GB",
   "os": "ColorOS",
   "priceCN": 6499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "双潜望长焦、全焦段拍摄、旗舰性能",
   "bestFor": [
    "拍照视频",
@@ -20052,7 +20052,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB 卫星通信版",
   "os": "OriginOS",
   "priceCN": 6499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "人文焦段、长焦视频、专业影像外设",
   "bestFor": [
    "拍照视频",
@@ -20518,7 +20518,7 @@
   "storage": "16GB+512GB / 16GB+1TB",
   "os": "HarmonyOS 5.1 / 可升级版本以官方说明为准",
   "priceCN": 9999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "长焦、人像、XMAGE 影像、鸿蒙生态",
   "bestFor": [
    "拍照视频",
@@ -20959,7 +20959,7 @@
   "storage": "256GB / 512GB / 1TB",
   "os": "iOS",
   "priceCN": 9999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大屏旗舰、影像、视频拍摄、生态协同",
   "bestFor": [
    "拍照视频",
@@ -21327,7 +21327,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "以官方大陆版页面为准",
   "priceCN": 4999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "紧凑尺寸与后置动态副屏，兼顾性能和影像",
   "bestFor": [
    "小屏手感",
@@ -21787,7 +21787,7 @@
   "storage": "12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "以官方大陆版页面为准",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大屏旗舰、动态副屏与全能体验",
   "bestFor": [
    "大屏办公",
@@ -22246,7 +22246,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
   "os": "Xiaomi HyperOS",
   "priceCN": 4499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "小尺寸旗舰、性能、徕卡影像、小米生态",
   "bestFor": [
    "小屏手感",
@@ -22668,7 +22668,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
   "os": "Android 16 / MagicOS 10.0",
   "priceCN": 4499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "自进化 AI、护眼直屏与大电池",
   "bestFor": [
    "日常全能",
@@ -23128,7 +23128,7 @@
   ],
   "os": "MagicOS",
   "priceCN": 5699,
-  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
+  "priceText": "首发起售价（对应容量组合未公布，非当前售价）",
   "priceType": "official_starting_price",
   "livePrice": 5699,
   "livePriceStatus": "official_store_snapshot",
@@ -23611,7 +23611,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
   "os": "Android / ColorOS 16",
   "priceCN": 4399,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "哈苏色彩、长续航与全能旗舰体验",
   "bestFor": [
    "拍照视频",
@@ -24011,7 +24011,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "Android / ColorOS 16",
   "priceCN": 5299,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "哈苏影像、2 亿像素长焦与大电池",
   "bestFor": [
    "拍照视频",
@@ -24478,7 +24478,7 @@
   "storage": "12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "OxygenOS / ColorOS（地区版本不同）",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大电池、性能、快充、游戏刷新率",
   "bestFor": [
    "游戏性能",
@@ -24964,7 +24964,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
   "os": "以官方大陆版页面为准",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "性能、音频与高性价比旗舰配置",
   "bestFor": [
    "游戏性能",
@@ -25445,7 +25445,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Android 16 / OriginOS 6",
   "priceCN": 4199,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "独立电竞芯片、散热与高刷新屏，偏重游戏体验",
   "bestFor": [
    "游戏性能",
@@ -25889,7 +25889,7 @@
   ],
   "os": "realme UI",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
@@ -26336,7 +26336,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "Android 16 / OriginOS 6",
   "priceCN": 4399,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "蔡司影像、轻巧旗舰与新一代旗舰平台",
   "bestFor": [
    "拍照视频",
@@ -26818,7 +26818,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Android 16 / OriginOS 6",
   "priceCN": 5299,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "蔡司长焦、专业影像与视频创作",
   "bestFor": [
    "拍照视频",
@@ -27320,7 +27320,7 @@
   "livePriceCheckedAt": null,
   "livePriceNote": "尚未接入获授权的实时渠道报价 API；请通过渠道入口核价",
   "priceType": "official_launch_msrp",
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "launchDateDisplay": "2025年11月",
   "dataNote": "已链接华为中国大陆官方规格页；价格口径需与首发发布信息交叉核对",
   "announcementSource": null,
@@ -27711,7 +27711,7 @@
   "storage": "16GB+512GB / 16GB+1TB",
   "os": "HarmonyOS 6.0",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "红枫影像、鸿蒙生态、卫星通信、耐用设计",
   "bestFor": [
    "拍照视频",
@@ -28029,7 +28029,7 @@
   "storage": "12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS",
   "priceCN": 6999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "徕卡影像、长焦、旗舰芯片、小米生态",
   "bestFor": [
    "拍照视频",
@@ -28522,7 +28522,7 @@
   ],
   "os": "MagicOS",
   "priceCN": 5699,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
@@ -28937,7 +28937,7 @@
   "storage": "12GB+256GB / 16GB+256GB / 16GB+512GB",
   "os": "ColorOS",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "双潜望长焦、哈苏人像、夜景",
   "bestFor": [
    "拍照视频",
@@ -29353,7 +29353,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "Android / One UI",
   "priceCN": 9699,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "长焦、S Pen、屏幕抗反射、长软件支持",
   "bestFor": [
    "拍照视频",
@@ -29739,7 +29739,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS",
   "priceCN": 6499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大底主摄、徕卡影像、可选摄影套装",
   "bestFor": [
    "拍照视频",
@@ -30202,7 +30202,7 @@
   "storage": "16GB+512GB / 16GB+1TB / 12GB+512GB",
   "os": "HarmonyOS",
   "priceCN": 9999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "机械伸缩镜头、XMAGE 影像、长焦",
   "bestFor": [
    "拍照视频",
@@ -30598,7 +30598,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "OriginOS",
   "priceCN": 6499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "2 亿长焦、夜景、蔡司色彩",
   "bestFor": [
    "拍照视频",
@@ -30994,7 +30994,7 @@
   "storage": "256GB / 512GB / 1TB",
   "os": "iOS",
   "priceCN": 9999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "视频创作、长焦、苹果生态、较大屏幕",
   "bestFor": [
    "拍照视频",
@@ -31291,7 +31291,7 @@
   ],
   "os": "MagicOS",
   "priceCN": 5699,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
@@ -31727,7 +31727,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 24GB+1TB",
   "os": "ColorOS / OxygenOS",
   "priceCN": 4499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "屏幕、性能、续航、均衡影像",
   "bestFor": [
    "游戏性能",
@@ -32937,7 +32937,7 @@
   "storage": "12GB+256GB / 16GB+256GB / 16GB+512GB",
   "os": "ColorOS / OxygenOS",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "性能、哈苏色彩、快充",
   "bestFor": [
    "游戏性能",
@@ -33397,7 +33397,7 @@
   "storage": "8GB+256GB / 12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "Android / One UI",
   "priceCN": 9499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "10× 远摄、S Pen、性能和续航均衡",
   "bestFor": [
    "拍照视频",
@@ -33789,7 +33789,7 @@
   ],
   "os": "MagicOS",
   "priceCN": 5199,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
@@ -34240,7 +34240,7 @@
   "storage": "8GB+256GB / 12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "HarmonyOS",
   "priceCN": 6988,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "可变光圈、长焦夜景、鸿蒙体验",
   "bestFor": [
    "拍照视频",
@@ -34650,7 +34650,7 @@
   "storage": "12GB+256GB / 16GB+256GB / 16GB+512GB",
   "os": "ColorOS",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "夜景、人像、长焦、屏幕",
   "bestFor": [
    "拍照视频",
@@ -35085,7 +35085,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "MIUI / HyperOS（依更新）",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "全焦段影像、徕卡调校、顶级屏幕",
   "bestFor": [
    "拍照视频",
@@ -35565,7 +35565,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "HarmonyOS",
   "priceCN": 6999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "卫星通话、鸿蒙生态、商务功能",
   "bestFor": [
    "大屏办公",
@@ -35952,7 +35952,7 @@
   "storage": "256GB / 512GB / 1TB",
   "os": "iOS",
   "priceCN": 9999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "钛金属机身、视频、长焦和生态体验",
   "bestFor": [
    "拍照视频",
@@ -36420,7 +36420,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB / 24GB+1TB",
   "os": "ColorOS / OxygenOS",
   "priceCN": 4299,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "性能、大容量电池、长焦和快充",
   "bestFor": [
    "游戏性能",
@@ -36863,7 +36863,7 @@
   ],
   "os": "realme UI",
   "priceCN": 3298,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
@@ -37303,7 +37303,7 @@
   "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB / 12GB+512GB",
   "os": "ColorOS / OxygenOS",
   "priceCN": 4699,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "屏幕、快充、哈苏色彩",
   "bestFor": [
    "游戏性能",
@@ -37739,7 +37739,7 @@
   "storage": "8GB+256GB / 12GB+256GB / 12GB+512GB",
   "os": "ColorOS",
   "priceCN": 5799,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "哈苏色彩、屏幕、无线充电",
   "bestFor": [
    "拍照视频",
@@ -38185,7 +38185,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "Android / One UI",
   "priceCN": 9699,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "内置 S Pen、远摄、商务旗舰",
   "bestFor": [
    "拍照视频",
@@ -38603,7 +38603,7 @@
   ],
   "os": "Magic UI / Android",
   "priceCN": 5499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
@@ -39009,7 +39009,7 @@
   "storage": "8GB+256GB / 12GB+256GB / 12GB+512GB",
   "os": "MIUI / HyperOS（依更新）",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大底主摄、徕卡影像、夜景",
   "bestFor": [
    "拍照视频",
@@ -39448,7 +39448,7 @@
   "storage": "128GB / 256GB / 512GB / 1TB",
   "os": "iOS",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "高刷新屏、长焦、苹果生态",
   "bestFor": [
    "拍照视频",
@@ -39922,7 +39922,7 @@
   "storage": "8GB+256GB / 8GB+512GB",
   "os": "HarmonyOS",
   "priceCN": 6799,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "可变光圈、XMAGE 影像、卫星消息",
   "bestFor": [
    "拍照视频",
@@ -40317,7 +40317,7 @@
   "storage": "12GB+256GB / 12GB+512GB",
   "os": "OriginOS",
   "priceCN": 6499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "蔡司影像、长焦、1 英寸主摄",
   "bestFor": [
    "拍照视频",
@@ -40784,7 +40784,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Android / One UI",
   "priceCN": 9699,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "远摄、屏幕、旗舰性能",
   "bestFor": [
    "拍照视频",
@@ -41217,7 +41217,7 @@
   "storage": "8GB+256GB / 12GB+256GB / 12GB+512GB",
   "os": "MIUI",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "潜望长焦、后置副屏、旗舰屏幕",
   "bestFor": [
    "拍照视频",
@@ -41700,7 +41700,7 @@
   "storage": "8GB+128GB / 8GB+256GB / 8GB+512GB / 12GB+512GB",
   "os": "HarmonyOS",
   "priceCN": 5988,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "原色影像、长焦、相对轻薄",
   "bestFor": [
    "拍照视频",
@@ -42138,7 +42138,7 @@
   ],
   "os": "Magic UI / Android",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "priceType": "official_launch_msrp",
   "livePrice": null,
   "livePriceStatus": "not_connected",
@@ -42594,7 +42594,7 @@
   "storage": "128GB / 256GB / 512GB / 1TB",
   "os": "iOS",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "大屏 iOS 旗舰；长焦、视频、续航与苹果生态",
   "bestFor": [
    "拍照视频",
@@ -43361,7 +43361,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
   "os": "MagicOS 11（基于 Android 17）",
   "priceCN": 4499,
-  "priceText": "官方起售价（12GB+256GB），非当前售价",
+  "priceText": "首发起售价（12GB+256GB），非当前售价",
   "selling": "11000mAh 超大电池 + 第五代骁龙 8 至尊版",
   "bestFor": [
    "续航",
@@ -44403,7 +44403,7 @@
   "storage": "256GB / 512GB / 1TB",
   "os": "iOS 26",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "Pro 级三摄与 A19 Pro，钛金属中框",
   "bestFor": [
    "拍照视频",
@@ -44827,7 +44827,7 @@
   "storage": "128GB / 256GB / 512GB / 1TB",
   "os": "iOS 18",
   "priceCN": 7999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "钛金属中框与 5× 潜望长焦",
   "bestFor": [
    "拍照视频",
@@ -45183,7 +45183,7 @@
   "storage": "128GB / 256GB / 512GB",
   "os": "iOS 18",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "相机控制按键与 A18，标准尺寸直屏",
   "bestFor": [
    "拍照视频",
@@ -45672,7 +45672,7 @@
   "storage": "128GB / 256GB / 512GB / 1TB",
   "os": "iOS 17",
   "priceCN": 7999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "钛金属机身与 A17 Pro，改用 USB-C",
   "bestFor": [
    "拍照视频",
@@ -46182,7 +46182,7 @@
   "storage": "128GB / 256GB / 512GB",
   "os": "iOS 17",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "灵动岛与 4800 万主摄下放到标准版",
   "bestFor": [
    "拍照视频",
@@ -46686,7 +46686,7 @@
   "storage": "128GB / 256GB / 512GB / 1TB",
   "os": "iOS 16",
   "priceCN": 7999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "灵动岛首发机型，48MP 主摄",
   "bestFor": [
    "拍照视频",
@@ -47204,7 +47204,7 @@
   "storage": "8GB+256GB / 12GB+256GB / 8GB+512GB",
   "os": "Android / One UI 6.1",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "小尺寸 Galaxy AI 旗舰",
   "bestFor": [
    "拍照视频",
@@ -47533,7 +47533,7 @@
   "storage": "12GB+256GB / 12GB+512GB",
   "os": "Android / One UI 6.1",
   "priceCN": 6999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "大屏 S 系列，2K 屏与更大电池",
   "bestFor": [
    "拍照视频",
@@ -47859,7 +47859,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "Android / One UI 6.1.1",
   "priceCN": 13999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "横向大折叠，机身进一步减薄",
   "bestFor": [
    "大屏办公",
@@ -48257,7 +48257,7 @@
   "storage": "12GB+256GB / 12GB+512GB",
   "os": "Android / One UI 6.1.1",
   "priceCN": 7999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "竖向小折叠，外屏交互与影像升级",
   "bestFor": [
    "小屏手感",
@@ -48652,7 +48652,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "Android / One UI 5.1",
   "priceCN": 12999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "水滴铰链闭合无缝的横向大折叠",
   "bestFor": [
    "大屏办公",
@@ -49020,7 +49020,7 @@
   "storage": "8GB+256GB / 8GB+512GB",
   "os": "Android / One UI 5.1",
   "priceCN": 8499,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "外屏扩至 3.4 英寸的竖向小折叠",
   "bestFor": [
    "小屏手感",
@@ -49367,7 +49367,7 @@
   "storage": "12GB+256GB / 12GB+512GB",
   "os": "Android / One UI 7",
   "priceCN": 7999,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "5.8mm 级超薄机身，主打轻薄手感",
   "bestFor": [
    "拍照视频",
@@ -49769,7 +49769,7 @@
   "storage": "8GB+256GB / 12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "小尺寸徕卡影像旗舰，首发澎湃 OS",
   "bestFor": [
    "拍照视频",
@@ -50246,7 +50246,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS",
   "priceCN": 4999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "2K 全等深微曲屏与可变光圈主摄",
   "bestFor": [
    "拍照视频",
@@ -50732,7 +50732,7 @@
   "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB / 12GB+512GB",
   "os": "MIUI 14",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "小尺寸直屏与徕卡影像",
   "bestFor": [
    "拍照视频",
@@ -51216,7 +51216,7 @@
   "storage": "8GB+128GB / 8GB+256GB / 12GB+256GB / 12GB+512GB",
   "os": "MIUI 14",
   "priceCN": 4999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "1 英寸大底主摄下放到 Pro 款",
   "bestFor": [
    "拍照视频",
@@ -51740,7 +51740,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "9.2mm 级横向大折叠，四摄五焦段",
   "bestFor": [
    "大屏办公",
@@ -52218,7 +52218,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "MIUI 14",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "轻薄大折叠，徕卡全焦段四摄",
   "bestFor": [
    "大屏办公",
@@ -52668,7 +52668,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS",
   "priceCN": 5999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "小折叠首作，大外屏可直接用主摄自拍",
   "bestFor": [
    "拍照视频",
@@ -53102,7 +53102,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS 2",
   "priceCN": 3699,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "2K 直屏 + 骁龙 8 至尊版的性能价位段机型",
   "bestFor": [
    "游戏性能",
@@ -53477,7 +53477,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS 2",
   "priceCN": 2499,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "6550mAh 大电池的标准版性能机",
   "bestFor": [
    "游戏性能",
@@ -53880,7 +53880,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "HarmonyOS 4.3",
   "priceCN": 5499,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "Mate 标准旗舰，红枫原色影像",
   "bestFor": [
    "拍照视频",
@@ -54325,7 +54325,7 @@
   "storage": "16GB+512GB / 16GB+1TB",
   "os": "HarmonyOS 4.3",
   "priceCN": 8499,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "高亮钛玄武架构与 4800 万潜望长焦",
   "bestFor": [
    "拍照视频",
@@ -54732,7 +54732,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "HarmonyOS 4.3",
   "priceCN": 12999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "横向大折叠，支持卫星通信",
   "bestFor": [
    "大屏办公",
@@ -55515,7 +55515,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "HarmonyOS 4.2",
   "priceCN": 5499,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "Pura 系列标准款，三角风向标设计",
   "bestFor": [
    "拍照视频",
@@ -55944,7 +55944,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "HarmonyOS 4.2",
   "priceCN": 6499,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "4800 万潜望长焦，支持长焦微距",
   "bestFor": [
    "拍照视频",
@@ -56353,7 +56353,7 @@
   "storage": "12GB+256GB",
   "os": "HarmonyOS 5.0.1",
   "priceCN": 7499,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "16:10 阔折叠，展开接近小平板",
   "bestFor": [
    "大屏办公",
@@ -56807,7 +56807,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "MagicOS 9.0",
   "priceCN": 4499,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "标准版直屏旗舰，AI 与青海湖电池",
   "bestFor": [
    "拍照视频",
@@ -57247,7 +57247,7 @@
   "storage": "12GB+256GB / 16GB+512GB",
   "os": "MagicOS 8.0",
   "priceCN": 4399,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "等深微曲屏与单反级长焦",
   "bestFor": [
    "拍照视频",
@@ -57713,7 +57713,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "MagicOS 8.0",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "9.2mm 级轻薄大折叠，支持潜望长焦",
   "bestFor": [
    "大屏办公",
@@ -58087,7 +58087,7 @@
   "storage": "12GB+256GB / 16GB+512GB",
   "os": "MagicOS 7.2",
   "priceCN": 8999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "主打轻薄的横向大折叠",
   "bestFor": [
    "大屏办公",
@@ -58519,7 +58519,7 @@
   "storage": "12GB+256GB / 16GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "ColorOS 15",
   "priceCN": 4199,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "小尺寸直屏影像旗舰，哈苏人像",
   "bestFor": [
    "拍照视频",
@@ -58906,7 +58906,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "ColorOS 15",
   "priceCN": 5299,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "双潜望长焦，哈苏全焦段影像",
   "bestFor": [
    "拍照视频",
@@ -59349,7 +59349,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "ColorOS 14",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "标准版影像旗舰，潜望长焦下放",
   "bestFor": [
    "拍照视频",
@@ -59820,7 +59820,7 @@
   "storage": "12GB+512GB / 16GB+1TB",
   "os": "ColorOS 13.2",
   "priceCN": 9999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "大折叠影像旗舰，三摄均为高像素",
   "bestFor": [
    "大屏办公",
@@ -60258,7 +60258,7 @@
   "storage": "12GB+256GB / 12GB+512GB",
   "os": "ColorOS 13.2",
   "priceCN": 6799,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "小折叠加入独立长焦，哈苏人像",
   "bestFor": [
    "拍照视频",
@@ -60668,7 +60668,7 @@
   "storage": "12GB+256GB / 16GB+512GB",
   "os": "ColorOS 13",
   "priceCN": 7999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "小尺寸横向折叠，主打单手可用",
   "bestFor": [
    "大屏办公",
@@ -61086,7 +61086,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "OriginOS 5",
   "priceCN": 4299,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "蔡司影像标准旗舰，蓝海电池",
   "bestFor": [
    "拍照视频",
@@ -61480,7 +61480,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "OriginOS 5",
   "priceCN": 5299,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "2 亿像素蔡司 APO 长焦",
   "bestFor": [
    "拍照视频",
@@ -61890,7 +61890,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "OriginOS 5",
   "priceCN": 4699,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "小尺寸影像旗舰，6.31 英寸直屏",
   "bestFor": [
    "拍照视频",
@@ -62378,7 +62378,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "OriginOS 4",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "蔡司 APO 长焦下放到标准版",
   "bestFor": [
    "拍照视频",
@@ -62815,7 +62815,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "OriginOS 4",
   "priceCN": 4999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "1 英寸大底主摄 + 蔡司 APO 长焦",
   "bestFor": [
    "拍照视频",
@@ -63277,7 +63277,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "OriginOS 5",
   "priceCN": 6999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "轻薄大折叠，6000mAh 蓝海电池",
   "bestFor": [
    "大屏办公",
@@ -63771,7 +63771,7 @@
   "storage": "16GB+512GB / 16GB+1TB",
   "os": "OriginOS 4",
   "priceCN": 9999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "大折叠中的影像与快充堆料款",
   "bestFor": [
    "大屏办公",
@@ -64249,7 +64249,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "ColorOS 15",
   "priceCN": 3399,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "骁龙 8 至尊版 + 6100mAh 的性能直屏机",
   "bestFor": [
    "游戏性能",
@@ -64642,7 +64642,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "ColorOS 15",
   "priceCN": 2299,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "6415mAh 大电池的性能价位段机型",
   "bestFor": [
    "游戏性能",
@@ -65026,7 +65026,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "OriginOS 4",
   "priceCN": 3999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "电竞向性能旗舰，加入潜望长焦",
   "bestFor": [
    "游戏性能",
@@ -65463,7 +65463,7 @@
   "storage": "16GB+512GB / 16GB+1TB",
   "os": "OriginOS 4",
   "priceCN": 4999,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "2K 屏 + 无线充电的满配性能旗舰",
   "bestFor": [
    "游戏性能",
@@ -65907,7 +65907,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "OriginOS 5",
   "priceCN": 3199,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "天玑 9400 + 自研电竞芯片的中端性能机",
   "bestFor": [
    "游戏性能",
@@ -66385,7 +66385,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "realme UI 5.0",
   "priceCN": 2799,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "骁龙 8 Gen 3 的性能价位段直屏机",
   "bestFor": [
    "游戏性能",
@@ -66739,7 +66739,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "realme UI 6.0",
   "priceCN": 2599,
-  "priceText": "官方起售价（非当前售价）",
+  "priceText": "首发起售价（非当前售价）",
   "selling": "7000mAh 大电池的高刷性能机",
   "bestFor": [
    "游戏性能",
@@ -67173,7 +67173,7 @@
   "storage": "12GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "RedMagic OS 9.0",
   "priceCN": 4399,
-  "priceText": "官方起售价（非当前售价，待官方发布稿复核）",
+  "priceText": "首发起售价（非当前售价，待官方发布稿复核）",
   "selling": "屏下前摄 + 主动散热的电竞旗舰",
   "bestFor": [
    "游戏性能",
@@ -94475,7 +94475,7 @@
   "storage": "16GB+512GB / 16GB+2TB",
   "os": "HarmonyOS 7",
   "priceCN": 12999,
-  "priceText": "官方起售价（12GB+256GB 之外的顶配系列，非当前渠道价）",
+  "priceText": "首发起售价（12GB+256GB 之外的顶配系列，非当前渠道价）",
   "selling": "麒麟 9050 Pro + 第三代红枫影像，星钻镜头设计",
   "bestFor": [
    "拍照视频",
@@ -95451,7 +95451,7 @@
   "storage": "256GB / 512GB / 1TB / 2TB",
   "os": "iOS 27",
   "priceCN": 15999,
-  "priceText": "官方起售价（256GB）；512GB 17999 / 1TB 21499 / 2TB 26499",
+  "priceText": "首发起售价（256GB）；512GB 17999 / 1TB 21499 / 2TB 26499",
   "selling": "苹果首款折叠屏：7.6 英寸内屏 + 5.4 英寸外屏，A20 Pro",
   "bestFor": [
    "大屏办公",
@@ -96396,7 +96396,7 @@
   "storage": "16GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "HarmonyOS（版本以官方为准）",
   "priceCN": 19999,
-  "priceText": "官方起售价（16GB+256GB）；512GB 21999 / 1TB 23999",
+  "priceText": "首发起售价（16GB+256GB）；512GB 21999 / 1TB 23999",
   "selling": "华为第二代三折叠，10.2 英寸内屏 + 麒麟 9050 Pro",
   "bestFor": [
    "大屏办公",
@@ -96965,7 +96965,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "Xiaomi HyperOS 4",
   "priceCN": 6999,
-  "priceText": "官方起售价（12GB+256GB）；16GB+1TB 9999 元，透明特别版 10999 元",
+  "priceText": "首发起售价（12GB+256GB）；16GB+1TB 9999 元，透明特别版 10999 元",
   "selling": "双 2 亿像素 + 2.9 英寸 AI 背屏，8500mAh",
   "bestFor": [
    "拍照视频",
@@ -98465,7 +98465,7 @@
   "storage": "256GB / 512GB",
   "os": "HarmonyOS 6.1",
   "priceCN": 2999,
-  "priceText": "官方起售价（256GB）；512GB 3499 元（2026-10 调价后 3399 元起）",
+  "priceText": "首发起售价（256GB）；512GB 3499 元（2026-10 调价后 3399 元起）",
   "selling": "麒麟 9010S + 7000mAh，同档少见的 5000 万潜望长焦",
   "bestFor": [
    "拍照视频",
@@ -98906,7 +98906,7 @@
   "storage": "12GB+256GB / 16GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB",
   "os": "realme UI 6.0",
   "priceCN": 2899,
-  "priceText": "官方起售价（12GB+256GB）；16GB+1TB 4099 元",
+  "priceText": "首发起售价（12GB+256GB）；16GB+1TB 4099 元",
   "selling": "理光 GR 影像 + 骁龙 8 Elite，7000mAh",
   "bestFor": [
    "性价比",
@@ -99353,7 +99353,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB",
   "os": "HarmonyOS 6.1",
   "priceCN": 4699,
-  "priceText": "官方起售价（12GB+256GB）；16GB+512GB 5699 元",
+  "priceText": "首发起售价（12GB+256GB）；16GB+512GB 5699 元",
   "selling": "麒麟 9010S + 红枫影像，6500mAh 大电池",
   "bestFor": [
    "拍照视频",
@@ -99803,7 +99803,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "HarmonyOS 7.0",
   "priceCN": 5999,
-  "priceText": "官方起售价（12GB+256GB）；512GB 6999 / 1TB 8499",
+  "priceText": "首发起售价（12GB+256GB）；512GB 6999 / 1TB 8499",
   "selling": "6.68mm / 201g 的 6.39 英寸阔直板，2 亿像素红枫影像 + 7000mAh",
   "bestFor": [
    "拍照视频",
@@ -100206,7 +100206,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB / 16GB+1TB 陶瓷特别版",
   "os": "小米澎湃 OS 4",
   "priceCN": 10999,
-  "priceText": "官方起售价（12GB+256GB）；12+512 11999 / 16+512 12999 / 16+1TB 14999 / 陶瓷特别版 15999",
+  "priceText": "首发起售价（12GB+256GB）；12+512 11999 / 16+512 12999 / 16+1TB 14999 / 陶瓷特别版 15999",
   "selling": "5.38 英寸外屏 + 7.58 英寸内屏的「中折叠」，玄戒 O3 + 徕卡三摄",
   "bestFor": [
    "大屏办公",
@@ -100886,7 +100886,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+256GB / 16GB+512GB / 16GB+1TB",
   "os": "MagicOS 11",
   "priceCN": 5499,
-  "priceText": "官方起售价（12GB+256GB），非当前售价",
+  "priceText": "首发起售价（12GB+256GB），非当前售价",
   "selling": "10100mAh + 185Hz 2K 直屏 + 第六代骁龙 8 超级至尊版",
   "bestFor": [
    "游戏性能",
@@ -208474,7 +208474,7 @@
   "storage": "8GB+256GB / 12GB+256GB / 12GB+512GB / 12GB+1TB",
   "os": "ColorOS 17.0",
   "priceCN": 3599,
-  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
+  "priceText": "首发起售价（对应容量组合未公布，非当前售价）",
   "selling": "8000mAh 大电池 + 5000万全焦段四摄 + 6秒长实况",
   "bestFor": "[\"长续航\", \"人像拍照\", \"日常全能\"]",
   "source": "https://www.oppo.com/cn/smartphones/series-reno/reno17/specs/",
@@ -208658,7 +208658,7 @@
   "storage": "8GB+256GB / 12GB+256GB / 12GB+512GB",
   "os": "ColorOS 17.0",
   "priceCN": 4199,
-  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
+  "priceText": "首发起售价（对应容量组合未公布，非当前售价）",
   "selling": "2亿像素主摄 + 6.32英寸小直屏 + 6秒长实况",
   "bestFor": "[\"人像拍照\", \"小屏手感\", \"日常全能\"]",
   "source": "https://www.oppo.com/cn/smartphones/series-reno/reno17-pro/specs/",
@@ -209663,7 +209663,7 @@
   "storage": "12GB+256GB / 12GB+512GB / 16GB+512GB / 16GB+1TB / 16GB+2TB（后三档为典藏版）",
   "os": "HarmonyOS 7.0",
   "priceCN": 12999,
-  "priceText": "官方起售价（12GB+256GB，非当前售价）",
+  "priceText": "首发起售价（12GB+256GB，非当前售价）",
   "selling": "8.2 英寸内屏 + 4.2mm 展开厚度 + 麒麟 9050 Pro + 双 5000 万潜望影像",
   "bestFor": [
    "大屏办公",
@@ -209874,7 +209874,7 @@
   "storage": "12GB+256GB / 12GB+512GB",
   "os": "HarmonyOS 7.0",
   "priceCN": 4999,
-  "priceText": "官方起售价（对应容量组合未公布，非当前售价）",
+  "priceText": "首发起售价（对应容量组合未公布，非当前售价）",
   "selling": "6.58mm 机身 + 7 英寸大屏 + 6500mAh 电池，华为最薄 Mate 直板机",
   "bestFor": [
    "大屏办公",
