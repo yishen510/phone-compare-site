@@ -199,11 +199,11 @@ function makeDom(opts = {}) {
     };
     /* 价格只留一个口径：官方起售价。不再按 priceType 分多种标签。 */
     const startLabel = await labelOf('Mate 90 Air', 'hua-mate90air');
-    ok(startLabel === '首发起售价', 'official_starting_price 显示「首发起售价」', startLabel);
+    ok(startLabel === '官方起售价', 'official_starting_price 显示「官方起售价」', startLabel);
     const msrpLabel = await labelOf('Mate X8', 'hua-matex8');
-    ok(msrpLabel === '首发起售价', 'official_launch_msrp 同样显示「首发起售价」', msrpLabel);
+    ok(msrpLabel === '官方起售价', 'official_launch_msrp 同样显示「官方起售价」', msrpLabel);
     const noneLabel = await labelOf('iPhone 13', 'apple-13');
-    ok(noneLabel === '首发起售价', '第三方参考价机型同样标「首发起售价」，数值位显示未公布', noneLabel);
+    ok(noneLabel === '官方起售价', '第三方参考价机型同样标「官方起售价」，数值位显示未公布', noneLabel);
 
     /* 字段级「待核验」不再逐行出现，改为顶部一句汇总 */
     const openDetail = async (name, id) => {
