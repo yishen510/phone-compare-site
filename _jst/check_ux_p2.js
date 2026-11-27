@@ -290,7 +290,10 @@ function makeDom(opts = {}) {
     const g1 = box.querySelector('.rec-group');
     const g1Names = g1 ? [...g1.querySelectorAll('h4')].map(h => h.textContent) : [];
     ok(g1 && /正式候选/.test(g1.querySelector('h5').textContent), '第一段是「正式候选」');
-    ok(g1Names.length === cands.length, '正式候选只装准入样本', `${g1Names.length} 款`);
+    /* 同系列会折叠：展示数 + 折叠数 必须等于准入样本总数，一台都不能凭空消失 */
+    const foldN = Number((g1.querySelector('h5 span').textContent.match(/另有\s*(\d+)\s*款/) || [])[1] || 0);
+    ok(g1Names.length + foldN === cands.length, '正式候选 = 展示 + 同系列折叠', `${g1Names.length}+${foldN}`);
+    ok(g1Names.every(n => cands.some(p => p.name === n)), '展示的都是准入样本');
     ok(box.querySelectorAll('.rec-group').length === 2, '第二段是参考排序');
 
     const restNames = box.querySelectorAll('.rec-group')[1]
@@ -305,6 +308,22 @@ function makeDom(opts = {}) {
     await sleep(600);
     const rest2 = [...box.querySelectorAll('.rec-group')[1].querySelectorAll('h4')].map(h => h.textContent);
     ok(rest2[0] !== restNames[0], '换需求后参考排序会变化', `${restNames[0]} → ${rest2[0]}`);
+
+    /* 打分要真的分得开：同系列三台的差异在潜望/电池/芯片代际上，
+       如果权重只认"最大像素"或芯片名只认英文，这里就会并列或乱序 */
+    const topOf = async need => {
+      [...doc.querySelectorAll('[data-priority].selected')].forEach(b => b.click());
+      await sleep(60);
+      doc.querySelector(`[data-priority="${need}"]`).click();
+      await sleep(80);
+      doc.getElementById('applyRecommend').click();
+      await sleep(500);
+      const g = box.querySelector('.rec-group h4');
+      return g ? g.textContent : '';
+    };
+    ok(/Pro Max/.test(await topOf('拍照视频')), '拍照首位是潜望长焦那台');
+    ok(/WIN2/.test(await topOf('游戏性能')), '游戏首位是第六代骁龙那台');
+    ok(/超能版/.test(await topOf('续航')), '续航首位是 11000mAh 那台');
 
     const yf = doc.getElementById('recYearFrom'), yt = doc.getElementById('recYearTo');
     yf.value = '2024'; yt.value = '2024';
