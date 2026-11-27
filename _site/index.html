@@ -3640,14 +3640,27 @@ if(QUOTE_LAYER_ON){
  ['quoteQueryBtn','quoteProgress'].forEach(id=>{const el=$(id);if(el){el.hidden=true;el.style.display='none';el.setAttribute('aria-hidden','true');}});
  const st=$('priceApiStatus');
  if(st){st.className='price-api-status is-neutral';
-  st.innerHTML='<strong>当前不提供渠道报价</strong><span>未接入可持续核验的实时电商报价接口。卡片只显示官方首发价或第三方参考价；购买前请通过厂商或平台入口自行核价。</span>';}
+  st.innerHTML='<strong>当前不提供渠道报价</strong><span>未接入可持续核验的实时电商报价接口。卡片只显示官方起售价；购买前请通过厂商或平台入口自行核价。</span>';}
 }
 
 /* —— 装到主屏 / 离线 ——
    注册放在 load 之后：不跟首屏抢带宽，也不影响首屏指标。
    安装按钮只在浏览器触发 beforeinstallprompt 后出现，平时完全不存在。 */
 if('serviceWorker' in navigator){
- window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').catch(()=>{});});
+ window.addEventListener('load',()=>{
+  const hadController=!!navigator.serviceWorker.controller;
+  /* updateViaCache:'none'：sw.js 自己也走 HTTP 缓存（GitHub Pages 默认 10 分钟），
+     不关掉的话新版本要等缓存过期才会被检查到，用户会一直看到旧页面。 */
+  navigator.serviceWorker.register('sw.js',{updateViaCache:'none'})
+   .then(reg=>reg.update().catch(()=>{}))
+   .catch(()=>{});
+  /* 新版本接管后自动刷新一次；首次安装（原本没有 controller）不刷新，避免白屏一下 */
+  let reloaded=false;
+  navigator.serviceWorker.addEventListener('controllerchange',()=>{
+   if(!hadController||reloaded)return;
+   reloaded=true;location.reload();
+  });
+ });
 }
 let installPrompt=null;
 window.addEventListener('beforeinstallprompt',e=>{
