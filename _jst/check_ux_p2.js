@@ -197,13 +197,35 @@ function makeDom(opts = {}) {
       const tag = m.querySelector('.price-tag');
       return tag ? tag.textContent.trim() : '';
     };
-    /* official_starting_price 必须显式标「容量待核」，不能混进「官方首发价」 */
+    /* 价格只留一个口径：官方起售价。不再按 priceType 分多种标签。 */
     const startLabel = await labelOf('Mate 90 Air', 'hua-mate90air');
-    ok(/官方起售价/.test(startLabel) && /容量待核/.test(startLabel),
-      'official_starting_price 显示「官方起售价（容量待核）」', startLabel);
+    ok(startLabel === '官方起售价', 'official_starting_price 显示「官方起售价」', startLabel);
     const msrpLabel = await labelOf('Mate X8', 'hua-matex8');
-    ok(/官方首发价/.test(msrpLabel) && !/容量待核/.test(msrpLabel),
-      'official_launch_msrp 显示「官方首发价」', msrpLabel);
+    ok(msrpLabel === '官方起售价', 'official_launch_msrp 同样显示「官方起售价」', msrpLabel);
+    const noneLabel = await labelOf('iPhone 13', 'apple-13');
+    ok(noneLabel === '官方起售价', '第三方参考价机型也标「官方起售价」，数值位显示未公布', noneLabel);
+
+    /* 字段级「待核验」不再逐行出现，改为顶部一句汇总 */
+    const openDetail = async (name, id) => {
+      const i = doc.getElementById('searchInput');
+      i.value = name; i.dispatchEvent(new window.Event('input', { bubbles: true }));
+      await sleep(450);
+      const el = doc.querySelector(`[data-detail="${id}"]`);
+      if (!el) return null;
+      el.click(); await sleep(800);
+      return doc.getElementById('detailModal');
+    };
+    const m1 = await openDetail('iPhone 13', 'apple-13');
+    const t1 = m1.textContent.replace(/\s+/g, '');
+    ok(!t1.includes('待核验'), '未核验字段不再逐行显示「待核验」');
+    ok((m1.querySelector('.price-number') || { textContent: '' }).textContent.trim() === '未公布',
+      '没有官方定价时数值位写「未公布」而非破折号');
+    ok(!!m1.querySelector('.detail-audit-note'), '改为顶部一句汇总提示',
+      (m1.querySelector('.detail-audit-note') || { textContent: '' }).textContent.slice(0, 22));
+    m1.querySelector('[data-close]').click(); await sleep(250);
+
+    const m2 = await openDetail('Magic9', 'honor-magic9');
+    ok(!m2.querySelector('.detail-audit-note'), '九字段全核验的机型不显示汇总提示');
     dom.window.close();
   }
 
