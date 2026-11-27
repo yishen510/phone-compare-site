@@ -286,15 +286,34 @@ function makeDom(opts = {}) {
     const box = doc.getElementById('recommendResults');
     const head1 = (box.querySelector('.rec-head') || { textContent: '' }).textContent.replace(/\s+/g, '');
     const n1 = box.querySelectorAll('.rec-card').length;
-    ok(/正式推荐候选/.test(head1) && n1 === cands.length, '有无样本时只出准入候选', `${n1} 张`);
-    ok(!/非正式推荐/.test(head1), '此时不再写「非正式推荐」');
+    /* 两段式：正式候选只装准入样本，参考排序保留全库——否则选什么需求都是同几台 */
+    const g1 = box.querySelector('.rec-group');
+    const g1Names = g1 ? [...g1.querySelectorAll('h4')].map(h => h.textContent) : [];
+    ok(g1 && /正式候选/.test(g1.querySelector('h5').textContent), '第一段是「正式候选」');
+    ok(g1Names.length === cands.length, '正式候选只装准入样本', `${g1Names.length} 款`);
+    ok(box.querySelectorAll('.rec-group').length === 2, '第二段是参考排序');
+
+    const restNames = box.querySelectorAll('.rec-group')[1]
+      ? [...box.querySelectorAll('.rec-group')[1].querySelectorAll('h4')].map(h => h.textContent) : [];
+    ok(restNames.length > 0 && !restNames.some(n => g1Names.includes(n)), '参考排序不会重复正式候选', `${restNames.length} 款`);
+
+    /* 换一个需求，参考段必须换人——这条直接盯着用户报的 bug */
+    doc.querySelector('[data-priority="拍照视频"]').click();
+    doc.querySelector('[data-priority="续航"]').click();
+    await sleep(100);
+    doc.getElementById('applyRecommend').click();
+    await sleep(600);
+    const rest2 = [...box.querySelectorAll('.rec-group')[1].querySelectorAll('h4')].map(h => h.textContent);
+    ok(rest2[0] !== restNames[0], '换需求后参考排序会变化', `${restNames[0]} → ${rest2[0]}`);
 
     const yf = doc.getElementById('recYearFrom'), yt = doc.getElementById('recYearTo');
     yf.value = '2024'; yt.value = '2024';
     yf.dispatchEvent(new window.Event('change', { bubbles: true }));
     await sleep(500);
-    const head2 = (box.querySelector('.rec-head') || { textContent: '' }).textContent.replace(/\s+/g, '');
-    ok(/该年份区间暂无通过九字段核验的机型/.test(head2) && /非正式推荐/.test(head2), '无样本年份退回参考排序并明确标注', head2.slice(0, 34));
+    const foot2 = (box.querySelector('.rec-foot') || { textContent: '' }).textContent.replace(/\s+/g, '');
+    ok(!box.querySelector('.rec-group h5')
+        || !/正式候选/.test(box.querySelector('.rec-group h5').textContent), '无样本年份不出现正式候选段');
+    ok(/该年份区间暂无通过九字段核验的机型/.test(foot2), '无样本年份明确说明原因', foot2.slice(0, 30));
 
     /* 数据说明里要能直接看到是哪几台通过，否则「3 台」是个无法核对的数字 */
     const notesBtn = [...doc.querySelectorAll('button,a')].find(b => /数据说明/.test(b.textContent));
