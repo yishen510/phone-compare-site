@@ -335,6 +335,28 @@ function makeDom(opts = {}) {
     dom.window.close();
   }
 
+  /* ================= ⑨ 导出只认官方口径 ================= */
+  console.log('\n⑨ 导出');
+  {
+    const dom = makeDom();
+    await sleep(2400);
+    const { window } = dom, doc = window.document;
+    let blob = null;
+    window.URL.createObjectURL = b => { blob = b; return 'blob:x'; };
+    window.URL.revokeObjectURL = () => {};
+
+    doc.getElementById('exportCatalogBtn').click();
+    await sleep(400);
+    const csv = blob && blob.text ? await blob.text() : '';
+    ok(/官方起售价\(元\)/.test(csv), '导出表头写「官方起售价(元)」');
+
+    /* 列名叫官方起售价，就不能把第三方参考价塞进来：apple-13 是 third_party_reference */
+    const line = csv.split('\r\n').find(l => l.startsWith('iPhone 13,'));
+    const priceCell = line ? line.split(',')[12] : 'no-row';
+    ok(priceCell === '', '第三方参考价机型导出价格留空', `"${priceCell}"`);
+    dom.window.close();
+  }
+
   console.log(`\n${pass} 通过 / ${fail} 失败`);
   process.exit(fail ? 1 : 0);
 })();
