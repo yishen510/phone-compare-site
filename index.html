@@ -2078,9 +2078,13 @@ function activeFilterChips(){
  if(state.favOnly)chips.push(['fav','仅看收藏']);
  return chips;
 }
+let lastChipSig='';
 function renderActiveFilters(){
  const root=$('activeFilters');if(!root)return;
  const chips=activeFilterChips();
+ const sig=chips.map(x=>x[0]+'='+x[1]).join('|');
+ if(sig===lastChipSig)return;   /* 同上：没变化就不重建，避免点击后按钮失焦 */
+ lastChipSig=sig;
  root.hidden=chips.length===0;
  root.innerHTML=chips.map(([k,label])=>`<button class="af-chip" type="button" data-af="${esc(k)}" aria-label="移除筛选 ${esc(label)}">${esc(label)}<i aria-hidden="true">×</i></button>`).join('')+(chips.length>1?'<button class="af-clear" type="button" data-af="__all">清除全部</button>':'');
 }
@@ -2151,6 +2155,7 @@ function paintGrid(grid,arr){
    首尾和数量都没变 → 签名不变 → 不重绘，列表会停在旧数据上（点了筛选像没反应）。
    491 条 × 10 字符约 5k 次字节运算，比一次 innerHTML 便宜两个数量级。 */
 function fingerprint(arr){
+ if(!Array.isArray(arr))return '0';
  let h=2166136261;
  for(let i=0;i<arr.length;i++){
   const s=String(arr[i].id||'');
@@ -2213,21 +2218,29 @@ function loadMore(){
 }
 /* 未知值提示：价格/硬件筛选开启后，告诉用户有多少台因为「参数待核」没参与筛选，
    并给一个开关把它纳入。没有这一句，设了 3000–4000 元就会静默少掉一百多台。 */
+let lastHintSig='';
 function renderUnknownHint(){
  const el=$('unknownHint');if(!el)return;
- const gap=state.unknownGap||0;
+ const gap=state.unknownGap||0,on=!!state.allowUnknown;
+ /* 每帧都重建 innerHTML 会打断按钮焦点、也没必要；内容没变就跳过 */
+ const sig=gap+'|'+(on?1:0);
+ if(sig===lastHintSig)return;
+ lastHintSig=sig;
  if(!gap){el.hidden=true;el.innerHTML='';return;}
  el.hidden=false;
  el.innerHTML=state.allowUnknown
   ? `<span>已纳入 <b>${gap}</b> 台参数待核机型（缺项按「未知」处理，不算不达标）</span><button class="uh-btn" type="button" data-uh="exclude">只看有数据的</button>`
   : `<span>另有 <b>${gap}</b> 台价格或参数待核，未参与筛选</span><button class="uh-btn" type="button" data-uh="include">一并纳入</button>`;
 }
-function render(){
- renderBrands();
- const arr=filtered();
- state.lastArr=arr;   // 供详情页复用 + 「加载更多」追加时取数据
+/* ===== 渲染管线：按职责拆成 5 段，调用顺序与原实现逐句对应 =====
+   统计/标签 → 分页 → 网格与分页器 → 空态 → 周边同步。
+   拆开的原因不是"看起来整洁"，而是这 5 段各有独立的失效条件：
+   分页只在筛选/排序变化时重置，空态只在 0 结果时才有意义，
+   周边同步（对比栏、筛选条、最近查看、URL）与结果本身无关。 */
+
+function renderResultMeta(arr){
  setText('statModels',phones.length);setText('statBrands',BRAND_COUNT);setText('resultCount',arr.length);
- /* 结果标签要解释「为什么这些机型会出现」：按特征位命中的查询（搜 IP68 出 214 台），
+ /* 结果标签要解释「为什么这些机型会出现」：按特征位命中的查询（搜 IP68 出 217 台），
     卡片上并不会出现 IP68 字样，不说明的话用户会以为结果乱来。
     只在「结果不是靠卡片可见字段命中」时才提示，避免搜「无线充电」这种词时画蛇添足。 */
  const qRaw=($('searchInput')?.value||'').trim(),q=qRaw.toLowerCase();
@@ -2235,35 +2248,53 @@ function render(){
  setText('currentFilterLabel',byFeature?('含「'+qRaw+'」')
   :((state.onlyIds&&state.onlyIds.size)?('推荐候选 '+state.onlyIds.size+' 款'):'全部代表机型'));
  renderUnknownHint();
- /* 逐页展示：筛选/排序/视图变化时重置回第一页；收藏/对比变化不重置（否则点个收藏就跳回顶部） */
+}
+
+/* 逐页展示：筛选/排序/视图变化时重置回第一页；收藏/对比变化不重置（否则点个收藏就跳回顶部） */
+function pageResults(arr){
  const paged=wantsPaged(arr.length);
  const fkey=state.view+'|'+(($('sortSelect')?.value)||'')+'|'+arr.length+'|'+fingerprint(arr);
  if(fkey!==lastFilterKey){state.visibleCount=paged?Math.min(PAGE_SIZE,arr.length):arr.length;lastFilterKey=fkey;}
  else if(!paged){state.visibleCount=arr.length;}
  const shown=paged?arr.slice(0,Math.min(state.visibleCount,arr.length)):arr;
+ return {paged,shown};
+}
+
+function renderResults(arr,paged,shown){
  const grid=$('phoneGrid'),key=gridSignature(arr,shown.length);
  if(grid&&key!==lastGridKey){paintGrid(grid,shown);lastGridKey=key;}
  updatePager(arr.length,shown.length,paged);
  syncBatchBar();  // 勾选可能因筛选变化而失效，渲染后同步一次
- const es=$('emptyState');
- if(es){
-  es.hidden=arr.length!==0;
-  if(!arr.length){
-   /* 空结果时告诉用户「总共多少、为什么是 0、点哪一项能恢复」，
-      而不是只给一句泛泛的「试着移除一项筛选」 */
-   const chips=activeFilterChips();
-   const noFav=state.favOnly&&!state.favs.size;
-   const h=es.querySelector('h3'),p=es.querySelector('p'),box=$('emptyChips');
-   if(h)h.textContent=noFav?'还没有收藏任何机型':(chips.length?'当前筛选命中 0 款':'暂无数据');
-   if(p)p.textContent=noFav?'点卡片右上角的 ♡ 就能收藏，收藏后会出现在这里。'
-     :(chips.length?`共 ${phones.length} 款机型，当前条件没有匹配。可直接移除下面某一项：`:`共 ${phones.length} 款机型。`);
-   if(box){
-    const removable=chips.filter(([k])=>k!=='fav');
-    box.innerHTML=removable.map(([k,label])=>`<button class="af-chip" type="button" data-af="${esc(k)}" aria-label="移除筛选 ${esc(label)}">${esc(label)}<i aria-hidden="true">×</i></button>`).join('');
-    box.hidden=removable.length===0;
-   }
-  }
+}
+
+function renderEmptyState(arr){
+ const es=$('emptyState');if(!es)return;
+ es.hidden=arr.length!==0;
+ if(arr.length)return;
+ /* 空结果时告诉用户「总共多少、为什么是 0、点哪一项能恢复」，
+    而不是只给一句泛泛的「试着移除一项筛选」 */
+ const chips=activeFilterChips();
+ const noFav=state.favOnly&&!state.favs.size;
+ const h=es.querySelector('h3'),p=es.querySelector('p'),box=$('emptyChips');
+ if(h)h.textContent=noFav?'还没有收藏任何机型':(chips.length?'当前筛选命中 0 款':'暂无数据');
+ if(p)p.textContent=noFav?'点卡片右上角的 ♡ 就能收藏，收藏后会出现在这里。'
+   :(chips.length?`共 ${phones.length} 款机型，当前条件没有匹配。可直接移除下面某一项：`:`共 ${phones.length} 款机型。`);
+ if(box){
+  const removable=chips.filter(([k])=>k!=='fav');
+  box.innerHTML=removable.map(([k,label])=>`<button class="af-chip" type="button" data-af="${esc(k)}" aria-label="移除筛选 ${esc(label)}">${esc(label)}<i aria-hidden="true">×</i></button>`).join('');
+  box.hidden=removable.length===0;
  }
+}
+
+function render(){
+ renderBrands();
+ const arr=filtered();
+ state.lastArr=arr;   // 供详情页复用 + 「加载更多」追加时取数据
+ renderResultMeta(arr);
+ const {paged,shown}=pageResults(arr);
+ renderResults(arr,paged,shown);
+ renderEmptyState(arr);
+ const grid=$('phoneGrid');
  if(grid){grid.hidden=arr.length===0;grid.classList.toggle('is-compact',state.density==='compact');}
  updateCompare();renderActiveFilters();renderRecent();syncUrlState();syncPriorityChips();
 }
